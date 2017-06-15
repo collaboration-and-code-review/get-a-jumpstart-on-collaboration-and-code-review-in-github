@@ -1,15 +1,15 @@
-# Get a Jumpstart on Collaboration and Code Review in GitHub by @KatherineMichel
+# Get a Jumpstart on Collaboration and Code Review in GitHub
 
-This is a transcript of a talk Katherine "Kati" Michel ([Twitter](), [GitHub]()) will give at [DjangoCon]() and [PyLadies Remote]().
+This is a transcript of a talk Katherine "Kati" Michel ([Twitter](), [GitHub]()) will give at [DjangoCon](), [PyLadies Remote](), and other events.
 
-- [original slide deck]()
-- [video recording]()
+* [Original slide deck]()
+* [Video recording]()
 
-_The style of this transcript is heavily inspired by:
+The style of this transcript is heavily inspired by:
 
 * Ana Balica's ([Twitter](https://twitter.com/anabalica), [GitHub](https://github.com/ana-balica)) transcript of her [Humanizing among coders](https://ana-balica.github.io/2017/05/28/humanizing-among-coders/) keynote for [PyCon CZ 2016](https://cz.pycon.org/2016/). 
 
-Thank you!_
+Thank you!
 
 ## Transcript
 
