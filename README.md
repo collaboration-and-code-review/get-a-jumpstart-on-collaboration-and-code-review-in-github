@@ -2,8 +2,10 @@
 
 This is a transcript of a talk Katherine "Kati" Michel ([Twitter](https://twitter.com/KatiMichel), [GitHub](https://github.com/KatherineMichel)) will give at [DjangoCon](https://2017.djangocon.us), [PyLadies Remote](http://remote.pyladies.com), and other events.
 
+<!--
 * [Original slide deck]()
 * [Video recording]()
+-->
 
 ## Attribution
 
