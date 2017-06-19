@@ -42,7 +42,7 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 ### This Topic is Valuable 
 
-This is an awesome topic. Collaboration and code review are valuable skills. You can use these skills in many situations. 
+This is an awesome topic. Collaboration and code review are valuable skills. You can use these skills in many situations. GitHub is a popular place for open-source code. 
 
 </td></tr>
 
