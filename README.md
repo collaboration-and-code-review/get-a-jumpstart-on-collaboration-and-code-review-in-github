@@ -71,7 +71,7 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 ### Let’s Pretend We’re Going on a Journey
 
-I've made this journey before and you haven't. I know the best way to complete this journey. I want to impart some of my knowledge to you, to save you time and frustration.
+I've made this journey before and you haven't. I know the best way to complete this journey. If you have completed a journey, looking back, perhaps you would have gone about it differently from the beginning. I know, I would have used GitHub differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error.
 
 </td></tr>
 
@@ -82,7 +82,7 @@ I've made this journey before and you haven't. I know the best way to complete t
 
 </td><td>
 
-### The Destination
+### What is the Destination?
 
 The destination is greater autonomy. 
 
