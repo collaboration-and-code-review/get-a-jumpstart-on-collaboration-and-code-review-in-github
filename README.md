@@ -42,7 +42,7 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 ### This Topic is Valuable 
 
-
+This is an awesome topic. Collaboration and code review are valuable skills. You can use these skills in many situations. 
 
 </td></tr>
 
@@ -84,7 +84,11 @@ I've made this journey before and you probably haven't. I know the best way to c
 
 ### What is the Destination?
 
-The destination is greater autonomy. 
+The destination is:
+* Greater autonomy
+* If you are a student: being prepared for your studies and career
+* If a developer: perhaps you can get a promotion
+* In general: you can make cool stuff, made choices/influence product
 
 </td></tr>
 
