@@ -38,7 +38,9 @@ Thank you!
 
 </td><td>
 
-Placeholder
+### Let’s Pretend We’re Going on a Journey
+
+I've made this journey before and you haven't. I know the best way to complete this journey. I want to impart some of my knowledge to you, so that your journey will go smoothly.
 
 </td></tr>
 <tr><td width="30%">
@@ -47,7 +49,9 @@ Placeholder
 
 </td><td>
 
-Placeholder
+### The Destination
+
+The destination is great autonomy. 
 
 </td></tr>
 <tr><td width="30%">
