@@ -71,7 +71,7 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 ### Let’s Pretend We’re Going on a Journey
 
-I've made this journey before and you haven't. I know the best way to complete this journey. If you have completed a journey, looking back, perhaps you would have gone about it differently from the beginning. I know, I would have used GitHub differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error.
+I've made this journey before and you probably haven't. I know the best way to complete this journey. If you have completed a journey, looking back, perhaps you would have gone about it differently from the beginning. I know, I would have used GitHub differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
 
 </td></tr>
 
@@ -121,7 +121,7 @@ A recipe sharing project on GitHub!
 
 ### Doing Multiple Things at Once
 
-
+There is a main theme to this talk. The theme is about doing multiple things at once. The way to do that is through something called "branches". If you learn to use branches, you've won half the battle. As you take on more responsibility, branches will give you the freedom to do multiple things at the same time:
 
 </td></tr>
 
