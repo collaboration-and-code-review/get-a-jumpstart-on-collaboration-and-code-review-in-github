@@ -20,9 +20,36 @@ Thank you!
 
 <table>
 
+
 <tr><td width="30%">
 
 ![Slide 0]()
+
+</td><td>
+
+### Welcome 
+
+I'm thrilled to have the opportunity to talk to you about getting a jumpstart on collaboration and code review in GitHub
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 1]()
+
+</td><td>
+
+### This Topic is Valuable 
+
+
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 2]()
 
 </td><td>
 
@@ -38,7 +65,7 @@ Thank you!
 
 <tr><td width="30%">
 
-![Slide 1]()
+![Slide 3]()
 
 </td><td>
 
@@ -51,7 +78,7 @@ I've made this journey before and you haven't. I know the best way to complete t
 
 <tr><td width="30%">
 
-![Slide 2]()
+![Slide 4]()
 
 </td><td>
 
@@ -64,7 +91,7 @@ The destination is great autonomy.
 
 <tr><td width="30%">
 
-![Slide 3]()
+![Slide 5]()
 
 </td><td>
 
