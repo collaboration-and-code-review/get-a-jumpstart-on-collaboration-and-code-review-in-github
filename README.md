@@ -116,7 +116,7 @@ A recipe sharing project on GitHub!
 
 ### Doing Multiple Things at Once
 
-There is a main theme to this talk. The theme is about doing multiple things at once. The way to do that is through something called "branches". If you learn to use branches, you've won half the battle. As you take on more responsibility, branches will give you the freedom to do multiple things at the same time:
+There is an overall theme to this talk. The theme is about doing multiple things at once. The way to do that is through something called "branches". If you learn to use branches, you've won half the battle. As you take on more responsibility, branches will give you the freedom to do multiple things at the same time:
 
 </td></tr>
 
