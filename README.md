@@ -24,7 +24,12 @@ Thank you!
 
 </td><td>
 
-Placeholder
+### About Me 
+
+* DjangoCon Website Chair
+* DEFNA (Django Events Foundation North America) Board Member
+* Project Manager
+* Web Designer and Developer
 
 </td></tr>
 <tr><td width="30%">
