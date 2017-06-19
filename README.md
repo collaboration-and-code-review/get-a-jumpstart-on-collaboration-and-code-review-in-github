@@ -18,7 +18,9 @@ Thank you!
 
 ## Transcript
 
-<table><tr><td width="30%">
+<table>
+
+<tr><td width="30%">
 
 ![Slide 0]()
 
@@ -32,6 +34,8 @@ Thank you!
 * Web Designer and Developer
 
 </td></tr>
+
+
 <tr><td width="30%">
 
 ![Slide 1]()
@@ -43,6 +47,8 @@ Thank you!
 I've made this journey before and you haven't. I know the best way to complete this journey. I want to impart some of my knowledge to you, so that your journey will go smoothly.
 
 </td></tr>
+
+
 <tr><td width="30%">
 
 ![Slide 2]()
@@ -54,12 +60,14 @@ I've made this journey before and you haven't. I know the best way to complete t
 The destination is great autonomy. 
 
 </td></tr>
+
+
 <tr><td width="30%">
 
 ![Slide 3]()
 
 </td><td>
 
-Plaaceholder
+### How My Journey Began
 
 </td></tr></table>
