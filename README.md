@@ -108,8 +108,22 @@ The destination is greater autonomy.
 
 ### Taco Fancy
 
+A recipe sharing project on GitHub!
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 7]()
+
+</td><td>
+
+### Doing Multiple Things at Once
+
 
 
 </td></tr>
+
 
 </table>
