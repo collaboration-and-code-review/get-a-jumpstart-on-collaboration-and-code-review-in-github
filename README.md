@@ -71,7 +71,7 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 ### Let’s Pretend We’re Going on a Journey
 
-I've made this journey before and you haven't. I know the best way to complete this journey. I want to impart some of my knowledge to you, so that your journey will go smoothly.
+I've made this journey before and you haven't. I know the best way to complete this journey. I want to impart some of my knowledge to you, to save you time and frustration.
 
 </td></tr>
 
@@ -84,7 +84,7 @@ I've made this journey before and you haven't. I know the best way to complete t
 
 ### The Destination
 
-The destination is great autonomy. 
+The destination is greater autonomy. 
 
 </td></tr>
 
@@ -97,4 +97,19 @@ The destination is great autonomy.
 
 ### How My Journey Began
 
-</td></tr></table>
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 6]()
+
+</td><td>
+
+### Taco Fancy
+
+
+
+</td></tr>
+
+</table>
