@@ -40,19 +40,6 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 </td><td>
 
-### This Topic is Valuable 
-
-This is an awesome topic. Collaboration and code review are valuable skills. You can use these skills in many situations. GitHub is a popular place for open-source code. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 2]()
-
-</td><td>
-
 ### About Me 
 
 * DjangoCon Website Chair
@@ -65,13 +52,32 @@ This is an awesome topic. Collaboration and code review are valuable skills. You
 
 <tr><td width="30%">
 
-![Slide 3]()
+![Slide 2]()
 
 </td><td>
 
 ### Let’s Pretend We’re Going on a Journey
 
-I've made this journey before and you probably haven't. I know the best way to complete this journey. If you have completed a journey, looking back, perhaps you would have gone about it differently from the beginning. I know, I would have used GitHub differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
+The journey is to learn collaboration and code review. I've made this journey before and you probably haven't. I know the best way to complete this journey. If you have completed a journey, looking back, perhaps you would have gone about it differently from the beginning. I know, I would have used GitHub differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 3]()
+
+</td><td>
+
+### What is the Destination?
+
+Collaboration and code review are valuable skills and GitHub is a popular place for open-source code. You can use these skills in an unlimited number of situations.  
+
+The destination is:
+* Greater autonomy
+* If you are a student: being prepared for your studies and career
+* If a developer: perhaps you can get a promotion
+* In general: you can make cool stuff, make choices that influence product
 
 </td></tr>
 
@@ -82,13 +88,9 @@ I've made this journey before and you probably haven't. I know the best way to c
 
 </td><td>
 
-### What is the Destination?
+### How My Journey Began
 
-The destination is:
-* Greater autonomy
-* If you are a student: being prepared for your studies and career
-* If a developer: perhaps you can get a promotion
-* In general: you can make cool stuff, made choices/influence product
+When I first signed up for GitHub, I felt a bit intimidated. My account sat dormant for months.
 
 </td></tr>
 
@@ -96,17 +98,6 @@ The destination is:
 <tr><td width="30%">
 
 ![Slide 5]()
-
-</td><td>
-
-### How My Journey Began
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 6]()
 
 </td><td>
 
@@ -119,7 +110,7 @@ A recipe sharing project on GitHub!
 
 <tr><td width="30%">
 
-![Slide 7]()
+![Slide 6]()
 
 </td><td>
 
