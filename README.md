@@ -121,4 +121,43 @@ There is an overall theme to this talk. The theme is about doing multiple things
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 7]()
+
+</td><td>
+
+### Read/Write Access
+
+How you contribute to a repo will depend on whether you have read/write access. If you have read/write access you can contribute directly. If you do not have read/write access, you will need to fork the repo. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 7]()
+
+</td><td>
+
+### Collaborative Development Models
+
+There are two collaborative development models
+* 
+* 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 9]()
+
+</td><td>
+
+### Branches
+
+</td></tr>
+
+
 </table>
