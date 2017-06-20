@@ -129,7 +129,7 @@ When I first signed up for GitHub, I felt a bit intimidated. My account sat unus
 
 ### Taco Fancy
 
-One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
+One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
 
 </td></tr>
 
