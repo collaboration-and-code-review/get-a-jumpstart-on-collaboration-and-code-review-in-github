@@ -140,9 +140,9 @@ One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan
 
 </td><td>
 
-### "Are You New to Github But Want to Contribute?"
+### The One Sentence that Motivated Me to Start Using GitHub
 
-I was looking through the Taco Fancy repo and saw one sentence that had a huge impact on me. 
+I was looking through the Taco Fancy repo and saw one sentence made a big impact on me: "Are You New to Github But Want to Contribute?" I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I really didn't quite know what I was doing, but I was extremely motivated. I stumbled through and submitted a pull request. 
 
 </td></tr>
 
