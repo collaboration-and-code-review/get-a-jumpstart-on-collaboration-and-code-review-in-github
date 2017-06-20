@@ -90,7 +90,7 @@ The destination is:
 
 ### How My Journey Began
 
-When I first signed up for GitHub, I felt a bit intimidated. My account sat dormant for months.
+When I first signed up for GitHub, I felt a bit intimidated. My account sat unused for months.
 
 </td></tr>
 
@@ -143,6 +143,8 @@ There are two collaborative development models. How you contribute to a repo wil
 </td><td>
 
 ### Branches
+
+Regardless of which collaborative development model you use, the process for dealing with branches is very similar.
 
 </td></tr>
 
