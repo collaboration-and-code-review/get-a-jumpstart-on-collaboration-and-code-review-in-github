@@ -255,6 +255,8 @@ I want to point out that you can create a branch through the browser, but I will
 
 ### Go For It!
 
+Tips for getting started:
+
 </td></tr>
 
 
@@ -289,8 +291,6 @@ Where to find my slides:
 </td><td>
 
 ### Thank You and Happy Coding 
-
-By Katherine “Kati” Michel 
 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
