@@ -203,7 +203,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 ### Branch Process
 
-I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use more often with code review.  
+I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review.  
 
 </td></tr>
 
@@ -216,12 +216,36 @@ I want to point out that you can create a branch through the browser, but I will
 
 ### Code Review
 
+If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via Forked Repo Model (remote branch) or Shared Repo Model.  
+
 </td></tr>
 
 
 <tr><td width="30%">
 
 ![Slide 14]()
+
+</td><td>
+
+### Forked Repo Model Pull Request
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### Shared Repo Model Pull Request
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
 
 </td><td>
 
@@ -236,7 +260,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 17]()
 
 </td><td>
 
@@ -247,7 +271,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 18]()
 
 </td><td>
 
@@ -262,7 +286,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 19]()
 
 </td><td>
 
@@ -275,7 +299,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 20]()
 
 </td><td>
 
@@ -286,7 +310,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 21]()
 
 </td><td>
 
@@ -299,11 +323,11 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 22]()
 
 </td><td>
 
-### Thank You and Happy Coding 
+### Thank You and Happy Coding :)
 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
