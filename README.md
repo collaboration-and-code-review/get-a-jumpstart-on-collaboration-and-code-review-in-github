@@ -188,6 +188,19 @@ Regardless of which collaborative development model you use, the process for dea
 
 </td><td>
 
+### Branch Process
+
+I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal, because it's more difficult.  
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
+
+</td><td>
+
 ### Tidy Up
 
 * Close pull request
@@ -199,7 +212,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -214,7 +227,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
 
 </td><td>
 
@@ -225,7 +238,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -236,7 +249,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -249,7 +262,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
