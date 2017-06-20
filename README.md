@@ -140,9 +140,13 @@ A recipe sharing project on GitHub!
 
 </td><td>
 
-### Doing Multiple Things at Once
+### Collaborative Development Models
 
-There is an overall theme to this talk. The theme is about doing multiple things at once. The way to do that is through something called "branches". If you learn to use branches, you've won half the battle. As you take on more responsibility, branches will give you the freedom to do multiple things at the same time:
+There are two collaborative development models: 
+* “Shared Repository” Model (usually an organization but could also be a user account repo)
+* “Fork and Pull” Model
+
+How you contribute to a repo will depend on whether you have read/write access. If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
 
 </td></tr>
 
@@ -153,11 +157,9 @@ There is an overall theme to this talk. The theme is about doing multiple things
 
 </td><td>
 
-### Collaborative Development Models
+### Doing Multiple Things at Once
 
-There are two collaborative development models. How you contribute to a repo will depend on whether you have read/write access. One collaborative development model for people who have read/write access to a repo. One is for people who don't. If you have read/write access you can contribute directly. If you do not have read/write access, you will need to fork the repo. 
-* 
-* 
+There is an overall theme to this talk. The theme is about doing multiple things at once. The way to do that is through something called "branches". If you learn to use branches, you've won half the battle. As you take on more responsibility, branches will give you the freedom to do multiple things at the same time:
 
 </td></tr>
 
@@ -170,7 +172,7 @@ There are two collaborative development models. How you contribute to a repo wil
 
 ### Branches
 
-Regardless of which collaborative development model you use, the process for dealing with branches is very similar.
+Regardless of which collaborative development model you use, the process for dealing with branches is very similar. The two main differences are that if you are using the "Fork and Pull" Model, you need to fork the repo before you clone it, and you need to check a box when you make the pull request if you want the maintainers to be able to change your pull request.
 
 </td></tr>
 
@@ -192,7 +194,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 7]()
+![Slide 12]()
 
 </td><td>
 
@@ -203,7 +205,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 7]()
+![Slide 13]()
 
 </td><td>
 
@@ -214,7 +216,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 14]()
 
 </td><td>
 
@@ -227,7 +229,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 15]()
 
 </td><td>
 
