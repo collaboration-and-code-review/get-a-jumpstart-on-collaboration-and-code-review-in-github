@@ -181,6 +181,21 @@ Regardless of which collaborative development model you use, the process for dea
 
 </td><td>
 
+### Go Further with Advanced Workflow
+
+* Git Flow (similar to process I’ve explained)
+* A Successful Git Branching Model (more advanced)
+* SemVer
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 11]()
+
+</td><td>
+
 ### Thank You and Happy Coding 
 
 Thanks for having me. :)
