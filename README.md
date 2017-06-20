@@ -277,7 +277,15 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 </td><td>
 
-### Develop Branch
+### Should Your Project Use a Develop Branch?
+
+Some projects will involve both a master and develop branch. For example, a mission critical project with a high volume of users is likely to use a develop branch and staging to gate-keep updates before going live. Use the workflow that is right for the projects. They all have pros and cons. 
+
+If you choose to use a develop branch:
+* In addition to the master branch, create the develop branch
+* Choose a default branch
+
+If you want to know much more about this, see: A Successful Git Branching Model.
 
 </td></tr>
 
