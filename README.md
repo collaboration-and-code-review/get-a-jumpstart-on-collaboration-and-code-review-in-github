@@ -203,7 +203,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 ### Branch Process
 
-I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal, because it's more difficult.  
+I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use more often with code review.  
 
 </td></tr>
 
