@@ -311,9 +311,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 </td><td>
 
-### Go For It!
-
-Tips for getting started:
+### 10X Developers
 
 </td></tr>
 
@@ -324,7 +322,7 @@ Tips for getting started:
 
 </td><td>
 
-### Debunking Myths
+### Documentation
 
 </td></tr>
 
@@ -332,6 +330,41 @@ Tips for getting started:
 <tr><td width="30%">
 
 ![Slide 22]()
+
+</td><td>
+
+### Productivity Helpers
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 23]()
+
+</td><td>
+
+### Go For It!
+
+Tips for getting started:
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 24]()
+
+</td><td>
+
+### Debunking Myths
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 25]()
 
 </td><td>
 
@@ -344,7 +377,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 26]()
 
 </td><td>
 
