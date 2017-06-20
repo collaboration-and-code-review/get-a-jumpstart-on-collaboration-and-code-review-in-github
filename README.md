@@ -134,12 +134,13 @@ One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan
 </td></tr>
 
 
+<tr><td width="30%">
 
 ![Slide 8]()
 
 </td><td>
 
-### Welcome
+### WAre You New to Github But Want to Contribute?
 
 I was looking through the Taco Fancy repo and saw one sentence that had a huge impact on me. 
 
