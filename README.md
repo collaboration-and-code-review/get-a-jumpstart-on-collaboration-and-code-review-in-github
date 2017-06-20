@@ -142,7 +142,7 @@ One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan
 
 ### The One Sentence that Motivated Me to Start Using GitHub
 
-I was looking through the Taco Fancy repo and saw one sentence made a big impact on me: "Are You New to Github But Want to Contribute?" I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I really didn't quite know what I was doing, but I was extremely motivated. I stumbled through and submitted a pull request. 
+I was looking through the Taco Fancy repo and saw one sentence made a big impact on me: "Are You New to Github But Want to Contribute?" I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I really didn't quite know what I was doing, but I was extremely motivated. I struggled through and submitted a pull request. 
 
 </td></tr>
 
@@ -153,9 +153,20 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 
 </td><td>
 
+### Getting Started
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 10]()
+
+</td><td>
+
 ### Collaborative Development Models
 
-There are two collaborative development models: 
+There are two collaborative development models (a fancy term for how people work together): 
 * “Shared Repository” Model (usually an organization with teams/permissiosn across projects) but could also be a user account repo)
 * “Fork and Pull” Model
 
@@ -166,7 +177,7 @@ How you contribute to a repo will depend on whether you have read/write access. 
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 11]()
 
 </td><td>
 
@@ -184,7 +195,7 @@ The way to do multiple things at once is to use "branches". As you take on more 
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 12]()
 
 </td><td>
 
@@ -197,7 +208,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -210,7 +221,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
 
 </td><td>
 
@@ -223,7 +234,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -234,7 +245,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -245,7 +256,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -260,7 +271,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -271,7 +282,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 19]()
 
 </td><td>
 
@@ -286,7 +297,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 20]()
 
 </td><td>
 
@@ -299,7 +310,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 21]()
 
 </td><td>
 
@@ -310,7 +321,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 22]()
 
 </td><td>
 
@@ -323,7 +334,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
