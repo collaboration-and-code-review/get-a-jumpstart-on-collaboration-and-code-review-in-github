@@ -188,6 +188,21 @@ Regardless of which collaborative development model you use, the process for dea
 
 </td><td>
 
+### Tidy Up
+
+* Close pull request
+* Revert pull request (if needed)
+* Delete feature branch (local and remote)
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
+
+</td><td>
+
 ### Go Further with Advanced Workflow
 
 * Git Flow (similar to process I’ve explained)
@@ -199,7 +214,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -210,7 +225,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
 
 </td><td>
 
@@ -221,7 +236,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -234,7 +249,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
