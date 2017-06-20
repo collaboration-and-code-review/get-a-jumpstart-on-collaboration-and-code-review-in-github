@@ -167,10 +167,12 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 ### Collaborative Development Models
 
 There are two collaborative development models (a fancy term for how people work together): 
-* “Shared Repository” Model (usually an organization with teams/permissiosn across projects) but could also be a user account repo)
+* “Shared Repository” Model (usually an organization but could also be a user account repo)
 * “Fork and Pull” Model
 
 How you contribute to a repo will depend on whether you have read/write access. If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
+
+Note: the advantage of using an organization over user account for "Shared Repository" Model is that an organization can have teams/permissions across projects, not just one owner/repo as is the case with a user account "Shared Repository"
 
 </td></tr>
 
