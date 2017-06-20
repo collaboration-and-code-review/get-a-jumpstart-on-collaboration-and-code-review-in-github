@@ -97,9 +97,9 @@ When you complete a journey, looking back, sometimes you have learned things. If
 
 ### What is the Destination?
 
-Collaboration and code review are valuable skills and GitHub is a popular place for open-source code. You can use these skills in an unlimited number of situations.  
+Collaboration and code review are valuable skills that you can use these skills in an unlimited number of situations. GitHub is a popular place for open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
 
-The destination is:
+Some benefits of learning collaboration and code review
 * Greater autonomy
 * If you are a student: being prepared for your studies and career
 * If a developer: perhaps you can get a promotion
