@@ -129,7 +129,7 @@ When I first signed up for GitHub, I felt a bit intimidated. My account sat unus
 
 ### Taco Fancy
 
-A recipe sharing project on GitHub!
+A taco recipe sharing project on GitHub!
 
 </td></tr>
 
@@ -143,7 +143,7 @@ A recipe sharing project on GitHub!
 ### Collaborative Development Models
 
 There are two collaborative development models: 
-* “Shared Repository” Model (usually an organization but could also be a user account repo)
+* “Shared Repository” Model (usually an organization with teams/permissiosn across projects) but could also be a user account repo)
 * “Fork and Pull” Model
 
 How you contribute to a repo will depend on whether you have read/write access. If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
@@ -216,6 +216,17 @@ I want to point out that you can create a branch through the browser, but I will
 
 </td><td>
 
+### Develop Branch
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 14]()
+
+</td><td>
+
 ### Go Further with Advanced Workflow
 
 * Git Flow (similar to process I’ve explained)
@@ -227,7 +238,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -238,7 +249,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -249,7 +260,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -262,7 +273,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
