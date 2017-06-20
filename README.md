@@ -192,6 +192,19 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
+![Slide 12]()
+
+</td><td>
+
+### Useful Resources 
+
+Where to find my slides:
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 11]()
 
 </td><td>
@@ -199,17 +212,6 @@ Regardless of which collaborative development model you use, the process for dea
 ### Thank You and Happy Coding 
 
 Thanks for having me. :)
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 12]()
-
-</td><td>
-
-### Useful Resources 
 
 </td></tr>
 
