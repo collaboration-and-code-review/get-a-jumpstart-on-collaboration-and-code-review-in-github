@@ -192,6 +192,28 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
+![Slide 7]()
+
+</td><td>
+
+### Go For It!
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 7]()
+
+</td><td>
+
+### Debunking Myths
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 12]()
 
 </td><td>
