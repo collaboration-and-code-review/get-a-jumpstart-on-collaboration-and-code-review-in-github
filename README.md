@@ -159,7 +159,12 @@ How you contribute to a repo will depend on whether you have read/write access. 
 
 ### Doing Multiple Things at Once
 
-There is an overall theme to this talk. The theme is about doing multiple things at once. The way to do that is through something called "branches". If you learn to use branches, you've won half the battle. As you take on more responsibility, branches will give you the freedom to do multiple things at the same time:
+There is an overall theme to this talk. The theme is about doing multiple things at once. 
+* Keep your code up-to-date
+* Create one or more features
+* Do code review
+
+The way to do multiple things at once is to use "branches". As you take on more responsibility, branches will give you more freedom. If you learn to use branches, you've won half the battle. 
 
 </td></tr>
 
