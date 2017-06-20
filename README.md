@@ -82,7 +82,7 @@ The journey is to learn collaboration and code review.
 
 </td><td>
 
-### I've Made this Journey Before and You Probably Haven't. 
+### I've Made this Journey Before and You Probably Haven't
 
 When you complete a journey, looking back, sometimes you have learned things. If I were to start my journey over again, I would do things differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
 
@@ -154,6 +154,8 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 </td><td>
 
 ### Getting Started
+
+What are Git and GitHub?
 
 </td></tr>
 
