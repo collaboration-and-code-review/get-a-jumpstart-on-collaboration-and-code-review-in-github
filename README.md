@@ -213,6 +213,10 @@ Where to find my slides:
 
 Thanks for having me. :)
 
+* By Katherine “Kati” Michel 
+* Twitter handle: @KatiMichel
+* GitHub username: KatherineMichel
+
 </td></tr>
 
 
