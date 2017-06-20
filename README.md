@@ -127,22 +127,9 @@ There is an overall theme to this talk. The theme is about doing multiple things
 
 </td><td>
 
-### Read/Write Access
-
-How you contribute to a repo will depend on whether you have read/write access. If you have read/write access you can contribute directly. If you do not have read/write access, you will need to fork the repo. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 7]()
-
-</td><td>
-
 ### Collaborative Development Models
 
-There are two collaborative development models
+There are two collaborative development models. How you contribute to a repo will depend on whether you have read/write access. One collaborative development model for people who have read/write access to a repo. One is for people who don't. If you have read/write access you can contribute directly. If you do not have read/write access, you will need to fork the repo. 
 * 
 * 
 
@@ -151,7 +138,7 @@ There are two collaborative development models
 
 <tr><td width="30%">
 
-![Slide 9]()
+![Slide 8]()
 
 </td><td>
 
