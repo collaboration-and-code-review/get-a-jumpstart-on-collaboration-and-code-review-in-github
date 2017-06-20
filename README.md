@@ -235,9 +235,8 @@ Where to find my slides:
 
 ### Thank You and Happy Coding 
 
-Thanks for having me. :)
+By Katherine “Kati” Michel 
 
-* By Katherine “Kati” Michel 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
 
