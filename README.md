@@ -27,6 +27,19 @@ Thank you!
 
 </td><td>
 
+### Get a Jumpstart on Collaboration and Code Review in GitHub 
+
+By Katherine "Kati" Michel
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 1]()
+
+</td><td>
+
 ### Welcome 
 
 I'm thrilled to have the opportunity to talk to you about getting a jumpstart on collaboration and code review in GitHub
@@ -36,7 +49,7 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 <tr><td width="30%">
 
-![Slide 1]()
+![Slide 2]()
 
 </td><td>
 
@@ -52,20 +65,33 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 <tr><td width="30%">
 
-![Slide 2]()
+![Slide 3]()
 
 </td><td>
 
 ### Let’s Pretend We’re Going on a Journey
 
-The journey is to learn collaboration and code review. I've made this journey before and you probably haven't. I know the best way to complete this journey. If you have completed a journey, looking back, perhaps you would have gone about it differently from the beginning. I know, I would have used GitHub differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
+The journey is to learn collaboration and code review. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 3]()
+![Slide 4]()
+
+</td><td>
+
+### I've made this journey before and you probably haven't. 
+
+When you complete a journey, looking back, sometimes you have learned things. If I were to start my journey over again, I would do things differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 5]()
 
 </td><td>
 
@@ -84,7 +110,7 @@ The destination is:
 
 <tr><td width="30%">
 
-![Slide 4]()
+![Slide 6]()
 
 </td><td>
 
@@ -97,7 +123,7 @@ When I first signed up for GitHub, I felt a bit intimidated. My account sat unus
 
 <tr><td width="30%">
 
-![Slide 5]()
+![Slide 7]()
 
 </td><td>
 
@@ -110,7 +136,7 @@ A recipe sharing project on GitHub!
 
 <tr><td width="30%">
 
-![Slide 6]()
+![Slide 8]()
 
 </td><td>
 
@@ -123,7 +149,7 @@ There is an overall theme to this talk. The theme is about doing multiple things
 
 <tr><td width="30%">
 
-![Slide 7]()
+![Slide 9]()
 
 </td><td>
 
@@ -138,7 +164,7 @@ There are two collaborative development models. How you contribute to a repo wil
 
 <tr><td width="30%">
 
-![Slide 8]()
+![Slide 10]()
 
 </td><td>
 
