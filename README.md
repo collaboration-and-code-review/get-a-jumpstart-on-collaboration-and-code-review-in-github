@@ -129,14 +129,26 @@ When I first signed up for GitHub, I felt a bit intimidated. My account sat unus
 
 ### Taco Fancy
 
-A taco recipe sharing project on GitHub!
+One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
+
+</td></tr>
+
+
+
+![Slide 8]()
+
+</td><td>
+
+### Welcome
+
+I was looking through the Taco Fancy repo and saw one sentence that had a huge impact on me. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 8]()
+![Slide 9]()
 
 </td><td>
 
@@ -153,7 +165,7 @@ How you contribute to a repo will depend on whether you have read/write access. 
 
 <tr><td width="30%">
 
-![Slide 9]()
+![Slide 10]()
 
 </td><td>
 
@@ -171,7 +183,7 @@ The way to do multiple things at once is to use "branches". As you take on more 
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 11]()
 
 </td><td>
 
@@ -184,7 +196,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 12]()
 
 </td><td>
 
@@ -197,7 +209,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -208,7 +220,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
 
 </td><td>
 
@@ -223,7 +235,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -234,7 +246,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -249,7 +261,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -262,7 +274,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -273,7 +285,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 19]()
 
 </td><td>
 
@@ -286,7 +298,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 20]()
 
 </td><td>
 
