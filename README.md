@@ -167,7 +167,14 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 ### A Few Notes
 
-What are Git and GitHub?
+<!--
+* This talk uses [GitHub](https://github.com) examples (GitHub is "the world's leading software development platform"), but similar features and workflows could be found on [Bitbucket](https://bitbucket.org) or other services (which some people prefer)
+* I will identify best practices any time possible
+* The examples I will be using will focus on public, organizational repos and the "Shared Repository Model" because organizational repos are where most code review happens, but many of the concepts could also be applied to user account collaboration (which I think is lesser known)
+* Some tasks vary by operating systems- check tabs at top of some [GitHub Help](https://help.github.com) pages for operating system-specific instructions
+
+(Example: Not all command lines use $)
+-->
 
 </td></tr>
 
