@@ -196,11 +196,40 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 </td><td>
 
-### Getting Started
+### Getting Started: Basics
 
 What are Git and GitHub?
 
 High level explanation: You install Git on your computer and create a GitHub account. You can then transfer (clone or push) files back and forth between your computer and GitHub. Git will record every change you commit to the files. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 13]()
+
+</td><td>
+
+### Switching Between Multiple Tasks
+
+There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
+* Keep your code up-to-date
+* Create one or more features
+* Do code review
+
+You can switch between multiple tasks by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 14]()
+
+</td><td>
+
+### How? By Using Branches!
 
 </td></tr>
 
@@ -224,24 +253,6 @@ How you contribute to a repo will depend on whether you have read/write access. 
 Note: the advantage of using an organization over user account for "Shared Repository" Model is that an organization can have teams/permissions across projects, not just one owner/repo as is the case with a user account "Shared Repository"
 
 Tip: You have to have read/write access to push directly to a repository
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 14]()
-
-</td><td>
-
-### Doing Multiple Things at Once
-
-There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple activities. 
-* Keep your code up-to-date
-* Create one or more features
-* Do code review
-
-You can switch between multiple activities by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
