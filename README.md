@@ -242,7 +242,7 @@ What is a branch?
 
 </td><td>
 
-### Not-Scalable Workflow
+### Example of a Not-Scalable Workflow
 
 * Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add follow-on commits. 
 
@@ -262,14 +262,13 @@ What is a branch?
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 17]()
 
 </td><td>
 
-### Collaborative Development Models
+### Two Collaborative Development Models
 
 Collaborative Development Model is a fancy term for how people work together
 
@@ -288,20 +287,35 @@ Tip: You have to have read/write access to push directly to a repository
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 18]()
 
 </td><td>
 
-### Branches
-
-Regardless of which collaborative development model you use, the process for dealing with branches is very similar. The two main differences are that if you are using the "Fork and Pull" Model, you need to fork the repo before you clone it, and you need to check a box when you make the pull request if you want the maintainers to be able to change your pull request.
+### Read/Write Access
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 19]()
+
+</td><td>
+
+### Branch Process: Virtually the Same
+
+The process for dealing with branches is very similar, regardless of which collaborative development model you are using.
+
+The two main differences are that if you are using the "Fork and Pull" Model:
+* You need to fork the repo before you clone it
+* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 20]()
 
 </td><td>
 
@@ -314,7 +328,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 21]()
 
 </td><td>
 
@@ -327,7 +341,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 22]()
 
 </td><td>
 
@@ -338,7 +352,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 23]()
 
 </td><td>
 
@@ -349,7 +363,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 24]()
 
 </td><td>
 
@@ -364,7 +378,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 25]()
 
 </td><td>
 
@@ -383,7 +397,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 26]()
 
 </td><td>
 
@@ -398,7 +412,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 27]()
 
 </td><td>
 
@@ -409,7 +423,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 28]()
 
 </td><td>
 
@@ -420,7 +434,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 29]()
 
 </td><td>
 
@@ -431,7 +445,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 30]()
 
 </td><td>
 
@@ -444,7 +458,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 31]()
 
 </td><td>
 
@@ -455,7 +469,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 32]()
 
 </td><td>
 
@@ -468,7 +482,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 33]()
 
 </td><td>
 
