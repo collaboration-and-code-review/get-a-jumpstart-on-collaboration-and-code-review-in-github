@@ -189,6 +189,8 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 What are Git and GitHub?
 
+High level explanation: You install Git on your computer and create a GitHub account. You can then transfer (clone or push) files back and forth between your computer and GitHub. Git will record every change you commit to the files. 
+
 </td></tr>
 
 
