@@ -426,3 +426,27 @@ Useful Resources:
 
 
 </table>
+
+## Useful Resources
+
+Git Official 
+* [Git Homepage](https://git-scm.com)
+* [Git Doc (Docs and Pro Git Book](https://git-scm.com/doc)
+* [Git Documentation](https://git-scm.com/documentation)
+* [Git Pro Git Book](https://git-scm.com/book/en/v2)
+
+GitHub Help and Training
+* [GitHub Help](https://help.github.com)
+* [GitHub Guides](https://guides.github.com)
+* [GitHub Training Guides YouTube](https://www.youtube.com/githubguides)
+
+GitHub Try
+* [Try Git](https://try.github.io)
+* [GitHub Bootcamp](https://help.github.com/categories/bootcamp) 
+* [GitHub Hello World Tutorial](https://guides.github.com/activities/hello-world)
+
+GitHub Learning Resources
+* [Git and GitHub Learning Resources](https://help.github.com/articles/git-and-github-learning-resources)
+
+GitHub Open Source Guides
+* [Open Source Guides](https://opensource.guide)
