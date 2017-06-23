@@ -154,7 +154,7 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 
 ### What This Talk Is and Is Not
 
-There are many variations to how things can be done in GitHub. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is not about communicating to you all of those variations. This talk is about teaching you the essential process so that you can get started quickly. 
+There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is about teaching you the essential process so that you can get started as quickly as possible. 
 
 </td></tr>
 
