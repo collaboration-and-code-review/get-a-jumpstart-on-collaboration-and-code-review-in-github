@@ -200,13 +200,17 @@ What are Git and GitHub?
 
 ### Collaborative Development Models
 
-There are two collaborative development models (a fancy term for how people work together): 
-* “Shared Repository” Model (usually an organization but could also be a user account repo)
+Collaborative Development Model is a fancy term for how people work together
+
+There are two collaborative development models: 
 * “Fork and Pull” Model
+* “Shared Repository” Model (usually an organization but could also be a user account repo)
 
 How you contribute to a repo will depend on whether you have read/write access. If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
 
 Note: the advantage of using an organization over user account for "Shared Repository" Model is that an organization can have teams/permissions across projects, not just one owner/repo as is the case with a user account "Shared Repository"
+
+Tip: You have to have read/write access to push directly to a repository
 
 </td></tr>
 
@@ -219,12 +223,12 @@ Note: the advantage of using an organization over user account for "Shared Repos
 
 ### Doing Multiple Things at Once
 
-There is an overall theme to this talk. The theme is about doing multiple things at once. 
+There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple activities. 
 * Keep your code up-to-date
 * Create one or more features
 * Do code review
 
-The way to do multiple things at once is to use "branches". As you take on more responsibility, branches will give you more freedom. If you learn to use branches, you've won half the battle. 
+You can switch between multiple activities by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
