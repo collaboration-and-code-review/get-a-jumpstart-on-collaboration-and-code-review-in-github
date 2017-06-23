@@ -333,7 +333,6 @@ Otherwise, shared repository settings are similar
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 21]()
@@ -348,6 +347,8 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to fork the repo before you clone it
 * You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
 
+I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review.  
+
 </td></tr>
 
 
@@ -357,9 +358,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 </td><td>
 
-### Branch Process
-
-I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review.  
+### Additional Commits
 
 </td></tr>
 
@@ -367,6 +366,17 @@ I want to point out that you can create a branch through the browser, but I will
 <tr><td width="30%">
 
 ![Slide 23]()
+
+</td><td>
+
+### How to Add Additional Commits
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 24]()
 
 </td><td>
 
@@ -379,7 +389,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 25]()
 
 </td><td>
 
@@ -390,7 +400,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 26]()
 
 </td><td>
 
@@ -401,7 +411,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 27]()
 
 </td><td>
 
@@ -416,7 +426,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 28]()
 
 </td><td>
 
@@ -435,7 +445,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 29]()
 
 </td><td>
 
@@ -450,7 +460,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 30]()
 
 </td><td>
 
@@ -461,7 +471,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 31]()
 
 </td><td>
 
@@ -472,7 +482,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 32]()
 
 </td><td>
 
@@ -483,7 +493,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 33]()
 
 </td><td>
 
@@ -496,7 +506,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 34]()
 
 </td><td>
 
@@ -507,7 +517,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 35]()
 
 </td><td>
 
@@ -520,7 +530,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 36]()
 
 </td><td>
 
