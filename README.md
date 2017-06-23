@@ -60,6 +60,8 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 * Project Manager
 * Web Designer and Developer
 
+I hope you've had a chance to take a good look at the DjangoCon website. I'm so proud of what the team has accomplished. It's truly a beautiful website.
+
 </td></tr>
 
 
@@ -84,7 +86,7 @@ Let’s pretend we’re going on a journey. The journey is to learn collaboratio
 
 ### I've Made this Journey Before
 
-When you complete a journey, looking back, sometimes you have learned things. If I were to start my journey over again, I would do things differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
+When you complete a journey, looking back, sometimes you have learned things. If I were to start my journey over again, I would do things differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
 
 </td></tr>
 
@@ -204,7 +206,7 @@ I will be focusing on the workflow, but there are tons of tutorials out there fo
 
 What are Git and GitHub?
 
-High level explanation: You install Git on your computer and create a GitHub account. You can then transfer (clone or push) files back and forth between your computer and GitHub. Git will record every change you commit to the files. 
+High level explanation: You install Git on your computer and create a GitHub account. Git is a version control system and GitHub is a web-based dashboard for using it. You can store code in a GitHub repo, then clone or download the repo onto your personal computer, change the files, then push the changes back to the repo on GitHub. Meanwhile, other people can add their own changes. Git will record every change to the files, including when there is a conflict. 
 
 </td></tr>
 
@@ -348,6 +350,11 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
 
 I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review.  
+
+<!--
+folder name will be the repo name
+origin
+-->
 
 </td></tr>
 
