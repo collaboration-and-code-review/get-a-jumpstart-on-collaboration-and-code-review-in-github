@@ -231,12 +231,41 @@ You can switch between multiple tasks by using "branches". If you learn to use b
 
 ### How? By Using Branches!
 
+What is a branch?
+
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 15]()
+
+</td><td>
+
+### Not-Scalable Workflow
+
+* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add follow-on commits. 
+
+* Clone organizational repo, make changes directly into the branch you want to change, push to branch. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
+### Best Practice Workflow
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 17]()
 
 </td><td>
 
