@@ -299,6 +299,11 @@ Note: the advantage of using an organization over user account for "Shared Repos
 
 Tip: You have to have read/write access to push directly to a repository
 
+<!--
+Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
+Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
+-->
+
 </td></tr>
 
 
