@@ -165,7 +165,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 </td><td>
 
-### Getting Started
+### A Few Notes
 
 What are Git and GitHub?
 
@@ -175,6 +175,19 @@ What are Git and GitHub?
 <tr><td width="30%">
 
 ![Slide 11]()
+
+</td><td>
+
+### Getting Started
+
+What are Git and GitHub?
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
 
 </td><td>
 
@@ -193,7 +206,7 @@ Note: the advantage of using an organization over user account for "Shared Repos
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -211,7 +224,7 @@ The way to do multiple things at once is to use "branches". As you take on more 
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
 
 </td><td>
 
@@ -224,7 +237,7 @@ Regardless of which collaborative development model you use, the process for dea
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -237,7 +250,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -250,7 +263,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -261,7 +274,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -272,7 +285,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 19]()
 
 </td><td>
 
@@ -287,7 +300,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 20]()
 
 </td><td>
 
@@ -306,7 +319,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 21]()
 
 </td><td>
 
@@ -321,7 +334,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 22]()
 
 </td><td>
 
@@ -332,7 +345,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
@@ -343,7 +356,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 24]()
 
 </td><td>
 
@@ -354,7 +367,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 25]()
 
 </td><td>
 
@@ -367,7 +380,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 26]()
 
 </td><td>
 
@@ -378,7 +391,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 27]()
 
 </td><td>
 
@@ -391,11 +404,13 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 28]()
 
 </td><td>
 
-### Thank You and Happy Coding :)
+### Thank You :)
+
+Useful Resources: 
 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
