@@ -187,6 +187,10 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 ### Prerequisite Checklist
 
+<!--
+I will be focusing on the workflow, but there are tons of tutorials out there for how to get started. There are fewer for what I am going to explain. Example of something that varies by operating system- some operating systems do not use dollar signs as command line prompts.
+-->
+
 </td></tr>
 
 
@@ -211,6 +215,17 @@ High level explanation: You install Git on your computer and create a GitHub acc
 
 </td><td>
 
+### Browser Versus Command Line
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 14]()
+
+</td><td>
+
 ### Switching Between Multiple Tasks
 
 There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
@@ -225,7 +240,7 @@ You can switch between multiple tasks by using "branches". If you learn to use b
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -238,11 +253,13 @@ What is a branch?
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
 ### Example of a Not-Scalable Workflow
+
+There are a few problems with this workflow. 
 
 * Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add follow-on commits. 
 
@@ -253,7 +270,7 @@ What is a branch?
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -264,7 +281,7 @@ What is a branch?
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -287,7 +304,7 @@ Tip: You have to have read/write access to push directly to a repository
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 19]()
 
 </td><td>
 
@@ -298,11 +315,15 @@ Tip: You have to have read/write access to push directly to a repository
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 20]()
 
 </td><td>
 
 ### Read/Write Access Examples
+
+An organization can have teams and permissions; team members working across multiple projects
+User account owner can give collaborators read/write access to a repo
+Otherwise, shared repository settings are similar
 
 </td></tr>
 
@@ -310,7 +331,7 @@ Tip: You have to have read/write access to push directly to a repository
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 21]()
 
 </td><td>
 
@@ -327,7 +348,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 22]()
 
 </td><td>
 
@@ -340,7 +361,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 23]()
 
 </td><td>
 
@@ -353,7 +374,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 24]()
 
 </td><td>
 
@@ -364,7 +385,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 25]()
 
 </td><td>
 
@@ -375,7 +396,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 26]()
 
 </td><td>
 
@@ -390,7 +411,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 27]()
 
 </td><td>
 
@@ -409,7 +430,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 28]()
 
 </td><td>
 
@@ -424,7 +445,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 29]()
 
 </td><td>
 
@@ -435,7 +456,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 30]()
 
 </td><td>
 
@@ -446,7 +467,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 31]()
 
 </td><td>
 
@@ -457,7 +478,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 32]()
 
 </td><td>
 
@@ -470,7 +491,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 33]()
 
 </td><td>
 
@@ -481,7 +502,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 34]()
 
 </td><td>
 
@@ -494,7 +515,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 35]()
 
 </td><td>
 
