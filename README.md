@@ -69,9 +69,9 @@ I'm thrilled to have the opportunity to talk to you about getting a jumpstart on
 
 </td><td>
 
-### Let’s Pretend We’re Going on a Journey
+### The Journey
 
-The journey is to learn collaboration and code review. 
+Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. 
 
 </td></tr>
 
@@ -82,7 +82,7 @@ The journey is to learn collaboration and code review.
 
 </td><td>
 
-### I've Made this Journey Before and You Probably Haven't
+### I've Made this Journey Before
 
 When you complete a journey, looking back, sometimes you have learned things. If I were to start my journey over again, I would do things differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, and hopefully you will get started more quickly than me.
 
@@ -97,10 +97,9 @@ When you complete a journey, looking back, sometimes you have learned things. If
 
 ### What is the Destination?
 
-Collaboration and code review are valuable skills that you can use these skills in an unlimited number of situations. GitHub is a popular place for open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
+Greater autonomy. Collaboration and code review are valuable skills that you can use these skills in an unlimited number of situations. GitHub is a popular place for open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
 
 Some benefits of learning collaboration and code review
-* Greater autonomy
 * If you are a student: being prepared for your studies and career
 * If a developer: perhaps you can get a promotion
 * In general: you can make cool stuff, make choices that influence product
@@ -114,7 +113,7 @@ Some benefits of learning collaboration and code review
 
 </td><td>
 
-### How My Journey Began
+### How My Own Journey Began
 
 When I first signed up for GitHub, I felt a bit intimidated. My account sat unused for months.
 
@@ -155,6 +154,7 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 
 ### What This Talk Is and Is Not
 
+There are many variations to how things can be done in GitHub. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is not about communicating to you all of those variations. This talk is about teaching you the essential process so that you can get started quickly. 
 
 </td></tr>
 
