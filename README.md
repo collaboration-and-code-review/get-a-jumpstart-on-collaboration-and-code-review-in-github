@@ -302,6 +302,18 @@ Tip: You have to have read/write access to push directly to a repository
 
 </td><td>
 
+### Read/Write Access Examples
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
 ### Branch Process: Virtually the Same
 
 The process for dealing with branches is very similar, regardless of which collaborative development model you are using.
