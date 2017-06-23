@@ -267,6 +267,14 @@ There are a few problems with this workflow.
 
 * Clone organizational repo, make changes directly into the branch you want to change, push to branch. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request. 
 
+<!--
+* Fork an organizational/user account repo, perhaps clone locally
+* Go to the fork, which will be in your user account, perhaps clone locally
+* Go directly into the forked branch you are contributing to
+* Make change, push back to GitHub if needed
+* Submit pull request
+-->
+
 </td></tr>
 
 
