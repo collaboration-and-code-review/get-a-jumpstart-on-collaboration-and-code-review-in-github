@@ -71,9 +71,9 @@ I hope you've had a chance to take a good look at the DjangoCon website. I'm so 
 
 </td><td>
 
-### The Journey
+### What This Talk Is and Is Not
 
-Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. 
+There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is about teaching you the essential process so that you can get started as quickly as possible. 
 
 </td></tr>
 
@@ -84,9 +84,9 @@ Let’s pretend we’re going on a journey. The journey is to learn collaboratio
 
 </td><td>
 
-### I've Made this Journey Before
+### The Journey
 
-When you complete a journey, looking back, sometimes you have learned things. If I were to start my journey over again, I would do things differently from the beginning, knowing what I know now. I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
+Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. 
 
 </td></tr>
 
@@ -97,14 +97,11 @@ When you complete a journey, looking back, sometimes you have learned things. If
 
 </td><td>
 
-### What is the Destination?
+### I've Made this Journey Before
 
-Greater autonomy. Collaboration and code review are valuable skills that you can use these skills in an unlimited number of situations. GitHub is a popular place for open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
+When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
 
-Some benefits of learning collaboration and code review
-* If you are a student: being prepared for your studies and career
-* If a developer: perhaps you can get a promotion
-* In general: you can make cool stuff, make choices that influence product
+I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
 
 </td></tr>
 
@@ -115,9 +112,13 @@ Some benefits of learning collaboration and code review
 
 </td><td>
 
-### How My Own Journey Began
+### What is the Destination?
 
-When I first signed up for GitHub, I felt a bit intimidated. My account sat unused for months.
+Do you remember a time before you were interested in building things with code? There is a lot of power and value in the ability to make things. You can apply collaboration and code review skills in an unlimited number of situations. GitHub is a very popular place to work on open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
+Some benefits of learning collaboration and code review
+* If you are a student: being prepared for your studies and career
+* If a developer: perhaps you can get a promotion
+* In general: you can make cool stuff, make choices that influence product
 
 </td></tr>
 
@@ -125,6 +126,19 @@ When I first signed up for GitHub, I felt a bit intimidated. My account sat unus
 <tr><td width="30%">
 
 ![Slide 7]()
+
+</td><td>
+
+### How My Own Journey Began
+
+I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good idea. But my account sat unused for months. I felt a bit intimidated and I didn't know how to get started. Later on in this talk, I will debunk some of the myths that I believed at the time. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 8]()
 
 </td><td>
 
@@ -137,28 +151,19 @@ One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan
 
 <tr><td width="30%">
 
-![Slide 8]()
+![Slide 9]()
 
 </td><td>
 
 ### The One Sentence that Motivated Me to Start Using GitHub
 
-I was looking through the Taco Fancy repo and saw one sentence made a big impact on me: "Are You New to Github But Want to Contribute?" I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I really didn't quite know what I was doing, but I was extremely motivated. I struggled through and submitted a pull request. 
+I was looking through the Taco Fancy repo and saw one sentence made a big impact on me: "Are You New to Github But Want to Contribute?" I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted a pull request on November 3, 2013, which was about 7 months after I joined GitHub
 
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 9]()
 
-</td><td>
-
-### What This Talk Is and Is Not
-
-There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is about teaching you the essential process so that you can get started as quickly as possible. 
-
-</td></tr>
 
 
 <tr><td width="30%">
