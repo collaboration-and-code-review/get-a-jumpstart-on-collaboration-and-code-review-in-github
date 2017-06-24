@@ -188,19 +188,12 @@ It would take almost 3 more years for me to begin doing code review. Now that I 
 ### A Few Notes
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
-* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”
+* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
-
 <!--
-* The examples I will be using will focus on public, organizational repos and the "Shared Repository Model" because organizational repos are where most code review happens, but many of the concepts could also be applied to user account collaboration (which I think is lesser known)
-
-* [GitHub](https://github.com) examples
-* [Bitbucket](https://bitbucket.org)
-* [GitHub Help](https://help.github.com)
-
-(Example: Not all command lines use $)
+Example of something that varies by operating system- some operating systems do not use dollar signs $ as command line prompts.
 -->
 
 </td></tr>
@@ -220,8 +213,19 @@ It would take almost 3 more years for me to begin doing code review. Now that I 
 * The ability to navigate via terminal would be helpful (example: know how to change directory)
 
 <!--
-I will be focusing on the workflow, but there are tons of tutorials out there for how to get started. There are fewer for what I am going to explain. Example of something that varies by operating system- some operating systems do not use dollar signs as command line prompts.
+There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
+
+</td><td>
+
+### Browser Versus Command Line
 
 </td></tr>
 
@@ -238,18 +242,118 @@ What are Git and GitHub?
 
 High level explanation: You install Git on your computer and create a GitHub account. Git is a version control system and GitHub is a web-based dashboard for using it. You can store code in a GitHub repo, then clone or download the repo onto your personal computer, change the files, then push the changes back to the repo on GitHub. Meanwhile, other people can add their own changes. Git will record every change to the files, including when there is a conflict. 
 
+I kind of think of GitHub as being like Facebook for developers. You have a profile and a newsfeed. 
+
+What is a repo?
+What is an organizational account?
+What is a fork?
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### Read/Write Access
+
+An important concept in GitHub: What do you have read/write access to?
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### User Versus Organizational Account
+
+* many of the concepts could also be applied to user account collaboration (which I think is lesser known)
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 21]()
+
+</td><td>
+
+### Read/Write Access Examples
+
+* When you create a user account and create a repo for yourself, you will have read/right access as the owner
+* This is lesser known, but you can give other GitHub users read/write access to a repo in your user account to collaborate
+* Probably, the most common example of read/rite access: a GitHub user can be given read/write access to an organizational repo to collaborate in a repo or across multiple repos
+
+<!--
+* User account and organizational account repos have similar shared repository settings; the main difference is that with a user account, the collaborators have access to one repo, with an organizational account- teams and permissions, with team members working across multiple projects
+-->
+
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 20]()
 
 </td><td>
 
-### Browser Versus Command Line
+### Why Does Read/Write Access Matter?
+
+The way you contribute to a project depends on whether you have read/write access to it. It doesn't matter what type of repo you are contributing to (your own, someone else's user account repo, or an organizational account repo).  
 
 </td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### Two Collaborative Development Models
+
+This leads us to collaborative development models. Collaborative development model is just a fancy term for ways that people work on software together. 
+
+There are two collaborative development models: 
+* “Fork and Pull” Model
+* “Shared Repository” Model (usually an organization but could also be a user account repo)
+
+How you contribute to a repo will depend on whether you have read/write access. If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
+
+Note: the advantage of using an organization over user account for "Shared Repository" Model is that an organization can have teams/permissions across projects, not just one owner/repo as is the case with a user account "Shared Repository"
+
+Tip: You have to have read/write access to push directly to a repository
+
+<!--
+Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
+Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
+-->
+
+</td></tr>
+
+
+
+
+It's an exact copy at the time that it is forked, in your account, under your user name, you can make any change to it, you are the only person with read/write access to it
+
+
+<!--
+Read write access
+The repo will be a remote- origin is automatically assigned as the remote where you cloned from
+When you push to origin, it will go to where you cloned from
+If you have read/write access to the repo you are contributing to, the origin is probably the repo
+If you do not have read/write access to the repo you are contributing to, the origin is probably a fork
+-->
 
 
 <tr><td width="30%">
@@ -315,60 +419,6 @@ There are a few problems with this workflow.
 </td><td>
 
 ### Best Practice Workflow
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 19]()
-
-</td><td>
-
-### Two Collaborative Development Models
-
-Collaborative Development Model is a fancy term for how people work together
-
-There are two collaborative development models: 
-* “Fork and Pull” Model
-* “Shared Repository” Model (usually an organization but could also be a user account repo)
-
-How you contribute to a repo will depend on whether you have read/write access. If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
-
-Note: the advantage of using an organization over user account for "Shared Repository" Model is that an organization can have teams/permissions across projects, not just one owner/repo as is the case with a user account "Shared Repository"
-
-Tip: You have to have read/write access to push directly to a repository
-
-<!--
-Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
-Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 20]()
-
-</td><td>
-
-### Read/Write Access
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 21]()
-
-</td><td>
-
-### Read/Write Access Examples
-
-An organization can have teams and permissions; team members working across multiple projects
-User account owner can give collaborators read/write access to a repo
-Otherwise, shared repository settings are similar
 
 </td></tr>
 
@@ -593,6 +643,10 @@ Useful Resources:
 </table>
 
 ## Useful Resources
+
+GitHub and Bitbucket
+* [GitHub](https://github.com) examples
+* [Bitbucket](https://bitbucket.org)
 
 Git Official 
 * [Git Homepage](https://git-scm.com)
