@@ -86,24 +86,12 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 ### The Journey
 
-Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 5]()
-
-</td><td>
-
-### Missing the Forest for the Trees
-
 <!--
+issing the Forest for the Trees
 You can miss the larger picture by focusing on the details. 
 -->
 
-I've Made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
+Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. I've Made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
 
 I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
 
@@ -112,7 +100,7 @@ I want to impart some of my knowledge to you, to save you the time and frustrati
 
 <tr><td width="30%">
 
-![Slide 6]()
+![Slide 5]()
 
 </td><td>
 
@@ -129,7 +117,7 @@ Some benefits of learning collaboration and code review
 
 <tr><td width="30%">
 
-![Slide 7]()
+![Slide 6]()
 
 </td><td>
 
@@ -142,7 +130,7 @@ I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good i
 
 <tr><td width="30%">
 
-![Slide 8]()
+![Slide 7]()
 
 </td><td>
 
@@ -155,7 +143,7 @@ One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan
 
 <tr><td width="30%">
 
-![Slide 9]()
+![Slide 8]()
 
 </td><td>
 
@@ -168,7 +156,7 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 9]()
 
 </td><td>
 
@@ -181,7 +169,7 @@ It would take almost 3 more years for me to begin doing code review. Now that I 
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 10]()
 
 </td><td>
 
@@ -193,7 +181,7 @@ It would take almost 3 more years for me to begin doing code review. Now that I 
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
 <!--
-Example of something that varies by operating system- some operating systems do not use dollar signs $ as command line prompts.
+Example- some operating systems do not use dollar signs $ as command line prompts.
 -->
 
 </td></tr>
@@ -240,61 +228,12 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 
 What are Git and GitHub?
 
-High level explanation: You install Git on your computer and create a GitHub account. Git is a version control system and GitHub is a web-based dashboard for using it. You can store code in a GitHub repo, then clone or download the repo onto your personal computer, change the files, then push the changes back to the repo on GitHub. Meanwhile, other people can add their own changes. Git will record every change to the files, including when there is a conflict. 
-
-I kind of think of GitHub as being like Facebook for developers. You have a profile and a newsfeed. 
-
-What is a repo?
-What is an organizational account?
-What is a fork?
-
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 20]()
-
-</td><td>
-
-### Read/Write Access
-
-An important concept in GitHub: What do you have read/write access to?
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 20]()
-
-</td><td>
-
-### User Versus Organizational Account
-
-* many of the concepts could also be applied to user account collaboration (which I think is lesser known)
-
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 21]()
-
-</td><td>
-
-### Read/Write Access Examples
-
-* When you create a user account and create a repo for yourself, you will have read/right access as the owner
-* This is lesser known, but you can give other GitHub users read/write access to a repo in your user account to collaborate
-* Probably, the most common example of read/rite access: a GitHub user can be given read/write access to an organizational repo to collaborate in a repo or across multiple repos
+High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjuction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
 <!--
-* User account and organizational account repos have similar shared repository settings; the main difference is that with a user account, the collaborators have access to one repo, with an organizational account- teams and permissions, with team members working across multiple projects
+Recap:
+What is a repo?
+What is a fork?
 -->
 
 </td></tr>
@@ -302,35 +241,70 @@ An important concept in GitHub: What do you have read/write access to?
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 14]()
 
 </td><td>
 
-### Why Does Read/Write Access Matter?
+### Read/Write Access and Why It Matters
 
-The way you contribute to a project depends on whether you have read/write access to it. It doesn't matter what type of repo you are contributing to (your own, someone else's user account repo, or an organizational account repo).  
+An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? Why does it matter? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
 
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### Read/Write Access Examples
+
+* A repo you have created in your own user account (you have read/write access as the owner)
+* A repo in someone else's user account that the owner has given you read/write access to as a collaborator (less common)
+* A repo in an organizational account that an owner has give you read/write access to as a maintainer (more common)
+
+</td></tr>
+
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 16]()
+
+</td><td>
+
+### User Versus Organizational Account
+
+Using an organizational account rather than a user account for collaboration has some advantages:
+* With a user account, one owner and the collaborators have access to one repo
+* With an organizational account, owner(s) can create teams and permissions, with team members working across multiple repos
+* Otherwise, the repo shared repository settings are similar
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
 
 </td><td>
 
 ### Two Collaborative Development Models
 
-This leads us to collaborative development models. Collaborative development model is just a fancy term for ways that people work on software together. 
+This leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have read/write access.
 
 There are two collaborative development models: 
 * “Fork and Pull” Model
-* “Shared Repository” Model (usually an organization but could also be a user account repo)
+* “Shared Repository” Model
 
-How you contribute to a repo will depend on whether you have read/write access. If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
+</td></tr>
 
-Note: the advantage of using an organization over user account for "Shared Repository" Model is that an organization can have teams/permissions across projects, not just one owner/repo as is the case with a user account "Shared Repository"
+
+
+
+ (like I said, this is usually an organization but could also be a user account repo)
+ 
+If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
 
 Tip: You have to have read/write access to push directly to a repository
 
@@ -338,10 +312,6 @@ Tip: You have to have read/write access to push directly to a repository
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
 -->
-
-</td></tr>
-
-
 
 
 It's an exact copy at the time that it is forked, in your account, under your user name, you can make any change to it, you are the only person with read/write access to it
