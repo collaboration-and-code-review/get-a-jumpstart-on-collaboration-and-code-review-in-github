@@ -162,13 +162,23 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 </td></tr>
 
 
+<tr><td width="30%">
 
+![Slide 10]()
+
+</td><td>
+
+### 3 More Years to Do Code Review
+
+It would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. 
+
+</td></tr>
 
 
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 11]()
 
 </td><td>
 
