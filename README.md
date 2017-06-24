@@ -73,7 +73,7 @@ I hope you've had a chance to take a good look at the DjangoCon website. I'm so 
 
 ### What This Talk Is and Is Not
 
-There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is about teaching you the essential process so that you can get started as quickly as possible. 
+There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
 
 </td></tr>
 
@@ -97,9 +97,13 @@ Let’s pretend we’re going on a journey. The journey is to learn collaboratio
 
 </td><td>
 
-### I've Made this Journey Before
+### Missing the Forest for the Trees
 
-When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
+<!--
+You can miss the larger picture by focusing on the details. 
+-->
+
+I've Made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
 
 I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
 
@@ -168,12 +172,11 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 
 </td><td>
 
-### 3 More Years to Do Code Review
+### 3 More Years to Get Started Doing Code Review
 
-It would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. 
+It would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. This doesn't make sense in terms of the number of maintainers. 
 
 </td></tr>
-
 
 
 <tr><td width="30%">
@@ -184,11 +187,17 @@ It would take almost 3 more years for me to begin doing code review. Now that I 
 
 ### A Few Notes
 
-<!--
-* This talk uses [GitHub](https://github.com) examples (GitHub is "the world's leading software development platform"), but similar features and workflows could be found on [Bitbucket](https://bitbucket.org) or other services (which some people prefer)
+* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
+* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”
 * I will identify best practices any time possible
+* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+
+
+<!--
+* [GitHub](https://github.com) examples
+* [Bitbucket](https://bitbucket.org)
 * The examples I will be using will focus on public, organizational repos and the "Shared Repository Model" because organizational repos are where most code review happens, but many of the concepts could also be applied to user account collaboration (which I think is lesser known)
-* Some tasks vary by operating systems- check tabs at top of some [GitHub Help](https://help.github.com) pages for operating system-specific instructions
+* [GitHub Help](https://help.github.com)
 
 (Example: Not all command lines use $)
 -->
