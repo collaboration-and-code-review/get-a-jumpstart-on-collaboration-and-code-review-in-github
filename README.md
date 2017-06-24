@@ -311,7 +311,11 @@ There are two collaborative development models:
 
 If you have read/write access to the repo you want to contribute to, you can make changes directly within the repo. This is the "Shared Repository" Model. I do want to point out though that when you are made a collaborator in a project, there is often a level of trust involved. The code in the repo might be live. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request.
 
-If you do not have read/write access to the repo, you will need to make a copy of the repo in your user account to work on. This is called the "Fork and Pull" Model. 
+If you do not have read/write access to the repo, you will need to make a copy of the repo in your user account to work on and submit your pull request. This is called the "Fork and Pull" Model. 
+
+<!--
+It's an exact copy at the time that it is forked, in your account, under your user name, you can make any change to it, you are the only person with read/write access to it
+-->
 
 </td></tr>
 
@@ -328,8 +332,6 @@ There is an overall theme to this talk. In order to be able to increase your lev
 * Keep your code up-to-date
 * Create one or more features
 * Do code review
-
-You can switch between multiple tasks by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
@@ -355,7 +357,11 @@ You can switch between multiple tasks by using "branches". If you learn to use b
 
 ### Best Practice Workflow
 
-What is a branch?
+It's a best practice to use branches. You can switch between multiple tasks by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+
+What is a branch? 
+
+Within your a repo is a codebase. You can make a copy of the codebase within the repo. The copy is called a branch. When you are finished making changes to a branch, you can submit a pull request and if the pull request is accepted, your changes will be merged into the codebase. Git will replace the old part of the codebase with your changes, and keep everything else the same. Meanwhile, you can keep your codebase up to date and make unlimited new branches. When you review pull requests, the pull requests will also be in the form of branches. 
 
 <!--
 * Fork an organizational/user account repo, perhaps clone locally
@@ -373,21 +379,14 @@ What is a branch?
 
 
 
-
- (like I said, this is usually an organization but could also be a user account repo)
+<!--
+(like I said, this is usually an organization but could also be a user account repo)
  
 Tip: You have to have read/write access to push directly to a repository
 
-<!--
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
--->
 
-
-It's an exact copy at the time that it is forked, in your account, under your user name, you can make any change to it, you are the only person with read/write access to it
-
-
-<!--
 Read write access
 The repo will be a remote- origin is automatically assigned as the remote where you cloned from
 When you push to origin, it will go to where you cloned from
