@@ -194,9 +194,10 @@ It would take almost 3 more years for me to begin doing code review. Now that I 
 
 
 <!--
+* The examples I will be using will focus on public, organizational repos and the "Shared Repository Model" because organizational repos are where most code review happens, but many of the concepts could also be applied to user account collaboration (which I think is lesser known)
+
 * [GitHub](https://github.com) examples
 * [Bitbucket](https://bitbucket.org)
-* The examples I will be using will focus on public, organizational repos and the "Shared Repository Model" because organizational repos are where most code review happens, but many of the concepts could also be applied to user account collaboration (which I think is lesser known)
 * [GitHub Help](https://help.github.com)
 
 (Example: Not all command lines use $)
@@ -213,6 +214,11 @@ It would take almost 3 more years for me to begin doing code review. Now that I 
 
 ### Prerequisite Checklist
 
+* Install Git on your computer
+* Create a GitHub account online
+* Find and open your terminal (a.k.a. command line) on your computer
+* The ability to navigate via terminal would be helpful (example: know how to change directory)
+
 <!--
 I will be focusing on the workflow, but there are tons of tutorials out there for how to get started. There are fewer for what I am going to explain. Example of something that varies by operating system- some operating systems do not use dollar signs as command line prompts.
 -->
@@ -222,7 +228,7 @@ I will be focusing on the workflow, but there are tons of tutorials out there fo
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -237,7 +243,7 @@ High level explanation: You install Git on your computer and create a GitHub acc
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
 
 </td><td>
 
@@ -248,7 +254,7 @@ High level explanation: You install Git on your computer and create a GitHub acc
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -266,7 +272,7 @@ You can switch between multiple tasks by using "branches". If you learn to use b
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -279,7 +285,7 @@ What is a branch?
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -304,7 +310,7 @@ There are a few problems with this workflow.
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -315,7 +321,7 @@ There are a few problems with this workflow.
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 19]()
 
 </td><td>
 
@@ -343,7 +349,7 @@ Typical situation/process: a user has been given read/write access to an organiz
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 20]()
 
 </td><td>
 
@@ -354,7 +360,7 @@ Typical situation/process: a user has been given read/write access to an organiz
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 21]()
 
 </td><td>
 
@@ -367,9 +373,10 @@ Otherwise, shared repository settings are similar
 </td></tr>
 
 
+
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 22]()
 
 </td><td>
 
@@ -393,7 +400,7 @@ origin
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
@@ -404,7 +411,7 @@ origin
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 24]()
 
 </td><td>
 
@@ -415,7 +422,7 @@ origin
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 25]()
 
 </td><td>
 
@@ -428,7 +435,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 26]()
 
 </td><td>
 
@@ -439,7 +446,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 27]()
 
 </td><td>
 
@@ -450,7 +457,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 28]()
 
 </td><td>
 
@@ -465,7 +472,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 29]()
 
 </td><td>
 
@@ -484,7 +491,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 30]()
 
 </td><td>
 
@@ -499,7 +506,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 31]()
 
 </td><td>
 
@@ -510,7 +517,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 32]()
 
 </td><td>
 
@@ -521,7 +528,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 33]()
 
 </td><td>
 
@@ -532,7 +539,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 34]()
 
 </td><td>
 
@@ -545,7 +552,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 35]()
 
 </td><td>
 
@@ -556,7 +563,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 36]()
 
 </td><td>
 
@@ -569,7 +576,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 37]()
 
 </td><td>
 
