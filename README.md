@@ -234,6 +234,7 @@ High level explanation: Git is a version control system that you install on your
 Recap:
 What is a repo?
 What is a fork?
+What is a pull request?
 -->
 
 </td></tr>
@@ -247,7 +248,7 @@ What is a fork?
 
 ### Read/Write Access and Why It Matters
 
-An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? Why does it matter? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
+An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
 
 </td></tr>
 
@@ -291,7 +292,7 @@ Using an organizational account rather than a user account for collaboration has
 
 ### Two Collaborative Development Models
 
-This leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have read/write access.
+The question of read/write access leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have read/write access.
 
 There are two collaborative development models: 
 * “Fork and Pull” Model
@@ -300,12 +301,81 @@ There are two collaborative development models:
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 18]()
+
+</td><td>
+
+### The Differences Between the Two Collaborative Development Models
+
+If you have read/write access to the repo you want to contribute to, you can make changes directly within the repo. This is the "Shared Repository" Model. I do want to point out though that when you are made a collaborator in a project, there is often a level of trust involved. The code in the repo might be live. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request.
+
+If you do not have read/write access to the repo, you will need to make a copy of the repo in your user account to work on. This is called the "Fork and Pull" Model. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### Switching Between Multiple Tasks
+
+There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
+* Keep your code up-to-date
+* Create one or more features
+* Do code review
+
+You can switch between multiple tasks by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### Example of a Not-Scalable Workflow
+
+* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add follow-on commits. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 21]()
+
+</td><td>
+
+### Best Practice Workflow
+
+What is a branch?
+
+<!--
+* Fork an organizational/user account repo, perhaps clone locally
+* Go to the fork, which will be in your user account, perhaps clone locally
+* Go directly into the forked branch you are contributing to
+* Make change, push back to GitHub if needed
+* Submit pull request
+-->
+
+</td></tr>
+
+
+
+
+
+
 
 
  (like I said, this is usually an organization but could also be a user account repo)
  
-If you have read/write access to a repo, you can contribute directly to the repo, which is the "Shared Repository" Model. If you do not have read/write access to a repo, you will need to fork the repo to your user account, which is called the "Fork and Pull" Model. 
-
 Tip: You have to have read/write access to push directly to a repository
 
 <!--
@@ -326,71 +396,7 @@ If you do not have read/write access to the repo you are contributing to, the or
 -->
 
 
-<tr><td width="30%">
 
-![Slide 15]()
-
-</td><td>
-
-### Switching Between Multiple Tasks
-
-There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
-* Keep your code up-to-date
-* Create one or more features
-* Do code review
-
-You can switch between multiple tasks by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 16]()
-
-</td><td>
-
-### How? By Using Branches!
-
-What is a branch?
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 17]()
-
-</td><td>
-
-### Example of a Not-Scalable Workflow
-
-There are a few problems with this workflow. 
-
-* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add follow-on commits. 
-
-* Clone organizational repo, make changes directly into the branch you want to change, push to branch. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request. 
-
-<!--
-* Fork an organizational/user account repo, perhaps clone locally
-* Go to the fork, which will be in your user account, perhaps clone locally
-* Go directly into the forked branch you are contributing to
-* Make change, push back to GitHub if needed
-* Submit pull request
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 18]()
-
-</td><td>
-
-### Best Practice Workflow
-
-</td></tr>
 
 
 
@@ -414,17 +420,6 @@ I want to point out that you can create a branch through the browser, but I will
 folder name will be the repo name
 origin
 -->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 23]()
-
-</td><td>
-
-### Additional Commits
 
 </td></tr>
 
