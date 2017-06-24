@@ -87,11 +87,11 @@ There are many variations to how things can be done in GitHub. This talk is not 
 ### The Journey
 
 <!--
-issing the Forest for the Trees
+Missing the Forest for the Trees
 You can miss the larger picture by focusing on the details. 
 -->
 
-Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. I've Made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
+Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. I've made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
 
 I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
 
@@ -215,6 +215,10 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 
 ### Browser Versus Command Line
 
+<!--
+I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
+-->
+
 </td></tr>
 
 
@@ -311,11 +315,7 @@ There are two collaborative development models:
 
 If you have read/write access to the repo you want to contribute to, you can make changes directly within the repo. This is the "Shared Repository" Model. I do want to point out though that when you are made a collaborator in a project, there is often a level of trust involved. The code in the repo might be live. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request.
 
-If you do not have read/write access to the repo, you will need to make a copy of the repo in your user account to work on and submit your pull request. This is called the "Fork and Pull" Model. 
-
-<!--
-It's an exact copy at the time that it is forked, in your account, under your user name, you can make any change to it, you are the only person with read/write access to it
--->
+If you do not have read/write access to the repo you want to contribute to, you will need to make a copy of the repo, called a fork, in your user account to work on and submit your pull request. This is called the "Fork and Pull" Model. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
 
 </td></tr>
 
@@ -363,7 +363,31 @@ What is a branch?
 
 Within your a repo is a codebase. You can make a copy of the codebase within the repo. The copy is called a branch. When you are finished making changes to a branch, you can submit a pull request and if the pull request is accepted, your changes will be merged into the codebase. Git will replace the old part of the codebase with your changes, and keep everything else the same. Meanwhile, you can keep your codebase up to date and make unlimited new branches. When you review pull requests, the pull requests will also be in the form of branches. 
 
+</td></tr>
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 22]()
+
+</td><td>
+
+### Branch Process
+
+The process for working with branches is very similar for anyone, regardless of which collaborative development model you are using.
+
+The two main differences are that if you are using the "Fork and Pull" Model:
+* You need to fork the repo before you clone it
+* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+
 <!--
+folder name will be the repo name
+origin
+
+Switch perspective
 * Fork an organizational/user account repo, perhaps clone locally
 * Go to the fork, which will be in your user account, perhaps clone locally
 * Go directly into the forked branch you are contributing to
@@ -372,12 +396,6 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 -->
 
 </td></tr>
-
-
-
-
-
-
 
 <!--
 (like I said, this is usually an organization but could also be a user account repo)
@@ -393,34 +411,6 @@ When you push to origin, it will go to where you cloned from
 If you have read/write access to the repo you are contributing to, the origin is probably the repo
 If you do not have read/write access to the repo you are contributing to, the origin is probably a fork
 -->
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 22]()
-
-</td><td>
-
-### Branch Process: Virtually the Same
-
-The process for dealing with branches is very similar, regardless of which collaborative development model you are using.
-
-The two main differences are that if you are using the "Fork and Pull" Model:
-* You need to fork the repo before you clone it
-* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
-
-I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review.  
-
-<!--
-folder name will be the repo name
-origin
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -441,6 +431,10 @@ origin
 </td><td>
 
 ### Code Review
+
+<!--
+Switch perspective
+-->
 
 If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via Forked Repo Model (remote branch) or Shared Repo Model.  
 
