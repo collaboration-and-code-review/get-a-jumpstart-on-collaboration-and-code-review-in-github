@@ -201,6 +201,8 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 * The ability to navigate via terminal would be helpful (example: know how to change directory)
 
 <!--
+Text editor? 
+
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 -->
 
@@ -384,24 +386,42 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to fork the repo before you clone it
 * You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
 
-Change directory
+Change directory (folder name will be the repo name)
 
 ```bash
 $ cd <repo-name>
 ```
 
-Verify Which Branch You Are Checked Out On
+Verify which branch you are checked out on
 
 ```bash
 $ git branch
 ```
 
+Create and switch to a branch (note how local files switch to the files of the branch you switch to)
+
+```bash
+$ git checkout -b <branch-name>
+```
+
+Add, commit, create a message
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
+
+Push branch to GitHub
+
+```bash
+$ git push origin <branch-name>
+```
+
 </td></tr>
 
 
-<!--
-folder name will be the repo name
 
+<!--
 Switch perspective
 * Fork an organizational/user account repo, perhaps clone locally
 * Go to the fork, which will be in your user account, perhaps clone locally
