@@ -384,6 +384,18 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to fork the repo before you clone it
 * You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
 
+Change directory
+
+```bash
+$ cd <repo-name>
+```
+
+Verify Which Branch You Are Checked Out On
+
+```bash
+$ git branch
+```
+
 </td></tr>
 
 
