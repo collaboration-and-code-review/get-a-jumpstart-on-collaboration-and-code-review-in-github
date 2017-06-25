@@ -195,7 +195,9 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 ### Getting Help
 
 <!--
-* [Using Keyboard Shortcuts](https://help.github.com/articles/using-keyboard-shortcuts)
+- [ ] Find Git, GitHub Help and Guides
+- [ ] Find Keyboard Shortcuts (type "?")
+- [ ] Find help via command line
 -->
 
 </td></tr>
@@ -215,9 +217,10 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 * The ability to navigate via terminal would be helpful (example: know how to change directory)
 * You might also want to have a text editor of your choice installed, to use to edit files
 
+There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
+
 <!--
 Bash command list, text editor recommendations
-There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 -->
 
 </td></tr>
@@ -733,6 +736,14 @@ $ git branch -D  <branch-name>
 </td><td>
 
 ### Should Your Project Use a Develop Branch?
+
+<!--
+# Making Workflow Decisions
+
+- [ ] Look at an example of master only versus master/develop, production/staging
+- [ ] Decide a workflow
+- [ ] If will have both master and develop branch, choose default branch
+-->
 
 Some projects will involve both a master and develop branch. For example, a mission critical project with a high volume of users is likely to use a develop branch and staging to gate-keep updates before going live. Use the workflow that is right for the projects. They all have pros and cons. 
 
