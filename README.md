@@ -401,13 +401,18 @@ Switch perspective
 * Go directly into the forked branch you are contributing to
 * Make change, push back to GitHub if needed
 * Submit pull request
--->
+
+Tip: You have to have read/write access to push directly to a repository
+
+Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
+Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
 
 The process for working with branches is very similar, regardless of which collaborative development model you are using. Parts of this process can also be used during code review.
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to fork the repo before you clone it
 * You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+-->
 
 Clone an organizational repo (organizational repo will be "origin")
 
@@ -455,17 +460,6 @@ $ git push origin <branch-name>
 </td></tr>
 
 
-
-<!--
-Tip: You have to have read/write access to push directly to a repository
-
-Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
-Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
--->
-
-
-
-
 <tr><td width="30%">
 
 ![Slide 24]()
@@ -474,7 +468,20 @@ Typical situation/process: a user has been given read/write access to an organiz
 
 ### How to Add Additional Commits
 
-To add additional commits, simply make your changes, add, commit, leave a message, and push to the branch again. If you have already made a pull request, the additional commit will be added to your pull request. 
+The process is the same as earlier. You need to have read/write access to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request. 
+
+Add, commit, create a message
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
+
+Push branch to GitHub
+
+```bash
+$ git push origin <branch-name>
+```
 
 </td></tr>
 
