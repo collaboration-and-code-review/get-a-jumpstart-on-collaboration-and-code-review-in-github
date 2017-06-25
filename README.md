@@ -73,7 +73,9 @@ I hope you've had a chance to take a good look at the DjangoCon website. I'm so 
 
 ### What This Talk Is and Is Not
 
-There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
+This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
+
+There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
 
 </td></tr>
 
@@ -87,7 +89,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 ### The Journey
 
 <!--
-There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture.
+There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture. I think quite often, when people are using Git and GitHub, they are focusing on the details and missing the larger picture. 
 -->
 
 Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. I've made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
@@ -198,6 +200,10 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 * Help via GitHub Keyboard Shortcuts (type "?")
 * Help via command line
 
+<!--
+Git command line help
+-->
+
 </td></tr>
 
 
@@ -232,8 +238,10 @@ Bash command list, text editor recommendations
 
 ### Browser Versus Command Line
 
+I want to point out that even though there are some tools such as GitHub Desktop or Hub that will give you a dashboard or make using the command line easier, I recommend learning git like normal through the command line first. For one thing, you can do everything Git-related through the command line. 
+
 <!--
-GitHub desktop, Hub
+In some instances, you do not need to work locally. Some things can be done through browser. 
 
 I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
 -->
@@ -273,11 +281,10 @@ What is a pull request?
 
 An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
 
-What does read/write access allow you to do? 
+What does read/write access allow you to do? Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc. 
 
 <!--
 List
-Tip: You have to have read/write access to push directly to a repository
 -->
 
 </td></tr>
@@ -341,7 +348,7 @@ There are two collaborative development models:
 
 If you have read/write access to the repo you want to contribute to, you can make changes directly within the repo. This is the "Shared Repository" Model. I do want to point out though that when you are made a collaborator in a project, there is often a level of trust involved. The code in the repo might be live. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request.
 
-If you do not have read/write access to the repo you want to contribute to, you will need to make a copy of the repo, called a fork, in your user account to work on and submit your pull request using the fork. This is called the "Fork and Pull" Model. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
+If you do not have read/write access to the repo you want to contribute to, you will need to fork the repo. A fork is a copy of the repo in your user account that you can make your proposed changed to. This is called the "Fork and Pull" Model. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
 
 </td></tr>
 
@@ -370,7 +377,7 @@ There is an overall theme to this talk. In order to be able to increase your lev
 
 ### Example of a Not-Scalable Workflow
 
-* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add follow-on commits. 
+* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add additional commits. 
 
 </td></tr>
 
@@ -392,6 +399,8 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 23]()
@@ -400,27 +409,17 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 ### General Branch Process
 
-The process for working with branches is very similar, regardless of which collaborative development model you are using. Parts of this process can also be used during code review.
+The process for working with branches is very similar for anyone, regardless of which collaborative development model (organizational repo or forked repo) you are using. Parts of this process can also be used during code review.
 
 * If you do not have read/write access to the repo you want to contribute to, fork the repo
 * Clone or download the organizational or forked repo (whatever your origin is, which I'll explain in a minute)
-* Change directory
-* Verify which branch you are checked out on
-* Create and switch to a branch (note how local files switch to the files of the branch you switch to)
-* Make your change to the files
-* Add, commit, create a message
+
 * Push branch to organizational or forked repo (whatever your origin is)
-* Submit pull request
 
 
 <!--
-# Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
-
 Switch perspective
 * URL of the repo you have read/write access to
-* Fork an organizational/user account repo, perhaps clone locally
-* Go to the fork, which will be in your user account, perhaps clone locally
-* Go directly into the forked branch you are contributing to
 
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 
@@ -459,13 +458,13 @@ When you clone a repo locally, the remote will automatically assigned the remote
 
 Perspective: 
 
-Clone an organizational repo (organizational repo will be "origin")
+Clone (or download) an organizational repo (organizational repo will be "origin")
 
 ```bash
 $ git clone https://github.com/<organization-name>/<repo-name>
 ```
 
-Clone a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
+Clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
 
 ```bash
 $ git clone https://github.com/<user-name>/<repo-name>
@@ -574,9 +573,11 @@ Like I said earlier, you, or anyone with read/write access to the branch, can co
 
 ### What Are You Doing When You Review a Pull Request?
 
-Switch perspective: now a maintainer working from within an organizational repo, with read/write access to the organiational repo, but without read/write access to a forked repo, unless permission has been given to amend a pull request.
+Switch perspective: now a maintainer working from within an organizational repo, with read/write access to the organizational repo, but without read/write access to a forked repo, unless permission has been given to amend a pull request. (In the prior situation, we were talking about users with read/write access)
 
-If you are a repo maintainer, firstly, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). You go to the pull request and look at it in the browser. The pull request is in the form of a branch. Let's say, you have the organizational repo cloned to your computer and you are working from within it. If needed, you will fetch the pull request branch to the folder and switch to it. You can then run the code and evaluate the change. An example would be a website. Within the pull request branch, you can go through the normal setup process, then run the website code. You will look at the website in your browser as it runs on a local server to literally see the change proposed by the pull request. You then decided how to proceed.  
+If you are a repo maintainer, firstly, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). You go to the pull request in the browser and look at it. In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
+
+In the less simple scenario, you will need to fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
 
 </td></tr>
 
@@ -596,6 +597,8 @@ If you are a repo maintainer, firstly, you will receive a message to let you kno
 * You run the code locally, and you think a change needs to be made; you push additional commits to the pull request
 
 <!--
+Flow chart
+
 Check out pull request, run it like normal, for instance, a website
 
 - [ ] Fetch an organizational pull request
@@ -605,8 +608,6 @@ Check out pull request, run it like normal, for instance, a website
 - [ ] Close pull request via browser
 - [ ] Close an issue via commit message by using keyword
 -->
-
-By the way, you can sometimes make a change to the pull request inside of the browser
 
 </td></tr>
 
