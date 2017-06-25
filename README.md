@@ -667,10 +667,17 @@ Push additional commits to forked repo pull request if local branch name is diff
 $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
 ```
 
+Pull updates to the individual pull request into your local branch
+
+```bash
+$ git pull origin pull/<pull-request-number>/head:<branch-name>
+```
+
 <!--
 git fetch origin pull/8/head:Mariatta-patch-1
 git push https://github.com/Mariatta/practice Mariatta-patch-1
 git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
+git pull origin pull/8/head:Mariatta-patch-1
 -->
 
 </td></tr>
