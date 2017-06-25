@@ -368,8 +368,19 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 </td></tr>
 
 
+<tr><td width="30%">
 
+![Slide 22]()
 
+</td><td>
+
+### Remotes
+
+What is origin?
+
+When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. 
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -378,13 +389,37 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 </td><td>
 
-### Branch Process
+### General Branch Process
+
+Perspective: 
+
+<!--
+Switch perspective
+* URL of the repo you have read/write access to
+* Fork an organizational/user account repo, perhaps clone locally
+* Go to the fork, which will be in your user account, perhaps clone locally
+* Go directly into the forked branch you are contributing to
+* Make change, push back to GitHub if needed
+* Submit pull request
+-->
 
 The process for working with branches is very similar, regardless of which collaborative development model you are using. Parts of this process can also be used during code review.
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to fork the repo before you clone it
 * You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+
+Clone an organizational repo (organizational repo will be "origin")
+
+```bash
+$ git clone https://github.com/<organization-name>/<repo-name>
+```
+
+Clone a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
+
+```bash
+$ git clone https://github.com/<user-name>/<repo-name>
+```
 
 Change directory (folder name will be the repo name)
 
@@ -422,13 +457,6 @@ $ git push origin <branch-name>
 
 
 <!--
-Switch perspective
-* Fork an organizational/user account repo, perhaps clone locally
-* Go to the fork, which will be in your user account, perhaps clone locally
-* Go directly into the forked branch you are contributing to
-* Make change, push back to GitHub if needed
-* Submit pull request
-
 Tip: You have to have read/write access to push directly to a repository
 
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
@@ -436,20 +464,6 @@ Typical situation/process: a user has been given read/write access to an organiz
 -->
 
 
-
-<tr><td width="30%">
-
-![Slide 22]()
-
-</td><td>
-
-### Remotes
-
-What is origin?
-
-When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. 
-
-</td></tr>
 
 
 <tr><td width="30%">
