@@ -192,6 +192,21 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 
 </td><td>
 
+### Getting Help
+
+<!--
+* [Using Keyboard Shortcuts](https://help.github.com/articles/using-keyboard-shortcuts)
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
+
+</td><td>
+
 ### Prerequisite Checklist
 
 * Install Git on your computer
@@ -210,7 +225,7 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -227,7 +242,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
 
 </td><td>
 
@@ -249,7 +264,7 @@ What is a pull request?
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 15]()
 
 </td><td>
 
@@ -269,7 +284,7 @@ Tip: You have to have read/write access to push directly to a repository
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -284,7 +299,7 @@ Tip: You have to have read/write access to push directly to a repository
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -300,7 +315,7 @@ Using an organizational account rather than a user account for collaboration has
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -317,7 +332,7 @@ There are two collaborative development models:
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 19]()
 
 </td><td>
 
@@ -332,7 +347,7 @@ If you do not have read/write access to the repo you want to contribute to, you 
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 20]()
 
 </td><td>
 
@@ -348,7 +363,7 @@ There is an overall theme to this talk. In order to be able to increase your lev
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 21]()
 
 </td><td>
 
@@ -361,7 +376,7 @@ There is an overall theme to this talk. In order to be able to increase your lev
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 22]()
 
 </td><td>
 
@@ -378,7 +393,7 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
@@ -420,7 +435,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 24]()
 
 </td><td>
 
@@ -435,7 +450,7 @@ When you clone a repo locally, the remote will automatically assigned the remote
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 25]()
 
 </td><td>
 
@@ -499,7 +514,7 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 26]()
 
 </td><td>
 
@@ -525,7 +540,7 @@ $ git push origin <branch-name>
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 27]()
 
 </td><td>
 
@@ -546,7 +561,7 @@ Like I said earlier, you, or anyone with read/write access to the branch, can co
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 28]()
 
 </td><td>
 
@@ -584,7 +599,7 @@ Check out pull request, run it like normal, for instance, a website
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 29]()
 
 </td><td>
 
@@ -620,7 +635,7 @@ git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-pat
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 30]()
 
 </td><td>
 
@@ -631,7 +646,7 @@ git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-pat
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 31]()
 
 </td><td>
 
@@ -642,11 +657,15 @@ git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-pat
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 31]()
 
 </td><td>
 
 ### Tidy Up
+
+<!--
+* [Viewing Branches in Your Repository](https://help.github.com/articles/viewing-branches-in-your-repository)
+-->
 
 * Close pull request
 * Revert pull request (if needed)
@@ -669,7 +688,7 @@ $ git branch -D  <branch-name>
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 32]()
 
 </td><td>
 
@@ -688,7 +707,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 33]()
 
 </td><td>
 
@@ -704,7 +723,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 34]()
 
 </td><td>
 
@@ -715,22 +734,40 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 35]()
 
 </td><td>
 
 ### Documentation
 
-</td></tr>
+<!--
+### Communication- General
 
+- [ ] Create and implement your communication strategy
+- [ ] Draft community guidelines
+- [ ] Get to know GitHub Flavored Markdown
 
-<tr><td width="30%">
+### Documentation- Forums
 
-![Slide 35]()
+- [ ] Understand what wikis is
+- [ ] Understand what GitHub pages/Jekyll are
+- [ ] Understand what gists are
 
-</td><td>
+### Documentation- Files
 
-### Productivity Helpers
+- [ ] Make a README.md
+- [ ] Make a LICENSE (auto-generate)
+- [ ] Make a CODE_OF_CONDUCT.md (auto-generate)
+- [ ] Make a CONTRIBUTING.md
+- [ ] Make a PITCHME.md
+
+# Issue and Pull Request Documentation
+
+- [ ] Make an ISSUE_TEMPLATE
+- [ ] Find the Issues Tab
+- [ ] Make a PULL_REQUEST_TEMPLATE
+- [ ] Find the Pull Requests Tab
+-->
 
 </td></tr>
 
@@ -738,6 +775,35 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 <tr><td width="30%">
 
 ![Slide 36]()
+
+</td><td>
+
+### Productivity Helpers
+
+<!--
+- [ ] Cache your password
+- [ ] Set up special configs (example: line endings)
+- [ ] Create saved replies
+- [ ] Link to specific line number on GitHub
+-->
+
+</td></tr>
+
+
+<!--
+What Could Go Wrong?
+Setting Up Repo Fail Safes
+- [ ] Create a repo backup (third-party softwares)
+- [ ] Protect your main branch(es)
+- [ ] Require reviews for pull requests
+- [ ] Require external status checks
+- [ ] Delete a non-important branch locally and attempt to recover it!
+- [ ] Create a dummy sensitive information file and remove it from the history
+-->
+
+<tr><td width="30%">
+
+![Slide 37]()
 
 </td><td>
 
@@ -750,7 +816,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 38]()
 
 </td><td>
 
@@ -761,26 +827,13 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 38]()
-
-</td><td>
-
-### Useful Resources 
-
-Where to find my slides:
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 39]()
+![Slide 40]()
 
 </td><td>
 
 ### Thank You :)
 
-Useful Resources: 
+Useful Resources: Bitly Link
 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
@@ -796,11 +849,21 @@ GitHub and Bitbucket
 * [GitHub](https://github.com) examples
 * [Bitbucket](https://bitbucket.org)
 
+Getting Set Up
+* [Set Up Git](https://help.github.com/articles/set-up-git)
+* [Getting Started Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Homebrew Git Formula](http://braumeister.org/formula/git)
+
 Git Official 
 * [Git Homepage](https://git-scm.com)
 * [Git Doc (Docs and Pro Git Book](https://git-scm.com/doc)
 * [Git Documentation](https://git-scm.com/documentation)
 * [Git Pro Git Book](https://git-scm.com/book/en/v2)
+
+Glossaries and Cheatsheets
+* [GitHub Glossary](https://help.github.com/articles/github-glossary)
+* [Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+* [GitHub Git Cheatsheet](https://help.github.com/articles/git-cheatsheet)
 
 GitHub Help and Training
 * [GitHub Help](https://help.github.com)
@@ -817,3 +880,19 @@ GitHub Learning Resources
 
 GitHub Open Source Guides
 * [Open Source Guides](https://opensource.guide)
+
+Collaborative Development Models and Permission Levels
+* [About Collaborative Development Models](https://help.github.com/articles/about-collaborative-development-models)
+* [Types of Collaborative Development Models](https://help.github.com/enterprise/2.7/user/articles/types-of-collaborative-development-models)
+* [Permission Levels for an Organization](https://help.github.com/articles/permission-levels-for-an-organization)
+* [Repository Permission Levels for an Organization](https://help.github.com/articles/repository-permission-levels-for-an-organization)
+* [Permission Levels for a User Account Repository](https://help.github.com/articles/permission-levels-for-a-user-account-repository)
+
+Advanced Collaborative Development Workflow Examples
+* Git Flow
+* [A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model) (more advanced)
+* [A Successful Git Branching Model Considered Harmful](https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful)
+* [SemVer](http://semver.org) (subtopic)
+
+
+* [Can I Recover Branch After its Deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git)
