@@ -486,6 +486,11 @@ $ git push origin <branch-name>
 </td></tr>
 
 
+### Submit a Pull Request
+
+</td></tr>
+
+
 <tr><td width="30%">
 
 ![Slide 25]()
@@ -494,9 +499,7 @@ $ git push origin <branch-name>
 
 ### Code Review
 
-<!--
-Switch perspective
--->
+Switch perspective: now a maintainer working from within an organizational repo, without read/write access to forked repo.
 
 If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via Forked Repo Model (remote branch) or Shared Repo Model.  
 
