@@ -87,8 +87,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 ### The Journey
 
 <!--
-Missing the Forest for the Trees
-You can miss the larger picture by focusing on the details. 
+There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture.
 -->
 
 Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. I've made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
@@ -199,10 +198,9 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 * Create a GitHub account online
 * Find and open your terminal (a.k.a. command line) on your computer
 * The ability to navigate via terminal would be helpful (example: know how to change directory)
+* You might also want to have a text editor of your choice installed, to use to edit files
 
 <!--
-Text editor? 
-
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 -->
 
@@ -255,6 +253,10 @@ What is a pull request?
 ### Read/Write Access and Why It Matters
 
 An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
+
+<!--
+What does read/write access allow you to do? List
+-->
 
 </td></tr>
 
@@ -317,7 +319,7 @@ There are two collaborative development models:
 
 If you have read/write access to the repo you want to contribute to, you can make changes directly within the repo. This is the "Shared Repository" Model. I do want to point out though that when you are made a collaborator in a project, there is often a level of trust involved. The code in the repo might be live. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request.
 
-If you do not have read/write access to the repo you want to contribute to, you will need to make a copy of the repo, called a fork, in your user account to work on and submit your pull request. This is called the "Fork and Pull" Model. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
+If you do not have read/write access to the repo you want to contribute to, you will need to make a copy of the repo, called a fork, in your user account to work on and submit your pull request using the fork. This is called the "Fork and Pull" Model. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
 
 </td></tr>
 
@@ -374,24 +376,7 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 </td><td>
 
-### Remotes
-
-What is origin?
-
-When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 22]()
-
-</td><td>
-
 ### General Branch Process
-
-Perspective: 
 
 <!--
 Switch perspective
@@ -414,6 +399,34 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
 -->
 
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 22]()
+
+</td><td>
+
+### A Note About Remotes
+
+What is origin?
+
+When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 22]()
+
+</td><td>
+
+### General Branch Process
+
+Perspective: 
+
 Clone an organizational repo (organizational repo will be "origin")
 
 ```bash
@@ -432,7 +445,7 @@ Change directory (folder name will be the repo name)
 $ cd <repo-name>
 ```
 
-Verify which branch you are checked out on
+Verify which branch you are checked out on (important if more than one branch)
 
 ```bash
 $ git branch
@@ -444,7 +457,7 @@ Create and switch to a branch (note how local files switch to the files of the b
 $ git checkout -b <branch-name>
 ```
 
-Add, commit, create a message
+Make your change to the files, then add, commit, create a message
 
 ```bash
 $ git add .
@@ -457,6 +470,8 @@ Push branch to GitHub
 $ git push origin <branch-name>
 ```
 
+There will now be a new branch in the repo. The branch will not be affecting anything else. 
+
 </td></tr>
 
 
@@ -468,7 +483,7 @@ $ git push origin <branch-name>
 
 ### How to Add Additional Commits
 
-The process is the same as earlier. You need to have read/write access to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request. 
+You can continue to push changes to the branch. Anyone else who has read/write access to the branch can also fetch it, make a change, and push to the branch too. The process is the same as earlier. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request. 
 
 Add, commit, create a message
 
@@ -490,6 +505,10 @@ $ git push origin <branch-name>
 
 </td></tr>
 
+<!--
+Message to prompt you to submit pull request
+Warning about making pull request within fork
+-->
 
 <tr><td width="30%">
 
