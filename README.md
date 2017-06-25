@@ -530,7 +530,7 @@ $ git add .
 $ git commit -m "Your note"
 ```
 
-Push changes to GitHub
+Push changes to GitHub (repo you cloned from)
 
 ```bash
 $ git push origin <branch-name>
