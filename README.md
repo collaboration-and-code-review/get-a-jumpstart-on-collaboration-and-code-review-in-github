@@ -404,7 +404,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
@@ -419,7 +419,7 @@ When you clone a repo locally, the remote will automatically assigned the remote
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 24]()
 
 </td><td>
 
@@ -477,7 +477,7 @@ There will now be a new branch in the repo. The branch will not be affecting any
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 25]()
 
 </td><td>
 
@@ -501,18 +501,25 @@ $ git push origin <branch-name>
 </td></tr>
 
 
-### Submit a Pull Request
+<tr><td width="30%">
 
-</td></tr>
+![Slide 26]()
+
+</td><td>
+
+### Submit a Pull Request
 
 <!--
 Message to prompt you to submit pull request
 Warning about making pull request within fork
 -->
 
+</td></tr>
+
+
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 27]()
 
 </td><td>
 
@@ -527,7 +534,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 28]()
 
 </td><td>
 
@@ -538,7 +545,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 29]()
 
 </td><td>
 
@@ -549,7 +556,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 30]()
 
 </td><td>
 
@@ -564,7 +571,7 @@ If you are a repo maintainer, you will receive a message to let you know there i
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 31]()
 
 </td><td>
 
@@ -583,7 +590,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 32]()
 
 </td><td>
 
@@ -598,7 +605,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 33]()
 
 </td><td>
 
@@ -609,7 +616,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 34]()
 
 </td><td>
 
@@ -620,7 +627,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 35]()
 
 </td><td>
 
@@ -631,7 +638,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 36]()
 
 </td><td>
 
@@ -644,7 +651,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 37]()
 
 </td><td>
 
@@ -655,7 +662,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 38]()
 
 </td><td>
 
@@ -668,7 +675,7 @@ Where to find my slides:
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 39]()
 
 </td><td>
 
