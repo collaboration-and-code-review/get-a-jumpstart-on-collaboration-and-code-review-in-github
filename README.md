@@ -641,6 +641,7 @@ git fetch origin
 git checkout -b instructions-pr origin/instructions-pr
 git merge master
 
+git pull origin <branch-name>
 
 Step 1: From your project repository, check out a new branch and test the changes.
 
