@@ -194,11 +194,9 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 
 ### Getting Help
 
-<!--
-- [ ] Find Git, GitHub Help and Guides
-- [ ] Find Keyboard Shortcuts (type "?")
-- [ ] Find help via command line
--->
+* Help via Git, GitHub Help and Guides
+* Help via GitHub Keyboard Shortcuts (type "?")
+* Help via command line
 
 </td></tr>
 
@@ -549,6 +547,12 @@ $ git push origin <branch-name>
 
 ### Submit a Pull Request
 
+<!--
+branch-name ... "Compare & pull request"
+base: master ... compare: branch-name
+Click "Create pull request"
+-->
+
 In the browser, go to the repo you want your pull request to be merged into. There should be a message prompting you to submit a pull request because GitHub will detect your branch. Be forewarned, that if you go to your fork instead, you can accidentally submit a pull request to yourself. 
 
 * Make sure that base corresponds to the repo and branch you want to contribute to
@@ -564,7 +568,7 @@ Like I said earlier, you, or anyone with read/write access to the branch, can co
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 28]()
 
 </td><td>
 
@@ -579,7 +583,7 @@ If you are a repo maintainer, firstly, you will receive a message to let you kno
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 29]()
 
 </td><td>
 
@@ -609,7 +613,7 @@ By the way, you can sometimes make a change to the pull request inside of the br
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 30]()
 
 </td><td>
 
@@ -624,17 +628,40 @@ I actually want to show you a slightly different way to do it that I think is ea
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 31]()
 
 </td><td>
 
 ### Simple Code Review Process
 
-Fetch the individual pull request into your folder
+<!--
+Step 1: From your project repository, bring in the changes and test.
 
-```bash
-$ git fetch origin pull/<pull-request-number>/head:<branch-name>
-```
+git fetch origin
+git checkout -b instructions-pr origin/instructions-pr
+git merge master
+
+
+Step 1: From your project repository, check out a new branch and test the changes.
+
+git checkout -b <branch-name> master
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+
+Step 2: Merge the changes and update on GitHub. (Same)
+
+git checkout master
+git merge --no-ff <branch-name>
+git push origin master
+
+
+Pull or push additional changes to pull request
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+
+Push additional changes if local branch name and pull request branch name are different
+git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
+-->
+
 
 Switch to the branch (note how local files switch to the files of the branch you switch to)
 
@@ -673,11 +700,20 @@ Pull updates to the individual pull request into your local branch
 $ git pull origin pull/<pull-request-number>/head:<branch-name>
 ```
 
+Alternatively, fetch the individual pull request into your folder
+
+```bash
+$ git fetch origin pull/<pull-request-number>/head:<branch-name>
+```
+
 <!--
 git fetch origin pull/8/head:Mariatta-patch-1
 git push https://github.com/Mariatta/practice Mariatta-patch-1
 git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
 git pull origin pull/8/head:Mariatta-patch-1
+
+git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
+git push https://github.com/Mariatta/practice.git Mariatta-patch-1
 -->
 
 </td></tr>
@@ -685,7 +721,7 @@ git pull origin pull/8/head:Mariatta-patch-1
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 32]()
 
 </td><td>
 
@@ -693,10 +729,9 @@ git pull origin pull/8/head:Mariatta-patch-1
 
 </td></tr>
 
-
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 33]()
 
 </td><td>
 
@@ -707,7 +742,7 @@ git pull origin pull/8/head:Mariatta-patch-1
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 34]()
 
 </td><td>
 
@@ -738,7 +773,7 @@ $ git branch -D  <branch-name>
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 35]()
 
 </td><td>
 
@@ -765,7 +800,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 36]()
 
 </td><td>
 
@@ -781,7 +816,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 37]()
 
 </td><td>
 
@@ -792,7 +827,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 38]()
 
 </td><td>
 
@@ -832,7 +867,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 39]()
 
 </td><td>
 
@@ -861,7 +896,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 40]()
 
 </td><td>
 
@@ -874,7 +909,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 41]()
 
 </td><td>
 
@@ -885,7 +920,7 @@ Tips for getting started:
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 42]()
 
 </td><td>
 
