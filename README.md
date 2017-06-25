@@ -556,6 +556,61 @@ Switch perspective: now a maintainer working from within an organizational repo,
 
 If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
 
+<!--
+- [ ] Fetch an organizational pull request
+- [ ] Checkout a pull request locally
+- [ ] Merge pull request via browser- regular
+- [ ] Merge pull request via browser- squash
+- [ ] Merge pull request via browser- rebase
+- [ ] Merge pull request via command line
+- [ ] Ask contributor to make a change to pull request
+- [ ] Request a review from a specific person
+- [ ] Add, commit, create a message, merge pull request via command line and push to live branch
+- [ ] Push follow-on commits to organizational pull request
+- [ ] Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
+- [ ] Close pull request via browser
+- [ ] Close an issue via commit message by using keyword
+- [ ] Delete a branch through browser
+- [ ] Delete a branch through locally
+- [ ] Revert a pull request
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 26]()
+
+</td><td>
+
+### Simple Code Review Process
+
+Switch to the branch (note how local files switch to the files of the branch you switch to)
+
+```bash
+$ git checkout <branch-name>
+```
+
+Make your change to the files, then add, commit, create a message
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
+
+Push branch to GitHub
+
+```bash
+$ git push origin <branch-name>
+```
+
+<!--
+git fetch origin pull/8/head:Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
+-->
+
 </td></tr>
 
 
