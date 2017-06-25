@@ -383,14 +383,25 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 The process for working with branches is very similar, regardless of which collaborative development model you are using. Parts of this process can also be used during code review.
 
+* If you do not have read/write access to the repo you want to contribute to, fork the repo
+* Clone or download the organizational or forked repo (this will be your origin)
+* Change directory
+* Verify which branch you are checked out on
+* Create and switch to a branch (note how local files switch to the files of the branch you switch to)
+* Make your change to the files
+* Add, commit, create a message
+* Push branch to organizational or forked repo (this will be your origin)
+* Submit pull request
+
+
 <!--
+# Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
+
 Switch perspective
 * URL of the repo you have read/write access to
 * Fork an organizational/user account repo, perhaps clone locally
 * Go to the fork, which will be in your user account, perhaps clone locally
 * Go directly into the forked branch you are contributing to
-* Make change, push back to GitHub if needed
-* Submit pull request
 
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 
@@ -459,6 +470,12 @@ Create and switch to a branch (note how local files switch to the files of the b
 $ git checkout -b <branch-name>
 ```
 
+If not working from within the branch you are branching off of, need to specify which branch branching off of
+
+```bash
+$ git checkout -b <branch-name> <branch-branching-off-of>
+```
+
 Make your change to the files, then add, commit, create a message
 
 ```bash
@@ -512,9 +529,17 @@ $ git push origin <branch-name>
 ### Submit a Pull Request
 
 <!--
+* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+
 Message to prompt you to submit pull request
 Warning about making pull request within fork
+
+- [ ] Create pull request title, description, make sure base and compare are correct
+- [ ] If forked repo- give repo maintainers permission to amend pull request
+- [ ] Create pull request
 -->
+
+Like I said earlier, you, or anyone with read/write access to the branch, can continue to make changes to the pull request until it is accepted
 
 </td></tr>
 
@@ -529,7 +554,7 @@ Warning about making pull request within fork
 
 Switch perspective: now a maintainer working from within an organizational repo, without read/write access to forked repo.
 
-If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via Forked Repo Model (remote branch) or Shared Repo Model.  
+If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
 
 </td></tr>
 
