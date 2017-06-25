@@ -561,38 +561,60 @@ Like I said earlier, you, or anyone with read/write access to the branch, can co
 
 <tr><td width="30%">
 
+![Slide 27]()
+
+</td><td>
+
+### What Are You Doing When You Review a Pull Request?
+
+Switch perspective: now a maintainer working from within an organizational repo, with read/write access to the organiational repo, but without read/write access to a forked repo, unless permission has been given to amend a pull request.
+
+If you are a repo maintainer, firstly, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). You go to the pull request and look at it in the browser. The pull request is in the form of a branch. Let's say, you have the organizational repo cloned to your computer and you are working from within it. If needed, you will fetch the pull request branch to the folder and switch to it. You can then run the code and evaluate the change. An example would be a website. Within the pull request branch, you can go through the normal setup process, then run the website code. You will look at the website in your browser as it runs on a local server to literally see the change proposed by the pull request. You then decided how to proceed.  
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 28]()
 
 </td><td>
 
-### Code Review
+### Code Review Options
 
-Switch perspective: now a maintainer working from within an organizational repo, without read/write access to forked repo.
-
-If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). 
-
-The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
+* When you look at the pull request in the browser, you can tell it can be accepted (for example a typo) and click merge
+* You run the code locally, but you do not need to make a change; you go back to the browser and click merge
+* You run the code locally, and you think a change needs to be made; you ask the contributor to update the pull request
+* You run the code locally, and you think a change needs to be made; you update the pull request branch locally (add, commit, create a message), merge the branch locally via command with the branch it is intended to change, and push to GitHub
+* You run the code locally, and you think a change needs to be made; you push additional commits to the pull request
 
 <!--
 Check out pull request, run it like normal, for instance, a website
 
 - [ ] Fetch an organizational pull request
-- [ ] Checkout a pull request locally
-- [ ] Merge pull request via browser- regular
-- [ ] Merge pull request via browser- squash
-- [ ] Merge pull request via browser- rebase
+- [ ] Merge pull request via browser- regular, squash, or rebase
 - [ ] Merge pull request via command line
-- [ ] Ask contributor to make a change to pull request
 - [ ] Request a review from a specific person
-- [ ] Add, commit, create a message, merge pull request via command line and push to live branch
-- [ ] Push follow-on commits to organizational pull request
-- [ ] Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
 - [ ] Close pull request via browser
 - [ ] Close an issue via commit message by using keyword
-- [ ] Delete a branch through browser
-- [ ] Delete a branch through locally
-- [ ] Revert a pull request
 -->
+
+By the way, you can sometimes make a change to the pull request inside of the browser
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 28]()
+
+</td><td>
+
+### Pull Request Process
+
+When you go to the pull request in the browser, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
+
+I actually want to show you a slightly different way to do it that I think is easier to understand. 
 
 </td></tr>
 
@@ -604,6 +626,12 @@ Check out pull request, run it like normal, for instance, a website
 </td><td>
 
 ### Simple Code Review Process
+
+Fetch the individual pull request into your folder
+
+```bash
+$ git fetch origin pull/<pull-request-number>/head:<branch-name>
+```
 
 Switch to the branch (note how local files switch to the files of the branch you switch to)
 
@@ -618,10 +646,22 @@ $ git add .
 $ git commit -m "Your note"
 ```
 
-Push branch to GitHub
+Push additional commits to organizational repo pull request
 
 ```bash
 $ git push origin <branch-name>
+```
+
+Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to forked repo pull request if local branch name is different than pull request branch name
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
 ```
 
 <!--
