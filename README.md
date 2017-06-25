@@ -201,6 +201,7 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 * You might also want to have a text editor of your choice installed, to use to edit files
 
 <!--
+Bash command list, text editor recommendations
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 -->
 
@@ -216,6 +217,8 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 ### Browser Versus Command Line
 
 <!--
+GitHub desktop, Hub
+
 I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
 -->
 
@@ -384,13 +387,13 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 The process for working with branches is very similar, regardless of which collaborative development model you are using. Parts of this process can also be used during code review.
 
 * If you do not have read/write access to the repo you want to contribute to, fork the repo
-* Clone or download the organizational or forked repo (this will be your origin)
+* Clone or download the organizational or forked repo (whatever your origin is, which I'll explain in a minute)
 * Change directory
 * Verify which branch you are checked out on
 * Create and switch to a branch (note how local files switch to the files of the branch you switch to)
 * Make your change to the files
 * Add, commit, create a message
-* Push branch to organizational or forked repo (this will be your origin)
+* Push branch to organizational or forked repo (whatever your origin is)
 * Submit pull request
 
 
@@ -425,7 +428,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 What is origin?
 
-When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. 
+When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. Then, you will submit a pull request from there.
 
 </td></tr>
 
@@ -489,7 +492,7 @@ Push branch to GitHub
 $ git push origin <branch-name>
 ```
 
-There will now be a new branch in the repo. The branch will not be affecting anything else. 
+There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. 
 
 </td></tr>
 
@@ -511,7 +514,7 @@ $ git add .
 $ git commit -m "Your note"
 ```
 
-Push branch to GitHub
+Push changes to GitHub
 
 ```bash
 $ git push origin <branch-name>
@@ -528,18 +531,15 @@ $ git push origin <branch-name>
 
 ### Submit a Pull Request
 
-<!--
-* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+In the browser, go to the repo you want your pull request to be merged into. There should be a message prompting you to submit a pull request because GitHub will detect your branch. Be forewarned, that if you go to your fork instead, you can accidentally submit a pull request to yourself. 
 
-Message to prompt you to submit pull request
-Warning about making pull request within fork
+* Make sure that base corresponds to the repo and branch you want to contribute to
+* Make sure compare corresponds to your branch
+* Create a pull request title and perhaps a description
+* If the pull request is via a forked repo, you might want to leave the box checked to give repo maintainers permission to amend the pull request. This gives them read/write access to the branch and later I'll explain how to amend it.
+* Create the pull request
 
-- [ ] Create pull request title, description, make sure base and compare are correct
-- [ ] If forked repo- give repo maintainers permission to amend pull request
-- [ ] Create pull request
--->
-
-Like I said earlier, you, or anyone with read/write access to the branch, can continue to make changes to the pull request until it is accepted
+Like I said earlier, you, or anyone with read/write access to the branch, can continue to make changes to the pull request until it is merged.
 
 </td></tr>
 
@@ -554,9 +554,13 @@ Like I said earlier, you, or anyone with read/write access to the branch, can co
 
 Switch perspective: now a maintainer working from within an organizational repo, without read/write access to forked repo.
 
-If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
+If you are a repo maintainer, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). When you go to the pull request, there will a set of instructions for reviewing the pull request locally (on your own computer). 
+
+The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
 
 <!--
+Check out pull request, run it like normal, for instance, a website
+
 - [ ] Fetch an organizational pull request
 - [ ] Checkout a pull request locally
 - [ ] Merge pull request via browser- regular
