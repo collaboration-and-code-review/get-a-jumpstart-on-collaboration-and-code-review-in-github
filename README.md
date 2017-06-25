@@ -254,8 +254,11 @@ What is a pull request?
 
 An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
 
+What does read/write access allow you to do? 
+
 <!--
-What does read/write access allow you to do? List
+List
+Tip: You have to have read/write access to push directly to a repository
 -->
 
 </td></tr>
@@ -378,6 +381,8 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 ### General Branch Process
 
+The process for working with branches is very similar, regardless of which collaborative development model you are using. Parts of this process can also be used during code review.
+
 <!--
 Switch perspective
 * URL of the repo you have read/write access to
@@ -387,12 +392,9 @@ Switch perspective
 * Make change, push back to GitHub if needed
 * Submit pull request
 
-Tip: You have to have read/write access to push directly to a repository
-
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
-Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
 
-The process for working with branches is very similar, regardless of which collaborative development model you are using. Parts of this process can also be used during code review.
+Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * You need to fork the repo before you clone it
@@ -565,6 +567,18 @@ If you are a repo maintainer, you will receive a message to let you know there i
 * Close pull request
 * Revert pull request (if needed)
 * Delete feature branch (local and remote)
+
+Delete a branch
+
+```bash
+$ git branch -d  <branch-name>
+```
+
+Force delete branch
+
+```bash
+$ git branch -D  <branch-name>
+```
 
 </td></tr>
 
