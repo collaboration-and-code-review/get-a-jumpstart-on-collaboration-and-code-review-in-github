@@ -696,6 +696,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 * Git Flow (similar to process I’ve explained)
 * A Successful Git Branching Model (more advanced)
+* A Successful Git Branching Model Considered Harmful (alternative view)
 * SemVer
 
 </td></tr>
