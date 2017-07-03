@@ -93,6 +93,7 @@ I want to impart some of my knowledge to you, to save you the time and frustrati
 ### What is the Destination?
 
 Do you remember a time before you were interested in building things with code? There is a lot of power and value in the ability to make things. You can apply collaboration and code review skills in an unlimited number of situations. GitHub is a very popular place to work on open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
+
 Some benefits of learning collaboration and code review
 * If you are a student: being prepared for your studies and career
 * If a developer: perhaps you can get a promotion
@@ -124,7 +125,7 @@ I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good i
 
 ### Announcing TacoFancy
 
-It was 7 months later. I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
+7 months later, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
 
 </td></tr>
 
@@ -189,28 +190,40 @@ I didn't quite feel like I knew what I was doing, but I was extremely motivated.
 
 ### It Would Take Almost 3 More Years for Me to Do Code Review
 
-Sadly, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. This doesn't make sense in terms of the number of maintainers. 
+Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. This doesn't make sense in terms of the number of maintainers. 
 
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 13]()
+
+</td><td>
+
+### It Didn’t Have to Take That Long. Get a Jumpstart Instead!
+
+</td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 3]()
+![Slide 14]()
 
 </td><td>
 
-### Get a Jumpstart!
+### What This Talk Is and Isn’t
 
-It didn't have to take that long! 
+<!--
+Don't miss the forest for the trees)
+-->
 
 This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
 
 There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
 
 </td></tr>
+
 
 
 
