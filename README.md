@@ -73,10 +73,6 @@ I hope you've had a chance to take a good look at the DjangoCon website. I'm so 
 
 ### The Journey
 
-<!--
-There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture. I think quite often, when people are using Git and GitHub, they are focusing on the details and missing the larger picture. 
--->
-
 Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. I've made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
 
 I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
@@ -215,7 +211,7 @@ Unfortunately, it would take almost 3 more years for me to begin doing code revi
 ### What This Talk Is and Isn’t
 
 <!--
-Don't miss the forest for the trees)
+There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture. I think quite often, when people are using Git and GitHub, they are focusing on the details and missing the larger picture. This talk is about the larger picture. 
 -->
 
 This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
@@ -229,7 +225,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 15]()
 
 </td><td>
 
