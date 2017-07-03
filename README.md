@@ -347,6 +347,10 @@ What is a pull request?
 
 ### Read/Write Access and Why It Matters
 
+<!--
+You need to have read/write access to directly change a repo. If you don't have read/write access, you need to fork the repo. 
+-->
+
 An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
 
 What does read/write access allow you to do? Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc. 
