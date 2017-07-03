@@ -221,8 +221,6 @@ There are many variations to how things can be done in GitHub. This talk is not 
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 15]()
@@ -243,32 +241,28 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 16]()
 
 </td><td>
 
-### Getting Help
+### Browser and Local Graphic
 
-* Help via Git, GitHub Help and Guides
-* Help via GitHub Keyboard Shortcuts (type "?")
-* Help via command line
-
-<!--
-Git command line help
--->
+Local (definition?)
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 17]()
 
 </td><td>
 
-### Prerequisite Checklist
+### Getting Started
 
 * Install Git on your computer
 * Create a GitHub account online
@@ -287,7 +281,7 @@ Bash command list, text editor recommendations
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 18]()
 
 </td><td>
 
@@ -306,6 +300,25 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
+![Slide 17]()
+
+</td><td>
+
+### Getting Help
+
+* Help via Git, GitHub Help and Guides
+* Help via GitHub Keyboard Shortcuts (type "?")
+* Help via command line
+
+<!--
+Git command line help
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 14]()
 
 </td><td>
@@ -314,7 +327,7 @@ I want to point out that you can create a branch through the browser, but I will
 
 What are Git and GitHub?
 
-High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjuction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
+High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjunction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
 <!--
 Recap:
