@@ -23,7 +23,7 @@ Thank you!
 
 <tr><td width="30%">
 
-![Slide 0]()
+![Slide 1]()
 
 </td><td>
 
@@ -36,7 +36,7 @@ By Katherine "Kati" Michel
 
 <tr><td width="30%">
 
-![Slide 1]()
+![Slide 2]()
 
 </td><td>
 
@@ -49,7 +49,7 @@ Thank you for being here. I'm thrilled to have the opportunity to talk to you ab
 
 <tr><td width="30%">
 
-![Slide 2]()
+![Slide 3]()
 
 </td><td>
 
@@ -61,21 +61,6 @@ Thank you for being here. I'm thrilled to have the opportunity to talk to you ab
 * Web Designer and Developer
 
 I hope you've had a chance to take a good look at the DjangoCon website. I'm so proud of what the team has accomplished. It's truly a beautiful website.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 3]()
-
-</td><td>
-
-### What This Talk Is and Is Not
-
-This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
-
-There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
 
 </td></tr>
 
@@ -122,7 +107,7 @@ Some benefits of learning collaboration and code review
 
 </td><td>
 
-### How My Own Journey Began
+### How My Own Journey Began: TacoFancy!
 
 I want to do a bit of a flashback now. 
 
@@ -137,9 +122,9 @@ I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good i
 
 </td><td>
 
-### TacoFancy: A Taco Recipe Sharing Project on GitHub!
+### Announcing TacoFancy
 
-One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
+It was 7 months later. I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
 
 </td></tr>
 
@@ -150,9 +135,9 @@ One day, I happened to be looking at Twitter. I saw a tweet from a man named Dan
 
 </td><td>
 
-### The One Sentence that Motivated Me to Start Using GitHub
+### TacoFancy: A Taco Recipe Sharing Project on GitHub!
 
-I was looking through the Taco Fancy repo and saw one sentence made a big impact on me: "Are You New to Github But Want to Contribute?" I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted a pull request on November 3, 2013, which was about 7 months after I joined GitHub
+So I clicked on the link to the repo (definition?) to take a look. 
 
 </td></tr>
 
@@ -163,11 +148,70 @@ I was looking through the Taco Fancy repo and saw one sentence made a big impact
 
 </td><td>
 
-### 3 More Years to Get Started Doing Code Review
+### The One Sentence that Motivated Me to Start Using GitHub
 
-It would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. This doesn't make sense in terms of the number of maintainers. 
+One sentence in the project README (definition?) made a big impact on me: "Are You New to Github But Want to Contribute?" 
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 10]()
+
+</td><td>
+
+### Are You New to Github But Want to Contribute?
+
+I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I felt it was my destiny to contribute now. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 11]()
+
+</td><td>
+
+### My First Pull Request
+
+I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted my first pull request.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
+
+</td><td>
+
+### It Would Take Almost 3 More Years for Me to Do Code Review
+
+Sadly, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. This doesn't make sense in terms of the number of maintainers. 
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 3]()
+
+</td><td>
+
+### Get a Jumpstart!
+
+It didn't have to take that long! 
+
+This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
+
+There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
+
+</td></tr>
+
 
 
 <tr><td width="30%">
