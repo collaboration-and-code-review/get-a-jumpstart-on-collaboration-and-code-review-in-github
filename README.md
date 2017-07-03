@@ -42,7 +42,7 @@ By Katherine "Kati" Michel
 
 ### Welcome 
 
-I'm thrilled to have the opportunity to talk to you about getting a jumpstart on collaboration and code review in GitHub
+Thank you for being here. I'm thrilled to have the opportunity to talk to you about getting a jumpstart on collaboration and code review in GitHub
 
 </td></tr>
 
@@ -124,7 +124,9 @@ Some benefits of learning collaboration and code review
 
 ### How My Own Journey Began
 
-I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good idea. But my account sat unused for months. I felt a bit intimidated and I didn't know how to get started. Later on in this talk, I will debunk some of the myths that I believed at the time. 
+I want to do a bit of a flashback now. 
+
+I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good idea. But my account sat unused for months. I felt a bit intimidated. I wasn't sure if I fit in and I didn't know how to get started. Later on in this talk, I will debunk some of the myths that I believed at the time. 
 
 </td></tr>
 
