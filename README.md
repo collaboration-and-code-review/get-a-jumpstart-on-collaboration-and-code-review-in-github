@@ -249,9 +249,84 @@ Bash command list, text editor recommendations
 </td></tr>
 
 
-<!--
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### Read/Write Access
+
+* If you have read/write access to a repo, you can directly change the repo
+* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
+* Whether or not you have read/write access to a repo determines how you collaborate
+* See read/write access chart for info
+
 Example Situations
--->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
+### User Account
+
+* One owner who has read/write access 
+* Owner can give other users read/write access to a repo (this is an example of "Shared Repository" Model)
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### Organization Account
+
+* One or more owners who have read/write access 
+* Owners can give other users read/write access (this is an example of "Shared Repository" Model)
+* Can create teams/permissions (advantage over using user account "Shared Repository" Model)
+ 
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 18]()
+
+</td><td>
+
+### Two Collaborative Development Models
+
+The question of read/write access leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have read/write access.
+
+There are two collaborative development models: 
+* “Fork and Pull” Model
+* “Shared Repository” Model
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### In Summary
+
+* If you do not have read/write access to a repo, you need to fork the repo. This is the “Fork and Pull” Model. 
+* If you have read/write access to a repo (user account or organizational), you can clone and work on the repo directly with others. This is the “Shared Repository” Model. 
+
+</td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -367,22 +442,6 @@ Using an organizational account rather than a user account for collaboration has
 
 </td></tr>
 
-
-<tr><td width="30%">
-
-![Slide 18]()
-
-</td><td>
-
-### Two Collaborative Development Models
-
-The question of read/write access leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have read/write access.
-
-There are two collaborative development models: 
-* “Fork and Pull” Model
-* “Shared Repository” Model
-
-</td></tr>
 
 
 <tr><td width="30%">
