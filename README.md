@@ -104,7 +104,7 @@ Some benefits of learning collaboration and code review
 
 </td><td>
 
-### How My Own Journey Began: TacoFancy!
+### How My Own Journey Began
 
 I want to do a bit of a flashback now. 
 
@@ -119,9 +119,11 @@ I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good i
 
 </td><td>
 
-### Announcing TacoFancy
+### TacoFancy
 
 7 months later, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
+
+So I clicked on the link to the repo (definition?) to take a look. 
 
 </td></tr>
 
@@ -132,33 +134,9 @@ I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good i
 
 </td><td>
 
-### TacoFancy: A Taco Recipe Sharing Project on GitHub!
-
-So I clicked on the link to the repo (definition?) to take a look. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 9]()
-
-</td><td>
-
 ### The One Sentence that Motivated Me to Start Using GitHub
 
 One sentence in the project README (definition?) made a big impact on me: "Are You New to Github But Want to Contribute?" 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 10]()
-
-</td><td>
-
-### Are You New to Github But Want to Contribute?
 
 I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I felt it was my destiny to contribute now. 
 
@@ -167,7 +145,7 @@ I had been secretly wanting to contribute for months, but wasn't sure how, and n
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 9]()
 
 </td><td>
 
@@ -180,7 +158,7 @@ I didn't quite feel like I knew what I was doing, but I was extremely motivated.
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 10]()
 
 </td><td>
 
@@ -188,23 +166,16 @@ I didn't quite feel like I knew what I was doing, but I was extremely motivated.
 
 Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. This doesn't make sense in terms of the number of maintainers. 
 
-</td></tr>
+Bus Factor
 
-
-<tr><td width="30%">
-
-![Slide 13]()
-
-</td><td>
-
-### It Didn’t Have to Take That Long. Get a Jumpstart Instead!
+It Didn’t Have to Take That Long. Get a Jumpstart Instead!
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 11]()
 
 </td><td>
 
@@ -223,7 +194,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 12]()
 
 </td><td>
 
@@ -231,6 +202,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
 * The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
+* The process is based on GitFlow (simple, agile)
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
@@ -245,7 +217,7 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 13]()
 
 </td><td>
 
