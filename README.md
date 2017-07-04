@@ -249,6 +249,9 @@ Bash command list, text editor recommendations
 </td></tr>
 
 
+<!--
+Example Situations
+-->
 
 
 <tr><td width="30%">
