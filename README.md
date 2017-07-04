@@ -213,8 +213,6 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 13]()
@@ -230,7 +228,7 @@ Local (definition?)
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 14]()
 
 </td><td>
 
@@ -249,6 +247,8 @@ Bash command list, text editor recommendations
 -->
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
