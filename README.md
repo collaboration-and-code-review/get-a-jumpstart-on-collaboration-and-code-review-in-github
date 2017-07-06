@@ -97,6 +97,22 @@ Some benefits of learning collaboration and code review
 
 </td></tr>
 
+<!--
+### GitHub Audiences
+
+Organizations
+* For-profit (business)
+* Not-for-profit
+
+People
+* Professional developers
+* Hobbyists
+* Students
+
+Types of Projects
+* Cutting edge
+* Novelty
+-->
 
 <tr><td width="30%">
 
@@ -262,10 +278,6 @@ Bash command list, text editor recommendations
 - [ ] Understand how to create teams with permissions
 - [ ] Access your organizational account and dashboard
 - [ ] Create an organizational repo
-
-- [ ] Find Git, GitHub Help and Guides
-- [ ] Find Keyboard Shortcuts (type "?")
-- [ ] Find help via command line
 -->
 
 </td></tr>
@@ -415,6 +427,19 @@ What is a pull request?
 - [ ] Find your local development environment (your computer environment)
 - [ ] Create a clone (a local copy of a repo)
 - [ ] Identify the origin
+
+### Examples of How to Do Important Things in Browser versus Locally
+
+Action |Browser | Command Line
+:---: | --- | ---
+Fork a repo | Can only do in browser | N/A
+Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
+Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
+Create a file | Click "Create new file" button | ```$ touch <file-name>```
+Add a file | Click "Upload files" button | ```$ git push origin <remote>```
+Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
+Open an issue | Can only do in browser | N/A
+Open a pull request | Can only do in browser | N/A
 -->
 
 </td></tr>
@@ -1031,6 +1056,13 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 ### 10X Developers
 
+<!--
+Important Non-Coding Leadership Skills (see 10x results article)
+* Communication
+* People management/mentoring
+* Keeping docs up to date
+-->
+
 </td></tr>
 
 
@@ -1229,6 +1261,10 @@ Advanced Collaborative Development Workflow Examples
 * [Can I Recover Branch After its Deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git)
 
 <!--
+* [A Checklist Before You Contribute](https://opensource.guide/how-to-contribute/#a-checklist-before-you-contribute)
+
+* [Getting to 10x (Results): What Any Developer Can Learn from the Best](https://medium.com/javascript-scene/getting-to-10x-results-what-any-developer-can-learn-from-the-best-54b6c296a5ef)
+
 * [GitHub Pages Basics](https://help.github.com/categories/github-pages-basics)
 * [Customizing GitHub Pages](https://help.github.com/categories/customizing-github-pages)
 * [Wikis](https://help.github.com/categories/wiki)
