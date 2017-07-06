@@ -306,10 +306,7 @@ $ man git-<verb>
 
 Browser and Local Graphic
 
-What are open-sourct, Git and GitHub?
-* What is [open-source software](https://en.wikipedia.org/wiki/Open-source_software)?
-* What is [Git](https://git-scm.com)?
-* What is [GitHub](https://github.com)?
+What are open-source, Git and GitHub?
 
 High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjunction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
@@ -1313,6 +1310,7 @@ Advice of how to get started making pull requests and doing code review
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 -->
 
+<!--
 ### Finding Open Source Projects to Contribute To
 
 Projects that have reputation
@@ -1367,7 +1365,7 @@ Useful Resources: Bitly Link
 -->
 
 GitHub and Bitbucket
-* [GitHub](https://github.com) examples
+* [GitHub](https://github.com)
 * [Bitbucket](https://bitbucket.org)
 
 Getting Set Up
@@ -1442,6 +1440,8 @@ Advanced Collaborative Development Workflow Examples
 * [Can I Recover Branch After its Deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git)
 
 <!--
+* What is [open-source software](https://en.wikipedia.org/wiki/Open-source_software)?
+
 * [A Checklist Before You Contribute](https://opensource.guide/how-to-contribute/#a-checklist-before-you-contribute)
 
 * [Getting to 10x (Results): What Any Developer Can Learn from the Best](https://medium.com/javascript-scene/getting-to-10x-results-what-any-developer-can-learn-from-the-best-54b6c296a5ef)
