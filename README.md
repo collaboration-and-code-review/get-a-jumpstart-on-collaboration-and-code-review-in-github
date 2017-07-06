@@ -368,6 +368,8 @@ I want to point out that you can create a branch through the browser, but I will
 
 * Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
 * If you cloned from an organization, the origin is the organization account, if you cloned from a fork, the origin is your user account
+
+"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
 -->
 
 </td></tr>
@@ -903,6 +905,11 @@ When you go to the pull request in the browser, there will a set of instructions
 
 I actually want to show you a slightly different way to do it that I think is easier to understand. 
 
+<!--
+base fork, base, head fork, compare
+base, compare
+-->
+
 </td></tr>
 
 
@@ -1110,6 +1117,12 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 - [ ] Look at advanced workflows and understand different choices
 - [ ] Create a tag
 - [ ] Create a release
+
+Advanced
+* Resolve a merge conflict in the browser
+* Resolve a merge conflict by command line
+* Understand rebasing
+* Understand update "strategies": fast forward, recursive
 -->
 
 <tr><td width="30%">
