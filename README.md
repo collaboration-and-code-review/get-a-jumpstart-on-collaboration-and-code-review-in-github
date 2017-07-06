@@ -185,18 +185,7 @@ I didn't quite feel like I knew what I was doing, but I was extremely motivated.
 
 ### It Would Take Almost 3 More Years for Me to Do Code Review
 
-Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge.  
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 11]()
-
-</td><td>
-
-### It Didn't Have to Be That Way
+Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way.
 
 <!--
 This doesn't make sense in terms of the number of maintainers.
@@ -208,7 +197,7 @@ Bus Factor
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 11]()
 
 </td><td>
 
@@ -227,7 +216,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 12]()
 
 </td><td>
 
@@ -235,11 +224,24 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
 * The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
-* The process is based on GitHub Flow (simple, agile)
+* The process is based on GitHub Flow, which is a simple, agile process
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+* We will focus on command line, not browser or GUI (such as GitHub Desktop)
 
 <!--
+* Browser
+* [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
+* Command line (recommended, because can do everything with Git)
+* [Hub](https://hub.github.com) (makes command line simpler to use)
+
+Pros and Cons
+* Some things can be done in both browser or command line, some things only by command line
+* Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
+* I recommend learning Git through the command line. Can only make full use of git functionality by using command line
+
+In some instances, you do not need to work locally. Some things can be done through browser. 
+
 (<> symbol denotes a placeholder/variable)
 Using HTTPS examples
 Example- some operating systems do not use dollar signs $ as command line prompts.
@@ -250,7 +252,7 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 13]()
 
 </td><td>
 
@@ -273,30 +275,7 @@ Bash command list, text editor recommendations
 
 <tr><td width="30%">
 
-![Slide 15]()
-
-</td><td>
-
-### Browser, Desktop, and Command Line
-
-* Browser
-* [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
-* Command line (recommended, because can do everything with Git)
-* [Hub](https://hub.github.com) (makes command line simpler to use)
-
-Pros and Cons
-* Some things can be done in both browser or command line, some things only by command line
-* Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
-* Can only make full use of git functionality by using command line
-
-I recommend learning git through the command line. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 16]()
+![Slide 14]()
 
 </td><td>
 
@@ -306,20 +285,20 @@ I recommend learning git through the command line.
 * Help via GitHub Keyboard Shortcuts (type "?")
 * Help via command line
 
-<!--
-Git command line help
-
+```bash
 $ git help <verb>
 $ git <verb> --help
 $ man git-<verb>
--->
+```
 
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 15]()
 
 </td><td>
 
@@ -362,8 +341,6 @@ Open an issue | Can only do in browser | N/A
 Open a pull request | Can only do in browser | N/A
 
 <!--
-In some instances, you do not need to work locally. Some things can be done through browser. 
-
 I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
 
 * Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
@@ -377,13 +354,17 @@ I want to point out that you can create a branch through the browser, but I will
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 16]()
 
 </td><td>
 
-### Workflow: GitHub Flow
+### GitHub Flow
+
+We are going to be using the GitHub Flow process.
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
