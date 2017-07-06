@@ -241,7 +241,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 <!--
 (<> symbol denotes a placeholder/variable)
-
+Using HTTPS examples
 Example- some operating systems do not use dollar signs $ as command line prompts.
 -->
 
@@ -277,6 +277,29 @@ Bash command list, text editor recommendations
 
 </td><td>
 
+### Browser, Desktop, and Command Line
+
+* Browser
+* [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
+* Command line (recommended, because can do everything with Git)
+* [Hub](https://hub.github.com) (makes command line simpler to use)
+
+Pros and Cons
+* Some things can be done in both browser or command line, some things only by command line
+* Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
+* Can only make full use of git functionality by using command line
+
+I recommend learning git through the command line. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
 ### Getting Help
 
 * Help via Git, GitHub Help and Guides
@@ -292,7 +315,7 @@ Git command line help
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -317,9 +340,9 @@ GitHub Vocab and Tour
 * origin
 * upstream
 * pull request
-* git fetch- obtain code locally, without merging
-* git merge- merge code
-* git pull- fetch and merge, all in oneaction
+* git fetch (obtain code locally, without merging)
+* git merge (merge code)
+* git pull (fetch and merge, all in one action)
 
 Examples of How to Do Important Things in Browser versus Locally
 
@@ -334,16 +357,11 @@ Commit | Click "Commit changes" button in an open, altered file | ```$ git commi
 Open an issue | Can only do in browser | N/A
 Open a pull request | Can only do in browser | N/A
 
-</td></tr>
+<!--
+In some instances, you do not need to work locally. Some things can be done through browser. 
 
-
-<tr><td width="30%">
-
-![Slide 17]()
-
-</td><td>
-
-### Workflow: GitHub Flow
+I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
+-->
 
 </td></tr>
 
@@ -354,14 +372,7 @@ Open a pull request | Can only do in browser | N/A
 
 </td><td>
 
-### Read/Write Access
-
-* If you have read/write access to a repo, you can directly change the repo
-* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
-* Whether or not you have read/write access to a repo determines how you collaborate
-* See read/write access chart for info
-
-Example Situations
+### Workflow: GitHub Flow
 
 </td></tr>
 
@@ -369,6 +380,35 @@ Example Situations
 <tr><td width="30%">
 
 ![Slide 19]()
+
+</td><td>
+
+### Write Access
+
+* If you have write permission to a repo, you can directly change the repo
+* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
+* Whether or not you have write permission to a repo determines how you collaborate
+* See permissions chart for info
+
+Example Situations
+
+<!--
+Permission Levels
+https://help.github.com/articles/access-permissions-on-github
+Owners, members, billing managers, outside collaborators
+https://help.github.com/articles/permission-levels-for-an-organization
+https://help.github.com/articles/repository-permission-levels-for-an-organization
+https://help.github.com/articles/inviting-collaborators-to-a-personal-repository
+https://help.github.com/articles/permission-levels-for-a-user-account-repository
+https://help.github.com/articles/differences-between-user-and-organization-accounts
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 20]()
 
 </td><td>
 
@@ -382,7 +422,7 @@ Example Situations
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 21]()
 
 </td><td>
 
@@ -397,7 +437,7 @@ Example Situations
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 22]()
 
 </td><td>
 
@@ -414,7 +454,7 @@ There are two collaborative development models:
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
@@ -444,41 +484,7 @@ There are two collaborative development models:
 
 
 
-<tr><td width="30%">
 
-![Slide 18]()
-
-</td><td>
-
-### Browser Versus Command Line
-
-I want to point out that even though there are some tools such as GitHub Desktop or Hub that will give you a dashboard or make using the command line easier, I recommend learning git like normal through the command line first. For one thing, you can do everything Git-related through the command line. 
-
-<!--
-In some instances, you do not need to work locally. Some things can be done through browser. 
-
-I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
-
-# Ways to Use GitHub: Graphical User Interface (GUI) or Command Line?
-
-- [ ] Understand the pros and cons of different methods of using Git :boom:
-
-Resources
-* Browser
-* [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
-* Command line (recommended, because can do everything with Git)
-* [Hub](https://hub.github.com)
-
-Pros and Cons
-* GUI would be more familiar/easier to use for many people
-* Some things can be done in both browser or command line, some things only by command line
-* Can only make full use of git functionality by using command line
-
-#### Tip: You can do everything Git-related via command line, but some people find the Desktop App easier to get started with. Hub can also simplify command line.
-#### Tip: There are some exceptions, for example, if you are using the Hub tool
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -732,6 +738,10 @@ Make your change to the files, then add, commit, create a message
 $ git add .
 $ git commit -m "Your note"
 ```
+
+<!--
+How to exit Vim
+--
 
 Push branch to GitHub
 
