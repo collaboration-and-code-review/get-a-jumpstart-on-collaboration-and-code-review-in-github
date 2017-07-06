@@ -584,6 +584,26 @@ There is an overall theme to this talk. In order to be able to increase your lev
 </td></tr>
 
 
+<!--
+### How Do We Do That?
+
+# Feature Branches- Best Practice Workflow
+
+Feature Branches (a.k.a. Topic Branches)
+* Feature branches are a best practice
+* Can be used by any GitHub user
+
+Positives
+* Enable follow on commits to be pushed to a pull request (contributor needs to give repo maintainers permission if via fork)
+* Prevent inactive pull requests
+
+Working with Feature Branches
+* Create and checkout to a feature branch (may need to specify which branch to branch off of)
+* The local files will have changed to the files of that branch
+* Push a branch to a repo (organization or fork- same process regardless of model used)
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 21]()
@@ -670,12 +690,17 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 ### A Note About Remotes
 
-What is origin?
+What is origin? The place where your code originates from.
 
 When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. Then, you will submit a pull request from there.
 
 </td></tr>
 
+<!--
+# Use Utility Commands
+
+Can use these command any time needed
+-->
 
 <tr><td width="30%">
 
@@ -706,6 +731,12 @@ Clone a user account repo (forked repo will be "origin")
 -->
 
 Perspective: 
+
+<!--
+```bash
+$ git clone <repo-url>
+```
+-->
 
 Clone (or download) an organizational repo (organizational repo will be "origin")
 
@@ -1083,6 +1114,12 @@ $ git branch -D  <branch-name>
 - [ ] Look at an example of master only versus master/develop, production/staging
 - [ ] Decide a workflow
 - [ ] If will have both master and develop branch, choose default branch
+
+### Workflow Decisions
+
+* Are you going to have both master and development branches? (master only or master/develop as production/staging)
+* If you have both, which will be your default branch? (base against which future pull requests and commits will be made)
+* Default branch can be changed
 -->
 
 Some projects will involve both a master and develop branch. For example, a mission critical project with a high volume of users is likely to use a develop branch and staging to gate-keep updates before going live. Use the workflow that is right for the projects. They all have pros and cons. 
@@ -1158,6 +1195,8 @@ Important Non-Coding Leadership Skills (see 10x results article)
 * How can you make contributor experience easier/faster/enjoyable (for example, tell people how to contribute)
 * Draft community guidelines
 
+Community
+
 # Setting Up Repo Documentation
 
 ### Communication- General
@@ -1179,6 +1218,13 @@ Important Non-Coding Leadership Skills (see 10x results article)
 - [ ] Make a CODE_OF_CONDUCT.md (auto-generate)
 - [ ] Make a CONTRIBUTING.md
 - [ ] Make a PITCHME.md
+
+<!--
+Documentation and Community
+* LICENSE (legality of contributions)
+* CODE_OF_CONDUCT (choose from two different codes)
+* CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
+-->
 
 # Issue and Pull Request Documentation
 
@@ -1277,6 +1323,14 @@ More People Could Collaborate and Do Code Review
 
 * Use a sandbox
 * Practice workflow (even if means deleting and starting over)
+
+<!--
+Advice of how to get started making pull requests and doing code review
+* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist, see link)
+* Cherry pick problems or issues that fit your skill level (look for triaging)
+* Practice your workflow (don't be afraid to start over)
+* You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
+-->
 
 ### Finding Open Source Projects to Contribute To
 
