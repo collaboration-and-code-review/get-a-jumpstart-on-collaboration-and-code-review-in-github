@@ -268,11 +268,15 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 <!--
 Bash command list, text editor recommendations
 
-# Get Started and Find Help
-
 - [ ] Create a free [GitHub](https://github.com) account
 - [ ] Find your computer terminal
 - [ ] Install Git and set your email and username
+
+# GitHub Tour
+
+* What is [open-source software](https://en.wikipedia.org/wiki/Open-source_software)?
+* What is [Git](https://git-scm.com)?
+* What is [GitHub](https://github.com)?
 
 # Organization and User Accounts
 
@@ -382,6 +386,24 @@ I want to point out that even though there are some tools such as GitHub Desktop
 In some instances, you do not need to work locally. Some things can be done through browser. 
 
 I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
+
+# Ways to Use GitHub: Graphical User Interface (GUI) or Command Line?
+
+- [ ] Understand the pros and cons of different methods of using Git :boom:
+
+Resources
+* Browser
+* [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
+* Command line (recommended, because can do everything with Git)
+* [Hub](https://hub.github.com)
+
+Pros and Cons
+* GUI would be more familiar/easier to use for many people
+* Some things can be done in both browser or command line, some things only by command line
+* Can only make full use of git functionality by using command line
+
+#### Tip: You can do everything Git-related via command line, but some people find the Desktop App easier to get started with. Hub can also simplify command line.
+#### Tip: There are some exceptions, for example, if you are using the Hub tool
 -->
 
 </td></tr>
@@ -432,6 +454,16 @@ What is a pull request?
 - [ ] Find your local development environment (your computer environment)
 - [ ] Create a clone (a local copy of a repo)
 - [ ] Identify the origin
+
+# Vocab
+
+* remote (origin is default)
+* branch- (feature branch)
+* git clone- create a copy of code locally
+* git fetch- obtain code locally, without merging
+* git merge- merge code
+* git pull- fetch and merge, all in oneaction
+* upstream
 
 ### Examples of How to Do Important Things in Browser versus Locally
 
@@ -1150,6 +1182,10 @@ Setting Up Repo Fail Safes
 - [ ] Require external status checks
 - [ ] Delete a non-important branch locally and attempt to recover it!
 - [ ] Create a dummy sensitive information file and remove it from the history
+
+# Sensitive Data Warning
+
+Any sensitive information made public, should be immediately considered compromised, removed from GitHub, and changed in development/production (famous companies have done it too!)
 -->
 
 <tr><td width="30%">
@@ -1163,6 +1199,33 @@ Setting Up Repo Fail Safes
 Tips for getting started:
 
 </td></tr>
+
+<!--
+More People Could Collaborate and Do Code Review
+
+# What If?
+
+* What if contributors were encouraged to learn code contribution and review at the same time, instead of code review as an end result?
+
+### Learn skills
+
+* Use a sandbox
+* Practice workflow (even if means deleting and starting over)
+
+### Finding Open Source Projects to Contribute To
+
+Projects that have reputation
+* Search (including advanced search) repositories, code, commits, issues, users, wikis, topics
+* Use search syntax "help wanted", "first-timers-only", etc.
+
+* Do a GitHub search such as ["pull requests welcome"](https://github.com/search?utf8=%E2%9C%93&q=pull+requests+welcome)
+* [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
+* GitHub Open Source Project checklist
+
+### Look at Issue Triaging Example
+
+* node.js website issues
+-->
 
 
 <tr><td width="30%">
