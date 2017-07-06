@@ -207,6 +207,8 @@ There are many variations to how things can be done in GitHub. This talk is not 
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
 <!--
+(<> symbol denotes a placeholder/variable)
+
 Example- some operating systems do not use dollar signs $ as command line prompts.
 -->
 
@@ -244,6 +246,26 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 
 <!--
 Bash command list, text editor recommendations
+
+# Get Started and Find Help
+
+- [ ] Create a free [GitHub](https://github.com) account
+- [ ] Find your computer terminal
+- [ ] Install Git and set your email and username
+
+# Organization and User Accounts
+
+- [ ] Take a user account tour and understand the parts
+- [ ] Create a user account repo
+- [ ] Create an organization
+- [ ] Take an organizational account tour and understand the parts
+- [ ] Understand how to create teams with permissions
+- [ ] Access your organizational account and dashboard
+- [ ] Create an organizational repo
+
+- [ ] Find Git, GitHub Help and Guides
+- [ ] Find Keyboard Shortcuts (type "?")
+- [ ] Find help via command line
 -->
 
 </td></tr>
@@ -384,6 +406,15 @@ Recap:
 What is a repo?
 What is a fork?
 What is a pull request?
+
+### Vocab
+
+- [ ] Find a repo (a place where a code base is stored)
+- [ ] Find a branch (a copy of a code base within a repo)
+- [ ] Find a fork (copy of an entire repo)
+- [ ] Find your local development environment (your computer environment)
+- [ ] Create a clone (a local copy of a repo)
+- [ ] Identify the origin
 -->
 
 </td></tr>
@@ -524,6 +555,20 @@ The process for working with branches is very similar for anyone, regardless of 
 
 
 <!--
+# Collaborative Development Model Tour
+
+- [ ] Understand the two main Collaborative Development Models
+- [ ] Understand what read/write permission is
+- [ ] Look at an example of a best practice "Fork and Pull Model" workflow
+- [ ] Look at an example of a best practice "Shared Repository Model" workflow for an organizational repo
+- [ ] Look at organizational repo "Shared Repository" permissions
+
+### Optional- User Account "Shared Repository Model"
+
+- [ ] Understand the difference between organizational and user account "Shared Repository Model"
+- [ ] Look at user account repo "Shared Repository" permissions
+- [ ] Look at an example of a best practice "Shared Repository Model" workflow for a user account 
+
 Switch perspective
 * URL of the repo you have read/write access to
 
@@ -561,6 +606,26 @@ When you clone a repo locally, the remote will automatically assigned the remote
 </td><td>
 
 ### General Branch Process
+
+<!--
+# Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
+
+- [ ] If no read/write access- fork the repo
+- [ ] Clone or download the organizational or forked repo (this will be your origin)
+- [ ] Change directory
+- [ ] Verify which branch you are checked out on
+- [ ] Create and switch to a feature branch, a.k.a. topic branches (note how the local files switch to the files of the branch you are checked out on)
+- [ ] Add, commit, create a message
+- [ ] Push the branch to the organizational or forked repo (this will be your origin)
+- [ ] Create pull request title, description, make sure base and compare are correct
+- [ ] If forked repo- give repo maintainers permission to amend pull request
+- [ ] Create pull request
+- [ ] Push follow-on commits to organizational or forked repo pull request
+
+Clone an organizational repo (organizational repo will be "origin")
+
+Clone a user account repo (forked repo will be "origin")
+-->
 
 Perspective: 
 
@@ -713,6 +778,25 @@ Check out pull request, run it like normal, for instance, a website
 - [ ] Request a review from a specific person
 - [ ] Close pull request via browser
 - [ ] Close an issue via commit message by using keyword
+
+# Code Review
+
+- [ ] Fetch an organizational pull request
+- [ ] Checkout a pull request locally
+- [ ] Merge pull request via browser- regular
+- [ ] Merge pull request via browser- squash
+- [ ] Merge pull request via browser- rebase
+- [ ] Merge pull request via command line
+- [ ] Ask contributor to make a change to pull request
+- [ ] Request a review from a specific person
+- [ ] Add, commit, create a message, merge pull request via command line and push to live branch
+- [ ] Push follow-on commits to organizational pull request
+- [ ] Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
+- [ ] Close pull request via browser
+- [ ] Close an issue via commit message by using keyword
+- [ ] Delete a branch through browser
+- [ ] Delete a branch through locally
+- [ ] Revert a pull request
 -->
 
 </td></tr>
@@ -835,6 +919,10 @@ git push https://github.com/Mariatta/practice.git Mariatta-patch-1
 
 ### Forked Repo Model Pull Request
 
+<!--
+Committing Changes to a Pull Request Branch Created from a Fork
+-->
+
 </td></tr>
 
 <tr><td width="30%">
@@ -879,6 +967,12 @@ $ git branch -D  <branch-name>
 </td></tr>
 
 
+<!--
+### Keep Main Branch(es) Up-to-Date
+### Keep Feature Branch(es) Up-to-Date
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 35]()
@@ -921,6 +1015,13 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 </td></tr>
 
+<!--
+# Advanced Workflow
+
+- [ ] Look at advanced workflows and understand different choices
+- [ ] Create a tag
+- [ ] Create a release
+-->
 
 <tr><td width="30%">
 
@@ -942,6 +1043,8 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 ### Documentation
 
 <!--
+# Setting Up Repo Documentation
+
 ### Communication- General
 
 - [ ] Create and implement your communication strategy
@@ -986,6 +1089,16 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 - [ ] Set up special configs (example: line endings)
 - [ ] Create saved replies
 - [ ] Link to specific line number on GitHub
+
+Writing and Formatting
+
+# Notifications
+
+- [ ] Find the Notifications Overview Page :boom:
+- [ ] Decide which notifications to receive, whether by browser or email, and which email to receive at
+
+* [Emails (need to be logged in)](https://github.com/settings/emails)
+* [Notifications center (need to be logged in)](https://github.com/settings/notifications)
 -->
 
 </td></tr>
@@ -1046,6 +1159,12 @@ Useful Resources: Bitly Link
 
 ## Useful Resources
 
+### Resources
+
+<!--
+* [Using Keyboard Shortcuts](https://help.github.com/articles/using-keyboard-shortcuts)
+-->
+
 GitHub and Bitbucket
 * [GitHub](https://github.com) examples
 * [Bitbucket](https://bitbucket.org)
@@ -1082,6 +1201,14 @@ GitHub Learning Resources
 GitHub Open Source Guides
 * [Open Source Guides](https://opensource.guide)
 
+Writing and Formatting
+* [Getting Started with Writing and Formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github)
+* [Working with Advanced Formatting](https://help.github.com/articles/working-with-advanced-formatting)
+
+Setting Up and Maintaining Teams
+* [Setting Up Teams](https://help.github.com/articles/setting-up-teams)
+* [Maintaining Teams](https://help.github.com/articles/maintaining-teams)
+
 Collaborative Development Models and Permission Levels
 * [About Collaborative Development Models](https://help.github.com/articles/about-collaborative-development-models)
 * [Types of Collaborative Development Models](https://help.github.com/enterprise/2.7/user/articles/types-of-collaborative-development-models)
@@ -1089,11 +1216,25 @@ Collaborative Development Models and Permission Levels
 * [Repository Permission Levels for an Organization](https://help.github.com/articles/repository-permission-levels-for-an-organization)
 * [Permission Levels for a User Account Repository](https://help.github.com/articles/permission-levels-for-a-user-account-repository)
 
+Pull Request Branches Created from a Fork
+* [Allowing Changes to a Pull Request Branch Created from a Fork](https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork)
+* [Committing Changes to a Pull Request Branch Created from a Fork](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork)
+
 Advanced Collaborative Development Workflow Examples
 * Git Flow
 * [A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model) (more advanced)
 * [A Successful Git Branching Model Considered Harmful](https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful)
 * [SemVer](http://semver.org) (subtopic)
 
-
 * [Can I Recover Branch After its Deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git)
+
+<!--
+* [GitHub Pages Basics](https://help.github.com/categories/github-pages-basics)
+* [Customizing GitHub Pages](https://help.github.com/categories/customizing-github-pages)
+* [Wikis](https://help.github.com/categories/wiki)
+* [Gists](https://help.github.com/categories/gists)
+* [About READMEs](https://help.github.com/articles/about-readmes)
+* [Licensing a Repository](https://help.github.com/articles/licensing-a-repository)
+* [Adding a License to a Repository](https://help.github.com/articles/adding-a-license-to-a-repository)
+* [Adding a Code of Conduct to Your Project](https://help.github.com/articles/adding-a-code-of-conduct-to-your-project)
+-->
