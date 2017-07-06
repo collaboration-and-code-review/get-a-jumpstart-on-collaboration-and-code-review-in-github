@@ -365,6 +365,9 @@ Open a pull request | Can only do in browser | N/A
 In some instances, you do not need to work locally. Some things can be done through browser. 
 
 I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
+
+* Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
+* If you cloned from an organization, the origin is the organization account, if you cloned from a fork, the origin is your user account
 -->
 
 </td></tr>
@@ -1136,6 +1139,12 @@ Important Non-Coding Leadership Skills (see 10x results article)
 ### Documentation
 
 <!--
+### Communication Strategy
+
+* What impression you want to give people about your project? Hopefully welcoming, user-friendly. 
+* How can you make contributor experience easier/faster/enjoyable (for example, tell people how to contribute)
+* Draft community guidelines
+
 # Setting Up Repo Documentation
 
 ### Communication- General
