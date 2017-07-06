@@ -223,11 +223,11 @@ There are many variations to how things can be done in GitHub. This talk is not 
 ### A Few Notes
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
+* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. 
 * The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
 * The process is based on GitHub Flow, which is a simple, agile process
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
-* We will focus on command line, not browser or GUI (such as GitHub Desktop)
 
 <!--
 * Browser
@@ -236,11 +236,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 * [Hub](https://hub.github.com) (makes command line simpler to use)
 
 Pros and Cons
-* Some things can be done in both browser or command line, some things only by command line
 * Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
-* I recommend learning Git through the command line. Can only make full use of git functionality by using command line
-
-In some instances, you do not need to work locally. Some things can be done through browser. 
 
 (<> symbol denotes a placeholder/variable)
 Using HTTPS examples
@@ -304,10 +300,6 @@ $ man git-<verb>
 
 ### Git and GitHub Tour
 
-Browser and Local Graphic
-
-What are open-source, Git and GitHub?
-
 High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjunction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
 GitHub Vocab and Tour
@@ -338,6 +330,12 @@ Open an issue | Can only do in browser | N/A
 Open a pull request | Can only do in browser | N/A
 
 <!--
+Browser and Local Graphic
+
+What are open-source, Git and GitHub?
+
+* Some things can be done in both browser or command line, some things only by command line locally.
+
 I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
 
 * Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
