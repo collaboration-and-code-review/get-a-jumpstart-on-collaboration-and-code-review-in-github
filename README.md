@@ -1316,6 +1316,18 @@ Collaborative Development Models and Permission Levels
 * [Repository Permission Levels for an Organization](https://help.github.com/articles/repository-permission-levels-for-an-organization)
 * [Permission Levels for a User Account Repository](https://help.github.com/articles/permission-levels-for-a-user-account-repository)
 
+<!--
+Gitflow 
+http://scottchacon.com/2011/08/31/github-flow.html
+https://help.github.com/articles/what-is-a-good-git-workflow
+https://guides.github.com/introduction/flow
+https://help.github.com/articles/about-collaborative-development-models
+https://help.github.com/articles/github-flow
+
+Section: releases, working with tags
+https://help.github.com/categories/releases
+-->
+
 Pull Request Branches Created from a Fork
 * [Allowing Changes to a Pull Request Branch Created from a Fork](https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork)
 * [Committing Changes to a Pull Request Branch Created from a Fork](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork)
