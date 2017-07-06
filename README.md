@@ -1,5 +1,10 @@
 # Get a Jumpstart on Collaboration and Code Review in GitHub
 
+<!--
+https://2017.djangocon.us/speaking/speaker-resources/#slide-guidelines
+https://docs.google.com/presentation/d/16LvCzF1mywdEvhXwUyJCdEuyiw05q-ITGiJEgFT6L-Y/edit#slide=id.g20735b3908_0_0
+-->
+
 This is a transcript of a talk Katherine "Kati" Michel ([Twitter](https://twitter.com/KatiMichel), [GitHub](https://github.com/KatherineMichel)) will give at [DjangoCon](https://2017.djangocon.us), [PyLadies Remote](http://remote.pyladies.com), and other events.
 
 <!--
