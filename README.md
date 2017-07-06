@@ -185,11 +185,7 @@ I didn't quite feel like I knew what I was doing, but I was extremely motivated.
 
 ### It Would Take Almost 3 More Years for Me to Do Code Review
 
-Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge. This doesn't make sense in terms of the number of maintainers. 
-
-Bus Factor
-
-It Didn’t Have to Take That Long. Get a Jumpstart Instead!
+Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! To me, it feels like a combination of perceived territoriality and lack of knowledge.  
 
 </td></tr>
 
@@ -197,6 +193,22 @@ It Didn’t Have to Take That Long. Get a Jumpstart Instead!
 <tr><td width="30%">
 
 ![Slide 11]()
+
+</td><td>
+
+### It Didn't Have to Be That Way
+
+<!--
+This doesn't make sense in terms of the number of maintainers.
+Bus Factor
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
 
 </td><td>
 
@@ -215,7 +227,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -223,7 +235,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
 * The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
-* The process is based on GitFlow (simple, agile)
+* The process is based on GitHub Flow (simple, agile)
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
@@ -238,28 +250,15 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 
 <tr><td width="30%">
 
-![Slide 13]()
-
-</td><td>
-
-### Browser and Local Graphic
-
-Local (definition?)
-
-</td></tr>
-
-
-<tr><td width="30%">
-
 ![Slide 14]()
 
 </td><td>
 
 ### Getting Started
 
-* Install Git on your computer
-* Create a GitHub account online
-* Find and open your terminal (a.k.a. command line) on your computer
+* Install Git on your computer and set your email and username
+* Create a free [GitHub](https://github.com) account online
+* Find and open your computer terminal (a.k.a. command line)
 * The ability to navigate via terminal would be helpful (example: know how to change directory)
 * You might also want to have a text editor of your choice installed, to use to edit files
 
@@ -267,26 +266,6 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 
 <!--
 Bash command list, text editor recommendations
-
-- [ ] Create a free [GitHub](https://github.com) account
-- [ ] Find your computer terminal
-- [ ] Install Git and set your email and username
-
-# GitHub Tour
-
-* What is [open-source software](https://en.wikipedia.org/wiki/Open-source_software)?
-* What is [Git](https://git-scm.com)?
-* What is [GitHub](https://github.com)?
-
-# Organization and User Accounts
-
-- [ ] Take a user account tour and understand the parts
-- [ ] Create a user account repo
-- [ ] Create an organization
-- [ ] Take an organizational account tour and understand the parts
-- [ ] Understand how to create teams with permissions
-- [ ] Access your organizational account and dashboard
-- [ ] Create an organizational repo
 -->
 
 </td></tr>
@@ -295,6 +274,83 @@ Bash command list, text editor recommendations
 <tr><td width="30%">
 
 ![Slide 15]()
+
+</td><td>
+
+### Getting Help
+
+* Help via Git, GitHub Help and Guides
+* Help via GitHub Keyboard Shortcuts (type "?")
+* Help via command line
+
+<!--
+Git command line help
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
+### Git and GitHub Tour
+
+Browser and Local Graphic
+
+What are open-sourct, Git and GitHub?
+* What is [open-source software](https://en.wikipedia.org/wiki/Open-source_software)?
+* What is [Git](https://git-scm.com)?
+* What is [GitHub](https://github.com)?
+
+High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjunction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
+
+GitHub Vocab and Tour
+* repo (a place where a code base is stored)
+* branch (a copy of a code base within a repo, often a "feature branch")
+* fork (copy of an entire repo)
+* local development environment (your computer environment)
+* clone (a local copy of a repo)
+* remote (the default name for the remote you cloned from)
+* origin
+* upstream
+* pull request
+* git fetch- obtain code locally, without merging
+* git merge- merge code
+* git pull- fetch and merge, all in oneaction
+
+Examples of How to Do Important Things in Browser versus Locally
+
+Action |Browser | Command Line
+:---: | --- | ---
+Fork a repo | Can only do in browser | N/A
+Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
+Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
+Create a file | Click "Create new file" button | ```$ touch <file-name>```
+Add a file | Click "Upload files" button | ```$ git push origin <remote>```
+Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
+Open an issue | Can only do in browser | N/A
+Open a pull request | Can only do in browser | N/A
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### Workflow: GitHub Flow
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 18]()
 
 </td><td>
 
@@ -312,7 +368,7 @@ Example Situations
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 19]()
 
 </td><td>
 
@@ -326,7 +382,7 @@ Example Situations
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 20]()
 
 </td><td>
 
@@ -341,7 +397,7 @@ Example Situations
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 21]()
 
 </td><td>
 
@@ -358,7 +414,7 @@ There are two collaborative development models:
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 22]()
 
 </td><td>
 
@@ -369,6 +425,22 @@ There are two collaborative development models:
 
 </td></tr>
 
+
+
+
+
+
+<!--
+# Organization and User Accounts
+
+- [ ] Take a user account tour and understand the parts
+- [ ] Create a user account repo
+- [ ] Create an organization
+- [ ] Take an organizational account tour and understand the parts
+- [ ] Understand how to create teams with permissions
+- [ ] Access your organizational account and dashboard
+- [ ] Create an organizational repo
+-->
 
 
 
@@ -404,79 +476,6 @@ Pros and Cons
 
 #### Tip: You can do everything Git-related via command line, but some people find the Desktop App easier to get started with. Hub can also simplify command line.
 #### Tip: There are some exceptions, for example, if you are using the Hub tool
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 17]()
-
-</td><td>
-
-### Getting Help
-
-* Help via Git, GitHub Help and Guides
-* Help via GitHub Keyboard Shortcuts (type "?")
-* Help via command line
-
-<!--
-Git command line help
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 14]()
-
-</td><td>
-
-### Getting Started: Basics
-
-What are Git and GitHub?
-
-High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjunction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
-
-<!--
-Recap:
-What is a repo?
-What is a fork?
-What is a pull request?
-
-### Vocab
-
-- [ ] Find a repo (a place where a code base is stored)
-- [ ] Find a branch (a copy of a code base within a repo)
-- [ ] Find a fork (copy of an entire repo)
-- [ ] Find your local development environment (your computer environment)
-- [ ] Create a clone (a local copy of a repo)
-- [ ] Identify the origin
-
-# Vocab
-
-* remote (origin is default)
-* branch- (feature branch)
-* git clone- create a copy of code locally
-* git fetch- obtain code locally, without merging
-* git merge- merge code
-* git pull- fetch and merge, all in oneaction
-* upstream
-
-### Examples of How to Do Important Things in Browser versus Locally
-
-Action |Browser | Command Line
-:---: | --- | ---
-Fork a repo | Can only do in browser | N/A
-Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
-Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
-Create a file | Click "Create new file" button | ```$ touch <file-name>```
-Add a file | Click "Upload files" button | ```$ git push origin <remote>```
-Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
-Open an issue | Can only do in browser | N/A
-Open a pull request | Can only do in browser | N/A
 -->
 
 </td></tr>
