@@ -308,6 +308,10 @@ I recommend learning git through the command line.
 
 <!--
 Git command line help
+
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
 -->
 
 </td></tr>
@@ -384,6 +388,8 @@ I want to point out that you can create a branch through the browser, but I will
 </td><td>
 
 ### Write Access
+
+Write Permission
 
 * If you have write permission to a repo, you can directly change the repo
 * There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
@@ -839,6 +845,15 @@ In the less simple scenario, you will need to fetch the pull request branch to y
 * You run the code locally, and you think a change needs to be made; you push additional commits to the pull request
 
 <!--
+Two Ways to Merge
+* Via browser
+* Via command line
+
+Merge Options
+* Regular merge
+* Squash
+* Rebase
+
 Flow chart
 
 Check out pull request, run it like normal, for instance, a website
@@ -1160,7 +1175,7 @@ Important Non-Coding Leadership Skills (see 10x results article)
 
 </td><td>
 
-### Productivity Helpers
+### Productivity Tips
 
 <!--
 - [ ] Cache your password
@@ -1177,6 +1192,26 @@ Writing and Formatting
 
 * [Emails (need to be logged in)](https://github.com/settings/emails)
 * [Notifications center (need to be logged in)](https://github.com/settings/notifications)
+
+Two Types of Notifications
+* Watching
+* Participating
+
+Delivery Methods
+* Browser (Web)
+* Email
+
+# Conversations
+
+Where They Happen
+* Issues
+* Pull Requests
+
+Helpers
+* GitHub Flavored Markdown 
+* @mentions (of people and teams)
+* Issue and PR references
+* Emojis
 -->
 
 </td></tr>
