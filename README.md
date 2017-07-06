@@ -336,7 +336,7 @@ What are open-source, Git and GitHub?
 
 * Some things can be done in both browser or command line, some things only by command line locally.
 
-I want to point out that you can create a branch through the browser, but I will be showing you how to create a branch through terminal/command line, because it's what you will use terminal/command line often with code review. 
+you will use terminal/command line often with code review. 
 
 * Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
 * If you cloned from an organization, the origin is the organization account, if you cloned from a fork, the origin is your user account
@@ -347,17 +347,7 @@ I want to point out that you can create a branch through the browser, but I will
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 16]()
-
-</td><td>
-
-### GitHub Flow
-
-We are going to be using the GitHub Flow process.
-
-</td></tr>
 
 
 
@@ -1047,10 +1037,6 @@ Committing Changes to a Pull Request Branch Created from a Fork
 
 ### Tidy Up
 
-<!--
-* [Viewing Branches in Your Repository](https://help.github.com/articles/viewing-branches-in-your-repository)
--->
-
 * Close pull request
 * Revert pull request (if needed)
 * Delete feature branch (local and remote)
@@ -1074,6 +1060,20 @@ $ git branch -D  <branch-name>
 ### Keep Main Branch(es) Up-to-Date
 ### Keep Feature Branch(es) Up-to-Date
 -->
+
+
+
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
+### GitHub Flow
+
+We are going to be using the GitHub Flow process.
+
+</td></tr>
 
 
 <tr><td width="30%">
