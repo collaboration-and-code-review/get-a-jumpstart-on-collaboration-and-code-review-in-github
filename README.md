@@ -384,18 +384,21 @@ Browser and Local Graphic
 
 Write Permission is an important concept in GitHub collaboration
 
-* It doesn't matter what kind of repo you are contributing to, whether or not you have write permission to a repo determines how you contribute to it
-* If you have write permission to the repo, you can make changes directly within the repo
-* If you do not have write permission to the repo, you need to make a copy of the repo in your user account or an organization (the copy is called a fork), make your changes and submit a request for the changes to be accepted to the original repo that you want your changes to be merged with (this is called a pull request)
+* Regardless of what repo you are contributing to, whether or not you have write permission to the repo determines how you contribute to it
+* If you have write permission to a repo, you can make changes directly within the repo
 
 <!--
+What Does Write Permission Allow You to Do?
+
+Write permission is special access.
+
+See write permissions chart for info
+Write permission allows you to do things like push a branch directly to the repo (not by fork), change a file, review pull request, etc.
+You have to have read/write access to do tasks
+Look at "Shared Repository" permissions
+
 Definition of write
 We're talking about "write" in the context of...
-
-Do you have read/write access to the repo? If yes, you can use the "Shared Repository Model". If not, you will need to use the "Fork and Pull Model".
-
-* Your workflow will dependent on whether you have read/write access to the repo you are contributing to
-* Read/write access is special permission an organizational account owner or user account owner might give to trusted person
 -->
 
 </td></tr>
@@ -407,16 +410,13 @@ Do you have read/write access to the repo? If yes, you can use the "Shared Repos
 
 </td><td>
 
-### What Does Write Permission Allow You to Do?
+### Two Collaborative Development Models
 
-Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people contribute to repos. The two collaborative development models correspond to whether you have write permission.
 
-<!--
-See write permissions chart for info
-Write permission allows you to do things like push a branch directly to the repo (not by fork), change a file, review pull request, etc.
-You have to have read/write access to do tasks like directl
-Look at "Shared Repository" permissions
--->
+The two collaborative development models: 
+* If you do not have write permission to the repo, you need to make a copy of the repo in your user account or an organization (the copy is called a fork), make your changes, and submit a request for the changes to be accepted to the source repo (this is called a pull request). This is the “Fork and Pull” Model
+* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
 
 </td></tr>
 
@@ -427,13 +427,9 @@ Look at "Shared Repository" permissions
 
 </td><td>
 
-### Two Collaborative Development Models
+### "Shared Repository" Model Etiquette
 
-The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people contribute to repos. The two collaborative development models basically correspond to whether you have write permission.
-
-There are two collaborative development models: 
-* You do not have write permission to a repo, so you make a copy of the repo called a fork and submit a pull request, this is called the “Fork and Pull” Model
-* You have write permission to a repo (user account or organizational), so you make changes directly within the repo along with other users, this is called the  “Shared Repository” Model
+Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
 
 </td></tr>
 
@@ -452,8 +448,7 @@ Example:
 * Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
 
 <!--
-Fork and Pull Model
-An organization can also Fork and Pull
+An organization can also fork and pull
 -->
 
 </td></tr>
@@ -573,14 +568,14 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 ### Perspective
 
-Our perspective is of a person who has cloned a repo (either the organizational repo or a fork, whatever the person has write access to), is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
+Our perspective is of a person who has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 28]()
 
 </td><td>
 
@@ -589,29 +584,23 @@ Our perspective is of a person who has cloned a repo (either the organizational 
 The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using ("Shared Repository" or "Fork and Pull"). Parts of this process can be reused, for instance, during code review. 
 
 <!--
-Anyone who has write permission to a a repo the branch is in, or just the branch itself, can work on a branch
-
 Working with Feature Branches
-* Create and checkout to a feature branch (may need to specify which branch to branch off of)
+* Create and checkout to a feature branch)
 
-Best practice "Fork and Pull Model" workflow
-Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
+The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 
 Best Practice "Fork and Pull Model" Workflow
 * Fork an organizational/user account repo
 * Go to the fork, which will be in your user account, perhaps clone locally
-* Make change, add, commit, create message, push back to GitHub if needed, which will create a new branch in the forked repo
+
+Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. 
 
 Best practice "Shared Repository Model" workflow
-Typical situation/process: Clone the organizational repo you have write permission to. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
+Typical situation/process: User clones the repo locally using the organizational repo URL (the organizational repo is the origin). 
 
-Best Practice "Shared Repository Model" Workflow
-* Clone the organizational repo you have been given read/write access to
-* Make change, add, commit, create message, push back to GitHub if needed, which will create a new branch in the organizational repo
-
-* Make a new branch, branching off branch your changed is intended to be merged into
-* Submit pull request
-* When pull request is accepted, delete branch
+* Make a new feature branch, branching off the branch your changed is intended to be merged into
+* Make change, add, commit, create message, push back to GitHub if needed, which will create a new branch in the forked repo/organizational repo
+* Push new branch to forked repo/organizational repo, and submits pull request from within forked repo/organizational repo.
 
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 
@@ -619,16 +608,18 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you clone it
 * When you submit the pull request, a box will be checked by default giving maintainers the ability to change the pull request
 
-- [ ] Clone or download the organizational or forked repo (this will be your origin)
-- [ ] Change directory
-- [ ] Verify which branch you are checked out on
-- [ ] Create and switch to a feature branch, a.k.a. topic branches (note how the local files will have switched to the files of the branch you are checked out on)
-- [ ] Add, commit, create a message
-- [ ] Push the branch to the organizational or forked repo (this will be your origin)
-- [ ] Create pull request title, description, make sure base and compare are correct
-- [ ] If forked repo- give repo maintainers permission to amend pull request
-- [ ] Create pull request
-- [ ] Push follow-on commits to organizational or forked repo pull request
+* Clone or download the forked repo/organizational repo (this is the place you have write permission to and will be your origin)
+* Change directory
+* Verify which branch you are checked out on
+
+* Create and switch to a feature branch (note how the local files will have switched to the files of the branch you are checked out on)
+* Add, commit, create a message
+* Push the branch to your origin
+* Create pull request title, description, make sure base and compare are correct
+* If from a forked repo- give repo maintainers permission to amend pull request
+* Create the pull request
+* Push follow-on commits to the pull request
+* When the pull request is accepted, delete the branch
 
 * Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
 -->
@@ -711,9 +702,8 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 
 <!--
-# Use Utility Commands
+# Reusable Commands
 
-Can use these command any time needed
 -->
 
 <tr><td width="30%">
@@ -724,10 +714,10 @@ Can use these command any time needed
 
 ### How to Add Additional Commits
 
-<!--
-You can continue to push changes to the branch. Anyone else who has read/write access to the branch can also fetch it, make a change, and push to the branch too. The process is the same as earlier. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request. 
+Anyone who has write permission to a repo the branch is in, or just the branch itself, can continue to make changes to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
 
-Like I said earlier, you, or anyone with read/write access to the branch, can continue to make changes to the pull request until it is merged.
+<!--
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 -->
 
 If the branch already exists, just switch to a branch
@@ -791,10 +781,6 @@ In the browser, go to the repo you want your pull request to be merged into. The
 
 We are switching our perspective now. We are now a maintainer working from within an organizational repo, with write permission to the organizational repo, but without write permission to a forked repo, unless permission has been given to edit a pull request. The organizational repo is our origin, but any forked repo is not. 
 
-<!--
-(In the prior situation, we were talking about users with read/write access)
--->
-
 </td></tr>
 
 
@@ -806,13 +792,13 @@ We are switching our perspective now. We are now a maintainer working from withi
 
 ### What Are You Doing When You Review a Pull Request?
 
-If you are a repo maintainer, firstly, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). 
+* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request . 
+* You go to the pull request in the browser and look at it
+* In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
-You go to the pull request in the browser and look at it. 
-
-In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
-
+<!--
 In the less simple scenario, you will need to fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
+-->
 
 </td></tr>
 
@@ -1020,13 +1006,11 @@ Committing Changes to a Pull Request Branch Created from a Fork
 
 <!--
 Deleting branch in browser will not delete it in your local repo, like other things need to update
-- [ ] Delete a branch through browser
-- [ ] Delete a branch through locally
 -->
 
 * Close pull request
 * Revert pull request (hopefully not needed)
-* Delete feature branch (local and remote)
+* Delete feature branch (locally and remote/browser)
 
 Delete a branch
 
@@ -1039,6 +1023,10 @@ Force delete branch
 ```bash
 $ git branch -D  <branch-name>
 ```
+
+<!--
+Delete remote branch
+-->
 
 </td></tr>
 
@@ -1236,16 +1224,37 @@ Helpers
 </td></tr>
 
 
-<!--
-What Could Go Wrong?
-Setting Up Repo Fail Safes
-- [ ] Create a repo backup (third-party softwares)
-- [ ] Protect your main branch(es)
-- [ ] Require reviews for pull requests
-- [ ] Require external status checks
-- [ ] Delete a non-important branch locally and attempt to recover it!
-- [ ] Create a dummy sensitive information file and remove it from the history
 
+
+<tr><td width="30%">
+
+![Slide 38]()
+
+</td><td>
+
+### What Could Go Wrong?
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 39]()
+
+</td><td>
+
+### Safety Checklist
+
+Setting Up Repo Fail Safes
+* Back up the repo (third-party software)
+* Protect main branch(es) 
+* Enable required reviews of pull requests
+* Decide whether to use status checks (external)
+* Worst case scenario: How to recover deleted branch
+
+</td></tr>
+
+<!--
 # Sensitive Data Warning
 
 Any sensitive information made public, should be immediately considered compromised, removed from GitHub, and changed in development/production (famous companies have done it too!)
@@ -1259,27 +1268,38 @@ Any sensitive information made public, should be immediately considered compromi
 
 ### Go For It!
 
-Tips for getting started:
-
 </td></tr>
 
-<!--
-More People Could Collaborate and Do Code Review
 
-# What If?
+<tr><td width="30%">
 
-* What if contributors were encouraged to learn code contribution and review at the same time, instead of code review as an end result?
+![Slide 41]()
 
-### Learn skills
+</td><td>
 
-Advice of how to get started making pull requests and doing code review
-* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
+### Tips for getting started:
+
+* “Help Wanted” tags, topics/First-timers initiatives
+* Look for community-oriented projects
 * Cherry pick problems or issues that fit your skill level (look for triaging)
 * Practice your workflow (don't be afraid to delete/start over)
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 
+</td></tr>
+
+
 
 <!--
+# What If?
+
+* What if contributors were encouraged to learn code contribution and review at the same time, instead of code review as an end result? More people could take on more responsibility. 
+
+### Learn skills
+
+Advice of how to get started making pull requests and doing code review
+
+* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
+
 ### Finding Open Source Projects to Contribute To
 
 Projects that have reputation
@@ -1288,7 +1308,6 @@ Projects that have reputation
 
 * Do a GitHub search such as ["pull requests welcome"](https://github.com/search?utf8=%E2%9C%93&q=pull+requests+welcome)
 * [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
-* GitHub Open Source Project checklist
 
 Look at Issue Triaging Example
 * node.js website issues
