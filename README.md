@@ -310,8 +310,22 @@ GitHub Vocab and Tour
 * branch (a copy of a code base within a repo, often a "feature branch")
 
 <!--
+About forks
+"Original repository, also known as the "upstream" repository"
+"synchronizing your fork with the upstream repository"
+Configuring a remote for a fork- different depending on OS
+"You must configure a remote that points to the upstream repository in Git to sync changes you make in a fork with the original repository."
+Syncing a fork- see process, varies by OS
+"Syncing your fork only updates your local copy of the repository. To update your fork on GitHub, you must push your changes."
+Merging an upstream repository into your fork- revisit, varies by OS
+
+Creating and deleting branches within your repository- branch selector menu, click  NUMBER branches to delete
+
 When you try to edit a repository that you do not have read/write access to, GitHub will automatically fork the repo to your user account. After you commit the change, you can submit a pull request.
 Or, you can click the "Fork" button. 
+
+Editing files in another user's repository
+"When you edit a file in another user's repository, we'll automatically fork the repository and open a pull request for you." "Above the new content, click Preview changes."
 
 "Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
 
@@ -839,6 +853,26 @@ Ways to Deal with a Pull Request
 * Checkout a pull request locally, edit, merge with branch, and push to live branch to GitHub
 * Checkout a pull request locally and push a follow on commit to pull request from fork
 * Checkout a pull request locally and push a follow on commit to pull request from organizational branch
+
+Flow chart of possibilities:
+Small change, can merge in browser without running locally (example: typo)
+Need to run locally, but don't need to make a change- go back to browser and merge
+Need to run locally, need to make a change: 
+* ask PR author to make change (person's commits automatically go to PR)
+* you make change and push to PR
+https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/
+* you make change, merge with intended branch and push to origin (follow instructions)
+Need to run locally, need to resolve merge conflict:
+* resolve in browser
+* resolve locally
+Delete remote and local branches
+
+Code Review Process (PR gives link to instructions)
+- Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
+- If no change needed locally- merge button (merge options)
+- General process for making a local change, committing, merging and
+pushing back to GitHub
+- How to keep local code up to date
 -->
 
 </td></tr>
