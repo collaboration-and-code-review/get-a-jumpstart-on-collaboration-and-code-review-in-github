@@ -159,7 +159,7 @@ So I clicked on the link to the repo (definition?) to take a look.
 
 One sentence in the project README (definition?) made a big impact on me: "Are You New to Github But Want to Contribute?" 
 
-I had been secretly wanting to contribute for months, but wasn't sure how, and now was my chance. I felt it was my destiny to contribute now. 
+I had been wanting to contribute for months, but wasn't sure how, and now was my chance. I felt it was my destiny to contribute now. 
 
 </td></tr>
 
@@ -230,14 +230,6 @@ There are many variations to how things can be done in GitHub. This talk is not 
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
 <!--
-* Browser
-* [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
-* Command line (recommended, because can do everything with Git)
-* [Hub](https://hub.github.com) (makes command line simpler to use)
-
-Pros and Cons
-* Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
-
 (<> symbol denotes a placeholder/variable)
 Using HTTPS examples
 Example- some operating systems do not use dollar signs $ as command line prompts.
@@ -1424,6 +1416,14 @@ Advanced Collaborative Development Workflow Examples
 * [Can I Recover Branch After its Deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git)
 
 <!--
+* Browser
+* [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
+* Command line (recommended, because can do everything with Git)
+* [Hub](https://hub.github.com) (makes command line simpler to use)
+
+Pros and Cons
+* Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
+
 Permission Levels
 https://help.github.com/articles/access-permissions-on-github
 Owners, members, billing managers, outside collaborators
