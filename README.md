@@ -310,6 +310,9 @@ GitHub Vocab and Tour
 * branch (a copy of a code base within a repo, often a "feature branch")
 
 <!--
+When you try to edit a repository that you do not have read/write access to, GitHub will automatically fork the repo to your user account. After you commit the change, you can submit a pull request.
+Or, you can click the "Fork" button. 
+
 "Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
 
 A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
@@ -594,8 +597,21 @@ Working with Feature Branches
 Best practice "Fork and Pull Model" workflow
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 
+Best Practice "Fork and Pull Model" Workflow
+* Fork an organizational/user account repo
+* Go to the fork, which will be in your user account, perhaps clone locally
+* Make change, add, commit, create message, push back to GitHub if needed, which will create a new branch in the forked repo
+
 Best practice "Shared Repository Model" workflow
 Typical situation/process: Clone the organizational repo you have write permission to. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
+
+Best Practice "Shared Repository Model" Workflow
+* Clone the organizational repo you have been given read/write access to
+* Make change, add, commit, create message, push back to GitHub if needed, which will create a new branch in the organizational repo
+
+* Make a new branch, branching off branch your changed is intended to be merged into
+* Submit pull request
+* When pull request is accepted, delete branch
 
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 
@@ -613,12 +629,11 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 - [ ] If forked repo- give repo maintainers permission to amend pull request
 - [ ] Create pull request
 - [ ] Push follow-on commits to organizational or forked repo pull request
+
+* Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
 -->
 
 </td></tr>
-
-
-
 
 
 
@@ -709,7 +724,11 @@ Can use these command any time needed
 
 ### How to Add Additional Commits
 
+<!--
 You can continue to push changes to the branch. Anyone else who has read/write access to the branch can also fetch it, make a change, and push to the branch too. The process is the same as earlier. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request. 
+
+Like I said earlier, you, or anyone with read/write access to the branch, can continue to make changes to the pull request until it is merged.
+-->
 
 If the branch already exists, just switch to a branch
 
@@ -758,8 +777,6 @@ In the browser, go to the repo you want your pull request to be merged into. The
 * If the pull request is via a forked repo, you might want to leave the box checked to give repo maintainers permission to amend the pull request. This gives them read/write access to the branch and later I'll explain how to amend it.
 * Create the pull request
 
-Like I said earlier, you, or anyone with read/write access to the branch, can continue to make changes to the pull request until it is merged.
-
 </td></tr>
 
 
@@ -789,7 +806,11 @@ We are switching our perspective now. We are now a maintainer working from withi
 
 ### What Are You Doing When You Review a Pull Request?
 
-If you are a repo maintainer, firstly, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). You go to the pull request in the browser and look at it. In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
+If you are a repo maintainer, firstly, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). 
+
+You go to the pull request in the browser and look at it. 
+
+In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
 In the less simple scenario, you will need to fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
 
@@ -835,6 +856,14 @@ Check out pull request, run it like normal, for instance, a website
 - [ ] Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
 - [ ] Close pull request via browser
 - [ ] Close an issue via commit message by using keyword
+
+Ways to Deal with a Pull Request
+* Checkout a pull request via GitHub and merge
+* Checkout a pull request locally and merge
+* Checkout a pull request locally and ask contributor to make changes to pull request
+* Checkout a pull request locally, edit, merge with branch, and push to live branch to GitHub
+* Checkout a pull request locally and push a follow on commit to pull request from fork
+* Checkout a pull request locally and push a follow on commit to pull request from organizational branch
 -->
 
 </td></tr>
@@ -849,6 +878,11 @@ Check out pull request, run it like normal, for instance, a website
 ### Pull Request Review Process
 
 When you go to the pull request in the browser, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
+
+<!--
+Code Review Command Line Instructions
+* Different depending on how pull request was submitted (whether organization branch or fork branch)
+-->
 
 I actually want to show you a slightly different way to do it that I think is easier to understand. 
 
