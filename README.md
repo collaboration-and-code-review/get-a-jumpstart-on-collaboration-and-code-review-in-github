@@ -302,6 +302,9 @@ What are open-source, Git and GitHub?
 High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
 GitHub Vocab and Tour
+
+* source!!!!! (the original code base, probably an organizational repo that is being used as a "Shared Repository" that people without write access fork
+
 * repo (a place where a code base is stored)
 * fork (copy of an entire repo)
 * branch (a copy of a code base within a repo, often a "feature branch")
@@ -320,6 +323,12 @@ A fork is a copy of the repo in your user account that you can make your propose
 * upstream
 
 <!--
+### A Note About Remotes
+
+What is origin? The place where your code originates from.
+
+When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. Then, you will submit a pull request from there.
+
 * Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
 * If you cloned from an organization, the origin is the organization account, if you cloned from a fork, the origin is your user account
 -->
@@ -397,6 +406,8 @@ Even if you have write permission to a "Shared Repository", it is still common t
 <!--
 See write permissions chart for info
 Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc.
+
+Look at "Shared Repository" permissions
 -->
 
 </td></tr>
@@ -427,6 +438,8 @@ There are two collaborative development models:
 
 ### User Account
 
+Example: 
+
 * One owner with full control over sources and forks (this is an example of "Fork and Pull" Model)
 * Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
 
@@ -441,14 +454,12 @@ There are two collaborative development models:
 
 ### Organization Account
 
+Example: 
+
 * One or more owners who have full control
 * Owners can give other users write permission to "Shared Repositories" (this is an example of "Shared Repository" Model)
  
 </td></tr>
-
-
-
-
 
 
 <tr><td width="30%">
@@ -460,61 +471,9 @@ There are two collaborative development models:
 ### Shared Repository Model: User Account Versus Organization
 
 Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
-* With a user account, there is one owner and the collaborators have access to one repo
+* With a user account "Shared Repository", there is one owner and the collaborators have access to an individual repo
 * The advantage of an organizational account, is that an owner can create teams and permissions across multiple repos
-* Otherwise, the repo shared repository settings are almost exactly the same
-
-</td></tr>
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 20]()
-
-</td><td>
-
-### Switching Between Multiple Tasks
-
-There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
-* Keep your code up-to-date
-* Create one or more features
-* Do code review
-
-</td></tr>
-
-
-<!--
-### How Do We Do That?
-
-# Feature Branches- Best Practice Workflow
-
-Feature Branches (a.k.a. Topic Branches)
-* Feature branches are a best practice
-* Can be used by any GitHub user
-
-Positives
-* Enable follow on commits to be pushed to a pull request (contributor needs to give repo maintainers permission if via fork)
-* Prevent inactive pull requests
-
-Working with Feature Branches
-* Create and checkout to a feature branch (may need to specify which branch to branch off of)
-* The local files will have changed to the files of that branch
-* Push a branch to a repo (organization or fork- same process regardless of model used)
--->
-
-
-<tr><td width="30%">
-
-![Slide 21]()
-
-</td><td>
-
-### Example of a Not-Scalable Workflow
-
-* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is accepted. If you delete the fork, the pull request can still be accepted, but it's considered inactive and you will not be able to add additional commits. 
+* Otherwise, the repo "Shared Repository" settings are almost exactly the same
 
 </td></tr>
 
@@ -525,17 +484,14 @@ Working with Feature Branches
 
 </td><td>
 
-### Best Practice Workflow
+### Collaboration and Code Review Best Practice Workflow
 
-It's a best practice to use branches. You can switch between multiple tasks by using "branches". If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
-
-What is a branch? 
-
-Within your a repo is a codebase. You can make a copy of the codebase within the repo. The copy is called a branch. When you are finished making changes to a branch, you can submit a pull request and if the pull request is accepted, your changes will be merged into the codebase. Git will replace the old part of the codebase with your changes, and keep everything else the same. Meanwhile, you can keep your codebase up to date and make unlimited new branches. When you review pull requests, the pull requests will also be in the form of branches. 
+There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
+* Keep your code up-to-date
+* Create one or more features
+* Do code review
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -544,41 +500,14 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 </td><td>
 
-### General Branch Process
+### Example of a Not-Scalable Workflow
 
-The process for working with branches is very similar for anyone, regardless of which collaborative development model (organizational repo or forked repo) you are using. Parts of this process can also be used during code review.
-
-* If you do not have read/write access to the repo you want to contribute to, fork the repo
-* Clone or download the organizational or forked repo (whatever your origin is, which I'll explain in a minute)
-
-* Push branch to organizational or forked repo (whatever your origin is)
-
+* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
 
 <!--
-# Collaborative Development Model Tour
-
-- [ ] Understand the two main Collaborative Development Models
-- [ ] Understand what read/write permission is
-- [ ] Look at an example of a best practice "Fork and Pull Model" workflow
-- [ ] Look at an example of a best practice "Shared Repository Model" workflow for an organizational repo
-- [ ] Look at organizational repo "Shared Repository" permissions
-
-### Optional- User Account "Shared Repository Model"
-
-- [ ] Understand the difference between organizational and user account "Shared Repository Model"
-- [ ] Look at user account repo "Shared Repository" permissions
-- [ ] Look at an example of a best practice "Shared Repository Model" workflow for a user account 
-
-Switch perspective
-* URL of the repo you have read/write access to
-
-Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
-
-Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
-
-The two main differences are that if you are using the "Fork and Pull" Model:
-* You need to fork the repo before you clone it
-* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+Positives
+* Enable follow on commits to be pushed to a pull request (contributor needs to give repo maintainers permission if via fork)
+* Prevent inactive pull requests
 -->
 
 </td></tr>
@@ -590,19 +519,21 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 </td><td>
 
-### A Note About Remotes
+### How Do We Switch Between Multiple Tasks
 
-What is origin? The place where your code originates from.
+Feature Branches (a.k.a. Topic Branches)
+* Feature branches are a best practice
+* Can be used by any GitHub user
+* Give you more freedom
 
-When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. Then, you will submit a pull request from there.
+<!--
+Pull request branches
+-->
+
+If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
-<!--
-# Use Utility Commands
-
-Can use these command any time needed
--->
 
 <tr><td width="30%">
 
@@ -610,29 +541,90 @@ Can use these command any time needed
 
 </td><td>
 
+### What is a Branch?
+
+<!--
+Within your a repo is a codebase. You can make a copy of the codebase within the repo. The copy is called a branch. When you are finished making changes to a branch, you can submit a pull request and if the pull request is accepted, your changes will be merged into the codebase. Git will replace the old part of the codebase with your changes, and keep everything else the same. Meanwhile, you can keep your codebase up to date and make unlimited new branches. When you review pull requests, the pull requests will also be in the form of branches. 
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 26]()
+
+</td><td>
+
+### Perspective
+
+Our perspective is of a person who has cloned a repo (either the organizational repo or a fork, whatever the person has write access to), is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 27]()
+
+</td><td>
+
 ### General Branch Process
 
 <!--
+The process for working with branches is very similar for anyone, regardless of which collaborative development model you are using (organizational or forked repo). Parts of this process can also be reused, for instance during code review.
+
+Working with Feature Branches
+* Create and checkout to a feature branch (may need to specify which branch to branch off of)
+
+- [ ] Look at an example of a best practice "Fork and Pull Model" workflow
+Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
+
+- [ ] Look at an example of a best practice "Shared Repository Model" workflow
+Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
+
+The two main differences are that if you are using the "Fork and Pull" Model:
+* You need to fork the repo before you clone it
+* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
+
+
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 
 - [ ] If no read/write access- fork the repo
 - [ ] Clone or download the organizational or forked repo (this will be your origin)
 - [ ] Change directory
 - [ ] Verify which branch you are checked out on
-- [ ] Create and switch to a feature branch, a.k.a. topic branches (note how the local files switch to the files of the branch you are checked out on)
+- [ ] Create and switch to a feature branch, a.k.a. topic branches (note how the local files will have switched to the files of the branch you are checked out on)
 - [ ] Add, commit, create a message
 - [ ] Push the branch to the organizational or forked repo (this will be your origin)
 - [ ] Create pull request title, description, make sure base and compare are correct
 - [ ] If forked repo- give repo maintainers permission to amend pull request
 - [ ] Create pull request
 - [ ] Push follow-on commits to organizational or forked repo pull request
-
-Clone an organizational repo (organizational repo will be "origin")
-
-Clone a user account repo (forked repo will be "origin")
 -->
 
-Perspective: 
+</td></tr>
+
+
+
+
+
+
+
+
+<!--
+Switch perspective
+* URL of the repo you have read/write access to
+
+Clone an organizational repo (organizational repo will be "origin")
+Clone a user account repo (forked repo will be "origin")
+
+* Clone or download the organizational or forked repo (whatever your origin is)
+
+* Push branch to organizational or forked repo (whatever your origin is)
+-->
+
+
 
 <!--
 ```bash
@@ -693,10 +685,15 @@ Push branch to GitHub
 $ git push origin <branch-name>
 ```
 
-There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. 
+There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
 
+<!--
+# Use Utility Commands
+
+Can use these command any time needed
+-->
 
 <tr><td width="30%">
 
@@ -707,6 +704,12 @@ There will now be a new branch in the repo that is your origin. The branch will 
 ### How to Add Additional Commits
 
 You can continue to push changes to the branch. Anyone else who has read/write access to the branch can also fetch it, make a change, and push to the branch too. The process is the same as earlier. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request. 
+
+If the branch already exists, just switch to a branch
+
+```bash
+$ git checkout <branch-name>
+```
 
 Add, commit, create a message
 
@@ -733,6 +736,9 @@ $ git push origin <branch-name>
 ### Submit a Pull Request
 
 <!--
+base fork, base, head fork, compare
+base, compare
+
 branch-name ... "Compare & pull request"
 base: master ... compare: branch-name
 Click "Create pull request"
@@ -747,6 +753,20 @@ In the browser, go to the repo you want your pull request to be merged into. The
 * Create the pull request
 
 Like I said earlier, you, or anyone with read/write access to the branch, can continue to make changes to the pull request until it is merged.
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 26]()
+
+</td><td>
+
+### Perspective
+
+We are switching our perspective now. The organizational repo where we are a maintainer is our only origin. 
 
 </td></tr>
 
@@ -832,16 +852,11 @@ Check out pull request, run it like normal, for instance, a website
 
 </td><td>
 
-### Pull Request Process
+### Pull Request Review Process
 
 When you go to the pull request in the browser, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
 
 I actually want to show you a slightly different way to do it that I think is easier to understand. 
-
-<!--
-base fork, base, head fork, compare
-base, compare
--->
 
 </td></tr>
 
