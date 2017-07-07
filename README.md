@@ -310,6 +310,13 @@ GitHub Vocab and Tour
 * branch (a copy of a code base within a repo, often a "feature branch")
 
 <!--
+Some things can be done by browser or command line; some things can only be done by command line
+Can create, add, rename, move file in browser or from command line (images are an exception)
+Can make a branch by command line or in the browser
+Images can be drag and drop/upload, but can't rename or move in browser
+
+Called a pull request because the changes are "pulled into the source repository by the project maintainer."
+
 About forks
 "Original repository, also known as the "upstream" repository"
 "synchronizing your fork with the upstream repository"
@@ -320,6 +327,8 @@ Syncing a fork- see process, varies by OS
 Merging an upstream repository into your fork- revisit, varies by OS
 
 Creating and deleting branches within your repository- branch selector menu, click  NUMBER branches to delete
+Viewing branches in your repository- branches tab, can delete, change default
+Create a branch by command line or in the browser below the commit message field. 
 
 When you try to edit a repository that you do not have read/write access to, GitHub will automatically fork the repo to your user account. After you commit the change, you can submit a pull request.
 Or, you can click the "Fork" button. 
