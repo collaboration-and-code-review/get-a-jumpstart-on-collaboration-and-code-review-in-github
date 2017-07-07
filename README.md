@@ -575,16 +575,15 @@ Our perspective is of a person who has cloned a repo (either the organizational 
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 27]()
 
 </td><td>
 
-### General Branch Process
+### Branch Process Overview
 
 The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using ("Shared Repository" or "Fork and Pull"). Parts of this process can be reused, for instance, during code review. 
 
 <!--
-Working with Feature Branches
 * Create and checkout to a feature branch)
 
 The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
@@ -627,24 +626,13 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 </td></tr>
 
 
+<tr><td width="30%">
 
+![Slide 28]()
 
+</td><td>
 
-<!--
-* URL of the repo you have write permission to
-
-* Clone or download the organizational or forked repo (whatever your origin is)
-
-* Push branch to organizational or forked repo (whatever your origin is)
--->
-
-
-
-<!--
-```bash
-$ git clone <repo-url>
-```
--->
+### Commands
 
 Clone (or download) an organizational repo (organizational repo will be "origin")
 
@@ -701,10 +689,28 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 
 
+
+
+<!--
+* URL of the repo you have write permission to
+
+* Clone or download the organizational or forked repo (whatever your origin is)
+
+* Push branch to organizational or forked repo (whatever your origin is)
+-->
+
+<!--
+```bash
+$ git clone <repo-url>
+```
+-->
+
 <!--
 # Reusable Commands
 
 -->
+
+
 
 <tr><td width="30%">
 
