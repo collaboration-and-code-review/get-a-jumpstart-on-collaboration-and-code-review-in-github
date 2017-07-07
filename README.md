@@ -60,7 +60,7 @@ Thank you for being here. I'm thrilled to have the opportunity to talk to you ab
 
 ### About Me 
 
-* DjangoCon Website Chair
+* DjangoCon Website Chair (where I learned a lot of what I"m going to be teaching you)
 * DEFNA (Django Events Foundation North America) Board Member
 * Project Manager
 * Web Designer and Developer
@@ -316,6 +316,8 @@ GitHub Vocab and Tour
 * git merge (merge code)
 * git pull (fetch and merge, all in one action)
 
+* Some things can be done in both browser or command line, some things only by command line locally.
+
 Examples of How to Do Important Things in Browser versus Locally
 
 Action |Browser | Command Line
@@ -334,8 +336,6 @@ Browser and Local Graphic
 
 What are open-source, Git and GitHub?
 
-* Some things can be done in both browser or command line, some things only by command line locally.
-
 you will use terminal/command line often with code review. 
 
 * Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
@@ -347,40 +347,45 @@ you will use terminal/command line often with code review.
 </td></tr>
 
 
+<tr><td width="30%">
 
+![Slide 16]()
 
+</td><td>
 
+### Write Permission and Why It Matters
+
+Write Permission is an important concept in GitHub collaboration
+
+* If you have write permission to a repo, you can directly change the repo
+* It doesn't matter what kind of repo you are contributing to, whether or not you have write permission to a repo determines how you contribute to it
+
+<!--
+* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 17]()
 
 </td><td>
 
-### Write Access
-
-Write Permission
-
-* If you have write permission to a repo, you can directly change the repo
-* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
-* Whether or not you have write permission to a repo determines how you collaborate
-* See permissions chart for info
-
-Example Situations
+### What Does Write Permission Allow You to Do?
 
 <!--
-Permission Levels
-https://help.github.com/articles/access-permissions-on-github
-Owners, members, billing managers, outside collaborators
-https://help.github.com/articles/permission-levels-for-an-organization
-https://help.github.com/articles/repository-permission-levels-for-an-organization
-https://help.github.com/articles/inviting-collaborators-to-a-personal-repository
-https://help.github.com/articles/permission-levels-for-a-user-account-repository
-https://help.github.com/articles/differences-between-user-and-organization-accounts
+See write permissions chart for info
+Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc. 
 -->
 
 </td></tr>
+
+
+
+
+
 
 
 <tr><td width="30%">
@@ -391,8 +396,9 @@ https://help.github.com/articles/differences-between-user-and-organization-accou
 
 ### User Account
 
-* One owner who has read/write access 
-* Owner can give other users read/write access to a repo (this is an example of "Shared Repository" Model)
+* One owner with full control over sources and forks
+* Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
+
 
 </td></tr>
 
@@ -464,27 +470,7 @@ There are two collaborative development models:
 
 
 
-<tr><td width="30%">
 
-![Slide 15]()
-
-</td><td>
-
-### Read/Write Access and Why It Matters
-
-<!--
-You need to have read/write access to directly change a repo. If you don't have read/write access, you need to fork the repo. 
--->
-
-An important concept in GitHub collaboration: Do you have read/write access to the repo you want to contribute to? It doesn't matter what kind of repo you are contributing to, the way that you contribute to a project depends on whether you have read/write access to it. 
-
-What does read/write access allow you to do? Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc. 
-
-<!--
-List
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1438,6 +1424,15 @@ Advanced Collaborative Development Workflow Examples
 * [Can I Recover Branch After its Deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git)
 
 <!--
+Permission Levels
+https://help.github.com/articles/access-permissions-on-github
+Owners, members, billing managers, outside collaborators
+https://help.github.com/articles/permission-levels-for-an-organization
+https://help.github.com/articles/repository-permission-levels-for-an-organization
+https://help.github.com/articles/inviting-collaborators-to-a-personal-repository
+https://help.github.com/articles/permission-levels-for-a-user-account-repository
+https://help.github.com/articles/differences-between-user-and-organization-accounts
+
 * What is [open-source software](https://en.wikipedia.org/wiki/Open-source_software)?
 
 * [A Checklist Before You Contribute](https://opensource.guide/how-to-contribute/#a-checklist-before-you-contribute)
