@@ -401,6 +401,7 @@ Write permission is special access.
 
 See write permissions chart for info
 Write permission allows you to do things like push a branch directly to the repo (not by fork), change a file, review pull request, etc.
+"You must have write access to a repository to create a branch and open a pull request. 
 Look at "Shared Repository" permissions
 
 Definition of write
@@ -623,6 +624,9 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * When the pull request is accepted, delete the branch
 
 * Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
+
+"The changes can be pulled into the source repository by the project maintainer."
+"When you open a pull request proposing changes from your fork's branch to a branch in the source (upstream) repository, you can allow anyone with push access to the upstream repository to make changes to your pull request."
 -->
 
 </td></tr>
@@ -1050,6 +1054,12 @@ Interactive rebase
 Safe-guards
 * Mergeability of pull requests: 
 * Branch restrictions
+
+Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
+About merge conflicts- Resolve conflicts buttons, can't push until resolved
+Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
+"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
+Resolving a merge conflict using the command line- varies by OS, revisit
 
 ### Keep Main Branch(es) Up-to-Date
 ### Keep Feature Branch(es) Up-to-Date
