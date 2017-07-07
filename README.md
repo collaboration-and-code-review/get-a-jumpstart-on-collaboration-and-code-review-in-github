@@ -417,13 +417,10 @@ There are two collaborative development models:
 
 ### User Account
 
-* One owner with full control over sources and forks
-* Owner can give other users write permission to a repo (this is an example of "Shared Repository")
+* One owner with full control over sources and forks (this is an example of "Fork and Pull" Model)
+* Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
 
 </td></tr>
-
-
-
 
 
 <tr><td width="30%">
@@ -434,14 +431,33 @@ There are two collaborative development models:
 
 ### Organization Account
 
-* One or more owners who have read/write access 
-* Owners can give other users read/write access (this is an example of "Shared Repository" Model)
-* Can create teams/permissions (advantage over using user account "Shared Repository" Model)
+* One or more owners who have full control
+* Owners can give other users write permission to "Shared Repositories" (this is an example of "Shared Repository" Model)
  
 </td></tr>
 
 
 
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### User Versus Organizational Account
+
+Using an organizational account rather than a user account for collaboration has some advantages:
+* With a user account, one owner and the collaborators have access to one repo
+* With an organizational account, owner(s) can create teams and permissions, with team members working across multiple repos
+* Otherwise, the repo shared repository settings are similar
+
+</td></tr>
+
+<!--
+* Can create teams/permissions (advantage over using user account "Shared Repository" Model)
+Can create teams/permissions
+-->
 
 
 
@@ -470,26 +486,6 @@ There are two collaborative development models:
 * A repo in an organizational account that an owner has give you read/write access to as a maintainer (more common)
 
 </td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 17]()
-
-</td><td>
-
-### User Versus Organizational Account
-
-Using an organizational account rather than a user account for collaboration has some advantages:
-* With a user account, one owner and the collaborators have access to one repo
-* With an organizational account, owner(s) can create teams and permissions, with team members working across multiple repos
-* Otherwise, the repo shared repository settings are similar
-
-</td></tr>
-
-
-
-
 
 
 <tr><td width="30%">
