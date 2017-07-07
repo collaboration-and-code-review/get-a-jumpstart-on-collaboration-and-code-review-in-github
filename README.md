@@ -172,7 +172,7 @@ I had been wanting to contribute for months, but wasn't sure how, and now was my
 
 ### My First Pull Request
 
-I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted my first pull request.
+I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted my first pull request. As is often characteristic of moments of achievement like this, there was a huge adrenaline rush. 
 
 </td></tr>
 
@@ -230,6 +230,8 @@ There are many variations to how things can be done in GitHub. This talk is not 
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
 <!--
+You will use terminal/command line often with code review.
+
 (<> symbol denotes a placeholder/variable)
 Using HTTPS examples
 Example- some operating systems do not use dollar signs $ as command line prompts.
@@ -269,8 +271,7 @@ Bash command list, text editor recommendations
 
 ### Getting Help
 
-* Help via Git, GitHub Help and Guides
-* Help via GitHub Keyboard Shortcuts (type "?")
+* Help via Git, GitHub Help and Guides (links in Resources Section)
 * Help via command line
 
 ```bash
@@ -278,6 +279,11 @@ $ git help <verb>
 $ git <verb> --help
 $ man git-<verb>
 ```
+
+<!--
+Productivity
+* Help via GitHub Keyboard Shortcuts (type "?")
+-->
 
 </td></tr>
 
@@ -292,21 +298,38 @@ $ man git-<verb>
 
 ### Git and GitHub Tour
 
-High level explanation: Git is a version control system that you install on your computer and use via your terminal. GitHub is a web-based dashboard that you can use in conjunction with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
+<!--
+What are open-source, Git and GitHub?
+-->
+
+High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
 GitHub Vocab and Tour
 * repo (a place where a code base is stored)
-* branch (a copy of a code base within a repo, often a "feature branch")
 * fork (copy of an entire repo)
+* branch (a copy of a code base within a repo, often a "feature branch")
+
+<!--
+"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
+-->
+
 * local development environment (your computer environment)
 * clone (a local copy of a repo)
+
 * remote (the default name for the remote you cloned from)
 * origin
 * upstream
-* pull request
+
+<!--
+* Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
+* If you cloned from an organization, the origin is the organization account, if you cloned from a fork, the origin is your user account
+-->
+
 * git fetch (obtain code locally, without merging)
 * git merge (merge code)
 * git pull (fetch and merge, all in one action)
+
+* pull request
 
 * Some things can be done in both browser or command line, some things only by command line locally.
 
@@ -324,16 +347,7 @@ Open an issue | Can only do in browser | N/A
 Open a pull request | Can only do in browser | N/A
 
 <!--
-Browser and Local Graphic
-
-What are open-source, Git and GitHub?
-
-you will use terminal/command line often with code review. 
-
-* Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
-* If you cloned from an organization, the origin is the organization account, if you cloned from a fork, the origin is your user account
-
-"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
+Browser and Local Graphic 
 -->
 
 </td></tr>
@@ -349,11 +363,12 @@ you will use terminal/command line often with code review.
 
 Write Permission is an important concept in GitHub collaboration
 
-* If you have write permission to a repo, you can directly change the repo
+* If you have write permission to a repo, you can directly change the repo without submitting a request (pull request)
 * It doesn't matter what kind of repo you are contributing to, whether or not you have write permission to a repo determines how you contribute to it
 
 <!--
-* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
+Definition of write
+We're talking about "write" in the context of...
 -->
 
 </td></tr>
@@ -369,11 +384,28 @@ Write Permission is an important concept in GitHub collaboration
 
 <!--
 See write permissions chart for info
-Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc. 
+Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc.
+* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
 -->
 
 </td></tr>
 
+
+<tr><td width="30%">
+
+![Slide 18]()
+
+</td><td>
+
+### Two Collaborative Development Models
+
+The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have write permission.
+
+There are two collaborative development models: 
+* “Fork and Pull” Model
+* “Shared Repository” Model
+
+</td></tr>
 
 
 
@@ -410,21 +442,9 @@ Read/write access allows you to do things such as push a branch to the repo, cha
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 22]()
 
-</td><td>
 
-### Two Collaborative Development Models
-
-The question of read/write access leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have read/write access.
-
-There are two collaborative development models: 
-* “Fork and Pull” Model
-* “Shared Repository” Model
-
-</td></tr>
 
 
 <tr><td width="30%">
