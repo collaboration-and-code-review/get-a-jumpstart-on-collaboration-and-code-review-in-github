@@ -301,40 +301,18 @@ What are open-source, Git and GitHub?
 
 High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
-GitHub Vocab and Tour
+GitHub Vocab
 
-* source!!!!! (the original code base, probably an organizational repo that is being used as a "Shared Repository" that people without write access fork
-
-* repo (a place where a code base is stored)
-* fork (copy of an entire repo)
+* repository (called repo for short, a place where a code base is stored)
+* source (the original repo someone created, not a fork)
+* fork (copy of an entire repo, usually into a user account, but could be into an organization)
 * branch (a copy of a code base within a repo, often a "feature branch")
 
 <!--
-Some things can be done by browser or command line; some things can only be done by command line
-Can create, add, rename, move file in browser or from command line (images are an exception)
-Can make a branch by command line or in the browser
-Images can be drag and drop/upload, but can't rename or move in browser
-
-Called a pull request because the changes are "pulled into the source repository by the project maintainer."
-
-About forks
-"Original repository, also known as the "upstream" repository"
-"synchronizing your fork with the upstream repository"
-Configuring a remote for a fork- different depending on OS
-"You must configure a remote that points to the upstream repository in Git to sync changes you make in a fork with the original repository."
-Syncing a fork- see process, varies by OS
-"Syncing your fork only updates your local copy of the repository. To update your fork on GitHub, you must push your changes."
-Merging an upstream repository into your fork- revisit, varies by OS
-
-Creating and deleting branches within your repository- branch selector menu, click  NUMBER branches to delete
-Viewing branches in your repository- branches tab, can delete, change default
-Create a branch by command line or in the browser below the commit message field. 
-
-When you try to edit a repository that you do not have read/write access to, GitHub will automatically fork the repo to your user account. After you commit the change, you can submit a pull request.
+When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
 Or, you can click the "Fork" button. 
 
-Editing files in another user's repository
-"When you edit a file in another user's repository, we'll automatically fork the repository and open a pull request for you." "Above the new content, click Preview changes."
+"Above the new content, click Preview changes."
 
 "Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
 
@@ -344,28 +322,21 @@ A fork is a copy of the repo in your user account that you can make your propose
 * local development environment (your computer environment)
 * clone (a local copy of a repo)
 
-* remote (the default name for the remote you cloned from)
-* origin
-* upstream
+* remote
+* origin (the default name for the remote repository you cloned your code from)
+* upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
 
 <!--
-### A Note About Remotes
+When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a forked repo, the origin is the forked repo and you will be pushing to the fork. If you cloned from an organizational repo, the origin is the organizational repo, and you will be pushing to the organizational repo. Then, you will submit a pull request from there.
 
-What is origin? The place where your code originates from.
-
-When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a fork, you will be pushing to the fork. If you cloned from an organizational repo, you will be pushing to the organizational repo. Then, you will submit a pull request from there.
-
-* Understand difference between origin (the default remote, and where you clone from), upstream (where you pull from), and fork (user account copy)
-* If you cloned from an organization, the origin is the organization account, if you cloned from a fork, the origin is your user account
+When you make a change on GitHub, the change does not automatically update locally, and vice versa
 -->
 
 * git fetch (obtain code locally, without merging)
 * git merge (merge code)
 * git pull (fetch and merge, all in one action)
 
-* pull request
-
-* Some things can be done in both browser or command line, some things only by command line locally.
+* pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
 Examples of How to Do Important Things in Browser versus Locally
 
@@ -383,15 +354,26 @@ Open a pull request | Can only do in browser | N/A
 <!--
 Browser and Local Graphic 
 
-# Organization and User Accounts
+Committing changes in browser versus locally
+* Can do many things in the browser (example: patch)
+* Some changes can be made and committed in the browser, some cannot
+* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
 
-- [ ] Create a user account repo
-- [ ] Create an organization
-- [ ] Take a user account tour and understand the parts
-- [ ] Take an organizational account tour and understand the parts
-- [ ] Understand how to create teams with permissions
-- [ ] Access your organizational account and dashboard
-- [ ] Create an organizational repo
+* Some things can be done in both browser or command line, some things only by command line locally.
+* Will need to run code locally to view changes, unless dealing with gh-pages and HTML, CSS, JavaScript, or Jekyll
+
+Can create, add, rename, move file in browser or from command line (images are an exception)
+Can make a branch by command line or in the browser
+Images can be drag and drop/upload, but can't rename or move in browser
+Creating and deleting branches within your repository- branch selector menu, click  NUMBER branches to delete
+Viewing branches in your repository- branches tab, can delete, change default
+Create a branch by command line or in the browser below the commit message field. 
+
+* How/where d oyou create a user account or organization
+* Understand/take tour of the parts of a user account and organization
+* Understand how to create teams with permissions
+* Access your organizational account and dashboard
+* Create an organizational repo
 -->
 
 </td></tr>
@@ -417,7 +399,6 @@ Write permission is special access.
 
 See write permissions chart for info
 Write permission allows you to do things like push a branch directly to the repo (not by fork), change a file, review pull request, etc.
-You have to have read/write access to do tasks
 Look at "Shared Repository" permissions
 
 Definition of write
@@ -1061,6 +1042,9 @@ Delete remote branch
 
 <!--
 # Making Workflow Decisions
+
+* Which workflow is "best"? Depends on what you are trying to accomplish. 
+* Some developers have passionate views about this topic (see comment threads)
 
 - [ ] Look at an example of master only versus master/develop, production/staging
 - [ ] Decide a workflow
