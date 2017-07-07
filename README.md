@@ -362,6 +362,8 @@ Committing changes in browser versus locally
 * Some things can be done in both browser or command line, some things only by command line locally.
 * Will need to run code locally to view changes, unless dealing with gh-pages and HTML, CSS, JavaScript, or Jekyll
 
+Can delete branches under the branches tab or in the closed pull request page, or by command line
+
 Can create, add, rename, move file in browser or from command line (images are an exception)
 Can make a branch by command line or in the browser
 Images can be drag and drop/upload, but can't rename or move in browser
@@ -998,6 +1000,9 @@ Committing Changes to a Pull Request Branch Created from a Fork
 
 <!--
 Deleting branch in browser will not delete it in your local repo, like other things need to update
+
+Managing branches in your repository- "it's a good idea to delete merged or stale branches"
+Delete merged or stale branches (remote and local)
 -->
 
 * Close pull request
@@ -1023,13 +1028,32 @@ Delete remote branch
 </td></tr>
 
 
-
-
 <!--
+git config --global core.editor
+
+Tracking
+
+$ git branch --merged
+$ git branch --no-merged
+
+Advanced
+* Resolve a merge conflict in the browser
+* Resolve a merge conflict by command line
+* Understand rebasing
+* Understand update "strategies": fast forward, recursive
+
+Advanced Git
+* Git rebase, resolving merge conflicts after a Git rebase
+
+Interactive rebase
+
+Safe-guards
+* Mergeability of pull requests: 
+* Branch restrictions
+
 ### Keep Main Branch(es) Up-to-Date
 ### Keep Feature Branch(es) Up-to-Date
 -->
-
 
 
 <tr><td width="30%">
@@ -1038,19 +1062,24 @@ Delete remote branch
 
 </td><td>
 
-### Should Your Project Use a Develop Branch?
-
-<!--
-# Making Workflow Decisions
+### Should You Use a Different Workflow?
 
 * Which workflow is "best"? Depends on what you are trying to accomplish. 
 * Some developers have passionate views about this topic (see comment threads)
 
+<!--
+Should Your Project Use a Develop Branch?
+
+# Making Workflow Decisions
+
+Setting the default branch
+"The default branch is considered the base branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch"
+The default branch is the base branch and will be master, unless you specify otherwise
+Set the default (base branch) under branches tab- against which all pull requests and code commits are automatically made- master branch by default
+
 - [ ] Look at an example of master only versus master/develop, production/staging
 - [ ] Decide a workflow
 - [ ] If will have both master and develop branch, choose default branch
-
-### Workflow Decisions
 
 * Are you going to have both master and development branches? (master only or master/develop as production/staging)
 * If you have both, which will be your default branch? (base against which future pull requests and commits will be made)
@@ -1089,12 +1118,6 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 - [ ] Look at advanced workflows and understand different choices
 - [ ] Create a tag
 - [ ] Create a release
-
-Advanced
-* Resolve a merge conflict in the browser
-* Resolve a merge conflict by command line
-* Understand rebasing
-* Understand update "strategies": fast forward, recursive
 -->
 
 <tr><td width="30%">
@@ -1246,12 +1269,11 @@ Setting Up Repo Fail Safes
 * Enable required reviews of pull requests
 * Decide whether to use status checks (external)
 * Worst case scenario: How to recover deleted branch
+* Sensitive data warning
 
 </td></tr>
 
 <!--
-# Sensitive Data Warning
-
 Any sensitive information made public, should be immediately considered compromised, removed from GitHub, and changed in development/production (famous companies have done it too!)
 -->
 
