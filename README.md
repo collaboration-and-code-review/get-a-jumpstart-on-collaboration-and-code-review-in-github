@@ -347,6 +347,16 @@ Open a pull request | Can only do in browser | N/A
 
 <!--
 Browser and Local Graphic 
+
+# Organization and User Accounts
+
+- [ ] Take a user account tour and understand the parts
+- [ ] Create a user account repo
+- [ ] Create an organization
+- [ ] Take an organizational account tour and understand the parts
+- [ ] Understand how to create teams with permissions
+- [ ] Access your organizational account and dashboard
+- [ ] Create an organizational repo
 -->
 
 </td></tr>
@@ -400,7 +410,7 @@ Read/write access allows you to do things such as push a branch to the repo, cha
 
 ### Two Collaborative Development Models
 
-The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have write permission.
+The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people contribute to repos. The two collaborative development models basically correspond to whether you have write permission.
 
 There are two collaborative development models: 
 * If you do not have write permission to a repo, so you make a copy of the repo called a fork and submit a pull request, this is called the “Fork and Pull” Model
@@ -447,33 +457,17 @@ There are two collaborative development models:
 
 </td><td>
 
-### Organizational "Shared Repository" Versus User Account "Shared Repository" 
+### Shared Repository Model: User Account Versus Organization
 
-Using an organizational account rather than a user account for collaboration has some advantages:
-* With a user account, one owner and the collaborators have access to one repo
+Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
+* With a user account, there is one owner and the collaborators have access to one repo
 * The advantage of an organizational account, is that an owner can create teams and permissions across multiple repos
-* Otherwise, the repo shared repository settings are extremely similar
-
-<!--
-* Both can be a "shared repository" (users can be invited to be collaborators with read/write access)
--->
+* Otherwise, the repo shared repository settings are almost exactly the same
 
 </td></tr>
 
 
 
-
-<!--
-# Organization and User Accounts
-
-- [ ] Take a user account tour and understand the parts
-- [ ] Create a user account repo
-- [ ] Create an organization
-- [ ] Take an organizational account tour and understand the parts
-- [ ] Understand how to create teams with permissions
-- [ ] Access your organizational account and dashboard
-- [ ] Create an organizational repo
--->
 
 
 <tr><td width="30%">
