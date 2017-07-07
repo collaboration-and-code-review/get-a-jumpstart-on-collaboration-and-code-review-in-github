@@ -363,8 +363,9 @@ Browser and Local Graphic
 
 Write Permission is an important concept in GitHub collaboration
 
-* If you have write permission to a repo, you can directly change the repo without submitting a request (pull request)
 * It doesn't matter what kind of repo you are contributing to, whether or not you have write permission to a repo determines how you contribute to it
+* If you have write permission to the repo, you can make changes directly within the repo
+* If you do not have write permission to the repo, you need to make a copy of the repo in your user account or an organization (the copy is called a fork), make your changes and submit a request for the changes to be accepted to the original repo that you want your changes to be merged with (this is called a pull request)
 
 <!--
 Definition of write
@@ -402,8 +403,8 @@ Read/write access allows you to do things such as push a branch to the repo, cha
 The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people work on software together. The two collaborative development models basically correspond to whether you have write permission.
 
 There are two collaborative development models: 
-* “Fork and Pull” Model
-* “Shared Repository” Model
+* If you do not have write permission to a repo, so you make a copy of the repo called a fork and submit a pull request, this is called the “Fork and Pull” Model
+* If you have write permission to a repo (user account or organizational), so you make changes directly within the repo along with others, this is called the  “Shared Repository” Model
 
 </td></tr>
 
@@ -446,25 +447,6 @@ There are two collaborative development models:
 
 
 
-
-<tr><td width="30%">
-
-![Slide 23]()
-
-</td><td>
-
-### In Summary
-
-* If you do not have read/write access to a repo, you need to fork the repo. This is the “Fork and Pull” Model. 
-* If you have read/write access to a repo (user account or organizational), you can clone and work on the repo directly with others. This is the “Shared Repository” Model. 
-
-</td></tr>
-
-
-
-
-
-
 <!--
 # Organization and User Accounts
 
@@ -476,14 +458,6 @@ There are two collaborative development models:
 - [ ] Access your organizational account and dashboard
 - [ ] Create an organizational repo
 -->
-
-
-
-
-
-
-
-
 
 <tr><td width="30%">
 
