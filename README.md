@@ -280,10 +280,7 @@ $ git <verb> --help
 $ man git-<verb>
 ```
 
-<!--
-Productivity
-* Help via GitHub Keyboard Shortcuts (type "?")
--->
+There will also be some Keyboard Shortcuts in the Productivity Tips part of my talk
 
 </td></tr>
 
@@ -1198,6 +1195,9 @@ Documentation and Community
 - [ ] Set up special configs (example: line endings)
 - [ ] Create saved replies
 - [ ] Link to specific line number on GitHub
+
+Productivity
+* Help via GitHub Keyboard Shortcuts (type "?")
 
 Writing and Formatting
 
