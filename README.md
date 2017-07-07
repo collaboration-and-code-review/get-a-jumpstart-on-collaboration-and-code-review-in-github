@@ -308,6 +308,8 @@ GitHub Vocab and Tour
 
 <!--
 "Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
+
+A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
 -->
 
 * local development environment (your computer environment)
@@ -380,10 +382,11 @@ We're talking about "write" in the context of...
 
 ### What Does Write Permission Allow You to Do?
 
+Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+
 <!--
 See write permissions chart for info
 Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc.
-* There is often a level of trust involved, for instance, if you are added to an organization as a maintainer
 -->
 
 </td></tr>
@@ -406,6 +409,19 @@ There are two collaborative development models:
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### User Account
+
+* One owner with full control over sources and forks
+* Owner can give other users write permission to a repo (this is an example of "Shared Repository")
+
+</td></tr>
+
 
 
 
@@ -413,21 +429,6 @@ There are two collaborative development models:
 <tr><td width="30%">
 
 ![Slide 20]()
-
-</td><td>
-
-### User Account
-
-* One owner with full control over sources and forks
-* Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
-
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 21]()
 
 </td><td>
 
@@ -488,19 +489,7 @@ Using an organizational account rather than a user account for collaboration has
 
 
 
-<tr><td width="30%">
 
-![Slide 19]()
-
-</td><td>
-
-### The Differences Between the Two Collaborative Development Models
-
-If you have read/write access to the repo you want to contribute to, you can make changes directly within the repo. This is the "Shared Repository" Model. I do want to point out though that when you are made a collaborator in a project, there is often a level of trust involved. The code in the repo might be live. Whether or not you should be making changes directly into a live branch depends on your level of comfort with a project. It's often best to have another maintainer review your work through a pull request.
-
-If you do not have read/write access to the repo you want to contribute to, you will need to fork the repo. A fork is a copy of the repo in your user account that you can make your proposed changed to. This is called the "Fork and Pull" Model. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
-
-</td></tr>
 
 
 <tr><td width="30%">
