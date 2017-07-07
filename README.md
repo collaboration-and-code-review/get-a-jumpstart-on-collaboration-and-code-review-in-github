@@ -359,9 +359,9 @@ Browser and Local Graphic
 
 # Organization and User Accounts
 
-- [ ] Take a user account tour and understand the parts
 - [ ] Create a user account repo
 - [ ] Create an organization
+- [ ] Take a user account tour and understand the parts
 - [ ] Take an organizational account tour and understand the parts
 - [ ] Understand how to create teams with permissions
 - [ ] Access your organizational account and dashboard
@@ -388,6 +388,11 @@ Write Permission is an important concept in GitHub collaboration
 <!--
 Definition of write
 We're talking about "write" in the context of...
+
+Do you have read/write access to the repo? If yes, you can use the "Shared Repository Model". If not, you will need to use the "Fork and Pull Model".
+
+* Your workflow will dependent on whether you have read/write access to the repo you are contributing to
+* Read/write access is special permission an organizational account owner or user account owner might give to trusted person
 -->
 
 </td></tr>
@@ -405,8 +410,8 @@ Even if you have write permission to a "Shared Repository", it is still common t
 
 <!--
 See write permissions chart for info
-Read/write access allows you to do things such as push a branch to the repo, change a file, review a pull request, etc.
-
+Write permission allows you to do things like push a branch directly to the repo (not by fork), change a file, review pull request, etc.
+You have to have read/write access to do tasks like directl
 Look at "Shared Repository" permissions
 -->
 
@@ -424,8 +429,8 @@ Look at "Shared Repository" permissions
 The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people contribute to repos. The two collaborative development models basically correspond to whether you have write permission.
 
 There are two collaborative development models: 
-* If you do not have write permission to a repo, so you make a copy of the repo called a fork and submit a pull request, this is called the “Fork and Pull” Model
-* If you have write permission to a repo (user account or organizational), so you make changes directly within the repo along with others, this is called the  “Shared Repository” Model
+* You do not have write permission to a repo, so you make a copy of the repo called a fork and submit a pull request, this is called the “Fork and Pull” Model
+* You have write permission to a repo (user account or organizational), so you make changes directly within the repo along with other users, this is called the  “Shared Repository” Model
 
 </td></tr>
 
@@ -443,6 +448,11 @@ Example:
 * One owner with full control over sources and forks (this is an example of "Fork and Pull" Model)
 * Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
 
+<!--
+Fork and Pull Model
+An organization can also Fork and Pull
+-->
+
 </td></tr>
 
 
@@ -456,7 +466,7 @@ Example:
 
 Example: 
 
-* One or more owners who have full control
+* One or more owners who have full control over the organization
 * Owners can give other users write permission to "Shared Repositories" (this is an example of "Shared Repository" Model)
  
 </td></tr>
@@ -544,6 +554,8 @@ If you learn to use branches, you will have the fundamentals skills and freedom 
 ### What is a Branch?
 
 <!--
+A branch is a copy of code inside of your repo.
+
 Within your a repo is a codebase. You can make a copy of the codebase within the repo. The copy is called a branch. When you are finished making changes to a branch, you can submit a pull request and if the pull request is accepted, your changes will be merged into the codebase. Git will replace the old part of the codebase with your changes, and keep everything else the same. Meanwhile, you can keep your codebase up to date and make unlimited new branches. When you review pull requests, the pull requests will also be in the form of branches. 
 -->
 
@@ -571,26 +583,26 @@ Our perspective is of a person who has cloned a repo (either the organizational 
 
 ### General Branch Process
 
+The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using ("Shared Repository" or "Fork and Pull"). Parts of this process can be reused, for instance, during code review. 
+
 <!--
-The process for working with branches is very similar for anyone, regardless of which collaborative development model you are using (organizational or forked repo). Parts of this process can also be reused, for instance during code review.
+Anyone who has write permission to a a repo the branch is in, or just the branch itself, can work on a branch
 
 Working with Feature Branches
 * Create and checkout to a feature branch (may need to specify which branch to branch off of)
 
-- [ ] Look at an example of a best practice "Fork and Pull Model" workflow
+Best practice "Fork and Pull Model" workflow
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 
-- [ ] Look at an example of a best practice "Shared Repository Model" workflow
-Typical situation/process: a user has been given read/write access to an organizational repo. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
-
-The two main differences are that if you are using the "Fork and Pull" Model:
-* You need to fork the repo before you clone it
-* You need to check a box when you make the pull request if you want the maintainers to be able to change your pull request
-
+Best practice "Shared Repository Model" workflow
+Typical situation/process: Clone the organizational repo you have write permission to. User clones the repo locally using the organizational repo URL (the organizational repo is the origin). User creates a feature branch, pushes new branch to organizational repo, and submits pull request from within organizational repo.
 
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 
-- [ ] If no read/write access- fork the repo
+The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you clone it
+* When you submit the pull request, a box will be checked by default giving maintainers the ability to change the pull request
+
 - [ ] Clone or download the organizational or forked repo (this will be your origin)
 - [ ] Change directory
 - [ ] Verify which branch you are checked out on
@@ -613,11 +625,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 
 <!--
-Switch perspective
-* URL of the repo you have read/write access to
-
-Clone an organizational repo (organizational repo will be "origin")
-Clone a user account repo (forked repo will be "origin")
+* URL of the repo you have write permission to
 
 * Clone or download the organizational or forked repo (whatever your origin is)
 
@@ -668,18 +676,14 @@ If not working from within the branch you are branching off of, need to specify 
 $ git checkout -b <branch-name> <branch-branching-off-of>
 ```
 
-Make your change to the files, then add, commit, create a message
+Make your change to the files, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
 ```bash
 $ git add .
 $ git commit -m "Your note"
 ```
 
-<!--
-How to exit Vim
---
-
-Push branch to GitHub
+Push branch to GitHub (by default, the origin is the repo you cloned from)
 
 ```bash
 $ git push origin <branch-name>
@@ -688,6 +692,8 @@ $ git push origin <branch-name>
 There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
+
+
 
 <!--
 # Use Utility Commands
@@ -718,7 +724,7 @@ $ git add .
 $ git commit -m "Your note"
 ```
 
-Push changes to GitHub (repo you cloned from)
+Push changes to GitHub (by default, the origin is the repo you cloned from)
 
 ```bash
 $ git push origin <branch-name>
@@ -766,7 +772,11 @@ Like I said earlier, you, or anyone with read/write access to the branch, can co
 
 ### Perspective
 
-We are switching our perspective now. The organizational repo where we are a maintainer is our only origin. 
+We are switching our perspective now. We are now a maintainer working from within an organizational repo, with write permission to the organizational repo, but without write permission to a forked repo, unless permission has been given to edit a pull request. The organizational repo is our origin, but any forked repo is not. 
+
+<!--
+(In the prior situation, we were talking about users with read/write access)
+-->
 
 </td></tr>
 
@@ -778,8 +788,6 @@ We are switching our perspective now. The organizational repo where we are a mai
 </td><td>
 
 ### What Are You Doing When You Review a Pull Request?
-
-Switch perspective: now a maintainer working from within an organizational repo, with read/write access to the organizational repo, but without read/write access to a forked repo, unless permission has been given to amend a pull request. (In the prior situation, we were talking about users with read/write access)
 
 If you are a repo maintainer, firstly, you will receive a message to let you know there is a pull request (by browser or email, based on your notification preferences). You go to the pull request in the browser and look at it. In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
@@ -817,19 +825,8 @@ Flow chart
 Check out pull request, run it like normal, for instance, a website
 
 - [ ] Fetch an organizational pull request
-- [ ] Merge pull request via browser- regular, squash, or rebase
-- [ ] Merge pull request via command line
-- [ ] Request a review from a specific person
-- [ ] Close pull request via browser
-- [ ] Close an issue via commit message by using keyword
-
-# Code Review
-
-- [ ] Fetch an organizational pull request
 - [ ] Checkout a pull request locally
-- [ ] Merge pull request via browser- regular
-- [ ] Merge pull request via browser- squash
-- [ ] Merge pull request via browser- rebase
+- [ ] Merge pull request via browser- regular, squash, or rebase
 - [ ] Merge pull request via command line
 - [ ] Ask contributor to make a change to pull request
 - [ ] Request a review from a specific person
@@ -838,9 +835,6 @@ Check out pull request, run it like normal, for instance, a website
 - [ ] Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
 - [ ] Close pull request via browser
 - [ ] Close an issue via commit message by using keyword
-- [ ] Delete a branch through browser
-- [ ] Delete a branch through locally
-- [ ] Revert a pull request
 -->
 
 </td></tr>
@@ -899,6 +893,7 @@ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-
 -->
 
 
+<!--
 Switch to the branch (note how local files switch to the files of the branch you switch to)
 
 ```bash
@@ -917,6 +912,7 @@ Push additional commits to organizational repo pull request
 ```bash
 $ git push origin <branch-name>
 ```
+-->
 
 Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
 
@@ -988,8 +984,14 @@ Committing Changes to a Pull Request Branch Created from a Fork
 
 ### Tidy Up
 
+<!--
+Deleting branch in browser will not delete it in your local repo, like other things need to update
+- [ ] Delete a branch through browser
+- [ ] Delete a branch through locally
+-->
+
 * Close pull request
-* Revert pull request (if needed)
+* Revert pull request (hopefully not needed)
 * Delete feature branch (local and remote)
 
 Delete a branch
@@ -1007,24 +1009,13 @@ $ git branch -D  <branch-name>
 </td></tr>
 
 
+
+
 <!--
 ### Keep Main Branch(es) Up-to-Date
 ### Keep Feature Branch(es) Up-to-Date
 -->
 
-
-
-<tr><td width="30%">
-
-![Slide 16]()
-
-</td><td>
-
-### GitHub Flow
-
-We are going to be using the GitHub Flow process.
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1068,7 +1059,7 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 ### Go Further with Advanced Workflow
 
-* Git Flow (similar to process I’ve explained)
+* Git Flow (basically, the workflow we've been using)
 * A Successful Git Branching Model (more advanced)
 * A Successful Git Branching Model Considered Harmful (alternative view)
 * SemVer
@@ -1126,39 +1117,35 @@ Community
 
 # Setting Up Repo Documentation
 
-### Communication- General
-
-- [ ] Create and implement your communication strategy
-- [ ] Draft community guidelines
 - [ ] Get to know GitHub Flavored Markdown
 
 ### Documentation- Forums
 
-- [ ] Understand what wikis is
-- [ ] Understand what GitHub pages/Jekyll are
-- [ ] Understand what gists are
+* wikis
+* GitHub pages/Jekyll
+* gists
 
 ### Documentation- Files
 
-- [ ] Make a README.md
-- [ ] Make a LICENSE (auto-generate)
-- [ ] Make a CODE_OF_CONDUCT.md (auto-generate)
-- [ ] Make a CONTRIBUTING.md
-- [ ] Make a PITCHME.md
+* README.md
+* LICENSE (auto-generate)
+* CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
+* CONTRIBUTING.md
+* PITCHME.md
 
 <!--
 Documentation and Community
 * LICENSE (legality of contributions)
-* CODE_OF_CONDUCT (choose from two different codes)
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
 -->
 
 # Issue and Pull Request Documentation
 
-- [ ] Make an ISSUE_TEMPLATE
-- [ ] Find the Issues Tab
-- [ ] Make a PULL_REQUEST_TEMPLATE
-- [ ] Find the Pull Requests Tab
+* ISSUE_TEMPLATE
+* PULL_REQUEST_TEMPLATE
+
+* Issues Tab
+* Pull Requests Tab
 -->
 
 </td></tr>
@@ -1173,10 +1160,10 @@ Documentation and Community
 ### Productivity Tips
 
 <!--
-- [ ] Cache your password
-- [ ] Set up special configs (example: line endings)
-- [ ] Create saved replies
-- [ ] Link to specific line number on GitHub
+* Cache your password
+* Set up special configs (example: line endings)
+* Create saved replies
+* Link to specific line number on GitHub
 
 Productivity
 * Help via GitHub Keyboard Shortcuts (type "?")
@@ -1185,7 +1172,7 @@ Writing and Formatting
 
 # Notifications
 
-- [ ] Find the Notifications Overview Page :boom:
+- [ ] Find the Notifications Overview Page
 - [ ] Decide which notifications to receive, whether by browser or email, and which email to receive at
 
 * [Emails (need to be logged in)](https://github.com/settings/emails)
@@ -1251,16 +1238,12 @@ More People Could Collaborate and Do Code Review
 
 ### Learn skills
 
-* Use a sandbox
-* Practice workflow (even if means deleting and starting over)
-
-<!--
 Advice of how to get started making pull requests and doing code review
-* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist, see link)
+* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
 * Cherry pick problems or issues that fit your skill level (look for triaging)
-* Practice your workflow (don't be afraid to start over)
+* Practice your workflow (don't be afraid to delete/start over)
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
--->
+
 
 <!--
 ### Finding Open Source Projects to Contribute To
@@ -1273,8 +1256,7 @@ Projects that have reputation
 * [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
 * GitHub Open Source Project checklist
 
-### Look at Issue Triaging Example
-
+Look at Issue Triaging Example
 * node.js website issues
 -->
 
@@ -1307,6 +1289,7 @@ Useful Resources: Bitly Link
 
 
 </table>
+
 
 ## Useful Resources
 
