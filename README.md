@@ -271,7 +271,7 @@ Bash command list, text editor recommendations
 
 ### Getting Help
 
-* Help via Git, GitHub Help and Guides (links in Resources Section)
+* Help via Git, GitHub Help and Guides (links in Useful Resources Section)
 * Help via command line
 
 ```bash
@@ -439,25 +439,27 @@ There are two collaborative development models:
 
 
 
+
+
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 21]()
 
 </td><td>
 
-### User Versus Organizational Account
+### Organizational "Shared Repository" Versus User Account "Shared Repository" 
 
 Using an organizational account rather than a user account for collaboration has some advantages:
 * With a user account, one owner and the collaborators have access to one repo
-* With an organizational account, owner(s) can create teams and permissions, with team members working across multiple repos
-* Otherwise, the repo shared repository settings are similar
+* The advantage of an organizational account, is that an owner can create teams and permissions across multiple repos
+* Otherwise, the repo shared repository settings are extremely similar
+
+<!--
+* Both can be a "shared repository" (users can be invited to be collaborators with read/write access)
+-->
 
 </td></tr>
 
-<!--
-* Can create teams/permissions (advantage over using user account "Shared Repository" Model)
-Can create teams/permissions
--->
 
 
 
@@ -472,20 +474,6 @@ Can create teams/permissions
 - [ ] Access your organizational account and dashboard
 - [ ] Create an organizational repo
 -->
-
-<tr><td width="30%">
-
-![Slide 16]()
-
-</td><td>
-
-### Read/Write Access Examples
-
-* A repo you have created in your own user account (you have read/write access as the owner)
-* A repo in someone else's user account that the owner has given you read/write access to as a collaborator (less common)
-* A repo in an organizational account that an owner has give you read/write access to as a maintainer (more common)
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1312,8 +1300,6 @@ Useful Resources: Bitly Link
 </table>
 
 ## Useful Resources
-
-### Resources
 
 <!--
 * [Using Keyboard Shortcuts](https://help.github.com/articles/using-keyboard-shortcuts)
