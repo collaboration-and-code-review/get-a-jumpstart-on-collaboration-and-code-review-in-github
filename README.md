@@ -584,22 +584,16 @@ Our perspective is of a person who has cloned a repo (either the organizational 
 The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using ("Shared Repository" or "Fork and Pull"). Parts of this process can be reused, for instance, during code review. 
 
 <!--
-* Create and checkout to a feature branch)
+* Checkout to a feature branch)
 
 The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 
-Best Practice "Fork and Pull Model" Workflow
 * Fork an organizational/user account repo
-* Go to the fork, which will be in your user account, perhaps clone locally
 
-Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. 
+Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
 
 Best practice "Shared Repository Model" workflow
 Typical situation/process: User clones the repo locally using the organizational repo URL (the organizational repo is the origin). 
-
-* Make a new feature branch, branching off the branch your changed is intended to be merged into
-* Make change, add, commit, create message, push back to GitHub if needed, which will create a new branch in the forked repo/organizational repo
-* Push new branch to forked repo/organizational repo, and submits pull request from within forked repo/organizational repo.
 
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 
@@ -607,16 +601,18 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you clone it
 * When you submit the pull request, a box will be checked by default giving maintainers the ability to change the pull request
 
-* Clone or download the forked repo/organizational repo (this is the place you have write permission to and will be your origin)
+* Perhaps clone or download the forked repo/organizational repo (this is the place you have write permission to and will be your origin)
 * Change directory
 * Verify which branch you are checked out on
 
-* Create and switch to a feature branch (note how the local files will have switched to the files of the branch you are checked out on)
-* Add, commit, create a message
-* Push the branch to your origin
+* Create a new feature branch, branching off the branch your changed is intended to be merged into
+* Switch to the new feature branch (note how the local files will have switched to the files of the branch you are checked out on)
+* Make change, add, commit, create a message
+* Push the branch back to GitHub to your origin
+* There will now be a new branch in the origin repo
 * Create pull request title, description, make sure base and compare are correct
 * If from a forked repo- give repo maintainers permission to amend pull request
-* Create the pull request
+* Submit the pull request
 * Push follow-on commits to the pull request
 * When the pull request is accepted, delete the branch
 
@@ -670,6 +666,12 @@ If not working from within the branch you are branching off of, need to specify 
 $ git checkout -b <branch-name> <branch-branching-off-of>
 ```
 
+If the branch already exists, just switch to a branch
+
+```bash
+$ git checkout <branch-name>
+```
+
 Make your change to the files, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
 ```bash
@@ -677,7 +679,7 @@ $ git add .
 $ git commit -m "Your note"
 ```
 
-Push branch to GitHub (by default, the origin is the repo you cloned from)
+Push branch to GitHub (by default, the origin is the repo you cloned from); This can also be used to push additional commits
 
 ```bash
 $ git push origin <branch-name>
@@ -686,8 +688,6 @@ $ git push origin <branch-name>
 There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
-
-
 
 
 
@@ -726,26 +726,9 @@ Anyone who has write permission to a repo the branch is in, or just the branch i
 can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 -->
 
-If the branch already exists, just switch to a branch
-
-```bash
-$ git checkout <branch-name>
-```
-
-Add, commit, create a message
-
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
-
-Push changes to GitHub (by default, the origin is the repo you cloned from)
-
-```bash
-$ git push origin <branch-name>
-```
-
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -869,11 +852,10 @@ Ways to Deal with a Pull Request
 
 ### Pull Request Review Process
 
-When you go to the pull request in the browser, there will a set of instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
+When you go to the pull request in the browser, there will a set of command line instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
 
 <!--
-Code Review Command Line Instructions
-* Different depending on how pull request was submitted (whether organization branch or fork branch)
+(whether organization branch or fork branch)
 -->
 
 I actually want to show you a slightly different way to do it that I think is easier to understand. 
@@ -919,26 +901,6 @@ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-
 -->
 
 
-<!--
-Switch to the branch (note how local files switch to the files of the branch you switch to)
-
-```bash
-$ git checkout <branch-name>
-```
-
-Make your change to the files, then add, commit, create a message
-
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
-
-Push additional commits to organizational repo pull request
-
-```bash
-$ git push origin <branch-name>
-```
--->
 
 Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
 
