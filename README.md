@@ -392,16 +392,15 @@ Create a branch by command line or in the browser below the commit message field
 Write Permission is an important concept in GitHub collaboration
 
 * Regardless of what repo you are contributing to, whether or not you have write permission to the repo determines how you contribute to it
-* If you have write permission to a repo, you can make changes directly within the repo
+* If you have write permission to a repo, you can make changes directly within the repo instead of forking the repo and submitting a pull request
+
+What Does Write Permission Allow You to Do?
+* push a branch directly to the repo (not by fork)
+* edit a file
+* review pull requests
 
 <!--
-What Does Write Permission Allow You to Do?
-
-Write permission is special access.
-
 See write permissions chart for info
-Write permission allows you to do things like push a branch directly to the repo (not by fork), change a file, review pull request, etc.
-"You must have write access to a repository to create a branch and open a pull request. 
 Look at "Shared Repository" permissions
 
 Definition of write
@@ -451,12 +450,8 @@ Even if you have write permission to a "Shared Repository", it is still common t
 
 Example: 
 
-* One owner with full control over sources and forks (this is an example of "Fork and Pull" Model)
+* One owner with full control over sources and forks (this is an example of "Fork and Pull" Model, an organization cal also fork and pull)
 * Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
-
-<!--
-An organization can also fork and pull
--->
 
 </td></tr>
 
@@ -536,14 +531,14 @@ Positives
 
 ### How Do We Switch Between Multiple Tasks
 
-Feature Branches (a.k.a. Topic Branches)
-* Feature branches are a best practice
+Branches
+* Branches are a best practice
 * Can be used by any GitHub user
 * Give you more freedom
 
-<!--
-Pull request branches
--->
+Types of branches
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
 
 If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
@@ -575,7 +570,7 @@ Within your a repo is a codebase. You can make a copy of the codebase within the
 
 ### Perspective
 
-Our perspective is of a person who has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
+Our perspective is of a person submitting a pull request. The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
 
 </td></tr>
 
@@ -588,9 +583,15 @@ Our perspective is of a person who has cloned a repo (either the organizational 
 
 ### Branch Process Overview
 
-The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using ("Shared Repository" or "Fork and Pull"). Parts of this process can be reused, for instance, during code review. 
+The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using. Parts of this process can be reused, for instance, during code review. 
+
+The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to change the pull request. The maintainers do not automatically have permission to change it.
 
 <!--
+* Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
+
 * Checkout to a feature branch)
 
 The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
@@ -603,10 +604,6 @@ Best practice "Shared Repository Model" workflow
 Typical situation/process: User clones the repo locally using the organizational repo URL (the organizational repo is the origin). 
 
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
-
-The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you clone it
-* When you submit the pull request, a box will be checked by default giving maintainers the ability to change the pull request
 
 * Perhaps clone or download the forked repo/organizational repo (this is the place you have write permission to and will be your origin)
 * Change directory
@@ -622,11 +619,6 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * Submit the pull request
 * Push follow-on commits to the pull request
 * When the pull request is accepted, delete the branch
-
-* Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
-
-"The changes can be pulled into the source repository by the project maintainer."
-"When you open a pull request proposing changes from your fork's branch to a branch in the source (upstream) repository, you can allow anyone with push access to the upstream repository to make changes to your pull request."
 -->
 
 </td></tr>
@@ -795,9 +787,7 @@ We are switching our perspective now. We are now a maintainer working from withi
 * You go to the pull request in the browser and look at it
 * In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
-<!--
 In the less simple scenario, you will need to fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
--->
 
 </td></tr>
 
@@ -1002,11 +992,10 @@ Committing Changes to a Pull Request Branch Created from a Fork
 
 ### Tidy Up
 
+It's good practice to delete merged or stale branches. Deleting a branch in the browser will not delete in your local repo. 
+
 <!--
 Deleting branch in browser will not delete it in your local repo, like other things need to update
-
-Managing branches in your repository- "it's a good idea to delete merged or stale branches"
-Delete merged or stale branches (remote and local)
 -->
 
 * Close pull request
@@ -1051,10 +1040,6 @@ Advanced Git
 
 Interactive rebase
 
-Safe-guards
-* Mergeability of pull requests: 
-* Branch restrictions
-
 Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
 About merge conflicts- Resolve conflicts buttons, can't push until resolved
 Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
@@ -1072,37 +1057,25 @@ Resolving a merge conflict using the command line- varies by OS, revisit
 
 </td><td>
 
-### Should You Use a Different Workflow?
+### Workflow Decisions
 
-* Which workflow is "best"? Depends on what you are trying to accomplish. 
-* Some developers have passionate views about this topic (see comment threads)
+Some projects will involve both a master and develop branch. For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live.  
+
+If you choose to use a develop branch:
+* In addition to the master branch, create the develop branch
+* Choose a default branch (can be changed)
 
 <!--
-Should Your Project Use a Develop Branch?
-
-# Making Workflow Decisions
-
 Setting the default branch
 "The default branch is considered the base branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch"
 The default branch is the base branch and will be master, unless you specify otherwise
 Set the default (base branch) under branches tab- against which all pull requests and code commits are automatically made- master branch by default
 
 - [ ] Look at an example of master only versus master/develop, production/staging
-- [ ] Decide a workflow
-- [ ] If will have both master and develop branch, choose default branch
 
 * Are you going to have both master and development branches? (master only or master/develop as production/staging)
-* If you have both, which will be your default branch? (base against which future pull requests and commits will be made)
-* Default branch can be changed
+* default branch? (base against which future pull requests and commits will be made)
 -->
-
-Some projects will involve both a master and develop branch. For example, a mission critical project with a high volume of users is likely to use a develop branch and staging to gate-keep updates before going live. Use the workflow that is right for the projects. They all have pros and cons. 
-
-If you choose to use a develop branch:
-* In addition to the master branch, create the develop branch
-* Choose a default branch
-
-If you want to know much more about this, see: A Successful Git Branching Model.
 
 </td></tr>
 
@@ -1115,20 +1088,19 @@ If you want to know much more about this, see: A Successful Git Branching Model.
 
 ### Go Further with Advanced Workflow
 
+Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
+
+If you want to know more about advanced workflow:
 * Git Flow (basically, the workflow we've been using)
 * A Successful Git Branching Model (more advanced)
 * A Successful Git Branching Model Considered Harmful (alternative view)
 * SemVer
 
+* Tags
+* Releases
+
 </td></tr>
 
-<!--
-# Advanced Workflow
-
-- [ ] Look at advanced workflows and understand different choices
-- [ ] Create a tag
-- [ ] Create a release
--->
 
 <tr><td width="30%">
 
@@ -1162,10 +1134,6 @@ Important Non-Coding Leadership Skills (see 10x results article)
 * What impression you want to give people about your project? Hopefully welcoming, user-friendly. 
 * How can you make contributor experience easier/faster/enjoyable (for example, tell people how to contribute)
 * Draft community guidelines
-
-Community
-
-# Setting Up Repo Documentation
 
 - [ ] Get to know GitHub Flavored Markdown
 
@@ -1284,6 +1252,10 @@ Setting Up Repo Fail Safes
 </td></tr>
 
 <!--
+Safe-guards
+* Mergeability of pull requests: 
+* Branch restrictions
+
 Any sensitive information made public, should be immediately considered compromised, removed from GitHub, and changed in development/production (famous companies have done it too!)
 -->
 
