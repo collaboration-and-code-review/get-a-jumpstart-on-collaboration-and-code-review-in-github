@@ -185,12 +185,7 @@ I didn't quite feel like I knew what I was doing, but I was extremely motivated.
 
 ### It Would Take Almost 3 More Years for Me to Do Code Review
 
-Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way.
-
-<!--
-This doesn't make sense in terms of the number of maintainers.
-Bus Factor
--->
+Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way. And it would be practical for there to be more maintainers. The number of open-source software users has skyrocketted, but the number of maintainers has not. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
 
 </td></tr>
 
@@ -327,6 +322,11 @@ A fork is a copy of the repo in your user account that you can make your propose
 * upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
 
 <!--
+Deleting a branch in the browser will not delete in your local repo.
+Deleting branch in browser will not delete it in your local repo, like other things need to update
+
+You need to synchronize the changes
+
 When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a forked repo, the origin is the forked repo and you will be pushing to the fork. If you cloned from an organizational repo, the origin is the organizational repo, and you will be pushing to the organizational repo. Then, you will submit a pull request from there.
 
 When you make a change on GitHub, the change does not automatically update locally, and vice versa
@@ -401,7 +401,6 @@ What Does Write Permission Allow You to Do?
 
 <!--
 See write permissions chart for info
-Look at "Shared Repository" permissions
 
 Definition of write
 We're talking about "write" in the context of...
@@ -514,10 +513,6 @@ There is an overall theme to this talk. In order to be able to increase your lev
 
 * Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
 
-<!--
-* Enable follow on commits to be pushed to a pull request (contributor needs to give repo maintainers permission if via fork)
--->
-
 </td></tr>
 
 
@@ -588,6 +583,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request. The maintainers do not automatically have permission to edit it.
 
 <!--
+* Enable follow on commits to be pushed to a pull request (contributor needs to give repo maintainers permission if via fork)
 * Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
 
 * Checkout to a feature branch)
@@ -630,13 +626,19 @@ Typical situation/process: User clones the repo locally using the organizational
 
 ### Commands
 
-Clone (or download) an organizational repo (organizational repo will be "origin")
+Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
+
+```bash
+$ git clone <repo-url>
+```
+
+Example: clone (or download) an organizational repo (organizational repo will be "origin")
 
 ```bash
 $ git clone https://github.com/<organization-name>/<repo-name>
 ```
 
-Clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
+Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
 
 ```bash
 $ git clone https://github.com/<user-name>/<repo-name>
@@ -691,26 +693,12 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 
 
-<!--
-* URL of the repo you have write permission to
-
-* Clone or download the organizational or forked repo (whatever your origin is)
-
-* Push branch to organizational or forked repo (whatever your origin is)
--->
-
-<!--
-```bash
-$ git clone <repo-url>
-```
--->
-
 
 
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 29]()
 
 </td><td>
 
@@ -739,7 +727,7 @@ In the browser, go to the repo you want your pull request to be merged into. The
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 30]()
 
 </td><td>
 
@@ -752,7 +740,7 @@ We are switching our perspective now. We are now a maintainer working from withi
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 31]()
 
 </td><td>
 
@@ -769,7 +757,7 @@ In the less simple scenario, you will need to fetch the pull request branch to y
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 32]()
 
 </td><td>
 
@@ -785,13 +773,6 @@ In the less simple scenario, you will need to fetch the pull request branch to y
 Two Ways to Merge
 * Via browser
 * Via command line
-
-Merge Options
-* Regular merge
-* Squash
-* Rebase
-
-Flow chart
 
 Check out pull request, run it like normal, for instance, a website
 
@@ -841,7 +822,7 @@ pushing back to GitHub
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 33]()
 
 </td><td>
 
@@ -854,7 +835,7 @@ When you go to the pull request in the browser, there will a set of command line
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 34]()
 
 </td><td>
 
@@ -872,7 +853,7 @@ $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 35]()
 
 </td><td>
 
@@ -889,16 +870,44 @@ $ git merge master
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 36]()
+
+</td><td>
+
+### Merge Pull Request Locally and Push to Master Branch
+
+Step 2: Merge the changes and update on GitHub. (Same process no matter where the pull request originated)
+
+```bash
+$ git checkout master
+$ git merge --no-ff <local-branch-name>
+$ git push origin master
+```
+
+</td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 37]()
+
+</td><td>
+
+### How to Add Additional Commits
+
+Anyone who has write permission to a repo the branch is in, or just the branch itself, can continue to make changes to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
 
 <!--
-Step 2: Merge the changes and update on GitHub. (Same)
-
-git checkout master
-git merge --no-ff <local-branch-name>
-git push origin master
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 -->
+
+</td></tr>
+
+
+
+
 
 <!--
 ### Simple Code Review Process
@@ -954,36 +963,18 @@ git push https://github.com/Mariatta/practice.git Mariatta-patch-1
 
 
 
-<tr><td width="30%">
 
-![Slide 26]()
-
-</td><td>
-
-### How to Add Additional Commits
-
-Anyone who has write permission to a repo the branch is in, or just the branch itself, can continue to make changes to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
-
-<!--
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 38]()
 
 </td><td>
 
 ### Tidy Up
 
-It's good practice to delete merged or stale branches. Deleting a branch in the browser will not delete in your local repo. 
-
-<!--
-Deleting branch in browser will not delete it in your local repo, like other things need to update
--->
+It's good practice to delete merged or stale branches.  
 
 * Close pull request
 * Revert pull request (hopefully not needed)
@@ -1006,6 +997,8 @@ Delete remote branch
 -->
 
 </td></tr>
+
+
 
 
 <!--
