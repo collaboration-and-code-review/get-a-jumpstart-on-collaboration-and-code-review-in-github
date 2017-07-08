@@ -549,10 +549,12 @@ The methods for working with the two different types of branches are the same. I
 
 ### What is a Branch?
 
-<!--
-A branch is a copy of code inside of your repo, in parallel with the branch it is a copy of.
+When you create a repo and add a file, this codebase is a branch with a default name of master. If you create a new feature branch off of the master branch, it's a copy of the master branch. You can alter this new feature branch and submit a pull request. If the changes are accepted, they will be merged into the master branch. So now, the master branch will be like it was before, except with the changes from the feature branch. You can create unlimited feature branches. Meanwhile, you will want to keep the master and feature branches up-to-date with new merges. 
 
-Within your a repo is a codebase. You can make a copy of the codebase within the repo. The copy is called a branch. When you are finished making changes to a branch, you can submit a pull request and if the pull request is accepted, your changes will be merged into the codebase. Git will replace the old part of the codebase with your changes, and keep everything else the same. Meanwhile, you can keep your codebase up to date and make unlimited new branches. When you review pull requests, the pull requests will also be in the form of branches. 
+<!--
+If you click branches tab, can see a list of the branches
+
+A branch is a copy of code inside of your repo, in parallel with the branch it is a copy of.
 -->
 
 </td></tr>
@@ -900,8 +902,20 @@ $ git push origin master
 
 You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
 
+Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to forked repo pull request if local branch name is different than pull request branch name
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
+```
+
 <!--
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
+Pushed additional commits to origin
 -->
 
 </td></tr>
@@ -915,10 +929,17 @@ can also fetch it, make a change, and push to the branch too. The process is the
 
 ### How to Keep Branches Up-to-Date
 
-<!--
-Keep Main Branch(es) Up-to-Date
-Keep Feature Branch(es) Up-to-Date
--->
+Keep master branch up-to-date
+
+```bash
+$ 
+```
+
+Keep feature branch up-to-date
+
+```bash
+$ 
+```
 
 </td></tr>
 
@@ -956,17 +977,7 @@ Resolving a merge conflict using the command line- varies by OS, revisit
 
 
 <!--
-Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-Push additional commits to forked repo pull request if local branch name is different than pull request branch name
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
-```
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 
 Pull updates to the individual pull request into your local branch
 
@@ -1126,22 +1137,28 @@ Important Non-Coding Leadership Skills (see 10x results article)
 
 ### Community and Communication Strategy
 
-
-<!--
-### Community and Communication Strategy
-
 * What impression you want to give people about your project? Hopefully welcoming, user-friendly. 
 * How can you make contributor experience easier/faster/enjoyable (for example, tell people how to contribute)
 * Draft community guidelines
 
-### Documentation- Forums
+</td></tr>
 
+
+<tr><td width="30%">
+
+![Slide 45]()
+
+</td><td>
+
+### Documentation
+
+<!--
+Forums
 * wikis
 * GitHub pages/Jekyll
 * gists
 
-### Documentation- Files
-
+Files
 * README.md
 * LICENSE (auto-generate, legality of contributions)
 * CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
