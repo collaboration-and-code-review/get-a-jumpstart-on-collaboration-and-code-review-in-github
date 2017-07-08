@@ -339,6 +339,11 @@ When you make a change on GitHub, the change does not automatically update local
 
 * pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
+</td></tr>
+
+
+
+<!--
 Examples of How to Do Important Things in Browser versus Locally
 
 Action |Browser | Command Line
@@ -352,7 +357,6 @@ Commit | Click "Commit changes" button in an open, altered file | ```$ git commi
 Open an issue | Can only do in browser | N/A
 Open a pull request | Can only do in browser | N/A
 
-<!--
 Browser and Local Graphic 
 
 Committing changes in browser versus locally
@@ -378,8 +382,6 @@ Create a branch by command line or in the browser below the commit message field
 * Access your organizational account and dashboard
 * Create an organizational repo
 -->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -586,6 +588,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 General process
 * Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
 * Change directory into the folder
+* Create and checkout (switch) to a feature branch, branching off the branch you intend your change to be merged into
 * Make your change, then add, commit, create a message
 * Push the new branch to GitHub to your origin
 * Submit a pull request
@@ -594,11 +597,9 @@ General process
 
 
 <!--
-* Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
+permission to push follow on commits to a pull request
 
 The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
-
-* Fork an organizational/user account repo
 
 Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
 
@@ -608,9 +609,6 @@ Typical situation/process: User clones the repo locally using the organizational
 Folder/files/text editor
 
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
-
-* Create/checkout a new feature branch, branching off the branch your changed is intended to be merged into
-* Switch to the new feature branch (note how the local files will have switched to the files of the branch you are checked out on)
 -->
 
 </td></tr>
@@ -654,13 +652,13 @@ Verify which branch you are checked out on (important if more than one branch)
 $ git branch
 ```
 
-Create and switch to a branch (note how local files switch to the files of the branch you switch to)
+Create and checkout (switch) to a feature branch (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
 
 ```bash
 $ git checkout -b <branch-name>
 ```
 
-If not working from within the branch you are branching off of, need to specify which branch branching off of
+If not working from within the branch you are branching off of, need to specify which branch branching off of (remember, you are branching off the branch you intend your change to be merged into)
 
 ```bash
 $ git checkout -b <branch-name> <branch-branching-off-of>
@@ -745,9 +743,15 @@ We are switching our perspective now. We are now a maintainer working from withi
 
 * If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
 * You go to the pull request in the browser and look at it
+
 * In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
 In the less simple scenario, you will need to fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
+
+<!--
+Code Review Process (PR gives link to instructions)
+- Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
+-->
 
 </td></tr>
 
@@ -760,42 +764,42 @@ In the less simple scenario, you will need to fetch the pull request branch to y
 
 ### Code Review Options
 
-* When you look at the pull request in the browser, you can tell it can be accepted (for example a typo) and click merge
-* You run the code locally, but you do not need to make a change; you go back to the browser and click merge
-* You run the code locally, and you think a change needs to be made; you ask the contributor to update the pull request
-* You run the code locally, and you think a change needs to be made; you update the pull request branch locally (add, commit, create a message), merge the branch locally via command with the branch it is intended to change, and push to GitHub
-* You run the code locally, and you think a change needs to be made; you push additional commits to the pull request
-
-<!--
-Two Ways to Merge
-* Via browser
+There are two ways to merge a pull request
+* Via browser (click button- regular, squash, or rebase)
 * Via command line
 
-Check out pull request, run it like normal, for instance, a website
+<!--
+* When you look at the pull request in the browser, you can tell it can be accepted (for example a typo) and click merge
+* You run the code locally, but you do not need to make a change; you go back to the browser and click merge
 
-- [ ] Fetch an organizational pull request
-- [ ] Checkout a pull request locally
-- [ ] Merge pull request via browser- regular, squash, or rebase
-- [ ] Merge pull request via command line
-- [ ] Ask contributor to make a change to pull request
-- [ ] Request a review from a specific person
-- [ ] Add, commit, create a message, merge pull request via command line and push to live branch
-- [ ] Push follow-on commits to organizational pull request
-- [ ] Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
-- [ ] Close pull request via browser
-- [ ] Close an issue via commit message by using keyword
+* You run the code locally, and you think a change needs to be made; you update the pull request branch locally (add, commit, create a message), merge the branch locally via command with the branch it is intended to change, and push to GitHub
+
+* Fetch pull request branch locally and checkout the branch
+
+* Request a review from a specific person
+* Add, commit, create a message, merge pull request via command line and push to live branch
+* Push follow-on commits to organizational pull request
+* Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
+* Close pull request via browser
+* Close an issue via commit message by using keyword
 
 Ways to Deal with a Pull Request
 * Checkout a pull request via GitHub and merge
+* Checkout a pull request locally
+* Run the code
+
 * Checkout a pull request locally and merge
-* Checkout a pull request locally and ask contributor to make changes to pull request
+* Checkout a pull request locally and ask contributor to make a change to pull request
 * Checkout a pull request locally, edit, merge with branch, and push to live branch to GitHub
-* Checkout a pull request locally and push a follow on commit to pull request from fork
-* Checkout a pull request locally and push a follow on commit to pull request from organizational branch
+* Checkout a pull request locally and push an additional commit to pull request from fork
+* Checkout a pull request locally and push an additional commit to pull request from organizational branch
 
 Flow chart of possibilities:
+
 Small change, can merge in browser without running locally (example: typo)
+
 Need to run locally, but don't need to make a change- go back to browser and merge
+
 Need to run locally, need to make a change: 
 * ask PR author to make change (person's commits automatically go to PR)
 * you make change and push to PR
@@ -806,8 +810,6 @@ Need to run locally, need to resolve merge conflict:
 * resolve locally
 Delete remote and local branches
 
-Code Review Process (PR gives link to instructions)
-- Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
 - If no change needed locally- merge button (merge options)
 - General process for making a local change, committing, merging and
 pushing back to GitHub
@@ -898,6 +900,22 @@ You or others with write permission to the branch can push additional commits to
 
 <!--
 can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 38]()
+
+</td><td>
+
+### How to Keep Branches Up-to-Date
+
+<!--
+Keep Main Branch(es) Up-to-Date
+Keep Feature Branch(es) Up-to-Date
 -->
 
 </td></tr>
@@ -1022,9 +1040,6 @@ About merge conflicts- Resolve conflicts buttons, can't push until resolved
 Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
 "Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
 Resolving a merge conflict using the command line- varies by OS, revisit
-
-### Keep Main Branch(es) Up-to-Date
-### Keep Feature Branch(es) Up-to-Date
 -->
 
 <tr><td width="30%">
