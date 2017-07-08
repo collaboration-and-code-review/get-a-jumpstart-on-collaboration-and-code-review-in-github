@@ -332,6 +332,7 @@ When you clone a repo locally, the remote will automatically assigned the remote
 When you make a change on GitHub, the change does not automatically update locally, and vice versa
 -->
 
+* git push
 * git fetch (obtain code locally, without merging)
 * git merge (merge code)
 * git pull (fetch and merge, all in one action)
@@ -371,7 +372,7 @@ Creating and deleting branches within your repository- branch selector menu, cli
 Viewing branches in your repository- branches tab, can delete, change default
 Create a branch by command line or in the browser below the commit message field. 
 
-* How/where d oyou create a user account or organization
+* How/where do you create a user account or organization
 * Understand/take tour of the parts of a user account and organization
 * Understand how to create teams with permissions
 * Access your organizational account and dashboard
@@ -395,9 +396,9 @@ Write Permission is an important concept in GitHub collaboration
 * If you have write permission to a repo, you can make changes directly within the repo instead of forking the repo and submitting a pull request
 
 What Does Write Permission Allow You to Do?
-* push a branch directly to the repo (instead of via fork)
-* edit a file
-* review pull requests
+* Push a branch directly to the repo (instead of via fork)
+* Edit a file
+* Review pull requests
 
 <!--
 See write permissions chart for info
@@ -580,13 +581,20 @@ The process for working with branch is very similar for anyone, regardless of wh
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request. The maintainers do not automatically have permission to edit it.
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
+
+General process
+* Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
+* Change directory into the folder
+* Make your change, then add, commit, create a message
+* Push the new branch to GitHub to your origin
+* Submit a pull request
+* You or others with write permission to the branch can push additional commits to the branch/pull request
+* When the pull request is accepted, delete the branch
+
 
 <!--
-* Enable follow on commits to be pushed to a pull request (contributor needs to give repo maintainers permission if via fork)
 * Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
-
-* Checkout to a feature branch)
 
 The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
 
@@ -597,22 +605,12 @@ Typical "fork and pull" situation/process: a user forks a repo within GitHub. Ne
 Best practice "Shared Repository Model" workflow
 Typical situation/process: User clones the repo locally using the organizational repo URL (the organizational repo is the origin). 
 
+Folder/files/text editor
+
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 
-* Perhaps clone or download the forked repo/organizational repo (this is the place you have write permission to and will be your origin)
-* Change directory
-* Verify which branch you are checked out on
-
-* Create a new feature branch, branching off the branch your changed is intended to be merged into
+* Create/checkout a new feature branch, branching off the branch your changed is intended to be merged into
 * Switch to the new feature branch (note how the local files will have switched to the files of the branch you are checked out on)
-* Make change, add, commit, create a message
-* Push the branch back to GitHub to your origin
-* There will now be a new branch in the origin repo
-* Create pull request title, description, make sure base and compare are correct
-* If from a forked repo- give repo maintainers permission to edit pull request
-* Submit the pull request
-* Push follow-on commits to the pull request
-* When the pull request is accepted, delete the branch
 -->
 
 </td></tr>
@@ -644,7 +642,7 @@ Example: clone (or download) a user account repo (repo needs to have already bee
 $ git clone https://github.com/<user-name>/<repo-name>
 ```
 
-Change directory (folder name will be the repo name)
+Change directory into the folder (folder name will be the repo name)
 
 ```bash
 $ cd <repo-name>
@@ -674,14 +672,14 @@ If the branch already exists, just switch to a branch
 $ git checkout <branch-name>
 ```
 
-Make your change to the files, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
+Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
 ```bash
 $ git add .
 $ git commit -m "Your note"
 ```
 
-Push branch to GitHub (by default, the origin is the repo you cloned from); This can also be used to push additional commits
+Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from); This can also be used to push additional commits
 
 ```bash
 $ git push origin <branch-name>
@@ -704,22 +702,21 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 ### Submit a Pull Request
 
+In the browser, go to the repo you want your pull request to be merged into. There should be a message prompting you to submit a pull request because GitHub will detect your branch. Be forewarned, that if you go to your fork instead, you can accidentally submit a pull request to yourself. 
+
+* Make sure base corresponds to the repo and branch you want to contribute to
+* Make sure compare corresponds to your branch
+* Create a pull request title and perhaps a description
+* If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
+* Click "Create pull request"
+
 <!--
 base fork, base, head fork, compare
 base, compare
 
 branch-name ... "Compare & pull request"
 base: master ... compare: branch-name
-Click "Create pull request"
 -->
-
-In the browser, go to the repo you want your pull request to be merged into. There should be a message prompting you to submit a pull request because GitHub will detect your branch. Be forewarned, that if you go to your fork instead, you can accidentally submit a pull request to yourself. 
-
-* Make sure that base corresponds to the repo and branch you want to contribute to
-* Make sure compare corresponds to your branch
-* Create a pull request title and perhaps a description
-* If the pull request is via a forked repo, you might want to leave the box checked to give repo maintainers permission to amend the pull request. This gives them read/write access to the branch and later I'll explain how to amend it.
-* Create the pull request
 
 </td></tr>
 
@@ -897,7 +894,7 @@ $ git push origin master
 
 ### How to Add Additional Commits
 
-Anyone who has write permission to a repo the branch is in, or just the branch itself, can continue to make changes to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
+You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
 
 <!--
 can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
@@ -974,7 +971,7 @@ git push https://github.com/Mariatta/practice.git Mariatta-patch-1
 
 ### Tidy Up
 
-It's good practice to delete merged or stale branches.  
+When the pull request is accepted, delete the branch. It's good practice to delete merged or stale branches.  
 
 * Close pull request
 * Revert pull request (hopefully not needed)
@@ -1029,7 +1026,6 @@ Resolving a merge conflict using the command line- varies by OS, revisit
 ### Keep Main Branch(es) Up-to-Date
 ### Keep Feature Branch(es) Up-to-Date
 -->
-
 
 <tr><td width="30%">
 
