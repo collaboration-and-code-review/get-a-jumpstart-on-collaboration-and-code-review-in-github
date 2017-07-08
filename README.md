@@ -267,6 +267,7 @@ Bash command list, text editor recommendations
 ### Getting Help
 
 * Help via Git, GitHub Help and Guides (links in Useful Resources Section)
+* Help via GitHub Keyboard Shortcuts (type "?")
 * Help via command line
 
 ```bash
@@ -274,8 +275,6 @@ $ git help <verb>
 $ git <verb> --help
 $ man git-<verb>
 ```
-
-There will also be some Keyboard Shortcuts in the Productivity Tips part of my talk
 
 </td></tr>
 
@@ -304,6 +303,10 @@ GitHub Vocab
 * branch (a copy of a code base within a repo, often a "feature branch")
 
 <!--
+Browser- opening the website, logging in and making a change directly in the website
+When you make a change in the browser, it does not automatically update in your local files
+You need to synchronize the changes
+
 When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
 Or, you can click the "Fork" button. 
 
@@ -322,10 +325,7 @@ A fork is a copy of the repo in your user account that you can make your propose
 * upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
 
 <!--
-Deleting a branch in the browser will not delete in your local repo.
-Deleting branch in browser will not delete it in your local repo, like other things need to update
-
-You need to synchronize the changes
+Deleting a branch in the browser will not delete it in your local repo
 
 When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a forked repo, the origin is the forked repo and you will be pushing to the fork. If you cloned from an organizational repo, the origin is the organizational repo, and you will be pushing to the organizational repo. Then, you will submit a pull request from there.
 
@@ -742,13 +742,15 @@ We are switching our perspective now. We are now a maintainer working from withi
 ### What Are You Doing When You Review a Pull Request?
 
 * If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
-* You go to the pull request in the browser and look at it
+* You go to the pull request in the browser and look at the info and click on the files
 
 * In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
 In the less simple scenario, you will need to fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
 
 <!--
+Pull request, one file shows all changes
+
 Code Review Process (PR gives link to instructions)
 - Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
 -->
@@ -804,7 +806,7 @@ Need to run locally, need to make a change:
 * ask PR author to make change (person's commits automatically go to PR)
 * you make change and push to PR
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/
-* you make change, merge with intended branch and push to origin (follow instructions)
+* you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
 Need to run locally, need to resolve merge conflict:
 * resolve in browser
 * resolve locally
@@ -921,6 +923,35 @@ Keep Feature Branch(es) Up-to-Date
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 39]()
+
+</td><td>
+
+### How to Deal With Merge Conflicts
+
+<!--
+Advanced
+* Resolve a merge conflict in the browser
+* Resolve a merge conflict by command line
+* Understand rebasing
+* Understand update "strategies": fast forward, recursive
+
+Advanced Git
+* Git rebase, resolving merge conflicts after a Git rebase
+
+Interactive rebase
+
+Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
+About merge conflicts- Resolve conflicts buttons, can't push until resolved
+Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
+"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
+Resolving a merge conflict using the command line- varies by OS, revisit
+-->
+
+</td></tr>
+
 
 
 
@@ -973,29 +1004,10 @@ git push https://github.com/Mariatta/practice.git Mariatta-patch-1
 -->
 
 <!--
-git config --global core.editor
-
 Tracking
 
 $ git branch --merged
 $ git branch --no-merged
-
-Advanced
-* Resolve a merge conflict in the browser
-* Resolve a merge conflict by command line
-* Understand rebasing
-* Understand update "strategies": fast forward, recursive
-
-Advanced Git
-* Git rebase, resolving merge conflicts after a Git rebase
-
-Interactive rebase
-
-Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
-About merge conflicts- Resolve conflicts buttons, can't push until resolved
-Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
-"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
-Resolving a merge conflict using the command line- varies by OS, revisit
 -->
 
 
@@ -1006,7 +1018,7 @@ Resolving a merge conflict using the command line- varies by OS, revisit
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 40]()
 
 </td><td>
 
@@ -1039,7 +1051,7 @@ Delete remote branch
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 41]()
 
 </td><td>
 
@@ -1068,7 +1080,7 @@ Set the default (base branch) under branches tab- against which all pull request
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 42]()
 
 </td><td>
 
@@ -1090,7 +1102,7 @@ If you want to know more about advanced workflow:
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 43]()
 
 </td><td>
 
@@ -1108,20 +1120,19 @@ Important Non-Coding Leadership Skills (see 10x results article)
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 44]()
 
 </td><td>
 
-### Documentation
+### Community and Communication Strategy
+
 
 <!--
-### Communication Strategy
+### Community and Communication Strategy
 
 * What impression you want to give people about your project? Hopefully welcoming, user-friendly. 
 * How can you make contributor experience easier/faster/enjoyable (for example, tell people how to contribute)
 * Draft community guidelines
-
-- [ ] Get to know GitHub Flavored Markdown
 
 ### Documentation- Forums
 
@@ -1132,16 +1143,10 @@ Important Non-Coding Leadership Skills (see 10x results article)
 ### Documentation- Files
 
 * README.md
-* LICENSE (auto-generate)
+* LICENSE (auto-generate, legality of contributions)
 * CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
-* CONTRIBUTING.md
-* PITCHME.md
-
-<!--
-Documentation and Community
-* LICENSE (legality of contributions)
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
--->
+* PITCHME.md
 
 # Issue and Pull Request Documentation
 
@@ -1163,17 +1168,12 @@ Documentation and Community
 
 ### Productivity Tips
 
-<!--
 * Cache your password
 * Set up special configs (example: line endings)
 * Create saved replies
 * Link to specific line number on GitHub
 
-Productivity
-* Help via GitHub Keyboard Shortcuts (type "?")
-
-Writing and Formatting
-
+<!--
 # Notifications
 
 - [ ] Find the Notifications Overview Page
@@ -1201,6 +1201,9 @@ Helpers
 * @mentions (of people and teams)
 * Issue and PR references
 * Emojis
+
+Writing and Formatting
+* Get to know GitHub Flavored Markdown
 -->
 
 </td></tr>
