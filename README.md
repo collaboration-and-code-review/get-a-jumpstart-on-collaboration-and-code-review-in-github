@@ -395,7 +395,7 @@ Write Permission is an important concept in GitHub collaboration
 * If you have write permission to a repo, you can make changes directly within the repo instead of forking the repo and submitting a pull request
 
 What Does Write Permission Allow You to Do?
-* push a branch directly to the repo (not by fork)
+* push a branch directly to the repo (instead of via fork)
 * edit a file
 * review pull requests
 
@@ -421,7 +421,7 @@ We're talking about "write" in the context of...
 The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people contribute to repos. The two collaborative development models correspond to whether you have write permission.
 
 The two collaborative development models: 
-* If you do not have write permission to the repo, you need to make a copy of the repo in your user account or an organization (the copy is called a fork), make your changes, and submit a request for the changes to be accepted to the source repo (this is called a pull request). This is the “Fork and Pull” Model
+* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
 * If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
 
 </td></tr>
@@ -515,9 +515,7 @@ There is an overall theme to this talk. In order to be able to increase your lev
 * Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
 
 <!--
-Positives
 * Enable follow on commits to be pushed to a pull request (contributor needs to give repo maintainers permission if via fork)
-* Prevent inactive pull requests
 -->
 
 </td></tr>
@@ -540,7 +538,7 @@ Types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+The methods for working with the two different types of branches are the same. If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
@@ -554,7 +552,7 @@ If you learn to use branches, you will have the fundamentals skills and freedom 
 ### What is a Branch?
 
 <!--
-A branch is a copy of code inside of your repo.
+A branch is a copy of code inside of your repo, in parallel with the branch it is a copy of.
 
 Within your a repo is a codebase. You can make a copy of the codebase within the repo. The copy is called a branch. When you are finished making changes to a branch, you can submit a pull request and if the pull request is accepted, your changes will be merged into the codebase. Git will replace the old part of the codebase with your changes, and keep everything else the same. Meanwhile, you can keep your codebase up to date and make unlimited new branches. When you review pull requests, the pull requests will also be in the form of branches. 
 -->
@@ -587,7 +585,7 @@ The process for working with branch is very similar for anyone, regardless of wh
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to change the pull request. The maintainers do not automatically have permission to change it.
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request. The maintainers do not automatically have permission to edit it.
 
 <!--
 * Give upstream repository maintainers permission to push follow on commits to a pull request (forked)
@@ -615,7 +613,7 @@ Typical situation/process: User clones the repo locally using the organizational
 * Push the branch back to GitHub to your origin
 * There will now be a new branch in the origin repo
 * Create pull request title, description, make sure base and compare are correct
-* If from a forked repo- give repo maintainers permission to amend pull request
+* If from a forked repo- give repo maintainers permission to edit pull request
 * Submit the pull request
 * Push follow-on commits to the pull request
 * When the pull request is accepted, delete the branch
@@ -707,29 +705,6 @@ $ git clone <repo-url>
 ```
 -->
 
-<!--
-# Reusable Commands
-
--->
-
-
-
-<tr><td width="30%">
-
-![Slide 26]()
-
-</td><td>
-
-### How to Add Additional Commits
-
-Anyone who has write permission to a repo the branch is in, or just the branch itself, can continue to make changes to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
-
-<!--
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
--->
-
-</td></tr>
-
 
 
 
@@ -783,7 +758,7 @@ We are switching our perspective now. We are now a maintainer working from withi
 
 ### What Are You Doing When You Review a Pull Request?
 
-* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request . 
+* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
 * You go to the pull request in the browser and look at it
 * In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
@@ -872,45 +847,67 @@ pushing back to GitHub
 
 ### Pull Request Review Process
 
-When you go to the pull request in the browser, there will a set of command line instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted via "Fork and Pull" Model (remote branch) or "Shared Repository" Model.  
-
-<!--
-(whether organization branch or fork branch)
--->
-
-I actually want to show you a slightly different way to do it that I think is easier to understand. 
+When you go to the pull request in the browser, there will a set of command line instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 32]()
 
 </td><td>
 
-### Simple Code Review Process
-
-<!--
-Step 1: From your project repository, bring in the changes and test.
-
-git fetch origin
-git checkout -b instructions-pr origin/instructions-pr
-git merge master
-
-git pull origin <branch-name>
+### Forked Repo Model Pull Request
 
 Step 1: From your project repository, check out a new branch and test the changes.
 
-git checkout -b <branch-name> master
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
+```bash
+$ git checkout -b <local-branch-name> master
+$ git pull https://github.com/<user-name>/<repo-name> <branch-name>
+```
 
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 33]()
+
+</td><td>
+
+### Shared Repo Model Pull Request
+
+Step 1: From your project repository, bring in the changes and test.
+
+```bash
+$ git fetch origin
+$ git checkout -b <local-branch-name> origin/<branch-name>
+$ git merge master
+```
+
+</td></tr>
+
+
+
+
+
+<!--
 Step 2: Merge the changes and update on GitHub. (Same)
 
 git checkout master
-git merge --no-ff <branch-name>
+git merge --no-ff <local-branch-name>
 git push origin master
+-->
 
+<!--
+### Simple Code Review Process
+# Reusable Commands
+
+git pull origin <branch-name>
+
+Committing Changes to a Pull Request Branch Created from a Fork
+This is a different way of doing it
 
 Pull or push additional changes to pull request
 git pull https://github.com/<user-name>/<repo-name> <branch-name>
@@ -919,8 +916,6 @@ git push https://github.com/<user-name>/<repo-name> <branch-name>
 Push additional changes if local branch name and pull request branch name are different
 git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
 -->
-
-
 
 Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
 
@@ -956,30 +951,22 @@ git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
 git push https://github.com/Mariatta/practice.git Mariatta-patch-1
 -->
 
-</td></tr>
+
 
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 26]()
 
 </td><td>
 
-### Forked Repo Model Pull Request
+### How to Add Additional Commits
+
+Anyone who has write permission to a repo the branch is in, or just the branch itself, can continue to make changes to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
 
 <!--
-Committing Changes to a Pull Request Branch Created from a Fork
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 -->
-
-</td></tr>
-
-<tr><td width="30%">
-
-![Slide 33]()
-
-</td><td>
-
-### Shared Repo Model Pull Request
 
 </td></tr>
 
