@@ -925,22 +925,6 @@ Keep Feature Branch(es) Up-to-Date
 
 
 <!--
-### Simple Code Review Process
-# Reusable Commands
-
-git pull origin <branch-name>
-
-Committing Changes to a Pull Request Branch Created from a Fork
-This is a different way of doing it
-
-Pull or push additional changes to pull request
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-
-Push additional changes if local branch name and pull request branch name are different
-git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
--->
-
 Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
 
 ```bash
@@ -964,8 +948,21 @@ Alternatively, fetch the individual pull request into your folder
 ```bash
 $ git fetch origin pull/<pull-request-number>/head:<branch-name>
 ```
+-->
 
 <!--
+### Simple Code Review Process
+# Reusable Commands
+
+git pull origin <branch-name>
+
+Committing Changes to a Pull Request Branch Created from a Fork
+This is a different way of doing it
+
+Pull or push additional changes to pull request
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+
 git fetch origin pull/8/head:Mariatta-patch-1
 git push https://github.com/Mariatta/practice Mariatta-patch-1
 git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
@@ -973,6 +970,32 @@ git pull origin pull/8/head:Mariatta-patch-1
 
 git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
 git push https://github.com/Mariatta/practice.git Mariatta-patch-1
+-->
+
+<!--
+git config --global core.editor
+
+Tracking
+
+$ git branch --merged
+$ git branch --no-merged
+
+Advanced
+* Resolve a merge conflict in the browser
+* Resolve a merge conflict by command line
+* Understand rebasing
+* Understand update "strategies": fast forward, recursive
+
+Advanced Git
+* Git rebase, resolving merge conflicts after a Git rebase
+
+Interactive rebase
+
+Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
+About merge conflicts- Resolve conflicts buttons, can't push until resolved
+Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
+"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
+Resolving a merge conflict using the command line- varies by OS, revisit
 -->
 
 
@@ -1013,34 +1036,6 @@ Delete remote branch
 
 </td></tr>
 
-
-
-
-<!--
-git config --global core.editor
-
-Tracking
-
-$ git branch --merged
-$ git branch --no-merged
-
-Advanced
-* Resolve a merge conflict in the browser
-* Resolve a merge conflict by command line
-* Understand rebasing
-* Understand update "strategies": fast forward, recursive
-
-Advanced Git
-* Git rebase, resolving merge conflicts after a Git rebase
-
-Interactive rebase
-
-Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
-About merge conflicts- Resolve conflicts buttons, can't push until resolved
-Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
-"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
-Resolving a merge conflict using the command line- varies by OS, revisit
--->
 
 <tr><td width="30%">
 
