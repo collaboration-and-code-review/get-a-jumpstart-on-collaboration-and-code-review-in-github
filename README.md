@@ -303,6 +303,8 @@ GitHub Vocab
 * branch (a copy of a code base within a repo, often a "feature branch")
 
 <!--
+The user will make a change in the browser, or clone the repo locally
+
 Browser- opening the website, logging in and making a change directly in the website
 When you make a change in the browser, it does not automatically update in your local files
 You need to synchronize the changes
@@ -315,6 +317,9 @@ Or, you can click the "Fork" button.
 "Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
 
 A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
+
+User will submit pull request via own account. 
+a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
 -->
 
 * local development environment (your computer environment)
@@ -403,10 +408,9 @@ What Does Write Permission Allow You to Do?
 * Review pull requests
 
 <!--
-See write permissions chart for info
+In this context, "write" means you can modify the repo
 
-Definition of write
-We're talking about "write" in the context of...
+See write permissions chart for info
 -->
 
 </td></tr>
@@ -423,8 +427,8 @@ We're talking about "write" in the context of...
 The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people contribute to repos. The two collaborative development models correspond to whether you have write permission.
 
 The two collaborative development models: 
-* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
 * If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
+* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
 
 </td></tr>
 
@@ -549,7 +553,7 @@ The methods for working with the two different types of branches are the same. I
 
 ### What is a Branch?
 
-When you create a repo and add a file, this codebase is a branch with a default name of master. If you create a new feature branch off of the master branch, it's a copy of the master branch. You can alter this new feature branch and submit a pull request. If the changes are accepted, they will be merged into the master branch. So now, the master branch will be like it was before, except with the changes from the feature branch. You can create unlimited feature branches. Meanwhile, you will want to keep the master and feature branches up-to-date with new merges. 
+When you create a repo and add a file, this codebase is a branch with a default name of master. You can create a copy of this master branch as a feature branch and give it a new name. You can alter this new feature branch and submit a pull request. If the changes are accepted, they will be merged into the master branch. So now, the master branch will be like it was before, except with the changes from the feature branch. You can create unlimited feature branches. Meanwhile, you will want to keep the master and feature branches up-to-date with new merges. 
 
 <!--
 If you click branches tab, can see a list of the branches
@@ -600,13 +604,6 @@ General process
 
 <!--
 permission to push follow on commits to a pull request
-
-The user will make a change in the browser, or clone the repo locally, and make change and push back to user account (which is the origin). User will submit pull request via own account. 
-
-Typical "fork and pull" situation/process: a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
-
-Best practice "Shared Repository Model" workflow
-Typical situation/process: User clones the repo locally using the organizational repo URL (the organizational repo is the origin). 
 
 Folder/files/text editor
 
@@ -711,6 +708,8 @@ In the browser, go to the repo you want your pull request to be merged into. The
 * Click "Create pull request"
 
 <!--
+If you go to the source repo, it will have detected your branch and will suggest that you submit a pull request
+
 base fork, base, head fork, compare
 base, compare
 
@@ -755,6 +754,12 @@ Pull request, one file shows all changes
 
 Code Review Process (PR gives link to instructions)
 - Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
+
+diff Views
+* unified view
+* split view
+* source view
+* rich view
 -->
 
 </td></tr>
@@ -862,7 +867,7 @@ $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 
 ### Shared Repo Model Pull Request
 
-Step 1: From your project repository, bring in the changes and test.
+Step 1: From your project repository, bring in the changes and test. (If the repo was cloned before the pull request)
 
 ```bash
 $ git fetch origin
