@@ -389,6 +389,143 @@ Create a branch by command line or in the browser below the commit message field
 -->
 
 
+<!--
+https://help.github.com/articles/fork-a-repo
+A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+Fork the repository.
+Make the fix.
+Submit a pull request to the project owner.
+If the project owner likes your work, they might pull your fix into the original repository!
+At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
+make sure to include a license file that determines how you want your project to be shared with others.
+https://github.com/octocat/Spoon-Knife
+Keep your fork synced
+You might fork a project in order to propose changes to the upstream, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
+https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
+Step 2: Create a local clone of your fork
+Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
+When you fork a project in order to propose changes to the original repository, you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
+Change directories to the location of the fork you cloned in Step 2
+cd, ls, cd your_listed_directory, cd ..
+To go to your home directory, type just cd with no other text.
+To list the files and folders in your current directory, type ls.
+To go into one of your listed directories, type cd your_listed_directory.
+To go up one directory, type cd ..
+$ git remote -v
+You'll see the current configured remote repository for your fork.
+$ git remote add upstream https://github.com/octocat/Spoon-Knife.git
+$ git remote -v
+To verify the new upstream repository you've specified for your fork, type git remote -v again. You should see the URL for your fork as origin, and the URL for the original repository as upstream.
+https://help.github.com/articles/syncing-a-fork
+
+https://help.github.com/articles/about-remote-repositories
+A remote URL is Git's fancy way of saying "the place where your code is stored." 
+Git associates a remote URL with a name, and your default remote is usually called origin
+You can use the git remote add command to match a remote URL with a name. 
+SSH URL git@github.com:user/repo.git
+HTTPS URL https://github.com/user/repo.git
+$ git remote add origin  <REMOTE_URL>
+This associates the name origin with the REMOTE_URL
+
+https://help.github.com/articles/adding-a-remote
+To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
+The git remote add command takes two arguments:
+A remote name, for example, origin
+A remote URL, for example, https://github.com/user/repo.git
+$ git remote add <remote-name> <remote-url>
+$ git remote add origin https://github.com/user/repo.git
+$ git remote -v
+
+https://help.github.com/articles/which-remote-url-should-i-use
+"the URLs you can use to clone the project onto your computer are available below the repository details:"
+Cloning with HTTPS URLs (recommended), you'll be asked for your GitHub username and password, password caching
+You can use a credential helper so Git will remember your GitHub username and password every time it talks to GitHub.
+
+https://help.github.com/articles/fetching-a-remote
+git clone, git fetch, git merge, git pull
+These commands are very useful when interacting with a remote repository. clone and fetch download remote code from a repository's remote URL to your local computer, merge is used to merge different people's work together with yours, and pull is a combination of fetch and merge
+When you run git clone, the following actions occur:
+A new folder called repo is made
+It is initialized as a Git repository
+A remote named origin is created, pointing to the URL you cloned from
+All of the repository's files and commits are downloaded there
+The default branch (usually called master) is checked out
+
+For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
+
+remote-tracking branch (i.e., a branch fetched from a remote repository)
+$ git clone https://github.com/USERNAME/REPOSITORY.git
+# Clones a repository to your computer
+Use git fetch to retrieve new work done by other people. Fetching from a repository grabs all the new remote-tracking branches and tags without merging those changes into your own branches. If you already have a local repository with a remote URL set up for the desired project, you can grab all the new information by using git fetch *remotename* in the terminal:
+$ git fetch remotename
+# Fetches updates made to a remote repository (add a remote first, if needed)
+Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
+Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
+$ git merge remotename/branchname
+# Merges updates made online with your local work
+git pull is a convenient shortcut for completing both git fetch and git mergein the same command:
+$ git pull remotename branchname
+# Grabs online updates and merges them with your local work
+Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
+
+https://help.github.com/articles/pushing-to-a-remote
+Use git push to push commits made on your local branch to a remote repository.
+To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
+The git remote add command takes two arguments:
+A remote name, for example, origin
+A remote URL, for example, https://github.com/user/repo.git
+<REMOTENAME> or URL
+$ git push  <REMOTENAME> <BRANCHNAME> 
+$ git push origin master
+$ git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME> 
+non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
+Tags
+Deleting: $ git push  <REMOTENAME> :<BRANCHNAME> 
+When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
+$ git remote add upstream  <THEIR_REMOTE_URL> 
+Now, you can fetch updates and branches from their fork:
+$ git fetch upstream
+
+Forks
+
+https://help.github.com/articles/configuring-a-remote-for-a-fork
+List the current configured remote repository for your fork.
+$ git remote -v
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+
+Specify a new remote upstream repository that will be synced with the fork.
+$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+
+Verify the new upstream repository you've specified for your fork.
+$ git remote -v
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+
+https://help.github.com/articles/syncing-a-fork
+Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
+$ git fetch upstream
+$ git checkout master
+Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+$ git merge upstream/master (push to fork, if needed)
+
+$ git merge origin/master
+
+https://help.github.com/articles/merging-an-upstream-repository-into-your-fork
+Check out the branch you wish to merge to. Usually, you will merge into master
+$ git checkout master
+Pull the desired branch from the upstream repository. This method will retain the commit history without modification.
+$ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
+If there are conflicts, resolve them. For more information, see "Addressing merge conflicts".
+Commit the merge.
+Review the changes and ensure they are satisfactory.
+Push the merge to your GitHub repository.
+$ git push origin master
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 16]()
@@ -1118,6 +1255,39 @@ If you want to know more about advanced workflow:
 
 <tr><td width="30%">
 
+![Slide 38]()
+
+</td><td>
+
+### What Could Go Wrong?
+
+</td></tr>
+
+<tr><td width="30%">
+
+![Slide 39]()
+
+</td><td>
+
+### Safeguards Checklist
+
+Setting Up Repo Fail Safes
+* Back up the repo (third-party software)
+* Protect main branch(es) 
+* Enable required reviews of pull requests
+* Decide whether to use status checks (external)
+* Worst case scenario: How to recover deleted branch
+* Sensitive data warning
+
+</td></tr>
+
+<!--
+Any sensitive information made public, should be immediately considered compromised, removed from GitHub, and changed in development/production (famous companies have done it too!)
+-->
+
+
+<tr><td width="30%">
+
 ![Slide 43]()
 
 </td><td>
@@ -1129,6 +1299,13 @@ Important Non-Coding Leadership Skills (see 10x results article)
 * Communication
 * People management/mentoring
 * Keeping docs up to date
+
+https://medium.com/@mikeal/docs-docs-docs-1e06d17fa06f
+http://gousios.gr/bibliography/GSB16.html
+http://gousios.gr/bibliography/GB15.html
+http://opensourcesurvey.org/2017/#insights
+http://opensourcesurvey.org/2017/
+
 -->
 
 </td></tr>
@@ -1231,45 +1408,6 @@ Writing and Formatting
 </td></tr>
 
 
-
-
-<tr><td width="30%">
-
-![Slide 38]()
-
-</td><td>
-
-### What Could Go Wrong?
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 39]()
-
-</td><td>
-
-### Safety Checklist
-
-Setting Up Repo Fail Safes
-* Back up the repo (third-party software)
-* Protect main branch(es) 
-* Enable required reviews of pull requests
-* Decide whether to use status checks (external)
-* Worst case scenario: How to recover deleted branch
-* Sensitive data warning
-
-</td></tr>
-
-<!--
-Safe-guards
-* Mergeability of pull requests: 
-* Branch restrictions
-
-Any sensitive information made public, should be immediately considered compromised, removed from GitHub, and changed in development/production (famous companies have done it too!)
--->
-
 <tr><td width="30%">
 
 ![Slide 40]()
@@ -1290,9 +1428,9 @@ Any sensitive information made public, should be immediately considered compromi
 ### Tips for getting started:
 
 * “Help Wanted” tags, topics/First-timers initiatives
-* Look for community-oriented projects
+* Look for community-oriented projects that have a good reputation
 * Cherry pick problems or issues that fit your skill level (look for triaging)
-* Practice your workflow (don't be afraid to delete/start over)
+* Practice your skills and workflow (don't be afraid to delete/start over)
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 
 </td></tr>
@@ -1304,15 +1442,12 @@ Any sensitive information made public, should be immediately considered compromi
 
 * What if contributors were encouraged to learn code contribution and review at the same time, instead of code review as an end result? More people could take on more responsibility. 
 
-### Learn skills
-
 Advice of how to get started making pull requests and doing code review
 
 * Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
 
 ### Finding Open Source Projects to Contribute To
 
-Projects that have reputation
 * Search (including advanced search) repositories, code, commits, issues, users, wikis, topics
 * Use search syntax "help wanted", "first-timers-only", etc.
 
