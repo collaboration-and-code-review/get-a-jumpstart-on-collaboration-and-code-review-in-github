@@ -459,15 +459,6 @@ make sure to include a license file that determines how you want your project to
 https://help.github.com/articles/pushing-to-a-remote
 Tags
 
-Keep your fork synced
-You might fork a project in order to propose changes to the upstream, or original, repository. 
-
-In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
-https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
-Step 2: Create a local clone of your fork
-Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
-When you fork a project in order to propose changes to the original repository, you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
-
 Clone- downloading an entire, initial copy of the repo
 
 https://help.github.com/articles/fetching-a-remote
@@ -582,6 +573,14 @@ upstream  https://github.com/upstream-username/original-repository (push)
 
 
 <!--
+Keep your fork synced
+You might fork a project in order to propose changes to the upstream, or original, repository. 
+In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
+https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
+Step 2: Create a local clone of your fork
+Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
+When you fork a project in order to propose changes to the original repository, you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
+
 https://help.github.com/articles/configuring-a-remote-for-a-fork
 
 When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
@@ -606,6 +605,51 @@ Merge the changes from upstream/master into your local master branch. This bring
 $ git merge upstream/master (push to fork, if needed)
 
 $ git merge origin/master
+-->
+
+<!--
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
+
+Pull updates to the individual pull request into your local branch
+
+```bash
+$ git pull origin pull/<pull-request-number>/head:<branch-name>
+```
+
+Alternatively, fetch the individual pull request into your folder
+
+```bash
+$ git fetch origin pull/<pull-request-number>/head:<branch-name>
+```
+-->
+
+<!--
+### Simple Code Review Process
+# Reusable Commands
+
+git pull origin <branch-name>
+
+Committing Changes to a Pull Request Branch Created from a Fork
+This is a different way of doing it
+
+Pull or push additional changes to pull request
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+
+git fetch origin pull/8/head:Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
+git pull origin pull/8/head:Mariatta-patch-1
+
+git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
+git push https://github.com/Mariatta/practice.git Mariatta-patch-1
+-->
+
+<!--
+Tracking
+
+$ git branch --merged
+$ git branch --no-merged
 -->
 
 </td></tr>
@@ -1201,59 +1245,6 @@ Resolving a merge conflict using the command line- varies by OS, revisit
 </td></tr>
 
 
-
-
-<!--
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
-
-Pull updates to the individual pull request into your local branch
-
-```bash
-$ git pull origin pull/<pull-request-number>/head:<branch-name>
-```
-
-Alternatively, fetch the individual pull request into your folder
-
-```bash
-$ git fetch origin pull/<pull-request-number>/head:<branch-name>
-```
--->
-
-<!--
-### Simple Code Review Process
-# Reusable Commands
-
-git pull origin <branch-name>
-
-Committing Changes to a Pull Request Branch Created from a Fork
-This is a different way of doing it
-
-Pull or push additional changes to pull request
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-
-git fetch origin pull/8/head:Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
-git pull origin pull/8/head:Mariatta-patch-1
-
-git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
-git push https://github.com/Mariatta/practice.git Mariatta-patch-1
--->
-
-<!--
-Tracking
-
-$ git branch --merged
-$ git branch --no-merged
--->
-
-
-
-
-
-
-
 <tr><td width="30%">
 
 ![Slide 40]()
@@ -1364,12 +1355,12 @@ Setting Up Repo Fail Safes
 * Enable required reviews of pull requests
 * Decide whether to use status checks (external)
 * Worst case scenario: How to recover deleted branch
-* Sensitive data warning
+* Sensitive data warning (if made public, consider compromised, immediately remove and change)
 
 </td></tr>
 
 <!--
-Any sensitive information made public, should be immediately considered compromised, removed from GitHub, and changed in development/production (famous companies have done it too!)
+Should be immediately considered compromised, and changed in development/production (famous companies have done it too!)
 -->
 
 
@@ -1381,18 +1372,17 @@ Any sensitive information made public, should be immediately considered compromi
 
 ### 10X Developers
 
-<!--
-Important Non-Coding Leadership Skills (see 10x results article)
+Important non-coding leadership skills (see 10x results article)
+* Keeping docs up to date
 * Communication
 * People management/mentoring
-* Keeping docs up to date
 
+<!--
 https://medium.com/@mikeal/docs-docs-docs-1e06d17fa06f
 http://gousios.gr/bibliography/GSB16.html
 http://gousios.gr/bibliography/GB15.html
 http://opensourcesurvey.org/2017/#insights
 http://opensourcesurvey.org/2017/
-
 -->
 
 </td></tr>
