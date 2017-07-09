@@ -459,17 +459,11 @@ make sure to include a license file that determines how you want your project to
 https://help.github.com/articles/pushing-to-a-remote
 Tags
 
-Clone- downloading an entire, initial copy of the repo
+Clone- downloading an entire, initial copy of the remote repo (using URL) to your local computer
 
 https://help.github.com/articles/fetching-a-remote
-git clone, git fetch, git merge, git pull
-These commands are very useful when interacting with a remote repository. clone and fetch download remote code from a repository's remote URL to your local computer, merge is used to merge different people's work together with yours, and pull is a combination of fetch and merge
-When you run git clone, the following actions occur:
-A new folder called repo is made
-It is initialized as a Git repository
-A remote named origin is created, pointing to the URL you cloned from
-All of the repository's files and commits are downloaded there
-The default branch (usually called master) is checked out
+These commands are very useful when interacting with a remote repository. 
+merge is used to merge different people's work together with yours
 
 $ git clone https://github.com/USERNAME/REPOSITORY.git
 # Clones a repository to your computer
@@ -502,7 +496,7 @@ git fetch, git merge
 $ git fetch <remote-name>
 $ git merge <remote-name>/<branch-name>
 
-git pull (git fetch and git merge, commit local work before running command, might need to resolve merge conflict)
+git pull (combination of git fetch and git merge in one command, commit local work before running command, might need to resolve merge conflict)
 $ git pull <remote-name>/<branch-name>
 $ git merge --abort
 
@@ -608,45 +602,13 @@ $ git merge origin/master
 -->
 
 <!--
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
-
-Pull updates to the individual pull request into your local branch
-
-```bash
-$ git pull origin pull/<pull-request-number>/head:<branch-name>
-```
-
-Alternatively, fetch the individual pull request into your folder
-
-```bash
-$ git fetch origin pull/<pull-request-number>/head:<branch-name>
-```
--->
-
-<!--
-### Simple Code Review Process
-# Reusable Commands
+Tracking
+Simple Code Review Process
+Reusable Commands
 
 git pull origin <branch-name>
 
 Committing Changes to a Pull Request Branch Created from a Fork
-This is a different way of doing it
-
-Pull or push additional changes to pull request
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-
-git fetch origin pull/8/head:Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
-git pull origin pull/8/head:Mariatta-patch-1
-
-git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
-git push https://github.com/Mariatta/practice.git Mariatta-patch-1
--->
-
-<!--
-Tracking
 
 $ git branch --merged
 $ git branch --no-merged
@@ -849,6 +811,16 @@ Our perspective is of a person submitting a pull request. The person has cloned 
 </td><td>
 
 ### Branch Process Overview
+
+<!--
+https://help.github.com/articles/fetching-a-remote
+When you run git clone, the following actions occur:
+A new folder called repo is made
+It is initialized as a Git repository
+A remote named origin is created, pointing to the URL you cloned from
+All of the repository's files and commits are downloaded there
+The default branch (usually called master) is checked out
+-->
 
 The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using. Parts of this process can be reused, for instance, during code review. 
 
@@ -1161,6 +1133,21 @@ $ git push origin master
 
 </td></tr>
 
+<!--
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
+
+Pull updates to the individual pull request into your local branch
+
+```bash
+$ git pull origin pull/<pull-request-number>/head:<branch-name>
+```
+
+Alternatively, fetch the individual pull request into your folder
+
+```bash
+$ git fetch origin pull/<pull-request-number>/head:<branch-name>
+```
+-->
 
 <tr><td width="30%">
 
@@ -1186,6 +1173,19 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 
 <!--
 Pushed additional commits to origin
+This is a different way of doing it
+
+Pull or push additional changes to pull request
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+
+git fetch origin pull/8/head:Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
+git pull origin pull/8/head:Mariatta-patch-1
+
+git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
+git push https://github.com/Mariatta/practice.git Mariatta-patch-1
 -->
 
 </td></tr>
