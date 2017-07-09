@@ -231,6 +231,13 @@ You will use terminal/command line often with code review.
 (<> symbol denotes a placeholder/variable)
 Using HTTPS examples
 Example- some operating systems do not use dollar signs $ as command line prompts.
+
+https://help.github.com/articles/which-remote-url-should-i-use
+"the URLs you can use to clone the project onto your computer are available below the repository details:"
+Cloning with HTTPS URLs (recommended), you'll be asked for your GitHub username and password, password caching
+You can use a credential helper so Git will remember your GitHub username and password every time it talks to GitHub.
+SSH URL git@github.com:user/repo.git
+HTTPS URL https://github.com/user/repo.git
 -->
 
 </td></tr>
@@ -311,6 +318,7 @@ Move back a directory
 
 ```bash
 $ cd ..
+```
 
 <!--
 Change directories to the location of the fork you cloned in Step 2
@@ -319,7 +327,6 @@ Bash command list
 -->
 
 </td></tr>
-
 
 
 
@@ -333,6 +340,7 @@ Bash command list
 
 <!--
 What are open-source, Git and GitHub?
+At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
 -->
 
 High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
@@ -345,16 +353,17 @@ GitHub Vocab
 * branch (a copy of a code base within a repo, often a "feature branch")
 
 <!--
-The user will make a change in the browser, or clone the repo locally
-
-Browser- opening the website, logging in and making a change directly in the website
-When you make a change in the browser, it does not automatically update in your local files
-You need to synchronize the changes
+Fork
+https://help.github.com/articles/fork-a-repo
+A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+Fork the repository.
+Make the fix.
+Submit a pull request to the project owner.
+If the project owner likes your work, they might pull your fix into the original repository!
+https://github.com/octocat/Spoon-Knife
 
 When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
 Or, you can click the "Fork" button. 
-
-"Above the new content, click Preview changes."
 
 "Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
 
@@ -372,16 +381,23 @@ a user forks a repo within GitHub. New repo will appear in user account, with us
 * upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
 
 <!--
-Deleting a branch in the browser will not delete it in your local repo
+https://help.github.com/articles/about-remote-repositories
+A remote URL is Git's fancy way of saying "the place where your code is stored." 
+Git associates a remote URL with a name, and your default remote is usually called origin
+You can use the git remote add command to match a remote URL with a name. 
 
 When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a forked repo, the origin is the forked repo and you will be pushing to the fork. If you cloned from an organizational repo, the origin is the organizational repo, and you will be pushing to the organizational repo. Then, you will submit a pull request from there.
 
+Syncing changes
 When you make a change on GitHub, the change does not automatically update locally, and vice versa
-
-Use git push to push commits made on your local branch to a remote repository.
+Deleting a branch in the browser will not delete it in your local repo
+The user will make a change in the browser, or clone the repo locally
+Browser- opening the website, logging in and making a change directly in the website
+When you make a change in the browser, it does not automatically update in your local files
+You need to synchronize the changes
 -->
 
-* git push
+* git push (use to push commits made on your local branch to a remote repository)
 * git fetch (obtain code locally, without merging)
 * git merge (merge code)
 * git pull (fetch and merge, all in one action)
@@ -393,6 +409,7 @@ Use git push to push commits made on your local branch to a remote repository.
 
 
 <!--
+Browser and Local Graphic 
 Examples of How to Do Important Things in Browser versus Locally
 
 Action |Browser | Command Line
@@ -406,24 +423,26 @@ Commit | Click "Commit changes" button in an open, altered file | ```$ git commi
 Open an issue | Can only do in browser | N/A
 Open a pull request | Can only do in browser | N/A
 
-Browser and Local Graphic 
-
 Committing changes in browser versus locally
 * Can do many things in the browser (example: patch)
 * Some changes can be made and committed in the browser, some cannot
-* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
-
 * Some things can be done in both browser or command line, some things only by command line locally.
+
+Running code
 * Will need to run code locally to view changes, unless dealing with gh-pages and HTML, CSS, JavaScript, or Jekyll
 
-Can delete branches under the branches tab or in the closed pull request page, or by command line
-
+Create, add, rename, move file
 Can create, add, rename, move file in browser or from command line (images are an exception)
-Can make a branch by command line or in the browser
-Images can be drag and drop/upload, but can't rename or move in browser
-Creating and deleting branches within your repository- branch selector menu, click  NUMBER branches to delete
+
+Branches
+Can create a branch by command line or in the browser below the commit message field.
 Viewing branches in your repository- branches tab, can delete, change default
-Create a branch by command line or in the browser below the commit message field. 
+Creating and deleting branches within your repository- branch selector menu, click  NUMBER branches to delete
+Can delete branches under the branches tab or in the closed pull request page, or by command line
+ 
+Images
+Images can be drag and drop/upload, but can't rename or move in browser
+* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
 
 * How/where do you create a user account or organization
 * Understand/take tour of the parts of a user account and organization
@@ -434,30 +453,23 @@ Create a branch by command line or in the browser below the commit message field
 
 
 <!--
-https://help.github.com/articles/about-remote-repositories
-A remote URL is Git's fancy way of saying "the place where your code is stored." 
-Git associates a remote URL with a name, and your default remote is usually called origin
-You can use the git remote add command to match a remote URL with a name. 
-
-https://help.github.com/articles/which-remote-url-should-i-use
-"the URLs you can use to clone the project onto your computer are available below the repository details:"
-Cloning with HTTPS URLs (recommended), you'll be asked for your GitHub username and password, password caching
-You can use a credential helper so Git will remember your GitHub username and password every time it talks to GitHub.
-SSH URL git@github.com:user/repo.git
-HTTPS URL https://github.com/user/repo.git
-
-https://help.github.com/articles/fork-a-repo
-A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
-Fork the repository.
-Make the fix.
-Submit a pull request to the project owner.
-If the project owner likes your work, they might pull your fix into the original repository!
-At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
+"Above the new content, click Preview changes."
 make sure to include a license file that determines how you want your project to be shared with others.
-https://github.com/octocat/Spoon-Knife
+
+https://help.github.com/articles/pushing-to-a-remote
+
+$ git push  <REMOTENAME> <BRANCHNAME> 
+$ git push origin master
+$ git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME> 
+non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
+Tags
+Deleting: $ git push  <REMOTENAME> :<BRANCHNAME> 
+
 
 Keep your fork synced
-You might fork a project in order to propose changes to the upstream, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
+You might fork a project in order to propose changes to the upstream, or original, repository. 
+
+In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
 https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
 Step 2: Create a local clone of your fork
 Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
@@ -490,16 +502,6 @@ $ git pull remotename branchname
 # Grabs online updates and merges them with your local work
 Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
 
-https://help.github.com/articles/pushing-to-a-remote
-
-$ git push  <REMOTENAME> <BRANCHNAME> 
-$ git push origin master
-$ git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME> 
-non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
-Tags
-Deleting: $ git push  <REMOTENAME> :<BRANCHNAME> 
-When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
-
 Now, you can fetch updates and branches from their fork:
 $ git fetch upstream
 
@@ -516,16 +518,51 @@ $ git push origin master
 -->
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
 
 </td><td>
 
-### Syncing a Fork
+### Adding an Upstream Remote and Syncing a Fork
+
+List the current configured remote repository for your fork.
+
+```bash
+$ git remote add <remote-name> <remote-url>
+```
+
+Verify remotes
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork.git (fetch)
+origin  https://github.com/your-username/your-fork.git (push)
+```
+
+Add remote upstream repository that will be synced with the fork
+
+```bash
+$ git remote add upstream https://github.com/upstream-username/original-repository.git
+```
+
+Verify remotes (can only push to upstream if have write permission)
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork.git (fetch)
+origin  https://github.com/your-username/your-fork.git (push)
+upstream  https://github.com/upstream-username/original-repository.git (fetch)
+upstream  https://github.com/upstream-username/original-repository.git (push)
+```
+
 
 <!--
 https://help.github.com/articles/configuring-a-remote-for-a-fork
+
+When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
 
 To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
 
@@ -542,24 +579,6 @@ A remote name, for example, origin
 A remote URL, for example, https://github.com/user/repo.git
 This associates the name origin with the REMOTE_URL
 <REMOTENAME> or URL
-
-List the current configured remote repository for your fork.
-
-$ git remote add <remote-name> <remote-url>
-
-$ git remote -v
-origin  https://github.com/your-username/your-fork.git (fetch)
-origin  https://github.com/your-username/your-fork.git (push)
-
-Specify a new remote upstream repository that will be synced with the fork.
-$ git remote add upstream https://github.com/upstream-username/original-repository.git
-
-Verify the new upstream repository you've specified for your fork.
-$ git remote -v
-origin  https://github.com/your-username/your-fork.git (fetch)
-origin  https://github.com/your-username/your-fork.git (push)
-upstream  https://github.com/upstream-username/original-repository.git (fetch)
-upstream  https://github.com/upstream-username/original-repository.git (push)
 
 https://help.github.com/articles/syncing-a-fork
 Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
