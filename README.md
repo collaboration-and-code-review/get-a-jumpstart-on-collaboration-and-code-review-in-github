@@ -279,6 +279,24 @@ $ man git-<verb>
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Bash Commands
+
+<!--
+Change directories to the location of the fork you cloned in Step 2
+cd, ls, cd your_listed_directory, cd ..
+To go to your home directory, type just cd with no other text.
+To list the files and folders in your current directory, type ls.
+To go into one of your listed directories, type cd your_listed_directory.
+To go up one directory, type cd ..
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -335,6 +353,8 @@ Deleting a branch in the browser will not delete it in your local repo
 When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a forked repo, the origin is the forked repo and you will be pushing to the fork. If you cloned from an organizational repo, the origin is the organizational repo, and you will be pushing to the organizational repo. Then, you will submit a pull request from there.
 
 When you make a change on GitHub, the change does not automatically update locally, and vice versa
+
+Use git push to push commits made on your local branch to a remote repository.
 -->
 
 * git push
@@ -390,6 +410,18 @@ Create a branch by command line or in the browser below the commit message field
 
 
 <!--
+https://help.github.com/articles/about-remote-repositories
+A remote URL is Git's fancy way of saying "the place where your code is stored." 
+Git associates a remote URL with a name, and your default remote is usually called origin
+You can use the git remote add command to match a remote URL with a name. 
+
+https://help.github.com/articles/which-remote-url-should-i-use
+"the URLs you can use to clone the project onto your computer are available below the repository details:"
+Cloning with HTTPS URLs (recommended), you'll be asked for your GitHub username and password, password caching
+You can use a credential helper so Git will remember your GitHub username and password every time it talks to GitHub.
+SSH URL git@github.com:user/repo.git
+HTTPS URL https://github.com/user/repo.git
+
 https://help.github.com/articles/fork-a-repo
 A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
 Fork the repository.
@@ -399,47 +431,13 @@ If the project owner likes your work, they might pull your fix into the original
 At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
 make sure to include a license file that determines how you want your project to be shared with others.
 https://github.com/octocat/Spoon-Knife
+
 Keep your fork synced
 You might fork a project in order to propose changes to the upstream, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
 https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
 Step 2: Create a local clone of your fork
 Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
 When you fork a project in order to propose changes to the original repository, you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
-Change directories to the location of the fork you cloned in Step 2
-cd, ls, cd your_listed_directory, cd ..
-To go to your home directory, type just cd with no other text.
-To list the files and folders in your current directory, type ls.
-To go into one of your listed directories, type cd your_listed_directory.
-To go up one directory, type cd ..
-$ git remote -v
-You'll see the current configured remote repository for your fork.
-$ git remote add upstream https://github.com/octocat/Spoon-Knife.git
-$ git remote -v
-To verify the new upstream repository you've specified for your fork, type git remote -v again. You should see the URL for your fork as origin, and the URL for the original repository as upstream.
-https://help.github.com/articles/syncing-a-fork
-
-https://help.github.com/articles/about-remote-repositories
-A remote URL is Git's fancy way of saying "the place where your code is stored." 
-Git associates a remote URL with a name, and your default remote is usually called origin
-You can use the git remote add command to match a remote URL with a name. 
-SSH URL git@github.com:user/repo.git
-HTTPS URL https://github.com/user/repo.git
-$ git remote add origin  <REMOTE_URL>
-This associates the name origin with the REMOTE_URL
-
-https://help.github.com/articles/adding-a-remote
-To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
-The git remote add command takes two arguments:
-A remote name, for example, origin
-A remote URL, for example, https://github.com/user/repo.git
-$ git remote add <remote-name> <remote-url>
-$ git remote add origin https://github.com/user/repo.git
-$ git remote -v
-
-https://help.github.com/articles/which-remote-url-should-i-use
-"the URLs you can use to clone the project onto your computer are available below the repository details:"
-Cloning with HTTPS URLs (recommended), you'll be asked for your GitHub username and password, password caching
-You can use a credential helper so Git will remember your GitHub username and password every time it talks to GitHub.
 
 https://help.github.com/articles/fetching-a-remote
 git clone, git fetch, git merge, git pull
@@ -469,12 +467,7 @@ $ git pull remotename branchname
 Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
 
 https://help.github.com/articles/pushing-to-a-remote
-Use git push to push commits made on your local branch to a remote repository.
-To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
-The git remote add command takes two arguments:
-A remote name, for example, origin
-A remote URL, for example, https://github.com/user/repo.git
-<REMOTENAME> or URL
+
 $ git push  <REMOTENAME> <BRANCHNAME> 
 $ git push origin master
 $ git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME> 
@@ -482,36 +475,9 @@ non-fast-forward updates were rejected. This means that you must retrieve, or "f
 Tags
 Deleting: $ git push  <REMOTENAME> :<BRANCHNAME> 
 When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
-$ git remote add upstream  <THEIR_REMOTE_URL> 
+
 Now, you can fetch updates and branches from their fork:
 $ git fetch upstream
-
-Forks
-
-https://help.github.com/articles/configuring-a-remote-for-a-fork
-List the current configured remote repository for your fork.
-$ git remote -v
-origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
-origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-
-Specify a new remote upstream repository that will be synced with the fork.
-$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
-
-Verify the new upstream repository you've specified for your fork.
-$ git remote -v
-origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
-origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
-upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
-
-https://help.github.com/articles/syncing-a-fork
-Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
-$ git fetch upstream
-$ git checkout master
-Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
-$ git merge upstream/master (push to fork, if needed)
-
-$ git merge origin/master
 
 https://help.github.com/articles/merging-an-upstream-repository-into-your-fork
 Check out the branch you wish to merge to. Usually, you will merge into master
@@ -524,6 +490,65 @@ Review the changes and ensure they are satisfactory.
 Push the merge to your GitHub repository.
 $ git push origin master
 -->
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Syncing a Fork
+
+<!--
+https://help.github.com/articles/configuring-a-remote-for-a-fork
+
+To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
+
+$ git remote -v
+You'll see the current configured remote repository for your fork.
+$ git remote add upstream https://github.com/octocat/Spoon-Knife.git
+$ git remote -v
+To verify the new upstream repository you've specified for your fork, type git remote -v again. You should see the URL for your fork as origin, and the URL for the original repository as upstream.
+
+https://help.github.com/articles/adding-a-remote
+To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
+The git remote add command takes two arguments:
+A remote name, for example, origin
+A remote URL, for example, https://github.com/user/repo.git
+This associates the name origin with the REMOTE_URL
+<REMOTENAME> or URL
+
+List the current configured remote repository for your fork.
+
+$ git remote add <remote-name> <remote-url>
+
+$ git remote -v
+origin  https://github.com/your-username/your-fork.git (fetch)
+origin  https://github.com/your-username/your-fork.git (push)
+
+Specify a new remote upstream repository that will be synced with the fork.
+$ git remote add upstream https://github.com/upstream-username/original-repository.git
+
+Verify the new upstream repository you've specified for your fork.
+$ git remote -v
+origin  https://github.com/your-username/your-fork.git (fetch)
+origin  https://github.com/your-username/your-fork.git (push)
+upstream  https://github.com/upstream-username/original-repository.git (fetch)
+upstream  https://github.com/upstream-username/original-repository.git (push)
+
+https://help.github.com/articles/syncing-a-fork
+Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
+$ git fetch upstream
+$ git checkout master
+Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+$ git merge upstream/master (push to fork, if needed)
+
+$ git merge origin/master
+-->
+
+</td></tr>
+
 
 
 <tr><td width="30%">
