@@ -219,7 +219,7 @@ There are many variations to how things can be done in GitHub. This talk is not 
 ### A Few Notes
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
-* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. 
+* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
 * The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
 * The process is based on GitHub Flow, which is a simple, agile process
 * I will identify best practices any time possible
@@ -468,6 +468,8 @@ Step 2: Create a local clone of your fork
 Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
 When you fork a project in order to propose changes to the original repository, you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
 
+Clone- downloading an entire, initial copy of the repo
+
 https://help.github.com/articles/fetching-a-remote
 git clone, git fetch, git merge, git pull
 These commands are very useful when interacting with a remote repository. clone and fetch download remote code from a repository's remote URL to your local computer, merge is used to merge different people's work together with yours, and pull is a combination of fetch and merge
@@ -480,14 +482,15 @@ The default branch (usually called master) is checked out
 
 $ git clone https://github.com/USERNAME/REPOSITORY.git
 # Clones a repository to your computer
-Use git fetch to retrieve new work done by other people. Fetching from a repository grabs all the new remote-tracking branches and tags without merging those changes into your own branches. If you already have a local repository with a remote URL set up for the desired project, you can grab all the new information by using git fetch *remotename* in the terminal:
 
 For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
 
 remote-tracking branch (i.e., a branch fetched from a remote repository)
-
+ 
+non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
 
 git fetch, git merge, git pull
+Use git fetch to retrieve new work done by other people. Fetching from a repository grabs all the new remote-tracking branches and tags without merging those changes into your own branches. If you already have a local repository with a remote URL set up for the desired project, you can grab all the new information by using git fetch *remotename* in the terminal:
 $ git fetch remotename
 # Fetches updates made to a remote repository (add a remote first, if needed)
 Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
@@ -501,22 +504,37 @@ $ git pull remotename branchname
 Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
 
 https://help.github.com/articles/merging-an-upstream-repository-into-your-fork
-Check out the branch you wish to merge to. Usually, you will merge into master
-$ git checkout master
-Pull the desired branch from the upstream repository. This method will retain the commit history without modification.
-$ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
-If there are conflicts, resolve them. For more information, see "Addressing merge conflicts".
-Commit the merge.
-Review the changes and ensure they are satisfactory.
-Push the merge to your GitHub repository.
-$ git push origin master
-
-$ git push  <REMOTENAME> <BRANCHNAME> 
-$ git push origin master
-$ git push  <REMOTENAME> <LOCALBRANCHNAME>:<REMOTEBRANCHNAME> 
-non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
 -->
 
+<!--
+git fetch, git merge
+$ git fetch <remote-name>
+$ git merge <remote-name>/<branch-name>
+
+git pull (git fetch and git merge, commit local work before running command, might need to resolve merge conflict)
+$ git pull <remote-name>/<branch-name>
+$ git merge --abort
+
+Remote name can be the assigned name or a URL
+$ git push <remote-name> <branch-name> 
+$ git push <remote-name> <local-branch-name>:<remote-branch-name>
+
+$ git pull origin master
+$ git push origin master
+
+Merging an upstream repository into your fork
+
+Checkout the branch you will be merging updates into, in this case, master 
+
+$ git checkout master
+
+Pull in the changes from the upstream branch
+
+$ git pull https://github.com/upstream-username/original-repository <branch-name>
+
+Push the changes to your corresponding GitHub repository branch
+$ git push origin master
+-->
 
 
 
@@ -528,11 +546,9 @@ non-fast-forward updates were rejected. This means that you must retrieve, or "f
 
 ### Adding an Upstream Remote and Syncing a Fork
 
-<!--
 The git remote add command takes two arguments:
-* A remote name, for example, upstream
-* A remote URL, for example, https://github.com/user/repo.git
--->
+* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
+* A remote URL, for example, https://github.com/upstream-username/original-repository
 
 Add a remote
 
@@ -544,8 +560,8 @@ Verify existing remote repository
 
 ```bash
 $ git remote -v
-origin  https://github.com/your-username/your-fork.git (fetch)
-origin  https://github.com/your-username/your-fork.git (push)
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
 ```
 
 Add upstream remote repository that will be synced with the fork
@@ -558,10 +574,10 @@ Verify new upstream remote (can only push to upstream if have write permission)
 
 ```bash
 $ git remote -v
-origin  https://github.com/your-username/your-fork.git (fetch)
-origin  https://github.com/your-username/your-fork.git (push)
-upstream  https://github.com/upstream-username/original-repository.git (fetch)
-upstream  https://github.com/upstream-username/original-repository.git (push)
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
+upstream  https://github.com/upstream-username/original-repository (fetch)
+upstream  https://github.com/upstream-username/original-repository (push)
 ```
 
 
