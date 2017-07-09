@@ -61,6 +61,7 @@ Thank you for being here. I'm thrilled to have the opportunity to talk to you ab
 ### About Me 
 
 * DjangoCon Website Chair (where I learned a lot of what I"m going to be teaching you)
+* DjangoCon Europe Website Committee Member
 * DEFNA (Django Events Foundation North America) Board Member
 * Project Manager
 * Web Designer and Developer
@@ -252,7 +253,8 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 
 <!--
-Bash command list, text editor recommendations
+Bash command list
+Text editor recommendations
 -->
 
 </td></tr>
@@ -287,16 +289,38 @@ $ man git-<verb>
 
 ### Bash Commands
 
+Go to the home directory
+
+```bash
+$ cd
+```
+
+Change directory
+
+```bash
+$ cd <folder-name>
+```
+
+List the folders and files in a directory
+
+```bash
+$ ls
+```
+
+Move back a directory
+
+```bash
+$ cd ..
+
 <!--
 Change directories to the location of the fork you cloned in Step 2
-cd, ls, cd your_listed_directory, cd ..
-To go to your home directory, type just cd with no other text.
-To list the files and folders in your current directory, type ls.
-To go into one of your listed directories, type cd your_listed_directory.
-To go up one directory, type cd ..
+
+Bash command list
 -->
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
