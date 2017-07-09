@@ -260,8 +260,8 @@ HTTPS URL https://github.com/user/repo.git
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 
 <!--
-Bash command list
 Text editor recommendations
+Bash command list
 -->
 
 </td></tr>
@@ -286,48 +286,6 @@ $ man git-<verb>
 ```
 
 </td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Bash Commands
-
-Go to the home directory
-
-```bash
-$ cd
-```
-
-Change directory
-
-```bash
-$ cd <folder-name>
-```
-
-List the folders and files in a directory
-
-```bash
-$ ls
-```
-
-Move back a directory
-
-```bash
-$ cd ..
-```
-
-<!--
-Change directories to the location of the fork you cloned in Step 2
-
-Bash command list
--->
-
-</td></tr>
-
 
 
 <tr><td width="30%">
@@ -521,51 +479,6 @@ Push the changes to your corresponding GitHub repository branch
 $ git push origin master
 -->
 
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Adding an Upstream Remote and Syncing a Fork
-
-The git remote add command takes two arguments:
-* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
-* A remote URL, for example, https://github.com/upstream-username/original-repository
-
-Add a remote
-
-```bash
-$ git remote add <remote-name> <remote-url>
-```
-
-Verify existing remote repository
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-```
-
-Add upstream remote repository that will be synced with the fork
-
-```bash
-$ git remote add upstream https://github.com/upstream-username/original-repository.git
-```
-
-Verify new upstream remote (can only push to upstream if have write permission)
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-upstream  https://github.com/upstream-username/original-repository (fetch)
-upstream  https://github.com/upstream-username/original-repository (push)
-```
-
-
 <!--
 Keep your fork synced
 You might fork a project in order to propose changes to the upstream, or original, repository. 
@@ -614,7 +527,6 @@ $ git branch --merged
 $ git branch --no-merged
 -->
 
-</td></tr>
 
 
 
@@ -838,13 +750,53 @@ General process
 * You or others with write permission to the branch can push additional commits to the branch/pull request
 * When the pull request is accepted, delete the branch
 
-
 <!--
 permission to push follow on commits to a pull request
 
 Folder/files/text editor
 
 # Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Bash Commands
+
+Go to the home directory
+
+```bash
+$ cd
+```
+
+Change directory
+
+```bash
+$ cd <folder-name>
+```
+
+List the folders and files in a directory
+
+```bash
+$ ls
+```
+
+Move back a directory
+
+```bash
+$ cd ..
+```
+
+<!--
+Change directories to the location of the fork you cloned in Step 2
+* The ability to navigate via terminal would be helpful (example: know how to change directory)
+Bash command list
 -->
 
 </td></tr>
@@ -924,6 +876,49 @@ There will now be a new branch in the repo that is your origin. The branch will 
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Adding an Upstream Remote and Syncing a Fork
+
+The git remote add command takes two arguments:
+* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
+* A remote URL, for example, https://github.com/upstream-username/original-repository
+
+Add a remote
+
+```bash
+$ git remote add <remote-name> <remote-url>
+```
+
+Verify existing remote repository
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
+```
+
+Add upstream remote repository that will be synced with the fork
+
+```bash
+$ git remote add upstream https://github.com/upstream-username/original-repository.git
+```
+
+Verify new upstream remote (can only push to upstream if have write permission)
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
+upstream  https://github.com/upstream-username/original-repository (fetch)
+upstream  https://github.com/upstream-username/original-repository (push)
+```
+
+</td></tr>
 
 
 
