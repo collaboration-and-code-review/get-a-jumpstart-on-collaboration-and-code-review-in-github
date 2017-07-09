@@ -1333,13 +1333,14 @@ If you want to know more about advanced workflow:
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 00]()
 
 </td><td>
 
-### What Could Go Wrong?
+### Organization and Team Setup
 
 </td></tr>
+
 
 <tr><td width="30%">
 
