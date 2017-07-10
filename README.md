@@ -417,14 +417,9 @@ make sure to include a license file that determines how you want your project to
 https://help.github.com/articles/pushing-to-a-remote
 Tags
 
-Clone- downloading an entire, initial copy of the remote repo (using URL) to your local computer
-
 https://help.github.com/articles/fetching-a-remote
 These commands are very useful when interacting with a remote repository. 
 merge is used to merge different people's work together with yours
-
-$ git clone https://github.com/USERNAME/REPOSITORY.git
-# Clones a repository to your computer
 
 For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
 
@@ -450,7 +445,7 @@ https://help.github.com/articles/merging-an-upstream-repository-into-your-fork
 -->
 
 <!--
-git fetch, git merge
+git fetch (fetch updates and branches to your clone), git merge
 $ git fetch <remote-name>
 $ git merge <remote-name>/<branch-name>
 
@@ -458,7 +453,7 @@ git pull (combination of git fetch and git merge in one command, commit local wo
 $ git pull <remote-name>/<branch-name>
 $ git merge --abort
 
-Remote name can be the assigned name or a URL
+Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
 $ git push <remote-name> <branch-name> 
 $ git push <remote-name> <local-branch-name>:<remote-branch-name>
 
@@ -477,6 +472,14 @@ $ git pull https://github.com/upstream-username/original-repository <branch-name
 
 Push the changes to your corresponding GitHub repository branch
 $ git push origin master
+
+Syncing a fork
+
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master (push to fork, if needed)
+
+$ git merge origin/master
 -->
 
 <!--
@@ -497,21 +500,13 @@ To add a new remote, use the git remote add command on the terminal, in the dire
 You should see the URL for your fork as origin, and the URL for the original repository as upstream.
 
 https://help.github.com/articles/adding-a-remote
-To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
-This associates the name origin with the REMOTE_URL
-<REMOTENAME> or URL
+use the git remote add command on the terminal, in the directory your repository is stored at.
 
 Updating organizational clone/reviewing pull requests versus updating fork clone
 
 https://help.github.com/articles/syncing-a-fork
 Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
-Now, you can fetch updates and branches from their fork
-$ git fetch upstream
-$ git checkout master
 Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
-$ git merge upstream/master (push to fork, if needed)
-
-$ git merge origin/master
 -->
 
 <!--
@@ -751,11 +746,11 @@ General process
 * When the pull request is accepted, delete the branch
 
 <!--
-permission to push follow on commits to a pull request
+permission to push follow on commits to a pull request, add additional commits
 
 Folder/files/text editor
 
-# Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
+Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 -->
 
 </td></tr>
@@ -809,6 +804,10 @@ Bash command list
 </td><td>
 
 ### Commands
+
+<!--
+initial copy of the remote repo (using URL) to your local computer
+-->
 
 Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
 
@@ -917,6 +916,10 @@ origin  https://github.com/your-username/your-fork (push)
 upstream  https://github.com/upstream-username/original-repository (fetch)
 upstream  https://github.com/upstream-username/original-repository (push)
 ```
+
+<!--
+This associates the name origin with the <remote-url>
+-->
 
 </td></tr>
 
