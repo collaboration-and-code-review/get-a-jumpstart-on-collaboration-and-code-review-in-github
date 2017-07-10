@@ -333,6 +333,17 @@ High level explanation: Git is a version control system that you install on your
 
 * pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Forks
+
 <!--
 Fork
 https://help.github.com/articles/fork-a-repo
@@ -352,7 +363,20 @@ A fork is a copy of the repo in your user account that you can make your propose
 
 User will submit pull request via own account. 
 a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
+
+You might fork a project in order to propose changes to the upstream repository. 
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remote
 
 <!--
 https://help.github.com/articles/about-remote-repositories
@@ -361,14 +385,53 @@ Git associates a remote URL with a name, and your default remote is usually call
 You can use the git remote add command to match a remote URL with a name. 
 
 When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a forked repo, the origin is the forked repo and you will be pushing to the fork. If you cloned from an organizational repo, the origin is the organizational repo, and you will be pushing to the organizational repo. Then, you will submit a pull request from there.
+-->
 
-Syncing changes
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Syncing Changes
+
+<!--
+It's good practice to regularly sync your fork with the upstream repository. 
 When you make a change on GitHub, the change does not automatically update locally, and vice versa
 Deleting a branch in the browser will not delete it in your local repo
 The user will make a change in the browser, or clone the repo locally
 Browser- opening the website, logging in and making a change directly in the website
 When you make a change in the browser, it does not automatically update in your local files
 You need to synchronize the changes
+
+you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
+When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
+
+git fetch, git merge, git pull
+Use git fetch to retrieve new work done by other people. Fetching from a repository grabs all the new remote-tracking branches and tags without merging those changes into your own branches. If you already have a local repository with a remote URL set up for the desired project, you can grab all the new information by using git fetch *remotename* in the terminal:
+$ git fetch remotename
+# Fetches updates made to a remote repository (add a remote first, if needed)
+Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
+Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
+$ git merge remotename/branchname
+# Merges updates made online with your local work
+
+git pull is a convenient shortcut for completing both git fetch and git mergein the same command:
+$ git pull remotename branchname
+# Grabs online updates and merges them with your local work
+Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
+
+merge is used to merge different people's work together with yours
+
+For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
+remote-tracking branch (i.e., a branch fetched from a remote repository)
+non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
+
+Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
+Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
 -->
 
 </td></tr>
@@ -417,40 +480,37 @@ Images can be drag and drop/upload, but can't rename or move in browser
 * Create an organizational repo
 -->
 
-
 <!--
+Tracking
+Simple Code Review Process
+Reusable Commands
+
+Committing Changes to a Pull Request Branch Created from a Fork
+
 "Above the new content, click Preview changes."
 make sure to include a license file that determines how you want your project to be shared with others.
 
 https://help.github.com/articles/pushing-to-a-remote
 Tags
-
 https://help.github.com/articles/fetching-a-remote
-These commands are very useful when interacting with a remote repository. 
-merge is used to merge different people's work together with yours
-
-For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
-
-remote-tracking branch (i.e., a branch fetched from a remote repository)
- 
-non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
-
-git fetch, git merge, git pull
-Use git fetch to retrieve new work done by other people. Fetching from a repository grabs all the new remote-tracking branches and tags without merging those changes into your own branches. If you already have a local repository with a remote URL set up for the desired project, you can grab all the new information by using git fetch *remotename* in the terminal:
-$ git fetch remotename
-# Fetches updates made to a remote repository (add a remote first, if needed)
-Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
-Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
-$ git merge remotename/branchname
-# Merges updates made online with your local work
-
-git pull is a convenient shortcut for completing both git fetch and git mergein the same command:
-$ git pull remotename branchname
-# Grabs online updates and merges them with your local work
-Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
-
 https://help.github.com/articles/merging-an-upstream-repository-into-your-fork
+https://help.github.com/articles/configuring-a-remote-for-a-fork
+https://help.github.com/articles/adding-a-remote
+https://help.github.com/articles/syncing-a-fork
+
+These commands are very useful when interacting with a remote repository. 
+
+To do this, you'll need to use Git on the command line. 
+
+https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
+Step 2: Create a local clone of your fork
+Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
+
+To add a new remote, use in the directory your repository is stored at.
+
+Updating organizational clone/reviewing pull requests versus updating fork clone
 -->
+
 
 <!--
 git fetch (fetch updates and branches to your clone), git merge
@@ -488,48 +548,13 @@ $ git checkout master
 $ git merge upstream/master (push to fork, if needed)
 
 $ git merge origin/master
--->
 
-<!--
-Keep your fork synced
-You might fork a project in order to propose changes to the upstream, or original, repository. 
-In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. 
-https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
-Step 2: Create a local clone of your fork
-Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
-When you fork a project in order to propose changes to the original repository, you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
-
-https://help.github.com/articles/configuring-a-remote-for-a-fork
-
-When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
-
-To add a new remote, use the git remote add command on the terminal, in the directory your repository is stored at.
-
-You should see the URL for your fork as origin, and the URL for the original repository as upstream.
-
-https://help.github.com/articles/adding-a-remote
-use the git remote add command on the terminal, in the directory your repository is stored at.
-
-Updating organizational clone/reviewing pull requests versus updating fork clone
-
-https://help.github.com/articles/syncing-a-fork
-Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
-Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
--->
-
-<!--
-Tracking
-Simple Code Review Process
-Reusable Commands
 
 git pull origin <branch-name>
-
-Committing Changes to a Pull Request Branch Created from a Fork
 
 $ git branch --merged
 $ git branch --no-merged
 -->
-
 
 
 
@@ -927,6 +952,7 @@ upstream  https://github.com/upstream-username/original-repository (push)
 
 <!--
 This associates the name origin with the <remote-url>
+You should see the URL for your fork as origin, and the URL for the original repository as upstream.
 -->
 
 </td></tr>
