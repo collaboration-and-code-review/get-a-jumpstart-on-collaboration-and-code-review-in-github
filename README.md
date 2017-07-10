@@ -303,12 +303,35 @@ At the heart of open source is the idea that by sharing code, we can make better
 
 High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 
-GitHub Vocab
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### GetHub Vocab
 
 * repository (called repo for short, a place where a code base is stored)
 * source (the original repo someone created, not a fork)
 * fork (copy of an entire repo, usually into a user account, but could be into an organization)
 * branch (a copy of a code base within a repo, often a "feature branch")
+
+* local development environment (your computer environment)
+* clone (a local copy of a repo)
+
+* remote
+* origin (the default name for the remote repository you cloned your code from)
+* upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
+
+* git push (use to push commits made on your local branch to a remote repository)
+* git fetch (obtain code locally, without merging)
+* git merge (merge code)
+* git pull (fetch and merge, all in one action)
+
+* pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
 <!--
 Fork
@@ -331,13 +354,6 @@ User will submit pull request via own account.
 a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
 -->
 
-* local development environment (your computer environment)
-* clone (a local copy of a repo)
-
-* remote
-* origin (the default name for the remote repository you cloned your code from)
-* upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
-
 <!--
 https://help.github.com/articles/about-remote-repositories
 A remote URL is Git's fancy way of saying "the place where your code is stored." 
@@ -355,15 +371,7 @@ When you make a change in the browser, it does not automatically update in your 
 You need to synchronize the changes
 -->
 
-* git push (use to push commits made on your local branch to a remote repository)
-* git fetch (obtain code locally, without merging)
-* git merge (merge code)
-* git pull (fetch and merge, all in one action)
-
-* pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
-
 </td></tr>
-
 
 
 <!--
