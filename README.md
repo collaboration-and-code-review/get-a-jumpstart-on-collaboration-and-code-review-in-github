@@ -226,6 +226,8 @@ There are many variations to how things can be done in GitHub. This talk is not 
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
 <!--
+Using DjangoCon Example
+
 You will use terminal/command line often with code review.
 
 (<> symbol denotes a placeholder/variable)
@@ -233,7 +235,6 @@ Using HTTPS examples
 Example- some operating systems do not use dollar signs $ as command line prompts.
 
 https://help.github.com/articles/which-remote-url-should-i-use
-"the URLs you can use to clone the project onto your computer are available below the repository details:"
 Cloning with HTTPS URLs (recommended), you'll be asked for your GitHub username and password, password caching
 You can use a credential helper so Git will remember your GitHub username and password every time it talks to GitHub.
 SSH URL git@github.com:user/repo.git
@@ -253,7 +254,7 @@ HTTPS URL https://github.com/user/repo.git
 
 * Install Git on your computer and set your email and username
 * Create a free [GitHub](https://github.com) account online
-* Find and open your computer terminal (a.k.a. command line)
+* Find and open your computer terminal (a.k.a. command line) on your computer
 * The ability to navigate via terminal would be helpful (example: know how to change directory)
 * You might also want to have a text editor of your choice installed, to use to edit files
 
@@ -285,6 +286,10 @@ $ git <verb> --help
 $ man git-<verb>
 ```
 
+<!--
+Type q to exit
+-->
+
 </td></tr>
 
 
@@ -308,11 +313,181 @@ High level explanation: Git is a version control system that you install on your
 
 <tr><td width="30%">
 
+![Slide 16]()
+
+</td><td>
+
+### Browser Versus Local
+
+What your computer screen will look like
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### Write Permission and Why It Matters
+
+Write Permission is an important concept in GitHub collaboration. 
+
+* Whether you have write permission to a repo determines how you contribute to it
+* Having "write" permission means you can make changes directly inside of the repo 
+
+Some examples of what you can do:
+* Push a branch directly to the repo (instead of via fork)
+* Edit a file
+* Review pull requests
+
+<!--
+See write permissions chart for info
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### Two Collaborative Development Models
+
+The question of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
+
+The two Collaborative Development Models: 
+* "Shared Repository" Model
+* "Fork and Pull" Model
+
+* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
+* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
+
+I am going to tell you the most typical examples. 
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### "Shared Repository"
+
+Example shared repository: DjangoCon 2017 Website Repo
+
+An organization repo is typically where you find a “Shared Repository” because it’s where teams are working 
+
+<!---
+* One or more owners who have full control over the organization
+* Owners can give other users write permission to "Shared Repositories" (this is an example of "Shared Repository" Model)
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### "Fork and Pull"
+
+A user account repo is typically where you a user using “Fork and Pull” 
+
+Example forked repo: fork of DjangoCon 2017 Website Repo
+
+<!--
+* One owner with full control over sources and forks (this is an example of "Fork and Pull" Model, an organization cal also fork and pull)
+* Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
+-->
+
+</td></tr>
+
+
+
+
+<!--
+Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. But typically...
+
+Shared Repository
+Typically an organizational repo, because they tend to involve teams, but can be a user account repo
+Shared repository, organizational account
+One or more owners with full control who can give other users write permission to “Shared Repositories”
+
+Here is the DjangoCon website repo as an example
+
+If not, you need to fork the repo, makes your changes in the fork, and submit a pull request
+-->
+
+
+<tr><td width="30%">
+
+![Slide 21]()
+
+</td><td>
+
+### Shared Repository Model: User Account Versus Organization
+
+Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
+* With a user account "Shared Repository", there is one owner and the collaborators have access to an individual repo
+* The advantage of an organizational account, is that an owner can create teams and permissions across multiple repos
+* Otherwise, the repo "Shared Repository" settings are almost exactly the same
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 18]()
+
+</td><td>
+
+### "Shared Repository" Model Etiquette
+
+Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+
+</td></tr>
+
+
+
+
+
+
+
+
+
+
+<tr><td width="30%">
+
 ![Slide 00]()
 
 </td><td>
 
-### GetHub Vocab
+### Side-by-Side Organizational and Forked Repo Commands
+
+</td></tr>
+
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### GitHub Vocab
 
 * repository (called repo for short, a place where a code base is stored)
 * source (the original repo someone created, not a fork)
@@ -321,6 +496,12 @@ High level explanation: Git is a version control system that you install on your
 
 * local development environment (your computer environment)
 * clone (a local copy of a repo)
+
+<!--
+Critical project would not want just anyone to be able to go into the repo and changes things, so there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
+
+"the URLs you can use to clone the project onto your computer are available below the repository details:"
+-->
 
 * remote
 * origin (the default name for the remote repository you cloned your code from)
@@ -438,7 +619,6 @@ Merge the changes from upstream/master into your local master branch. This bring
 
 
 <!--
-Browser and Local Graphic 
 Examples of How to Do Important Things in Browser versus Locally
 
 Action |Browser | Command Line
@@ -558,107 +738,10 @@ $ git branch --no-merged
 
 
 
-<tr><td width="30%">
-
-![Slide 16]()
-
-</td><td>
-
-### Write Permission and Why It Matters
-
-Write Permission is an important concept in GitHub collaboration. In this context, "write means you can modify a repo. 
-
-* Regardless of what repo you are contributing to, whether or not you have write permission to the repo determines how you contribute to it
-* If you have write permission to a repo, you can make changes directly within the repo instead of forking the repo and submitting a pull request
-
-What Does Write Permission Allow You to Do?
-* Push a branch directly to the repo (instead of via fork)
-* Edit a file
-* Review pull requests
-
-<!--
-See write permissions chart for info
--->
-
-</td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 17]()
-
-</td><td>
-
-### Two Collaborative Development Models
-
-The question of write permission leads us to collaborative development models. Collaborative development model is just a fancy term for how people contribute to repos. The two collaborative development models correspond to whether you have write permission.
-
-The two collaborative development models: 
-* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
-* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
-
-</td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 18]()
-
-</td><td>
-
-### "Shared Repository" Model Etiquette
-
-Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 19]()
-
-</td><td>
-
-### User Account
-
-Example: 
-
-* One owner with full control over sources and forks (this is an example of "Fork and Pull" Model, an organization cal also fork and pull)
-* Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 20]()
-
-</td><td>
-
-### Organization Account
-
-Example: 
-
-* One or more owners who have full control over the organization
-* Owners can give other users write permission to "Shared Repositories" (this is an example of "Shared Repository" Model)
- 
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 21]()
-
-</td><td>
-
-### Shared Repository Model: User Account Versus Organization
-
-Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
-* With a user account "Shared Repository", there is one owner and the collaborators have access to an individual repo
-* The advantage of an organizational account, is that an owner can create teams and permissions across multiple repos
-* Otherwise, the repo "Shared Repository" settings are almost exactly the same
-
-</td></tr>
 
 
 <tr><td width="30%">
