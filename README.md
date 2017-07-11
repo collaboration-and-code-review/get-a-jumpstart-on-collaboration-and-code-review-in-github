@@ -351,7 +351,7 @@ See write permissions chart for info
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -371,6 +371,19 @@ I am going to tell you the most typical examples.
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### "Shared Repository"
+
+An organization repo is typically where you find a “Shared Repository” because it’s where teams are working 
+
+Example shared repository: DjangoCon 2017 Website Repo
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -379,54 +392,9 @@ I am going to tell you the most typical examples.
 
 </td><td>
 
-### "Shared Repository"
-
-Example shared repository: DjangoCon 2017 Website Repo
-
-An organization repo is typically where you find a “Shared Repository” because it’s where teams are working 
-
-<!---
-* One or more owners who have full control over the organization
-* Owners can give other users write permission to "Shared Repositories" (this is an example of "Shared Repository" Model)
--->
+### New Fork
 
 </td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 19]()
-
-</td><td>
-
-### "Fork and Pull"
-
-A user account repo is typically where you a user using “Fork and Pull” 
-
-Example forked repo: fork of DjangoCon 2017 Website Repo
-
-<!--
-* One owner with full control over sources and forks (this is an example of "Fork and Pull" Model, an organization cal also fork and pull)
-* Owner can give other users write permission to a repo (this is an example of "Shared Repository" Model)
--->
-
-</td></tr>
-
-
-
-
-<!--
-Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. But typically...
-
-Shared Repository
-Typically an organizational repo, because they tend to involve teams, but can be a user account repo
-Shared repository, organizational account
-One or more owners with full control who can give other users write permission to “Shared Repositories”
-
-Here is the DjangoCon website repo as an example
-
-If not, you need to fork the repo, makes your changes in the fork, and submit a pull request
--->
 
 
 <tr><td width="30%">
@@ -435,11 +403,61 @@ If not, you need to fork the repo, makes your changes in the fork, and submit a 
 
 </td><td>
 
+### Forking
+
+<!--
+Fork
+https://help.github.com/articles/fork-a-repo
+A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+Fork the repository.
+Make the fix.
+Submit a pull request to the project owner.
+If the project owner likes your work, they might pull your fix into the original repository!
+https://github.com/octocat/Spoon-Knife
+
+When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
+Or, you can click the "Fork" button. 
+
+"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
+
+A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
+
+User will submit pull request via own account. 
+a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
+
+You might fork a project in order to propose changes to the upstream repository. 
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 22]()
+
+</td><td>
+
+### "Fork and Pull"
+
+A user account repo is typically where you will see “Fork and Pull” Model being used, because a user will come across a shared repository that he or she does not have access to and fork it to contribute. 
+
+Example forked repo: fork of DjangoCon 2017 Website Repo
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 23]()
+
+</td><td>
+
 ### Shared Repository Model: User Account Versus Organization
 
+Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. For example, a user account owner can give other users write permission to be collaborators on individual repos, which are then "shared repositories", but this is not so common. 
+
 Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
-* With a user account "Shared Repository", there is one owner and the collaborators have access to an individual repo
-* The advantage of an organizational account, is that an owner can create teams and permissions across multiple repos
+* Organizational account owners can create teams and permissions across multiple repos
 * Otherwise, the repo "Shared Repository" settings are almost exactly the same
 
 </td></tr>
@@ -447,7 +465,7 @@ Using an organizational account "Shared Repository" rather than a user account "
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 24]()
 
 </td><td>
 
@@ -456,10 +474,6 @@ Using an organizational account "Shared Repository" rather than a user account "
 Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
 
 </td></tr>
-
-
-
-
 
 
 
@@ -515,41 +529,6 @@ Critical project would not want just anyone to be able to go into the repo and c
 * pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
 </td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Forks
-
-<!--
-Fork
-https://help.github.com/articles/fork-a-repo
-A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
-Fork the repository.
-Make the fix.
-Submit a pull request to the project owner.
-If the project owner likes your work, they might pull your fix into the original repository!
-https://github.com/octocat/Spoon-Knife
-
-When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
-Or, you can click the "Fork" button. 
-
-"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
-
-A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
-
-User will submit pull request via own account. 
-a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
-
-You might fork a project in order to propose changes to the upstream repository. 
--->
-
-</td></tr>
-
 
 <tr><td width="30%">
 
