@@ -16,7 +16,7 @@ This is a transcript of a talk Katherine "Kati" Michel ([Twitter](https://twitte
 
 The style of this transcript is heavily inspired by:
 
-* Ana Balica's ([Twitter](https://twitter.com/anabalica), [GitHub](https://github.com/ana-balica)) transcript of her [Humanizing among coders](https://ana-balica.github.io/2017/05/28/humanizing-among-coders/) keynote for [PyCon CZ 2016](https://cz.pycon.org/2016/). 
+* Ana Balica's ([Twitter](https://twitter.com/anabalica), [GitHub](https://github.com/ana-balica)) transcript of her [Humanizing among coders](https://ana-balica.github.io/2017/05/28/humanizing-among-coders/) keynote for [PyCon CZ 2016](https://cz.pycon.org/2016). 
 * Honza Javorek's ([Twitter](https://twitter.com/honzajavorek), [GitHub](https://github.com/honzajavorek)) transcript of Anna Ossowski's ([Twitter](https://twitter.com/OssAnna16), [GitHub](https://github.com/OssAnna16)) keynote [Be(Come) A Mentor! Help Others Succeed!](https://github.com/honzajavorek/become-mentor) for [PyCon CZ 2017](https://cz.pycon.org/2017/). 
 
 Thank you!
@@ -225,8 +225,6 @@ Using HTTPS examples
 Example- some operating systems do not use dollar signs $ as command line prompts.
 
 https://help.github.com/articles/which-remote-url-should-i-use
-Cloning with HTTPS URLs (recommended), you'll be asked for your GitHub username and password, password caching
-You can use a credential helper so Git will remember your GitHub username and password every time it talks to GitHub.
 SSH URL git@github.com:user/repo.git
 HTTPS URL https://github.com/user/repo.git
 -->
@@ -336,14 +334,11 @@ Critical project would not want just anyone to be able to go into the repo and c
 
 "the URLs you can use to clone the project onto your computer are available below the repository details:"
 
-Tracking
 Simple Code Review Process
-Reusable Commands
 
 Committing Changes to a Pull Request Branch Created from a Fork
 
 "Above the new content, click Preview changes."
-make sure to include a license file that determines how you want your project to be shared with others.
 
 https://help.github.com/articles/pushing-to-a-remote
 Tags
@@ -371,6 +366,8 @@ Updating organizational clone/reviewing pull requests versus updating fork clone
 git fetch (fetch updates and branches to your clone), git merge
 $ git fetch <remote-name>
 $ git merge <remote-name>/<branch-name>
+
+$ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
 
 git pull (combination of git fetch and git merge in one command, commit local work before running command, might need to resolve merge conflict)
 $ git pull <remote-name>/<branch-name>
@@ -544,11 +541,16 @@ Example shared repository: DjangoCon 2017 Website Repo
 
 ### New Fork
 
-</td></tr>
+Two Ways to Fork
+* Click the "Fork" button
+* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account.
 
 <!--
 Forking graphic
 -->
+
+</td></tr>
+
 
 <tr><td width="30%">
 
@@ -558,28 +560,18 @@ Forking graphic
 
 ### Forking
 
+When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give read/write access to someone else. If the project maintainer accept your pull request, he or she will pull the changes into the original repository. 
+
 <!--
-Fork
 https://help.github.com/articles/fork-a-repo
-A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
-Fork the repository.
+Most commonly, forks are used to either propose changes to someone else's project/upstream repository or to use someone else's project as a starting point for your own idea.
 Make the fix.
 Submit a pull request to the project owner.
-If the project owner likes your work, they might pull your fix into the original repository!
-https://github.com/octocat/Spoon-Knife
-
-When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
-Or, you can click the "Fork" button. 
 
 "Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
 
-A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
-
-User will submit pull request via own account. 
-a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
-
-You might fork a project in order to propose changes to the upstream repository. 
--->
+If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is merged. 
+ -->
 
 </td></tr>
 
@@ -694,6 +686,9 @@ When you create a repo and add a file, this codebase is a branch with a default 
 
 <!--
 If you click branches tab, can see a list of the branches
+remote branch
+remote-tracking branch
+local branch
 
 A branch is a copy of code inside of your repo, in parallel with the branch it is a copy of.
 -->
@@ -932,26 +927,35 @@ you can configure Git to pull changes from the original, or upstream, repository
 When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
 
 git fetch, git merge, git pull
-Use git fetch to retrieve new work done by other people. Fetching from a repository grabs all the new remote-tracking branches and tags without merging those changes into your own branches. If you already have a local repository with a remote URL set up for the desired project, you can grab all the new information by using git fetch *remotename* in the terminal:
-$ git fetch remotename
-# Fetches updates made to a remote repository (add a remote first, if needed)
+Fetching from a repository grabs all the new remote-tracking branches and tags
+
+
+Use $ git fetch <remote-name> to fetch new branches and commits from remote repository into a local .git folder, without merging them locally. 
+
+Fetch updates from the remote repository to local .git folder (add a remote first, if needed)
+$ git fetch <remote-name>
+
+Merges remote-tracking branch updtes with branch you are currently checked out on
+$ git merge <remote-name>/<branch-name>
+
+Do not do (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched)
+
+$ git pull <remote-name>/<branch-name>
+
+Instead do (to fetch and merge directly from remote repository branch)
+
+$ git pull <remote-name> <branch-name>
+
 Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
 Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
-$ git merge remotename/branchname
-# Merges updates made online with your local work
 
-git pull is a convenient shortcut for completing both git fetch and git mergein the same command:
-$ git pull remotename branchname
-# Grabs online updates and merges them with your local work
 Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
-
-merge is used to merge different people's work together with yours
 
 For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
 remote-tracking branch (i.e., a branch fetched from a remote repository)
 non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
 
-Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master. 
+Commits to master will be stored in a local branch, upstream/master. 
 Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
 -->
 
