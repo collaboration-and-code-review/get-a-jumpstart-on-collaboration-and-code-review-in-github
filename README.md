@@ -311,189 +311,6 @@ High level explanation: Git is a version control system that you install on your
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 16]()
-
-</td><td>
-
-### Browser Versus Local
-
-What your computer screen will look like
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 17]()
-
-</td><td>
-
-### Write Permission and Why It Matters
-
-Write Permission is an important concept in GitHub collaboration. 
-
-* Whether you have write permission to a repo determines how you contribute to it
-* Having "write" permission means you can make changes directly inside of the repo 
-
-Some examples of what you can do:
-* Push a branch directly to the repo (instead of via fork)
-* Edit a file
-* Review pull requests
-
-<!--
-See write permissions chart for info
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 18]()
-
-</td><td>
-
-### Two Collaborative Development Models
-
-The question of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
-
-The two Collaborative Development Models: 
-* "Shared Repository" Model
-* "Fork and Pull" Model
-
-* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
-* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
-
-I am going to tell you the most typical examples. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 19]()
-
-</td><td>
-
-### "Shared Repository"
-
-An organization repo is typically where you find a “Shared Repository” because it’s where teams are working 
-
-Example shared repository: DjangoCon 2017 Website Repo
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 20]()
-
-</td><td>
-
-### New Fork
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 21]()
-
-</td><td>
-
-### Forking
-
-<!--
-Fork
-https://help.github.com/articles/fork-a-repo
-A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
-Fork the repository.
-Make the fix.
-Submit a pull request to the project owner.
-If the project owner likes your work, they might pull your fix into the original repository!
-https://github.com/octocat/Spoon-Knife
-
-When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
-Or, you can click the "Fork" button. 
-
-"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
-
-A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
-
-User will submit pull request via own account. 
-a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
-
-You might fork a project in order to propose changes to the upstream repository. 
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 22]()
-
-</td><td>
-
-### "Fork and Pull"
-
-A user account repo is typically where you will see “Fork and Pull” Model being used, because a user will come across a shared repository that he or she does not have access to and fork it to contribute. 
-
-Example forked repo: fork of DjangoCon 2017 Website Repo
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 23]()
-
-</td><td>
-
-### Shared Repository Model: User Account Versus Organization
-
-Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. For example, a user account owner can give other users write permission to be collaborators on individual repos, which are then "shared repositories", but this is not so common. 
-
-Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
-* Organizational account owners can create teams and permissions across multiple repos
-* Otherwise, the repo "Shared Repository" settings are almost exactly the same
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 24]()
-
-</td><td>
-
-### "Shared Repository" Model Etiquette
-
-Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
-
-</td></tr>
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Side-by-Side Organizational and Forked Repo Commands
-
-</td></tr>
-
-
-
-
-
 
 <tr><td width="30%">
 
@@ -719,13 +536,177 @@ $ git branch --no-merged
 
 
 
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
+### Browser Versus Local
+
+What your computer screen will look like
+
+</td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### Write Permission and Why It Matters
+
+Write Permission is an important concept in GitHub collaboration. 
+
+* Whether you have write permission to a repo determines how you contribute to it
+* Having "write" permission means you can make changes directly inside of the repo 
+
+Some examples of what you can do:
+* Push a branch directly to the repo (instead of via fork)
+* Edit a file
+* Review pull requests
+
+<!--
+See write permissions chart for info
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 18]()
+
+</td><td>
+
+### Two Collaborative Development Models
+
+The question of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
+
+The two Collaborative Development Models: 
+* "Shared Repository" Model
+* "Fork and Pull" Model
+
+* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
+* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
+
+I am going to tell you the most typical examples. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### "Shared Repository"
+
+An organization repo is typically where you find a “Shared Repository” because it’s where teams are working 
+
+Example shared repository: DjangoCon 2017 Website Repo
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### New Fork
+
+</td></tr>
+
+<!--
+Forking graphic
+-->
+
+<tr><td width="30%">
+
+![Slide 21]()
+
+</td><td>
+
+### Forking
+
+<!--
+Fork
+https://help.github.com/articles/fork-a-repo
+A fork is a copy of a repository. Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+Fork the repository.
+Make the fix.
+Submit a pull request to the project owner.
+If the project owner likes your work, they might pull your fix into the original repository!
+https://github.com/octocat/Spoon-Knife
+
+When you try to edit a file in a repository that you do not have write permission to, GitHub will automatically fork the repo to your user (or organizaitonal) account. After you commit the change, you can submit a pull request.
+Or, you can click the "Fork" button. 
+
+"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
+
+A fork is a copy of the repo in your user account that you can make your proposed changed to. The fork will be an exact copy at the time that it was forked, in your account, with your username in the URL. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is accepted. 
+
+User will submit pull request via own account. 
+a user forks a repo within GitHub. New repo will appear in user account, with username in repo URL. Go to the fork, which will be in your user account. 
+
+You might fork a project in order to propose changes to the upstream repository. 
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
 
 ![Slide 22]()
+
+</td><td>
+
+### "Fork and Pull"
+
+A user account repo is typically where you will see “Fork and Pull” Model being used, because a user will come across a shared repository that he or she does not have access to and fork it to contribute. 
+
+Example forked repo: fork of DjangoCon 2017 Website Repo
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 23]()
+
+</td><td>
+
+### Shared Repository Model: User Account Versus Organization
+
+Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. For example, a user account owner can give other users write permission to be collaborators on individual repos, which are then "shared repositories", but this is not so common. 
+
+Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
+* Organizational account owners can create teams and permissions across multiple repos
+* Otherwise, the repo "Shared Repository" settings are almost exactly the same
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 24]()
+
+</td><td>
+
+### "Shared Repository" Model Etiquette
+
+Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 25]()
 
 </td><td>
 
@@ -741,7 +722,7 @@ There is an overall theme to this talk. In order to be able to increase your lev
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 26]()
 
 </td><td>
 
@@ -754,7 +735,7 @@ There is an overall theme to this talk. In order to be able to increase your lev
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 27]()
 
 </td><td>
 
@@ -776,7 +757,7 @@ The methods for working with the two different types of branches are the same. I
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 28]()
 
 </td><td>
 
@@ -795,11 +776,11 @@ A branch is a copy of code inside of your repo, in parallel with the branch it i
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 29]()
 
 </td><td>
 
-### Perspective
+### Perspective: Submitting a Pull Request
 
 Our perspective is of a person submitting a pull request. The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
 
@@ -808,7 +789,7 @@ Our perspective is of a person submitting a pull request. The person has cloned 
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 30]()
 
 </td><td>
 
@@ -849,6 +830,21 @@ Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked R
 -->
 
 </td></tr>
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Side-by-Side Organizational and Forked Repo Commands
+
+</td></tr>
+
 
 
 <tr><td width="30%">
@@ -968,6 +964,10 @@ $ git push origin <branch-name>
 There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
+
+
+
+
 
 
 <tr><td width="30%">
