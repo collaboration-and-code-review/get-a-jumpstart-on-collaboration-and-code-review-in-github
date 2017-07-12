@@ -301,7 +301,7 @@ High level explanation: Git is a version control system that you install on your
 </td></tr>
 
 
-
+<!--
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -318,12 +318,6 @@ High level explanation: Git is a version control system that you install on your
 * local development environment (your computer environment)
 * clone (a local copy of a repo)
 
-<!--
-Critical project would not want just anyone to be able to go into the repo and changes things, so there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
-
-"the URLs you can use to clone the project onto your computer are available below the repository details:"
--->
-
 * remote
 * origin (the default name for the remote repository you cloned your code from)
 * upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
@@ -337,8 +331,11 @@ Critical project would not want just anyone to be able to go into the repo and c
 
 </td></tr>
 
-
 <!--
+Critical project would not want just anyone to be able to go into the repo and changes things, so there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
+
+"the URLs you can use to clone the project onto your computer are available below the repository details:"
+
 Tracking
 Simple Code Review Process
 Reusable Commands
@@ -418,6 +415,7 @@ $ git branch --no-merged
 
 
 
+
 <tr><td width="30%">
 
 ![Slide 15]()
@@ -457,9 +455,11 @@ Create, add, rename, move file
 Can create, add, rename, move file in browser or from command line (images are an exception)
 
 Branches
-Can create a branch by command line or in the browser below the commit message field.
-Viewing branches in your repository- branches tab, can delete, change default
-Creating and deleting branches within your repository- branch selector menu, click  NUMBER branches to delete
+Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
+Can view/delete branches in the browser by clicking on the branches tab 
+
+branches tab, change default
+branch selector menu, click  NUMBER branches to delete
 Can delete branches under the branches tab or in the closed pull request page, or by command line
  
 Images
@@ -485,7 +485,7 @@ Images can be drag and drop/upload, but can't rename or move in browser
 Write Permission is an important concept in GitHub collaboration. 
 
 * Whether you have write permission to a repo determines how you contribute to it
-* Having "write" permission means you can make changes directly inside of the repo 
+* Having write permission means you can make changes directly inside of the repo 
 
 Some examples of what you can do:
 * Push a branch directly to the repo (instead of via fork)
@@ -529,7 +529,7 @@ I am going to tell you the most typical examples.
 
 ### "Shared Repository"
 
-An organization repo is typically where you find a “Shared Repository” because it’s where teams are working 
+An organization account is typically where you find a “Shared Repository” because it’s where teams are working 
 
 Example shared repository: DjangoCon 2017 Website Repo
 
@@ -623,6 +623,8 @@ Using an organizational account "Shared Repository" rather than a user account "
 </td><td>
 
 ### "Shared Repository" Model Etiquette
+
+Just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. 
 
 Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
 
@@ -899,7 +901,7 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 <!--
 https://help.github.com/articles/about-remote-repositories
-A remote URL is Git's fancy way of saying "the place where your code is stored." 
+A "the place where your code is stored." 
 Git associates a remote URL with a name, and your default remote is usually called origin
 You can use the git remote add command to match a remote URL with a name. 
 
@@ -1537,9 +1539,6 @@ Files
 - [ ] Find the Notifications Overview Page
 - [ ] Decide which notifications to receive, whether by browser or email, and which email to receive at
 
-* [Emails (need to be logged in)](https://github.com/settings/emails)
-* [Notifications center (need to be logged in)](https://github.com/settings/notifications)
-
 Two Types of Notifications
 * Watching
 * Participating
@@ -1652,6 +1651,9 @@ Useful Resources: Bitly Link
 
 <!--
 * [Using Keyboard Shortcuts](https://help.github.com/articles/using-keyboard-shortcuts)
+
+* [Emails (need to be logged in)](https://github.com/settings/emails)
+* [Notifications center (need to be logged in)](https://github.com/settings/notifications)
 -->
 
 GitHub and Bitbucket
