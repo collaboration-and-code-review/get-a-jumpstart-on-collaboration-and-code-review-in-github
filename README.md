@@ -411,8 +411,6 @@ Even if you have write permission to a "Shared Repository", it is still common t
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 20]()
@@ -421,20 +419,18 @@ Even if you have write permission to a "Shared Repository", it is still common t
 
 ### Example: Forking DjangoCon US Website Repo
 
-<!--
-* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
--->
+The first year that I helped with the DangoCon US website, I was not a maintainer, so I did not have write permission to the DjangoCon US website repo. So, when I wanted to make a change to the repo, I needed to make a copy (fork) the repo to my user account, make the changes, and submit a pull request for the changes to be accepted in the DjangoCon US website repo. This is the "Fork and Pull" Model. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 21]()
 
 </td><td>
 
-### New Fork
+### Creating a Fork
 
 Two Ways to Fork
 * Click the "Fork" button
@@ -449,11 +445,11 @@ Forking graphic
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 22]()
 
 </td><td>
 
-### Forking
+### About Forks
 
 When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give read/write access to someone else. If the project maintainer accept your pull request, he or she will pull the changes into the original repository. 
 
@@ -477,7 +473,7 @@ If you make changes to it, the repo you want to contribute to will not be affect
 
 </td><td>
 
-### Example: DjangoCon US Website "Shared Repository"
+### Example: DjangoCon US Website as a "Shared Repository"
 
 <!--
 * If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
