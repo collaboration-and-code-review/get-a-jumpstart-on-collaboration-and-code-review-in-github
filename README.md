@@ -297,6 +297,24 @@ Type q to exit
 
 </td><td>
 
+### Git and GitHub Tour
+
+<!--
+What are open-source, Git and GitHub?
+At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
+
+High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
 ### What Local Environment Looks Like
 
 You're going to be transferring file changes back and forth between local Git and GitHub repositories
@@ -341,6 +359,8 @@ See write permissions chart for info
 
 Aa user will come across a shared repository that he or she does not have access to and fork it to contribute. 
 Mission critical project would not want just anyone to be able to go into the repo and changes things, 
+
+There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. 
 -->
 
 </td></tr>
@@ -417,9 +437,7 @@ Using an organizational account "Shared Repository" rather than a user account "
 
 ### "Shared Repository" Model Etiquette
 
-Just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. 
-
-Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
 
 </td></tr>
 
@@ -464,17 +482,13 @@ Forking graphic
 
 ### About Forks
 
-When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give read/write access to someone else. If the project maintainer accept your pull request, he or she will pull the changes into the original repository. 
+When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to the fork, the original repo will not be affected unless you submit a pull request and a project maintainer pulls your changes into the original repository. When you delete a fork, you are not deleting the original repo. 
 
 <!--
 https://help.github.com/articles/fork-a-repo
 Most commonly, forks are used to either propose changes to someone else's project/upstream repository or to use someone else's project as a starting point for your own idea.
-Make the fix.
-Submit a pull request to the project owner.
 
-"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
-
-If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is merged. 
+In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
  -->
 
 </td></tr>
@@ -548,50 +562,16 @@ The methods for working with the two different types of branches are the same. I
 </td></tr>
 
 
-
-
-
-
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 00]()
 
 </td><td>
 
-### Git and GitHub Tour
+### About Branches
 
 <!--
-What are open-source, Git and GitHub?
-At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
--->
-
-High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
-
-</td></tr>
-
-
-
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 27]()
-
-</td><td>
-
-### What is a Branch?
-
 When you create a repo and add a file, this codebase is a branch with a default name of master. You can create a copy of this master branch as a feature branch and give it a new name. You can alter this new feature branch and submit a pull request. If the changes are accepted, they will be merged into the master branch. So now, the master branch will be like it was before, except with the changes from the feature branch. You can create unlimited feature branches. Meanwhile, you will want to keep the master and feature branches up-to-date with new merges. 
-
-<!--
-If you click branches tab, can see a list of the branches
-remote branch
-remote-tracking branch
-local branch
 
 A branch is a copy of code inside of your repo, in parallel with the branch it is a copy of.
 -->
@@ -601,61 +581,16 @@ A branch is a copy of code inside of your repo, in parallel with the branch it i
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 00]()
 
 </td><td>
 
 ### Perspective: Submitting a Pull Request
 
+In this example, I am submitting a pull request. It could be either a pull request I am submitting through a fork, when I did not have write access to the DjangoCon US website repo. Or, it could be a pull request that I am submitting through the organizational repo after I became a maintainer. 
+
+<!--
 Our perspective is of a person submitting a pull request. The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
-
-<!--
-Me submitting pull request either through my fork or as maintainer
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 29]()
-
-</td><td>
-
-### Branch Process Overview
-
-<!--
-https://help.github.com/articles/fetching-a-remote
-When you run git clone, the following actions occur:
-A new folder called repo is made
-It is initialized as a Git repository
-A remote named origin is created, pointing to the URL you cloned from
-All of the repository's files and commits are downloaded there
-The default branch (usually called master) is checked out
--->
-
-The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using. Parts of this process can be reused, for instance, during code review. 
-
-The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
-
-General process
-* Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
-* Change directory into the folder
-* Create and checkout (switch) to a feature branch, branching off the branch you intend your change to be merged into
-* Make your change, then add, commit, create a message
-* Push the new branch to GitHub to your origin
-* Submit a pull request
-* You or others with write permission to the branch can push additional commits to the branch/pull request
-* When the pull request is accepted, delete the branch
-
-<!--
-permission to push follow on commits to a pull request, add additional commits
-
-Folder/files/text editor
-
-Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
 -->
 
 </td></tr>
@@ -668,6 +603,8 @@ Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked R
 </td><td>
 
 ### Bash Commands
+
+Earlier, I said that the ability to navigate via terminal would be helpful (example: know how to change directory). Here are a few very helpful commands.
 
 Go to the home directory
 
@@ -694,8 +631,6 @@ $ cd ..
 ```
 
 <!--
-Change directories to the location of the fork you cloned in Step 2
-* The ability to navigate via terminal would be helpful (example: know how to change directory)
 Bash command list
 -->
 
@@ -704,13 +639,59 @@ Bash command list
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 00]()
 
 </td><td>
 
-### Side-by-Side Organizational and Forked Repo Commands
+### Remote
+
+A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
+
+When you clone a repo locally, the repo you cloned from automatically becomes a remote named "origin". "origin" is a default remote. When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+
+You can then submit a pull request from your origin. 
+
+<!--
+https://help.github.com/articles/about-remote-repositories
+-->
 
 </td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 29]()
+
+</td><td>
+
+### Branch Process Overview
+
+The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using. Parts of this process can be reused, for instance, during code review. 
+
+The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
+
+General process
+
+<!--
+* Submit a pull request
+* You or others with write permission to the branch can push additional commits to the branch/pull request
+
+permission to push follow on commits to a pull request, add additional commits
+
+Folder/files/text editor
+
+Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
+-->
+
+</td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -723,6 +704,14 @@ Bash command list
 
 <!--
 initial copy of the remote repo (using URL) to your local computer
+
+https://help.github.com/articles/fetching-a-remote
+When you run git clone:
+There will now be a new folder in the directory you cloned into (command line prompt), by the same name as the repo and filled with the contents of the repo
+The folder will be initialized as a Git repository, with the remote repo named "origin"
+You will be checked out on the default branch (usually master)
+
+A remote named origin is created, pointing to the URL you cloned from
 -->
 
 Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
@@ -743,6 +732,10 @@ Example: clone (or download) a user account repo (repo needs to have already bee
 $ git clone https://github.com/<user-name>/<repo-name>
 ```
 
+<!--
+Change directories to the location of the fork you cloned in Step 2
+-->
+
 Change directory into the folder (folder name will be the repo name)
 
 ```bash
@@ -754,6 +747,10 @@ Verify which branch you are checked out on (important if more than one branch)
 ```bash
 $ git branch
 ```
+
+<!--
+Create and checkout (switch) to a feature branch, branching off the branch you intend your change to be merged into
+-->
 
 Create and checkout (switch) to a feature branch (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
 
@@ -789,6 +786,320 @@ $ git push origin <branch-name>
 There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Perspective
+
+<!--
+We are switching our perspective now. We are now a maintainer working from within an organizational repo, with write permission to the organizational repo, but without write permission to a forked repo, unless permission has been given to edit a pull request. The organizational repo is our origin, but any forked repo is not. 
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 33]()
+
+</td><td>
+
+### Pull Request Review Process
+
+When you go to the pull request in the browser, there will a set of command line instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
+</td></tr>
+
+<!--
+Hidden folder named .git, storing temporary info from the remote
+If you click branches tab, can see a list of the branches
+remote branch
+remote-tracking branch
+local branch
+-->
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Forked Repo Model Pull Request
+
+Step 1: From your project repository, check out a new branch and test the changes.
+
+```bash
+$ git checkout -b <local-branch-name> master
+$ git pull https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repo Model Pull Request
+
+Step 1: From your project repository, bring in the changes and test. (If the repo was cloned before the pull request)
+
+```bash
+$ git fetch origin
+$ git checkout -b <local-branch-name> origin/<branch-name>
+$ git merge master
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Merge Pull Request Locally and Push to Master Branch
+
+Step 2: Merge the changes and update on GitHub. (Same process no matter where the pull request originated)
+
+```bash
+$ git checkout master
+$ git merge --no-ff <local-branch-name>
+$ git push origin master
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Adding an Upstream Remote and Syncing a Fork
+
+The git remote add command takes two arguments:
+* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
+* A remote URL, for example, https://github.com/upstream-username/original-repository
+
+Add a remote
+
+```bash
+$ git remote add <remote-name> <remote-url>
+```
+
+Verify existing remote repository
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
+```
+
+Add upstream remote repository that will be synced with the fork
+
+```bash
+$ git remote add upstream https://github.com/upstream-username/original-repository.git
+```
+
+Verify new upstream remote (can only push to upstream if have write permission)
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
+upstream  https://github.com/upstream-username/original-repository (fetch)
+upstream  https://github.com/upstream-username/original-repository (push)
+```
+
+<!--
+This associates the name origin with the <remote-url>
+You should see the URL for your fork as origin, and the URL for the original repository as upstream.
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Syncing Changes
+
+Keep master branch up-to-date
+
+```bash
+$ 
+```
+
+Keep feature branch up-to-date
+
+```bash
+$ 
+```
+
+<!--
+It's good practice to regularly sync your fork with the upstream repository. 
+When you make a change on GitHub, the change does not automatically update locally, and vice versa
+Deleting a branch in the browser will not delete it in your local repo
+The user will make a change in the browser, or clone the repo locally
+Browser- opening the website, logging in and making a change directly in the website
+When you make a change in the browser, it does not automatically update in your local files
+You need to synchronize the changes
+
+you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
+When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
+
+git fetch, git merge, git pull
+Fetching from a repository grabs all the new remote-tracking branches and tags
+
+
+Use $ git fetch <remote-name> to fetch new branches and commits from remote repository into a local .git folder, without merging them locally. 
+
+Fetch updates from the remote repository to local .git folder (add a remote first, if needed)
+$ git fetch <remote-name>
+
+Merges remote-tracking branch updtes with branch you are currently checked out on
+$ git merge <remote-name>/<branch-name>
+
+Do not do (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched)
+
+$ git pull <remote-name>/<branch-name>
+
+Instead do (to fetch and merge directly from remote repository branch)
+
+$ git pull <remote-name> <branch-name>
+
+Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
+Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
+
+Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
+
+For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
+remote-tracking branch (i.e., a branch fetched from a remote repository)
+non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
+
+Commits to master will be stored in a local branch, upstream/master. 
+Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+-->
+
+</td></tr>
+
+<!--
+git fetch (fetch updates and branches to your clone), git merge
+$ git fetch <remote-name>
+$ git merge <remote-name>/<branch-name>
+
+$ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
+
+git pull (combination of git fetch and git merge in one command, commit local work before running command, might need to resolve merge conflict)
+$ git pull <remote-name>/<branch-name>
+$ git merge --abort
+
+Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
+$ git push <remote-name> <branch-name> 
+$ git push <remote-name> <local-branch-name>:<remote-branch-name>
+
+$ git pull origin master
+$ git push origin master
+
+Merging an upstream repository into your fork
+
+Checkout the branch you will be merging updates into, in this case, master 
+
+$ git checkout master
+
+Pull in the changes from the upstream branch
+
+$ git pull https://github.com/upstream-username/original-repository <branch-name>
+
+Push the changes to your corresponding GitHub repository branch
+$ git push origin master
+
+Syncing a fork
+
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master (push to fork, if needed)
+
+$ git merge origin/master
+
+
+git pull origin <branch-name>
+
+$ git branch --merged
+$ git branch --no-merged
+-->
+
+
+<!--
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
+
+Pull updates to the individual pull request into your local branch
+
+```bash
+$ git pull origin pull/<pull-request-number>/head:<branch-name>
+```
+
+Alternatively, fetch the individual pull request into your folder
+
+```bash
+$ git fetch origin pull/<pull-request-number>/head:<branch-name>
+```
+-->
+
+<tr><td width="30%">
+
+![Slide 37]()
+
+</td><td>
+
+### How to Add Additional Commits
+
+You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
+
+Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to forked repo pull request if local branch name is different than pull request branch name
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
+```
+
+<!--
+Pushed additional commits to origin
+This is a different way of doing it
+
+Pull or push additional changes to pull request
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+
+git fetch origin pull/8/head:Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1
+git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
+git pull origin pull/8/head:Mariatta-patch-1
+
+git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
+git push https://github.com/Mariatta/practice.git Mariatta-patch-1
+-->
+
+</td></tr>
+
 
 
 
@@ -843,7 +1154,6 @@ https://help.github.com/articles/adding-a-remote
 https://help.github.com/articles/syncing-a-fork
 
 These commands are very useful when interacting with a remote repository. 
-
 To do this, you'll need to use Git on the command line. 
 
 https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
@@ -851,57 +1161,8 @@ Step 2: Create a local clone of your fork
 Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
 
 To add a new remote, use in the directory your repository is stored at.
-
 Updating organizational clone/reviewing pull requests versus updating fork clone
 -->
-
-
-<!--
-git fetch (fetch updates and branches to your clone), git merge
-$ git fetch <remote-name>
-$ git merge <remote-name>/<branch-name>
-
-$ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
-
-git pull (combination of git fetch and git merge in one command, commit local work before running command, might need to resolve merge conflict)
-$ git pull <remote-name>/<branch-name>
-$ git merge --abort
-
-Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
-$ git push <remote-name> <branch-name> 
-$ git push <remote-name> <local-branch-name>:<remote-branch-name>
-
-$ git pull origin master
-$ git push origin master
-
-Merging an upstream repository into your fork
-
-Checkout the branch you will be merging updates into, in this case, master 
-
-$ git checkout master
-
-Pull in the changes from the upstream branch
-
-$ git pull https://github.com/upstream-username/original-repository <branch-name>
-
-Push the changes to your corresponding GitHub repository branch
-$ git push origin master
-
-Syncing a fork
-
-$ git fetch upstream
-$ git checkout master
-$ git merge upstream/master (push to fork, if needed)
-
-$ git merge origin/master
-
-
-git pull origin <branch-name>
-
-$ git branch --merged
-$ git branch --no-merged
--->
-
 
 
 <tr><td width="30%">
@@ -960,134 +1221,6 @@ Images can be drag and drop/upload, but can't rename or move in browser
 * Create an organizational repo
 -->
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Remote
-
-<!--
-https://help.github.com/articles/about-remote-repositories
-A "the place where your code is stored." 
-Git associates a remote URL with a name, and your default remote is usually called origin
-You can use the git remote add command to match a remote URL with a name. 
-
-When you clone a repo locally, the remote will automatically assigned the remote name "origin". That means that when you push changed files to origin, you are pushing the files to the repo that you cloned from. For example, if you cloned from a forked repo, the origin is the forked repo and you will be pushing to the fork. If you cloned from an organizational repo, the origin is the organizational repo, and you will be pushing to the organizational repo. Then, you will submit a pull request from there.
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Syncing Changes
-
-<!--
-It's good practice to regularly sync your fork with the upstream repository. 
-When you make a change on GitHub, the change does not automatically update locally, and vice versa
-Deleting a branch in the browser will not delete it in your local repo
-The user will make a change in the browser, or clone the repo locally
-Browser- opening the website, logging in and making a change directly in the website
-When you make a change in the browser, it does not automatically update in your local files
-You need to synchronize the changes
-
-you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
-When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
-
-git fetch, git merge, git pull
-Fetching from a repository grabs all the new remote-tracking branches and tags
-
-
-Use $ git fetch <remote-name> to fetch new branches and commits from remote repository into a local .git folder, without merging them locally. 
-
-Fetch updates from the remote repository to local .git folder (add a remote first, if needed)
-$ git fetch <remote-name>
-
-Merges remote-tracking branch updtes with branch you are currently checked out on
-$ git merge <remote-name>/<branch-name>
-
-Do not do (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched)
-
-$ git pull <remote-name>/<branch-name>
-
-Instead do (to fetch and merge directly from remote repository branch)
-
-$ git pull <remote-name> <branch-name>
-
-Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
-Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
-
-Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
-
-For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
-remote-tracking branch (i.e., a branch fetched from a remote repository)
-non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
-
-Commits to master will be stored in a local branch, upstream/master. 
-Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
--->
-
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Adding an Upstream Remote and Syncing a Fork
-
-The git remote add command takes two arguments:
-* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
-* A remote URL, for example, https://github.com/upstream-username/original-repository
-
-Add a remote
-
-```bash
-$ git remote add <remote-name> <remote-url>
-```
-
-Verify existing remote repository
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-```
-
-Add upstream remote repository that will be synced with the fork
-
-```bash
-$ git remote add upstream https://github.com/upstream-username/original-repository.git
-```
-
-Verify new upstream remote (can only push to upstream if have write permission)
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-upstream  https://github.com/upstream-username/original-repository (fetch)
-upstream  https://github.com/upstream-username/original-repository (push)
-```
-
-<!--
-This associates the name origin with the <remote-url>
-You should see the URL for your fork as origin, and the URL for the original repository as upstream.
--->
-
-</td></tr>
-
-
-
 
 <tr><td width="30%">
 
@@ -1117,19 +1250,6 @@ base: master ... compare: branch-name
 
 </td></tr>
 
-
-
-<tr><td width="30%">
-
-![Slide 30]()
-
-</td><td>
-
-### Perspective
-
-We are switching our perspective now. We are now a maintainer working from within an organizational repo, with write permission to the organizational repo, but without write permission to a forked repo, unless permission has been given to edit a pull request. The organizational repo is our origin, but any forked repo is not. 
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1225,155 +1345,6 @@ pushing back to GitHub
 
 </td></tr>
 
-
-<tr><td width="30%">
-
-![Slide 33]()
-
-</td><td>
-
-### Pull Request Review Process
-
-When you go to the pull request in the browser, there will a set of command line instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 34]()
-
-</td><td>
-
-### Forked Repo Model Pull Request
-
-Step 1: From your project repository, check out a new branch and test the changes.
-
-```bash
-$ git checkout -b <local-branch-name> master
-$ git pull https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 35]()
-
-</td><td>
-
-### Shared Repo Model Pull Request
-
-Step 1: From your project repository, bring in the changes and test. (If the repo was cloned before the pull request)
-
-```bash
-$ git fetch origin
-$ git checkout -b <local-branch-name> origin/<branch-name>
-$ git merge master
-```
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 36]()
-
-</td><td>
-
-### Merge Pull Request Locally and Push to Master Branch
-
-Step 2: Merge the changes and update on GitHub. (Same process no matter where the pull request originated)
-
-```bash
-$ git checkout master
-$ git merge --no-ff <local-branch-name>
-$ git push origin master
-```
-
-</td></tr>
-
-<!--
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
-
-Pull updates to the individual pull request into your local branch
-
-```bash
-$ git pull origin pull/<pull-request-number>/head:<branch-name>
-```
-
-Alternatively, fetch the individual pull request into your folder
-
-```bash
-$ git fetch origin pull/<pull-request-number>/head:<branch-name>
-```
--->
-
-<tr><td width="30%">
-
-![Slide 37]()
-
-</td><td>
-
-### How to Add Additional Commits
-
-You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
-
-Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-Push additional commits to forked repo pull request if local branch name is different than pull request branch name
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
-```
-
-<!--
-Pushed additional commits to origin
-This is a different way of doing it
-
-Pull or push additional changes to pull request
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-
-git fetch origin pull/8/head:Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
-git pull origin pull/8/head:Mariatta-patch-1
-
-git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
-git push https://github.com/Mariatta/practice.git Mariatta-patch-1
--->
-
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 38]()
-
-</td><td>
-
-### How to Keep Branches Up-to-Date
-
-Keep master branch up-to-date
-
-```bash
-$ 
-```
-
-Keep feature branch up-to-date
-
-```bash
-$ 
-```
-
-</td></tr>
 
 
 <tr><td width="30%">
