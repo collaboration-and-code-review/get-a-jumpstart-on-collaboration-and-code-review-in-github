@@ -197,6 +197,10 @@ This talk is about teaching you the essential process and the underlying common 
 
 There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
 
+<!--
+I am going to tell you the most typical examples. 
+-->
+
 </td></tr>
 
 
@@ -404,31 +408,30 @@ Even if you have write permission to a "Shared Repository", it is still common t
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### Example
+
+Example forked repo: fork of DjangoCon 2017 Website Repo
+Example shared repository: DjangoCon 2017 Website Repo
+
+</td></tr>
+
+
 
 
 <!--
 Aa user will come across a shared repository that he or she does not have access to and fork it to contribute. 
 
-Example forked repo: fork of DjangoCon 2017 Website Repo
-Example shared repository: DjangoCon 2017 Website Repo
-
 * If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
 * If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
 
-I am going to tell you the most typical examples. 
-
 Mission critical project would not want just anyone to be able to go into the repo and changes things, 
 -->
-
-
-
-
-
-
-
-
-
-
 
 
 <tr><td width="30%">
