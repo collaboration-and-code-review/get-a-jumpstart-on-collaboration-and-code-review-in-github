@@ -325,6 +325,9 @@ Some examples of what you can do:
 
 <!--
 See write permissions chart for info
+
+Aa user will come across a shared repository that he or she does not have access to and fork it to contribute. 
+Mission critical project would not want just anyone to be able to go into the repo and changes things, 
 -->
 
 </td></tr>
@@ -408,30 +411,143 @@ Even if you have write permission to a "Shared Repository", it is still common t
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 20]()
 
 </td><td>
 
-### Example
+### Example: Forking DjangoCon US Website Repo
 
-Example forked repo: fork of DjangoCon 2017 Website Repo
-Example shared repository: DjangoCon 2017 Website Repo
+<!--
+* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### New Fork
+
+Two Ways to Fork
+* Click the "Fork" button
+* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account.
+
+<!--
+Forking graphic
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### Forking
+
+When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give read/write access to someone else. If the project maintainer accept your pull request, he or she will pull the changes into the original repository. 
+
+<!--
+https://help.github.com/articles/fork-a-repo
+Most commonly, forks are used to either propose changes to someone else's project/upstream repository or to use someone else's project as a starting point for your own idea.
+Make the fix.
+Submit a pull request to the project owner.
+
+"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
+
+If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is merged. 
+ -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 21]()
+
+</td><td>
+
+### Example: DjangoCon US Website "Shared Repository"
+
+<!--
+* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
+-->
 
 </td></tr>
 
 
 
 
-<!--
-Aa user will come across a shared repository that he or she does not have access to and fork it to contribute. 
 
-* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
-* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
 
-Mission critical project would not want just anyone to be able to go into the repo and changes things, 
--->
+
+
+
+
+<tr><td width="30%">
+
+![Slide 24]()
+
+</td><td>
+
+### Collaboration and Code Review Best Practice Workflow
+
+There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
+* Keep your code up-to-date
+* Create one or more features
+* Do code review
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 25]()
+
+</td><td>
+
+### Example of a Not-Scalable Workflow
+
+* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 26]()
+
+</td><td>
+
+### How Do We Switch Between Multiple Tasks? 
+
+By using branches
+
+Branches
+* Branches are a best practice
+* Can be used by any GitHub user
+* Give you more freedom
+
+Types of branches
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+The methods for working with the two different types of branches are the same. If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+
+</td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -562,13 +678,9 @@ $ git branch --no-merged
 -->
 
 
-
-
-
-
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 00]()
 
 </td><td>
 
@@ -577,7 +689,6 @@ $ git branch --no-merged
 What your computer screen will look like
 
 </td></tr>
-
 
 <!--
 Examples of How to Do Important Things in Browser versus Locally
@@ -626,104 +737,6 @@ Images can be drag and drop/upload, but can't rename or move in browser
 
 
 
-
-
-
-<tr><td width="30%">
-
-![Slide 19]()
-
-</td><td>
-
-### New Fork
-
-Two Ways to Fork
-* Click the "Fork" button
-* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account.
-
-<!--
-Forking graphic
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 20]()
-
-</td><td>
-
-### Forking
-
-When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give read/write access to someone else. If the project maintainer accept your pull request, he or she will pull the changes into the original repository. 
-
-<!--
-https://help.github.com/articles/fork-a-repo
-Most commonly, forks are used to either propose changes to someone else's project/upstream repository or to use someone else's project as a starting point for your own idea.
-Make the fix.
-Submit a pull request to the project owner.
-
-"Deleting a fork does not delete the original upstream repository. In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
-
-If you make changes to it, the repo you want to contribute to will not be affected unless you submit a pull request and it is merged. 
- -->
-
-</td></tr>
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 24]()
-
-</td><td>
-
-### Collaboration and Code Review Best Practice Workflow
-
-There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
-* Keep your code up-to-date
-* Create one or more features
-* Do code review
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 25]()
-
-</td><td>
-
-### Example of a Not-Scalable Workflow
-
-* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 26]()
-
-</td><td>
-
-### How Do We Switch Between Multiple Tasks
-
-Branches
-* Branches are a best practice
-* Can be used by any GitHub user
-* Give you more freedom
-
-Types of branches
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
-
-The methods for working with the two different types of branches are the same. If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
-
-</td></tr>
 
 
 <tr><td width="30%">
