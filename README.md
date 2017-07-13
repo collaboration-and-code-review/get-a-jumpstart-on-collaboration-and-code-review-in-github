@@ -293,6 +293,19 @@ Type q to exit
 
 <tr><td width="30%">
 
+![Slide 00]()
+
+</td><td>
+
+### What Local Environment Looks Like
+
+You're going to be transferring file changes back and forth between local Git and GitHub repositories
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 14]()
 
 </td><td>
@@ -469,7 +482,7 @@ If you make changes to it, the repo you want to contribute to will not be affect
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 23]()
 
 </td><td>
 
@@ -480,14 +493,6 @@ If you make changes to it, the repo you want to contribute to will not be affect
 -->
 
 </td></tr>
-
-
-
-
-
-
-
-
 
 
 <tr><td width="30%">
@@ -546,6 +551,7 @@ The methods for working with the two different types of branches are the same. I
 
 
 
+
 <tr><td width="30%">
 
 ![Slide 14]()
@@ -564,171 +570,7 @@ High level explanation: Git is a version control system that you install on your
 </td></tr>
 
 
-<!--
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### GitHub Vocab
-
-* repository (called repo for short, a place where a code base is stored)
-* source (the original repo someone created, not a fork)
-* fork (copy of an entire repo, usually into a user account, but could be into an organization)
-* branch (a copy of a code base within a repo, often a "feature branch")
-
-* local development environment (your computer environment)
-* clone (a local copy of a repo)
-
-* remote
-* origin (the default name for the remote repository you cloned your code from)
-* upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
-
-* git push (use to push commits made on your local branch to a remote repository)
-* git fetch (obtain code locally, without merging)
-* git merge (merge code)
-* git pull (fetch and merge, all in one action)
-
-* pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
-
-</td></tr>
-
-<!--
-there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
-
-"the URLs you can use to clone the project onto your computer are available below the repository details:"
-
-Simple Code Review Process
-
-Committing Changes to a Pull Request Branch Created from a Fork
-
-"Above the new content, click Preview changes."
-
-https://help.github.com/articles/pushing-to-a-remote
-Tags
-https://help.github.com/articles/fetching-a-remote
-https://help.github.com/articles/merging-an-upstream-repository-into-your-fork
-https://help.github.com/articles/configuring-a-remote-for-a-fork
-https://help.github.com/articles/adding-a-remote
-https://help.github.com/articles/syncing-a-fork
-
-These commands are very useful when interacting with a remote repository. 
-
-To do this, you'll need to use Git on the command line. 
-
-https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
-Step 2: Create a local clone of your fork
-Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
-
-To add a new remote, use in the directory your repository is stored at.
-
-Updating organizational clone/reviewing pull requests versus updating fork clone
--->
-
-
-<!--
-git fetch (fetch updates and branches to your clone), git merge
-$ git fetch <remote-name>
-$ git merge <remote-name>/<branch-name>
-
-$ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
-
-git pull (combination of git fetch and git merge in one command, commit local work before running command, might need to resolve merge conflict)
-$ git pull <remote-name>/<branch-name>
-$ git merge --abort
-
-Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
-$ git push <remote-name> <branch-name> 
-$ git push <remote-name> <local-branch-name>:<remote-branch-name>
-
-$ git pull origin master
-$ git push origin master
-
-Merging an upstream repository into your fork
-
-Checkout the branch you will be merging updates into, in this case, master 
-
-$ git checkout master
-
-Pull in the changes from the upstream branch
-
-$ git pull https://github.com/upstream-username/original-repository <branch-name>
-
-Push the changes to your corresponding GitHub repository branch
-$ git push origin master
-
-Syncing a fork
-
-$ git fetch upstream
-$ git checkout master
-$ git merge upstream/master (push to fork, if needed)
-
-$ git merge origin/master
-
-
-git pull origin <branch-name>
-
-$ git branch --merged
-$ git branch --no-merged
--->
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Browser Versus Local
-
-What your computer screen will look like
-
-</td></tr>
-
-<!--
-Examples of How to Do Important Things in Browser versus Locally
-
-Action |Browser | Command Line
-:---: | --- | ---
-Fork a repo | Can only do in browser | N/A
-Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
-Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
-Create a file | Click "Create new file" button | ```$ touch <file-name>```
-Add a file | Click "Upload files" button | ```$ git push origin <remote>```
-Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
-Open an issue | Can only do in browser | N/A
-Open a pull request | Can only do in browser | N/A
-
-Committing changes in browser versus locally
-* Can do many things in the browser (example: patch)
-* Some changes can be made and committed in the browser, some cannot
-* Some things can be done in both browser or command line, some things only by command line locally.
-
-Running code
-* Will need to run code locally to view changes, unless dealing with gh-pages and HTML, CSS, JavaScript, or Jekyll
-
-Create, add, rename, move file
-Can create, add, rename, move file in browser or from command line (images are an exception)
-
-Branches
-Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
-Can view/delete branches in the browser by clicking on the branches tab 
-
-branches tab, change default
-branch selector menu, click  NUMBER branches to delete
-Can delete branches under the branches tab or in the closed pull request page, or by command line
- 
-Images
-Images can be drag and drop/upload, but can't rename or move in browser
-* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
-
-* How/where do you create a user account or organization
-* Understand/take tour of the parts of a user account and organization
-* Understand how to create teams with permissions
-* Access your organizational account and dashboard
-* Create an organizational repo
--->
 
 
 
@@ -766,6 +608,10 @@ A branch is a copy of code inside of your repo, in parallel with the branch it i
 ### Perspective: Submitting a Pull Request
 
 Our perspective is of a person submitting a pull request. The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
+
+<!--
+Me submitting pull request either through my fork or as maintainer
+-->
 
 </td></tr>
 
@@ -946,6 +792,173 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 
 
+
+<!--
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### GitHub Vocab
+
+* repository (called repo for short, a place where a code base is stored)
+* source (the original repo someone created, not a fork)
+* fork (copy of an entire repo, usually into a user account, but could be into an organization)
+* branch (a copy of a code base within a repo, often a "feature branch")
+
+* local development environment (your computer environment)
+* clone (a local copy of a repo)
+
+* remote
+* origin (the default name for the remote repository you cloned your code from)
+* upstream (source repo (remote) that you pull from in order to push to a fork to keep it up to date/synchronize it)
+
+* git push (use to push commits made on your local branch to a remote repository)
+* git fetch (obtain code locally, without merging)
+* git merge (merge code)
+* git pull (fetch and merge, all in one action)
+
+* pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
+
+</td></tr>
+
+<!--
+there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
+
+"the URLs you can use to clone the project onto your computer are available below the repository details:"
+
+Simple Code Review Process
+
+Committing Changes to a Pull Request Branch Created from a Fork
+
+"Above the new content, click Preview changes."
+
+https://help.github.com/articles/pushing-to-a-remote
+Tags
+https://help.github.com/articles/fetching-a-remote
+https://help.github.com/articles/merging-an-upstream-repository-into-your-fork
+https://help.github.com/articles/configuring-a-remote-for-a-fork
+https://help.github.com/articles/adding-a-remote
+https://help.github.com/articles/syncing-a-fork
+
+These commands are very useful when interacting with a remote repository. 
+
+To do this, you'll need to use Git on the command line. 
+
+https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
+Step 2: Create a local clone of your fork
+Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
+
+To add a new remote, use in the directory your repository is stored at.
+
+Updating organizational clone/reviewing pull requests versus updating fork clone
+-->
+
+
+<!--
+git fetch (fetch updates and branches to your clone), git merge
+$ git fetch <remote-name>
+$ git merge <remote-name>/<branch-name>
+
+$ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
+
+git pull (combination of git fetch and git merge in one command, commit local work before running command, might need to resolve merge conflict)
+$ git pull <remote-name>/<branch-name>
+$ git merge --abort
+
+Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
+$ git push <remote-name> <branch-name> 
+$ git push <remote-name> <local-branch-name>:<remote-branch-name>
+
+$ git pull origin master
+$ git push origin master
+
+Merging an upstream repository into your fork
+
+Checkout the branch you will be merging updates into, in this case, master 
+
+$ git checkout master
+
+Pull in the changes from the upstream branch
+
+$ git pull https://github.com/upstream-username/original-repository <branch-name>
+
+Push the changes to your corresponding GitHub repository branch
+$ git push origin master
+
+Syncing a fork
+
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master (push to fork, if needed)
+
+$ git merge origin/master
+
+
+git pull origin <branch-name>
+
+$ git branch --merged
+$ git branch --no-merged
+-->
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Browser Versus Local
+
+What your computer screen will look like
+
+</td></tr>
+
+<!--
+Examples of How to Do Important Things in Browser versus Locally
+
+Action |Browser | Command Line
+:---: | --- | ---
+Fork a repo | Can only do in browser | N/A
+Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
+Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
+Create a file | Click "Create new file" button | ```$ touch <file-name>```
+Add a file | Click "Upload files" button | ```$ git push origin <remote>```
+Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
+Open an issue | Can only do in browser | N/A
+Open a pull request | Can only do in browser | N/A
+
+Committing changes in browser versus locally
+* Can do many things in the browser (example: patch)
+* Some changes can be made and committed in the browser, some cannot
+* Some things can be done in both browser or command line, some things only by command line locally.
+
+Running code
+* Will need to run code locally to view changes, unless dealing with gh-pages and HTML, CSS, JavaScript, or Jekyll
+
+Create, add, rename, move file
+Can create, add, rename, move file in browser or from command line (images are an exception)
+
+Branches
+Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
+Can view/delete branches in the browser by clicking on the branches tab 
+
+branches tab, change default
+branch selector menu, click  NUMBER branches to delete
+Can delete branches under the branches tab or in the closed pull request page, or by command line
+ 
+Images
+Images can be drag and drop/upload, but can't rename or move in browser
+* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
+
+* How/where do you create a user account or organization
+* Understand/take tour of the parts of a user account and organization
+* Understand how to create teams with permissions
+* Access your organizational account and dashboard
+* Create an organizational repo
+-->
 
 <tr><td width="30%">
 
