@@ -274,11 +274,161 @@ $ git <verb> --help
 $ man git-<verb>
 ```
 
+```bash
+$ git help clone
+$ git clone --help
+$ man git-clone
+```
+
 <!--
 Type q to exit
 -->
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 14]()
+
+</td><td>
+
+### Two Types of Accounts
+
+* Organization account
+* User account
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### Write Permission and Why It Matters
+
+Write Permission is an important concept in GitHub collaboration. 
+
+* Whether you have write permission to a repo determines how you contribute to it
+* Having write permission means you can make changes directly inside of the repo 
+
+Some examples of what you can do:
+* Push a branch directly to the repo (instead of via fork)
+* Edit a file
+* Review pull requests
+
+<!--
+See write permissions chart for info
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
+### The Two Collaborative Development Models
+
+The question of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
+
+The two Collaborative Development Models: 
+* "Shared Repository" Model
+* "Fork and Pull" Model
+
+There are two types of accounts and two types of Collaborative Development Models
+Conveniently, one collaborative development model typically corresponds to one type of account, and the other collaborative development model typically corresponds to the other type of account
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### "Shared Repository"
+
+A “Shared Repository is typically found in an organization account  because it’s where teams of maintainers are working on repos together
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 18]()
+
+</td><td>
+
+### "Fork and Pull"
+
+The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write access to 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Model: User Account Versus Organization
+
+Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. For example, a user account owner can give other users write permission to be collaborators on individual repos, which are then "shared repositories", but this is not so common. 
+
+Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
+* Organizational account owners can create teams and permissions across multiple repos
+* Otherwise, the repo "Shared Repository" settings are almost exactly the same
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 19]()
+
+</td><td>
+
+### "Shared Repository" Model Etiquette
+
+Just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. 
+
+Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+
+</td></tr>
+
+
+
+
+<!--
+Aa user will come across a shared repository that he or she does not have access to and fork it to contribute. 
+
+Example forked repo: fork of DjangoCon 2017 Website Repo
+Example shared repository: DjangoCon 2017 Website Repo
+
+* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
+* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
+
+I am going to tell you the most typical examples. 
+
+Mission critical project would not want just anyone to be able to go into the repo and changes things, 
+-->
+
+
+
+
+
+
+
+
+
+
 
 
 <tr><td width="30%">
@@ -330,7 +480,7 @@ High level explanation: Git is a version control system that you install on your
 </td></tr>
 
 <!--
-Critical project would not want just anyone to be able to go into the repo and changes things, so there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
+there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
 
 "the URLs you can use to clone the project onto your computer are available below the repository details:"
 
@@ -471,66 +621,9 @@ Images can be drag and drop/upload, but can't rename or move in browser
 -->
 
 
-<tr><td width="30%">
-
-![Slide 16]()
-
-</td><td>
-
-### Write Permission and Why It Matters
-
-Write Permission is an important concept in GitHub collaboration. 
-
-* Whether you have write permission to a repo determines how you contribute to it
-* Having write permission means you can make changes directly inside of the repo 
-
-Some examples of what you can do:
-* Push a branch directly to the repo (instead of via fork)
-* Edit a file
-* Review pull requests
-
-<!--
-See write permissions chart for info
--->
-
-</td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 17]()
-
-</td><td>
-
-### Two Collaborative Development Models
-
-The question of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
-
-The two Collaborative Development Models: 
-* "Shared Repository" Model
-* "Fork and Pull" Model
-
-* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
-* If you do not have write permission to the repo, you need to fork the repo in your user account or an organization account, make your changes, and submit a pull request for the changes to be accepted to the source repo. This is the “Fork and Pull” Model
-
-I am going to tell you the most typical examples. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 18]()
-
-</td><td>
-
-### "Shared Repository"
-
-An organization account is typically where you find a “Shared Repository” because it’s where teams are working 
-
-Example shared repository: DjangoCon 2017 Website Repo
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -576,51 +669,7 @@ If you make changes to it, the repo you want to contribute to will not be affect
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 21]()
-
-</td><td>
-
-### "Fork and Pull"
-
-A user account repo is typically where you will see “Fork and Pull” Model being used, because a user will come across a shared repository that he or she does not have access to and fork it to contribute. 
-
-Example forked repo: fork of DjangoCon 2017 Website Repo
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 22]()
-
-</td><td>
-
-### Shared Repository Model: User Account Versus Organization
-
-Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. For example, a user account owner can give other users write permission to be collaborators on individual repos, which are then "shared repositories", but this is not so common. 
-
-Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
-* Organizational account owners can create teams and permissions across multiple repos
-* Otherwise, the repo "Shared Repository" settings are almost exactly the same
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 23]()
-
-</td><td>
-
-### "Shared Repository" Model Etiquette
-
-Just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. 
-
-Even if you have write permission to a "Shared Repository", it is still common to submit a pull request, but you can do it from within the repo. There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
-
-</td></tr>
 
 
 <tr><td width="30%">
