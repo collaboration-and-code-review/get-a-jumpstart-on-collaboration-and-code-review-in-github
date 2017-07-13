@@ -879,6 +879,21 @@ $ git push origin master
 </td></tr>
 
 
+<!--
+Pull updates to the individual pull request into your local branch
+
+```bash
+$ git pull origin pull/<pull-request-number>/head:<branch-name>
+```
+
+Alternatively, fetch the individual pull request into your folder
+
+```bash
+$ git fetch origin pull/<pull-request-number>/head:<branch-name>
+```
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -992,6 +1007,8 @@ non-fast-forward updates were rejected. This means that you must retrieve, or "f
 
 Commits to master will be stored in a local branch, upstream/master. 
 Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+
+can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 -->
 
 </td></tr>
@@ -1007,9 +1024,7 @@ git pull (combination of git fetch and git merge in one command, commit local wo
 $ git pull <remote-name>/<branch-name>
 $ git merge --abort
 
-Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
-$ git push <remote-name> <branch-name> 
-$ git push <remote-name> <local-branch-name>:<remote-branch-name>
+git pull origin <branch-name>
 
 $ git pull origin master
 $ git push origin master
@@ -1018,46 +1033,26 @@ Merging an upstream repository into your fork
 
 Checkout the branch you will be merging updates into, in this case, master 
 
-$ git checkout master
-
 Pull in the changes from the upstream branch
 
 $ git pull https://github.com/upstream-username/original-repository <branch-name>
 
-Push the changes to your corresponding GitHub repository branch
-$ git push origin master
 
 Syncing a fork
 
-$ git fetch upstream
+$ git fetch <remote-name>
+Checkout the branch you will be merging updates into, in this case, master 
 $ git checkout master
-$ git merge upstream/master (push to fork, if needed)
+$ git merge <remote-name>/master (push to fork, if needed)
 
-$ git merge origin/master
+Push the changes to your corresponding GitHub repository branch
 
-
-git pull origin <branch-name>
+$ git push origin master
 
 $ git branch --merged
 $ git branch --no-merged
 -->
 
-
-<!--
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
-
-Pull updates to the individual pull request into your local branch
-
-```bash
-$ git pull origin pull/<pull-request-number>/head:<branch-name>
-```
-
-Alternatively, fetch the individual pull request into your folder
-
-```bash
-$ git fetch origin pull/<pull-request-number>/head:<branch-name>
-```
--->
 
 <tr><td width="30%">
 
@@ -1084,6 +1079,11 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 <!--
 Pushed additional commits to origin
 This is a different way of doing it
+
+The remote name can be an alias or a URL (just need to have write permission)
+Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
+$ git push <remote-name> <branch-name> 
+$ git push <remote-name> <local-branch-name>:<remote-branch-name>
 
 Pull or push additional changes to pull request
 git pull https://github.com/<user-name>/<repo-name> <branch-name>
