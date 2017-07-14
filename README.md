@@ -750,18 +750,6 @@ Create and checkout (switch) to a feature branch, branching off of the branch yo
 $ git checkout -b <branch-name>
 ```
 
-If not working from within the branch you are branching off of, need to specify which branch branching off of (remember, you are branching off the branch you intend your change to be merged into)
-
-```bash
-$ git checkout -b <branch-name> <branch-branching-off-of>
-```
-
-If the branch already exists, just switch to a branch
-
-```bash
-$ git checkout <branch-name>
-```
-
 Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
 ```bash
@@ -786,37 +774,18 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 </td><td>
 
-### How to Add Additional Commits
+### Alternative Branch Commands
 
-<!--
-You can push or pull to a <remote-name> or a remote URL, just need to have write permission
-
-$ git pull <remote-name> <branch-name> 
-$ git push <remote-name> <branch-name> 
-
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
--->
-
-You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
-
-<!--
-Push additional commits to origin pull request
-
-$ git push origin <branch-name> 
-$ git push origin <local-branch-name>:<remote-branch-name>
--->
-
-Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+If not working from within the branch you are branching off of, need to specify which branch branching off of (remember, you are branching off the branch you intend your change to be merged into)
 
 ```bash
-$ git push https://github.com/<user-name>/<repo-name> <branch-name>
+$ git checkout -b <branch-name> <branch-branching-off-of>
 ```
 
-Push additional commits to forked repo pull request if local branch name is different than pull request branch name
+If the branch already exists, just switch to a branch
 
 ```bash
-$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
+$ git checkout <branch-name>
 ```
 
 </td></tr>
@@ -879,20 +848,21 @@ First things first
 * Follow the link to the pull request in the repo pull request tab in the browser
 
 <!--
-There will a set of command line instructions for reviewing the pull request locally (on your own computer). The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
+- Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
 
 * You go to the pull request in the browser and look at the info and click on the files (pull request tab)
 
 Pull request, one file shows all changes
-
-Code Review Process (PR gives link to instructions)
-- Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
 
 diff Views
 * unified view
 * split view
 * source view
 * rich view
+
+locally (on your own computer)
 -->
 
 </td></tr>
@@ -924,29 +894,20 @@ After you run the code locally, if you decide a change does need to be made
 * You can go back to the browser and click merge
 
 After you run the code locally, if you decide a change needs to be made, there are a few options
+* As the contributor to make a change to the pull request
+* Push additional commits yourself to the pull request branch
 
 
 <!--
-can merge in browser without running locally
-Need to run locally, but don't need to make a change- go back to browser and merge
+What is a commit?
 
-* you update the pull request branch locally (add, commit, create a message), merge the branch locally via command with the branch it is intended to change, and push to GitHub
+* you update the pull request branch locally (add, commit, create a message), merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
 
 * Fetch pull request branch locally and checkout the branch
+fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. 
 
-* Add, commit, create a message, merge pull request via command line and push to live branch
-* Push follow-on commits to organizational pull request
-* Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
-* Close pull request via browser
+* Edit, merge with branch
 
-* Ask contributor to make a change to pull request
-* Edit, merge with branch, and push to live branch to GitHub
-* Push an additional commit to pull request from fork
-* Pull request locally and push an additional commit to pull request from organizational branch
-
-Need to run locally, need to make a change: 
-* ask PR author to make change (person's commits automatically go to PR)
-* you make change and push to PR
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
 * you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
 
@@ -954,65 +915,17 @@ https://help.github.com/articles/committing-changes-to-a-pull-request-branch-cre
 pushing back to GitHub
 - How to keep local code up to date
 
-In the less simple scenario, you will need to fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. 
-
 An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
+
+Checkout a pull request locally
 
 * Request a review from a specific person
 * Close an issue via commit message by using keyword
-
-Checkout a pull request locally
 
 Flow chart of possibilities:
 -->
 
 </td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 39]()
-
-</td><td>
-
-### How to Deal With Merge Conflicts
-
-<!--
-Resolve merge conflict:
-* resolve in browser
-* resolve locally
-
-Advanced
-* Resolve a merge conflict in the browser
-* Resolve a merge conflict by command line
-* Understand rebasing
-* Understand update "strategies": fast forward, recursive
-
-Advanced Git
-* Git rebase, resolving merge conflicts after a Git rebase
-
-Interactive rebase
-
-Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
-About merge conflicts- Resolve conflicts buttons, can't push until resolved
-Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
-"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
-Resolving a merge conflict using the command line- varies by OS, revisit
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 40]()
-
-</td><td>
-
-
-
-
 
 
 <tr><td width="30%">
@@ -1123,6 +1036,98 @@ See also, pull request shortcuts
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### How to Add Additional Commits to a Branch or Pull Request
+
+Anyone with write permission to a branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. The remote can be represented by a <remote-name> or a remote URL
+
+Pushing and pulling via <remote-name>
+
+```bash
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to organizational pull request
+
+```bash
+$ git push origin <branch-name> 
+```
+
+Push additional commits to organizational pull request, if local branch name is different than pull request branch name
+ 
+```bash
+$ git push origin <local-branch-name>:<remote-branch-name>
+```
+
+Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to forked repo pull request, if local branch name is different than pull request branch name
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 39]()
+
+</td><td>
+
+### How to Deal With Merge Conflicts
+
+<!--
+Resolve merge conflict:
+* resolve in browser
+* resolve locally
+
+Advanced
+* Resolve a merge conflict in the browser
+* Resolve a merge conflict by command line
+* Understand rebasing
+* Understand update "strategies": fast forward, recursive
+
+Advanced Git
+* Git rebase, resolving merge conflicts after a Git rebase
+
+Interactive rebase
+
+Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
+About merge conflicts- Resolve conflicts buttons, can't push until resolved
+Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
+"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
+Resolving a merge conflict using the command line- varies by OS, revisit
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 40]()
+
+</td><td>
+
+
 ### Tidy Up
 
 When the pull request is accepted, delete the branch. It's good practice to delete merged or stale branches.  
@@ -1195,7 +1200,7 @@ upstream  https://github.com/upstream-username/original-repository (push)
 ```
 
 <!--
-If you are working from within a shared repository, that is your origin. If you are working from within a forked repo, you need to update the fork, but ideally, without deleting it. The fork is not automatically updated when the repo it was forked from changes.
+If an organizational repo is your origin, because you have write permission, you are fetching from the origin to update your local clone. If you have forked a repo, the organizational repo is your upstream. You will fetch updates from the organizational repo to your local clone, then push the updates to your fork. When the organizational repo changes, the fork is not automatically updated. You need to update the fork, ideally without deleting it (for instance, in case you have unresolved pull requests).
 
 This associates the name origin with the <remote-url>
 You should see the URL for your fork as origin, and the URL for the original repository as upstream.
