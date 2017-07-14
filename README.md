@@ -922,12 +922,10 @@ See also, pull request shortcuts
 
 </td><td>
 
-### Pushing and Pulling
+### How to Add Additional Commits
 
 <!--
-Pull or push additional changes to pull request
-The remote name can be an alias or a URL (just need to have write permission) 
-(Can push to <remote-name> or URL)
+You can push or pull to a <remote-name> or a remote URL, just need to have write permission
 
 $ git pull <remote-name> <branch-name> 
 $ git push <remote-name> <branch-name> 
@@ -935,17 +933,6 @@ $ git push <remote-name> <branch-name>
 git pull https://github.com/<user-name>/<repo-name> <branch-name>
 git push https://github.com/<user-name>/<repo-name> <branch-name>
 -->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### How to Add Additional Commits
 
 You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
 
@@ -1305,7 +1292,7 @@ base: master ... compare: branch-name
 ### What Are You Doing When You Review a Pull Request?
 
 * If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
-* You go to the pull request in the browser and look at the info and click on the files
+* You go to the pull request in the browser and look at the info and click on the files (pull request tab)
 
 * In the simplest scenario, you can merge the pull request without making a change, or by making a change in the browser. 
 
@@ -1336,14 +1323,30 @@ diff Views
 ### Code Review Options
 
 There are two ways to merge a pull request
-* Via browser (click button- regular, squash, or rebase)
-* Via command line
+* Via browser (click merge button- options are regular, squash, or rebase merge)
+* Via command line locally
+
+Simplest scenario
+* When you look at the pull request in the browser, you can tell it can be accepted and click merge (for example, if the pull request is fixing a typo) 
+
+Second simplest scenario
+* You look at the pull request in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
+
+Less simple
+* You can't always accept the pull request based on just looking at the code in the browser
+* You sometimes need to run the code in the pull request locally to evalute it
+
+After you run the code locally, if you decide a change does need to be made
+* You can go back to the browser and click merge
+
+After you run the code locally, if you decide a change needs to be made, there are a few options
+
 
 <!--
-* When you look at the pull request in the browser, you can tell it can be accepted (for example a typo) and click merge
-* You run the code locally, but you do not need to make a change; you go back to the browser and click merge
+can merge in browser without running locally
+Need to run locally, but don't need to make a change- go back to browser and merge
 
-* You run the code locally, and you think a change needs to be made; you update the pull request branch locally (add, commit, create a message), merge the branch locally via command with the branch it is intended to change, and push to GitHub
+* you update the pull request branch locally (add, commit, create a message), merge the branch locally via command with the branch it is intended to change, and push to GitHub
 
 * Fetch pull request branch locally and checkout the branch
 
@@ -1351,37 +1354,22 @@ There are two ways to merge a pull request
 * Add, commit, create a message, merge pull request via command line and push to live branch
 * Push follow-on commits to organizational pull request
 * Push follow-on commits to forked repo pull request via HTTP/HTTPS or SSH
-* Close pull request via browser
 * Close an issue via commit message by using keyword
+* Close pull request via browser
 
-Ways to Deal with a Pull Request
-* Checkout a pull request via GitHub and merge
-* Checkout a pull request locally
-* Run the code
-
-* Checkout a pull request locally and merge
-* Checkout a pull request locally and ask contributor to make a change to pull request
-* Checkout a pull request locally, edit, merge with branch, and push to live branch to GitHub
+* Ask contributor to make a change to pull request
+* Edit, merge with branch, and push to live branch to GitHub
 * Checkout a pull request locally and push an additional commit to pull request from fork
 * Checkout a pull request locally and push an additional commit to pull request from organizational branch
 
 Flow chart of possibilities:
-
-Small change, can merge in browser without running locally (example: typo)
-
-Need to run locally, but don't need to make a change- go back to browser and merge
 
 Need to run locally, need to make a change: 
 * ask PR author to make change (person's commits automatically go to PR)
 * you make change and push to PR
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/
 * you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
-Need to run locally, need to resolve merge conflict:
-* resolve in browser
-* resolve locally
-Delete remote and local branches
 
-- If no change needed locally- merge button (merge options)
 - General process for making a local change, committing, merging and
 pushing back to GitHub
 - How to keep local code up to date
@@ -1400,6 +1388,10 @@ pushing back to GitHub
 ### How to Deal With Merge Conflicts
 
 <!--
+Resolve merge conflict:
+* resolve in browser
+* resolve locally
+
 Advanced
 * Resolve a merge conflict in the browser
 * Resolve a merge conflict by command line
@@ -1433,7 +1425,7 @@ When the pull request is accepted, delete the branch. It's good practice to dele
 
 * Close pull request
 * Revert pull request (hopefully not needed)
-* Delete feature branch (locally and remote/browser)
+* Delete local and remote (in browser) feature branch
 
 Delete a branch
 
