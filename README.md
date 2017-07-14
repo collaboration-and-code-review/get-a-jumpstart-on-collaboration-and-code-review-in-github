@@ -919,6 +919,18 @@ See also, pull request shortcuts
 </td></tr>
 
 
+<!--
+The remote name can be an alias or a URL (just need to have write permission) 
+(Can push to <remote-name> or URL)
+
+$ git push <remote-name> <branch-name> 
+$ git push <remote-name> <local-branch-name>:<remote-branch-name>
+
+Pull or push additional changes to pull request
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+-->
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -948,22 +960,7 @@ Push additional commits to forked repo pull request if local branch name is diff
 $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
 ```
 
-<!--
-$ git push <remote-name> <branch-name> 
-$ git push <remote-name> <local-branch-name>:<remote-branch-name>
-
-The remote name can be an alias or a URL (just need to have write permission) 
-(Can push to <remote-name> or URL)
-
-Pull or push additional changes to pull request
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
--->
-
 </td></tr>
-
-
-
 
 
 <tr><td width="30%">
@@ -1016,6 +1013,7 @@ You should see the URL for your fork as origin, and the URL for the original rep
 -->
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -1088,29 +1086,25 @@ can also fetch it, make a change, and push to the branch too. The process is the
 </td></tr>
 
 <!--
+Merging a remote branch into a local branch
+
 git fetch (fetch updates and branches to your clone), git merge
-$ git fetch <remote-name>
+$ git fetch <remote-name> (usually git fetch origin or upstream)
 $ git merge <remote-name>/<branch-name>
 
 $ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
 
-git pull (combination of git fetch and git merge in one command, commit local work before running command, might need to resolve merge conflict)
+Better not to pull a remote-tracking branch (pull is a combination of git fetch and git merge in one command)
 $ git pull <remote-name>/<branch-name>
 $ git merge --abort
 
+Instead, pull directly from remote branch
 git pull origin <branch-name>
 
 $ git pull origin master
 $ git push origin master
 
-Merging an upstream repository into your fork
-
 Checkout the branch you will be merging updates into, in this case, master 
-
-Pull in the changes from the upstream branch
-
-$ git pull https://github.com/upstream-username/original-repository <branch-name>
-
 
 Syncing a fork
 
@@ -1125,6 +1119,12 @@ $ git push origin master
 
 $ git branch --merged
 $ git branch --no-merged
+-->
+
+<!--
+Pull in the changes from the remote branch
+
+$ git pull https://github.com/upstream-username/original-repository <branch-name>
 -->
 
 
