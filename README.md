@@ -1371,6 +1371,7 @@ locally (on your own computer)
 * pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
 What is a commit?
+Browser (Web)
 
 "the URLs you can use to clone the project onto your computer are available below the repository details:"
 
@@ -1595,7 +1596,6 @@ http://opensourcesurvey.org/2017/
 * LICENSE (auto-generate, legality of contributions, attribution)
 * CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
-* PITCHME.md
 -->
 
 </td></tr>
@@ -1654,14 +1654,6 @@ http://opensourcesurvey.org/2017/
 - [ ] Find the Notifications Overview Page
 - [ ] Decide which notifications to receive, whether by browser or email, and which email to receive at
 
-Two Types of Notifications
-* Watching
-* Participating
-
-Delivery Methods
-* Browser (Web)
-* Email
-
 # Conversations
 
 Where They Happen
@@ -1698,7 +1690,7 @@ Writing and Formatting
 
 </td><td>
 
-### Tips for getting started:
+### Tips for Getting Started
 
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects that have a good reputation
@@ -1709,17 +1701,11 @@ Writing and Formatting
 </td></tr>
 
 
-
 <!--
-# What If?
-
-* What if contributors were encouraged to learn code contribution and review at the same time, instead of code review as an end result? More people could take on more responsibility. 
-
 Advice of how to get started making pull requests and doing code review
+Finding Open Source Projects to Contribute To
 
 * Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
-
-### Finding Open Source Projects to Contribute To
 
 * Search (including advanced search) repositories, code, commits, issues, users, wikis, topics
 * Use search syntax "help wanted", "first-timers-only", etc.
@@ -1730,6 +1716,21 @@ Advice of how to get started making pull requests and doing code review
 Look at Issue Triaging Example
 * node.js website issues
 -->
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What If?
+
+<!--
+* What if contributors were encouraged to learn code contribution and review at the same time, instead of code review as an end result? More people could take on more responsibility. 
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
