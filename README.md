@@ -911,7 +911,12 @@ Alternatively, fetch the individual pull request into your folder
 ```bash
 $ git fetch origin pull/<pull-request-number>/head:<branch-name>
 ```
-Example: $ git fetch origin pull/8/head:Mariatta-patch-1
+
+Example
+
+```bash
+$ git fetch origin pull/1/head:patch-1
+```
 
 See also, pull request shortcuts
 -->
@@ -919,17 +924,28 @@ See also, pull request shortcuts
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Pushing and Pulling
+
 <!--
+Pull or push additional changes to pull request
 The remote name can be an alias or a URL (just need to have write permission) 
 (Can push to <remote-name> or URL)
 
+$ git pull <remote-name> <branch-name> 
 $ git push <remote-name> <branch-name> 
-$ git push <remote-name> <local-branch-name>:<remote-branch-name>
 
-Pull or push additional changes to pull request
 git pull https://github.com/<user-name>/<repo-name> <branch-name>
 git push https://github.com/<user-name>/<repo-name> <branch-name>
 -->
+
+</td></tr>
+
 
 <tr><td width="30%">
 
@@ -1049,24 +1065,6 @@ you can configure Git to pull changes from the original, or upstream, repository
 When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
 
 git fetch, git merge, git pull
-Fetching from a repository grabs all the new remote-tracking branches and tags
-
-
-Use $ git fetch <remote-name> to fetch new branches and commits from remote repository into a local .git folder, without merging them locally. 
-
-Fetch updates from the remote repository to local .git folder (add a remote first, if needed)
-$ git fetch <remote-name>
-
-Merges remote-tracking branch updtes with branch you are currently checked out on
-$ git merge <remote-name>/<branch-name>
-
-Do not do (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched)
-
-$ git pull <remote-name>/<branch-name>
-
-Instead do (to fetch and merge directly from remote repository branch)
-
-$ git pull <remote-name> <branch-name>
 
 Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
 Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
@@ -1086,11 +1084,51 @@ can also fetch it, make a change, and push to the branch too. The process is the
 </td></tr>
 
 <!--
-Merging a remote branch into a local branch
+Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches.  
 
-git fetch (fetch updates and branches to your clone), git merge
-$ git fetch <remote-name> (usually git fetch origin or upstream)
+```bash
+$ git fetch <remote-name>
+```
+
+Merge remote-tracking branch updates with branch you are currently checked out on
+
+```bash
 $ git merge <remote-name>/<branch-name>
+```
+
+The remote name is often origin or upstream.
+
+```bash
+$ git fetch origin
+$ git checkout master
+$ git merge origin/master
+
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master
+
+Push the changes to your corresponding GitHub repository branch
+
+```bash
+$ git push origin master
+```
+
+Do not pull a remote tracking branch (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched, which is why it's a remote tracking branch)
+
+```bash
+$ git pull <remote-name>/<branch-name>
+```
+
+Instead do (to fetch and merge directly from remote repository branch)
+
+```bash
+$ git pull <remote-name> <branch-name>
+```
+
+
+
+
+Merging a remote branch into a local branch
 
 $ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
 
@@ -1112,10 +1150,6 @@ $ git fetch <remote-name>
 Checkout the branch you will be merging updates into, in this case, master 
 $ git checkout master
 $ git merge <remote-name>/master (push to fork, if needed)
-
-Push the changes to your corresponding GitHub repository branch
-
-$ git push origin master
 
 $ git branch --merged
 $ git branch --no-merged
