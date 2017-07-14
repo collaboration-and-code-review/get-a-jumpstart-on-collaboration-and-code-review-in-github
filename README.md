@@ -815,13 +815,6 @@ When you go to the pull request in the browser, there will a set of command line
 
 </td></tr>
 
-<!--
-Hidden folder named .git, storing temporary info from the remote
-If you click branches tab, can see a list of the branches
-remote branch
-remote-tracking branch
-local branch
--->
 
 <tr><td width="30%">
 
@@ -829,14 +822,15 @@ local branch
 
 </td><td>
 
-### Forked Repo Model Pull Request
+### Remote, Remote Tracking, and Local Branches
 
-Step 1: From your project repository, check out a new branch and test the changes.
-
-```bash
-$ git checkout -b <local-branch-name> master
-$ git pull https://github.com/<user-name>/<repo-name> <branch-name>
-```
+<!--
+Hidden folder named .git, storing temporary info from the remote
+If you click branches tab, can see a list of the branches
+remote branch
+remote-tracking branch
+local branch
+-->
 
 </td></tr>
 
@@ -866,6 +860,24 @@ $ git merge master
 
 </td><td>
 
+### Forked Repo Model Pull Request
+
+Step 1: From your project repository, check out a new branch and test the changes.
+
+```bash
+$ git checkout -b <local-branch-name> master
+$ git pull https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
 ### Merge Pull Request Locally and Push to Master Branch
 
 Step 2: Merge the changes and update on GitHub. (Same process no matter where the pull request originated)
@@ -879,6 +891,14 @@ $ git push origin master
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Alternatively, Fetch Individual Pull Request
+
 <!--
 Pull updates to the individual pull request into your local branch
 
@@ -891,7 +911,59 @@ Alternatively, fetch the individual pull request into your folder
 ```bash
 $ git fetch origin pull/<pull-request-number>/head:<branch-name>
 ```
+Example: $ git fetch origin pull/8/head:Mariatta-patch-1
+
+See also, pull request shortcuts
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### How to Add Additional Commits
+
+You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
+
+<!--
+Push additional commits to origin pull request
+
+$ git push origin <branch-name> 
+$ git push origin <local-branch-name>:<remote-branch-name>
+-->
+
+Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to forked repo pull request if local branch name is different than pull request branch name
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
+```
+
+<!--
+$ git push <remote-name> <branch-name> 
+$ git push <remote-name> <local-branch-name>:<remote-branch-name>
+
+The remote name can be an alias or a URL (just need to have write permission) 
+(Can push to <remote-name> or URL)
+
+Pull or push additional changes to pull request
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+-->
+
+</td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -937,6 +1009,8 @@ upstream  https://github.com/upstream-username/original-repository (push)
 ```
 
 <!--
+If you are working from within a shared repository, that is your origin. If you are working from within a forked repo, you need to update the fork, but ideally, without deleting it. 
+
 This associates the name origin with the <remote-url>
 You should see the URL for your fork as origin, and the URL for the original repository as upstream.
 -->
@@ -1052,54 +1126,6 @@ $ git push origin master
 $ git branch --merged
 $ git branch --no-merged
 -->
-
-
-<tr><td width="30%">
-
-![Slide 37]()
-
-</td><td>
-
-### How to Add Additional Commits
-
-You or others with write permission to the branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged.
-
-Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-Push additional commits to forked repo pull request if local branch name is different than pull request branch name
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
-```
-
-<!--
-Pushed additional commits to origin
-This is a different way of doing it
-
-The remote name can be an alias or a URL (just need to have write permission)
-Remote name can be the assigned name or a URL (Can push to <remote-name> or URL)
-$ git push <remote-name> <branch-name> 
-$ git push <remote-name> <local-branch-name>:<remote-branch-name>
-
-Pull or push additional changes to pull request
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-
-git fetch origin pull/8/head:Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1
-git push https://github.com/Mariatta/practice Mariatta-patch-1-test:Mariatta-patch-1
-git pull origin pull/8/head:Mariatta-patch-1
-
-git pull https://github.com/Mariatta/practice.git Mariatta-patch-1
-git push https://github.com/Mariatta/practice.git Mariatta-patch-1
--->
-
-</td></tr>
-
 
 
 
