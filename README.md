@@ -1040,17 +1040,76 @@ You should see the URL for your fork as origin, and the URL for the original rep
 
 ### Syncing Changes
 
+<--
 Keep master branch up-to-date
 
+In this case, master
+$ git checkout master
+$ git merge <remote-name>/master
+-->
+
+Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches.  
+
 ```bash
-$ 
+$ git fetch <remote-name>
 ```
 
-Keep feature branch up-to-date
+Checkout the branch you will be merging updates into
 
 ```bash
-$ 
+$ git checkout <branch-name>
 ```
+
+Merge remote-tracking branch updates with branch you are currently checked out on
+
+```bash
+$ git merge <remote-name>/<branch-name>
+```
+
+The remote name is often origin or upstream.
+
+Origin example
+
+```bash
+$ git fetch origin
+$ git checkout master
+$ git merge origin/master
+```
+
+Upstream example (syncing a fork)
+
+```bash
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master
+```
+
+Push the changes to your corresponding branch in the forked repository in GitHub
+
+```bash
+$ git push origin master
+```
+
+Do not pull a remote tracking branch (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched, which is why it's a remote tracking branch)
+
+```bash
+$ git pull <remote-name>/<branch-name>
+```
+
+Instead do (to fetch and merge directly from remote repository branch)
+
+```bash
+$ git pull <remote-name> <branch-name>
+```
+
+Keep feature branch up-to-date (often merging master into feature branch)
+
+```bash
+$ git checkout <feature-branch-name>
+$ git merge <branch-name>
+```
+
+</td></tr>
 
 <!--
 It's good practice to regularly sync your fork with the upstream repository. 
@@ -1081,53 +1140,7 @@ Merge the changes from upstream/master into your local master branch. This bring
 can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 -->
 
-</td></tr>
-
 <!--
-Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches.  
-
-```bash
-$ git fetch <remote-name>
-```
-
-Merge remote-tracking branch updates with branch you are currently checked out on
-
-```bash
-$ git merge <remote-name>/<branch-name>
-```
-
-The remote name is often origin or upstream.
-
-```bash
-$ git fetch origin
-$ git checkout master
-$ git merge origin/master
-
-$ git fetch upstream
-$ git checkout master
-$ git merge upstream/master
-
-Push the changes to your corresponding GitHub repository branch
-
-```bash
-$ git push origin master
-```
-
-Do not pull a remote tracking branch (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched, which is why it's a remote tracking branch)
-
-```bash
-$ git pull <remote-name>/<branch-name>
-```
-
-Instead do (to fetch and merge directly from remote repository branch)
-
-```bash
-$ git pull <remote-name> <branch-name>
-```
-
-
-
-
 Merging a remote branch into a local branch
 
 $ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
@@ -1141,15 +1154,6 @@ git pull origin <branch-name>
 
 $ git pull origin master
 $ git push origin master
-
-Checkout the branch you will be merging updates into, in this case, master 
-
-Syncing a fork
-
-$ git fetch <remote-name>
-Checkout the branch you will be merging updates into, in this case, master 
-$ git checkout master
-$ git merge <remote-name>/master (push to fork, if needed)
 
 $ git branch --merged
 $ git branch --no-merged
