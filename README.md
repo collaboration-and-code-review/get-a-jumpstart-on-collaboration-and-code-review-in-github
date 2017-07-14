@@ -1022,7 +1022,7 @@ upstream  https://github.com/upstream-username/original-repository (push)
 ```
 
 <!--
-If you are working from within a shared repository, that is your origin. If you are working from within a forked repo, you need to update the fork, but ideally, without deleting it. 
+If you are working from within a shared repository, that is your origin. If you are working from within a forked repo, you need to update the fork, but ideally, without deleting it. The fork is not automatically updated when the repo it was forked from changes.
 
 This associates the name origin with the <remote-url>
 You should see the URL for your fork as origin, and the URL for the original repository as upstream.
@@ -1040,13 +1040,7 @@ You should see the URL for your fork as origin, and the URL for the original rep
 
 ### Syncing Changes
 
-<--
 Keep master branch up-to-date
-
-In this case, master
-$ git checkout master
-$ git merge <remote-name>/master
--->
 
 Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches.  
 
@@ -1090,13 +1084,19 @@ Push the changes to your corresponding branch in the forked repository in GitHub
 $ git push origin master
 ```
 
-Do not pull a remote tracking branch (defeats the purpose because it is $ git fetch + $ git merge and updates were already fetched, which is why it's a remote tracking branch)
+Do not pull remote tracking branch updates (defeats the purpose because you already did $ git fetch (updated remote tracking branch with remote changes), which is $ git fetch + $ git merge in one command)
 
 ```bash
 $ git pull <remote-name>/<branch-name>
 ```
 
-Instead do (to fetch and merge directly from remote repository branch)
+If pull remote tracking branch updates, and have a problem
+
+```bash
+$ git merge --abort
+```
+
+Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
 
 ```bash
 $ git pull <remote-name> <branch-name>
@@ -1143,13 +1143,6 @@ can also fetch it, make a change, and push to the branch too. The process is the
 <!--
 Merging a remote branch into a local branch
 
-$ git pull is moot in situations working with <remote-name>/<branch-name> because have already fetched
-
-Better not to pull a remote-tracking branch (pull is a combination of git fetch and git merge in one command)
-$ git pull <remote-name>/<branch-name>
-$ git merge --abort
-
-Instead, pull directly from remote branch
 git pull origin <branch-name>
 
 $ git pull origin master
