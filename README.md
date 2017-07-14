@@ -732,11 +732,7 @@ Example: clone (or download) a user account repo (repo needs to have already bee
 $ git clone https://github.com/<user-name>/<repo-name>
 ```
 
-<!--
-Change directories to the location of the fork you cloned in Step 2
--->
-
-Change directory into the folder (folder name will be the repo name)
+Change directory into the folder of the repo you cloned. Folder name will be the repo name.
 
 ```bash
 $ cd <repo-name>
@@ -748,11 +744,7 @@ Verify which branch you are checked out on (important if more than one branch)
 $ git branch
 ```
 
-<!--
-Create and checkout (switch) to a feature branch, branching off the branch you intend your change to be merged into
--->
-
-Create and checkout (switch) to a feature branch (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
 
 ```bash
 $ git checkout -b <branch-name>
@@ -1125,19 +1117,28 @@ When you clone a repository you own, you provide it with a remote URL that tells
 
 git fetch, git merge, git pull
 
-Otherwise, you can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
-Merging combines your local changes with changes made by others. Typically, you'd merge a remote-tracking branch (i.e., a branch fetched from a remote repository) with your local branch:
+You can always add a new remote and then fetch. https://help.github.com/articles/adding-a-remote
+Merging combines your local changes with changes made by others. 
 
-Because pull performs a merge on the retrieved changes, you should ensure that your local work is committed before running the pull command. If you run into a merge conflict you cannot resolve, or if you decide to quit the merge, you can use git merge --abort to take the branch back to where it was in before you pulled
+A remote-tracking branch is a branch fetched from a remote repository
 
-For every branch foo in the remote repository, a corresponding remote-tracking branch refs/remotes/origin/foo is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
+Merge a remote-tracking branch with a local branch
+
+For every branch <branch-name> in the remote repository, a corresponding remote-tracking branch 
+
+refs/remotes/<remote-name>/<branch-name>
+
+You can abbreviate the remote-tracking branches as <remote-name>/<branch-name> 
+
+origin/<branch-name> 
+upstream/<branch-name>
+
+is created in your local repository. You can usually abbreviate such remote-tracking branch names to origin/foo
 remote-tracking branch (i.e., a branch fetched from a remote repository)
-non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the upstream changes
+non-fast-forward updates were rejected. This means that you must retrieve, or "fetch," the changes
 
 Commits to master will be stored in a local branch, upstream/master. 
 Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
-
-can also fetch it, make a change, and push to the branch too. The process is the same as earlier. 
 -->
 
 <!--
@@ -1147,9 +1148,6 @@ git pull origin <branch-name>
 
 $ git pull origin master
 $ git push origin master
-
-$ git branch --merged
-$ git branch --no-merged
 -->
 
 <!--
@@ -1162,14 +1160,6 @@ $ git pull https://github.com/upstream-username/original-repository <branch-name
 
 
 <!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### GitHub Vocab
-
 * repository (called repo for short, a place where a code base is stored)
 * source (the original repo someone created, not a fork)
 * fork (copy of an entire repo, usually into a user account, but could be into an organization)
@@ -1189,9 +1179,6 @@ $ git pull https://github.com/upstream-username/original-repository <branch-name
 
 * pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
-</td></tr>
-
-<!--
 there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
 
 "the URLs you can use to clone the project onto your computer are available below the repository details:"
