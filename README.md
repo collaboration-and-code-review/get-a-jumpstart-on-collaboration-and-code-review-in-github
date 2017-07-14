@@ -482,7 +482,7 @@ Forking graphic
 
 ### About Forks
 
-When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give read/write access to someone else. If you make changes to the fork, the original repo will not be affected unless you submit a pull request and a project maintainer pulls your changes into the original repository. When you delete a fork, you are not deleting the original repo. 
+When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give collaborator permission to someone else. If you make changes to the fork, the original repo will not be affected unless you submit a pull request and a project maintainer pulls your changes into the original repository. When you delete a fork, you are not deleting the original repo. 
 
 <!--
 https://help.github.com/articles/fork-a-repo
@@ -591,6 +591,31 @@ In this example, I am submitting a pull request. It could be either a pull reque
 
 <!--
 Our perspective is of a person submitting a pull request. The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remote Origin
+
+A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
+
+When you clone a repo locally, the repo you cloned from automatically becomes a remote named "origin". "origin" is a default remote. When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+
+You can then submit a pull request for the new branch in your origin. 
+
+<!--
+Will talk later about adding a remote
+
+https://help.github.com/articles/about-remote-repositories
 -->
 
 </td></tr>
@@ -802,7 +827,7 @@ base: master ... compare: branch-name
 
 </td><td>
 
-### The Difference Between Feature Branches and Pull Request Branches
+### Working on Feature Branches and Pull Request Branches
 
 <!--
 It's a best practice to use branches
@@ -816,30 +841,6 @@ The main difference with a pull request branch is that the reviewer is deciding 
 
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Remote
-
-A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
-
-When you clone a repo locally, the repo you cloned from automatically becomes a remote named "origin". "origin" is a default remote. When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
-
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
-
-You can then submit a pull request from your origin. 
-
-<!--
-The remote can be represented by a <remote-name> or a remote URL
-
-https://help.github.com/articles/about-remote-repositories
--->
-
-</td></tr>
-
 
 <tr><td width="30%">
 
@@ -847,9 +848,11 @@ https://help.github.com/articles/about-remote-repositories
 
 </td><td>
 
-### Remote Branch, Remote Tracking Branch, and Local Branches
+### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
 
 <!--
+We've talked about remotes
+
 Hidden folder named .git, storing temporary info from the remote
 If you click branches tab, can see a list of the branches
 remote branch
@@ -857,6 +860,8 @@ remote-tracking branch
 local branch
 
 branch from a fork is different though
+
+The remote can be represented by a <remote-name> or a remote URL
 -->
 
 </td></tr>
