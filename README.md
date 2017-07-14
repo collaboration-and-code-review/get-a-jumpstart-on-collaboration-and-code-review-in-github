@@ -1227,7 +1227,7 @@ Fetch new branches and commits from the remote repository to local .git folder (
 $ git fetch <remote-name>
 ```
 
-Checkout the branch you will be merging updates into
+Checkout the branch you will be merging updates into (presumably the branch already exists)
 
 ```bash
 $ git checkout <branch-name>
@@ -1490,7 +1490,7 @@ Set the default (base branch) under branches tab- against which all pull request
 
 <tr><td width="30%">
 
-![Slide 42]()
+![Slide 00]()
 
 </td><td>
 
@@ -1540,9 +1540,6 @@ Setting Up Repo Fail Safes
 
 </td></tr>
 
-<!--
-Should be immediately considered compromised, and changed in development/production (famous companies have done it too!)
--->
 
 <tr><td width="30%">
 
