@@ -639,32 +639,6 @@ Bash command list
 
 <tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Remote
-
-A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
-
-When you clone a repo locally, the repo you cloned from automatically becomes a remote named "origin". "origin" is a default remote. When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
-
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
-
-You can then submit a pull request from your origin. 
-
-<!--
-https://help.github.com/articles/about-remote-repositories
--->
-
-</td></tr>
-
-
-
-
-
-<tr><td width="30%">
-
 ![Slide 29]()
 
 </td><td>
@@ -833,7 +807,35 @@ base: master ... compare: branch-name
 <!--
 It's a best practice to use branches
 The process for working on feature branches or pull request branches is the same (exception: if fetching pull request branch by pull request number)
-The difference is that with a pull request branch, the reviewer is deciding whether or not to merge, then possibly merging
+Anyone with write permission to a feature branch or pull request branch can push additional commits to the branch
+If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
+The main difference with a pull request branch is that the reviewer is deciding whether or not to merge, then possibly merging
+-->
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remote
+
+A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
+
+When you clone a repo locally, the repo you cloned from automatically becomes a remote named "origin". "origin" is a default remote. When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+
+You can then submit a pull request from your origin. 
+
+<!--
+The remote can be represented by a <remote-name> or a remote URL
+
+https://help.github.com/articles/about-remote-repositories
 -->
 
 </td></tr>
@@ -845,7 +847,7 @@ The difference is that with a pull request branch, the reviewer is deciding whet
 
 </td><td>
 
-### Remote, Remote Tracking, and Local Branches
+### Remote Branch, Remote Tracking Branch, and Local Branches
 
 <!--
 Hidden folder named .git, storing temporary info from the remote
@@ -907,13 +909,8 @@ $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 
 </td><td>
 
-### How to Add Additional Commits to a Branch or Pull Request
+### How to Add Commits to a Feature Branch or Pull Request
 
-<!--
-This is the same process for someone working on a feature branch or reviewing a pull request branch
--->
-
-Anyone with write permission to a branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. The remote can be represented by a <remote-name> or a remote URL
 
 Pushing and pulling via <remote-name>
 
@@ -1707,16 +1704,7 @@ Writing and Formatting
 
 ### Go For It!
 
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Tips for Getting Started
+Here are some tips for getting started:
 
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects and other welcoming projects
@@ -1788,13 +1776,6 @@ Useful Resources: Bitly Link
 
 
 ## Useful Resources
-
-<!--
-* [Using Keyboard Shortcuts](https://help.github.com/articles/using-keyboard-shortcuts)
-
-* [Emails (need to be logged in)](https://github.com/settings/emails)
-* [Notifications center (need to be logged in)](https://github.com/settings/notifications)
--->
 
 GitHub and Bitbucket
 * [GitHub](https://github.com)
@@ -1872,6 +1853,11 @@ Advanced Collaborative Development Workflow Examples
 * [Can I Recover Branch After its Deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git)
 
 <!--
+* [Using Keyboard Shortcuts](https://help.github.com/articles/using-keyboard-shortcuts)
+
+* [Emails (need to be logged in)](https://github.com/settings/emails)
+* [Notifications center (need to be logged in)](https://github.com/settings/notifications)
+
 * Browser
 * [Desktop App](https://desktop.github.com) (Mac or Windows GUI)
 * Command line (recommended, because can do everything with Git)
@@ -1879,6 +1865,7 @@ Advanced Collaborative Development Workflow Examples
 
 Pros and Cons
 * Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
+
 
 Permission Levels
 https://help.github.com/articles/access-permissions-on-github
