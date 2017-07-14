@@ -828,6 +828,143 @@ base: master ... compare: branch-name
 
 </td><td>
 
+### The Difference Between Feature Branches and Pull Request Branches
+
+<!--
+It's a best practice to use branches
+The process for working on feature branches or pull request branches is the same (exception: if fetching pull request branch by pull request number)
+The difference is that with a pull request branch, the reviewer is deciding whether or not to merge, then possibly merging
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remote, Remote Tracking, and Local Branches
+
+<!--
+Hidden folder named .git, storing temporary info from the remote
+If you click branches tab, can see a list of the branches
+remote branch
+remote-tracking branch
+local branch
+
+branch from a fork is different though
+-->
+
+</td></tr>
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repo Model Feature or Pull Request Branch
+
+Using origin as an example, because is the most common. Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
+
+```bash
+$ git fetch origin
+$ git checkout -b <local-branch-name> origin/<branch-name>
+$ git merge master
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Forked Repo Model Feature or Pull Request Branch
+
+Create and checkout a new branch (in this case off of the master branch, but could be another). Pull the contents of the remote forked repo branch into it (could be as a feature branch or a pull request branch).
+
+```bash
+$ git checkout -b <local-branch-name> master
+$ git pull https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### How to Add Additional Commits to a Branch or Pull Request
+
+<!--
+This is the same process for someone working on a feature branch or reviewing a pull request branch
+-->
+
+Anyone with write permission to a branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. The remote can be represented by a <remote-name> or a remote URL
+
+Pushing and pulling via <remote-name>
+
+```bash
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to organizational pull request
+
+```bash
+$ git push origin <branch-name> 
+```
+
+Push additional commits to organizational pull request, if local branch name is different than pull request branch name
+ 
+```bash
+$ git push origin <local-branch-name>:<remote-branch-name>
+```
+
+Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+Push additional commits to forked repo pull request, if local branch name is different than pull request branch name
+
+```bash
+$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
+```
+
+</td></tr>
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
 ### Perspective
 
 We are switching our perspective now. We are now a DjangoCon US website maintainer with write permission to the repo. This is our origin. We are going to review a pull request submitted from within the DjangoCon US website repo. We are also going to be reviewing a pull request submitted from the forked repo. The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
@@ -925,64 +1062,6 @@ Flow chart of possibilities:
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Remote, Remote Tracking, and Local Branches
-
-<!--
-Hidden folder named .git, storing temporary info from the remote
-If you click branches tab, can see a list of the branches
-remote branch
-remote-tracking branch
-local branch
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Shared Repo Model Pull Request
-
-<!--
-This is the same process for someone working on a feature branch or reviewing a pull request branch
--->
-
-Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
-
-```bash
-$ git fetch origin
-$ git checkout -b <local-branch-name> origin/<branch-name>
-$ git merge master
-```
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Forked Repo Model Pull Request
-
-Create and checkout a new branch (in this case off of the master branch). Pull the contents of the remote forked repo pull request into it. 
-
-```bash
-$ git checkout -b <local-branch-name> master
-$ git pull https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -993,7 +1072,7 @@ $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 
 ### Merge Pull Request Locally and Push to Master Branch
 
-Step 2: Merge the changes and update on GitHub. (Same process no matter where the pull request originated)
+Step 2: Merge the changes and update on GitHub. (Same process no matter where the pull request originated), (merge into the appropriate branch)
 
 ```bash
 $ git checkout master
@@ -1036,56 +1115,6 @@ See also, pull request shortcuts
 
 </td></tr>
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### How to Add Additional Commits to a Branch or Pull Request
-
-Anyone with write permission to a branch can push additional commits to the branch. If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. The remote can be represented by a <remote-name> or a remote URL
-
-Pushing and pulling via <remote-name>
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-Push additional commits to organizational pull request
-
-```bash
-$ git push origin <branch-name> 
-```
-
-Push additional commits to organizational pull request, if local branch name is different than pull request branch name
- 
-```bash
-$ git push origin <local-branch-name>:<remote-branch-name>
-```
-
-Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-Push additional commits to forked repo pull request, if local branch name is different than pull request branch name
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
-```
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1690,8 +1719,9 @@ Writing and Formatting
 ### Tips for Getting Started
 
 * “Help Wanted” tags, topics/First-timers initiatives
-* Look for community-oriented projects that have a good reputation
-* Cherry pick problems or issues that fit your skill level (look for triaging)
+* Look for community-oriented projects and other welcoming projects
+* Cherry pick problems or issues that fit your skill level
+* Look for triaging (example: node.js website issues)
 * Practice your skills and workflow (don't be afraid to delete/start over)
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 
@@ -1709,9 +1739,6 @@ Finding Open Source Projects to Contribute To
 
 * Do a GitHub search such as ["pull requests welcome"](https://github.com/search?utf8=%E2%9C%93&q=pull+requests+welcome)
 * [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
-
-Look at Issue Triaging Example
-* node.js website issues
 -->
 
 
