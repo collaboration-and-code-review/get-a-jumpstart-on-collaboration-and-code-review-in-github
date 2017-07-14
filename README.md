@@ -1502,6 +1502,7 @@ If you want to know more about advanced workflow:
 * A Successful Git Branching Model (more advanced)
 * A Successful Git Branching Model Considered Harmful (alternative view)
 * SemVer
+* See also: Atlassian and GitLab docs (you can also find insights in the docs of other software built on top of Git)
 
 * Tags
 * Releases
@@ -1542,7 +1543,6 @@ Setting Up Repo Fail Safes
 Should be immediately considered compromised, and changed in development/production (famous companies have done it too!)
 -->
 
-
 <tr><td width="30%">
 
 ![Slide 43]()
@@ -1569,7 +1569,7 @@ http://opensourcesurvey.org/2017/
 
 <tr><td width="30%">
 
-![Slide 44]()
+![Slide 00]()
 
 </td><td>
 
@@ -1584,33 +1584,53 @@ http://opensourcesurvey.org/2017/
 
 <tr><td width="30%">
 
-![Slide 45]()
+![Slide 00]()
 
 </td><td>
 
 ### Documentation
 
 <!--
-Forums
-* wikis
-* GitHub pages/Jekyll
-* gists
-
-Files
 * README.md
-* LICENSE (auto-generate, legality of contributions)
+* LICENSE (auto-generate, legality of contributions, attribution)
 * CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
 * PITCHME.md
+-->
 
-# Issue and Pull Request Documentation
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Issue and Pull Request Templates
 
 * ISSUE_TEMPLATE
 * PULL_REQUEST_TEMPLATE
 
+<!--
 * Issues Tab
 * Pull Requests Tab
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Forums
+
+* Wikis
+* GitHub Pages/Jekyll
+* Gists
 
 </td></tr>
 
@@ -1663,7 +1683,7 @@ Writing and Formatting
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 00]()
 
 </td><td>
 
@@ -1674,7 +1694,7 @@ Writing and Formatting
 
 <tr><td width="30%">
 
-![Slide 41]()
+![Slide 00]()
 
 </td><td>
 
@@ -1714,7 +1734,7 @@ Look at Issue Triaging Example
 
 <tr><td width="30%">
 
-![Slide 41]()
+![Slide 00]()
 
 </td><td>
 
@@ -1725,7 +1745,7 @@ Look at Issue Triaging Example
 
 <tr><td width="30%">
 
-![Slide 42]()
+![Slide 00]()
 
 </td><td>
 
