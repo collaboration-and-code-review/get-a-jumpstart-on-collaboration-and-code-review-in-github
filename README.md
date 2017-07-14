@@ -662,6 +662,7 @@ https://help.github.com/articles/about-remote-repositories
 
 
 
+
 <tr><td width="30%">
 
 ![Slide 29]()
@@ -681,7 +682,6 @@ General process
 <!--
 * Submit a pull request
 * You or others with write permission to the branch can push additional commits to the branch/pull request
-
 permission to push follow on commits to a pull request, add additional commits
 
 Folder/files/text editor
@@ -702,18 +702,6 @@ Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked R
 
 ### Commands
 
-<!--
-initial copy of the remote repo (using URL) to your local computer
-
-https://help.github.com/articles/fetching-a-remote
-When you run git clone:
-There will now be a new folder in the directory you cloned into (command line prompt), by the same name as the repo and filled with the contents of the repo
-The folder will be initialized as a Git repository, with the remote repo named "origin"
-You will be checked out on the default branch (usually master)
-
-A remote named origin is created, pointing to the URL you cloned from
--->
-
 Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
 
 ```bash
@@ -731,6 +719,20 @@ Example: clone (or download) a user account repo (repo needs to have already bee
 ```bash
 $ git clone https://github.com/<user-name>/<repo-name>
 ```
+
+A few things that have happened
+* There will now be a new folder in the directory you cloned into, by the same name as the repo and filled with the contents of the repo
+* The folder will be initialized as a Git repository, with the remote repo named "origin"
+* You will be checked out on the default branch (usually master)
+
+<!--
+initial copy of the remote repo (using URL) to your local computer
+
+Home directory (command line prompt)
+ 
+https://help.github.com/articles/fetching-a-remote
+A remote named origin is created, pointing to the URL you cloned from
+-->
 
 Change directory into the folder of the repo you cloned. Folder name will be the repo name.
 
@@ -828,9 +830,7 @@ base: master ... compare: branch-name
 
 ### Perspective
 
-<!--
-We are switching our perspective now. We are now a maintainer working from within an organizational repo, with write permission to the organizational repo, but without write permission to a forked repo, unless permission has been given to edit a pull request. The organizational repo is our origin, but any forked repo is not. 
--->
+We are switching our perspective now. We are now a DjangoCon US website maintainer with write permission to the repo. This is our origin. We are going to review a pull request submitted from within the DjangoCon US website repo. We are also going to be reviewing a pull request submitted from the forked repo. The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
 
 </td></tr>
 
@@ -846,13 +846,14 @@ We are switching our perspective now. We are now a maintainer working from withi
 First things first
 * If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
 * Follow the link to the pull request in the repo pull request tab in the browser
+* Look over the information about the pull request provided by the contributor
 
 <!--
 There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 - Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
 
-* You go to the pull request in the browser and look at the info and click on the files (pull request tab)
+* click on the files (pull request tab)
 
 Pull request, one file shows all changes
 
@@ -861,8 +862,6 @@ diff Views
 * split view
 * source view
 * rich view
-
-locally (on your own computer)
 -->
 
 </td></tr>
@@ -899,8 +898,6 @@ After you run the code locally, if you decide a change needs to be made, there a
 
 
 <!--
-What is a commit?
-
 * you update the pull request branch locally (add, commit, create a message), merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
 
 * Fetch pull request branch locally and checkout the branch
@@ -955,7 +952,11 @@ local branch
 
 ### Shared Repo Model Pull Request
 
-Step 1: From your project repository, bring in the changes and test. (If the repo was cloned before the pull request)
+<!--
+This is the same process for someone working on a feature branch or reviewing a pull request branch
+-->
+
+Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
 
 ```bash
 $ git fetch origin
@@ -974,7 +975,7 @@ $ git merge master
 
 ### Forked Repo Model Pull Request
 
-Step 1: From your project repository, check out a new branch and test the changes.
+Create and checkout a new branch (in this case off of the master branch). Pull the contents of the remote forked repo pull request into it. 
 
 ```bash
 $ git checkout -b <local-branch-name> master
@@ -1299,7 +1300,10 @@ When you make a change in the browser, it does not automatically update in your 
 You need to synchronize the changes
 
 you can configure Git to pull changes from the original, or upstream, repository into the local clone of your fork.
-When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. If you want to collaborate with the original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
+When you clone a repository you own, you provide it with a remote URL that tells Git where to fetch and push updates. 
+
+You associate the organizational repo URL with your local clone. 
+original repository, you'd add a new remote URL, typically called upstream, to your local Git clone:
 
 git fetch, git merge, git pull
 
@@ -1351,6 +1355,7 @@ $ git pull https://github.com/upstream-username/original-repository <branch-name
 * fork (copy of an entire repo, usually into a user account, but could be into an organization)
 * branch (a copy of a code base within a repo, often a "feature branch")
 
+locally (on your own computer)
 * local development environment (your computer environment)
 * clone (a local copy of a repo)
 
@@ -1365,7 +1370,7 @@ $ git pull https://github.com/upstream-username/original-repository <branch-name
 
 * pull request (called a pull request because the changes are "pulled into the source repository by the project maintainer")
 
-there is a process to make a copy, make the change you want to have happen, and submit a request for it to be pulled into the upstream repo.
+What is a commit?
 
 "the URLs you can use to clone the project onto your computer are available below the repository details:"
 
@@ -1388,7 +1393,6 @@ To do this, you'll need to use Git on the command line.
 
 https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
 Step 2: Create a local clone of your fork
-Step 3: Configure Git to sync your fork with the original Spoon-Knife repository
 
 To add a new remote, use in the directory your repository is stored at.
 Updating organizational clone/reviewing pull requests versus updating fork clone
