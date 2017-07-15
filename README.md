@@ -193,12 +193,13 @@ Unfortunately, it would take almost 3 more years for me to begin doing code revi
 There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture. I think quite often, when people are using Git and GitHub, they are focusing on the details and missing the larger picture. This talk is about the larger picture. 
 -->
 
-This talk is about teaching you the essential process and the underlying common thread between collaboration and code review, so that you can get started as quickly as possible. 
+This talk is about teaching you the underlying logic and essential process between collaboration and code review, so that you can get started as quickly as possible. 
 
 There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
 
 <!--
 I am going to tell you the most typical examples. 
+Parts of this process can be reused, for instance, during code review. 
 -->
 
 </td></tr>
@@ -552,16 +553,6 @@ Branches
 * Can be used by any GitHub user
 * Give you more freedom
 
-Types of branches
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
-
-The methods for working with the two different types of branches are the same. If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
-
-<!--
-Underlying logic, same process
--->
-
 </td></tr>
 
 
@@ -671,29 +662,21 @@ Bash command list
 
 </td><td>
 
-### Branch Process Overview
+### Creating and Pushing a Branch, Submitting a Pull Request Overview
 
-The process for working with branch is very similar for anyone, regardless of which collaborative development model you are using. Parts of this process can be reused, for instance, during code review. 
+The process for creating and pushing a branch is very similar for anyone, regardless of which collaborative development model you are using (organizational repo or forked repo). 
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
 
-General process
-
 <!--
-* Submit a pull request
-* You or others with write permission to the branch can push additional commits to the branch/pull request
-permission to push follow on commits to a pull request, add additional commits
-
 Folder/files/text editor
 
-Clone/Download and Push Feature Branch to Repo (Almost Same Process for Forked Repo or Organizational Repo)
+Clone/Download and Push Feature Branch to Repo
 -->
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -832,13 +815,18 @@ base: master ... compare: branch-name
 
 ### Working on Feature Branches and Pull Request Branches
 
-<!--
-It's a best practice to use branches
-The process for working on feature branches or pull request branches is the same (exception: if fetching pull request branch by pull request number)
-Anyone with write permission to a feature branch or pull request branch can push additional commits to the branch
+We've established that it's best practice to use branches
+
+Types of branches
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+The process for working on feature branches or pull request branches is basically the same (exception: if fetching pull request branch by pull request number)
+Anyone with write permission to a feature branch or pull request branch can push additional commits to a feature branch or pull request branch
 If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
 The main difference with a pull request branch is that the reviewer is deciding whether or not to merge, then possibly merging
--->
+
+If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
@@ -853,9 +841,9 @@ The main difference with a pull request branch is that the reviewer is deciding 
 
 ### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
 
-<!--
-We've talked about remotes
+We've already talked about the concept of remotes when we talked about origin
 
+<!--
 Hidden folder named .git, storing temporary info from the remote
 If you click branches tab, can see a list of the branches
 remote branch
@@ -870,7 +858,23 @@ The remote can be represented by a <remote-name> or a remote URL
 </td></tr>
 
 
+<!--
+### How to Add Commits to a Feature Branch or Pull Request
 
+Pushing and pulling via <remote-name>
+
+```bash
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+-->
 
 
 <tr><td width="30%">
@@ -887,6 +891,18 @@ Using origin as an example, because is the most common. Fetch updates to your lo
 $ git fetch origin
 $ git checkout -b <local-branch-name> origin/<branch-name>
 $ git merge master
+```
+
+Push additional commits to organizational pull request
+
+```bash
+$ git push origin <branch-name> 
+```
+
+Push additional commits to organizational pull request, if local branch name is different than pull request branch name
+ 
+```bash
+$ git push origin <local-branch-name>:<remote-branch-name>
 ```
 
 </td></tr>
@@ -907,45 +923,6 @@ $ git checkout -b <local-branch-name> master
 $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### How to Add Commits to a Feature Branch or Pull Request
-
-
-Pushing and pulling via <remote-name>
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-Push additional commits to organizational pull request
-
-```bash
-$ git push origin <branch-name> 
-```
-
-Push additional commits to organizational pull request, if local branch name is different than pull request branch name
- 
-```bash
-$ git push origin <local-branch-name>:<remote-branch-name>
-```
-
 Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
 
 ```bash
@@ -959,9 +936,6 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 ```
 
 </td></tr>
-
-
-
 
 
 <tr><td width="30%">
