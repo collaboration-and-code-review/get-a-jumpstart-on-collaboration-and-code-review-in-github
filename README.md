@@ -109,7 +109,6 @@ Types of Projects
 * Novelty
 -->
 
-
 <tr><td width="30%">
 
 ![Slide 5]()
@@ -481,9 +480,10 @@ Forking graphic
 
 When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with write permission to it unless you give collaborator permission to someone else. If you can make any changes to the fork that you want (including adding collaborators), and the original repo will not be affected unless you submit a pull request and a project maintainer pulls your changes into the original repository. When you delete a fork, you are not deleting the original repo. 
 
+Forks can be used to propose a change to the original repository, or can be the starting point for a new idea
+
 <!--
 https://help.github.com/articles/fork-a-repo
-Most commonly, forks are used to either propose changes to someone else's project/upstream repository or to use someone else's project as a starting point for your own idea.
  -->
 
 </td></tr>
@@ -575,10 +575,22 @@ Meanwhile, you will want to keep the master and feature branches up-to-date by m
 
 ### Perspective: Submitting a Pull Request
 
-In this example, I am submitting a pull request. It could be either a pull request I am submitting through a fork, when I did not have write access to the DjangoCon US website repo. Or, it could be a pull request that I am submitting through the organizational repo after I became a maintainer. 
+In this example, I am cloning a repo from GitHub, creating a branch locally, pushing the branch to GitHub, and submitting a pull request. 
+
+The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
 
 <!--
+It could be either a pull request I am submitting through a fork, when I did not have write access to the DjangoCon US website repo. Or, it could be a pull request that I am submitting through the organizational repo after I became a maintainer. 
+
 The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
+
+The process for creating and pushing a branch is very similar for anyone, regardless of which collaborative development model you are using (organizational repo or forked repo). 
+
+Folder/files/text editor
+
+Clone/Download
 -->
 
 </td></tr>
@@ -645,29 +657,6 @@ $ cd ..
 
 <!--
 Bash command list
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 29]()
-
-</td><td>
-
-### Cloning a Repo from GitHub, Creating a Branch Locally, Pushing the Branch to GitHub, Submitting a Pull Request Overview
-
-The process for creating and pushing a branch is very similar for anyone, regardless of which collaborative development model you are using (organizational repo or forked repo). 
-
-The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
-
-<!--
-Folder/files/text editor
-
-Clone/Download
 -->
 
 </td></tr>
@@ -1011,12 +1000,10 @@ After you run the code locally, if you decide a change needs to be made, there a
 * Fetch pull request branch locally and checkout the branch
 fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. 
 
-* Edit, merge with branch
-
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
 * you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
 
-- General process for making a local change, committing, merging and
+- General process for making a local change, committing, merging with branch and
 pushing back to GitHub
 - How to keep local code up to date
 
