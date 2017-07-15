@@ -567,6 +567,17 @@ Meanwhile, you will want to keep the master and feature branches up-to-date by m
 </td></tr>
 
 
+<!--
+Rules
+The place you clone from is your origin
+If you forked the repo, you are fetching from upstream
+If you are fetching, for person who is a maintainer with write permission, it is your origin
+If you forked the repo and are fetching from upstream, it is your upstream
+For all of these commands, you just need to remember if it is your origin or your upstream
+When you fetch a feature branch or pull request to work on it locally and possibly add additional commits to it, you are checking out a remote branch
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -689,18 +700,10 @@ $ git clone https://github.com/<user-name>/<repo-name>
 ```
 
 A few things that have happened
-* There will now be a new folder in the directory you cloned into, by the same name as the repo and filled with the contents of the repo
+* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
 * The folder will be initialized as a Git repository, with the remote repo named "origin"
 * You will be checked out on the default branch (usually master)
-
-<!--
-initial copy of the remote repo (using URL) to your local computer
-
-Home directory (command line prompt)
- 
-https://help.github.com/articles/fetching-a-remote
-A remote named origin is created, pointing to the URL you cloned from
--->
+* The GitHub repository is now a remote repository named origin
 
 Change directory into the folder of the repo you cloned. Folder name will be the repo name.
 
@@ -780,11 +783,8 @@ In the browser, go to the repo you want your pull request to be merged into. The
 <!--
 If you go to the source repo, it will have detected your branch and will suggest that you submit a pull request
 
-base fork, base, head fork, compare
-base, compare
-
-branch-name ... "Compare & pull request"
-base: master ... compare: branch-name
+base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
+base: master compare:<branch-name>
 -->
 
 </td></tr>
@@ -796,24 +796,32 @@ base: master ... compare: branch-name
 
 </td><td>
 
-### Working on Feature Branches and Pull Request Branches
+### Perspective
 
-We've established that it's best practice to use branches
+We are switching our perspective now. We are now a DjangoCon US website maintainer with write permission to the repo. This is our origin. We are going to review a pull request submitted from within the DjangoCon US website repo. We are also going to be reviewing a pull request submitted from the forked repo. The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Checkout out Remote Branches
 
 Types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-The process for working on feature branches or pull request branches is basically the same (exception: if fetching pull request branch by pull request number)
-Anyone with write permission to a feature branch or pull request branch can push additional commits to a feature branch or pull request branch
-If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
-The main difference with a pull request branch is that the reviewer is deciding whether or not to merge, then possibly merging
+Something I want you to understand from this talk is that feature branches and pull request branches are both remote branches. If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
-If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+* Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
+* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
+* The main difference with a pull request branch is that the reviewer is deciding whether or not to merge, then possibly merging
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -824,25 +832,29 @@ If you learn to use branches, you will have the fundamentals skills and freedom 
 
 ### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
 
-We've already talked about the concept of remotes when we talked about origin
+We've already talked about the concept of remotes when we talked about origin. A remote is just a GitHub repository that is connected to a local clone. 
 
-<!--
-Hidden folder named .git, storing temporary info from the remote
-If you click branches tab, can see a list of the branches
-remote branch
-remote-tracking branch
-local branch
+The DjangoCon US website repo has three types of branches now:
+* remote branch
+* remote-tracking branch (inside of the hidden .git folder, which stores info)
+* local branch
 
-branch from a fork is different though
-
-The remote can be represented by a <remote-name> or a remote URL
--->
+This is helpful to know because these will include branches pushed directly to the DjangoCon US website repo. These will not include branches created through a fork or a pull request from a fork, because they come from outside of the origin. 
 
 </td></tr>
 
 
-<!--
-### How to Add Commits to a Feature Branch or Pull Request
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Checking Out and Working on a Remote Branch
+
+You need to have write permission to the branch and fetch it from the remote. The remote can be represented by a <remote-name> or a remote URL
 
 Pushing and pulling via <remote-name>
 
@@ -857,7 +869,22 @@ Pushing and pulling via remote URL
 git pull https://github.com/<user-name>/<repo-name> <branch-name>
 git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
+
+</td></tr>
+
+
+
+<!--
+Checking Out a Remote Branch
+
+Branch within the DjangoCon US website repo
+
+Working on and adding commits to a feature branch or pull request
+
+If you click branches tab, can see a list of the branches
 -->
+
+
 
 
 <tr><td width="30%">
@@ -891,6 +918,7 @@ $ git push origin <local-branch-name>:<remote-branch-name>
 </td></tr>
 
 
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -920,18 +948,6 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 
 </td></tr>
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Perspective
-
-We are switching our perspective now. We are now a DjangoCon US website maintainer with write permission to the repo. This is our origin. We are going to review a pull request submitted from within the DjangoCon US website repo. We are also going to be reviewing a pull request submitted from the forked repo. The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1827,6 +1843,7 @@ Advanced Collaborative Development Workflow Examples
 Pros and Cons
 * Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
 
+https://help.github.com/articles/fetching-a-remote
 
 Permission Levels
 https://help.github.com/articles/access-permissions-on-github
