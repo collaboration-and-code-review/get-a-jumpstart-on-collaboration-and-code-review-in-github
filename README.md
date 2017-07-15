@@ -811,6 +811,8 @@ We are switching our perspective now. We are now a DjangoCon US website maintain
 
 ### Checkout out Remote Branches
 
+
+
 Types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
@@ -832,18 +834,33 @@ Something I want you to understand from this talk is that feature branches and p
 
 ### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
 
-We've already talked about the concept of remotes when we talked about origin. A remote is just a GitHub repository that is connected to a local clone. 
+When we are talking about the original DjangoCon US repos, there is something very helpful to know. The way that you will fetch and work on feature and pull request branches will be different depending on whether the branch was pushed directly to the DjangoCon US repo, or whether it comes from a fork. 
 
-The DjangoCon US website repo has three types of branches now:
+Say for instance that someone has pushed a new branch to the DjangoCon US repo. 
+
+
+
+There are three types of branches:
 * remote branch
 * remote-tracking branch (inside of the hidden .git folder, which stores info)
 * local branch
 
+<!--
+We've already talked about the concept of remotes when we talked about origin. A remote is just a GitHub repository that is connected to a local clone. 
+
+When you fetch from a remote, you are fetching all of the changes into the .git folder.
+
 This is helpful to know because these will include branches pushed directly to the DjangoCon US website repo. These will not include branches created through a fork or a pull request from a fork, because they come from outside of the origin. 
+-->
 
 </td></tr>
 
 
+<!--
+Branch within the DjangoCon US website repo
+
+If you click branches tab, can see a list of the branches
+-->
 
 
 <tr><td width="30%">
@@ -871,18 +888,6 @@ git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
 </td></tr>
-
-
-
-<!--
-Checking Out a Remote Branch
-
-Branch within the DjangoCon US website repo
-
-Working on and adding commits to a feature branch or pull request
-
-If you click branches tab, can see a list of the branches
--->
 
 
 
