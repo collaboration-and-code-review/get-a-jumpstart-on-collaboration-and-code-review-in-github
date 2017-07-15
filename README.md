@@ -226,12 +226,8 @@ Using DjangoCon Example
 You will use terminal/command line often with code review.
 
 (<> symbol denotes a placeholder/variable)
-Using HTTPS examples
+Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
 Example- some operating systems do not use dollar signs $ as command line prompts.
-
-https://help.github.com/articles/which-remote-url-should-i-use
-SSH URL git@github.com:user/repo.git
-HTTPS URL https://github.com/user/repo.git
 -->
 
 </td></tr>
@@ -303,8 +299,7 @@ Type q to exit
 Git is a version control system that you install on your computer and use via your terminal. GitHub is a web browser dashboard you can use in connection with Git. GitHub is kind of like a social network for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. 
 
 <!--
-What are open-source, Git and GitHub?
-At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
+What is open-source?
 -->
 
 </td></tr>
@@ -552,6 +547,7 @@ Branches
 * Branches are a best practice
 * Can be used by any GitHub user
 * Give you more freedom
+* You can have an unlimited number of branches
 
 </td></tr>
 
@@ -566,7 +562,7 @@ Branches
 
 When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be merged into the master branch. The master branch will be like it was before, except with changes made from the branch.
 
-Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. You can create an unlimited number of feature branches. 
+Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. 
 
 </td></tr>
 
@@ -660,7 +656,7 @@ Bash command list
 
 </td><td>
 
-### Creating and Pushing a Branch, Submitting a Pull Request Overview
+### Cloning a Repo from GitHub, Creating a Branch Locally, Pushing the Branch to GitHub, Submitting a Pull Request Overview
 
 The process for creating and pushing a branch is very similar for anyone, regardless of which collaborative development model you are using (organizational repo or forked repo). 
 
@@ -671,7 +667,7 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 <!--
 Folder/files/text editor
 
-Clone/Download and Push Feature Branch to Repo
+Clone/Download
 -->
 
 </td></tr>
@@ -962,11 +958,9 @@ First things first
 * Follow the link to the pull request in the repo pull request tab in the browser
 * Look over the information about the pull request provided by the contributor
 
+* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
 <!--
-There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
-
-- Process is slightly different for "fork and pull" pull request versus "shared repository model" pull request
-
 * click on the files (pull request tab)
 
 Pull request, one file shows all changes
