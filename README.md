@@ -566,9 +566,7 @@ Branches
 
 When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be merged into the master branch. The master branch will be like it was before, except with changes made from the branch.
 
-<!--
-You can create unlimited feature branches. Meanwhile, you will want to keep the master and feature branches up-to-date with new merges. 
--->
+Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. You can create an unlimited number of feature branches. 
 
 </td></tr>
 
@@ -584,7 +582,7 @@ You can create unlimited feature branches. Meanwhile, you will want to keep the 
 In this example, I am submitting a pull request. It could be either a pull request I am submitting through a fork, when I did not have write access to the DjangoCon US website repo. Or, it could be a pull request that I am submitting through the organizational repo after I became a maintainer. 
 
 <!--
-Our perspective is of a person submitting a pull request. The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
+The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
 -->
 
 </td></tr>
