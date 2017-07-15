@@ -299,11 +299,11 @@ Type q to exit
 
 ### Git and GitHub Tour
 
+Git is a version control system that you install on your computer and use via your terminal. GitHub is a web browser dashboard you can use in connection with Git. GitHub is kind of like a social network for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. 
+
 <!--
 What are open-source, Git and GitHub?
 At the heart of open source is the idea that by sharing code, we can make better, more reliable software.
-
-High level explanation: Git is a version control system that you install on your computer and use via your terminal. Some people came along and decided to create a web-based dashboard that you can use in connection with Git. I kind of think of GitHub as being like Facebook for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. If you want to work on code, you can clone or download a repo onto your personal computer, make your changes, then push the changes back to the repo on GitHub. Meanwhile, other users can add their own changes. Git and GitHub will record every change to a file and will tell you if there is a conflict between the changes of two different people. 
 -->
 
 </td></tr>
@@ -317,7 +317,11 @@ High level explanation: Git is a version control system that you install on your
 
 ### What Local Environment Looks Like
 
+You can make a copy of a repo (clone) on your computer, make changes, then transfer (push) the changes back to the repo on GitHub. Meanwhile, other users can add their changes. Git and GitHub will record every change to a file and will tell you if there is a conflict. 
+
+<!--
 You're going to be transferring file changes back and forth between local Git and GitHub repositories
+-->
 
 </td></tr>
 
@@ -348,6 +352,8 @@ Write Permission is an important concept in GitHub collaboration.
 
 * Whether you have write permission to a repo determines how you contribute to it
 * Having write permission means you can make changes directly inside of the repo 
+* Users can't just make changes to any repo. For example, a mission critical software project would not just want anyone to be able to go into the repo and make changes
+* There is often a level of trust involved when someone is added to an organization as a maintainer
 
 Some examples of what you can do:
 * Push a branch directly to the repo (instead of via fork)
@@ -356,11 +362,6 @@ Some examples of what you can do:
 
 <!--
 See write permissions chart for info
-
-Aa user will come across a shared repository that he or she does not have access to and fork it to contribute. 
-Mission critical project would not want just anyone to be able to go into the repo and changes things, 
-
-There is often a level of trust involved, for instance, if you are added to an organization as a maintainer of a critical project. 
 -->
 
 </td></tr>
@@ -407,7 +408,7 @@ A “Shared Repository is typically found in an organization account  because it
 
 ### "Fork and Pull"
 
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write access to 
+The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write access to and need to fork it to contribute
 
 </td></tr>
 
@@ -482,13 +483,11 @@ Forking graphic
 
 ### About Forks
 
-When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with read/write access to it unless you give collaborator permission to someone else. If you make changes to the fork, the original repo will not be affected unless you submit a pull request and a project maintainer pulls your changes into the original repository. When you delete a fork, you are not deleting the original repo. 
+When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with write permission to it unless you give collaborator permission to someone else. If you can make any changes to the fork that you want (including adding collaborators), and the original repo will not be affected unless you submit a pull request and a project maintainer pulls your changes into the original repository. When you delete a fork, you are not deleting the original repo. 
 
 <!--
 https://help.github.com/articles/fork-a-repo
 Most commonly, forks are used to either propose changes to someone else's project/upstream repository or to use someone else's project as a starting point for your own idea.
-
-In fact, you can make any changes you want to your fork--add collaborators, rename files, generate GitHub Pages--with no effect on the original."
  -->
 
 </td></tr>
@@ -517,7 +516,7 @@ In fact, you can make any changes you want to your fork--add collaborators, rena
 
 ### Collaboration and Code Review Best Practice Workflow
 
-There is an overall theme to this talk. In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
+In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
 * Keep your code up-to-date
 * Create one or more features
 * Do code review
@@ -559,6 +558,10 @@ Types of branches
 
 The methods for working with the two different types of branches are the same. If you learn to use branches, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
+<!--
+Underlying logic, same process
+-->
+
 </td></tr>
 
 
@@ -570,10 +573,10 @@ The methods for working with the two different types of branches are the same. I
 
 ### About Branches
 
-<!--
-When you create a repo and add a file, this codebase is a branch with a default name of master. You can create a copy of this master branch as a feature branch and give it a new name. You can alter this new feature branch and submit a pull request. If the changes are accepted, they will be merged into the master branch. So now, the master branch will be like it was before, except with the changes from the feature branch. You can create unlimited feature branches. Meanwhile, you will want to keep the master and feature branches up-to-date with new merges. 
+When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be merged into the master branch. The master branch will be like it was before, except with changes made from the branch.
 
-A branch is a copy of code inside of your repo, in parallel with the branch it is a copy of.
+<!--
+You can create unlimited feature branches. Meanwhile, you will want to keep the master and feature branches up-to-date with new merges. 
 -->
 
 </td></tr>
