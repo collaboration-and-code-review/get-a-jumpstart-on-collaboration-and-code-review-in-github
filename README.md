@@ -602,6 +602,8 @@ When you clone a repo locally, the repo you cloned from is now known as a remote
 If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
 
 <!--
+A remote is just a GitHub repository that is connected to a local clone.
+
 A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
 
 You can then submit a pull request for the new branch in your origin. 
@@ -642,6 +644,9 @@ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 <!--
 fetch it from the remote
+
+When changes are made to the original repo, the fork will not update. I am going to tell you how to deal with that later.
+We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
 -->
 
 </td></tr>
@@ -843,6 +848,10 @@ We've talked about a couple of different types of branches
 
 These are both remote branches and the way that we fetch them and work on them is the same. The main difference between the two is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
+<!--
+We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+-->
+
 </td></tr>
 
 
@@ -861,12 +870,37 @@ These are both remote branches and the way that we fetch them and work on them i
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
+
+We can fetch all of the updates from the origin to a temporary folder locally. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
+
+There are three types of branches:
+* remote branch
+* remote-tracking branch (inside of the hidden .git folder, which stores info)
+* local branch
+
 <!--
-We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+git fetch --prune
+git branch -r
+git branch -a
+
+We've already talked about the concept of remotes when we talked about origin.  
+
+When you fetch from a remote, you are fetching all of the changes into the .git folder.
+-->
+
+</td></tr>
+
+<!--
+https://help.github.com/articles/fork-a-repo
 
 2. fetch or pull them to your local computer, work on them, makes changes to them, push the changes back to the remote branch in the same way
-
-We can fetch all of the updates from the origin to a temporary folder locally. When we fetch these updates, they will not include updates from a fork. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
 
 If you click branches tab, can see a list of the branches
 
@@ -882,41 +916,6 @@ If you forked the repo and are fetching from upstream, it is your upstream
 For all of these commands, you just need to remember if it is your origin or your upstream
 When you fetch a feature branch or pull request to work on it locally and possibly add additional commits to it, you are checking out a remote branch
 -->
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
-
-Say for instance that someone has pushed a new branch to the DjangoCon US repo.
-
-
-
-
-There are three types of branches:
-* remote branch
-* remote-tracking branch (inside of the hidden .git folder, which stores info)
-* local branch
-
-<!--
-We've already talked about the concept of remotes when we talked about origin. A remote is just a GitHub repository that is connected to a local clone. 
-
-When you fetch from a remote, you are fetching all of the changes into the .git folder.
-
-This is helpful to know because these will include branches pushed directly to the DjangoCon US website repo. These will not include branches created through a fork or a pull request from a fork, because they come from outside of the origin. 
--->
-
-</td></tr>
-
-<!--
-When changes are made to the original repo, the fork will not update. I am going to tell you how to deal with that later.
-
-https://help.github.com/articles/fork-a-repo
- -->
- 
 
 
 
