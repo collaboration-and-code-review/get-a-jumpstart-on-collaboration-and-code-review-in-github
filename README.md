@@ -597,12 +597,12 @@ Clone/Download
 
 ### Remote Origin
 
-<!--
-A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
-
-When you clone a repo locally, the repo you cloned from automatically becomes a remote named "origin". "origin" is a default remote. When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
+When you clone a repo locally, the repo you cloned from is now known as a remote repository called "origin" (it's default name). When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
 
 If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+
+<!--
+A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
 
 You can then submit a pull request for the new branch in your origin. 
 
@@ -614,16 +614,17 @@ https://help.github.com/articles/about-remote-repositories
 </td></tr>
 
 
-<!--
 <tr><td width="30%">
 
 ![Slide 00]()
 
 </td><td>
 
-### Checking Out and Working on a Remote Branch
+### Pushing and Pulling to Sync Local Code with Remote Repo
 
-You need to have write permission to the branch and fetch it from the remote. The remote can be represented by a <remote-name> or a remote URL
+When you make a change in the browser (remote repo), your local code does not automatically update. Likewise, when you make a change in your local code, the code in the browser does not automatically update. You need to push or pull the changes to sync your local code with the code in the remote repo. 
+
+If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
 
 Pushing and pulling via <remote-name>
 
@@ -639,8 +640,11 @@ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
-</td></tr>
+<!--
+fetch it from the remote
 -->
+
+</td></tr>
 
 
 
@@ -850,6 +854,9 @@ These are both remote branches and the way that we fetch them and work on them i
 
 ### Fetching from Origin Versus Pulling from a Fork
 
+* Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
+* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
+* The way that you fetch or pull a remote branch into your local folder and work on it is different depending on whether the branch was pushed to the origin or came from a fork. 
 
 </td></tr>
 
@@ -859,14 +866,7 @@ We are going to be checking out remote branches as a regular maintainer and as a
 
 2. fetch or pull them to your local computer, work on them, makes changes to them, push the changes back to the remote branch in the same way
 
-
-Secondly, the way that you fetch or pull a remote branch into your local folder and work on it is different depending on whether or not the branch was pushed to the origin or came from a fork. 
-
 We can fetch all of the updates from the origin to a temporary folder locally. When we fetch these updates, they will not include updates from a fork. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
-
-
-* Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
-* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
 
 If you click branches tab, can see a list of the branches
 
@@ -926,7 +926,7 @@ https://help.github.com/articles/fork-a-repo
 
 </td><td>
 
-### Shared Repo Model Feature or Pull Request Branch
+### Shared Repo Model Feature Branch or Pull Request Branch
 
 Using origin as an example, because is the most common. Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
 
@@ -957,7 +957,9 @@ $ git push origin <local-branch-name>:<remote-branch-name>
 
 </td><td>
 
-### Forked Repo Model Feature or Pull Request Branch
+### Forked Repo Model Feature Branch or Pull Request Branch
+
+Because it is outside of the origin, it is not fetched in updates. We need to fetch it by its URL. 
 
 Create and checkout a new branch (in this case off of the master branch, but could be another). Pull the contents of the remote forked repo branch into it (could be as a feature branch or a pull request branch).
 
