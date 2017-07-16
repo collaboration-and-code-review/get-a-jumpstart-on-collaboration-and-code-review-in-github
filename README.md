@@ -192,12 +192,11 @@ Unfortunately, it would take almost 3 more years for me to begin doing code revi
 There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture. I think quite often, when people are using Git and GitHub, they are focusing on the details and missing the larger picture. This talk is about the larger picture. 
 -->
 
-This talk is about teaching you the underlying logic and essential process between collaboration and code review, so that you can get started as quickly as possible. 
+This talk is about teaching you the underlying logic and essential process between collaboration and code review and the typical way of doing things, so that you can get started as quickly as possible. 
 
 There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
 
 <!--
-I am going to tell you the most typical examples. 
 Parts of this process can be reused, for instance, during code review. 
 -->
 
@@ -293,11 +292,12 @@ Type q to exit
 
 </td><td>
 
-### Git and GitHub Tour
+### What are Git and GitHub
 
 Git is a version control system that you install on your computer and use via your terminal. GitHub is a web browser dashboard you can use in connection with Git. GitHub is kind of like a social network for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. 
 
 <!--
+Git and GitHub Tour
 What is open-source?
 -->
 
@@ -312,11 +312,7 @@ What is open-source?
 
 ### What Local Environment Looks Like
 
-You can make a copy of a repo (clone) on your computer, make changes, then transfer (push) the changes back to the repo on GitHub. Meanwhile, other users can add their changes. Git and GitHub will record every change to a file and will tell you if there is a conflict. 
-
-<!--
-You're going to be transferring file changes back and forth between local Git and GitHub repositories
--->
+You can make a copy of a repo (clone) on your computer, make changes, then transfer (push) the changes back to the repo on GitHub and fetch updates. Meanwhile, other users can add their changes. Git and GitHub will record every change to a file and will tell you if there is a conflict. 
 
 </td></tr>
 
@@ -482,12 +478,6 @@ When you fork a repo, GitHub creates a copy of the repo, in your user (or organi
 
 Forks can be used to propose a change to the original repository, or can be the starting point for a new idea
 
-<!--
-When changes are made to the original repo, the fork will not update. I am going to tell you how to deal with that later.
-
-https://help.github.com/articles/fork-a-repo
- -->
-
 </td></tr>
 
 
@@ -499,9 +489,7 @@ https://help.github.com/articles/fork-a-repo
 
 ### Example: DjangoCon US Website as a "Shared Repository"
 
-<!--
-* If you have write permission to a repo (user account or organizational), you can make changes directly within the repo along with other users, this is called the “Shared Repository” Model
--->
+The second year that I helped with the DangoCon US website, I became a maintainer, so I was given write permission to the DjangoCon US website repo. I could make changes directly within the repo, along with the other maintainers. This is called the "Shared Repository" Model. I no longer needed a fork. 
 
 </td></tr>
 
@@ -562,13 +550,11 @@ Branches
 
 ### About Branches
 
+Whereas a fork is a copy of the entire repo, a branch is a copy of another branch within your repo.
+
 When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
 
 Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch.
-
-<!--
-Whereas a fork is a copy of the entire repo, a branch is a copy of a branch within your repo.
--->
 
 </td></tr>
 
@@ -576,7 +562,7 @@ Whereas a fork is a copy of the entire repo, a branch is a copy of a branch with
 <!--
 Rules
 The place you clone from is your origin
-If you forked the repo, you are fetching from upstream
+If you forked the repo, the original repo is your upstream and you are fetching from the upstream to your local clone and pushing the updates to your fork
 If you are fetching, for person who is a maintainer with write permission, it is your origin
 If you forked the repo and are fetching from upstream, it is your upstream
 For all of these commands, you just need to remember if it is your origin or your upstream
@@ -785,10 +771,11 @@ In the browser, go to the repo you want your pull request to be merged into. The
 * If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
 * Click "Create pull request"
 
-<!--
-base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
-base: master compare:<branch-name>
--->
+If you are submitting the pull request from within the repo:
+* base: master compare:<branch-name>
+
+If you are submitting the pull request a forked repo:
+* base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
 
 </td></tr>
 
@@ -916,7 +903,12 @@ This is helpful to know because these will include branches pushed directly to t
 
 </td></tr>
 
+<!--
+When changes are made to the original repo, the fork will not update. I am going to tell you how to deal with that later.
 
+https://help.github.com/articles/fork-a-repo
+ -->
+ 
 
 <tr><td width="30%">
 
