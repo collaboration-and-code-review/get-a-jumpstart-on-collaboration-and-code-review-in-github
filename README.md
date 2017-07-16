@@ -614,6 +614,37 @@ https://help.github.com/articles/about-remote-repositories
 </td></tr>
 
 
+<!--
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Checking Out and Working on a Remote Branch
+
+You need to have write permission to the branch and fetch it from the remote. The remote can be represented by a <remote-name> or a remote URL
+
+Pushing and pulling via <remote-name>
+
+```bash
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+</td></tr>
+-->
+
+
+
+
 <tr><td width="30%">
 
 ![Slide 30]()
@@ -905,13 +936,13 @@ $ git checkout -b <local-branch-name> origin/<branch-name>
 $ git merge master
 ```
 
-Push additional commits to organizational pull request
+Push additional commits to organizational feature branch or pull request branch
 
 ```bash
 $ git push origin <branch-name> 
 ```
 
-Push additional commits to organizational pull request, if local branch name is different than pull request branch name
+Push additional commits to organizational feature branch or pull request branch, if local branch name is different than pull request branch name
  
 ```bash
 $ git push origin <local-branch-name>:<remote-branch-name>
@@ -935,13 +966,13 @@ $ git checkout -b <local-branch-name> master
 $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
-Push additional commits to forked repo pull request (contributor needs to have given permission, and local branch name and remote branch name need to match)
+Push additional commits to forked repo feature branch or pull request branch (contributor needs to have given permission, and local branch name and remote branch name need to match)
 
 ```bash
 $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
-Push additional commits to forked repo pull request, if local branch name is different than pull request branch name
+Push additional commits to forked repo feature branch or pull request branch, if local branch name is different than pull request branch name
 
 ```bash
 $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
@@ -949,34 +980,6 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 
 </td></tr>
 
-
-<!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Checking Out and Working on a Remote Branch
-
-You need to have write permission to the branch and fetch it from the remote. The remote can be represented by a <remote-name> or a remote URL
-
-Pushing and pulling via <remote-name>
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-</td></tr>
--->
 
 
 <tr><td width="30%">
@@ -1197,6 +1200,8 @@ $ git push <remote-name> :<branch-name>
 </td><td>
 
 ### Adding an Upstream Remote and Syncing a Fork
+
+Let's go back to the perspective of a person who has cloned a repo locally from a fork.
 
 The git remote add command takes two arguments:
 * A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
