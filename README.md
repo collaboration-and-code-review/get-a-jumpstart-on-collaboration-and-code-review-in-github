@@ -483,6 +483,8 @@ When you fork a repo, GitHub creates a copy of the repo, in your user (or organi
 Forks can be used to propose a change to the original repository, or can be the starting point for a new idea
 
 <!--
+When changes are made to the original repo, the fork will not update. I am going to tell you how to deal with that later.
+
 https://help.github.com/articles/fork-a-repo
  -->
 
@@ -547,7 +549,7 @@ Branches
 * Branches are a best practice
 * Can be used by any GitHub user
 * Give you more freedom
-* You can have an unlimited number of branches
+* You can have an unlimited number of branches, so you can do unlimited things
 
 </td></tr>
 
@@ -560,9 +562,13 @@ Branches
 
 ### About Branches
 
-When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be merged into the master branch. The master branch will be like it was before, except with changes made from the branch.
+When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
 
-Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. 
+Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch.
+
+<!--
+Whereas a fork is a copy of the entire repo, a branch is a copy of a branch within your repo.
+-->
 
 </td></tr>
 
@@ -586,19 +592,18 @@ When you fetch a feature branch or pull request to work on it locally and possib
 
 ### Perspective: Submitting a Pull Request
 
-In this example, I am cloning a repo from GitHub, creating a branch locally, pushing the branch to GitHub, and submitting a pull request. 
+In this example, I am cloning a repo from GitHub, creating a feature branch locally, make a change to it, pushing the branch back to the origin repo on GitHub, and submitting a pull request for the changes to be merged into the DjangoCon website. 
+
+The process will be almost the same regardless of the situation. 
+
+1. Contributor without write permission forking the repo and cloning the fork
+1. Maintainer with write permission cloning the DjangoCo US repo
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
 
 <!--
-It could be either a pull request I am submitting through a fork, when I did not have write access to the DjangoCon US website repo. Or, it could be a pull request that I am submitting through the organizational repo after I became a maintainer. 
-
-The person has cloned a repo (either the organizational repo or a fork) that he or she has write permission to, is going to create a feature branch, make changes to the feature branch, push the branch back to the origin, and submit a pull request for the changes to be merged into the source.
-
-The process for creating and pushing a branch is very similar for anyone, regardless of which collaborative development model you are using (organizational repo or forked repo). 
-
 Folder/files/text editor
 
 Clone/Download
@@ -615,6 +620,7 @@ Clone/Download
 
 ### Remote Origin
 
+<!--
 A remote is a repo in GitHub that you push or pull code from, and the remote will have a name you will use to refer to it on the command line.
 
 When you clone a repo locally, the repo you cloned from automatically becomes a remote named "origin". "origin" is a default remote. When you push changes to "origin", you will be pushing changes to the repo you cloned from. 
@@ -623,7 +629,6 @@ If you cloned from a fork, when you push to "origin", you will be pushing to the
 
 You can then submit a pull request for the new branch in your origin. 
 
-<!--
 Will talk later about adding a remote
 
 https://help.github.com/articles/about-remote-repositories
@@ -796,13 +801,17 @@ base: master compare:<branch-name>
 
 ### Perspective
 
-We are switching our perspective now. We are now a DjangoCon US website maintainer with write permission to the repo. 
+We are switching our perspective now. We are now workign only as DjangoCon US website maintainer with write permission to the DjangoCon repo, which is our origin. 
 
-The DjangoCon US repo is our origin. 
+We are going to review the same kind of pull requests we just submitted. 
 
-We are going to review a pull request submitted from within the DjangoCon US website repo. We are also going to be reviewing a pull request submitted from the forked repo. The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
+1. Pull requests submitted from a branch pushed to the DjangoCon US website repo
+2. Pull requests submitted from a forked repo branch
+
+The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -813,42 +822,35 @@ We are going to review a pull request submitted from within the DjangoCon US web
 
 ### A Couple of Important Things to Understand
 
-Types of branches
+We've talked about a couple of different types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-Firstly, when we talk about feature branches and pull request branches, they are all just remote branches
+1. The main difference between feature branches and pull request branches is that with a feature branch, as a reviewer, you are deciding whether or not to merge the branch into the branch it is intended to be merged into
+2. Otherwise, feature branches and pull request branches are all just remote branches and you fetch or pull them to your local computer, work on them, makes changes to them, push the changes back to the remote branch in the same way
 
 If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
+Here's the catch
+
+<!--
 Secondly, the way that you fetch or pull a remote branch into your local folder and work on it is different depending on whether or not the branch was pushed to the origin or came from a fork. 
 
 We can fetch all of the updates from the origin to a temporary folder locally. When we fetch these updates, they will not include updates from a fork. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
-
-</td></tr>
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
 
 ### Checkout out Remote Branches
 
 * Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
 * If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
-* The main difference with a pull request branch is that the reviewer is deciding whether or not to merge, then possibly merging
+
+If you click branches tab, can see a list of the branches
+
+origin/<branch-name>
+-->
 
 </td></tr>
 
-<!--
-If you click branches tab, can see a list of the branches
--->
+
 
 
 
