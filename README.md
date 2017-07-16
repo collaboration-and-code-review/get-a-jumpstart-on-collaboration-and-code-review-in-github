@@ -489,7 +489,7 @@ Forks can be used to propose a change to the original repository, or can be the 
 
 ### Example: DjangoCon US Website as a "Shared Repository"
 
-The second year that I helped with the DangoCon US website, I became a maintainer, so I was given write permission to the DjangoCon US website repo. I could make changes directly within the repo, along with the other maintainers. This is called the "Shared Repository" Model. I no longer needed a fork. 
+The second year that I helped with the DangoCon US website, I became a maintainer, so I was given write permission to the DjangoCon US website repo. I could make changes and submit a pull request within the DjangoCon US website repo, along with the other maintainers. I no longer needed a fork. This is called the "Shared Repository" Model. 
 
 </td></tr>
 
@@ -559,17 +559,6 @@ Meanwhile, you will want to keep the master and feature branches up-to-date by m
 </td></tr>
 
 
-<!--
-Rules
-The place you clone from is your origin
-If you forked the repo, the original repo is your upstream and you are fetching from the upstream to your local clone and pushing the updates to your fork
-If you are fetching, for person who is a maintainer with write permission, it is your origin
-If you forked the repo and are fetching from upstream, it is your upstream
-For all of these commands, you just need to remember if it is your origin or your upstream
-When you fetch a feature branch or pull request to work on it locally and possibly add additional commits to it, you are checking out a remote branch
--->
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -590,6 +579,8 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
 
 <!--
+You sometimes need to work on a repo locally
+
 Folder/files/text editor
 
 Clone/Download
@@ -786,12 +777,13 @@ If you are submitting the pull request a forked repo:
 
 </td><td>
 
-### Perspective
+### Perspective: Checking Out Remote Branches
 
-We are switching our perspective now. We are now workign only as DjangoCon US website maintainer with write permission to the DjangoCon repo, which is our origin. 
+We are switching our perspective now. We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
 
-We are going to review the same kind of pull requests we just submitted. 
+We are going to be working on and reviewing the pull requests we submitted. 
 
+Recap:
 1. Pull requests submitted from a branch pushed to the DjangoCon US website repo
 2. Pull requests submitted from a forked repo branch
 
@@ -800,6 +792,24 @@ The forked repo is not an origin for us. We would not normally have write permis
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### The Difference Between a Feature Branch and a Pull Request Branch
+
+Something needs to be clarified.
+
+We've talked about a couple of different types of branches
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+These are both remote branches and the way that we fetch them and work on them is the same. The main difference between the two is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+
+</td></tr>
+
 
 <tr><td width="30%">
 
@@ -807,25 +817,22 @@ The forked repo is not an origin for us. We would not normally have write permis
 
 </td><td>
 
-### A Couple of Important Things to Understand
+### Fetching from Origin Versus Pulling from a Fork
 
-We've talked about a couple of different types of branches
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
 
-1. The main difference between feature branches and pull request branches is that with a feature branch, as a reviewer, you are deciding whether or not to merge the branch into the branch it is intended to be merged into
-2. Otherwise, feature branches and pull request branches are all just remote branches and you fetch or pull them to your local computer, work on them, makes changes to them, push the changes back to the remote branch in the same way
+</td></tr>
 
-If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
-
-Here's the catch
 
 <!--
+We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+
+2. fetch or pull them to your local computer, work on them, makes changes to them, push the changes back to the remote branch in the same way
+
+
 Secondly, the way that you fetch or pull a remote branch into your local folder and work on it is different depending on whether or not the branch was pushed to the origin or came from a fork. 
 
 We can fetch all of the updates from the origin to a temporary folder locally. When we fetch these updates, they will not include updates from a fork. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
 
-### Checkout out Remote Branches
 
 * Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
 * If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
@@ -835,45 +842,15 @@ If you click branches tab, can see a list of the branches
 origin/<branch-name>
 -->
 
-</td></tr>
-
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Shared Repo Model Feature or Pull Request Branch
-
-Using origin as an example, because is the most common. Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
-
-```bash
-$ git fetch origin
-$ git checkout -b <local-branch-name> origin/<branch-name>
-$ git merge master
-```
-
-Push additional commits to organizational pull request
-
-```bash
-$ git push origin <branch-name> 
-```
-
-Push additional commits to organizational pull request, if local branch name is different than pull request branch name
- 
-```bash
-$ git push origin <local-branch-name>:<remote-branch-name>
-```
-
-</td></tr>
-
-
+<!--
+Rules
+The place you clone from is your origin
+If you forked the repo, the original repo is your upstream and you are fetching from the upstream to your local clone and pushing the updates to your fork
+If you are fetching, for person who is a maintainer with write permission, it is your origin
+If you forked the repo and are fetching from upstream, it is your upstream
+For all of these commands, you just need to remember if it is your origin or your upstream
+When you fetch a feature branch or pull request to work on it locally and possibly add additional commits to it, you are checking out a remote branch
+-->
 
 <tr><td width="30%">
 
@@ -909,6 +886,39 @@ When changes are made to the original repo, the fork will not update. I am going
 https://help.github.com/articles/fork-a-repo
  -->
  
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repo Model Feature or Pull Request Branch
+
+Using origin as an example, because is the most common. Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
+
+```bash
+$ git fetch origin
+$ git checkout -b <local-branch-name> origin/<branch-name>
+$ git merge master
+```
+
+Push additional commits to organizational pull request
+
+```bash
+$ git push origin <branch-name> 
+```
+
+Push additional commits to organizational pull request, if local branch name is different than pull request branch name
+ 
+```bash
+$ git push origin <local-branch-name>:<remote-branch-name>
+```
+
+</td></tr>
+
 
 <tr><td width="30%">
 
