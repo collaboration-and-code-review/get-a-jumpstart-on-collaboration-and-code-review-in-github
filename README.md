@@ -210,23 +210,31 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 </td><td>
 
-### A Few Notes
+### What are Git and GitHub
 
-I want to tell you a few things before we get started, so you can understand the context of what we are doing.
-
-* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
-* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
-* I will identify best practices any time possible
-* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
 
 <!--
-You will use terminal/command line often with code review.
+Git and GitHub Tour
+What is open-source?
+Definition?
+-->
 
-(<> symbol denotes a placeholder/variable)
-Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
-Example- some operating systems do not use dollar signs $ as command line prompts.
+</td></tr>
 
-Starting with the code part because if was the part that was harder for me to find info about, not more important
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What a Local Environment Looks Like
+
+You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+
+<--
+You cannot do everything in the browser
 -->
 
 </td></tr>
@@ -251,6 +259,34 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 <!--
 Text editor recommendations
 Bash command list
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### A Few Notes
+
+I want to tell you a few things before we get started, so you can understand the context of what we are doing.
+
+* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
+* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
+* I will identify best practices any time possible
+* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+
+<!--
+You will use terminal/command line often with code review.
+
+(<> symbol denotes a placeholder/variable)
+Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
+Example- some operating systems do not use dollar signs $ as command line prompts.
+
+Starting with the code part because if was the part that was harder for me to find info about, not more important
 -->
 
 </td></tr>
@@ -287,24 +323,6 @@ Type q to exit
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What are Git and GitHub
-
-Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
-
-<!--
-Git and GitHub Tour
-What is open-source?
-Definition?
--->
-
-</td></tr>
-
 
 <!--
 <tr><td width="30%">
@@ -317,23 +335,6 @@ Definition?
 
 </td></tr>
 -->
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What Local Environment Looks Like
-
-You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
-
-<--
-You cannot do everything in the browser
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
