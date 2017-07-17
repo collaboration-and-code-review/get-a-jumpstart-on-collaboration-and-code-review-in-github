@@ -196,11 +196,6 @@ I am going to use DjangoCon US website as an example throughout this talk.
 * Every example am I going to talk about can be applied to the DjangoCon US website
 * They are real examples from my experience
 
-<!--
-* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
-* The process is based on GitHub Flow, which is a simple, agile process
--->
-
 </td></tr>
 
 
@@ -276,12 +271,12 @@ I want to tell you a few things before we get started, so you can understand the
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
 * We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
+* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
+* The process is based on GitHub Flow, which is a simple, agile process
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
 <!--
-You will use terminal/command line often with code review.
-
 (<> symbol denotes a placeholder/variable)
 Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
 Example- some operating systems do not use dollar signs $ as command line prompts.
