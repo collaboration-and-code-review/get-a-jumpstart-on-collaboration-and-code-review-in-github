@@ -879,14 +879,18 @@ If you learn to deal with remote branches in general, you will have the fundamen
 
 ### Fetching from Origin Versus Pulling from a Fork
 
-* The way that you fetch or pull a remote branch into your local folder and work on it is different depending on whether the branch was pushed to the origin or came from a fork. 
+There is another tricky issue. 
+
+* The way that you fetch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it is different depending on whether the branch was pushed to the shared repository or came from a fork. 
+
+This is why the instructions for reviewing a pull request locally are different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model. 
+
+Let me explain why. 
 
 <!--
+Look for shared repository/original repository references
+
 We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
-
-Regardless of whether a feature branch of pull request branch
-
-The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 -->
 
 </td></tr>
@@ -900,44 +904,25 @@ The set of instructions will be slightly different depending on whether the pull
 
 ### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
 
-We can fetch all of the updates from the origin to a temporary folder locally. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
+When we are working from within the origin, we can fetch all of the updates from the origin to a temporary folder locally called .git. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
 
 There are three types of branches:
 * remote branch
 * remote-tracking branch (inside of the hidden .git folder, which stores info)
 * local branch
 
+```bash
+$ git fetch --prune
+$ git branch -a
+$ git branch -r
+```
+
 <!--
-git fetch --prune
-git branch -r
-git branch -a
-
 We've already talked about the concept of remotes when we talked about origin.  
-
-When you fetch from a remote, you are fetching all of the changes into the .git folder.
 -->
 
 </td></tr>
 
-<!--
-https://help.github.com/articles/fork-a-repo
-
-2. fetch or pull them to your local computer, work on them, makes changes to them, push the changes back to the remote branch in the same way
-
-If you click branches tab, can see a list of the branches
-
-origin/<branch-name>
--->
-
-<!--
-Rules
-The place you clone from is your origin
-If you forked the repo, the original repo is your upstream and you are fetching from the upstream to your local clone and pushing the updates to your fork
-If you are fetching, for person who is a maintainer with write permission, it is your origin
-If you forked the repo and are fetching from upstream, it is your upstream
-For all of these commands, you just need to remember if it is your origin or your upstream
-When you fetch a feature branch or pull request to work on it locally and possibly add additional commits to it, you are checking out a remote branch
--->
 
 
 
@@ -1145,7 +1130,6 @@ See also, pull request shortcuts
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 39]()
@@ -1260,15 +1244,7 @@ upstream  https://github.com/upstream-username/original-repository (fetch)
 upstream  https://github.com/upstream-username/original-repository (push)
 ```
 
-<!--
-If an organizational repo is your origin, because you have write permission, you are fetching from the origin to update your local clone. If you have forked a repo, the organizational repo is your upstream. You will fetch updates from the organizational repo to your local clone, then push the updates to your fork. When the organizational repo changes, the fork is not automatically updated. You need to update the fork, ideally without deleting it (for instance, in case you have unresolved pull requests).
-
-This associates the name origin with the <remote-url>
-You should see the URL for your fork as origin, and the URL for the original repository as upstream.
--->
-
 </td></tr>
-
 
 
 <tr><td width="30%">
@@ -1349,6 +1325,33 @@ $ git merge <branch-name>
 ```
 
 </td></tr>
+
+
+
+<!--
+If an organizational repo is your origin, because you have write permission, you are fetching from the origin to update your local clone. If you have forked a repo, the organizational repo is your upstream. You will fetch updates from the organizational repo to your local clone, then push the updates to your fork. When the organizational repo changes, the fork is not automatically updated. You need to update the fork, ideally without deleting it (for instance, in case you have unresolved pull requests).
+
+This associates the name origin with the <remote-url>
+You should see the URL for your fork as origin, and the URL for the original repository as upstream.
+-->
+
+<!--
+2. fetch or pull them to your local computer, work on them, makes changes to them, push the changes back to the remote branch in the same way
+
+If you click branches tab, can see a list of the branches
+
+origin/<branch-name>
+-->
+
+<!--
+Rules
+The place you clone from is your origin
+If you forked the repo, the original repo is your upstream and you are fetching from the upstream to your local clone and pushing the updates to your fork
+If you are fetching, for person who is a maintainer with write permission, it is your origin
+If you forked the repo and are fetching from upstream, it is your upstream
+For all of these commands, you just need to remember if it is your origin or your upstream
+When you fetch a feature branch or pull request to work on it locally and possibly add additional commits to it, you are checking out a remote branch
+-->
 
 <!--
 It's good practice to regularly sync your fork with the upstream repository. 
@@ -1928,6 +1931,7 @@ Pros and Cons
 
 https://help.github.com/articles/about-remote-repositories
 https://help.github.com/articles/fetching-a-remote
+https://help.github.com/articles/fork-a-repo
 
 Permission Levels
 https://help.github.com/articles/access-permissions-on-github
