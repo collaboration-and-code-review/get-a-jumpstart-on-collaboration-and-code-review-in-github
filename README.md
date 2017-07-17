@@ -186,7 +186,25 @@ So, it's actually a really positive thing, imo, when someone wants to transition
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 00]()
+
+</td><td>
+
+### DjangoCon as Example Project
+
+<!--
+* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
+* The process is based on GitHub Flow, which is a simple, agile process
+
+Using DjangoCon Example
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
 
 </td><td>
 
@@ -196,14 +214,10 @@ I want to tell you a few things before we get started, so you can understand the
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
 * We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
-* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
-* The process is based on GitHub Flow, which is a simple, agile process
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 
 <!--
-Using DjangoCon Example
-
 You will use terminal/command line often with code review.
 
 (<> symbol denotes a placeholder/variable)
@@ -336,11 +350,9 @@ When you create a user account, you are the owner, so you have write permission 
 
 Imagine a repo containing a mission critical software project deployed live. It would not be a good idea for just anyone to be able to come along and make changes within that repo. So what happens is that the owner of the organizational account will give write permission to specific idividuals, usually as maintainers. There is often a level of trust involved. 
 
-Whether you have write permission to a repo determines how you contribute to it
+Whether you have write permission to a repo determines how you contribute to it (which Collaborative Development Model you use)
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -351,26 +363,16 @@ Whether you have write permission to a repo determines how you contribute to it
 
 ### The Two Collaborative Development Models
 
-The concept of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
+A Collaborative Development Model is a fancy term for the process users go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
 
 The two Collaborative Development Models: 
-* "Shared Repository" Model
 * "Fork and Pull" Model
+* "Shared Repository" Model
 
 There are two types of accounts and two types of Collaborative Development Models
 Conveniently, one collaborative development model typically corresponds to one type of account, and the other collaborative development model typically corresponds to the other type of account
 
 </td></tr>
-
-
-<!--
-Some examples of what you can do:
-* Push a branch directly to the repo (instead of via fork)
-* Edit a file
-* Review pull requests
-
-See write permissions chart for info
--->
 
 
 <tr><td width="30%">
@@ -381,7 +383,7 @@ See write permissions chart for info
 
 ### "Shared Repository"
 
-A “Shared Repository is typically found in an organization account  because it’s where teams of maintainers are working on repos together
+A “Shared Repository is typically found in an organization account  because it’s where teams of maintainers are working on repos together. All of the maintainers have write permission to the "Shared Repository" and are therefore able to make changes directly within the repo. 
 
 </td></tr>
 
@@ -394,9 +396,11 @@ A “Shared Repository is typically found in an organization account  because it
 
 ### "Fork and Pull"
 
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write access to and need to fork it to contribute
+The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to and need to make a copy of it (fork it) to contribute. 
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -414,6 +418,16 @@ Using an organizational account "Shared Repository" rather than a user account "
 * Otherwise, the repo "Shared Repository" settings are almost exactly the same
 
 </td></tr>
+
+
+<!--
+Some examples of what you can do:
+* Push a branch directly to the repo (instead of via fork)
+* Edit a file
+* Review pull requests
+
+See write permissions chart for info
+-->
 
 
 <tr><td width="30%">
