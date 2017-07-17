@@ -124,7 +124,7 @@ Later on in this talk, I will debunk some of the myths that I believed at the ti
 
 <tr><td width="30%">
 
-![Slide 6]()
+![Slide 00]()
 
 </td><td>
 
@@ -232,7 +232,7 @@ Starting with the code part because if was the part that was harder for me to fi
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 00]()
 
 </td><td>
 
@@ -256,7 +256,7 @@ Bash command list
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 00]()
 
 </td><td>
 
@@ -336,7 +336,7 @@ Organization account
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 00]()
 
 </td><td>
 
@@ -357,7 +357,7 @@ Whether you have write permission to a repo determines how you contribute to it 
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 00]()
 
 </td><td>
 
@@ -377,7 +377,7 @@ Conveniently, one collaborative development model typically corresponds to one t
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 00]()
 
 </td><td>
 
@@ -390,7 +390,7 @@ A “Shared Repository is typically found in an organization account  because it
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 00]()
 
 </td><td>
 
@@ -401,8 +401,6 @@ The “Fork and Pull” Model is typically used in user account repos, because u
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -411,28 +409,17 @@ The “Fork and Pull” Model is typically used in user account repos, because u
 
 ### Shared Repository Model: User Account Versus Organization
 
-Any repo you come across, whether it be in an organizational account or a user account could be a shared repo or forked repo. For example, a user account owner can give other users write permission to be collaborators on individual repos, which are then "shared repositories", but this is not so common. 
+There is something a bit off topic that I do want to point out. A user account repo can be a "Shared Repository". A user account owner can invite other users to collaborate on a repo that he or she owns. But there are a few advantages to using a organizational repo repo as a "Shared Repository" instead of an user account repo. 
 
-Using an organizational account "Shared Repository" rather than a user account "Shared Repository" for collaboration has some advantages:
 * Organizational account owners can create teams and permissions across multiple repos
 * Otherwise, the repo "Shared Repository" settings are almost exactly the same
 
 </td></tr>
 
 
-<!--
-Some examples of what you can do:
-* Push a branch directly to the repo (instead of via fork)
-* Edit a file
-* Review pull requests
-
-See write permissions chart for info
--->
-
-
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 00]()
 
 </td><td>
 
@@ -445,28 +432,28 @@ Even if you have write permission to a "Shared Repository", just because you can
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 00]()
 
 </td><td>
 
 ### Example: Forking DjangoCon US Website Repo
 
-The first year that I helped with the DangoCon US website, I was not a maintainer, so I did not have write permission to the DjangoCon US website repo. So, when I wanted to make a change to the repo, I needed to make a copy (fork) the repo to my user account, make the changes, and submit a pull request for the changes to be accepted in the DjangoCon US website repo. This is the "Fork and Pull" Model. 
+The first year that I helped with the DangoCon US website, I was not a maintainer, so I did not have write permission to the DjangoCon US website repo. So, when I wanted to make a change to the repo, I needed to make a copy (fork) the repo to my user account, make the changes, and submit a pull request for the changes to be accepted (pulled) into the DjangoCon US website repo. This is the "Fork and Pull" Model. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 00]()
 
 </td><td>
 
 ### Creating a Fork
 
-Two Ways to Fork
+There are two Ways to fork:
 * Click the "Fork" button
-* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account.
+* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account, and notify you that it is forking it. 
 
 <!--
 Forking graphic
@@ -477,22 +464,22 @@ Forking graphic
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 00]()
 
 </td><td>
 
 ### About Forks
 
-When you fork a repo, GitHub creates a copy of the repo, in your user (or organizational) account, with your user name in the URL. The fork will be an exact copy of the original repo at the time it was forked. You will be the only person with write permission to it unless you give collaborator permission to someone else. If you can make any changes to the fork that you want (including adding collaborators), and the original repo will not be affected unless you submit a pull request and a project maintainer pulls your changes into the original repository. When you delete a fork, you are not deleting the original repo. 
+So after I forked the repo, I had a copy of the repo in my user account, with my user name in the URL (an organizational account can also fork a repo, but less commmon). The fork would be an exact copy of the original repo at the time it was forked. I owned the fork. I was the only person with write permission to it, unless I would give collaborator permission to someone else. The DjangoCon US website maintainers would not have access unless I gave it to them. I could make any changes to the fork that I wanted, and the original repo will not be affected unless I submitted a pull request and a project maintainer pulled my changes into the DjangoCon US website repository. If I would delete the fork, the original DjangoCon US website repo would not be deleted. 
 
-Forks can be used to propose a change to the original repository, or can be the starting point for a new idea
+Forks can be used to propose a change to the original repository, or can be the starting point for a new idea (depending on the license)
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 00]()
 
 </td><td>
 
@@ -500,12 +487,21 @@ Forks can be used to propose a change to the original repository, or can be the 
 
 The second year that I helped with the DangoCon US website, I became a maintainer, so I was given write permission to the DjangoCon US website repo. I could make changes and submit a pull request within the DjangoCon US website repo, along with the other maintainers. I no longer needed a fork. This is called the "Shared Repository" Model. 
 
+Some examples of what I can do now:
+* Push work (a branch) directly to the repo (instead of via fork)
+* Edit a file
+* Review pull requests
+
+<!--
+See write permissions chart for info
+-->
+
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 00]()
 
 </td><td>
 
@@ -521,7 +517,7 @@ In order to be able to increase your level of responsibility, you need to be abl
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 00]()
 
 </td><td>
 
@@ -563,9 +559,12 @@ Whereas a fork is a copy of the entire repo, a branch is a copy of another branc
 
 When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
 
-Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch.
+Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.
 
 </td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -585,7 +584,7 @@ The process will be almost the same regardless of the situation.
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request.
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
 
 <!--
 You sometimes need to work on a repo locally
