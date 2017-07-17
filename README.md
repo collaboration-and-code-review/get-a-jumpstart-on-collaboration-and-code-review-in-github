@@ -73,53 +73,51 @@ I hope you've had a chance to take a good look at the DjangoCon website. I'm so 
 
 <tr><td width="30%">
 
-![Slide 4]()
+![Slide 00]()
+
+</td><td>
+
+### What This Talk Is and Isn’t
+
+When it comes to Git commands, there are many variations of how things can be done. I'm not going to be teaching you about the variations. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
+
+This talk is about teaching you the underlying logic and essential process between collaboration and code review and how they are connection, so that you can understand why things are done the way that they are and get started as quickly as possible. Also, I'm hoping that you will understand how commands can be adapted and reused. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
 
 </td><td>
 
 ### The Journey and Destination
 
-Let’s pretend we’re going on a journey. The journey is to learn collaboration and code review. I've made this Journey Before. When you are making a journey, often you are engrossed in each step. When you complete the journey, looking back, perhaps you see the larger picture and have learned something. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
+I think quite often with Git and GitHub, people are learning what they need to know as they need to know it. I think people often do not understand the overall process or best practices of collaboration and code review because they haven't gone that far. 
 
-I want to impart some of my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did, because I want all of you to get started more quickly than me.
+I like at my process of learning collaboration and code review as being kind of like a journey. When you go on a journey, by the time you are done, you have probably learned something and if you did the journey again, you would do some things differently. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
 
-Do you remember a time before you were interested in building things with code? There is a lot of power and value in the ability to make things. You can apply collaboration and code review skills in an unlimited number of situations. GitHub is a very popular place to work on open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
-
-Some benefits of learning collaboration and code review
-* If you are a student: being prepared for your studies and career
-* If a developer: perhaps you can get a promotion
-* In general: you can make cool stuff, make choices that influence product
+There is a process that supports collaboration and code review and there is a process that doesn't. I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did.
 
 </td></tr>
 
-<!--
-### GitHub Audiences
-
-Organizations
-* For-profit (business)
-* Not-for-profit
-
-People
-* Professional developers
-* Hobbyists
-* Students
-
-Types of Projects
-* Cutting edge
-* Novelty
--->
 
 <tr><td width="30%">
 
-![Slide 5]()
+![Slide 00]()
 
 </td><td>
 
 ### How My Own Journey Began
 
-I want to do a bit of a flashback now. 
+I want to tell you how I got started witih open-source contribution, which is a bit unconventional. 
 
-I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good idea. But my account sat unused for months. I felt a bit intimidated. I wasn't sure if I fit in and I didn't know how to get started. Later on in this talk, I will debunk some of the myths that I believed at the time. 
+I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good idea. But my account sat unused for months. I didn't know how to get started. I felt a bit intimidated and I wasn't sure if I fit in. 
+
+<!--
+Later on in this talk, I will debunk some of the myths that I believed at the time. 
+-->
 
 </td></tr>
 
@@ -141,7 +139,7 @@ So I clicked on the link to the repo (definition?) to take a look.
 
 <tr><td width="30%">
 
-![Slide 7]()
+![Slide 00]()
 
 </td><td>
 
@@ -149,56 +147,39 @@ So I clicked on the link to the repo (definition?) to take a look.
 
 One sentence in the project README (definition?) made a big impact on me: "Are You New to Github But Want to Contribute?" 
 
-I had been wanting to contribute for months, but wasn't sure how, and now was my chance. I felt it was my destiny to contribute now. 
+That was me. I had been wanting to contribute for months, but wasn't sure how, and now was my chance. I had never seen someone offer like this. I felt it was my destiny to contribute now. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 8]()
+![Slide 00]()
 
 </td><td>
 
 ### My First Pull Request
 
-I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted my first pull request. As is often characteristic of moments of achievement like this, there was a huge adrenaline rush. 
+Just like I said earlier, I did not understand what the process was supposed to look like. I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted my first pull request. As is often characteristic of moments of achievement like this, there was a huge adrenaline rush. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 9]()
+![Slide 00]()
 
 </td><td>
 
 ### It Would Take Almost 3 More Years for Me to Do Code Review
 
-Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way. And it would be practical for there to be more maintainers. The number of open-source software users has skyrocketted, but the number of maintainers has not. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
+I kept at it. I kept using GitHub and learning about Git. 
 
-</td></tr>
+Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way. The code review process was a mystery to me. I had no idea really how to do it until I asked to do code review for the DjangoCon US website and started doing it. 
 
+The funny thing is, there is actually kind of a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
 
-<tr><td width="30%">
-
-![Slide 10]()
-
-</td><td>
-
-### What This Talk Is and Isn’t
-
-<!--
-There is a saying, "Don't miss the forest for the trees". It means, don't focus so much on the details that you don't see the larger picture. I think quite often, when people are using Git and GitHub, they are focusing on the details and missing the larger picture. This talk is about the larger picture. 
--->
-
-This talk is about teaching you the underlying logic and essential process between collaboration and code review and the typical way of doing things, so that you can get started as quickly as possible. 
-
-There are many variations to how things can be done in GitHub. This talk is not about teaching you all of those variations. At the end of this talk, you will find links to the official documentation of Git and GitHub where you can find info about variations. 
-
-<!--
-Parts of this process can be reused, for instance, during code review. 
--->
+So, it's actually a really positive thing, imo, when someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
 
 </td></tr>
 
@@ -211,7 +192,9 @@ Parts of this process can be reused, for instance, during code review.
 
 ### A Few Notes
 
-* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services (which some people prefer)
+I want to tell you a few things before we get started, so you can understand the context of what we are doing.
+
+* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
 * We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
 * The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
 * The process is based on GitHub Flow, which is a simple, agile process
@@ -226,6 +209,8 @@ You will use terminal/command line often with code review.
 (<> symbol denotes a placeholder/variable)
 Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
 Example- some operating systems do not use dollar signs $ as command line prompts.
+
+Starting with the code part because if was the part that was harder for me to find info about, not more important
 -->
 
 </td></tr>
@@ -242,7 +227,7 @@ Example- some operating systems do not use dollar signs $ as command line prompt
 * Install Git on your computer and set your email and username
 * Create a free [GitHub](https://github.com) account online
 * Find and open your computer terminal (a.k.a. command line) on your computer
-* The ability to navigate via terminal would be helpful (example: know how to change directory)
+* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later)
 * You might also want to have a text editor of your choice installed, to use to edit files
 
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
@@ -294,11 +279,12 @@ Type q to exit
 
 ### What are Git and GitHub
 
-Git is a version control system that you install on your computer and use via your terminal. GitHub is a web browser dashboard you can use in connection with Git. GitHub is kind of like a social network for developers. You have a profile where you store your code in repositories (a.k.a repos) and you have a newsfeed where you can see the activity of developers you follow. Organizations can have accounts too. 
+Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
 
 <!--
 Git and GitHub Tour
 What is open-source?
+Definition?
 -->
 
 </td></tr>
@@ -312,21 +298,24 @@ What is open-source?
 
 ### What Local Environment Looks Like
 
-You can make a copy of a repo (clone) on your computer, make changes, then transfer (push) the changes back to the repo on GitHub and fetch updates. Meanwhile, other users can add their changes. Git and GitHub will record every change to a file and will tell you if there is a conflict. 
+You can also make a copy (clone) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 00]()
 
 </td><td>
 
 ### Two Types of Accounts
 
-* Organization account
-* User account
+User account
+* A user account is the first type of account create. You have a profile where you store your code in repos and you have a newsfeed where you can see the activity of developers you follow. 
+
+Organization account
+* An account where a team of people are working together
 
 </td></tr>
 
@@ -339,23 +328,19 @@ You can make a copy of a repo (clone) on your computer, make changes, then trans
 
 ### Write Permission and Why It Matters
 
-Write Permission is an important concept in GitHub collaboration. 
+Write Permission is an important concept in GitHub collaboration. A person can have write permission to a repo. 
 
-* Whether you have write permission to a repo determines how you contribute to it
-* Having write permission means you can make changes directly inside of the repo 
-* Users can't just make changes to any repo. For example, a mission critical software project would not just want anyone to be able to go into the repo and make changes
-* There is often a level of trust involved when someone is added to an organization as a maintainer
+We are not talking about "write" permission in the context of English. When someone has write permission to a repo, it means they can make changes directly inside of the repo. 
 
-Some examples of what you can do:
-* Push a branch directly to the repo (instead of via fork)
-* Edit a file
-* Review pull requests
+When you create a user account, you are the owner, so you have write permission to all of your repos. 
 
-<!--
-See write permissions chart for info
--->
+Imagine a repo containing a mission critical software project deployed live. It would not be a good idea for just anyone to be able to come along and make changes within that repo. So what happens is that the owner of the organizational account will give write permission to specific idividuals, usually as maintainers. There is often a level of trust involved. 
+
+Whether you have write permission to a repo determines how you contribute to it
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -366,7 +351,7 @@ See write permissions chart for info
 
 ### The Two Collaborative Development Models
 
-The question of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
+The concept of write permission leads us to Collaborative Development Models. A Collaborative Development Model is a fancy term for the process people go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
 
 The two Collaborative Development Models: 
 * "Shared Repository" Model
@@ -376,6 +361,16 @@ There are two types of accounts and two types of Collaborative Development Model
 Conveniently, one collaborative development model typically corresponds to one type of account, and the other collaborative development model typically corresponds to the other type of account
 
 </td></tr>
+
+
+<!--
+Some examples of what you can do:
+* Push a branch directly to the repo (instead of via fork)
+* Edit a file
+* Review pull requests
+
+See write permissions chart for info
+-->
 
 
 <tr><td width="30%">
@@ -1739,6 +1734,32 @@ Finding Open Source Projects to Contribute To
 
 * Do a GitHub search such as ["pull requests welcome"](https://github.com/search?utf8=%E2%9C%93&q=pull+requests+welcome)
 * [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
+-->
+
+<!--
+Do you remember a time before you were interested in building things with code? There is a lot of power and value in the ability to make things. You can apply collaboration and code review skills in an unlimited number of situations. GitHub is a very popular place to work on open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
+
+Some benefits of learning collaboration and code review
+* If you are a student: being prepared for your studies and career
+* If a developer: perhaps you can get a promotion
+* In general: you can make cool stuff, make choices that influence product
+-->
+
+<!--
+### GitHub Audiences
+
+Organizations
+* For-profit (business)
+* Not-for-profit
+
+People
+* Professional developers
+* Hobbyists
+* Students
+
+Types of Projects
+* Cutting edge
+* Novelty
 -->
 
 
