@@ -602,19 +602,17 @@ Folder/files/text editor
 
 </td><td>
 
-### Remote Origin
+### Keeping Your Local Clone and GitHub Repo in Sync
 
-When you clone a repo locally and you make a change to the GitHub repo, the changes will not automatically show up in your local clone and vice versa. In order to keep your GitHub repo or local clone code up-to-date, you need to push changes from your local clone to the GitHub repo and pull changes from the GitHub repo to your local clone. 
+When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. If you make a change to the code locally, the code in the GitHub repo does not automatically update, and vice versa. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
 
-When you clone a repo locally, the repo you cloned from is now known as a remote repo called "origin" (it's default name). Your local clone will be aware that the code came from the origin and you will be able to use the name origin on the command line to push to and pull from the remote repo to keep your local clone and GitHub repo in sync. 
+GitHub tries to help you with this. When you first clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now known as a remote repo and is named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
 
 If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
 
 <!--
-When you make a change in the browser (remote repo), your local code does not automatically update. Likewise, when you make a change in your local code, the code in the browser does not automatically update. You need to push or pull the changes to sync your local code with the code in the remote repo. 
-
+Will talk later about adding a remote
 When changes are made to the original repo, the fork will not update. I am going to tell you how to deal with that later.
-We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
 -->
 
 </td></tr>
@@ -628,7 +626,7 @@ We are going to be checking out remote branches as a regular maintainer and as a
 
 </td><td>
 
-### Pushing and Pulling to Sync Local Code with Remote Repo
+### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 
 If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
 
@@ -648,15 +646,9 @@ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 <!--
 fetch it from the remote
-
-Will talk later about adding a remote
-
-https://help.github.com/articles/about-remote-repositories
 -->
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -766,6 +758,7 @@ $ git push origin <branch-name>
 There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 <!--
+DjangoCon and fork as examples
 You can then submit a pull request for the new branch in your origin. 
 -->
 
@@ -793,6 +786,8 @@ $ git checkout <branch-name>
 ```
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -837,6 +832,10 @@ Recap:
 2. Pull requests submitted from a forked repo branch
 
 The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
+
+<!--
+We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+-->
 
 </td></tr>
 
@@ -1913,6 +1912,7 @@ Advanced Collaborative Development Workflow Examples
 Pros and Cons
 * Some people find GUI (Graphical User Interfaces) such as the Browser or Desktop App to be easier to use
 
+https://help.github.com/articles/about-remote-repositories
 https://help.github.com/articles/fetching-a-remote
 
 Permission Levels
