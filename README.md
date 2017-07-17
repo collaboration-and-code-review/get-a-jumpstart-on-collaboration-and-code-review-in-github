@@ -312,7 +312,11 @@ Definition?
 
 ### What Local Environment Looks Like
 
-You can also make a copy (clone) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+
+<--
+You cannot do everything in the browser
+-->
 
 </td></tr>
 
@@ -564,9 +568,6 @@ Meanwhile, you will want to keep the master and feature branches up-to-date by m
 </td></tr>
 
 
-
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -575,7 +576,9 @@ Meanwhile, you will want to keep the master and feature branches up-to-date by m
 
 ### Perspective: Submitting a Pull Request
 
-In this example, I am cloning a repo from GitHub, creating a feature branch locally, make a change to it, pushing the branch back to the origin repo on GitHub, and submitting a pull request for the changes to be merged into the DjangoCon website. 
+Like I said earlier, you cannot do everything in the browser. You sometimes need to make a copy (clone or download) a repo onto your local computer and work on it locally. 
+
+In this example, I am going to clone a repo from GitHub, create a feature branch locally, make a change to it, push the branch back to the origin repo on GitHub, and submit a pull request for the changes to be merged into the DjangoCon website. 
 
 The process will be almost the same regardless of the situation. 
 
@@ -587,14 +590,12 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
 
 <!--
-You sometimes need to work on a repo locally
-
 Folder/files/text editor
-
-Clone/Download
 -->
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
