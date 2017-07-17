@@ -235,6 +235,19 @@ You cannot do everything in the browser
 </td></tr>
 
 
+<!--
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Vocab
+
+</td></tr>
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -275,13 +288,10 @@ I want to tell you a few things before we get started, so you can understand the
 * The process is based on GitHub Flow, which is a simple, agile process
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+* <variable> is a placeholder for the real thing
 
 <!--
-(<> symbol denotes a placeholder/variable)
 Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
-Example- some operating systems do not use dollar signs $ as command line prompts.
-
-Starting with the code part because if was the part that was harder for me to find info about, not more important
 -->
 
 </td></tr>
@@ -297,7 +307,7 @@ Starting with the code part because if was the part that was harder for me to fi
 
 * Help via Git, GitHub Help and Guides (links in Useful Resources Section)
 * Help via GitHub Keyboard Shortcuts (type "?")
-* Help via command line
+* Help via command line (exit by typing "q")
 
 ```bash
 $ git help <verb>
@@ -311,25 +321,9 @@ $ git clone --help
 $ man git-clone
 ```
 
-<!--
-Type q to exit
--->
+By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
 
 </td></tr>
-
-
-
-<!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Vocab
-
-</td></tr>
--->
 
 
 <tr><td width="30%">
@@ -359,7 +353,7 @@ Organization account
 
 Write Permission is an important concept in GitHub collaboration. A person can have write permission to a repo. 
 
-We are not talking about "write" permission in the context of English. When someone has write permission to a repo, it means they can make changes directly inside of the repo. 
+We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo. 
 
 When you create a user account, you are the owner, so you have write permission to all of your repos. 
 
