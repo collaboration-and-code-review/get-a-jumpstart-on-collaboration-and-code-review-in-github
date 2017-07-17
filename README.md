@@ -73,7 +73,7 @@ I hope you've had a chance to take a good look at the DjangoCon website. I'm so 
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 4]()
 
 </td><td>
 
@@ -88,7 +88,7 @@ This talk is about teaching you the underlying logic and essential process betwe
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 5]()
 
 </td><td>
 
@@ -105,7 +105,7 @@ There is a process that supports collaboration and code review and there is a pr
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 6]()
 
 </td><td>
 
@@ -124,7 +124,7 @@ Later on in this talk, I will debunk some of the myths that I believed at the ti
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 7]()
 
 </td><td>
 
@@ -139,7 +139,7 @@ So I clicked on the link to the repo (definition?) to take a look.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 8]()
 
 </td><td>
 
@@ -154,7 +154,7 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 9]()
 
 </td><td>
 
@@ -167,7 +167,7 @@ Just like I said earlier, I did not understand what the process was supposed to 
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 10]()
 
 </td><td>
 
@@ -192,11 +192,13 @@ So, it's actually a really positive thing, imo, when someone wants to transition
 
 ### DjangoCon as Example Project
 
+I am going to use DjangoCon US website as an example throughout this talk. 
+* Every example am I going to talk about can be applied to the DjangoCon US website
+* They are real examples from my experience
+
 <!--
 * The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
 * The process is based on GitHub Flow, which is a simple, agile process
-
-Using DjangoCon Example
 -->
 
 </td></tr>
@@ -302,6 +304,19 @@ Definition?
 -->
 
 </td></tr>
+
+
+<!--
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Vocab
+
+</td></tr>
+-->
 
 
 <tr><td width="30%">
