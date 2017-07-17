@@ -610,14 +610,9 @@ GitHub tries to help you with this. When you first clone the repo, the local clo
 
 If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
 
-<!--
-Will talk later about adding a remote
-When changes are made to the original repo, the fork will not update. I am going to tell you how to deal with that later.
--->
+You can also add remotes other than origin to a repo and push and pull from it. We will talk about this later on when we talk about how to update a fork, because when changes are made to the original repo, the fork does not update automatically.
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -627,6 +622,8 @@ When changes are made to the original repo, the fork will not update. I am going
 </td><td>
 
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
+
+Here are the generic commands for pushing and pulling. 
 
 If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
 
@@ -646,6 +643,11 @@ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 <!--
 fetch it from the remote
+
+```bash
+$ git pull <remote-name>
+$ git push <remote-name>
+```
 -->
 
 </td></tr>
@@ -796,7 +798,11 @@ $ git checkout <branch-name>
 
 ### Submit a Pull Request
 
-In the browser, go to the repo you want your pull request to be merged into. There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request. Be forewarned, that if you go to your fork instead, you can accidentally submit a pull request to yourself. 
+In the browser, go to the repo you want your pull request to be merged into (regardless of whether submitting pull request from within original repo or fork. 
+
+So in my case, I would go to the DjangoCon US website repo. 
+
+There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request. Be forewarned, that if you go to your fork instead, you can accidentally submit a pull request to yourself. 
 
 * Make sure base corresponds to the repo and branch you want to contribute to
 * Make sure compare corresponds to your branch
@@ -850,20 +856,14 @@ We've talked about a couple of different types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-The main difference between the two is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
+When you go to the pull request tab in the browser and look at a pull request, there will a set of command line instructions for reviewing the pull request locally. At the beginning will be a set of instructions for how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
 
-<!--
-When you look at the instructions for reviewing a pull request, these are just the instructions for working on a remote
-
-Feature branches and pull request branches are just two different types of remote branches. We can fetch them locally and work on them in the same way. 
-
-* Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
+* Anyone with write permission can fetch feature branches and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
 * If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
 
-We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+The main difference between the fetching and working on a feature branch or pull request branch is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
 
 If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
--->
 
 </td></tr>
 
@@ -880,6 +880,14 @@ If you learn to deal with remote branches in general, you will have the fundamen
 ### Fetching from Origin Versus Pulling from a Fork
 
 * The way that you fetch or pull a remote branch into your local folder and work on it is different depending on whether the branch was pushed to the origin or came from a fork. 
+
+<!--
+We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+
+Regardless of whether a feature branch of pull request branch
+
+The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+-->
 
 </td></tr>
 
