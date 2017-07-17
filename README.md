@@ -788,8 +788,6 @@ $ git checkout <branch-name>
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -812,6 +810,10 @@ If you are submitting the pull request from within the repo:
 If you are submitting the pull request a forked repo:
 * base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
 
+<!--
+DjangoCon example
+-->
+
 </td></tr>
 
 
@@ -825,17 +827,13 @@ If you are submitting the pull request a forked repo:
 
 We are switching our perspective now. We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
 
-We are going to be working on and reviewing the pull requests we submitted. 
+We are going to be working on feature branches and reviewing the pull requests we submitted. 
 
 Recap:
 1. Pull requests submitted from a branch pushed to the DjangoCon US website repo
 2. Pull requests submitted from a forked repo branch
 
-The forked repo is not an origin for us. We would not normally have write permission to the forked repo, but we have been given permission to edit the pull request as a DjangoCon US website maintainer. 
-
-<!--
-We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
--->
+The forked repo is not an origin for us and we do not have write pemrissio to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 
 </td></tr>
 
@@ -848,19 +846,29 @@ We are going to be checking out remote branches as a regular maintainer and as a
 
 ### The Difference Between a Feature Branch and a Pull Request Branch
 
-Something needs to be clarified.
-
 We've talked about a couple of different types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-These are both remote branches and the way that we fetch them and work on them is the same. The main difference between the two is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+The main difference between the two is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
 
 <!--
+When you look at the instructions for reviewing a pull request, these are just the instructions for working on a remote
+
+Feature branches and pull request branches are just two different types of remote branches. We can fetch them locally and work on them in the same way. 
+
+* Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
+* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
+
 We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+
+If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 -->
 
 </td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -871,8 +879,6 @@ We are going to be checking out remote branches as a regular maintainer and as a
 
 ### Fetching from Origin Versus Pulling from a Fork
 
-* Anyone with write permission can fetch feature and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
-* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
 * The way that you fetch or pull a remote branch into your local folder and work on it is different depending on whether the branch was pushed to the origin or came from a fork. 
 
 </td></tr>
