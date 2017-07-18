@@ -31,19 +31,14 @@ Thank you!
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#the-one-sentence-that-motivated-me-to-start-using-github)
-
 - [What is GitHub](#what-is-github)
-
 - [The Two Types of Accounts](#the-two-types-of-accounts)
 - [Repository (Repo)](#repository-repo)
-
 - [Write Permission and Why We Need It](#write-permission-and-why-we-need-it)
 - [Write Permission and Collaboration](#write-permission-and-collaboration)
 - [The Two Collaborative Development Models)](#the-two-collaborative-development-models)
-
 - [Example: "Shared Repository" Model](#example-shared-repository-model)
 - [Example: "Fork and Pull" Model](#example-fork-and-pull-model)
-
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
 
@@ -52,15 +47,12 @@ Thank you!
 -->
 
 - [Shared Repository Model Etiquette](#shared-repository-model-etiquette)
-
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
 - [How Do We Switch Between Multiple Tasks? ](#how-do-we-switch-between-multiple-tasks)
-
 - [What is Git](#what-are-git-and-github)
+- [Prerequisites for Getting Started Locally](#prerequisites-for-getting-started-locally)
 - [Local Environment](#local-environment)
-
 - [Getting Help](#getting help)
-- [The Other Way Around](#the-other-way-around)
 
 <!--
 ### About Branches
@@ -87,6 +79,8 @@ Thank you!
 ### Productivity Tips
 ### Tips for getting started
 ### Debunking Myths
+
+- [The Other Way Around](#the-other-way-around)
 -->
 
 ## Transcript
@@ -424,7 +418,6 @@ Even if you have write permission to a "Shared Repository", just because you can
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -435,15 +428,7 @@ Even if you have write permission to a "Shared Repository", just because you can
 
 So far, everything we have been doing, we have done in the website GitHub. You cannot do everything in the browser like this. GitHub is built on a software called Git. 
 
-You sometimes need to make a clone (copy) of a repo onto your local computer and work on it using Git. For example, if your code is for a website, you might not be able to run the code on GitHub. You might need to clone the code to your computer, install any needed software and run the code locally. 
-
-You need to have Git installed on your computer and you will use it by typing commands into your terminal. 
-
-<!--
-Git and GitHub Tour
-What is open-source?
-Definition?
--->
+You sometimes need to work on code on your locally computer. For example, if your code is for a website, you might not be able to run the code on GitHub. You might need to clone the code to your computer, install any needed software and run the code locally.
 
 </td></tr>
 
@@ -454,7 +439,7 @@ Definition?
 
 </td><td>
 
-### Getting Started Locally
+### Prerequisites for Getting Started Locally
 
 * Create a free [GitHub](https://github.com) account online
 * Install Git on your computer and set your email and username
@@ -483,7 +468,7 @@ Bash command list
 ### What a Local Environment Looks Like
 
 <!--
-You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+You can also make a copy (clone) of a repo on your own computer (local) and work on it. You will be using Git via your command line for version control. The Git configurations will be contained with a hidden folder called .git. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
 -->
 
 </td></tr>
@@ -553,7 +538,7 @@ Branches
 
 ### About Branches
 
-Whereas a fork is a copy of the entire repo, a branch is a copy of another branch within your repo.
+A branch is a copy of another branch within your repo.
 
 When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
 
@@ -574,14 +559,77 @@ You can have an unlimited number of branches (for example, feature branches or p
 
 </td><td>
 
+### Keeping Your Local Clone and GitHub Repo in Sync
+
+When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. If you make a change to the code locally, the code in the GitHub repo does not automatically update, and vice versa. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+
+GitHub tries to help you with this. When you first clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now known as a remote repo and is named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+
+You can also add remotes other than origin to a repo and push and pull from it. We will talk about this later on when we talk about how to update a fork, because when changes are made to the original repo, the fork does not update automatically.
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
+
+Here are the generic commands for pushing and pulling. 
+
+If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
+
+Pushing and pulling via <remote-name>
+
+```bash
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+<!--
+fetch it from the remote
+
+```bash
+$ git pull <remote-name>
+$ git push <remote-name>
+```
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
 ### Perspective: Submitting a Pull Request
 
-In this example, I am going to clone a repo from GitHub, create a feature branch locally, make a change to it, push the branch back to the origin repo on GitHub, and submit a pull request for the changes to be merged into the DjangoCon website. 
+We have talked about the two Collaborative Development Models
+* "Shared Repository" Model
+* "Fork and Pull" Model
+
+This section is a continuation of those two models. Rather than working directly within the browser, we are going to be cloning the repo we have write permission to. We will then create a feature branch locally, make a change to it, and push the branch back to the repo we have write permission to. We will then submit a pull request for the changes to be merged into the DjangoCon US website repo. 
+
+Two scenarios
+1. A maintainer with write permission cloning the DjangoCon US repo
+2. A contributor without write permission forking the repo and cloning the fork
 
 The process will be almost the same regardless of the situation. 
-
-1. Contributor without write permission forking the repo and cloning the fork
-1. Maintainer with write permission cloning the DjangoCo US repo
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
@@ -592,6 +640,7 @@ Folder/files/text editor
 -->
 
 </td></tr>
+
 
 
 
@@ -669,6 +718,40 @@ You can then submit a pull request for the new branch in your origin.
 </td></tr>
 
 
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Submit a Pull Request
+
+In the browser, go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. 
+
+There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request. Be forewarned, that if you forked the repo and you go to your fork instead, you can accidentally submit a pull request to yourself. 
+
+* Make sure base corresponds to the repo and branch you want to contribute to
+* Make sure compare corresponds to your branch
+* Create a pull request title and perhaps a description
+* If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
+* Click "Create pull request"
+
+If you are submitting the pull request from within the repo:
+* base: master compare:<branch-name>
+
+If you are submitting the pull request a forked repo:
+* base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
+
+<!--
+DjangoCon example
+-->
+
+</td></tr>
+
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -724,15 +807,6 @@ $ man git-clone
 
 
 
-<!--
-Also, I'm hoping that you will understand how commands can be adapted and reused.
-
-Later on in this talk, I will debunk some of the myths that I believed at the time. 
--->
-
-
-
-
 
 <tr><td width="30%">
 
@@ -762,98 +836,13 @@ Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.g
 
 </td></tr>
 
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Keeping Your Local Clone and GitHub Repo in Sync
-
-When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. If you make a change to the code locally, the code in the GitHub repo does not automatically update, and vice versa. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
-
-GitHub tries to help you with this. When you first clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now known as a remote repo and is named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
-
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
-
-You can also add remotes other than origin to a repo and push and pull from it. We will talk about this later on when we talk about how to update a fork, because when changes are made to the original repo, the fork does not update automatically.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
-
-Here are the generic commands for pushing and pulling. 
-
-If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
-
-Pushing and pulling via <remote-name>
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
 <!--
-fetch it from the remote
+Also, I'm hoping that you will understand how commands can be adapted and reused.
 
-```bash
-$ git pull <remote-name>
-$ git push <remote-name>
-```
+Later on in this talk, I will debunk some of the myths that I believed at the time. 
 -->
 
-</td></tr>
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Submit a Pull Request
-
-In the browser, go to the repo you want your pull request to be merged into (regardless of whether submitting pull request from within original repo or fork. 
-
-So in my case, I would go to the DjangoCon US website repo. 
-
-There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request. Be forewarned, that if you go to your fork instead, you can accidentally submit a pull request to yourself. 
-
-* Make sure base corresponds to the repo and branch you want to contribute to
-* Make sure compare corresponds to your branch
-* Create a pull request title and perhaps a description
-* If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
-* Click "Create pull request"
-
-If you are submitting the pull request from within the repo:
-* base: master compare:<branch-name>
-
-If you are submitting the pull request a forked repo:
-* base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
-
-<!--
-DjangoCon example
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
