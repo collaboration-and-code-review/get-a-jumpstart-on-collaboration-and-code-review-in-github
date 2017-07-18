@@ -278,8 +278,27 @@ For example, DjangoCon US website is a software project deployed live with a fai
 
 The way that you contribute to a repo depends on whether you have write permission to it. 
 
+There are two different ways to contribute and they have a fancy name. 
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### The Two Collaborative Development Models
+
+The two Collaborative Development Models
+* "Fork and Pull" Model
+* "Shared Repository" Model
+
+I'm going to give you an example of each one
+
+</td></tr>
+
 
 
 
@@ -324,111 +343,6 @@ $ man git-clone
 </td></tr>
 
 
-
-
-
-
-
-
-<!--
-Also, I'm hoping that you will understand how commands can be adapted and reused.
-
-Later on in this talk, I will debunk some of the myths that I believed at the time. 
--->
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What are Git and GitHub
-
-Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
-
-<!--
-Git and GitHub Tour
-What is open-source?
-Definition?
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Getting Started
-
-* Install Git on your computer and set your email and username
-* Create a free [GitHub](https://github.com) account online
-* Find and open your computer terminal (a.k.a. command line) on your computer
-* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later)
-* You might also want to have a text editor of your choice installed, to use to edit files
-
-There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
-
-<!--
-Text editor recommendations
-Bash command list
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### A Few Notes
-
-I want to tell you a few things before we get started, so you can understand the context of what we are doing.
-
-* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
-* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
-
-* I will identify best practices any time possible
-* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
-* <variable> is a placeholder for the real thing
-
-<!--
-* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
-* The process is based on GitHub Flow, which is a simple, agile process
-
-By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
-
-Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
--->
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### The Two Collaborative Development Models
-
-A Collaborative Development Model is a fancy term for the process users go through to contribute to a repo. Which Collaborative Development Model you will use depends on whether you have write permission to the repo you want to contribute to. 
-
-The two Collaborative Development Models: 
-* "Fork and Pull" Model
-* "Shared Repository" Model
-
-There are two types of accounts and two types of Collaborative Development Models
-Conveniently, one collaborative development model typically corresponds to one type of account, and the other collaborative development model typically corresponds to the other type of account
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -561,6 +475,87 @@ There is something a bit off topic that I do want to point out. A user account r
 ### "Shared Repository" Model Etiquette
 
 Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+
+</td></tr>
+
+
+
+
+<!--
+Also, I'm hoping that you will understand how commands can be adapted and reused.
+
+Later on in this talk, I will debunk some of the myths that I believed at the time. 
+-->
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What are Git and GitHub
+
+Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
+
+<!--
+Git and GitHub Tour
+What is open-source?
+Definition?
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Getting Started
+
+* Install Git on your computer and set your email and username
+* Create a free [GitHub](https://github.com) account online
+* Find and open your computer terminal (a.k.a. command line) on your computer
+* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later)
+* You might also want to have a text editor of your choice installed, to use to edit files
+
+There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
+
+<!--
+Text editor recommendations
+Bash command list
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### A Few Notes
+
+I want to tell you a few things before we get started, so you can understand the context of what we are doing.
+
+* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
+* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
+
+* I will identify best practices any time possible
+* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+* <variable> is a placeholder for the real thing
+
+<!--
+* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
+* The process is based on GitHub Flow, which is a simple, agile process
+
+By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
+
+Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
+-->
 
 </td></tr>
 
