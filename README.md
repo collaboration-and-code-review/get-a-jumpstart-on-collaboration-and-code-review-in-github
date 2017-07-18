@@ -21,6 +21,17 @@ The style of this transcript is heavily inspired by:
 
 Thank you!
 
+## Table of Contents
+
+- [Get a Jumpstart on Collaboration and Code Review in GitHub](#get-a-jumpstart-on-collaboration-and-code-review-in-github)
+- [Welcome](#welcome)
+- [About Me](#about-me)
+- [About You](#about-you)
+- [TacoFancy](#tacofancy)
+- [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
+- [DjangoCon US Website as Example Project](#the-one-sentence-that-motivated-me-to-start-using-github)
+
+
 ## Transcript
 
 <table>
@@ -47,7 +58,7 @@ By Katherine "Kati" Michel
 
 ### Welcome 
 
-Thank you for being here. I'm thrilled to have the opportunity to talk to you about getting a jumpstart on collaboration and code review in GitHub
+Thank you for being here. I'm thrilled to have the opportunity to teach you what I've learned you about collaboration and code review in GitHub. 
 
 </td></tr>
 
@@ -60,13 +71,13 @@ Thank you for being here. I'm thrilled to have the opportunity to talk to you ab
 
 ### About Me 
 
-* DjangoCon Website Chair (where I learned a lot of what I"m going to be teaching you)
+A lot of what I'm going to talk to you about, I learned as the DjangoCon US Website Chair
+
+* DjangoCon Website Chair
 * DjangoCon Europe Website Committee Member
 * DEFNA (Django Events Foundation North America) Board Member
 * Project Manager
 * Web Designer and Developer
-
-I hope you've had a chance to take a good look at the DjangoCon website. I'm so proud of what the team has accomplished. It's truly a beautiful website.
 
 </td></tr>
 
@@ -77,79 +88,49 @@ I hope you've had a chance to take a good look at the DjangoCon website. I'm so 
 
 </td><td>
 
-### What This Talk Is and Isn’t
+### About You
 
-When it comes to Git commands, there are many variations of how things can be done. I'm not going to be teaching you about the variations. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
+This talk is about getting you started collaborating and doing code review as quickly as possible. I want to teach you the essential process and underlying logic, and how they are connected, so you can understand why things are done the way that they are. 
 
-This talk is about teaching you the underlying logic and essential process between collaboration and code review and how they are connection, so that you can understand why things are done the way that they are and get started as quickly as possible. Also, I'm hoping that you will understand how commands can be adapted and reused. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 5]()
-
-</td><td>
-
-### The Journey and Destination
-
-I think quite often with Git and GitHub, people are learning what they need to know as they need to know it. I think people often do not understand the overall process or best practices of collaboration and code review because they haven't gone that far. 
-
-I like at my process of learning collaboration and code review as being kind of like a journey. When you go on a journey, by the time you are done, you have probably learned something and if you did the journey again, you would do some things differently. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
-
-There is a process that supports collaboration and code review and there is a process that doesn't. I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did.
+When it comes to Git commands, there are many variations of how things can be done. I'm not going to be going into detail about that. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 6]()
-
-</td><td>
-
-### How My Own Journey Began
-
-I want to tell you how I got started witih open-source contribution, which is a bit unconventional. 
-
-I first signed up for GitHub on April 18, 2013. I knew using GitHub was a good idea. But my account sat unused for months. I didn't know how to get started. I felt a bit intimidated and I wasn't sure if I fit in. 
-
-<!--
-Later on in this talk, I will debunk some of the myths that I believed at the time. 
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 7]()
+![Slide 00]()
 
 </td><td>
 
 ### TacoFancy
 
+I want to tell you how I got started witih open-source contribution, which is a bit unconventional. 
+
+I first signed up for GitHub on April 18, 2013. But my account sat unused for months. I didn't know how to get started.  
+
 7 months later, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
 
-So I clicked on the link to the repo (definition?) to take a look. 
+So I clicked on the link and went to the project to take a look. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 8]()
+![Slide 00]()
 
 </td><td>
 
 ### The One Sentence that Motivated Me to Start Using GitHub
 
-One sentence in the project README (definition?) made a big impact on me: "Are You New to Github But Want to Contribute?" 
+One sentence in the project information that had a huge impact on me: "Are You New to Github But Want to Contribute?" 
 
-That was me. I had been wanting to contribute for months, but wasn't sure how, and now was my chance. I had never seen someone offer like this. I felt it was my destiny to contribute now. 
+That was me. I had been wanting to contribute for months, but wasn't sure how, and now was my chance. I felt it was my destiny to contribute now. 
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -163,6 +144,30 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 Just like I said earlier, I did not understand what the process was supposed to look like. I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted my first pull request. As is often characteristic of moments of achievement like this, there was a huge adrenaline rush. 
 
 </td></tr>
+
+
+
+
+<!--
+Later on in this talk, I will debunk some of the myths that I believed at the time. 
+-->
+
+<!--
+I felt a bit intimidated and I wasn't sure if I fit in.
+
+What This Talk Is and Isn’t
+
+Also, I'm hoping that you will understand how commands can be adapted and reused.
+
+I think quite often with Git and GitHub, people learn what they need to know as they need to know it. 
+
+The Journey and Destination
+I think people often do not understand the overall process, because they haven't gone that far. 
+
+I like at my process of learning collaboration and code review as being kind of like a journey. When you go on a journey, by the time you are done, you have probably learned something and if you did the journey again, you would do some things differently. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
+
+There is a process that supports collaboration and code review and there is a process that doesn't. I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did.
+-->
 
 
 <tr><td width="30%">
@@ -195,6 +200,10 @@ So, it's actually a really positive thing, imo, when someone wants to transition
 I am going to use DjangoCon US website as an example throughout this talk. 
 * Every example am I going to talk about can be applied to the DjangoCon US website
 * They are real examples from my experience
+
+<!--
+I hope you've had a chance to take a good look at the DjangoCon website. I'm so proud of what the team has accomplished. It's truly a beautiful website.
+-->
 
 </td></tr>
 
