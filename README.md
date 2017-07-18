@@ -39,6 +39,22 @@ Thank you!
 
 - [Write Permission and Why We Need It](#write-permission-and-why-we-need-it)
 - [Write Permission and Collaboration](#write-permission-and-collaboration)
+- [The Two Collaborative Development Models)](#the-two-collaborative-development-models)
+
+- [Example: "Shared Repository" Model](#example-shared-repository-model)
+- [Example: "Fork and Pull" Model](#example-fork-and-pull-model)
+
+- [How to Fork a Repo](#how-to-fork-a-repo)
+- [Forked Repo](#forked-repo)
+
+<!--
+- [Shared Repository Model: User Account Versus Organization](#shared-repository-model-user-account-versus-organization)
+-->
+
+- [Shared Repository Model Etiquette](#shared-repository-model-etiquette)
+
+- [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
+- [How Do We Switch Between Multiple Tasks? ](#how-do-we-switch-between-multiple-tasks)
 
 - [What is Git](#what-are-git-and-github)
 - [Local Environment](#local-environment)
@@ -47,12 +63,6 @@ Thank you!
 - [The Other Way Around](#the-other-way-around)
 
 <!--
-### The Two Collaborative Development Models
-### Example: DjangoCon US Website Repo "Fork and Pull" Model
-### Example: DjangoCon US Website as a "Shared Repository"
-
-### Collaboration and Code Review Best Practice Workflow
-### How Do We Switch Between Multiple Tasks? 
 ### About Branches
 ### Perspective: Submitting a Pull Request
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
@@ -265,6 +275,16 @@ Write permission is usually associated with organization repos.
 
 For example, DjangoCon US website is a software project deployed live with a fairly high volume of traffic. We would not want just anyone user to be able to come along and make changes within the repo. So, DjangoCon organization account owners have given certain users write permission to be maintainers. There is often a level of trust involved in having write permission. 
 
+<!--
+Some examples of what I can do within the repo now:
+* Push work (a branch) directly to the repo (instead of via fork)
+* Edit a file
+* Submit pull requests
+* Review pull requests
+
+See write permissions chart for info
+-->
+
 </td></tr>
 
 
@@ -292,17 +312,150 @@ There are two different ways to contribute and they have a fancy name.
 ### The Two Collaborative Development Models
 
 The two Collaborative Development Models
-* "Fork and Pull" Model
 * "Shared Repository" Model
+* "Fork and Pull" Model
 
 I'm going to give you an example of each one
 
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Example: "Shared Repository" Model
+
+Think about the word "shared". A “Shared Repository is typically found in an organization account where there are teams of maintainers working on repos together. 
+
+For example: This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork. This is called the "Shared Repository" Model. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Example: "Fork and Pull" Model
+
+The “Fork and Pull” Model is typically used in user account repos. 
+
+For example, when I first wanted to contribute to the DangoCon US website, I was not a maintainer, so I did not have write permission to the repo. Remember that I said that when you create a user account, you own all of your repos and have write permission to all of them. 
+
+So, I made a copy of the DjangoCon US website repo in my user account. This is called a fork. I owned the fork. I aas the only user with write permission to it, unless I were to give permission to someone else, such as a maintainer, when I was submitting a pull request. 
+
+</td></tr>
 
 
 
+<!--
+make the changes, and submit a pull request for the changes to be pulled into the DjangoCon US website repo. This is the "Fork and Pull" Model. 
+
+users come across repos they want to contribute to but don’t have write permission to and need to fork it to contribute.
+
+with my user name in the URL (an organizational account can also fork a repo, but less commmon). The fork would be an exact copy of the original repo at the time it was forked. I could make any changes to the fork that I wanted, and the original repo will not be affected unless I submitted a pull request and a project maintainer pulled my changes into the DjangoCon US website repository. If I would delete the fork, the original DjangoCon US website repo would not be deleted. 
+
+Forks can be used to propose a change to the original repository, or can be the starting point for a new idea (depending on the license)
+
+</td></tr>
+-->
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### How to Fork a Repo
+
+* Click the "Fork" button
+* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account, and notify you that it is forking it. 
+
+<!--
+Forking graphic
+-->
+
+</td></tr>
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Forked Repo
+
+</td></tr>
+
+
+<!--
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Model: User Account Versus Organization
+
+A user account repo can be a "Shared Repository". A user account owner can invite other users to collaborate on a repo that he or she owns. But there are a few advantages to using a organizational repo as a "Shared Repository" instead of an user account repo. 
+
+* Organizational account owners can create teams and permissions across multiple repos
+* Otherwise, the repo "Shared Repository" settings are almost exactly the same
+
+</td></tr>
+-->
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Model Etiquette
+
+Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Collaboration and Code Review Best Practice Workflow
+
+In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
+* Keep your code up-to-date
+* Create one or more features
+* Do code review
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Example of a Not-Scalable Workflow
+
+* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
+
+<!--
+Any additional changes you make will be added to the pull request
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -342,141 +495,6 @@ $ man git-clone
 
 </td></tr>
 
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### "Shared Repository"
-
-A “Shared Repository is typically found in an organization account  because it’s where teams of maintainers are working on repos together. All of the maintainers have write permission to the "Shared Repository" and are therefore able to make changes directly within the repo. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### "Fork and Pull"
-
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to and need to fork it to contribute. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Example: DjangoCon US Website Repo "Fork and Pull" Model
-
-The first year that I helped with the DangoCon US website, I was not a maintainer, so I did not have write permission to the DjangoCon US website repo. So, when I wanted to make a change to the repo, I needed to fork the repo to my user account, make the changes, and submit a pull request for the changes to be pulled into the DjangoCon US website repo. This is the "Fork and Pull" Model. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Forking the Repo
-
-* Click the "Fork" button
-* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account, and notify you that it is forking it. 
-
-<!--
-Forking graphic
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Forked the Repo
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### About Forks
-
-So after I forked the repo, I had a copy of the repo in my user account, with my user name in the URL (an organizational account can also fork a repo, but less commmon). The fork would be an exact copy of the original repo at the time it was forked. I owned the fork. I was the only person with write permission to it, unless I would give collaborator permission to someone else. The DjangoCon US website maintainers would not have access unless I gave it to them. I could make any changes to the fork that I wanted, and the original repo will not be affected unless I submitted a pull request and a project maintainer pulled my changes into the DjangoCon US website repository. If I would delete the fork, the original DjangoCon US website repo would not be deleted. 
-
-Forks can be used to propose a change to the original repository, or can be the starting point for a new idea (depending on the license)
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Example: DjangoCon US Website as a "Shared Repository"
-
-The second year that I helped with the DangoCon US website, I became a maintainer, so I was given write permission to the DjangoCon US website repo. I could make changes and submit a pull request within the DjangoCon US website repo, along with the other maintainers. I no longer needed a fork. This is called the "Shared Repository" Model. 
-
-<!--
-Some examples of what I can do now:
-* Push work (a branch) directly to the repo (instead of via fork)
-* Edit a file
-* Review pull requests
-
-See write permissions chart for info
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Shared Repository Model: User Account Versus Organization
-
-There is something a bit off topic that I do want to point out. A user account repo can be a "Shared Repository". A user account owner can invite other users to collaborate on a repo that he or she owns. But there are a few advantages to using a organizational repo repo as a "Shared Repository" instead of an user account repo. 
-
-* Organizational account owners can create teams and permissions across multiple repos
-* Otherwise, the repo "Shared Repository" settings are almost exactly the same
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### "Shared Repository" Model Etiquette
-
-Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
-
-</td></tr>
 
 
 
@@ -560,38 +578,12 @@ Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.g
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Collaboration and Code Review Best Practice Workflow
-
-In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
-* Keep your code up-to-date
-* Create one or more features
-* Do code review
-
-</td></tr>
 
 
 <tr><td width="30%">
 
 ![Slide 00]()
-
-</td><td>
-
-### Example of a Not-Scalable Workflow
-
-* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 26]()
 
 </td><td>
 
