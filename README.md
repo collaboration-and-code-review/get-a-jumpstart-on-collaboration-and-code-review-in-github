@@ -33,6 +33,42 @@ Thank you!
 - [The Other Way Around](#the-other-way-around)
 - [DjangoCon US Website as Example Project](#the-one-sentence-that-motivated-me-to-start-using-github)
 
+<!--
+### What are Git and GitHub
+### Getting Help
+### Two Types of Accounts
+### Write Permission to a Repo and Why It Matters
+### The Two Collaborative Development Models
+### Example: DjangoCon US Website Repo "Fork and Pull" Model
+### Example: DjangoCon US Website as a "Shared Repository"
+### Collaboration and Code Review Best Practice Workflow
+### How Do We Switch Between Multiple Tasks? 
+### About Branches
+### Perspective: Submitting a Pull Request
+### What a Local Environment Looks Like
+### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
+### Submit a Pull Request
+### Perspective: Checking Out Remote Branches
+### The Difference Between a Feature Branch and a Pull Request Branch
+### Fetching from Origin Versus Pulling from a Fork
+### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
+### Shared Repo Model Feature Branch or Pull Request Branch
+### Forked Repo Model Feature Branch or Pull Request Branch
+### Pull Request Review Process
+### Fetch Individual Pull Request
+### How to Deal With Merge Conflicts
+### Adding an Upstream Remote and Syncing a Fork
+### Syncing Changes
+### Advanced Workflow
+### Organization and Team Setup
+### Safeguards Checklist
+### Community and Communication Strategy
+### Documentation
+### Issue and Pull Request Templates
+### Productivity Tips
+### Tips for getting started
+### Debunking Myths
+-->
 
 ## Transcript
 
