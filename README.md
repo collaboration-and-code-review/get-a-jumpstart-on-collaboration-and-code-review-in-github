@@ -30,14 +30,19 @@ Thank you!
 - [TacoFancy](#tacofancy)
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
-- [The Other Way Around](#the-other-way-around)
 - [DjangoCon US Website as Example Project](#the-one-sentence-that-motivated-me-to-start-using-github)
+- [The Two Types of Accounts](#the-two-types-of-accounts)
+- [Repository (Repo)](#repository-repo)
+
+- [Write Permission to a Repo and Why It Matters](#write-permission-and-why-it-matters)
+
+- [Getting Help](#getting help)
+- [The Other Way Around](#the-other-way-around)
 
 <!--
 ### What are Git and GitHub
-### Getting Help
-### Two Types of Accounts
-### Write Permission to a Repo and Why It Matters
+### What a Local Environment Looks Like
+
 ### The Two Collaborative Development Models
 ### Example: DjangoCon US Website Repo "Fork and Pull" Model
 ### Example: DjangoCon US Website as a "Shared Repository"
@@ -45,7 +50,6 @@ Thank you!
 ### How Do We Switch Between Multiple Tasks? 
 ### About Branches
 ### Perspective: Submitting a Pull Request
-### What a Local Environment Looks Like
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 ### Submit a Pull Request
 ### Perspective: Checking Out Remote Branches
@@ -177,41 +181,9 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 
 ### My First Pull Request
 
-I did not understand what the process was supposed to look like, but I struggled through and submitted my first pull request. I had a huge adrenaline rush. 
+I struggled through and submitted my first pull request. I had a huge adrenaline rush. 
 
 </td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### The Other Way Around
-
-I kept using Git and GitHub.
-
-<!--
-Learning collaboration and code review was kind of like going on a journey. I think quite often with Git and GitHub, people are learning what they need to know as they need to know it. They do not understand the larger picture because they haven't gone that far. Knowing what I know now, if I could go back and start over again, I would do things differently. 
-
-I know now that there is a way of doing things that supports collaboration and code review and there is a way of doing things that doesn't. One of the goals of my talk is to teach that to you. 
--->
-
-</td></tr>
-
-
-<!--
-### It Would Take Almost 3 More Years for Me to Do Code Review
-
-Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way. The code review process was a mystery to me. I had no idea really how to do it until I asked to do code review for the DjangoCon US website and started doing it. 
-
-There is actually kind of a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
-
-someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
-
-I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did. 
--->
 
 
 <tr><td width="30%">
@@ -222,11 +194,88 @@ I want to impart my knowledge to you, to save you the time and frustration of le
 
 ### DjangoCon as Example Project
 
-Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
+I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
 
 I am going to use DjangoCon US website as an example throughout this talk. 
 * Many of the examples I am going to talk about can be illustrated through my experiences working on the DjangoCon US website
 * I hope these concrete examples will provide reinforcement for your understanding
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### The Two Types of Accounts
+
+User account (example: my user account)
+* A user account is the first type of account create. 
+
+Organization account (example: DjangoCon organization account)
+* An account where a team of people are working together
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Repository (Repo)
+
+Within user accounts are repos. A repo is a place where a codebase is stored (example: DjangoCon US website repo).
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Write Permission to a Repo and Why It Matters
+
+<!--
+Write Permission is an important concept in GitHub collaboration. A person can have write permission to a repo. 
+
+We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo. 
+
+Whether you have write permission to a repo determines how you contribute to it (which Collaborative Development Model you use)
+-->
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Getting Help
+
+* Help via Git, GitHub Help and Guides (links in Useful Resources Section)
+* Help via GitHub Keyboard Shortcuts (type "?")
+* Help via command line (exit by typing "q")
+
+```bash
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+```
+
+```bash
+$ git help clone
+$ git clone --help
+$ man git-clone
+```
 
 </td></tr>
 
@@ -299,93 +348,24 @@ I want to tell you a few things before we get started, so you can understand the
 
 * This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
 * We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
-* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
-* The process is based on GitHub Flow, which is a simple, agile process
+
 * I will identify best practices any time possible
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 * <variable> is a placeholder for the real thing
 
 <!--
+* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
+* The process is based on GitHub Flow, which is a simple, agile process
+
+By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
+
 Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
 -->
 
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Getting Help
-
-* Help via Git, GitHub Help and Guides (links in Useful Resources Section)
-* Help via GitHub Keyboard Shortcuts (type "?")
-* Help via command line (exit by typing "q")
-
-```bash
-$ git help <verb>
-$ git <verb> --help
-$ man git-<verb>
-```
-
-```bash
-$ git help clone
-$ git clone --help
-$ man git-clone
-```
-
-By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Two Types of Accounts
-
-User account
-* A user account is the first type of account create. You have a profile where you store your code in repos and you have a newsfeed where you can see the activity of developers you follow. 
-
-Organization account
-* An account where a team of people are working together
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Repository (Repo)
-
-Within user accounts are repos. A repo is a place where a codebase is stored. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Write Permission to a Repo and Why It Matters
-
-Write Permission is an important concept in GitHub collaboration. A person can have write permission to a repo. 
-
-We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo. 
-
-Whether you have write permission to a repo determines how you contribute to it (which Collaborative Development Model you use)
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1679,6 +1659,50 @@ Types of Projects
 * Cutting edge
 * Novelty
 -->
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### The Other Way Around
+
+<!--
+I think the way people learn to use Git and GitHub is backwards. 
+
+I did what I think a lot of people do when they are using Git. I learned what I needed to know as I needed to know it. I did not always understand what the process was supposed to be like. The process maintainers would go through to review pull requests was a mystery to me. 
+
+If I could go back and start over again, I would do things differently. 
+
+Unfortunately, it would be three more years before I would begin doing code review. I had no idea how to do it until I began doing it. And even then, I sometimes had to ask senior developers how to do things, because things I needed to do were not well documented. 
+
+I think it should be the other way around. 
+-->
+
+</td></tr>
+
+
+<!--
+It didn't have to be that way. 
+
+Learning collaboration and code review was kind of like going on a journey.They do not understand the larger picture because they haven't gone that far. 
+
+I know now that there is a way of doing things that supports collaboration and code review and there is a way of doing things that doesn't. One of the goals of my talk is to teach that to you. 
+
+Now that I do it, I wonder, why did it take so long?! I asked to do code review for the DjangoCon US website and started doing it. 
+
+There is a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
+
+someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
+
+I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did. 
+-->
+
+
 
 
 <tr><td width="30%">
