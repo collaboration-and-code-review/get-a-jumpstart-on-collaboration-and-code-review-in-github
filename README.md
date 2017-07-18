@@ -226,6 +226,8 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 ### What is GitHub
 
+GitHub is a website where users can store and work on code together in the browser. GitHub is built on the version control software called Git, which we're going to talk about later.
+
 </td></tr>
 
 
@@ -254,7 +256,7 @@ Organization account (example: DjangoCon organization account)
 
 ### Repository (Repo)
 
-Within user accounts are repos. A repo is a place where a codebase is stored (example: DjangoCon US website repo).
+Within user accounts are repositories (a.k.a repos). A repo is a place where a codebase is stored (example: DjangoCon US website repo).
 
 </td></tr>
 
@@ -347,20 +349,19 @@ The “Fork and Pull” Model is typically used in user account repos.
 
 For example, when I first wanted to contribute to the DangoCon US website, I was not a maintainer, so I did not have write permission to the repo. Remember that I said that when you create a user account, you own all of your repos and have write permission to all of them. 
 
-So, I made a copy of the DjangoCon US website repo in my user account. This is called a fork. I owned the fork. I was the only user with write permission to it, unless I were to give permission to someone else, such as a maintainer, when I was submitting a pull request. 
+So, I made a copy of the DjangoCon US website repo in my user account, under my user account URL. This is called a fork. I owned the fork. I was the only user with write permission to it, unless I were to give permission to someone else, such as a maintainer, when I was submitting a pull request. The fork was an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep would not be affected, including deleting the fork. 
 
 Typically, you make a change to the fork and submit a pull request to the original repo. If a DjangoCon US website maintainer approves the pull request he or she will pull the changes into the DjangoCon US website repo. 
 
 This is the "Fork and Pull" Model. 
 
-</td></tr>
-
+In addition to using a fork to propose a change to the original repo, you can also use a fork for the starting point of a new idea of your own (depending on the license). 
 
 <!--
-with my user name in the URL (an organizational account can also fork a repo, but less commmon). The fork would be an exact copy of the original repo at the time it was forked. I could make any changes to the fork that I wanted, and the original repo will not be affected unless I submitted a pull request and a project maintainer pulled my changes into the DjangoCon US website repository. If I would delete the fork, the original DjangoCon US website repo would not be deleted. 
-
-Forks can be used to propose a change to the original repository, or can be the starting point for a new idea (depending on the license)
+By the way, an organizational account can also fork a repo, but it's less commmon. 
 -->
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -424,7 +425,6 @@ Even if you have write permission to a "Shared Repository", just because you can
 
 
 
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -433,14 +433,11 @@ Even if you have write permission to a "Shared Repository", just because you can
 
 ### What is Git
 
-So far, everything we have been doing, we have done in a website called GitHub, where users can store and work on code together. You cannot do everything in the browser like this. GitHub is built on a software called Git. 
+So far, everything we have been doing, we have done in the website GitHub. You cannot do everything in the browser like this. GitHub is built on a software called Git. 
 
-You sometimes need to make a clone (copy) of a repo onto your local computer and work on it. 
+You sometimes need to make a clone (copy) of a repo onto your local computer and work on it using Git. For example, if your code is for a website, you might not be able to run the code on GitHub. You might need to clone the code to your computer, install any needed software and run the code locally. 
 
-<!--
-You might not be able to run a website on GitHub, you might have software on your computer that you need to run the code. 
-
-Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. GitHub is a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
+You need to have Git installed on your computer and you will use it by typing commands into your terminal. 
 
 <!--
 Git and GitHub Tour
@@ -457,12 +454,36 @@ Definition?
 
 </td><td>
 
+### Getting Started Locally
+
+* Create a free [GitHub](https://github.com) account online
+* Install Git on your computer and set your email and username
+* Find and open your computer terminal (a.k.a. command line) on your computer
+* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later)
+* You might also want to have a text editor of your choice installed, to use to edit files
+
+There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
+
+<!--
+Text editor recommendations
+Bash command list
+-->
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
 ### What a Local Environment Looks Like
 
+<!--
 You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
-
-<--
-You cannot do everything in the browser
 -->
 
 </td></tr>
@@ -503,6 +524,8 @@ Any additional changes you make will be added to the pull request
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -521,6 +544,28 @@ Branches
 
 </td></tr>
 
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### About Branches
+
+Whereas a fork is a copy of the entire repo, a branch is a copy of another branch within your repo.
+
+When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
+
+Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.
+
+<!--
+Keep main branch(es) up-to-date
+Make a copy of the branch you intend to merge your changes into when you want to create a feature
+You can have an unlimited number of branches (for example, feature branches or pull request branches)
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -624,6 +669,28 @@ You can then submit a pull request for the new branch in your origin.
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Alternative Branch Commands
+
+If not working from within the branch you are branching off of, need to specify which branch branching off of (remember, you are branching off the branch you intend your change to be merged into)
+
+```bash
+$ git checkout -b <branch-name> <branch-branching-off-of>
+```
+
+If the branch already exists, just switch to a branch
+
+```bash
+$ git checkout <branch-name>
+```
+
+</td></tr>
+
 
 
 
@@ -664,28 +731,7 @@ Later on in this talk, I will debunk some of the myths that I believed at the ti
 -->
 
 
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Getting Started
-
-* Install Git on your computer and set your email and username
-* Create a free [GitHub](https://github.com) account online
-* Find and open your computer terminal (a.k.a. command line) on your computer
-* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later)
-* You might also want to have a text editor of your choice installed, to use to edit files
-
-There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
-
-<!--
-Text editor recommendations
-Bash command list
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -712,35 +758,6 @@ I want to tell you a few things before we get started, so you can understand the
 By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
 
 Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
--->
-
-</td></tr>
-
-
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### About Branches
-
-Whereas a fork is a copy of the entire repo, a branch is a copy of another branch within your repo.
-
-When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
-
-Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.
-
-<!--
-Keep main branch(es) up-to-date
-Make a copy of the branch you intend to merge your changes into when you want to create a feature
-You can have an unlimited number of branches (for example, feature branches or pull request branches)
 -->
 
 </td></tr>
@@ -802,31 +819,6 @@ $ git pull <remote-name>
 $ git push <remote-name>
 ```
 -->
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Alternative Branch Commands
-
-If not working from within the branch you are branching off of, need to specify which branch branching off of (remember, you are branching off the branch you intend your change to be merged into)
-
-```bash
-$ git checkout -b <branch-name> <branch-branching-off-of>
-```
-
-If the branch already exists, just switch to a branch
-
-```bash
-$ git checkout <branch-name>
-```
 
 </td></tr>
 
