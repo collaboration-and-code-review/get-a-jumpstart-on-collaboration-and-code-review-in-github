@@ -31,21 +31,26 @@ Thank you!
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#the-one-sentence-that-motivated-me-to-start-using-github)
+
+- [What is GitHub](#what-is-github)
+
 - [The Two Types of Accounts](#the-two-types-of-accounts)
 - [Repository (Repo)](#repository-repo)
 
-- [Write Permission to a Repo and Why It Matters](#write-permission-and-why-it-matters)
+- [Write Permission and Why We Need It](#write-permission-and-why-we-need-it)
+- [Write Permission and Collaboration](#write-permission-and-collaboration)
+
+- [What is Git](#what-are-git-and-github)
+- [Local Environment](#local-environment)
 
 - [Getting Help](#getting help)
 - [The Other Way Around](#the-other-way-around)
 
 <!--
-### What are Git and GitHub
-### What a Local Environment Looks Like
-
 ### The Two Collaborative Development Models
 ### Example: DjangoCon US Website Repo "Fork and Pull" Model
 ### Example: DjangoCon US Website as a "Shared Repository"
+
 ### Collaboration and Code Review Best Practice Workflow
 ### How Do We Switch Between Multiple Tasks? 
 ### About Branches
@@ -209,6 +214,17 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 </td><td>
 
+### What is GitHub
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
 ### The Two Types of Accounts
 
 User account (example: my user account)
@@ -239,18 +255,46 @@ Within user accounts are repos. A repo is a place where a codebase is stored (ex
 
 </td><td>
 
-### Write Permission to a Repo and Why It Matters
+### Write Permission and Why We Need It
 
-<!--
-Write Permission is an important concept in GitHub collaboration. A person can have write permission to a repo. 
+Write Permission is an important concept. We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo. 
 
-We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo. 
+When you create a user account, you are the owner, so you have write permission to all your repos.
 
-Whether you have write permission to a repo determines how you contribute to it (which Collaborative Development Model you use)
--->
+Write permission is usually associated with organization repos. 
+
+For example, DjangoCon US website is a software project deployed live with a fairly high volume of traffic. We would not want just anyone user to be able to come along and make changes within the repo. So, DjangoCon organization account owners have given certain users write permission to be maintainers. There is often a level of trust involved in having write permission. 
 
 </td></tr>
 
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Write Permission and Collaboration
+
+The way that you contribute to a repo depends on whether you have write permission to it. 
+
+
+</td></tr>
+
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What is Git
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -365,22 +409,6 @@ Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.g
 </td></tr>
 
 
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Write Permission Examples
-
-When you create a user account, you are the owner, so you have write permission to all your repos.
-
-Imagine a repo containing a mission critical software project deployed live. It would not be a good idea for just anyone to be able to come along and make changes within that repo. So what happens is that the owner of the organizational account will give write permission to specific users to be maintainers. There is often a level of trust involved. 
-
-</td></tr>
 
 
 <tr><td width="30%">
