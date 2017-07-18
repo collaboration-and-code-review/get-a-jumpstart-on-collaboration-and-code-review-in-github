@@ -52,13 +52,14 @@ Thank you!
 - [What is Git](#what-are-git-and-github)
 - [Prerequisites for Getting Started Locally](#prerequisites-for-getting-started-locally)
 - [Local Environment](#local-environment)
-- [Getting Help](#getting help)
+- [Getting Help](#getting-help)
 
 <!--
 ### About Branches
 ### Perspective: Submitting a Pull Request
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 ### Submit a Pull Request
+
 ### Perspective: Checking Out Remote Branches
 ### The Difference Between a Feature Branch and a Pull Request Branch
 ### Fetching from Origin Versus Pulling from a Fork
@@ -424,13 +425,46 @@ Even if you have write permission to a "Shared Repository", just because you can
 
 </td><td>
 
-### What is Git
+### Working Locally
 
-So far, everything we have been doing, we have done in the website GitHub. You cannot do everything in the browser like this. GitHub is built on a software called Git. 
+We're going to change our perspective slightly. So far, everything we have done, we have done in the website GitHub. We cannot do everything in the browser like this. 
 
-You sometimes need to work on code on your locally computer. For example, if your code is for a website, you might not be able to run the code on GitHub. You might need to clone the code to your computer, install any needed software and run the code locally.
+You sometimes need to work on code on your locally computer. 
+
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to clone (make a copy) of the code on our computer, install software and run the code locally. 
+
+<!--
+You can also make a copy (clone) of a repo on your own computer (local) and work on it. You will be using Git via your command line for version control. The Git configurations will be contained with a hidden folder called .git. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+-->
 
 </td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What a Local Environment Looks Like
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What is Git
+
+GitHub is built on a software called Git. 
+
+</td></tr>
+
 
 
 <tr><td width="30%">
@@ -456,22 +490,6 @@ Bash command list
 
 </td></tr>
 
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What a Local Environment Looks Like
-
-<!--
-You can also make a copy (clone) of a repo on your own computer (local) and work on it. You will be using Git via your command line for version control. The Git configurations will be contained with a hidden folder called .git. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
--->
-
-</td></tr>
 
 
 
@@ -611,6 +629,8 @@ $ git push <remote-name>
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -640,8 +660,6 @@ Folder/files/text editor
 -->
 
 </td></tr>
-
-
 
 
 
