@@ -560,8 +560,6 @@ Branches
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -576,7 +574,15 @@ When you create a repo, you have a default branch named master that contains you
 
 Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.
 
+<!--
+Keep main branch(es) up-to-date
+Make a copy of the branch you intend to merge your changes into when you want to create a feature
+You can have an unlimited number of branches (for example, feature branches or pull request branches)
+-->
+
 </td></tr>
+
+
 
 
 <tr><td width="30%">
