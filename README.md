@@ -177,7 +177,7 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 
 ### My First Pull Request
 
-I struggled through and submitted my first pull request. I had a huge adrenaline rush. I felt like I had done something so amazing, which I had. 
+I did not understand what the process was supposed to look like, but I struggled through and submitted my first pull request. I had a huge adrenaline rush. 
 
 </td></tr>
 
@@ -190,9 +190,28 @@ I struggled through and submitted my first pull request. I had a huge adrenaline
 
 ### The Other Way Around
 
-I kept using Git and GitHub
+I kept using Git and GitHub.
+
+<!--
+Learning collaboration and code review was kind of like going on a journey. I think quite often with Git and GitHub, people are learning what they need to know as they need to know it. They do not understand the larger picture because they haven't gone that far. Knowing what I know now, if I could go back and start over again, I would do things differently. 
+
+I know now that there is a way of doing things that supports collaboration and code review and there is a way of doing things that doesn't. One of the goals of my talk is to teach that to you. 
+-->
 
 </td></tr>
+
+
+<!--
+### It Would Take Almost 3 More Years for Me to Do Code Review
+
+Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way. The code review process was a mystery to me. I had no idea really how to do it until I asked to do code review for the DjangoCon US website and started doing it. 
+
+There is actually kind of a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
+
+someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
+
+I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did. 
+-->
 
 
 <tr><td width="30%">
@@ -202,6 +221,8 @@ I kept using Git and GitHub
 </td><td>
 
 ### DjangoCon as Example Project
+
+Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
 
 I am going to use DjangoCon US website as an example throughout this talk. 
 * Many of the examples I am going to talk about can be illustrated through my experiences working on the DjangoCon US website
@@ -213,38 +234,12 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 
 
-<tr><td width="30%">
 
-![Slide 10]()
-
-</td><td>
-
-### It Would Take Almost 3 More Years for Me to Do Code Review
-
-Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way. The code review process was a mystery to me. I had no idea really how to do it until I asked to do code review for the DjangoCon US website and started doing it. 
-
-The funny thing is, there is actually kind of a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
-
-So, it's actually a really positive thing, imo, when someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
-
-</td></tr>
 
 
 <!--
 Also, I'm hoping that you will understand how commands can be adapted and reused.
 
-I think quite often with Git and GitHub, people learn what they need to know as they need to know it. 
-
-The Journey and Destination
-I think people often do not understand the overall process, because they haven't gone that far. 
-
-I like at my process of learning collaboration and code review as being kind of like a journey. When you go on a journey, by the time you are done, you have probably learned something and if you did the journey again, you would do some things differently. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
-
-There is a process that supports collaboration and code review and there is a process that doesn't. I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did.
-
-I did not understand what the process was supposed to look like. I didn't quite feel like I knew what I was doing, but I was extremely motivated. 
--->
-<!--
 Later on in this talk, I will debunk some of the myths that I believed at the time. 
 -->
 
