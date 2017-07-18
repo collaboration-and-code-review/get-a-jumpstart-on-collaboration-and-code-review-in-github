@@ -328,7 +328,7 @@ I'm going to give you an example of each one
 
 ### Example: "Shared Repository" Model
 
-Think about the word "shared". A “Shared Repository is typically found in an organization account where there are teams of maintainers working on repos together. 
+Think about the word "shared". A “Shared Repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on repos together. 
 
 For example: This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork. This is called the "Shared Repository" Model. 
 
@@ -356,13 +356,10 @@ This is the "Fork and Pull" Model.
 </td></tr>
 
 
-
 <!--
 with my user name in the URL (an organizational account can also fork a repo, but less commmon). The fork would be an exact copy of the original repo at the time it was forked. I could make any changes to the fork that I wanted, and the original repo will not be affected unless I submitted a pull request and a project maintainer pulled my changes into the DjangoCon US website repository. If I would delete the fork, the original DjangoCon US website repo would not be deleted. 
 
 Forks can be used to propose a change to the original repository, or can be the starting point for a new idea (depending on the license)
-
-</td></tr>
 -->
 
 
@@ -382,6 +379,7 @@ Forking graphic
 -->
 
 </td></tr>
+
 
 <tr><td width="30%">
 
@@ -421,6 +419,51 @@ A user account repo can be a "Shared Repository". A user account owner can invit
 ### Shared Repository Model Etiquette
 
 Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What is Git
+
+So far, everything we have been doing, we have done in a website called GitHub, where users can store and work on code together. You cannot do everything in the browser like this. GitHub is built on a software called Git. 
+
+You sometimes need to make a clone (copy) of a repo onto your local computer and work on it. 
+
+<!--
+You might not be able to run a website on GitHub, you might have software on your computer that you need to run the code. 
+
+Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. GitHub is a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
+
+<!--
+Git and GitHub Tour
+What is open-source?
+Definition?
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What a Local Environment Looks Like
+
+You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+
+<--
+You cannot do everything in the browser
+-->
 
 </td></tr>
 
@@ -477,6 +520,35 @@ Branches
 * You can have an unlimited number of branches, so you can do unlimited things
 
 </td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Perspective: Submitting a Pull Request
+
+In this example, I am going to clone a repo from GitHub, create a feature branch locally, make a change to it, push the branch back to the origin repo on GitHub, and submit a pull request for the changes to be merged into the DjangoCon website. 
+
+The process will be almost the same regardless of the situation. 
+
+1. Contributor without write permission forking the repo and cloning the fork
+1. Maintainer with write permission cloning the DjangoCo US repo
+
+The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
+
+<!--
+Folder/files/text editor
+-->
+
+</td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -552,29 +624,6 @@ You can then submit a pull request for the new branch in your origin.
 </td></tr>
 
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What is Git
-
-So far, everything we have been doing, we have done in a website called GitHub, where users can store and work on code together. You cannot do everything in the browser like this. 
-
-<!--
-You sometimes need to make a copy (clone or download) a repo onto your local computer and work on it locally. 
-
-Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
-
-<!--
-Git and GitHub Tour
-What is open-source?
-Definition?
--->
-
-</td></tr>
 
 
 
@@ -698,48 +747,6 @@ You can have an unlimited number of branches (for example, feature branches or p
 
 
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Perspective: Submitting a Pull Request
-
-In this example, I am going to clone a repo from GitHub, create a feature branch locally, make a change to it, push the branch back to the origin repo on GitHub, and submit a pull request for the changes to be merged into the DjangoCon website. 
-
-The process will be almost the same regardless of the situation. 
-
-1. Contributor without write permission forking the repo and cloning the fork
-1. Maintainer with write permission cloning the DjangoCo US repo
-
-The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
-
-<!--
-Folder/files/text editor
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What a Local Environment Looks Like
-
-You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
-
-<--
-You cannot do everything in the browser
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
