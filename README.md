@@ -29,6 +29,8 @@ Thank you!
 - [About You](#about-you)
 - [TacoFancy](#tacofancy)
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
+- [My First Pull Request](#my-first-pull-request)
+- [The Other Way Around](#the-other-way-around)
 - [DjangoCon US Website as Example Project](#the-one-sentence-that-motivated-me-to-start-using-github)
 
 
@@ -144,6 +146,35 @@ I struggled through and submitted my first pull request. I had a huge adrenaline
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### The Other Way Around
+
+I kept using Git and GitHub
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### DjangoCon as Example Project
+
+I am going to use DjangoCon US website as an example throughout this talk. 
+* Many of the examples I am going to talk about can be illustrated through my experiences working on the DjangoCon US website
+* I hope these concrete examples will provide reinforcement for your understanding
+
+</td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -153,8 +184,6 @@ I struggled through and submitted my first pull request. I had a huge adrenaline
 </td><td>
 
 ### It Would Take Almost 3 More Years for Me to Do Code Review
-
-I kept at it. I kept using GitHub and learning about Git. 
 
 Unfortunately, it would take almost 3 more years for me to begin doing code review. Now that I do it, I wonder, why did it take so long?! It didn't have to be that way. The code review process was a mystery to me. I had no idea really how to do it until I asked to do code review for the DjangoCon US website and started doing it. 
 
@@ -182,25 +211,6 @@ I did not understand what the process was supposed to look like. I didn't quite 
 <!--
 Later on in this talk, I will debunk some of the myths that I believed at the time. 
 -->
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### DjangoCon as Example Project
-
-I am going to use DjangoCon US website as an example throughout this talk. 
-* Many of the examples I am going to talk about can be illustrated through my experiences working on the DjangoCon US website
-* I hope these concrete examples will provide reinforcement for your understanding
-
-</td></tr>
-
-
 
 
 <tr><td width="30%">
