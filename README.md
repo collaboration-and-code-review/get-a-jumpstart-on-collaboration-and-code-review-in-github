@@ -224,36 +224,6 @@ Definition?
 
 </td><td>
 
-### What a Local Environment Looks Like
-
-You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
-
-<--
-You cannot do everything in the browser
--->
-
-</td></tr>
-
-
-<!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Vocab
-
-</td></tr>
--->
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
 ### Getting Started
 
 * Install Git on your computer and set your email and username
@@ -349,17 +319,41 @@ Organization account
 
 </td><td>
 
-### Write Permission and Why It Matters
+### Repository (Repo)
+
+Within user accounts are repos. A repo is a place where a codebase is stored. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Write Permission to a Repo and Why It Matters
 
 Write Permission is an important concept in GitHub collaboration. A person can have write permission to a repo. 
 
 We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo. 
 
-When you create a user account, you are the owner, so you have write permission to all of your repos. 
-
-Imagine a repo containing a mission critical software project deployed live. It would not be a good idea for just anyone to be able to come along and make changes within that repo. So what happens is that the owner of the organizational account will give write permission to specific idividuals, usually as maintainers. There is often a level of trust involved. 
-
 Whether you have write permission to a repo determines how you contribute to it (which Collaborative Development Model you use)
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Write Permission Examples
+
+When you create a user account, you are the owner, so you have write permission to all your repos.
+
+Imagine a repo containing a mission critical software project deployed live. It would not be a good idea for just anyone to be able to come along and make changes within that repo. So what happens is that the owner of the organizational account will give write permission to specific users to be maintainers. There is often a level of trust involved. 
 
 </td></tr>
 
@@ -405,7 +399,7 @@ A “Shared Repository is typically found in an organization account  because it
 
 ### "Fork and Pull"
 
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to and need to make a copy of it (fork it) to contribute. 
+The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to and need to fork it to contribute. 
 
 </td></tr>
 
@@ -416,12 +410,9 @@ The “Fork and Pull” Model is typically used in user account repos, because u
 
 </td><td>
 
-### Shared Repository Model: User Account Versus Organization
+### Example: DjangoCon US Website Repo "Fork and Pull" Model
 
-There is something a bit off topic that I do want to point out. A user account repo can be a "Shared Repository". A user account owner can invite other users to collaborate on a repo that he or she owns. But there are a few advantages to using a organizational repo repo as a "Shared Repository" instead of an user account repo. 
-
-* Organizational account owners can create teams and permissions across multiple repos
-* Otherwise, the repo "Shared Repository" settings are almost exactly the same
+The first year that I helped with the DangoCon US website, I was not a maintainer, so I did not have write permission to the DjangoCon US website repo. So, when I wanted to make a change to the repo, I needed to fork the repo to my user account, make the changes, and submit a pull request for the changes to be pulled into the DjangoCon US website repo. This is the "Fork and Pull" Model. 
 
 </td></tr>
 
@@ -432,41 +423,25 @@ There is something a bit off topic that I do want to point out. A user account r
 
 </td><td>
 
-### "Shared Repository" Model Etiquette
+### Forking the Repo
 
-Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Example: Forking DjangoCon US Website Repo
-
-The first year that I helped with the DangoCon US website, I was not a maintainer, so I did not have write permission to the DjangoCon US website repo. So, when I wanted to make a change to the repo, I needed to make a copy (fork) the repo to my user account, make the changes, and submit a pull request for the changes to be accepted (pulled) into the DjangoCon US website repo. This is the "Fork and Pull" Model. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Creating a Fork
-
-There are two Ways to fork:
 * Click the "Fork" button
 * Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account, and notify you that it is forking it. 
 
 <!--
 Forking graphic
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Forked the Repo
 
 </td></tr>
 
@@ -496,14 +471,43 @@ Forks can be used to propose a change to the original repository, or can be the 
 
 The second year that I helped with the DangoCon US website, I became a maintainer, so I was given write permission to the DjangoCon US website repo. I could make changes and submit a pull request within the DjangoCon US website repo, along with the other maintainers. I no longer needed a fork. This is called the "Shared Repository" Model. 
 
+<!--
 Some examples of what I can do now:
 * Push work (a branch) directly to the repo (instead of via fork)
 * Edit a file
 * Review pull requests
 
-<!--
 See write permissions chart for info
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Model: User Account Versus Organization
+
+There is something a bit off topic that I do want to point out. A user account repo can be a "Shared Repository". A user account owner can invite other users to collaborate on a repo that he or she owns. But there are a few advantages to using a organizational repo repo as a "Shared Repository" instead of an user account repo. 
+
+* Organizational account owners can create teams and permissions across multiple repos
+* Otherwise, the repo "Shared Repository" settings are almost exactly the same
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### "Shared Repository" Model Etiquette
+
+Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
 
 </td></tr>
 
@@ -556,6 +560,8 @@ Branches
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -596,6 +602,23 @@ The two main differences are that if you are using the "Fork and Pull" Model:
 
 <!--
 Folder/files/text editor
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What a Local Environment Looks Like
+
+You can also make a copy (clone or download) of a repo on your own computer (local) and work on it. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+
+<--
+You cannot do everything in the browser
 -->
 
 </td></tr>
