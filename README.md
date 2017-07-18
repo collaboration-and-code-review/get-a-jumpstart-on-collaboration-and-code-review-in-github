@@ -347,17 +347,17 @@ The “Fork and Pull” Model is typically used in user account repos.
 
 For example, when I first wanted to contribute to the DangoCon US website, I was not a maintainer, so I did not have write permission to the repo. Remember that I said that when you create a user account, you own all of your repos and have write permission to all of them. 
 
-So, I made a copy of the DjangoCon US website repo in my user account. This is called a fork. I owned the fork. I aas the only user with write permission to it, unless I were to give permission to someone else, such as a maintainer, when I was submitting a pull request. 
+So, I made a copy of the DjangoCon US website repo in my user account. This is called a fork. I owned the fork. I was the only user with write permission to it, unless I were to give permission to someone else, such as a maintainer, when I was submitting a pull request. 
+
+Typically, you make a change to the fork and submit a pull request to the original repo. If a DjangoCon US website maintainer approves the pull request he or she will pull the changes into the DjangoCon US website repo. 
+
+This is the "Fork and Pull" Model. 
 
 </td></tr>
 
 
 
 <!--
-make the changes, and submit a pull request for the changes to be pulled into the DjangoCon US website repo. This is the "Fork and Pull" Model. 
-
-users come across repos they want to contribute to but don’t have write permission to and need to fork it to contribute.
-
 with my user name in the URL (an organizational account can also fork a repo, but less commmon). The fork would be an exact copy of the original repo at the time it was forked. I could make any changes to the fork that I wanted, and the original repo will not be affected unless I submitted a pull request and a project maintainer pulled my changes into the DjangoCon US website repository. If I would delete the fork, the original DjangoCon US website repo would not be deleted. 
 
 Forks can be used to propose a change to the original repository, or can be the starting point for a new idea (depending on the license)
@@ -425,6 +425,8 @@ Even if you have write permission to a "Shared Repository", just because you can
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -464,9 +466,116 @@ Any additional changes you make will be added to the pull request
 
 </td><td>
 
-### What is Git
+### How Do We Switch Between Multiple Tasks? 
+
+By using branches
+
+Branches
+* Branches are a best practice
+* Can be used by any GitHub user
+* Give you more freedom
+* You can have an unlimited number of branches, so you can do unlimited things
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 32]()
+
+</td><td>
+
+### Commands
+
+Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
+
+```bash
+$ git clone <repo-url>
+```
+
+Example: clone (or download) an organizational repo (organizational repo will be "origin")
+
+```bash
+$ git clone https://github.com/<organization-name>/<repo-name>
+```
+
+Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
+
+```bash
+$ git clone https://github.com/<user-name>/<repo-name>
+```
+
+A few things that have happened
+* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
+* The folder will be initialized as a Git repository
+* You will be checked out on the default branch (usually master)
+* The local clone will be connected to the GitHub repository, which is now a remote repository named "origin"
+
+Change directory into the folder of the repo you cloned. Folder name will be the repo name.
+
+```bash
+$ cd <repo-name>
+```
+
+Verify which branch you are checked out on (important if more than one branch)
+
+```bash
+$ git branch
+```
+
+Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+
+```bash
+$ git checkout -b <branch-name>
+```
+
+Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
+
+Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from); This can also be used to push additional commits
+
+```bash
+$ git push origin <branch-name>
+```
+
+There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
+
+<!--
+DjangoCon and fork as examples
+You can then submit a pull request for the new branch in your origin. 
+-->
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What is Git
+
+So far, everything we have been doing, we have done in a website called GitHub, where users can store and work on code together. You cannot do everything in the browser like this. 
+
+<!--
+You sometimes need to make a copy (clone or download) a repo onto your local computer and work on it locally. 
+
+Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
+
+<!--
+Git and GitHub Tour
+What is open-source?
+Definition?
+-->
+
+</td></tr>
+
 
 
 <tr><td width="30%">
@@ -504,25 +613,6 @@ Also, I'm hoping that you will understand how commands can be adapted and reused
 
 Later on in this talk, I will debunk some of the myths that I believed at the time. 
 -->
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What are Git and GitHub
-
-Git is a version control system that you install on your computer and use via your terminal. Git by itself is not very user friendly. Some entrepreneurs came along and decided to create a social network for programmers based on GitHub where they can store and work on code in the browser in repositories (a.k.a repos).   
-
-<!--
-Git and GitHub Tour
-What is open-source?
-Definition?
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -581,23 +671,7 @@ Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.g
 
 
 
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### How Do We Switch Between Multiple Tasks? 
-
-By using branches
-
-Branches
-* Branches are a best practice
-* Can be used by any GitHub user
-* Give you more freedom
-* You can have an unlimited number of branches, so you can do unlimited things
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -632,8 +706,6 @@ You can have an unlimited number of branches (for example, feature branches or p
 </td><td>
 
 ### Perspective: Submitting a Pull Request
-
-Like I said earlier, you cannot do everything in the browser. You sometimes need to make a copy (clone or download) a repo onto your local computer and work on it locally. 
 
 In this example, I am going to clone a repo from GitHub, create a feature branch locally, make a change to it, push the branch back to the origin repo on GitHub, and submit a pull request for the changes to be merged into the DjangoCon website. 
 
@@ -727,118 +799,6 @@ $ git push <remote-name>
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 30]()
-
-</td><td>
-
-### Bash Commands
-
-Earlier, I said that the ability to navigate via terminal would be helpful (example: know how to change directory). Here are a few very helpful commands.
-
-Go to the home directory
-
-```bash
-$ cd
-```
-
-Change directory
-
-```bash
-$ cd <folder-name>
-```
-
-List the folders and files in a directory
-
-```bash
-$ ls
-```
-
-Move back a directory
-
-```bash
-$ cd ..
-```
-
-<!--
-Bash command list
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 32]()
-
-</td><td>
-
-### Commands
-
-Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
-
-```bash
-$ git clone <repo-url>
-```
-
-Example: clone (or download) an organizational repo (organizational repo will be "origin")
-
-```bash
-$ git clone https://github.com/<organization-name>/<repo-name>
-```
-
-Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
-
-```bash
-$ git clone https://github.com/<user-name>/<repo-name>
-```
-
-A few things that have happened
-* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
-* The folder will be initialized as a Git repository
-* You will be checked out on the default branch (usually master)
-* The local clone will be connected to the GitHub repository, which is now a remote repository named "origin"
-
-Change directory into the folder of the repo you cloned. Folder name will be the repo name.
-
-```bash
-$ cd <repo-name>
-```
-
-Verify which branch you are checked out on (important if more than one branch)
-
-```bash
-$ git branch
-```
-
-Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
-
-```bash
-$ git checkout -b <branch-name>
-```
-
-Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
-
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
-
-Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from); This can also be used to push additional commits
-
-```bash
-$ git push origin <branch-name>
-```
-
-There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
-
-<!--
-DjangoCon and fork as examples
-You can then submit a pull request for the new branch in your origin. 
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1240,7 +1200,7 @@ Resolving a merge conflict using the command line- varies by OS, revisit
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 00]()
 
 </td><td>
 
@@ -1884,3 +1844,43 @@ https://help.github.com/articles/differences-between-user-and-organization-accou
 * [Adding a License to a Repository](https://help.github.com/articles/adding-a-license-to-a-repository)
 * [Adding a Code of Conduct to Your Project](https://help.github.com/articles/adding-a-code-of-conduct-to-your-project)
 -->
+
+<tr><td width="30%">
+
+![Slide 30]()
+
+</td><td>
+
+### Bash Commands
+
+Earlier, I said that the ability to navigate via terminal would be helpful (example: know how to change directory). Here are a few very helpful commands.
+
+Go to the home directory
+
+```bash
+$ cd
+```
+
+Change directory
+
+```bash
+$ cd <folder-name>
+```
+
+List the folders and files in a directory
+
+```bash
+$ ls
+```
+
+Move back a directory
+
+```bash
+$ cd ..
+```
+
+<!--
+Bash command list
+-->
+
+</td></tr>
