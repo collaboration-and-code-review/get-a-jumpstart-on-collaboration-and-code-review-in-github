@@ -131,43 +131,19 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
-![Slide 9]()
+![Slide 00]()
 
 </td><td>
 
 ### My First Pull Request
 
-Just like I said earlier, I did not understand what the process was supposed to look like. I didn't quite feel like I knew what I was doing, but I was extremely motivated. I struggled through and submitted my first pull request. As is often characteristic of moments of achievement like this, there was a huge adrenaline rush. 
+I struggled through and submitted my first pull request. I had a huge adrenaline rush. I felt like I had done something so amazing, which I had. 
 
 </td></tr>
 
 
-
-
-<!--
-Later on in this talk, I will debunk some of the myths that I believed at the time. 
--->
-
-<!--
-I felt a bit intimidated and I wasn't sure if I fit in.
-
-What This Talk Is and Isn’t
-
-Also, I'm hoping that you will understand how commands can be adapted and reused.
-
-I think quite often with Git and GitHub, people learn what they need to know as they need to know it. 
-
-The Journey and Destination
-I think people often do not understand the overall process, because they haven't gone that far. 
-
-I like at my process of learning collaboration and code review as being kind of like a journey. When you go on a journey, by the time you are done, you have probably learned something and if you did the journey again, you would do some things differently. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
-
-There is a process that supports collaboration and code review and there is a process that doesn't. I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did.
--->
 
 
 <tr><td width="30%">
@@ -189,6 +165,27 @@ So, it's actually a really positive thing, imo, when someone wants to transition
 </td></tr>
 
 
+<!--
+Also, I'm hoping that you will understand how commands can be adapted and reused.
+
+I think quite often with Git and GitHub, people learn what they need to know as they need to know it. 
+
+The Journey and Destination
+I think people often do not understand the overall process, because they haven't gone that far. 
+
+I like at my process of learning collaboration and code review as being kind of like a journey. When you go on a journey, by the time you are done, you have probably learned something and if you did the journey again, you would do some things differently. If I were to start my journey of learning collaboration and code review over again, knowing what I know now, I would do things differently from the beginning. 
+
+There is a process that supports collaboration and code review and there is a process that doesn't. I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did.
+
+I did not understand what the process was supposed to look like. I didn't quite feel like I knew what I was doing, but I was extremely motivated. 
+-->
+<!--
+Later on in this talk, I will debunk some of the myths that I believed at the time. 
+-->
+
+
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -198,14 +195,12 @@ So, it's actually a really positive thing, imo, when someone wants to transition
 ### DjangoCon as Example Project
 
 I am going to use DjangoCon US website as an example throughout this talk. 
-* Every example am I going to talk about can be applied to the DjangoCon US website
-* They are real examples from my experience
-
-<!--
-I hope you've had a chance to take a good look at the DjangoCon website. I'm so proud of what the team has accomplished. It's truly a beautiful website.
--->
+* Many of the examples I am going to talk about can be illustrated through my experiences working on the DjangoCon US website
+* I hope these concrete examples will provide reinforcement for your understanding
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
