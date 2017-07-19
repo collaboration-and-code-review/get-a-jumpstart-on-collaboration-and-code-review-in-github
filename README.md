@@ -32,11 +32,13 @@ Thank you!
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
 - [What are Git and GitHub?](#what-are-git-and-github)
-- [What a Local Environment Looks Like](#what-a-local-environment-looks-like)
+- [Local Development Environment](#local-development-environment)
 - [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
-- [How Do We Switch Between Multiple Tasks?](#how-do-we-switch-between-multiple-tasks)
-- [Overview](#over)
+- [Branch Diagram](#branch-diagram)
+- [Branches](#branches)
+- [Overview](#overview)
+- [Section 1](#section-1)
 - [The Two Types of Accounts](#the-two-types-of-accounts)
 - [Repository (Repo)](#repository-repo)
 - [Feature Branches](#feature-branches)
@@ -50,11 +52,16 @@ Thank you!
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
 - [About Forks](#about-forks)
-- [Local Branch Process](#local-branch-process)
+- [Section 2](#section-2)
+
 - [Fork and Pull Diagram](#fork-and-pull-diagram)
 - [Shared Repository Diagram](#shared-repository-diagram)
 
 <!--
+- [Local Branch Process](#local-branch-process)
+
+- [How Do We Switch Between Multiple Tasks?](#how-do-we-switch-between-multiple-tasks)
+
 - [Getting Help](#getting-help)
 
 ### Perspective: Submitting a Pull Request
@@ -297,12 +304,7 @@ In order to be able to increase your level of responsibility, we need to be able
 * Create one or more features
 * Do code review
 
-<!--
-How I would do things differently
--->
-
 </td></tr>
-
 
 
 <tr><td width="30%">
