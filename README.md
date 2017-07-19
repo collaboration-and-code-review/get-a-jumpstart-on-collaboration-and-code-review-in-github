@@ -64,7 +64,6 @@ Thank you!
 
 - [Getting Help](#getting-help)
 
-### Perspective: Submitting a Pull Request
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 ### Submit a Pull Request
 
@@ -238,6 +237,20 @@ GitHub is a website where users can store and work on code together in the brows
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Browser Versus Local
+
+Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. Sometimes we need to work on the code in our local development environment. 
+
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to clone the repo on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
+
+</td></tr>
+
 
 <tr><td width="30%">
 
@@ -247,28 +260,19 @@ GitHub is a website where users can store and work on code together in the brows
 
 ### Local Development Environment
 
-What a Local Environment Looks Like
-
-Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. Sometimes we need to work on the code in our local development environment. 
-
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to clone the repo on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
+When you clone the GitHub repo in your local development environment, it will contain a hidden folder named .git. This folder contains Git configuration information. 
 
 We can transfer (push) changes back and forth between our local development environment and our GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell us if there is a conflict.
 
 <!--
-Now we are going to work locally
+What a Local Environment Looks Like
+
+You can clone a GitHub repo locally. You will then have a copy of the code on your computer and a copy on GitHub. 
 
 * There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
 * The folder will be initialized as a Git repository
 
 We install Git on our computer and use it via the command line.
-
-When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. 
-
-The git configurations are contained in a hidden folder called .git in your local project folder. 
-
-* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
-* The folder will be initialized as a Git repository
 -->
 
 </td></tr>
@@ -360,7 +364,7 @@ The way that we will submit a feature branch depends on write permission.
 ### Overview
 
 * We are going to determine which collaboration approach to use
-* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
+* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
 * Then we will review the pull requests as a maintainer
 
 </td><td>
@@ -392,10 +396,6 @@ User account (example: my user account)
 
 Organization account (example: DjangoCon organization account)
 * An account where a team of people are working together
-
-<!--
-Firstly, we need to figure out which collaobrative development model we're using
--->
 
 </td></tr>
 
@@ -587,11 +587,9 @@ I own the fork and am the only user with write permission to it unless I give pe
 ### Section 2
 
 * We are going to determine which collaboration approach to use
-* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
+* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
 
 </td></tr>
-
-
 
 
 
@@ -698,7 +696,7 @@ $ git push <remote-name>
 
 ### Local Branch Process
 
-We are going to clone whichever repo you have write permission to into the local development environment. The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
+This is going to be a generic process. The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
 
  The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
@@ -772,8 +770,6 @@ There will now be a new branch in the repo that is your origin. The branch will 
 
 <!--
 DjangoCon and fork as examples
-You can then submit a pull request for the new branch in your origin. 
-* Push the branch to origin (the repo we have write permission to that we cloned from)
 
 Folder/files/text editor
 -->
@@ -806,7 +802,8 @@ If you are submitting the pull request a forked repo:
 * base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
 
 <!--
-DjangoCon example
+You can then submit a pull request for the new branch in your origin. 
+* Push the branch to origin (the repo we have write permission to that we cloned from)
 -->
 
 </td></tr>
@@ -821,7 +818,7 @@ DjangoCon example
 ### Section 3
 
 * We are going to determine which collaboration approach to use
-* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
+* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
 * Then we will review the pull requests as a maintainer
 
 </td></tr>
