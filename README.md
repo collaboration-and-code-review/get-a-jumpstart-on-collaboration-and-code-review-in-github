@@ -364,8 +364,8 @@ The way that we will submit a feature branch depends on write permission.
 ### Overview
 
 * We are going to determine which collaboration approach to use
-* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
-* Then we will review the pull requests as a maintainer
+* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Then we will review the pull requests as a DjangoCon US website repo maintainer
 
 </td><td>
 
@@ -587,83 +587,9 @@ I own the fork and am the only user with write permission to it unless I give pe
 ### Section 2
 
 * We are going to determine which collaboration approach to use
-* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
+* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 
 </td></tr>
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Remotes, Pushing and Pulling
-
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
-
-<!--
-When you clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now a remote repo named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
-
-You can also add remotes other than origin to a repo and push and pull from it. 
--->
-
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
-
-<!--
-Keeping Your Local Clone and GitHub Repo in Sync
-
-Here are the generic commands for pushing and pulling. 
-
-When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
--->
-
-If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
-
-Pushing and pulling via <remote-name>
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-<!--
-clone: local copy of a repo
-push: transfer changes from local clone to online repo
-pull: transfer changes from online repo to local clone
-
-fetch it from the remote
-
-```bash
-$ git pull <remote-name>
-$ git push <remote-name>
-```
--->
-
-</td></tr>
-
-
-
 
 
 <tr><td width="30%">
@@ -818,11 +744,83 @@ You can then submit a pull request for the new branch in your origin.
 ### Section 3
 
 * We are going to determine which collaboration approach to use
-* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
-* Then we will review the pull requests as a maintainer
+* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Then we will review the pull requests as a DjangoCon US website repo maintainer
 
 </td></tr>
 
+
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remotes, Pushing and Pulling
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+
+<!--
+When you clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now a remote repo named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
+
+You can also add remotes other than origin to a repo and push and pull from it. 
+-->
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
+
+<!--
+Keeping Your Local Clone and GitHub Repo in Sync
+
+Here are the generic commands for pushing and pulling. 
+
+When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+-->
+
+If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
+
+Pushing and pulling via <remote-name>
+
+```bash
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+<!--
+clone: local copy of a repo
+push: transfer changes from local clone to online repo
+pull: transfer changes from online repo to local clone
+
+fetch it from the remote
+
+```bash
+$ git pull <remote-name>
+$ git push <remote-name>
+```
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
