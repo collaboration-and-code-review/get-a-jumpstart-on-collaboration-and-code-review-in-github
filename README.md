@@ -406,17 +406,118 @@ A user account repo can be a "Shared Repository". A user account owner can invit
 -->
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
 
 </td><td>
 
-### Shared Repository Model Etiquette
+### Collaboration and Code Review Best Practice Workflow
+
+In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
+* Keep your code up-to-date
+* Create one or more features
+* Do code review
+
+We need to do all of these things outside of the normal codebase and locally
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### How Do We Switch Between Multiple Tasks? 
+
+By using branches
+
+Branches
+* Branches are a best practice
+* Can be used by any GitHub user
+* Give you more freedom
+* You can have an unlimited number of branches, so you can do unlimited things
+
+</td></tr>
+
+
+
+
+
+
+
+<!--
+Our Process is Too Limiting
+
+We've sorted out the two different ways to collaborate on repos, but unfortunately, our process is too limiting. 
+
+1. We need to work locally
+2. We need to be able to propose changes without making changes directly in the code
+-->
+
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Example of a Problematic Shared Repository Model Process
 
 Even if you have write permission to a "Shared Repository", just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the "Shared Repository". If you make a change to the repo without submitting a pull request first, you may be changing code in a live branch. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Example of a Problematic "Fork and Pull" Model Process
+
+* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
+
+<!--
+Any additional changes you make will be added to the pull request
+-->
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### About Branches
+
+A branch is a copy of another branch within your repo.
+
+When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
+
+Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.
+
+<!--
+Keep main branch(es) up-to-date
+Make a copy of the branch you intend to merge your changes into when you want to create a feature
+You can have an unlimited number of branches (for example, feature branches or pull request branches)
+-->
+
+</td></tr>
+
 
 
 <tr><td width="30%">
@@ -431,14 +532,28 @@ We're going to change our perspective slightly. So far, everything we have done,
 
 You sometimes need to work on code on your locally computer. 
 
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to clone (make a copy) of the code on our computer, install software and run the code locally. 
-
-<!--
-You can also make a copy (clone) of a repo on your own computer (local) and work on it. You will be using Git via your command line for version control. The Git configurations will be contained with a hidden folder called .git. You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
--->
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser, and make changes to the code. 
 
 </td></tr>
 
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What is Git
+
+Git is version control software. GitHub is built on a software called Git. We install and use Git via our command line. The git configurations are contained in a hidden folder called .git in your local project folder. 
+
+<!--
+You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
+
+clone (make a copy) of the code on our computer (local) 
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -450,21 +565,6 @@ You can also make a copy (clone) of a repo on your own computer (local) and work
 ### What a Local Environment Looks Like
 
 </td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What is Git
-
-GitHub is built on a software called Git. 
-
-</td></tr>
-
 
 
 <tr><td width="30%">
@@ -490,85 +590,6 @@ Bash command list
 
 </td></tr>
 
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Collaboration and Code Review Best Practice Workflow
-
-In order to be able to increase your level of responsibility, you need to be able to switch between multiple tasks. 
-* Keep your code up-to-date
-* Create one or more features
-* Do code review
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Example of a Not-Scalable Workflow
-
-* Fork a repo, make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
-
-<!--
-Any additional changes you make will be added to the pull request
--->
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### How Do We Switch Between Multiple Tasks? 
-
-By using branches
-
-Branches
-* Branches are a best practice
-* Can be used by any GitHub user
-* Give you more freedom
-* You can have an unlimited number of branches, so you can do unlimited things
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### About Branches
-
-A branch is a copy of another branch within your repo.
-
-When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
-
-Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.
-
-<!--
-Keep main branch(es) up-to-date
-Make a copy of the branch you intend to merge your changes into when you want to create a feature
-You can have an unlimited number of branches (for example, feature branches or pull request branches)
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
