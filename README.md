@@ -326,18 +326,19 @@ In order to be able to increase your level of responsibility, we need to have th
 
 ### Branch Diagram
 
-By using branches
+Branches
 * Can be used by any GitHub user
 * You can have an unlimited number of branches
 
-<!--
-We've talked about a couple of different types of branches
+Two different types
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-Feature branches eventually become pull request branches, but we can deal with them in much the same way
-A few things can go wrong if we don't use feature branches
--->
+Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
+
+If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
+
+By the way, a few things can go wrong if you do not use branches. They are a best practice. 
 
 </td></tr>
 
@@ -663,11 +664,7 @@ Change directory into the folder of the repo you cloned. Folder name will be the
 $ cd <repo-name>
 ```
 
-<!--
-* You will be checked out on the default branch (usually master)
--->
-
-Verify which branch you are checked out on (important if more than one branch)
+Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
 
 ```bash
 $ git branch
@@ -686,7 +683,7 @@ $ git add .
 $ git commit -m "Your note"
 ```
 
-Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from); This can also be used to push additional commits
+Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
 
 ```bash
 $ git push origin <branch-name>
@@ -729,7 +726,6 @@ If you are submitting the pull request a forked repo:
 
 <!--
 You can then submit a pull request for the new branch in your origin. 
-* Push the branch to origin (the repo we have write permission to that we cloned from)
 -->
 
 </td></tr>
@@ -746,6 +742,32 @@ You can then submit a pull request for the new branch in your origin.
 * We are going to determine which collaboration approach to use
 * We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Then we will review the pull requests as a DjangoCon US website repo maintainer
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Perspective: Checking Out Remote Branches
+
+We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
+
+The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remote Branch Graphic
 
 </td></tr>
 
@@ -829,37 +851,16 @@ $ git push <remote-name>
 
 </td><td>
 
-### Perspective: Checking Out Remote Branches
-
-We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
-
-We are going to be working on feature branches and reviewing the pull requests we submitted. 
-
-Hypothetically
-1. Pull requests submitted from a branch pushed to the DjangoCon US website repo
-2. Pull requests submitted from a branch pushed to a fork
-
-The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
 ### The Difference Between a Feature Branch and a Pull Request Branch
 
 Feature branches and pull request branches are all just remote branches.
+
+We are going to be working on feature branches and reviewing the pull requests we submitted. 
 
 The main difference between working on a feature branch or pull request branch is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
 
 * Anyone with write permission can fetch feature branches and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
 * If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. 
-
-If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
