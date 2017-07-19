@@ -68,11 +68,15 @@ Thank you!
 ### Shared Repo Model Feature Branch or Pull Request Branch
 ### Forked Repo Model Feature Branch or Pull Request Branch
 ### Pull Request Review Process
+
 ### Fetch Individual Pull Request
+
 ### How to Deal With Merge Conflicts
 ### Adding an Upstream Remote and Syncing a Fork
 ### Syncing Changes
+
 ### Advanced Workflow
+
 ### Organization and Team Setup
 ### Safeguards Checklist
 ### Community and Communication Strategy
@@ -239,20 +243,13 @@ The git configurations are contained in a hidden folder called .git in your loca
 
 ### What a Local Environment Looks Like
 
+Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. Sometimes we need to work on the code in our local development environment. 
+
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to clone the repo on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
+
+We can transfer (push) changes back and forth between our local development environment and our GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell us if there is a conflict.
+
 </td></tr>
-
-
-<!--
-You can transfer (push) changes back and forth between your local computer and your GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell you if there is a conflict.
-
-clone (make a copy) of the code on our computer (local) 
-
-We're going to change our perspective slightly. So far, everything we have done, we have done in the website GitHub. We cannot do everything in the browser like this. 
-
-You sometimes need to work on code on your locally computer. 
-
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser, and make changes to the code. 
--->
 
 
 <tr><td width="30%">
@@ -291,6 +288,10 @@ In order to be able to increase your level of responsibility, we need to be able
 * You keep your main code branch (master) up-to-date
 * Create one or more features
 * Do code review
+
+<!--
+How I would do things differently
+-->
 
 </td></tr>
 
