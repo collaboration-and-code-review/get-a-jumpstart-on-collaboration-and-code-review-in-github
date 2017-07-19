@@ -30,7 +30,7 @@ Thank you!
 - [TacoFancy](#tacofancy)
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
-- [DjangoCon US Website as Example Project](#the-one-sentence-that-motivated-me-to-start-using-github)
+- [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
 - [What is GitHub](#what-is-github)
 - [The Two Types of Accounts](#the-two-types-of-accounts)
 - [Repository (Repo)](#repository-repo)
@@ -151,7 +151,7 @@ When it comes to Git commands, there are many variations of how things can be do
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 5]()
 
 </td><td>
 
@@ -170,7 +170,7 @@ So I clicked on the link and went to the project to take a look.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 6]()
 
 </td><td>
 
@@ -185,7 +185,7 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 7]()
 
 </td><td>
 
@@ -198,11 +198,11 @@ I struggled through and submitted my first pull request. I had a huge adrenaline
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 8]()
 
 </td><td>
 
-### DjangoCon as Example Project
+### DjangoCon US Website as Example Project
 
 I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
 
@@ -215,7 +215,7 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 9]()
 
 </td><td>
 
@@ -228,7 +228,7 @@ GitHub is a website where users can store and work on code together in the brows
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 10]()
 
 </td><td>
 
@@ -245,7 +245,7 @@ Organization account (example: DjangoCon organization account)
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 11]()
 
 </td><td>
 
@@ -258,7 +258,7 @@ Within user accounts are repositories (a.k.a repos). A repo is a place where a c
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 12]()
 
 </td><td>
 
@@ -270,7 +270,7 @@ When you create a user account, you are the owner, so you have write permission 
 
 Write permission is usually associated with organization repos. 
 
-For example, DjangoCon US website is a software project deployed live with a fairly high volume of traffic. We would not want just anyone user to be able to come along and make changes within the repo. So, DjangoCon organization account owners have given certain users write permission to be maintainers. There is often a level of trust involved in having write permission. 
+For example, DjangoCon US website is a software project deployed live with a fairly high volume of traffic. We would not want just any user to be able to come along and make changes within the repo. So, DjangoCon organization account owners have given certain users write permission to be maintainers. There is often a level of trust involved in having write permission. 
 
 <!--
 Some examples of what I can do within the repo now:
@@ -287,7 +287,7 @@ See write permissions chart for info
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 13]()
 
 </td><td>
 
@@ -302,7 +302,7 @@ There are two different ways to contribute and they have a fancy name.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 14]()
 
 </td><td>
 
@@ -312,6 +312,8 @@ The two Collaborative Development Models
 * "Shared Repository" Model
 * "Fork and Pull" Model
 
+The two different collaborative development models correspond to the two different account types
+
 I'm going to give you an example of each one
 
 </td></tr>
@@ -319,22 +321,35 @@ I'm going to give you an example of each one
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 15]()
 
 </td><td>
 
-### Example: "Shared Repository" Model
+### "Shared Repository"
 
-Think about the word "shared". A “Shared Repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on repos together. 
-
-For example: This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork. This is called the "Shared Repository" Model. 
+Think about the word "shared". A shared repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on them together. 
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 16]()
+
+</td><td>
+
+### Example: DjangoCon US Website Repo as a "Shared Repository"
+
+For example: This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork. This is called the "Shared Repository" Model. 
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 17]()
 
 </td><td>
 
