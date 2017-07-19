@@ -32,14 +32,14 @@ Thank you!
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
 - [What are Git and GitHub?](#what-are-git-and-github)
+- [What a Local Environment Looks Like](#what-a-local-environment-looks-like)
 - [Prerequisites for Getting Started](#prerequisites-for-getting-started)
-
-<!--
-- [Local Environment](#local-environment)
--->
-
+- [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
+- [How Do We Switch Between Multiple Tasks?](#how-do-we-switch-between-multiple-tasks)
+- [Overview](#over)
 - [The Two Types of Accounts](#the-two-types-of-accounts)
 - [Repository (Repo)](#repository-repo)
+- [Feature Branches](#feature-branches)
 - [Write Permission and Why We Need It](#write-permission-and-why-we-need-it)
 - [Write Permission and Collaboration](#write-permission-and-collaboration)
 - [The Two Collaborative Development Models)](#the-two-collaborative-development-models)
@@ -49,12 +49,12 @@ Thank you!
 - [Example: DjangoCon US Website Repo "Fork and Pull" Model](####example-djangoCon-us-website-repo-fork-and-pull-model)
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
-- [Feature Branches](#feature-branches)
-- [What Can go Wrong When You Don't Use Feature Branches](#what-can-go-wrong-when-you-don't-use-feature-branches)
+- [About Forks](#about-forks)
+- [Local Branch Process](#local-branch-process)
+- [Fork and Pull Diagram](#fork-and-pull-diagram)
+- [Shared Repository Diagram](#shared-repository-diagram)
 
 <!--
-- [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
-- [How Do We Switch Between Multiple Tasks?](#how-do-we-switch-between-multiple-tasks)
 - [Getting Help](#getting-help)
 
 ### Perspective: Submitting a Pull Request
@@ -308,6 +308,14 @@ By using branches
 * Give you more freedom
 * You can have an unlimited number of branches
 
+<!--
+We've talked about a couple of different types of branches
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+Feature branches become pull request branches, but we can deal with them in much the same way
+-->
+
 </td></tr>
 
 
@@ -368,7 +376,7 @@ When a repo is created, there is a default branch named master that contains the
 
 What typically happens is that when you want to create a new feature, you make a copy of the branch you intend your feature to be merged into (in this case, the master branch). You make the changes to this new branch, and submit a pull request. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the feature branch.
 
-You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into. You can have an unlimited number of branches. 
+You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
 
 The way that we will submit a feature branch depends on write permission.
 
@@ -560,15 +568,15 @@ I own the fork and am the only user with write permission to it unless I give pe
 
 ### Local Branch Process
 
-As I said earlier, we cannot do everything in the browser.
+Now we are going to work locally
 
 The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
 
-Clone the repo into local development environment (whichever one I have write permission to)
-Create and checkout to a feature branch
-Make a change, add, commit, 
-Push the branch to origin (the repo we have write permission to that we cloned from)
-Submit a pull request for the change to be merged into the DjangoCon US website repo
+* Clone the repo into local development environment (whichever one I have write permission to)
+* Create and checkout to a feature branch
+* Make a change, add, commit, 
+* Push the branch to origin (the repo we have write permission to that we cloned from)
+* Submit a pull request for the change to be merged into the DjangoCon US website repo
 
  The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
@@ -778,8 +786,6 @@ DjangoCon example
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -792,11 +798,11 @@ We are switching our perspective now. We are now working only as DjangoCon US we
 
 We are going to be working on feature branches and reviewing the pull requests we submitted. 
 
-Recap:
+Hypothetically
 1. Pull requests submitted from a branch pushed to the DjangoCon US website repo
-2. Pull requests submitted from a forked repo branch
+2. Pull requests submitted from a branch pushed to a fork
 
-The forked repo is not an origin for us and we do not have write pemrissio to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
+The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 
 </td></tr>
 
@@ -809,23 +815,104 @@ The forked repo is not an origin for us and we do not have write pemrissio to it
 
 ### The Difference Between a Feature Branch and a Pull Request Branch
 
-We've talked about a couple of different types of branches
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
+Feature branches and pull request branches are all just remote branches.
 
-When you go to the pull request tab in the browser and look at a pull request, there will a set of command line instructions for reviewing the pull request locally. At the beginning will be a set of instructions for how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
+The main difference between working on a feature branch or pull request branch is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
 
 * Anyone with write permission can fetch feature branches and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
-* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged
-
-The main difference between the fetching and working on a feature branch or pull request branch is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
+* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. 
 
 If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
 
 </td></tr>
 
 
+<tr><td width="30%">
 
+![Slide 00]()
+
+</td><td>
+
+### Pull Request Review Process
+
+First things first
+* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
+* Follow the link to the pull request in the repo pull request tab in the browser
+* Look over the information about the pull request provided by the contributor
+
+* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
+<!--
+When you go to the pull request tab in the browser and look at a pull request, there will a set of command line instructions for reviewing the pull request locally. At the beginning will be a set of instructions for how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
+
+* click on the files (pull request tab)
+
+Pull request, one file shows all changes
+
+diff Views
+* unified view
+* split view
+* source view
+* rich view
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Pull Request Review Options
+
+There are two ways to merge a pull request
+* Via browser (click merge button- options are regular, squash, or rebase merge)
+* Via command line locally
+
+Simplest scenario
+* When you look at the pull request in the browser, you can tell it can be accepted and click merge (for example, if the pull request is fixing a typo) 
+
+Second simplest scenario
+* You look at the pull request in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
+
+Less simple
+* You can't always accept the pull request based on just looking at the code in the browser
+* You sometimes need to run the code in the pull request locally to evalute it
+
+After you run the code locally, if you decide a change does need to be made
+* You can go back to the browser and click merge
+
+After you run the code locally, if you decide a change needs to be made, there are a few options
+* As the contributor to make a change to the pull request
+* Push additional commits yourself to the pull request branch
+
+
+<!--
+* you update the pull request branch locally (add, commit, create a message), merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
+
+* Fetch pull request branch locally and checkout the branch
+fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. 
+
+https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
+* you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
+
+- General process for making a local change, committing, merging with branch and
+pushing back to GitHub
+- How to keep local code up to date
+
+An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
+
+Checkout a pull request locally
+
+* Request a review from a specific person
+* Close an issue via commit message by using keyword
+
+Flow chart of possibilities:
+-->
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -945,95 +1032,6 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 ```
 
 </td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Pull Request Review Process
-
-First things first
-* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
-* Follow the link to the pull request in the repo pull request tab in the browser
-* Look over the information about the pull request provided by the contributor
-
-* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
-
-<!--
-* click on the files (pull request tab)
-
-Pull request, one file shows all changes
-
-diff Views
-* unified view
-* split view
-* source view
-* rich view
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Pull Request Review Options
-
-There are two ways to merge a pull request
-* Via browser (click merge button- options are regular, squash, or rebase merge)
-* Via command line locally
-
-Simplest scenario
-* When you look at the pull request in the browser, you can tell it can be accepted and click merge (for example, if the pull request is fixing a typo) 
-
-Second simplest scenario
-* You look at the pull request in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
-
-Less simple
-* You can't always accept the pull request based on just looking at the code in the browser
-* You sometimes need to run the code in the pull request locally to evalute it
-
-After you run the code locally, if you decide a change does need to be made
-* You can go back to the browser and click merge
-
-After you run the code locally, if you decide a change needs to be made, there are a few options
-* As the contributor to make a change to the pull request
-* Push additional commits yourself to the pull request branch
-
-
-<!--
-* you update the pull request branch locally (add, commit, create a message), merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
-
-* Fetch pull request branch locally and checkout the branch
-fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. 
-
-https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
-* you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
-
-- General process for making a local change, committing, merging with branch and
-pushing back to GitHub
-- How to keep local code up to date
-
-An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
-
-Checkout a pull request locally
-
-* Request a review from a specific person
-* Close an issue via commit message by using keyword
-
-Flow chart of possibilities:
--->
-
-</td></tr>
-
-
 
 
 <tr><td width="30%">
