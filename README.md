@@ -222,10 +222,10 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 ### What are Git and GitHub?
 
-GitHub is a website where users can store and work on code together in the browser. GitHub is built on the version control software called Git, which we're going to talk about later.
+GitHub is a website where users can store and work on code together in the browser. GitHub is built on the version control software called Git. We install Git on our computer and use it via the command line.
 
 <!--
-Git is version control software. GitHub is built on a software called Git. We install and use Git via our command line. The git configurations are contained in a hidden folder called .git in your local project folder. 
+The git configurations are contained in a hidden folder called .git in your local project folder. 
 -->
 
 </td></tr>
@@ -233,7 +233,7 @@ Git is version control software. GitHub is built on a software called Git. We in
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 10]()
 
 </td><td>
 
@@ -257,7 +257,7 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 11]()
 
 </td><td>
 
@@ -281,7 +281,54 @@ Bash command list
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 12]()
+
+</td><td>
+
+### Collaboration and Code Review Best Practice Workflow
+
+In order to be able to increase your level of responsibility, we need to be able to switch between multiple tasks. 
+* You keep your main code branch (master) up-to-date
+* Create one or more features
+* Do code review
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 13]()
+
+</td><td>
+
+### How Do We Switch Between Multiple Tasks? 
+
+By using branches
+* Can be used by any GitHub user
+* Give you more freedom
+* You can have an unlimited number of branches
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 14]()
+
+</td><td>
+
+### Overview
+
+<!--
+Firstly, we need to figure out which collaobrative development model we're using
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
 
 </td><td>
 
@@ -298,7 +345,7 @@ Organization account (example: DjangoCon organization account)
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 16]()
 
 </td><td>
 
@@ -311,7 +358,49 @@ Within user accounts are repositories (a.k.a repos). A repo is a place where a c
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 00]()
+
+</td><td>
+
+### Feature Branches
+
+When a repo is created, there is a default branch named master that contains the initial files. You can make a copy of the master branch and give it a new name. Now there are two branches, both in the same repo. 
+
+What typically happens is that when you want to create a new feature, you make a copy of the branch you intend your feature to be merged into (in this case, the master branch). You make the changes to this new branch, and submit a pull request. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the feature branch.
+
+You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into. You can have an unlimited number of branches. 
+
+The way that we will submit a feature branch depends on write permission.
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What Can Go Wrong When You Don't Use Feature Branches
+
+Fork
+* If you are working in a fork and you make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you make more changes to the branch, the commits will be added to the pull request, which is not a best practice if the commits are not related to that pull request. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
+
+Shared Repository
+* If you are working in a shared repository and you make changes directly into the branch you want to change, you might be changing code in a life branch that is deployed. Also, your forgoeing the opportunity to receive feedback and let others give you feedback. 
+
+</td></tr>
+
+<!--
+Even if you have write permission to a shared repository, just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the shared repository. If you make a change to the repo without submitting a pull request first. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+-->
+
+
+
+<tr><td width="30%">
+
+![Slide 17]()
 
 </td><td>
 
@@ -340,7 +429,7 @@ See write permissions chart for info
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 18]()
 
 </td><td>
 
@@ -355,7 +444,7 @@ There are two different ways to contribute and they have a fancy name.
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 19]()
 
 </td><td>
 
@@ -374,7 +463,7 @@ I'm going to give you an example of each one
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 20]()
 
 </td><td>
 
@@ -387,7 +476,7 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 21]()
 
 </td><td>
 
@@ -400,7 +489,7 @@ For example: This year I became a maintainer of the DjangoCon US website, so I w
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 22]()
 
 </td><td>
 
@@ -413,7 +502,7 @@ The “Fork and Pull” Model is typically used in user account repos, because u
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 23]()
 
 </td><td>
 
@@ -434,7 +523,7 @@ By the way, an organizational account can also fork a repo, but it's less commmo
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 24]()
 
 </td><td>
 
@@ -454,7 +543,7 @@ Forking graphic
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 25]()
 
 </td><td>
 
@@ -467,7 +556,7 @@ This is a copy of the DjangoCon US Website repo in my user account under my user
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 26]()
 
 </td><td>
 
@@ -496,66 +585,6 @@ A user account repo can be a shared repository. A user account owner can invite 
 -->
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Branches
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 23]()
-
-</td><td>
-
-### Feature Branches
-
-</td></tr>
-
-
-<!--
-A branch is a copy of another branch. The branches exist in parallel within the repo. 
-
-When you create a repo, you have a default branch named master that contains your initial files. You can make a copy of the master branch and give it a new name and it's a new branch that exists in parallel with the master branch. You can make a change to this new branch and submit a pull request. If the changes are accepted, they can be combined (merged) into the master branch. The master branch will be like it was before, except with changes made from the branch.
-
-Meanwhile, you will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.
-
-<!--
-Make a copy of the branch you intend to merge your changes into when you want to create a feature
-You can have an unlimited number of branches (for example, feature branches or pull request branches)
--->
-
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 24]()
-
-</td><td>
-
-### What Can Go Wrong When You Don't Use Feature Branches
-
-Fork
-* If you are working in a fork and you make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you make more changes to the branch, the commits will be added to the pull request, which is not a best practice if the commits are not related to that pull request. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
-
-Shared Repository
-* If you are working in a shared repository and you make changes directly into the branch you want to change, you might be changing code in a life branch that is deployed. Also, your forgoeing the opportunity to receive feedback and let others give you feedback. 
-
-</td></tr>
-
-<!--
-Even if you have write permission to a shared repository, just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the shared repository. If you make a change to the repo without submitting a pull request first. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
--->
-
-
- 
 
 <tr><td width="30%">
 
@@ -802,38 +831,6 @@ Recap:
 2. Pull requests submitted from a forked repo branch
 
 The forked repo is not an origin for us and we do not have write pemrissio to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Collaboration and Code Review Best Practice Workflow
-
-In order to be able to increase your level of responsibility, we need to be able to switch between multiple tasks. 
-* You keep your main code branch (master) up-to-date
-* Create one or more features
-* Do code review
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### How Do We Switch Between Multiple Tasks? 
-
-By using branches
-* Can be used by any GitHub user
-* Give you more freedom
-* You can have an unlimited number of branches
 
 </td></tr>
 
