@@ -498,6 +498,17 @@ A user account repo can be a shared repository. A user account owner can invite 
 
 <tr><td width="30%">
 
+![Slide 00]()
+
+</td><td>
+
+### Branches
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 23]()
 
 </td><td>
@@ -505,7 +516,6 @@ A user account repo can be a shared repository. A user account owner can invite 
 ### Feature Branches
 
 </td></tr>
-
 
 
 <!--
@@ -545,40 +555,6 @@ Even if you have write permission to a shared repository, just because you can m
 -->
 
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Collaboration and Code Review Best Practice Workflow
-
-In order to be able to increase your level of responsibility, we need to be able to switch between multiple tasks. 
-* You keep your main code branch (master) up-to-date
-* Create one or more features
-* Do code review
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### How Do We Switch Between Multiple Tasks? 
-
-By using branches
-* Can be used by any GitHub user
-* Give you more freedom
-* You can have an unlimited number of branches
-
-</td></tr>
-
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -587,32 +563,24 @@ By using branches
 
 ### Perspective: Clone a Repo Locally, Make a Change, Add, Commit, Push the Branch to Origin, Submit a Pull Request
 
-</td></tr>
+We are going to clone the repo I have write permission to to the local development environment. As I said earlier, we cannot do everything in the browser. 
 
-
-<!--
-We have talked about the two Collaborative Development Models
-* "Shared Repository" Model
-* "Fork and Pull" Model
-
-This section is a continuation of those two models. Rather than working directly within the browser, we are going to be cloning the repo we have write permission to. We will then create a feature branch locally, make a change to it, and push the branch back to the repo we have write permission to. We will then submit a pull request for the changes to be merged into the DjangoCon US website repo. 
-
-Two scenarios
-1. A maintainer with write permission cloning the DjangoCon US repo
-2. A contributor without write permission forking the repo and cloning the fork
-
-The process will be almost the same regardless of the situation. 
+The process will be almost the same regardless of whether we are working from a shared repository or fork and pull. 
 
 The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
+
+</td></tr>
+
+
+<!--
+We will then create a feature branch locally, make a change to it, and push the branch back to the repo we have write permission to. We will then submit a pull request for the changes to be merged into the DjangoCon US website repo. 
 -->
 
 <!--
 Folder/files/text editor
 -->
-
-
 
 
 <tr><td width="30%">
@@ -621,7 +589,9 @@ Folder/files/text editor
 
 </td><td>
 
-### Keeping Your Local Clone and GitHub Repo in Sync
+### Origin
+
+Keeping Your Local Clone and GitHub Repo in Sync
 
 When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. If you make a change to the code locally, the code in the GitHub repo does not automatically update, and vice versa. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
 
@@ -786,23 +756,14 @@ DjangoCon example
 
 </td><td>
 
-### Alternative Branch Commands
+### Collaboration and Code Review Best Practice Workflow
 
-If not working from within the branch you are branching off of, need to specify which branch branching off of (remember, you are branching off the branch you intend your change to be merged into)
-
-```bash
-$ git checkout -b <branch-name> <branch-branching-off-of>
-```
-
-If the branch already exists, just switch to a branch
-
-```bash
-$ git checkout <branch-name>
-```
+In order to be able to increase your level of responsibility, we need to be able to switch between multiple tasks. 
+* You keep your main code branch (master) up-to-date
+* Create one or more features
+* Do code review
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -811,64 +772,14 @@ $ git checkout <branch-name>
 
 </td><td>
 
-### Getting Help
+### How Do We Switch Between Multiple Tasks? 
 
-* Help via Git, GitHub Help and Guides (links in Useful Resources Section)
-* Help via GitHub Keyboard Shortcuts (type "?")
-* Help via command line (exit by typing "q")
-
-```bash
-$ git help <verb>
-$ git <verb> --help
-$ man git-<verb>
-```
-
-```bash
-$ git help clone
-$ git clone --help
-$ man git-clone
-```
+By using branches
+* Can be used by any GitHub user
+* Give you more freedom
+* You can have an unlimited number of branches
 
 </td></tr>
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### A Few Notes
-
-I want to tell you a few things before we get started, so you can understand the context of what we are doing.
-
-* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
-* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
-
-* I will identify best practices any time possible
-* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
-* <variable> is a placeholder for the real thing
-
-<!--
-* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
-* The process is based on GitHub Flow, which is a simple, agile process
-
-By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
-
-Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
--->
-
-</td></tr>
-
-<!--
-Also, I'm hoping that you will understand how commands can be adapted and reused.
-
-Later on in this talk, I will debunk some of the myths that I believed at the time. 
--->
 
 
 
@@ -968,6 +879,7 @@ $ git branch -r
 ```
 
 <!--
+.git folder is able to track
 We've already talked about the concept of remotes when we talked about origin.  
 -->
 
@@ -1076,7 +988,7 @@ diff Views
 
 </td><td>
 
-### Code Review Options
+### Pull Request Review Options
 
 There are two ways to merge a pull request
 * Via browser (click merge button- options are regular, squash, or rebase merge)
@@ -1900,3 +1812,87 @@ Bash command list
 -->
 
 </td></tr>
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Getting Help
+
+* Help via Git, GitHub Help and Guides (links in Useful Resources Section)
+* Help via GitHub Keyboard Shortcuts (type "?")
+* Help via command line (exit by typing "q")
+
+```bash
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+```
+
+```bash
+$ git help clone
+$ git clone --help
+$ man git-clone
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Alternative Branch Commands
+
+If not working from within the branch you are branching off of, need to specify which branch branching off of (remember, you are branching off the branch you intend your change to be merged into)
+
+```bash
+$ git checkout -b <branch-name> <branch-branching-off-of>
+```
+
+If the branch already exists, just switch to a branch
+
+```bash
+$ git checkout <branch-name>
+```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### A Few Notes
+
+I want to tell you a few things before we get started, so you can understand the context of what we are doing.
+
+* This talk uses GitHub examples, but similar features and workflows could be found in Bitbucket or other services built on Git (which some people prefer)
+* We will focus on command line, not browser or GUI (such as GitHub Desktop). Can only make full use of git functionality by using command line. (you need to use the command line to do some of the things we are going to do)
+
+* I will identify best practices any time possible
+* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+* <variable> is a placeholder for the real thing
+
+<!--
+* The examples I will be using will focus on public, organizational repos and “Shared Repository Model”, because that is where most of the collaboration and code review are done
+* The process is based on GitHub Flow, which is a simple, agile process
+
+By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
+
+Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.git
+-->
+
+</td></tr>
+
+<!--
+Also, I'm hoping that you will understand how commands can be adapted and reused.
+
+Later on in this talk, I will debunk some of the myths that I believed at the time. 
+-->
