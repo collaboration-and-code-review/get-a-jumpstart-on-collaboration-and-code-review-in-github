@@ -615,17 +615,21 @@ Folder/files/text editor
 
 </td><td>
 
-### Origin
+### Remotes, Pushing and Pulling
 
+When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+
+<!--
 Keeping Your Local Clone and GitHub Repo in Sync
 
-When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. If you make a change to the code locally, the code in the GitHub repo does not automatically update, and vice versa. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. 
 
-GitHub tries to help you with this. When you first clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now known as a remote repo and is named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
+When you clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now known as a remote repo and is named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
 
 If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
 
-You can also add remotes other than origin to a repo and push and pull from it. We will talk about this later on when we talk about how to update a fork, because when changes are made to the original repo, the fork does not update automatically.
+You can also add remotes other than origin to a repo and push and pull from it. 
+-->
 
 </td></tr>
 
@@ -780,6 +784,28 @@ DjangoCon example
 
 
 
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Perspective: Checking Out Remote Branches
+
+We are switching our perspective now. We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
+
+We are going to be working on feature branches and reviewing the pull requests we submitted. 
+
+Recap:
+1. Pull requests submitted from a branch pushed to the DjangoCon US website repo
+2. Pull requests submitted from a forked repo branch
+
+The forked repo is not an origin for us and we do not have write pemrissio to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
+
+</td></tr>
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -808,29 +834,6 @@ By using branches
 * Can be used by any GitHub user
 * Give you more freedom
 * You can have an unlimited number of branches
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Perspective: Checking Out Remote Branches
-
-We are switching our perspective now. We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
-
-We are going to be working on feature branches and reviewing the pull requests we submitted. 
-
-Recap:
-1. Pull requests submitted from a branch pushed to the DjangoCon US website repo
-2. Pull requests submitted from a forked repo branch
-
-The forked repo is not an origin for us and we do not have write pemrissio to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 
 </td></tr>
 
