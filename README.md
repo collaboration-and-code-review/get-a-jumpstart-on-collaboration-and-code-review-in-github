@@ -555,32 +555,58 @@ Even if you have write permission to a shared repository, just because you can m
 -->
 
 
+ 
+
 <tr><td width="30%">
 
 ![Slide 00]()
 
 </td><td>
 
-### Perspective: Clone a Repo Locally, Make a Change, Add, Commit, Push the Branch to Origin, Submit a Pull Request
+### Branch Process
 
-We are going to clone the repo I have write permission to to the local development environment. As I said earlier, we cannot do everything in the browser. 
+As I said earlier, we cannot do everything in the browser.
 
-The process will be almost the same regardless of whether we are working from a shared repository or fork and pull. 
+The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
 
-The two main differences are that if you are using the "Fork and Pull" Model:
+Clone the repo into local development environment (whichever one I have write permission to)
+Create and checkout to a feature branch
+Make a change, add, commit, 
+Push the branch to origin (the repo we have write permission to that we cloned from)
+Submit a pull request for the change to be merged into the DjangoCon US website repo
+
+ The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
-
-</td></tr>
-
-
-<!--
-We will then create a feature branch locally, make a change to it, and push the branch back to the repo we have write permission to. We will then submit a pull request for the changes to be merged into the DjangoCon US website repo. 
--->
 
 <!--
 Folder/files/text editor
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Fork and Pull Diagram
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Diagram
+
+</td></tr>
+
 
 
 <tr><td width="30%">
@@ -632,6 +658,10 @@ git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
 <!--
+clone: local copy of a repo
+push: transfer changes from local clone to online repo
+pull: transfer changes from online repo to local clone
+
 fetch it from the remote
 
 ```bash
