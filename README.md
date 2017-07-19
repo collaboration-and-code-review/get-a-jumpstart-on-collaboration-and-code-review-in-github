@@ -256,7 +256,14 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 We can transfer (push) changes back and forth between our local development environment and our GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell us if there is a conflict.
 
 <!--
+Now we are going to work locally
+
+* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
+* The folder will be initialized as a Git repository
+
 We install Git on our computer and use it via the command line.
+
+When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. 
 
 The git configurations are contained in a hidden folder called .git in your local project folder. 
 
@@ -299,7 +306,7 @@ Bash command list
 
 ### Collaboration and Code Review Best Practice Workflow
 
-In order to be able to increase your level of responsibility, we need to be able to switch between multiple tasks. 
+In order to be able to increase your level of responsibility, we need to have the freedom to switch between multiple tasks. 
 * You keep your main code branch (master) up-to-date
 * Create one or more features
 * Do code review
@@ -317,29 +324,21 @@ In order to be able to increase your level of responsibility, we need to be able
 
 By using branches
 * Can be used by any GitHub user
-* Give you more freedom
 * You can have an unlimited number of branches
 
 <!--
-How Do We Switch Between Multiple Tasks? 
-Branches Enable Us to Switch Between Multiple Tasks Locally
-
 We've talked about a couple of different types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-Feature branches become pull request branches, but we can deal with them in much the same way
+Feature branches eventually become pull request branches, but we can deal with them in much the same way
+A few things can go wrong if we don't use feature branches
 -->
 
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
+<!--
 ### Feature Branches
 
 When a repo is created, there is a default branch named master that contains the initial files. You can make a copy of the master branch and give it a new name. Now there are two branches, both in the same repo. 
@@ -349,14 +348,7 @@ What typically happens is that when you want to create a new feature, you make a
 You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
 
 The way that we will submit a feature branch depends on write permission.
-
-<!--
-These feature branches are eventually going to become pull request branches
-
-A few things can go wrong if we don't use feature branches
 -->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -381,6 +373,8 @@ A few things can go wrong if we don't use feature branches
 </td><td>
 
 ### Section 1
+
+* We are going to determine which collaboration approach to use
 
 </td></tr>
 
@@ -535,10 +529,6 @@ This is the "Fork and Pull" Model.
 
 In addition to using a fork to propose a change to the original repo, you can also use a fork for the starting point of a new idea of your own (depending on the license). 
 
-<!--
-By the way, an organizational account can also fork a repo, but it's less commmon. 
--->
-
 </td></tr>
 
 
@@ -596,47 +586,14 @@ I own the fork and am the only user with write permission to it unless I give pe
 
 ### Section 2
 
-<!--
-Now we are going to work locally
-
-The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
-
-* Clone the repo into local development environment (whichever one I have write permission to)
-* Create and checkout to a feature branch
-* Make a change, add, commit, 
-* Push the branch to origin (the repo we have write permission to that we cloned from)
-* Submit a pull request for the change to be merged into the DjangoCon US website repo
-
- The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
-
-Folder/files/text editor
--->
+* We are going to determine which collaboration approach to use
+* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
 
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Fork and Pull Diagram
-
-</td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Shared Repository Diagram
-
-</td></tr>
 
 
 
@@ -648,16 +605,10 @@ Folder/files/text editor
 
 ### Remotes, Pushing and Pulling
 
-When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
 
 <!--
-Keeping Your Local Clone and GitHub Repo in Sync
-
-When you clone a repo locally, you now have the code on your computer and in a repo on GitHub. 
-
-When you clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now known as a remote repo and is named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
-
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+When you clone the repo, the local clone will be connected to the GitHub repo. The GitHub repo is now a remote repo named "origin" (it's default name). Your local clone will known that it's code came from the origin and you will be able to use the name origin on the command line to push and pull changes between the local clone and GitHub repo to keep them in sync. 
 
 You can also add remotes other than origin to a repo and push and pull from it. 
 -->
@@ -674,7 +625,13 @@ You can also add remotes other than origin to a repo and push and pull from it.
 
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 
+<!--
+Keeping Your Local Clone and GitHub Repo in Sync
+
 Here are the generic commands for pushing and pulling. 
+
+When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+-->
 
 If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
 
@@ -708,6 +665,48 @@ $ git push <remote-name>
 </td></tr>
 
 
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Fork and Pull Diagram
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Diagram
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 28]()
+
+</td><td>
+
+### Local Branch Process
+
+We are going to clone whichever repo you have write permission to into the local development environment. The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
+
+ The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
+
+</td></tr>
+
+
 <tr><td width="30%">
 
 ![Slide 32]()
@@ -734,17 +733,15 @@ Example: clone (or download) a user account repo (repo needs to have already bee
 $ git clone https://github.com/<user-name>/<repo-name>
 ```
 
-A few things that have happened
-* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
-* The folder will be initialized as a Git repository
-* You will be checked out on the default branch (usually master)
-* The local clone will be connected to the GitHub repository, which is now a remote repository named "origin"
-
 Change directory into the folder of the repo you cloned. Folder name will be the repo name.
 
 ```bash
 $ cd <repo-name>
 ```
+
+<!--
+* You will be checked out on the default branch (usually master)
+-->
 
 Verify which branch you are checked out on (important if more than one branch)
 
@@ -776,11 +773,12 @@ There will now be a new branch in the repo that is your origin. The branch will 
 <!--
 DjangoCon and fork as examples
 You can then submit a pull request for the new branch in your origin. 
+* Push the branch to origin (the repo we have write permission to that we cloned from)
+
+Folder/files/text editor
 -->
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -822,7 +820,12 @@ DjangoCon example
 
 ### Section 3
 
+* We are going to determine which collaboration approach to use
+* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
+* Then we will review the pull requests as a maintainer
+
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -833,7 +836,7 @@ DjangoCon example
 
 ### Perspective: Checking Out Remote Branches
 
-We are switching our perspective now. We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
+We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
 
 We are going to be working on feature branches and reviewing the pull requests we submitted. 
 
