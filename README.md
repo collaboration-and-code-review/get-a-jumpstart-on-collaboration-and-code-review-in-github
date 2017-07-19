@@ -226,13 +226,10 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 ### What are Git and GitHub?
 
-GitHub is a website where users can store and work on code together in the browser. GitHub is built on the version control software called Git. We install Git on our computer and use it via the command line.
-
-<!--
-The git configurations are contained in a hidden folder called .git in your local project folder. 
--->
+GitHub is a website where users can store and work on code together in the browser. GitHub is built on the version control software Git
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -249,12 +246,36 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 
 We can transfer (push) changes back and forth between our local development environment and our GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell us if there is a conflict.
 
+<!--
+We install Git on our computer and use it via the command line.
+
+The git configurations are contained in a hidden folder called .git in your local project folder. 
+
+* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
+* The folder will be initialized as a Git repository
+-->
+
 </td></tr>
 
 
 <tr><td width="30%">
 
 ![Slide 11]()
+
+</td><td>
+
+### Overview
+
+* We are going to determine which collaboration approach to use
+* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
+* Then we will review the pull requests as a maintainer
+
+</td><td>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
 
 </td><td>
 
@@ -278,7 +299,7 @@ Bash command list
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -296,13 +317,14 @@ How I would do things differently
 </td></tr>
 
 
+
 <tr><td width="30%">
 
 ![Slide 13]()
 
 </td><td>
 
-### How Do We Switch Between Multiple Tasks? 
+### Branch Diagram
 
 By using branches
 * Can be used by any GitHub user
@@ -310,57 +332,15 @@ By using branches
 * You can have an unlimited number of branches
 
 <!--
+How Do We Switch Between Multiple Tasks? 
+Branches Enable Us to Switch Between Multiple Tasks Locally
+
 We've talked about a couple of different types of branches
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
 Feature branches become pull request branches, but we can deal with them in much the same way
 -->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 14]()
-
-</td><td>
-
-### Overview
-
-<!--
-Firstly, we need to figure out which collaobrative development model we're using
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 15]()
-
-</td><td>
-
-### The Two Types of Accounts
-
-User account (example: my user account)
-* A user account is the first type of account create. 
-
-Organization account (example: DjangoCon organization account)
-* An account where a team of people are working together
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 16]()
-
-</td><td>
-
-### Repository (Repo)
-
-Within user accounts are repositories (a.k.a repos). A repo is a place where a codebase is stored (example: DjangoCon US website repo).
 
 </td></tr>
 
@@ -386,6 +366,51 @@ These feature branches are eventually going to become pull request branches
 
 A few things can go wrong if we don't use feature branches
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Section 1
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### The Two Types of Accounts
+
+User account (example: my user account)
+* A user account is the first type of account create. 
+
+Organization account (example: DjangoCon organization account)
+* An account where a team of people are working together
+
+<!--
+Firstly, we need to figure out which collaobrative development model we're using
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
+
+</td><td>
+
+### Repository (Repo)
+
+Within user accounts are repositories (a.k.a repos). A repo is a place where a codebase is stored (example: DjangoCon US website repo).
 
 </td></tr>
 
@@ -559,16 +584,15 @@ I own the fork and am the only user with write permission to it unless I give pe
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
 
 </td><td>
 
-### Local Branch Process
+### Section 2
 
+<!--
 Now we are going to work locally
 
 The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
@@ -583,7 +607,6 @@ The process will be almost the same regardless of whether we are working from a 
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
 
-<!--
 Folder/files/text editor
 -->
 
@@ -783,6 +806,17 @@ If you are submitting the pull request a forked repo:
 <!--
 DjangoCon example
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Section 3
 
 </td></tr>
 
