@@ -238,7 +238,9 @@ GitHub is a website where users can store and work on code together in the brows
 
 </td><td>
 
-### What a Local Environment Looks Like
+### Local Development Environment
+
+What a Local Environment Looks Like
 
 Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. Sometimes we need to work on the code in our local development environment. 
 
@@ -264,21 +266,6 @@ The git configurations are contained in a hidden folder called .git in your loca
 
 </td><td>
 
-### Overview
-
-* We are going to determine which collaboration approach to use
-* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
-* Then we will review the pull requests as a maintainer
-
-</td><td>
-
-
-<tr><td width="30%">
-
-![Slide 12]()
-
-</td><td>
-
 ### Prerequisites for Getting Started
 
 * Create a free [GitHub](https://github.com) account online
@@ -299,7 +286,7 @@ Bash command list
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 12]()
 
 </td><td>
 
@@ -372,7 +359,22 @@ A few things can go wrong if we don't use feature branches
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 14]()
+
+</td><td>
+
+### Overview
+
+* We are going to determine which collaboration approach to use
+* We are going to clone a repo locally, create a feature branch, make a change, push the branch to the GitHub repo, and submit a pull request
+* Then we will review the pull requests as a maintainer
+
+</td><td>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
 
 </td><td>
 
@@ -383,7 +385,7 @@ A few things can go wrong if we don't use feature branches
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 16]()
 
 </td><td>
 
@@ -404,7 +406,7 @@ Firstly, we need to figure out which collaobrative development model we're using
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 17]()
 
 </td><td>
 
@@ -417,7 +419,7 @@ Within user accounts are repositories (a.k.a repos). A repo is a place where a c
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -446,7 +448,7 @@ See write permissions chart for info
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 19]()
 
 </td><td>
 
@@ -461,7 +463,7 @@ There are two different ways to contribute and they have a fancy name.
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 20]()
 
 </td><td>
 
@@ -480,7 +482,7 @@ I'm going to give you an example of each one
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 21]()
 
 </td><td>
 
@@ -493,7 +495,7 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 22]()
 
 </td><td>
 
@@ -506,7 +508,7 @@ For example: This year I became a maintainer of the DjangoCon US website, so I w
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
@@ -519,7 +521,7 @@ The “Fork and Pull” Model is typically used in user account repos, because u
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 24]()
 
 </td><td>
 
@@ -540,7 +542,7 @@ By the way, an organizational account can also fork a repo, but it's less commmo
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 25]()
 
 </td><td>
 
@@ -560,7 +562,7 @@ Forking graphic
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 26]()
 
 </td><td>
 
@@ -573,7 +575,7 @@ This is a copy of the DjangoCon US Website repo in my user account under my user
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 27]()
 
 </td><td>
 
@@ -586,7 +588,7 @@ I own the fork and am the only user with write permission to it unless I give pe
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 28]()
 
 </td><td>
 
