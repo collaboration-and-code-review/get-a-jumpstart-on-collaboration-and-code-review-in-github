@@ -372,30 +372,13 @@ You will want to keep the master and feature branches up-to-date by merging in u
 
 The way that we will submit a feature branch depends on write permission.
 
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What Can Go Wrong When You Don't Use Feature Branches
-
-Fork
-* If you are working in a fork and you make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you make more changes to the branch, the commits will be added to the pull request, which is not a best practice if the commits are not related to that pull request. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
-
-Shared Repository
-* If you are working in a shared repository and you make changes directly into the branch you want to change, you might be changing code in a life branch that is deployed. Also, your forgoeing the opportunity to receive feedback and let others give you feedback. 
-
-</td></tr>
-
 <!--
-Even if you have write permission to a shared repository, just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the shared repository. If you make a change to the repo without submitting a pull request first. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
+These feature branches are eventually going to become pull request branches
+
+A few things can go wrong if we don't use feature branches
 -->
 
+</td></tr>
 
 
 <tr><td width="30%">
@@ -567,23 +550,6 @@ I own the fork and am the only user with write permission to it unless I give pe
 </td></tr>
 
 
-<!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Shared Repository Model: User Account Versus Organization
-
-A user account repo can be a shared repository. A user account owner can invite other users to collaborate on a repo that he or she owns. But there are a few advantages to using a organizational repo as a shared repository instead of an user account repo. 
-
-* Organizational account owners can create teams and permissions across multiple repos
-* Otherwise, the repo shared repository" settings are almost exactly the same
-
-</td></tr>
--->
-
 
 
 <tr><td width="30%">
@@ -592,7 +558,7 @@ A user account repo can be a shared repository. A user account owner can invite 
 
 </td><td>
 
-### Branch Process
+### Local Branch Process
 
 As I said earlier, we cannot do everything in the browser.
 
@@ -1925,4 +1891,41 @@ Using HTTPS examples, as opposed to SSH HTTPS URL https://github.com/user/repo.g
 Also, I'm hoping that you will understand how commands can be adapted and reused.
 
 Later on in this talk, I will debunk some of the myths that I believed at the time. 
+-->
+
+<!--
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Model: User Account Versus Organization
+
+A user account repo can be a shared repository. A user account owner can invite other users to collaborate on a repo that he or she owns. But there are a few advantages to using a organizational repo as a shared repository instead of an user account repo. 
+
+* Organizational account owners can create teams and permissions across multiple repos
+* Otherwise, the repo shared repository" settings are almost exactly the same
+
+</td></tr>
+-->
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### What Can Go Wrong When You Don't Use Feature Branches
+
+Fork
+* If you are working in a fork and you make changes directly into the branch you want to change, then submit a pull request. You are then stuck waiting until the pull request is resolved. If you make more changes to the branch, the commits will be added to the pull request, which is not a best practice if the commits are not related to that pull request. If you delete the fork and refork the repo, the pull request can still be accepted, but the process becomes more complicated because it's now considered an inactive pull request and it will be more difficult for you to add additional commits to if you are asked to, and for the reviewer to accept.
+
+Shared Repository
+* If you are working in a shared repository and you make changes directly into the branch you want to change, you might be changing code in a life branch that is deployed. Also, your forgoeing the opportunity to receive feedback and let others give you feedback. 
+
+</td></tr>
+
+<!--
+Even if you have write permission to a shared repository, just because you can makes changes directly within a repo, without making a pull request, doesn't necessarily mean you should. It is still common to submit a pull request from within the shared repository. If you make a change to the repo without submitting a pull request first. Whether or not you want to do that depends on your level of comfort with the project. It's often still best to have another maintainer review your work through a pull request.
 -->
