@@ -153,9 +153,13 @@ A lot of what I'm going to talk to you about, I learned as the DjangoCon US Webs
 
 ### About You
 
-This talk is about getting you started collaborating and doing code review as quickly as possible. I want to teach you the essential process and underlying logic, and how they are connected, so you can understand why things are done the way that they are. 
+Goal: I want to teach you the essential process and underlying logic so that you can get started collaborating and doing code review as quickly as possible. 
 
 When it comes to Git commands, there are many variations of how things can be done. I'm not going to be going into detail about that. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
+
+<!--
+Give link here?
+-->
 
 </td></tr>
 
@@ -168,7 +172,7 @@ When it comes to Git commands, there are many variations of how things can be do
 
 ### TacoFancy
 
-I want to tell you how I got started witih open-source contribution, which is a bit unconventional. 
+I want to tell you how I got started witih open-source contribution, which is a bit unconventional and might show you that there are many ways to get involved. 
 
 I first signed up for GitHub on April 18, 2013. But my account sat unused for months. I didn't know how to get started.  
 
@@ -202,7 +206,7 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 
 ### My First Pull Request
 
-I struggled through and submitted my first pull request. I had a huge adrenaline rush. 
+I struggled through, but I was extremely motivated and submitted my first pull request. I had a huge adrenaline rush. 
 
 </td></tr>
 
@@ -218,10 +222,11 @@ I struggled through and submitted my first pull request. I had a huge adrenaline
 I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
 
 I am going to use DjangoCon US website as an example throughout this talk. 
-* Many of the examples I am going to talk about can be illustrated through my experiences working on the DjangoCon US website
-* I hope these concrete examples will provide reinforcement for your understanding
+* Many of the examples I am going to talk about can be illustrated through the DjangoCon US website repo
+* I hope that providing concrete examples will reinforce your understanding
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -232,20 +237,9 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 ### What are Git and GitHub?
 
-GitHub is a website where users can store and work on code together in the browser. GitHub is built on the version control software Git
+GitHub is a website where users can store and work on code together. GitHub is built on the version control software Git.
 
 </td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-</td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -256,33 +250,32 @@ GitHub is a website where users can store and work on code together in the brows
 
 ### Local Development Environment
 
-Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. 
+There are some things we can do in the browser in the GitHub website. We cannot do everything in the browser. 
 
-* We clone the GitHub repo to our local development environment
-* There will now be a folder on the computer in the directory you cloned into by the same name as the GitHub repo and filled with the contents of the repo
-* We now have a copy of the code on our computer and a copy on GitHub in the repo
-* The folder in our computer will contain a hidden folder named .git that contains the Git configuration information
-* When we stage the changes, Git will record the changes made to the files
-* We push and pull changes between the local development environment and our GitHub repo
-* Meanwhile other users can work on the code on their computer and push the changes back to GitHub. 
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.   
+
+Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
+
+* I work in my home directory, which you can see from the command prompt. 
+* The GitHub repo has been cloned using its URL
+* There is now a folder on the computer in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo and a .git folder
+* I now have a copy of the codebase on my computer and a copy online in a GitHub repo
+* When I stage any changes I make, Git will record the changes to the files
+* I can push and pull changes between the local development environment and the GitHub repo
+* Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
 * Our changes are all merged into the GitHub repo we are working on
 * Git will tell us if there is a conflict.
 
-<!--
-.git folder is able to track certain things, for instance, where your code originated from
+</td></tr>
 
-probably a home directory, look at command line prompt to know
-* The folder will be initialized as a Git repository
-We use Git by typings commands into the command line.
--->
 
-<!--
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. Sometimes we need to work on the code in a local development environment on our computer. 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
 
 ### Browser Versus Local
-
-We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser on a local server, look at it, make changes to the code, or perhaps see the change proposed by the pull request and decide how to proceed.
--->
 
 </td></tr>
 
@@ -302,14 +295,6 @@ Commit | Click "Commit changes" button in an open, altered file | ```$ git commi
 Open an issue | Can only do in browser | N/A
 Open a pull request | Can only do in browser | N/A
 
-Committing changes in browser versus locally
-* Can do many things in the browser (example: patch)
-* Some changes can be made and committed in the browser, some cannot
-* Some things can be done in both browser or command line, some things only by command line locally.
-
-Running code
-* Will need to run code locally to view changes, unless dealing with gh-pages and HTML, CSS, JavaScript, or Jekyll
-
 Create, add, rename, move file
 Can create, add, rename, move file in browser or from command line (images are an exception)
 
@@ -324,12 +309,6 @@ Can delete branches under the branches tab or in the closed pull request page, o
 Images
 Images can be drag and drop/upload, but can't rename or move in browser
 * Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
-
-* How/where do you create a user account or organization
-* Understand/take tour of the parts of a user account and organization
-* Understand how to create teams with permissions
-* Access your organizational account and dashboard
-* Create an organizational repo
 -->
 
 
@@ -345,7 +324,7 @@ Images can be drag and drop/upload, but can't rename or move in browser
 * Create a free [GitHub](https://github.com) account online
 * Install Git on your computer and set your email and username
 * Find and open your computer terminal (a.k.a. command line) on your computer
-* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later)
+* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later and see bash commands resource in Useful Resources section)
 * You might also want to have a text editor of your choice installed, to use to edit files
 
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
@@ -382,10 +361,14 @@ In order to be able to increase your level of responsibility, we need to have th
 
 ### Branch Diagram
 
+To do this, we need to learn how to use branches
+
 Branches
 * Can be used by any GitHub user
 * You can have an unlimited number of branches
 
+
+<!--
 Two different types
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
@@ -398,9 +381,8 @@ You can toggle back and forth between the branches by clicking on the branches i
 
 Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
 
-If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
-
-By the way, a few things can go wrong if you do not use branches. They are a best practice. 
+They are a best practice. 
+-->
 
 </td></tr>
 
@@ -413,9 +395,9 @@ By the way, a few things can go wrong if you do not use branches. They are a bes
 
 ### Overview
 
-* We are going to determine which collaboration approach to use
-* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
-* Then we will review the pull requests as a DjangoCon US website repo maintainer
+* Determine which collaboration approach to use (there are two)
+* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
 </td><td>
 
@@ -428,7 +410,7 @@ By the way, a few things can go wrong if you do not use branches. They are a bes
 
 ### Section 1
 
-* We are going to determine which collaboration approach to use
+* Determine which collaboration approach to use (there are two)
 
 </td></tr>
 
@@ -441,26 +423,18 @@ By the way, a few things can go wrong if you do not use branches. They are a bes
 
 ### The Two Types of Accounts
 
-User account (example: my user account)
-* A user account is the first type of account create. 
-
 Organization account (example: DjangoCon organization account)
-* An account where a team of people are working together
+* An account where teams of people are working together
+
+User account (example: my user account)
+* A user account is a personal account that a user owns
 
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 17]()
-
-</td><td>
-
-### Repository (Repo)
-
-Within user accounts are repositories (a.k.a repos). A repo is a place where a codebase is stored (example: DjangoCon US website repo).
-
-</td></tr>
+<!--
+Within GitHub accounts are repositories (a.k.a repos). A repo is a place where a codebase is stored (example: DjangoCon US website repo).
+-->
 
 
 <tr><td width="30%">
@@ -471,7 +445,7 @@ Within user accounts are repositories (a.k.a repos). A repo is a place where a c
 
 ### Write Permission and Why We Need It
 
-Write Permission is an important concept. We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo, ideally within a feature branch (which I'm going ot talk about later).  
+Write Permission is an important concept. We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo, ideally within a feature branch (which I'm going to talk about later).  
 
 When you create a user account, you are the owner, so you have write permission to all your repos.
 
@@ -636,30 +610,8 @@ I own the fork and am the only user with write permission to it unless I give pe
 
 ### Section 2
 
-* We are going to determine which collaboration approach to use
-* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Fork and Pull Diagram
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Shared Repository Diagram
+* Determine which collaboration approach to use (there are two)
+* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 
 </td></tr>
 
@@ -672,15 +624,35 @@ I own the fork and am the only user with write permission to it unless I give pe
 
 ### Remote Diagram
 
-When you clone a repo to your local development environment, Git is able to tracking certain things. For instance, Git will know where you cloned your code from and will name this remote repo "origin". You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
-
-When you make a change to a GitHub repo, or in your local development environment, the code elsewhere does not automatically update with the change. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+When you clone a repo to your local development environment, Git will know where you cloned your code from and will name this remote repo "origin". When you make a change to a GitHub repo, or in your local clone, the code elsewhere does not automatically update with the change. You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
 
 You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
 
-<!--
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
--->
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Fork and Pull Diagram
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Diagram
+
+If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
 
 </td></tr>
 
@@ -780,7 +752,7 @@ Folder/files/text editor
 
 In the browser, go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. 
 
-There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request. Be forewarned, that if you forked the repo and you go to your fork instead, you can accidentally submit a pull request to yourself. 
+There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request, even if your branch is in a fork. Be forewarned, that if you forked the repo and you go to your fork instead, you can accidentally submit a pull request to yourself. 
 
 * Make sure base corresponds to the repo and branch you want to contribute to
 * Make sure compare corresponds to your branch
@@ -794,10 +766,6 @@ If you are submitting the pull request from within the repo:
 If you are submitting the pull request a forked repo:
 * base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
 
-<!--
-You can then submit a pull request for the new branch in your origin. 
--->
-
 </td></tr>
 
 
@@ -809,9 +777,9 @@ You can then submit a pull request for the new branch in your origin.
 
 ### Section 3
 
-* We are going to determine which collaboration approach to use
-* We are going to clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
-* Then we will review the pull requests as a DjangoCon US website repo maintainer
+* Determine which collaboration approach to use (there are two)
+* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
 </td></tr>
 
@@ -883,7 +851,6 @@ We've already talked about the concept of remotes when we talked about origin.
 
 
 
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -930,19 +897,13 @@ After you run the code locally, if you decide a change does need to be made
 After you run the code locally, if you decide a change needs to be made, there are a few options
 * As the contributor to make a change to the pull request
 * Push additional commits yourself to the pull request branch
+* You can make the change locally, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
 
 
 <!--
-* merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
-
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
-* you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
-
-- General process for making a local change, committing, merging with branch and
-pushing back to GitHub
-
-An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch. 
-
+* push to origin (follow instructions, live branch/deployed?)
+An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer. 
 Checkout a pull request locally
 
 Flow chart of possibilities:
@@ -973,7 +934,7 @@ diff Views
 
 ### Shared Repo Model Feature Branch or Pull Request Branch
 
-Using origin as an example, because is the most common. Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
+Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
 
 ```bash
 $ git fetch origin
@@ -1078,6 +1039,7 @@ See also, pull request shortcuts
 -->
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -1193,6 +1155,15 @@ Push the changes to your corresponding branch in the forked repository in GitHub
 $ git push origin master
 ```
 
+Keep feature branch up-to-date (often merging master into feature branch)
+
+```bash
+$ git checkout <feature-branch-name>
+$ git merge <branch-name>
+```
+
+
+
 Do not pull remote tracking branch updates (defeats the purpose because you already did $ git fetch (updated remote tracking branch with remote changes), which is $ git fetch + $ git merge in one command)
 
 ```bash
@@ -1204,6 +1175,8 @@ If pull remote tracking branch updates, and have a problem
 ```bash
 $ git merge --abort
 ```
+
+
 
 Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
 
@@ -1223,27 +1196,13 @@ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
-Keep feature branch up-to-date (often merging master into feature branch)
-
-```bash
-$ git checkout <feature-branch-name>
-$ git merge <branch-name>
-```
-
 <!--
-### Convention for Pushing and Pulling
-
-Here are the generic commands you can use to push and pull to keep your local clone and GitHub repo in sync 
+Here are the generic commands you can use to push and pull
 
 If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
-
-- How to keep local code up to date
 -->
 
 </td></tr>
-
-
-
 
 
 <tr><td width="30%">
@@ -1253,8 +1212,6 @@ If you are pushing, you need to have write permission to the branch. The remote 
 </td><td>
 
 ### Adding an Upstream Remote and Syncing a Fork
-
-Let's go back to the perspective of a person who has cloned a repo locally from a fork.
 
 The git remote add command takes two arguments:
 * A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
@@ -1296,7 +1253,6 @@ upstream  https://github.com/upstream-username/original-repository (push)
 
 
 
-
 <tr><td width="30%">
 
 ![Slide 41]()
@@ -1305,22 +1261,18 @@ upstream  https://github.com/upstream-username/original-repository (push)
 
 ### Workflow Decisions
 
-Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is ready to go love. 
+Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is production ready. 
 
 If you choose to use a develop branch:
 * In addition to the master branch, create the develop branch
-* Choose a default branch (can be changed)
+* Choose a default branch (the default branch will be the first branch you see when you look at a repo, it will be the branch you are checked into when you cd into a folder after cloning, and it will be the default base for a pull request)
+* Default branch is usually master branchh
 
 
 <!--
-"The default branch is considered the base branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch"
-The default branch is the base branch and will be master, unless you specify otherwise
-Set the default (base branch) under branches tab- against which all pull requests and code commits are automatically made- master branch by default
-
 - [ ] Look at an example of master only versus master/develop, production/staging
 
 * master only or master/develop as production/staging)
-* default branch? (base against which future pull requests and commits will be made)
 
 For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
 -->
@@ -1338,7 +1290,7 @@ For example, a mission critical project with a high volume of users is likely to
 
 Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
 
-If you want to know more about advanced workflow:
+If you want to know more about advanced workflow
 * Git Flow (basically, the workflow we've been using)
 * A Successful Git Branching Model (more advanced)
 * A Successful Git Branching Model Considered Harmful (alternative view)
@@ -1486,6 +1438,9 @@ http://opensourcesurvey.org/2017/
 * Link to specific line number on GitHub
 
 <!--
+* Request a review from a specific person
+* Close an issue via commit message by using keyword
+
 # Notifications
 
 - [ ] Find the Notifications Overview Page
