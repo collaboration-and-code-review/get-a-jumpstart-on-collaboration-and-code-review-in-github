@@ -334,6 +334,12 @@ Two different types
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
+When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
+
+You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
+
+You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
+
 Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
 
 If you learn to deal with remote branches in general, you will have the fundamentals skills and freedom that will help you to do both collaboration and code review. 
@@ -341,19 +347,6 @@ If you learn to deal with remote branches in general, you will have the fundamen
 By the way, a few things can go wrong if you do not use branches. They are a best practice. 
 
 </td></tr>
-
-
-<!--
-### Feature Branches
-
-When a repo is created, there is a default branch named master that contains the initial files. You can make a copy of the master branch and give it a new name. Now there are two branches, both in the same repo. 
-
-What typically happens is that when you want to create a new feature, you make a copy of the branch you intend your feature to be merged into (in this case, the master branch). You make the changes to this new branch, and submit a pull request. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the feature branch.
-
-You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
-
-The way that we will submit a feature branch depends on write permission.
--->
 
 
 <tr><td width="30%">
@@ -832,14 +825,6 @@ The forked repo is not an origin for us and we do not have write permission to i
 </td></tr>
 
 
-
-
-
-
-
-
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -847,10 +832,6 @@ The forked repo is not an origin for us and we do not have write permission to i
 </td><td>
 
 ### The Difference Between a Feature Branch and a Pull Request Branch
-
-Feature branches and pull request branches are all just remote branches.
-
-We are going to be working on feature branches and reviewing the pull requests we submitted. 
 
 The main difference between working on a feature branch or pull request branch is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
 
@@ -876,7 +857,7 @@ First things first
 * There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 <!--
-When you go to the pull request tab in the browser and look at a pull request, there will a set of command line instructions for reviewing the pull request locally. At the beginning will be a set of instructions for how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
+At the beginning will be a set of instructions for how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
 
 * click on the files (pull request tab)
 
