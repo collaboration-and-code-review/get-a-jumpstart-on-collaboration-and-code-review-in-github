@@ -264,7 +264,7 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 
 ### Local Development Environment
 
-We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
+We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser on a local server, look at it, make changes to the code, or perhaps see the change proposed by the pull request and decide how to proceed.
 
 * We clone the GitHub repo to our local development environment
 * There will now be a folder on the computer in the directory you cloned into by the same name as the GitHub repo and filled with the contents of the repo
@@ -285,6 +285,53 @@ We use Git by typings commands into the command line.
 -->
 
 </td></tr>
+
+
+
+<!--
+Examples of How to Do Important Things in Browser versus Locally
+
+Action |Browser | Command Line
+:---: | --- | ---
+Fork a repo | Can only do in browser | N/A
+Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
+Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
+Create a file | Click "Create new file" button | ```$ touch <file-name>```
+Add a file | Click "Upload files" button | ```$ git push origin <remote>```
+Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
+Open an issue | Can only do in browser | N/A
+Open a pull request | Can only do in browser | N/A
+
+Committing changes in browser versus locally
+* Can do many things in the browser (example: patch)
+* Some changes can be made and committed in the browser, some cannot
+* Some things can be done in both browser or command line, some things only by command line locally.
+
+Running code
+* Will need to run code locally to view changes, unless dealing with gh-pages and HTML, CSS, JavaScript, or Jekyll
+
+Create, add, rename, move file
+Can create, add, rename, move file in browser or from command line (images are an exception)
+
+Branches
+Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
+Can view/delete branches in the browser by clicking on the branches tab 
+
+branches tab, change default
+branch selector menu, click  NUMBER branches to delete
+Can delete branches under the branches tab or in the closed pull request page, or by command line
+ 
+Images
+Images can be drag and drop/upload, but can't rename or move in browser
+* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
+
+* How/where do you create a user account or organization
+* Understand/take tour of the parts of a user account and organization
+* Understand how to create teams with permissions
+* Access your organizational account and dashboard
+* Create an organizational repo
+-->
+
 
 
 <tr><td width="30%">
@@ -643,35 +690,6 @@ In order to keep the code in your local clone and in your GitHub repo in sync, y
 
 <tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Convention for Pushing and Pulling
-
-Here are the generic commands you can use to push and pull to keep your local clone and GitHub repo in sync 
-
-If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
-
-Pushing and pulling via <remote-name>
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-</td></tr>
-
-
-<tr><td width="30%">
-
 ![Slide 28]()
 
 </td><td>
@@ -845,7 +863,7 @@ The forked repo is not an origin for us and we do not have write permission to i
 When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains all of the Git configuration information. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
 There are three types of branches:
-* remote branch
+* remote branch (in a remote repo)
 * remote-tracking branch (inside of the hidden .git folder, which stores info)
 * local branch
 
@@ -858,14 +876,9 @@ $ git branch -r
 
 
 <!--
-Remote, Remote Branch, Remote Tracking Branch, and Local Branches
-
-Look for shared repository/original repository references
-
 Fetching from Origin Versus Pulling from a Fork
 These instructions work for any remote branch. 
 etch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it 
-
 We've already talked about the concept of remotes when we talked about origin. 
 -->
 
@@ -880,20 +893,16 @@ We've already talked about the concept of remotes when we talked about origin.
 
 </td><td>
 
-### The Difference Between a Feature Branch and a Pull Request Branch
+### Checking Out Remote Branches
 
-The main difference between working on a feature branch or pull request branch is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
+Feature branches and pull request branches are both remote branches. 
 
-The process we are going to go through for working on the pull request (or a feature branch) can be done by any maintainer with write permission, not just a person reviewing it as a pull request. 
+The feature branch will become a pull request branch when a pull request is submitted. And eventually a maintainer will decide whether to merge the branch into the branch it is intended to be merged with. 
 
-* Anyone with write permission can fetch feature branches and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
-* If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. 
-
-<!--
-Checking out remote branches
--->
+Any person with write permission to a remote branch can fetch it to their local development environment and add commits to it, even if a pull request has already been made. If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is merged. 
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -927,10 +936,7 @@ After you run the code locally, if you decide a change needs to be made, there a
 
 
 <!--
-* you update the pull request branch locally (add, commit, create a message), merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
-
-* Fetch pull request branch locally and checkout the branch
-fetch the pull request branch to your computer to run the code so that you can evaluate the proposed change. 
+* Fetch pull request branch locally and checkout the branch, update, (add, commit, create a message), merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
 
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
 * you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
@@ -939,7 +945,7 @@ https://help.github.com/articles/committing-changes-to-a-pull-request-branch-cre
 pushing back to GitHub
 - How to keep local code up to date
 
-An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch, complete any installation process, look at the website in your browser as you run in on a local server, and literally see the change proposed by the pull request. Then decide how to proceed. 
+An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch. 
 
 Checkout a pull request locally
 
@@ -1089,14 +1095,12 @@ See also, pull request shortcuts
 
 ### How to Deal With Merge Conflicts
 
-<!--
-Resolve merge conflict:
-* resolve in browser
-* resolve locally
+Two ways to resolve a merge conflict
+* In the browser
+* In the local development environment by command line
 
+<!--
 Advanced
-* Resolve a merge conflict in the browser
-* Resolve a merge conflict by command line
 * Understand rebasing
 * Understand update "strategies": fast forward, recursive
 
@@ -1151,51 +1155,6 @@ $ git push <remote-name> :<branch-name>
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Adding an Upstream Remote and Syncing a Fork
-
-Let's go back to the perspective of a person who has cloned a repo locally from a fork.
-
-The git remote add command takes two arguments:
-* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
-* A remote URL, for example, https://github.com/upstream-username/original-repository
-
-Add a remote
-
-```bash
-$ git remote add <remote-name> <remote-url>
-```
-
-Verify existing remote repository
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-```
-
-Add upstream remote repository that will be synced with the fork
-
-```bash
-$ git remote add upstream https://github.com/upstream-username/original-repository.git
-```
-
-Verify new upstream remote (can only push to upstream if have write permission)
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-upstream  https://github.com/upstream-username/original-repository (fetch)
-upstream  https://github.com/upstream-username/original-repository (push)
-```
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1264,8 +1223,20 @@ $ git merge --abort
 
 Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
 
+<!--
+Pushing and pulling via <remote-name>
+-->
+
 ```bash
 $ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
 Keep feature branch up-to-date (often merging master into feature branch)
@@ -1273,6 +1244,64 @@ Keep feature branch up-to-date (often merging master into feature branch)
 ```bash
 $ git checkout <feature-branch-name>
 $ git merge <branch-name>
+```
+
+<!--
+### Convention for Pushing and Pulling
+
+Here are the generic commands you can use to push and pull to keep your local clone and GitHub repo in sync 
+
+If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
+-->
+
+</td></tr>
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Adding an Upstream Remote and Syncing a Fork
+
+Let's go back to the perspective of a person who has cloned a repo locally from a fork.
+
+The git remote add command takes two arguments:
+* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
+* A remote URL, for example, https://github.com/upstream-username/original-repository
+
+Add a remote
+
+```bash
+$ git remote add <remote-name> <remote-url>
+```
+
+Verify existing remote repository
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
+```
+
+Add upstream remote repository that will be synced with the fork
+
+```bash
+$ git remote add upstream https://github.com/upstream-username/original-repository.git
+```
+
+Verify new upstream remote (can only push to upstream if have write permission)
+
+```bash
+$ git remote -v
+origin  https://github.com/your-username/your-fork (fetch)
+origin  https://github.com/your-username/your-fork (push)
+upstream  https://github.com/upstream-username/original-repository (fetch)
+upstream  https://github.com/upstream-username/original-repository (push)
 ```
 
 </td></tr>
