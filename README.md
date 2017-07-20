@@ -243,14 +243,6 @@ GitHub is a website where users can store and work on code together in the brows
 
 </td><td>
 
-### Browser Versus Local
-
-Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. 
-
-Sometimes we need to work on the code in a local development environment on our computer. 
-
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. 
-
 </td></tr>
 
 
@@ -264,7 +256,7 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 
 ### Local Development Environment
 
-We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser on a local server, look at it, make changes to the code, or perhaps see the change proposed by the pull request and decide how to proceed.
+Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. 
 
 * We clone the GitHub repo to our local development environment
 * There will now be a folder on the computer in the directory you cloned into by the same name as the GitHub repo and filled with the contents of the repo
@@ -282,6 +274,14 @@ We sometimes need to make a copy of the code on our computer, install any necess
 probably a home directory, look at command line prompt to know
 * The folder will be initialized as a Git repository
 We use Git by typings commands into the command line.
+-->
+
+<!--
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. Sometimes we need to work on the code in a local development environment on our computer. 
+
+### Browser Versus Local
+
+We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser on a local server, look at it, make changes to the code, or perhaps see the change proposed by the pull request and decide how to proceed.
 -->
 
 </td></tr>
@@ -674,15 +674,12 @@ I own the fork and am the only user with write permission to it unless I give pe
 
 When you clone a repo to your local development environment, Git is able to tracking certain things. For instance, Git will know where you cloned your code from and will name this remote repo "origin". You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
 
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
+When you make a change to a GitHub repo, or in your local development environment, the code elsewhere does not automatically update with the change. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
 
 You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
 
-
 <!--
-When you make a change to a GitHub repo, or in your local development environment, the code elsewhere does not automatically update with the change. 
-
-In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
 -->
 
 </td></tr>
@@ -936,21 +933,17 @@ After you run the code locally, if you decide a change needs to be made, there a
 
 
 <!--
-* Fetch pull request branch locally and checkout the branch, update, (add, commit, create a message), merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
+* merge the pull request branch locally via command with the branch it is intended to change, and push to live branch on GitHub
 
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
 * you make change, merge with intended branch and push to origin (follow instructions, live branch/deployed?)
 
 - General process for making a local change, committing, merging with branch and
 pushing back to GitHub
-- How to keep local code up to date
 
 An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer, checkout the branch. 
 
 Checkout a pull request locally
-
-* Request a review from a specific person
-* Close an issue via commit message by using keyword
 
 Flow chart of possibilities:
 -->
@@ -1100,15 +1093,6 @@ Two ways to resolve a merge conflict
 * In the local development environment by command line
 
 <!--
-Advanced
-* Understand rebasing
-* Understand update "strategies": fast forward, recursive
-
-Advanced Git
-* Git rebase, resolving merge conflicts after a Git rebase
-
-Interactive rebase
-
 Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
 About merge conflicts- Resolve conflicts buttons, can't push until resolved
 Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
@@ -1252,6 +1236,8 @@ $ git merge <branch-name>
 Here are the generic commands you can use to push and pull to keep your local clone and GitHub repo in sync 
 
 If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
+
+- How to keep local code up to date
 -->
 
 </td></tr>
