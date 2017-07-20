@@ -247,9 +247,11 @@ GitHub is a website where users can store and work on code together in the brows
 
 Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. Sometimes we need to work on the code in our local development environment. 
 
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to clone the repo on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -260,19 +262,22 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 
 ### Local Development Environment
 
-When you clone the GitHub repo in your local development environment, it will contain a hidden folder named .git. This folder contains Git configuration information. 
-
-We can transfer (push) changes back and forth between our local development environment and our GitHub repositories. And meanwhile other users can work on the code and add their changes too. Git and GitHub will record every change to a file and will tell us if there is a conflict.
-
-<!--
 What a Local Environment Looks Like
 
-You can clone a GitHub repo locally. You will then have a copy of the code on your computer and a copy on GitHub. 
+* We clone the GitHub repo to our local development environment
+* There will now be a folder on the computer in the directory you cloned into by the same name as the GitHub repo and filled with the contents of the repo
+* We now have a copy of the code on our computer and a copy on GitHub in the repo
+* The folder in our computer will contain a hidden folder named .git that contains the Git configuration information
+* When we stage the changes, Git will record the changes made to the files
+* We push and pull changes between the local development environment and our GitHub repo
+* Meanwhile other users can work on the code on their computer and push the changes back to GitHub. 
+* Our changes are all merged into the GitHub repo we are working on
+* Git will tell us if there is a conflict.
 
-* There will now be a new folder on your computer in the directory you cloned into (probably a home directory, look at command line prompt to know), by the same name as the repo and filled with the contents of the repo
+<!--
+probably a home directory, look at command line prompt to know
 * The folder will be initialized as a Git repository
-
-We install Git on our computer and use it via the command line.
+We use Git by typings commands into the command line.
 -->
 
 </td></tr>
@@ -820,9 +825,17 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 </td><td>
 
-### Remote Branch Graphic
+### Pull Request Review Process
+
+* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
+* Follow the link to the pull request in the repo pull request tab in the browser
+* Look over the information about the pull request provided by the contributor
+
+* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -835,10 +848,18 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 The main difference between working on a feature branch or pull request branch is that with a pull request branch, you eventually decide whether to merge the branch into the branch it is intended to be merged with. 
 
+The process we are going to go through for working on the pull request (or a feature branch) can be done by any maintainer with write permission, not just a person reviewing it as a pull request. 
+
 * Anyone with write permission can fetch feature branches and pull request branches, work on them, and push additional commits to them. The process is basically the same (exception: if fetching pull request branch by pull request number).
 * If a pull request has already been made, the additional commit(s) will be automatically added to the pull request when you push to the branch, up to the point that the pull request is merged. 
 
+<!--
+Checking out remote branches
+-->
+
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -847,27 +868,18 @@ The main difference between working on a feature branch or pull request branch i
 
 </td><td>
 
-### Pull Request Review Process
+### Why are the Instructions Different?
 
-First things first
-* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
-* Follow the link to the pull request in the repo pull request tab in the browser
-* Look over the information about the pull request provided by the contributor
-
-* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+The reason why the instructions are different is because, you can fetch all of the updates made within the origin and they will be temporarily stored in the .git folder. These updates will only include branches submitted to the DjangoCon US website repo. They will not include branches from a fork. 
 
 <!--
-At the beginning will be a set of instructions for how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
+Look for shared repository/original repository references
 
-* click on the files (pull request tab)
+Fetching from Origin Versus Pulling from a Fork
 
-Pull request, one file shows all changes
+how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
 
-diff Views
-* unified view
-* split view
-* source view
-* rich view
+* The way that you fetch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it 
 -->
 
 </td></tr>
@@ -926,32 +938,22 @@ Checkout a pull request locally
 Flow chart of possibilities:
 -->
 
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Fetching from Origin Versus Pulling from a Fork
-
-There is another tricky issue. 
-
-* The way that you fetch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it is different depending on whether the branch was pushed to the shared repository or came from a fork. 
-
-This is why the instructions for reviewing a pull request locally are different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model. 
-
-Let me explain why. 
-
 <!--
-Look for shared repository/original repository references
+* click on the files (pull request tab)
 
-We are going to be checking out remote branches as a regular maintainer and as a code reviewer. 
+Pull request, one file shows all changes
+
+diff Views
+* unified view
+* split view
+* source view
+* rich view
 -->
 
 </td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -961,6 +963,9 @@ We are going to be checking out remote branches as a regular maintainer and as a
 </td><td>
 
 ### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
+
+We talked about the .git folder earlier. It's a hidden folder in a local development environment that contains all of the Git configuration information. 
+
 
 When we are working from within the origin, we can fetch all of the updates from the origin to a temporary folder locally called .git. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
 
@@ -1309,22 +1314,24 @@ $ git merge <branch-name>
 
 ### Workflow Decisions
 
-Some projects will involve both a master and develop branch. For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live.  
+Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is ready to go love. 
 
 If you choose to use a develop branch:
 * In addition to the master branch, create the develop branch
 * Choose a default branch (can be changed)
 
+
 <!--
-Setting the default branch
 "The default branch is considered the base branch in your repository, against which all pull requests and code commits are automatically made, unless you specify a different branch"
 The default branch is the base branch and will be master, unless you specify otherwise
 Set the default (base branch) under branches tab- against which all pull requests and code commits are automatically made- master branch by default
 
 - [ ] Look at an example of master only versus master/develop, production/staging
 
-* Are you going to have both master and development branches? (master only or master/develop as production/staging)
+* master only or master/develop as production/staging)
 * default branch? (base against which future pull requests and commits will be made)
+
+For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
 -->
 
 </td></tr>
