@@ -245,9 +245,11 @@ GitHub is a website where users can store and work on code together in the brows
 
 ### Browser Versus Local
 
-Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. Sometimes we need to work on the code in our local development environment. 
+Some things we can do in the GitHub website in the browser. We cannot do everything in the browser. 
 
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
+Sometimes we need to work on the code in a local development environment on our computer. 
+
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. 
 
 </td></tr>
 
@@ -262,7 +264,7 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 
 ### Local Development Environment
 
-What a Local Environment Looks Like
+We sometimes need to make a copy of the code on our computer, install any necessary software, run the code in a local browser, and make changes to the code.
 
 * We clone the GitHub repo to our local development environment
 * There will now be a folder on the computer in the directory you cloned into by the same name as the GitHub repo and filled with the contents of the repo
@@ -275,6 +277,8 @@ What a Local Environment Looks Like
 * Git will tell us if there is a conflict.
 
 <!--
+.git folder is able to track certain things, for instance, where your code originated from
+
 probably a home directory, look at command line prompt to know
 * The folder will be initialized as a Git repository
 We use Git by typings commands into the command line.
@@ -621,11 +625,18 @@ I own the fork and am the only user with write permission to it unless I give pe
 
 ### Remote Diagram
 
-When you clone a repo to your local development environment, Git considers the repo you cloned from to be a remote repository. By default, Git will name the remote repo you cloned from "origin". You can use the name "origin" on the command line to push and pull changes between the local cloen and the GitHub repo, to keep them in sync. 
+When you clone a repo to your local development environment, Git is able to tracking certain things. For instance, Git will know where you cloned your code from and will name this remote repo "origin". You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
 
 If you cloned from a fork, when you push to "origin", you will be pushing to the fork. If you cloned from an organizational repo, when you push to "origin", you will be pushing to the organizational repo. 
 
-You can also connect your local clone to other remote repos and push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
+You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
+
+
+<!--
+When you make a change to a GitHub repo, or in your local development environment, the code elsewhere does not automatically update with the change. 
+
+In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
+-->
 
 </td></tr>
 
@@ -656,21 +667,7 @@ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
-<!--
-When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. In order to keep the code in your local clone and in your GitHub repo in sync, you need to push and pull changes between the local clone and the GitHub repo.
-
-clone: local copy of a repo
-push: transfer changes from local clone to online repo
-pull: transfer changes from online repo to local clone
-
-fetch it from the remote
--->
-
 </td></tr>
-
-
-
-
 
 
 <tr><td width="30%">
@@ -812,7 +809,7 @@ You can then submit a pull request for the new branch in your origin.
 
 ### Perspective: Checking Out Remote Branches
 
-We are now working only as DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
+We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 
@@ -837,6 +834,45 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Why are the Instructions Different?
+
+When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains all of the Git configuration information. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+
+There are three types of branches:
+* remote branch
+* remote-tracking branch (inside of the hidden .git folder, which stores info)
+* local branch
+
+
+```bash
+$ git fetch --prune
+$ git branch -a
+$ git branch -r
+```
+
+
+<!--
+Remote, Remote Branch, Remote Tracking Branch, and Local Branches
+
+Look for shared repository/original repository references
+
+Fetching from Origin Versus Pulling from a Fork
+These instructions work for any remote branch. 
+etch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it 
+
+We've already talked about the concept of remotes when we talked about origin. 
+-->
+
+</td></tr>
+
+
+
 
 <tr><td width="30%">
 
@@ -855,31 +891,6 @@ The process we are going to go through for working on the pull request (or a fea
 
 <!--
 Checking out remote branches
--->
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Why are the Instructions Different?
-
-The reason why the instructions are different is because, you can fetch all of the updates made within the origin and they will be temporarily stored in the .git folder. These updates will only include branches submitted to the DjangoCon US website repo. They will not include branches from a fork. 
-
-<!--
-Look for shared repository/original repository references
-
-Fetching from Origin Versus Pulling from a Fork
-
-how to fetch the pull request to your computer. Even the instructions are for pull requests, these instructions for fetching the pull request locally work for any remote branch. 
-
-* The way that you fetch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it 
 -->
 
 </td></tr>
@@ -948,41 +959,6 @@ diff Views
 * split view
 * source view
 * rich view
--->
-
-</td></tr>
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
-
-We talked about the .git folder earlier. It's a hidden folder in a local development environment that contains all of the Git configuration information. 
-
-
-When we are working from within the origin, we can fetch all of the updates from the origin to a temporary folder locally called .git. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. This is why when you go to review a pull request, the instructions are different depending on whether the pull request was submitted from within the origin or from a fork. 
-
-There are three types of branches:
-* remote branch
-* remote-tracking branch (inside of the hidden .git folder, which stores info)
-* local branch
-
-```bash
-$ git fetch --prune
-$ git branch -a
-$ git branch -r
-```
-
-<!--
-.git folder is able to track
-We've already talked about the concept of remotes when we talked about origin.  
 -->
 
 </td></tr>
