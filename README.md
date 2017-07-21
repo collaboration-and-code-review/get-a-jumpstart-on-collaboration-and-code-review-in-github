@@ -31,10 +31,11 @@ Thank you!
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
+- [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [What are Git and GitHub?](#what-are-git-and-github)
 
+
 - [Local Development Environment](#local-development-environment)
-- [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
 - [Branch Diagram](#branch-diagram)
 - [Branches](#branches)
@@ -171,7 +172,7 @@ Give link here?
 
 </td><td>
 
-### TacoFancy
+### Announcing TacoFancy on Twitter
 
 I want to tell you how I got started witih open-source contribution, which is a bit unconventional and might show you that there are many ways to get involved. 
 
@@ -239,6 +240,30 @@ DjangoCon US Website Repo
 
 </td><td>
 
+### Prerequisites for Getting Started
+
+* Create a free [GitHub](https://github.com) account online
+* Install Git on your computer and set your email and username
+* Find and open your computer terminal (a.k.a. command line) on your computer
+* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later and see bash commands resource in Useful Resources section)
+* You might also want to have a text editor of your choice installed, to use to edit files
+
+There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
+
+<!--
+Text editor recommendations
+Bash command list
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 10]()
+
+</td><td>
+
 ### What are Git and GitHub?
 
 GitHub is a website where users can store and work on code together. GitHub is built on the version control software Git.
@@ -253,7 +278,7 @@ Git Command Line- verifying Git is installed and the version
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 11]()
 
 </td><td>
 
@@ -270,7 +295,7 @@ GitHub is a social network. You can:
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 12]()
 
 </td><td>
 
@@ -369,28 +394,7 @@ Images can be drag and drop/upload, but can't rename or move in browser
 
 
 
-<tr><td width="30%">
 
-![Slide 11]()
-
-</td><td>
-
-### Prerequisites for Getting Started
-
-* Create a free [GitHub](https://github.com) account online
-* Install Git on your computer and set your email and username
-* Find and open your computer terminal (a.k.a. command line) on your computer
-* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later and see bash commands resource in Useful Resources section)
-* You might also want to have a text editor of your choice installed, to use to edit files
-
-There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
-
-<!--
-Text editor recommendations
-Bash command list
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
