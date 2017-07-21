@@ -38,15 +38,18 @@ Thank you!
 - [Local Development Environment](#local-development-environment)
 - [What I Would Do Differently](#what-i-would-do-differently)
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
-
-
-- [Branch Diagram](#branch-diagram)
+- [Working on a File in GitHub](#working-on-a-file-in-github)
 - [Branches](#branches)
+- [How to Create a Branch](#how-to-create-a-branch)
 - [Overview](#overview)
 - [Section 1](#section-1)
+
+
 - [The Two Types of Accounts](#the-two-types-of-accounts)
+
 - [Repository (Repo)](#repository-repo)
 - [Feature Branches](#feature-branches)
+
 - [Write Permission and Why We Need It](#write-permission-and-why-we-need-it)
 - [Write Permission and Collaboration](#write-permission-and-collaboration)
 - [The Two Collaborative Development Models)](#the-two-collaborative-development-models)
