@@ -379,7 +379,7 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 18]()
 
 </td><td>
 
@@ -390,7 +390,7 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 19]()
 
 </td><td>
 
@@ -405,7 +405,7 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 20]()
 
 </td><td>
 
@@ -418,7 +418,26 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 21]()
+
+</td><td>
+
+### The Two Collaborative Development Models
+
+There are two different ways to contribute and they have a fancy name. 
+
+The two Collaborative Development Models
+* "Shared Repository" Model
+* "Fork and Pull" Model
+
+The two different collaborative development models typically correspond to the two different account types
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 22]()
 
 </td><td>
 
@@ -435,15 +454,13 @@ Organization account (example: DjangoCon organization account)
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 23]()
 
 </td><td>
 
-### Write Permission and Why We Need It
+### Write Permission
 
 We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo, probably in a feature branch.
-
-DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
 
 <!--
 Some examples of what I can do within the repo now:
@@ -460,6 +477,14 @@ See write permissions chart for info
 
 
 
+<!--
+Going to need to go into the repo and make the proposed change. You can only do that if you have write permission to the repo
+
+Why We Need It
+
+DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
+-->
+
 <tr><td width="30%">
 
 ![Slide 19]()
@@ -468,33 +493,18 @@ See write permissions chart for info
 
 ### Write Permission and Collaboration
 
+<!--
 The way that you contribute to a repo depends on whether you have write permission to it. 
 
 When you create a user account, you own all of the repos in your account, so you write permission to all of them. 
 However, write permission is usually associated with organization accounts. 
+-->
 
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 20]()
 
-</td><td>
-
-### The Two Collaborative Development Models
-
-There are two different ways to contribute and they have a fancy name. 
-
-The two Collaborative Development Models
-* "Shared Repository" Model
-* "Fork and Pull" Model
-
-The two different collaborative development models correspond to the two different account types
-
-I'm going to give you an example of each one
-
-</td></tr>
 
 
 <tr><td width="30%">
