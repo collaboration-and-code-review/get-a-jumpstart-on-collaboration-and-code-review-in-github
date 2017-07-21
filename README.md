@@ -433,11 +433,6 @@ Organization account (example: DjangoCon organization account)
 </td></tr>
 
 
-
-
-
-
-
 <tr><td width="30%">
 
 ![Slide 18]()
@@ -446,13 +441,9 @@ Organization account (example: DjangoCon organization account)
 
 ### Write Permission and Why We Need It
 
-Write Permission is an important concept. We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo, ideally within a feature branch (which I'm going to talk about later).  
+We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo, probably in a feature branch.
 
-When you create a user account, you are the owner, so you have write permission to all your repos.
-
-Write permission is usually associated with organization repos. 
-
-For example, DjangoCon US website is a software project deployed live with a fairly high volume of traffic. We would not want just any user to be able to come along and make changes within the repo. So, DjangoCon organization account owners have given certain users write permission to be maintainers. There is often a level of trust involved in having write permission. 
+DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
 
 <!--
 Some examples of what I can do within the repo now:
@@ -467,6 +458,8 @@ See write permissions chart for info
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 19]()
@@ -477,7 +470,8 @@ See write permissions chart for info
 
 The way that you contribute to a repo depends on whether you have write permission to it. 
 
-There are two different ways to contribute and they have a fancy name. 
+When you create a user account, you own all of the repos in your account, so you write permission to all of them. 
+However, write permission is usually associated with organization accounts. 
 
 </td></tr>
 
@@ -489,6 +483,8 @@ There are two different ways to contribute and they have a fancy name.
 </td><td>
 
 ### The Two Collaborative Development Models
+
+There are two different ways to contribute and they have a fancy name. 
 
 The two Collaborative Development Models
 * "Shared Repository" Model
