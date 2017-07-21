@@ -36,9 +36,10 @@ Thank you!
 - [GitHub: Social Network](#github-social-network)
 - [GitHub: Repositories](#github-repositories)
 - [Local Development Environment](#local-development-environment)
-
-
+- [What I Would Do Differently](#what-i-would-do-differently)
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
+
+
 - [Branch Diagram](#branch-diagram)
 - [Branches](#branches)
 - [Overview](#overview)
@@ -355,6 +356,39 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
+![Slide 16]()
+
+</td><td>
+
+### Working on a File in GitHub
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### Branches
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 17]()
+
+</td><td>
+
+### How to Create a Branch
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 14]()
 
 </td><td>
@@ -385,7 +419,13 @@ In order to be able to increase your level of responsibility, we need to have th
 
 
 
+
 <!--
+Git Magic
+When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. 
+
+This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
+
 When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
 
 For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.   
@@ -404,11 +444,6 @@ Git is installed in our local development environment and we use it by tying com
 
 You can see the corresponding folders and files
 The format may be a bit different because on your local computer, you are going to be working on raw files
-
-Git Magic
-When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. 
-
-This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
 -->
 
 
