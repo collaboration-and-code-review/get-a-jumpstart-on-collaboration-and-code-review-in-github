@@ -43,23 +43,21 @@ Thank you!
 - [How to Create a Branch](#how-to-create-a-branch)
 - [Overview](#overview)
 - [Section 1](#section-1)
-
-
 - [The Two Types of Accounts](#the-two-types-of-accounts)
 
-- [Repository (Repo)](#repository-repo)
-- [Feature Branches](#feature-branches)
-
 - [Write Permission and Why We Need It](#write-permission-and-why-we-need-it)
+
 - [Write Permission and Collaboration](#write-permission-and-collaboration)
 - [The Two Collaborative Development Models)](#the-two-collaborative-development-models)
 - ["Shared Repository"](#shared-repository)
 - [Example: DjangoCon US Website Repo as a "Shared Repository"](#example-djangocon-us-website-repo-as-ashared-repository)
 - ["Fork and Pull" Model](#fork-and-pull-model)
 - [Example: DjangoCon US Website Repo "Fork and Pull" Model](####example-djangoCon-us-website-repo-fork-and-pull-model)
+
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
 - [About Forks](#about-forks)
+
 - [Section 2](#section-2)
 
 - [Fork and Pull Diagram](#fork-and-pull-diagram)
@@ -418,131 +416,6 @@ In order to be able to increase your level of responsibility, we need to have th
 </td></tr>
 
 
-
-
-
-
-
-<!--
-Git Magic
-When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. 
-
-This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
-
-When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
-
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.   
-
-Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
-
-* I work in my home directory, which you can see from the command prompt. 
-* The GitHub repo has been cloned using its URL
-* There is now a folder on the computer in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo and a .git folder
-* I now have a copy of the codebase on my computer and a copy online in a GitHub repo
-* When I stage any changes I make, Git will record the changes to the files
-* I can push and pull changes between the local development environment and the GitHub repo
-* Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
-* Our changes are all merged into the GitHub repo we are working on
-* Git will tell us if there is a conflict.
-
-You can see the corresponding folders and files
-The format may be a bit different because on your local computer, you are going to be working on raw files
--->
-
-
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 13]()
-
-</td><td>
-
-### Branch Diagram
-
-To do this, we need to learn how to use branches
-
-Branches
-* Can be used by any GitHub user
-* You can have an unlimited number of branches
-
-
-<!--
-Two different types
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
-
-When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
-
-You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
-
-You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
-
-Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
-
-They are a best practice. 
--->
-
-</td></tr>
-
-
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Browser Versus Local
-
-</td></tr>
-
-
-
-<!--
-Examples of How to Do Important Things in Browser versus Locally
-
-Action |Browser | Command Line
-:---: | --- | ---
-Fork a repo | Can only do in browser | N/A
-Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
-Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
-Create a file | Click "Create new file" button | ```$ touch <file-name>```
-Add a file | Click "Upload files" button | ```$ git push origin <remote>```
-Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
-Open an issue | Can only do in browser | N/A
-Open a pull request | Can only do in browser | N/A
-
-Create, add, rename, move file
-Can create, add, rename, move file in browser or from command line (images are an exception)
-
-Branches
-Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
-Can view/delete branches in the browser by clicking on the branches tab 
-
-branches tab, change default
-branch selector menu, click  NUMBER branches to delete
-Can delete branches under the branches tab or in the closed pull request page, or by command line
- 
-Images
-Images can be drag and drop/upload, but can't rename or move in browser
-* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
--->
-
-
-
-
-
-
 <tr><td width="30%">
 
 ![Slide 16]()
@@ -551,18 +424,18 @@ Images can be drag and drop/upload, but can't rename or move in browser
 
 ### The Two Types of Accounts
 
-Organization account (example: DjangoCon organization account)
-* An account where teams of people are working together
-
 User account (example: my user account)
 * A user account is a personal account that a user owns
+
+Organization account (example: DjangoCon organization account)
+* An account where teams of people are working together
 
 </td></tr>
 
 
-<!--
-Within GitHub accounts are repositories (a.k.a repos). A repo is a place where a codebase is stored (example: DjangoCon US website repo).
--->
+
+
+
 
 
 <tr><td width="30%">
@@ -742,6 +615,108 @@ I own the fork and am the only user with write permission to it unless I give pe
 * Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 
 </td></tr>
+
+
+
+
+
+
+
+
+<!--
+Git Magic
+When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. 
+
+This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
+
+When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
+
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.   
+
+Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
+
+* I work in my home directory, which you can see from the command prompt. 
+* The GitHub repo has been cloned using its URL
+* There is now a folder on the computer in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo and a .git folder
+* I now have a copy of the codebase on my computer and a copy online in a GitHub repo
+* When I stage any changes I make, Git will record the changes to the files
+* I can push and pull changes between the local development environment and the GitHub repo
+* Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
+* Our changes are all merged into the GitHub repo we are working on
+* Git will tell us if there is a conflict.
+
+You can see the corresponding folders and files
+The format may be a bit different because on your local computer, you are going to be working on raw files
+-->
+
+<!--
+### Branch Diagram
+
+To do this, we need to learn how to use branches
+
+Branches
+* Can be used by any GitHub user
+* You can have an unlimited number of branches
+
+Two different types
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
+
+You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
+
+You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
+
+Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
+
+They are a best practice. 
+-->
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Browser Versus Local
+
+</td></tr>
+
+<!--
+Examples of How to Do Important Things in Browser versus Locally
+
+Action |Browser | Command Line
+:---: | --- | ---
+Fork a repo | Can only do in browser | N/A
+Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
+Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
+Create a file | Click "Create new file" button | ```$ touch <file-name>```
+Add a file | Click "Upload files" button | ```$ git push origin <remote>```
+Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
+Open an issue | Can only do in browser | N/A
+Open a pull request | Can only do in browser | N/A
+
+Create, add, rename, move file
+Can create, add, rename, move file in browser or from command line (images are an exception)
+
+Branches
+Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
+Can view/delete branches in the browser by clicking on the branches tab 
+
+branches tab, change default
+branch selector menu, click  NUMBER branches to delete
+Can delete branches under the branches tab or in the closed pull request page, or by command line
+ 
+Images
+Images can be drag and drop/upload, but can't rename or move in browser
+* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
+-->
+
+
+
+
+
 
 
 <tr><td width="30%">
