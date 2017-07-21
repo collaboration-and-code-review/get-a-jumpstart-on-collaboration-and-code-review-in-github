@@ -33,9 +33,11 @@ Thank you!
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
 - [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [What are Git and GitHub?](#what-are-git-and-github)
-
-
+- [GitHub: Social Network](#github-social-network)
+- [GitHub: Repositories](#github-repositories)
 - [Local Development Environment](#local-development-environment)
+
+
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
 - [Branch Diagram](#branch-diagram)
 - [Branches](#branches)
