@@ -255,6 +255,7 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 <!--
 Text editor recommendations
 Bash command list
+You can come back to this list later
 -->
 
 </td></tr>
@@ -272,6 +273,7 @@ GitHub is a website where users can store and work on code together. GitHub is b
 
 <!--
 GitHub Website Landing Page
+Git is installed and used through the command line
 Git Command Line- verifying Git is installed and the version
 -->
 
@@ -314,6 +316,10 @@ DjangoCon US Website Repo
 
 
 
+
+<!--
+This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
+-->
 
 
 
