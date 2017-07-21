@@ -99,7 +99,7 @@ Thank you!
 - [The Other Way Around](#the-other-way-around)
 -->
 
-## Transcript
+## Script
 
 <table>
 
@@ -269,7 +269,7 @@ You can come back to this list later
 
 ### What are Git and GitHub?
 
-GitHub is a website where users can store and work on code together. GitHub is built on the version control software Git.
+GitHub is a website built on the version control software Git.
 
 <!--
 GitHub Website Landing Page
@@ -305,7 +305,7 @@ GitHub is a social network. You can:
 
 ### GitHub: Repositories
 
-The main use of GitHub is to store and work on code together
+GitHub users can store and work on code together in repositories
 
 <!--
 DjangoCon US Organization Account List of Repositories
@@ -315,27 +315,79 @@ DjangoCon US Website Repo
 </td></tr>
 
 
-
-
-<!--
-This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
--->
-
-
-
-
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 13]()
 
 </td><td>
 
 ### Local Development Environment
 
-When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 14]()
+
+</td><td>
+
+### What I Would Do Differently
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### Collaboration and Code Review Best Practice Workflow
+
+In order to be able to increase your level of responsibility, we need to have the freedom to switch between multiple tasks. 
+* You keep your main code branch (master) up-to-date
+* Create one or more features
+* Do code review
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 14]()
+
+</td><td>
+
+### Overview
+
+* Determine which collaboration approach to use (there are two)
+* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Review the two different types of pull requests as a DjangoCon US website repo maintainer
+
+</td><td>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### Section 1
+
+* Determine which collaboration approach to use (there are two)
+
+</td></tr>
+
+
+
+
 
 
 <!--
+When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
+
 For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.   
 
 Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
@@ -349,13 +401,61 @@ Git is installed in our local development environment and we use it by tying com
 * Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
 * Our changes are all merged into the GitHub repo we are working on
 * Git will tell us if there is a conflict.
+
+You can see the corresponding folders and files
+The format may be a bit different because on your local computer, you are going to be working on raw files
+
+Git Magic
+When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. 
+
+This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
+-->
+
+
+
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 13]()
+
+</td><td>
+
+### Branch Diagram
+
+To do this, we need to learn how to use branches
+
+Branches
+* Can be used by any GitHub user
+* You can have an unlimited number of branches
+
+
+<!--
+Two different types
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
+
+You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
+
+You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
+
+Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
+
+They are a best practice. 
 -->
 
 </td></tr>
 
 
-You can see the corresponding folders and files
-The format may be a bit different because on your local computer, you are going to be working on raw files
+
+
+
+
 
 
 <tr><td width="30%">
@@ -403,84 +503,6 @@ Images can be drag and drop/upload, but can't rename or move in browser
 
 
 
-
-
-<tr><td width="30%">
-
-![Slide 12]()
-
-</td><td>
-
-### Collaboration and Code Review Best Practice Workflow
-
-In order to be able to increase your level of responsibility, we need to have the freedom to switch between multiple tasks. 
-* You keep your main code branch (master) up-to-date
-* Create one or more features
-* Do code review
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 13]()
-
-</td><td>
-
-### Branch Diagram
-
-To do this, we need to learn how to use branches
-
-Branches
-* Can be used by any GitHub user
-* You can have an unlimited number of branches
-
-
-<!--
-Two different types
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
-
-When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
-
-You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
-
-You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
-
-Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
-
-They are a best practice. 
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 14]()
-
-</td><td>
-
-### Overview
-
-* Determine which collaboration approach to use (there are two)
-* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
-* Review the two different types of pull requests as a DjangoCon US website repo maintainer
-
-</td><td>
-
-
-<tr><td width="30%">
-
-![Slide 15]()
-
-</td><td>
-
-### Section 1
-
-* Determine which collaboration approach to use (there are two)
-
-</td></tr>
 
 
 <tr><td width="30%">
