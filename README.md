@@ -27,11 +27,12 @@ Thank you!
 - [Welcome](#welcome)
 - [About Me](#about-me)
 - [About You](#about-you)
-- [TacoFancy](#tacofancy)
+- [Announcing TacoFancy on Twitter](#tacofancy)
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
 - [What are Git and GitHub?](#what-are-git-and-github)
+
 - [Local Development Environment](#local-development-environment)
 - [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
@@ -155,7 +156,7 @@ A lot of what I'm going to talk to you about, I learned as the DjangoCon US Webs
 
 Goal: I want to teach you the essential process and underlying logic so that you can get started collaborating and doing code review as quickly as possible. 
 
-When it comes to Git commands, there are many variations of how things can be done. I'm not going to be going into detail about that. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
+When it comes to Git commands, there are variations of how you can do things. I'm not going to be going into detail about that. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
 
 <!--
 Give link here?
@@ -222,11 +223,14 @@ I struggled through, but I was extremely motivated and submitted my first pull r
 I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
 
 I am going to use DjangoCon US website as an example throughout this talk. 
-* Many of the examples I am going to talk about can be illustrated through the DjangoCon US website repo
 * I hope that providing concrete examples will reinforce your understanding
 
-</td></tr>
+<!--
+DjangoCon US Website Homepage
+DjangoCon US Website Repo
+-->
 
+</td></tr>
 
 
 <tr><td width="30%">
@@ -239,7 +243,52 @@ I am going to use DjangoCon US website as an example throughout this talk.
 
 GitHub is a website where users can store and work on code together. GitHub is built on the version control software Git.
 
+<!--
+GitHub Website Landing Page
+Git Command Line- verifying Git is installed and the version
+-->
+
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 10]()
+
+</td><td>
+
+### GitHub: Social Network
+
+GitHub is a social network. You can:
+* Make a user account and profile
+* Follow people
+* Follow their activity in your newsfeed
+* Find interesting projects
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 10]()
+
+</td><td>
+
+### GitHub: Repositories
+
+The main use of GitHub is to store and work on code together
+
+<!--
+DjangoCon US Organization Account List of Repositories
+DjangoCon US Website Repo
+-->
+
+</td></tr>
+
+
+
+
+
 
 
 <tr><td width="30%">
@@ -250,8 +299,10 @@ GitHub is a website where users can store and work on code together. GitHub is b
 
 ### Local Development Environment
 
-There are some things we can do in the browser in the GitHub website. We cannot do everything in the browser. 
+When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
 
+
+<!--
 For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.   
 
 Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
@@ -265,8 +316,13 @@ Git is installed in our local development environment and we use it by tying com
 * Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
 * Our changes are all merged into the GitHub repo we are working on
 * Git will tell us if there is a conflict.
+-->
 
 </td></tr>
+
+
+You can see the corresponding folders and files
+The format may be a bit different because on your local computer, you are going to be working on raw files
 
 
 <tr><td width="30%">
