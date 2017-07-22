@@ -44,29 +44,27 @@ Thank you!
 - [Overview](#overview)
 - [Section 1](#section-1)
 - [The Two Types of Accounts](#the-two-types-of-accounts)
-
-- [Write Permission and Why We Need It](#write-permission-and-why-we-need-it)
-
-- [Write Permission and Collaboration](#write-permission-and-collaboration)
-- [The Two Collaborative Development Models)](#the-two-collaborative-development-models)
+- [The Two Collaborative Development Models](#the-two-collaborative-development-models)
+- [The Two Types of Accounts and Models](#the-two-types-of-accounts-and-models)
+- [Write Permission](#write-permission)
+- [Why We Need Write Permission](#why-we-need-write-permission)
 - ["Shared Repository"](#shared-repository)
-- [Example: DjangoCon US Website Repo as a "Shared Repository"](#example-djangocon-us-website-repo-as-ashared-repository)
 - ["Fork and Pull" Model](#fork-and-pull-model)
-- [Example: DjangoCon US Website Repo "Fork and Pull" Model](####example-djangoCon-us-website-repo-fork-and-pull-model)
-
+- [Write Permission and Collaboration Examples](#write-permission-and-collaboration-examples)
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
 - [About Forks](#about-forks)
-
 - [Section 2](#section-2)
+
+
 
 - [Fork and Pull Diagram](#fork-and-pull-diagram)
 - [Shared Repository Diagram](#shared-repository-diagram)
 
 <!--
+- [Example: DjangoCon US Website Repo as a "Shared Repository"](#example-djangocon-us-website-repo-as-ashared-repository)
+- [Example: DjangoCon US Website Repo "Fork and Pull" Model](####example-djangoCon-us-website-repo-fork-and-pull-model)
 - [Local Branch Process](#local-branch-process)
-
-- [How Do We Switch Between Multiple Tasks?](#how-do-we-switch-between-multiple-tasks)
 
 - [Getting Help](#getting-help)
 
@@ -513,6 +511,10 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
 
+<!--
+Going to need to go into the repo and make the proposed change. You can only do that if you have write permission to the repo
+-->
+
 </td></tr>
 
 
@@ -580,18 +582,9 @@ This is a copy of the DjangoCon US Website repo in my user account under my user
 
 ### About Forks
 
-I own the fork and am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
+You own all of the repos in your user account, including forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
 
 </td></tr>
-
-
-<!--
-When you create a user account, you own all of the repos in your account, so you write permission to all of them. 
-However, write permission is usually associated with organization accounts. 
-
-Going to need to go into the repo and make the proposed change. You can only do that if you have write permission to the repo
--->
-
 
 
 <tr><td width="30%">
