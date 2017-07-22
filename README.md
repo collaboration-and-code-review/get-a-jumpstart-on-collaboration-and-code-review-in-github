@@ -57,16 +57,13 @@ Thank you!
 - [Section 2](#section-2)
 
 
-
-- [Fork and Pull Diagram](#fork-and-pull-diagram)
-- [Shared Repository Diagram](#shared-repository-diagram)
-
 <!--
-- [Example: DjangoCon US Website Repo as a "Shared Repository"](#example-djangocon-us-website-repo-as-ashared-repository)
-- [Example: DjangoCon US Website Repo "Fork and Pull" Model](####example-djangoCon-us-website-repo-fork-and-pull-model)
 - [Local Branch Process](#local-branch-process)
 
 - [Getting Help](#getting-help)
+
+- [Fork and Pull Diagram](#fork-and-pull-diagram)
+- [Shared Repository Diagram](#shared-repository-diagram)
 
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 ### Submit a Pull Request
@@ -375,6 +372,31 @@ In order to be able to increase your level of responsibility, we need to have th
 </td></tr>
 
 
+<!--
+### Branch Diagram
+
+To do this, we need to learn how to use branches
+
+Branches
+* Can be used by any GitHub user
+* You can have an unlimited number of branches
+
+Two different types
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
+
+You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
+
+You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
+
+Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
+
+They are a best practice. 
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 18]()
@@ -602,10 +624,49 @@ You own all of the repos in your user account, including forks. I am the only us
 
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Fork and Pull Diagram
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Shared Repository Diagram
+
+If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
+
+</td></tr>
 
 
 
 
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Remote Diagram
+
+When you clone a repo to your local development environment, Git will know where you cloned your code from and will name this remote repo "origin". When you make a change to a GitHub repo, or in your local clone, the code elsewhere does not automatically update with the change. You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
+
+You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
+
+</td></tr>
 
 <!--
 Git Magic
@@ -631,30 +692,6 @@ Git is installed in our local development environment and we use it by tying com
 
 You can see the corresponding folders and files
 The format may be a bit different because on your local computer, you are going to be working on raw files
--->
-
-<!--
-### Branch Diagram
-
-To do this, we need to learn how to use branches
-
-Branches
-* Can be used by any GitHub user
-* You can have an unlimited number of branches
-
-Two different types
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
-
-When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
-
-You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
-
-You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
-
-Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
-
-They are a best practice. 
 -->
 
 <tr><td width="30%">
@@ -702,46 +739,6 @@ Images can be drag and drop/upload, but can't rename or move in browser
 
 
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Remote Diagram
-
-When you clone a repo to your local development environment, Git will know where you cloned your code from and will name this remote repo "origin". When you make a change to a GitHub repo, or in your local clone, the code elsewhere does not automatically update with the change. You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
-
-You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Fork and Pull Diagram
-
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Shared Repository Diagram
-
-If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
-
-</td></tr>
 
 
 <tr><td width="30%">
