@@ -462,6 +462,8 @@ Organization account (example: DjangoCon organization account)
 
 We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo, probably in a feature branch.
 
+The way that you contribute to a repo depends on whether you have write permission to it. 
+
 <!--
 Some examples of what I can do within the repo now:
 * Push work (a branch) directly to the repo (instead of via fork)
@@ -475,41 +477,22 @@ See write permissions chart for info
 </td></tr>
 
 
-
-
-<!--
-Going to need to go into the repo and make the proposed change. You can only do that if you have write permission to the repo
-
-Why We Need It
-
-DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
--->
-
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 24]()
 
 </td><td>
 
-### Write Permission and Collaboration
+### Why We Need Write Permission
 
-<!--
-The way that you contribute to a repo depends on whether you have write permission to it. 
-
-When you create a user account, you own all of the repos in your account, so you write permission to all of them. 
-However, write permission is usually associated with organization accounts. 
--->
+DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
 
 </td></tr>
 
 
-
-
-
-
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 25]()
 
 </td><td>
 
@@ -522,20 +505,7 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 <tr><td width="30%">
 
-![Slide 22]()
-
-</td><td>
-
-### Example: DjangoCon US Website Repo as a "Shared Repository"
-
-For example: This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo (usually using a feature branch). I no longer need a fork. This is called the "Shared Repository" Model. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 23]()
+![Slide 26]()
 
 </td><td>
 
@@ -548,9 +518,30 @@ The “Fork and Pull” Model is typically used in user account repos, because u
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 27]()
 
 </td><td>
+
+### Write Permission and Collaboration Examples
+
+</td></tr>
+
+
+
+
+
+
+<!--
+When you create a user account, you own all of the repos in your account, so you write permission to all of them. 
+However, write permission is usually associated with organization accounts. 
+
+Going to need to go into the repo and make the proposed change. You can only do that if you have write permission to the repo
+-->
+
+<!--
+### Example: DjangoCon US Website Repo as a "Shared Repository"
+
+For example: This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo (usually using a feature branch). I no longer need a fork. This is called the "Shared Repository" Model. 
 
 ### Example: DjangoCon US Website Repo "Fork and Pull" Model
 
@@ -559,8 +550,7 @@ For example, when I first wanted to contribute to the DangoCon US website, I was
 This is the "Fork and Pull" Model. 
 
 In addition to using a fork to propose a change to the original repo, you can also use a fork for the starting point of a new idea of your own (depending on the license). 
-
-</td></tr>
+-->
 
 
 <tr><td width="30%">
