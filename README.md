@@ -704,8 +704,145 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Commands
+
+Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
+
+```bash
+$ git clone <repo-url>
+```
+
+Example: clone (or download) an organizational repo (organizational repo will be "origin")
+
+```bash
+$ git clone https://github.com/<organization-name>/<repo-name>
+```
+
+Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
+
+```bash
+$ git clone https://github.com/<user-name>/<repo-name>
+```
+
+Change directory into the folder of the repo you cloned. Folder name will be the repo name.
+
+```bash
+$ cd <repo-name>
+```
+
+Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
+
+```bash
+$ git branch
+```
+
+Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+
+```bash
+$ git checkout -b <branch-name>
+```
+
+Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
+
+Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
+
+```bash
+$ git push origin <branch-name>
+```
+
+There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
+
+<!--
+DjangoCon and fork as examples
+
+Folder/files/text editor
+-->
+
+</td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### New Branch
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Submit a Pull Request
+
+In the browser, go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. 
+
+There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request, even if your branch is in a fork. Be forewarned, that if you forked the repo and you go to your fork instead, you can accidentally submit a pull request to yourself. 
+
+* Make sure base corresponds to the repo and branch you want to contribute to
+* Make sure compare corresponds to your branch
+* Create a pull request title and perhaps a description
+* If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
+* Click "Create pull request"
+
+If you are submitting the pull request from within the repo:
+* base: master compare:<branch-name>
+
+If you are submitting the pull request a forked repo:
+* base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Section 3
+
+* Determine which collaboration approach to use (there are two)
+* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Review the two different types of pull requests as a DjangoCon US website repo maintainer
+
+</td></tr>
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 28]()
+
+</td><td>
+
+### Local Branch Process
+
+This is going to be a generic process. The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
+
+ The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -795,131 +932,11 @@ Images can be drag and drop/upload, but can't rename or move in browser
 
 
 
-<tr><td width="30%">
-
-![Slide 28]()
-
-</td><td>
-
-### Local Branch Process
-
-This is going to be a generic process. The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
-
- The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
-
-</td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 32]()
-
-</td><td>
-
-### Commands
-
-Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
-
-```bash
-$ git clone <repo-url>
-```
-
-Example: clone (or download) an organizational repo (organizational repo will be "origin")
-
-```bash
-$ git clone https://github.com/<organization-name>/<repo-name>
-```
-
-Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
-
-```bash
-$ git clone https://github.com/<user-name>/<repo-name>
-```
-
-Change directory into the folder of the repo you cloned. Folder name will be the repo name.
-
-```bash
-$ cd <repo-name>
-```
-
-Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
-
-```bash
-$ git branch
-```
-
-Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
-
-```bash
-$ git checkout -b <branch-name>
-```
-
-Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
-
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
-
-Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
-
-```bash
-$ git push origin <branch-name>
-```
-
-There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
-
-<!--
-DjangoCon and fork as examples
-
-Folder/files/text editor
--->
-
-</td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Submit a Pull Request
-
-In the browser, go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. 
-
-There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request, even if your branch is in a fork. Be forewarned, that if you forked the repo and you go to your fork instead, you can accidentally submit a pull request to yourself. 
-
-* Make sure base corresponds to the repo and branch you want to contribute to
-* Make sure compare corresponds to your branch
-* Create a pull request title and perhaps a description
-* If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
-* Click "Create pull request"
-
-If you are submitting the pull request from within the repo:
-* base: master compare:<branch-name>
-
-If you are submitting the pull request a forked repo:
-* base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Section 3
-
-* Determine which collaboration approach to use (there are two)
-* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
-* Review the two different types of pull requests as a DjangoCon US website repo maintainer
-
-</td></tr>
 
 
 <tr><td width="30%">
