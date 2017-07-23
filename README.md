@@ -565,7 +565,7 @@ In addition to using a fork to propose a change to the original repo, you can al
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 28]()
 
 </td><td>
 
@@ -585,7 +585,7 @@ Forking graphic
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 29]()
 
 </td><td>
 
@@ -598,7 +598,7 @@ This is a copy of the DjangoCon US Website repo in my user account under my user
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 30]()
 
 </td><td>
 
@@ -611,7 +611,7 @@ You own all of the repos in your user account, including forks. I am the only us
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 31]()
 
 </td><td>
 
@@ -623,10 +623,20 @@ You own all of the repos in your user account, including forks. I am the only us
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 32]()
+
+</td><td>
+
+### Perspective: Submitting a Pull Request
+
+</td></tr>
+
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 33]()
 
 </td><td>
 
@@ -639,13 +649,57 @@ If you cloned from a fork, when you push to "origin", you will be pushing to the
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 34]()
 
 </td><td>
 
 ### Shared Repository Diagram
 
 If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 35]()
+
+</td><td>
+
+### Local Development Environment
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 36]()
+
+</td><td>
+
+### GitHub Repo Versus Local Directory
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 37]()
+
+</td><td>
+
+### Working on a File Locally
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 38]()
+
+</td><td>
+
+### Local Development Environment
 
 </td></tr>
 
