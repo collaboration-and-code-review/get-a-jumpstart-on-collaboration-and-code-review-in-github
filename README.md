@@ -331,6 +331,18 @@ DjangoCon US Website Repo
 
 ### What I Would Do Differently
 
+<!--
+Learning collaboration and code review was kind of like going on a journey. They do not understand the larger picture because they haven't gone that far. 
+
+I know now that there is a way of doing things that supports collaboration and code review and there is a way of doing things that doesn't. One of the goals of my talk is to teach that to you. 
+
+I did what I think a lot of people do when they are using Git. I learned what I needed to know as I needed to know it. I did not always understand what the process was supposed to be like. The process maintainers would go through to review pull requests was a mystery to me. 
+
+If I could go back and start over again, I would do things differently. 
+
+Unfortunately, it would be three more years before I would begin doing code review. I asked to do code review for the DjangoCon US website and started doing it. I had no idea how to do it until I began doing it. And even then, I sometimes had to ask senior developers how to do things, because things I needed to do were not well documented. 
+-->
+
 </td></tr>
 
 
@@ -1406,14 +1418,7 @@ upstream  https://github.com/upstream-username/original-repository (push)
 
 
 
-
-
-<tr><td width="30%">
-
-![Slide 41]()
-
-</td><td>
-
+<!--
 ### Workflow Decisions
 
 Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is production ready. 
@@ -1421,16 +1426,23 @@ Some project will have a master branch and a develop branch. The development bra
 If you choose to use a develop branch:
 * In addition to the master branch, create the develop branch
 * Choose a default branch (the default branch will be the first branch you see when you look at a repo, it will be the branch you are checked into when you cd into a folder after cloning, and it will be the default base for a pull request)
-* Default branch is usually master branchh
-
-
-<!--
-- [ ] Look at an example of master only versus master/develop, production/staging
-
-* master only or master/develop as production/staging)
+* Default branch is usually master branch
 
 For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
+
+Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
 -->
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Advanced Workflow
 
 </td></tr>
 
@@ -1441,21 +1453,21 @@ For example, a mission critical project with a high volume of users is likely to
 
 </td><td>
 
-### Go Further with Advanced Workflow
+### Learn More About Workflow
 
-Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
-
-If you want to know more about advanced workflow
 * Git Flow (basically, the workflow we've been using)
 * A Successful Git Branching Model (more advanced)
 * A Successful Git Branching Model Considered Harmful (alternative view)
 * SemVer
 * See also: Atlassian and GitLab docs (you can also find insights in the docs of other software built on top of Git)
 
+<!--
 * Tags
 * Releases
+-->
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -1486,6 +1498,8 @@ Setting Up Repo Fail Safes
 * Sensitive data warning (if made public, consider compromised, immediately remove and change)
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -1626,9 +1640,7 @@ Writing and Formatting
 
 </td><td>
 
-### Go For It!
-
-Here are some tips for getting started:
+### Tips for getting started:
 
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects and other welcoming projects
@@ -1662,65 +1674,6 @@ Some benefits of learning collaboration and code review
 * In general: you can make cool stuff, make choices that influence product
 -->
 
-<!--
-### GitHub Audiences
-
-Organizations
-* For-profit (business)
-* Not-for-profit
-
-People
-* Professional developers
-* Hobbyists
-* Students
-
-Types of Projects
-* Cutting edge
-* Novelty
--->
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### The Other Way Around
-
-<!--
-I think the way people learn to use Git and GitHub is backwards. 
-
-I did what I think a lot of people do when they are using Git. I learned what I needed to know as I needed to know it. I did not always understand what the process was supposed to be like. The process maintainers would go through to review pull requests was a mystery to me. 
-
-If I could go back and start over again, I would do things differently. 
-
-Unfortunately, it would be three more years before I would begin doing code review. I had no idea how to do it until I began doing it. And even then, I sometimes had to ask senior developers how to do things, because things I needed to do were not well documented. 
-
-I think it should be the other way around. 
--->
-
-</td></tr>
-
-
-<!--
-It didn't have to be that way. 
-
-Learning collaboration and code review was kind of like going on a journey.They do not understand the larger picture because they haven't gone that far. 
-
-I know now that there is a way of doing things that supports collaboration and code review and there is a way of doing things that doesn't. One of the goals of my talk is to teach that to you. 
-
-Now that I do it, I wonder, why did it take so long?! I asked to do code review for the DjangoCon US website and started doing it. 
-
-There is a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
-
-someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
-
-I want to impart my knowledge to you, to save you the time and frustration of learning by trial and error the way that I did. 
--->
-
 
 
 
@@ -1732,8 +1685,16 @@ I want to impart my knowledge to you, to save you the time and frustration of le
 
 ### What If?
 
+I think the way people learn to use Git and GitHub is backwards.
+
 <!--
-* What if contributors were encouraged to learn code contribution and review at the same time, instead of code review as an end result? More people could take on more responsibility. 
+* What if contributors were encouraged to learn collaboration and code review at the same time, instead of code review as an end result? What if issues and pull requests were more frequently triaged to help newcomers take on more responbility?
+
+Now that I do it, I wonder, why did it take so long?! 
+
+There is a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
+
+someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
 -->
 
 </td></tr>
@@ -1745,7 +1706,23 @@ I want to impart my knowledge to you, to save you the time and frustration of le
 
 </td><td>
 
-### Debunking Myths
+### Getting Help
+
+* Help via Git, GitHub Help and Guides (links in Useful Resources Section)
+* Help via GitHub Keyboard Shortcuts (type "?")
+* Help via command line (exit by typing "q")
+
+```bash
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+```
+
+```bash
+$ git help clone
+$ git clone --help
+$ man git-clone
+```
 
 </td></tr>
 
@@ -1758,7 +1735,8 @@ I want to impart my knowledge to you, to save you the time and frustration of le
 
 ### Thank You :)
 
-Useful Resources: Bitly Link
+Useful Links: 
+https://git.io/v7LGr
 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
