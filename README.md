@@ -95,7 +95,6 @@ Thank you!
 - [Forum](#forum)
 - [Productivity Tips](#productivity-tips)
 - [Tips for Getting Started](#tips-for-getting-started)
-- [What If?](#what-if)
 
 ### Debunking Myths
 
@@ -1496,6 +1495,7 @@ Writing and Formatting
 </td></tr>
 
 
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1513,30 +1513,6 @@ Writing and Formatting
 
 </td></tr>
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### What If?
-
-I think the way people learn to use Git and GitHub is backwards.
-
-<!--
-* What if contributors were encouraged to learn collaboration and code review at the same time, instead of code review as an end result? What if issues and pull requests were more frequently triaged to help newcomers take on more responsibility?
-
-Now that I do it, I wonder, why did it take so long?! 
-
-There is a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
-
-someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
-
-There is nothing stopping all of you...
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1572,7 +1548,9 @@ $ man git-clone
 
 </td><td>
 
-### Thank You :)
+### Thank You
+
+You can also contact me by email or on Twitter.
 
 Useful Links: 
 https://git.io/v7LGr
@@ -1639,15 +1617,7 @@ http://opensourcesurvey.org/2017/
 -->
 
 <!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
 ### Browser Versus Local
-
-</td></tr>
 
 Examples of How to Do Important Things in Browser versus Locally
 
