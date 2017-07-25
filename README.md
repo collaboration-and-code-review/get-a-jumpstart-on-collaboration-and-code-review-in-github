@@ -56,14 +56,17 @@ Thank you!
 - [About Forks](#about-forks)
 - [Section 2](#section-2)
 
+- [Fork and Pull Diagram](#fork-and-pull-diagram)
+- [Shared Repository Diagram](#shared-repository-diagram)
+
+- [Advanced Workflow](#advanced-workflow)
+- [Learn More About Workflow](#learn-more-about-workflow)
+
 - [Getting Help](#getting-help)
 - [Thank You](#thank-you)
 
 <!--
 - [Local Branch Process](#local-branch-process)
-
-- [Fork and Pull Diagram](#fork-and-pull-diagram)
-- [Shared Repository Diagram](#shared-repository-diagram)
 
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 ### Submit a Pull Request
@@ -84,8 +87,6 @@ Thank you!
 ### Syncing Changes
 ### Adding an Upstream Remote and Syncing a Fork
 
-- [Advanced Workflow](#advanced-workflow)
-- [Learn More About Workflow](#learn-more-about-workflow)
 - [Organization and Team Setup](#organization-and-team-setup)
 - [Safeguards Checklist](#safeguards-checklist)
 - [Community and Communication Strategy](#community-and-communication-strategy)
@@ -640,17 +641,18 @@ You own all of the repos in your user account, including forks. I am the only us
 </td></tr>
 
 
-<!--
 <tr><td width="30%">
 
 ![Slide 32]()
 
 </td><td>
 
-### Perspective: Submitting a Pull Request
+### Fork and Pull Model
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
 
 </td></tr>
--->
+
 
 <tr><td width="30%">
 
@@ -658,9 +660,9 @@ You own all of the repos in your user account, including forks. I am the only us
 
 </td><td>
 
-### Fork and Pull Diagram
+### Shared Repository Model
 
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
+If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
 
 </td></tr>
 
@@ -671,9 +673,7 @@ If you cloned from a fork, when you push to "origin", you will be pushing to the
 
 </td><td>
 
-### Shared Repository Diagram
-
-If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
+### Local Development Environment
 
 </td></tr>
 
@@ -684,7 +684,7 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 
 </td><td>
 
-### Local Development Environment
+### GitHub Repo Versus Local Directory
 
 </td></tr>
 
@@ -695,17 +695,6 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 
 </td><td>
 
-### GitHub Repo Versus Local Directory
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 37]()
-
-</td><td>
-
 ### Working on a File Locally
 
 </td></tr>
@@ -713,7 +702,7 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 37]()
 
 </td><td>
 
@@ -792,7 +781,7 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 39]()
+![Slide 38]()
 
 </td><td>
 
@@ -803,7 +792,7 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 39]()
 
 </td><td>
 
@@ -830,7 +819,7 @@ If you are submitting the pull request a forked repo:
 
 <tr><td width="30%">
 
-![Slide 41]()
+![Slide 40]()
 
 </td><td>
 
@@ -845,7 +834,7 @@ If you are submitting the pull request a forked repo:
 
 <tr><td width="30%">
 
-![Slide 42]()
+![Slide 41]()
 
 </td><td>
 
@@ -858,6 +847,8 @@ If you are submitting the pull request a forked repo:
 * There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
