@@ -59,7 +59,7 @@ Thank you!
 - [Fork and Pull Diagram](#fork-and-pull-diagram)
 - [Shared Repository Diagram](#shared-repository-diagram)
 
-- [Advanced Workflow](#advanced-workflow)
+- [Another Workflow](#another-workflow)
 - [Learn More About Workflow](#learn-more-about-workflow)
 
 - [Getting Help](#getting-help)
@@ -945,6 +945,11 @@ https://help.github.com/articles/committing-changes-to-a-pull-request-branch-cre
 An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer. 
 Checkout a pull request locally
 
+Merge pull request in browser
+Merge pull request locally and push to branch
+Ask pull request contributor to update pull request
+Update the pull request yourself
+
 Flow chart of possibilities:
 -->
 
@@ -1285,10 +1290,17 @@ If you forked the “Shared Repository”, you need to update the fork without d
 
 </td><td>
 
-### Advanced Workflow
+### Another Workflow
 
 </td></tr>
 
+<!--
+Which Workflow Should I Use?
+
+Use the workflow that is right for the projects
+They all have pros and cons
+A mission critical project with a high volume of users is likely to use a develop branch and staging to gate-keep updates before going live
+-->
 
 <tr><td width="30%">
 
