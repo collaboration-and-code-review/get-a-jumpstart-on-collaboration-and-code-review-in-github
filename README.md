@@ -56,11 +56,11 @@ Thank you!
 - [About Forks](#about-forks)
 - [Section 2](#section-2)
 
+- [Getting Help](#getting-help)
+- [Thank You](#thank-you)
 
 <!--
 - [Local Branch Process](#local-branch-process)
-
-- [Getting Help](#getting-help)
 
 - [Fork and Pull Diagram](#fork-and-pull-diagram)
 - [Shared Repository Diagram](#shared-repository-diagram)
@@ -69,28 +69,34 @@ Thank you!
 ### Submit a Pull Request
 
 ### Perspective: Checking Out Remote Branches
+### Pull Request Review Process
+
 ### The Difference Between a Feature Branch and a Pull Request Branch
 ### Fetching from Origin Versus Pulling from a Fork
 ### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
 ### Shared Repo Model Feature Branch or Pull Request Branch
 ### Forked Repo Model Feature Branch or Pull Request Branch
-### Pull Request Review Process
 
-### Fetch Individual Pull Request
-
+### Merge Pull Request Locally and Push to Master Branch
+### Alternatively, Fetch Individual Pull Request
 ### How to Deal With Merge Conflicts
-### Adding an Upstream Remote and Syncing a Fork
+### Tidy Up
 ### Syncing Changes
+### Adding an Upstream Remote and Syncing a Fork
 
-### Advanced Workflow
+- [Advanced Workflow](#advanced-workflow)
+- [Learn More About Workflow](#learn-more-about-workflow)
+- [Organization and Team Setup](#organization-and-team-setup)
+- [Safeguards Checklist](#safeguards-checklist)
+- [Community and Communication Strategy](#community-and-communication-strategy)
+- [Documentation](#documentation)
+- [Issue Templates](#issue-templates)
+- [Pull Request Templates](#pull-request-templates)
+- [Forum](#forum)
+- [Productivity Tips](#productivity-tips)
+- [Tips for Getting Started](#tips-for-getting-started)
+- [What If?](#what-if)
 
-### Organization and Team Setup
-### Safeguards Checklist
-### Community and Communication Strategy
-### Documentation
-### Issue and Pull Request Templates
-### Productivity Tips
-### Tips for getting started
 ### Debunking Myths
 
 - [The Other Way Around](#the-other-way-around)
@@ -995,8 +1001,6 @@ Flow chart of possibilities:
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1112,7 +1116,6 @@ See also, pull request shortcuts
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 39]()
@@ -1170,8 +1173,6 @@ $ git push <remote-name> :<branch-name>
 ```
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -1501,7 +1502,7 @@ Writing and Formatting
 
 </td><td>
 
-### Tips for getting started:
+### Tips for getting started
 
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects and other welcoming projects
@@ -1524,7 +1525,7 @@ Writing and Formatting
 I think the way people learn to use Git and GitHub is backwards.
 
 <!--
-* What if contributors were encouraged to learn collaboration and code review at the same time, instead of code review as an end result? What if issues and pull requests were more frequently triaged to help newcomers take on more responbility?
+* What if contributors were encouraged to learn collaboration and code review at the same time, instead of code review as an end result? What if issues and pull requests were more frequently triaged to help newcomers take on more responsibility?
 
 Now that I do it, I wonder, why did it take so long?! 
 
@@ -1681,12 +1682,6 @@ Images can be drag and drop/upload, but can't rename or move in browser
 * click on the files (pull request tab)
 
 Pull request, one file shows all changes
-
-diff Views
-* unified view
-* split view
-* source view
-* rich view
 -->
 
 <!--
