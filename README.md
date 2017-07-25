@@ -904,14 +904,8 @@ The forked repo is not an origin for us and we do not have write permission to i
 </td></tr>
 
 
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Why are the Instructions Different?
+<!--
+Why are the Instructions Different?
 
 When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains all of the Git configuration information. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
@@ -920,13 +914,11 @@ There are three types of branches:
 * remote-tracking branch (inside of the hidden .git folder, which stores info)
 * local branch
 
-
 ```bash
 $ git fetch --prune
 $ git branch -a
 $ git branch -r
 ```
-
 
 <!--
 Fetching from Origin Versus Pulling from a Fork
@@ -934,6 +926,7 @@ These instructions work for any remote branch.
 etch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it 
 We've already talked about the concept of remotes when we talked about origin. 
 -->
+
 
 </td></tr>
 
@@ -1562,136 +1555,3 @@ https://git.io/v7LGr
 
 
 </table>
-
-
-<!--
-### Workflow Decisions
-
-Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is production ready. 
-
-If you choose to use a develop branch:
-* In addition to the master branch, create the develop branch
-* Choose a default branch (the default branch will be the first branch you see when you look at a repo, it will be the branch you are checked into when you cd into a folder after cloning, and it will be the default base for a pull request)
-* Default branch is usually master branch
-
-For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
-
-Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
--->
-
-<!--
-Advice of how to get started making pull requests and doing code review
-Finding Open Source Projects to Contribute To
-
-* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
-
-* Search (including advanced search) repositories, code, commits, issues, users, wikis, topics
-* Use search syntax "help wanted", "first-timers-only", etc.
-
-* Do a GitHub search such as ["pull requests welcome"](https://github.com/search?utf8=%E2%9C%93&q=pull+requests+welcome)
-* [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
--->
-
-<!--
-Do you remember a time before you were interested in building things with code? There is a lot of power and value in the ability to make things. You can apply collaboration and code review skills in an unlimited number of situations. GitHub is a very popular place to work on open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
-
-Some benefits of learning collaboration and code review
-* If you are a student: being prepared for your studies and career
-* If a developer: perhaps you can get a promotion
-* In general: you can make cool stuff, make choices that influence product
--->
-
-<!--
-### 10X Developers
-
-Important non-coding leadership skills (see 10x results article)
-* Keeping docs up to date
-* Communication
-* People management/mentoring
-
-https://medium.com/@mikeal/docs-docs-docs-1e06d17fa06f
-http://gousios.gr/bibliography/GSB16.html
-http://gousios.gr/bibliography/GB15.html
-http://opensourcesurvey.org/2017/#insights
-http://opensourcesurvey.org/2017/
--->
-
-<!--
-### Browser Versus Local
-
-Examples of How to Do Important Things in Browser versus Locally
-
-Action |Browser | Command Line
-:---: | --- | ---
-Fork a repo | Can only do in browser | N/A
-Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
-Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
-Create a file | Click "Create new file" button | ```$ touch <file-name>```
-Add a file | Click "Upload files" button | ```$ git push origin <remote>```
-Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
-Open an issue | Can only do in browser | N/A
-Open a pull request | Can only do in browser | N/A
-
-Create, add, rename, move file
-Can create, add, rename, move file in browser or from command line (images are an exception)
-
-Branches
-Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
-Can view/delete branches in the browser by clicking on the branches tab 
-
-branches tab, change default
-branch selector menu, click  NUMBER branches to delete
-Can delete branches under the branches tab or in the closed pull request page, or by command line
- 
-Images
-Images can be drag and drop/upload, but can't rename or move in browser
-* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
--->
-
-<!--
-* click on the files (pull request tab)
-
-Pull request, one file shows all changes
--->
-
-<!--
-### Local Branch Process
-
-This is going to be a generic process. The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
-
- The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
-
-### Remote Diagram
-
-When you clone a repo to your local development environment, Git will know where you cloned your code from and will name this remote repo "origin". When you make a change to a GitHub repo, or in your local clone, the code elsewhere does not automatically update with the change. You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
-
-You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
--->
-
-<!--
-Git Magic
-When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. 
-
-This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
-
-When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
-
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.   
-
-Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
-
-* I work in my home directory, which you can see from the command prompt. 
-* The GitHub repo has been cloned using its URL
-* There is now a folder on the computer in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo and a .git folder
-* I now have a copy of the codebase on my computer and a copy online in a GitHub repo
-* When I stage any changes I make, Git will record the changes to the files
-* I can push and pull changes between the local development environment and the GitHub repo
-* Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
-* Our changes are all merged into the GitHub repo we are working on
-* Git will tell us if there is a conflict.
-
-You can see the corresponding folders and files
-The format may be a bit different because on your local computer, you are going to be working on raw files
--->
