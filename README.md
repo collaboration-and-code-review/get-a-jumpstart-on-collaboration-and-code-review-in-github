@@ -786,7 +786,7 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 39]()
 
 </td><td>
 
@@ -797,7 +797,7 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 40]()
 
 </td><td>
 
@@ -824,7 +824,7 @@ If you are submitting the pull request a forked repo:
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 41]()
 
 </td><td>
 
@@ -835,6 +835,46 @@ If you are submitting the pull request a forked repo:
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 42]()
+
+</td><td>
+
+### Pull Request Review Process
+
+* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
+* Follow the link to the pull request in the repo pull request tab in the browser
+* Look over the information about the pull request provided by the contributor
+
+* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 43]()
+
+</td><td>
+
+### Remote Branches
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 44]()
+
+</td><td>
+
+### Remote Tracking Branches
+
+</td></tr>
+
 
 
 
@@ -897,59 +937,6 @@ You can see the corresponding folders and files
 The format may be a bit different because on your local computer, you are going to be working on raw files
 -->
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Browser Versus Local
-
-</td></tr>
-
-<!--
-Examples of How to Do Important Things in Browser versus Locally
-
-Action |Browser | Command Line
-:---: | --- | ---
-Fork a repo | Can only do in browser | N/A
-Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
-Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
-Create a file | Click "Create new file" button | ```$ touch <file-name>```
-Add a file | Click "Upload files" button | ```$ git push origin <remote>```
-Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
-Open an issue | Can only do in browser | N/A
-Open a pull request | Can only do in browser | N/A
-
-Create, add, rename, move file
-Can create, add, rename, move file in browser or from command line (images are an exception)
-
-Branches
-Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
-Can view/delete branches in the browser by clicking on the branches tab 
-
-branches tab, change default
-branch selector menu, click  NUMBER branches to delete
-Can delete branches under the branches tab or in the closed pull request page, or by command line
- 
-Images
-Images can be drag and drop/upload, but can't rename or move in browser
-* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <tr><td width="30%">
 
@@ -962,23 +949,6 @@ Images can be drag and drop/upload, but can't rename or move in browser
 We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Pull Request Review Process
-
-* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
-* Follow the link to the pull request in the repo pull request tab in the browser
-* Look over the information about the pull request provided by the contributor
-
-* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 </td></tr>
 
@@ -1418,23 +1388,6 @@ upstream  https://github.com/upstream-username/original-repository (push)
 
 
 
-<!--
-### Workflow Decisions
-
-Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is production ready. 
-
-If you choose to use a develop branch:
-* In addition to the master branch, create the develop branch
-* Choose a default branch (the default branch will be the first branch you see when you look at a repo, it will be the branch you are checked into when you cd into a folder after cloning, and it will be the default base for a pull request)
-* Default branch is usually master branch
-
-For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
-
-Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
--->
-
-
-
 
 <tr><td width="30%">
 
@@ -1496,32 +1449,6 @@ Setting Up Repo Fail Safes
 * Decide whether to use status checks (external)
 * Worst case scenario: How to recover deleted branch
 * Sensitive data warning (if made public, consider compromised, immediately remove and change)
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 43]()
-
-</td><td>
-
-### 10X Developers
-
-Important non-coding leadership skills (see 10x results article)
-* Keeping docs up to date
-* Communication
-* People management/mentoring
-
-<!--
-https://medium.com/@mikeal/docs-docs-docs-1e06d17fa06f
-http://gousios.gr/bibliography/GSB16.html
-http://gousios.gr/bibliography/GB15.html
-http://opensourcesurvey.org/2017/#insights
-http://opensourcesurvey.org/2017/
--->
 
 </td></tr>
 
@@ -1652,31 +1579,6 @@ Writing and Formatting
 </td></tr>
 
 
-<!--
-Advice of how to get started making pull requests and doing code review
-Finding Open Source Projects to Contribute To
-
-* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
-
-* Search (including advanced search) repositories, code, commits, issues, users, wikis, topics
-* Use search syntax "help wanted", "first-timers-only", etc.
-
-* Do a GitHub search such as ["pull requests welcome"](https://github.com/search?utf8=%E2%9C%93&q=pull+requests+welcome)
-* [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
--->
-
-<!--
-Do you remember a time before you were interested in building things with code? There is a lot of power and value in the ability to make things. You can apply collaboration and code review skills in an unlimited number of situations. GitHub is a very popular place to work on open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
-
-Some benefits of learning collaboration and code review
-* If you are a student: being prepared for your studies and career
-* If a developer: perhaps you can get a promotion
-* In general: you can make cool stuff, make choices that influence product
--->
-
-
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1695,6 +1597,8 @@ Now that I do it, I wonder, why did it take so long?!
 There is a shortage of maintainers. There is even a concept called the "Bus Factor". If a maintainer got hit by a bus, would there be someone to replace him or her to keep the project going?
 
 someone wants to transition to being a maintainer, because it's filling a need. You would think that it would be good to make becoming a maintainer as obvious and user friendly as possible. But unfortunately, it isn't. 
+
+There is nothing stopping all of you...
 -->
 
 </td></tr>
@@ -1745,3 +1649,96 @@ https://git.io/v7LGr
 
 
 </table>
+
+
+<!--
+### Workflow Decisions
+
+Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is production ready. 
+
+If you choose to use a develop branch:
+* In addition to the master branch, create the develop branch
+* Choose a default branch (the default branch will be the first branch you see when you look at a repo, it will be the branch you are checked into when you cd into a folder after cloning, and it will be the default base for a pull request)
+* Default branch is usually master branch
+
+For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
+
+Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
+-->
+
+<!--
+Advice of how to get started making pull requests and doing code review
+Finding Open Source Projects to Contribute To
+
+* Start where you feel welcome and supported (can evaluate projects using GitHub Open Source Project checklist)
+
+* Search (including advanced search) repositories, code, commits, issues, users, wikis, topics
+* Use search syntax "help wanted", "first-timers-only", etc.
+
+* Do a GitHub search such as ["pull requests welcome"](https://github.com/search?utf8=%E2%9C%93&q=pull+requests+welcome)
+* [First Timers Only](https://medium.com/@kentcdodds/first-timers-only-78281ea47455#.barzl7cwa)
+-->
+
+<!--
+Do you remember a time before you were interested in building things with code? There is a lot of power and value in the ability to make things. You can apply collaboration and code review skills in an unlimited number of situations. GitHub is a very popular place to work on open-source code. Check out GitHub Showcases and Trending to see some of the awesome projects.  
+
+Some benefits of learning collaboration and code review
+* If you are a student: being prepared for your studies and career
+* If a developer: perhaps you can get a promotion
+* In general: you can make cool stuff, make choices that influence product
+-->
+
+<!--
+### 10X Developers
+
+Important non-coding leadership skills (see 10x results article)
+* Keeping docs up to date
+* Communication
+* People management/mentoring
+
+https://medium.com/@mikeal/docs-docs-docs-1e06d17fa06f
+http://gousios.gr/bibliography/GSB16.html
+http://gousios.gr/bibliography/GB15.html
+http://opensourcesurvey.org/2017/#insights
+http://opensourcesurvey.org/2017/
+-->
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Browser Versus Local
+
+</td></tr>
+
+<!--
+Examples of How to Do Important Things in Browser versus Locally
+
+Action |Browser | Command Line
+:---: | --- | ---
+Fork a repo | Can only do in browser | N/A
+Create a branch | Open a file and choose "Create a branch new..." | ```$ git checkout -b <branch-name>```
+Delete a branch | Branch tab | ```$ git branch -d  <branch-name>```
+Create a file | Click "Create new file" button | ```$ touch <file-name>```
+Add a file | Click "Upload files" button | ```$ git push origin <remote>```
+Commit | Click "Commit changes" button in an open, altered file | ```$ git commit -m  "Your note"```
+Open an issue | Can only do in browser | N/A
+Open a pull request | Can only do in browser | N/A
+
+Create, add, rename, move file
+Can create, add, rename, move file in browser or from command line (images are an exception)
+
+Branches
+Can create a branch in the browser by opening a file and below the commit message field, or through the command line 
+Can view/delete branches in the browser by clicking on the branches tab 
+
+branches tab, change default
+branch selector menu, click  NUMBER branches to delete
+Can delete branches under the branches tab or in the closed pull request page, or by command line
+ 
+Images
+Images can be drag and drop/upload, but can't rename or move in browser
+* Example: renaming or moving an image file cannot be done in the browser (perhaps drag and drop)
+-->
