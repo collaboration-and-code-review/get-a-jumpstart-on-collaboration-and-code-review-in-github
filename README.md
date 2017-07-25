@@ -165,6 +165,9 @@ Goal: I want to teach you the essential process and underlying logic so that you
 When it comes to Git commands, there are variations of how you can do things. I'm not going to be going into detail about that. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
 
 <!--
+Many people do now know what the proces is supposed to look like. 
+
+Talk slides and other resources online
 Give link here?
 -->
 
@@ -255,12 +258,6 @@ DjangoCon US Website Repo
 
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 
-<!--
-Text editor recommendations
-Bash command list
-You can come back to this list later
--->
-
 </td></tr>
 
 
@@ -277,7 +274,7 @@ GitHub is a website built on the version control software Git.
 <!--
 GitHub Website Landing Page
 Git is installed and used through the command line
-Git Command Line- verifying Git is installed and the version
+Git command line- verifying Git is installed and the version
 -->
 
 </td></tr>
@@ -337,18 +334,6 @@ DjangoCon US Website Repo
 
 ### What I Would Do Differently
 
-<!--
-Learning collaboration and code review was kind of like going on a journey. They do not understand the larger picture because they haven't gone that far. 
-
-I know now that there is a way of doing things that supports collaboration and code review and there is a way of doing things that doesn't. One of the goals of my talk is to teach that to you. 
-
-I did what I think a lot of people do when they are using Git. I learned what I needed to know as I needed to know it. I did not always understand what the process was supposed to be like. The process maintainers would go through to review pull requests was a mystery to me. 
-
-If I could go back and start over again, I would do things differently. 
-
-Unfortunately, it would be three more years before I would begin doing code review. I asked to do code review for the DjangoCon US website and started doing it. I had no idea how to do it until I began doing it. And even then, I sometimes had to ask senior developers how to do things, because things I needed to do were not well documented. 
--->
-
 </td></tr>
 
 
@@ -388,31 +373,6 @@ In order to be able to increase your level of responsibility, we need to have th
 ### Branches
 
 </td></tr>
-
-
-<!--
-### Branch Diagram
-
-To do this, we need to learn how to use branches
-
-Branches
-* Can be used by any GitHub user
-* You can have an unlimited number of branches
-
-Two different types
-* Feature branches (a.k.a. topic branches)
-* Pull requests branches
-
-When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
-
-You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
-
-You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
-
-Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
-
-They are a best practice. 
--->
 
 
 <tr><td width="30%">
@@ -831,6 +791,13 @@ If you are submitting the pull request a forked repo:
 
 </td></tr>
 
+<!--
+Perspective: Reviewing Pull Requests
+Point of view: organizational maintainer
+Organizational repo is your “origin”
+Forked repos branches are remotes
+Pull requests are branches
+-->
 
 <tr><td width="30%">
 
@@ -1301,6 +1268,11 @@ origin  https://github.com/your-username/your-fork (push)
 upstream  https://github.com/upstream-username/original-repository (fetch)
 upstream  https://github.com/upstream-username/original-repository (push)
 ```
+
+<!--
+If you clone from the “Shared Repository”, you can just fetch changes directly to your local repo because there is no fork 
+If you forked the “Shared Repository”, you need to update the fork without deleting it. You do this by adding the “Shared Repository” as an upstream, fetching changes, and pushing them to your origin , which is the the fork
+-->
 
 </td></tr>
 
