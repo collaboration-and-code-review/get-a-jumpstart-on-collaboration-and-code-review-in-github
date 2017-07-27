@@ -162,14 +162,11 @@ A lot of what I'm going to talk to you about, I learned as the DjangoCon US Webs
 
 Goal: I want to teach you the essential process and underlying logic so that you can get started collaborating and doing code review as quickly as possible. 
 
-When it comes to Git commands, there are variations of how you can do things. I'm not going to be going into detail about that. At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
+When it comes to Git commands, there are variations of how you can do things. I'm not going to be going into detail about that. 
 
-<!--
-Many people do now know what the proces is supposed to look like. 
+At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
 
-Talk slides and other resources online
-Give link here?
--->
+Also, one of the difficulties of learning Git and GitHub, I think is that it can be difficult to know what the process is supposed to look like. So, I have a number of screenshots and diagrams to show what we are supposed to be doing. 
 
 </td></tr>
 
@@ -235,6 +232,8 @@ I am going to use DjangoCon US website as an example throughout this talk.
 * I hope that providing concrete examples will reinforce your understanding
 
 <!--
+I asked to do code review for the DjangoCon US website and started doing it. 
+
 DjangoCon US Website Homepage
 DjangoCon US Website Repo
 -->
@@ -258,6 +257,11 @@ DjangoCon US Website Repo
 
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 
+<!--
+* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+* <variable> is a placeholder for the real thing
+-->
+
 </td></tr>
 
 
@@ -269,11 +273,10 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 
 ### What are Git and GitHub?
 
-GitHub is a website built on the version control software Git.
+GitHub is a website built on the version control software Git. Git can be installed used in the command line of your computer. 
 
 <!--
 GitHub Website Landing Page
-Git is installed and used through the command line
 Git command line- verifying Git is installed and the version
 -->
 
@@ -323,6 +326,14 @@ DjangoCon US Website Repo
 
 ### Local Development Environment
 
+<!--
+You can't do everything in the browser
+Using url and git command git clone <url> to clone (make a copy of) the repo, which will then appear
+.git folder
+now a copy online and a copy in your local development environment
+pushing and pulling
+-->
+
 </td></tr>
 
 
@@ -333,6 +344,10 @@ DjangoCon US Website Repo
 </td><td>
 
 ### What I Would Do Differently
+
+<!--
+There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
+-->
 
 </td></tr>
 
@@ -374,6 +389,29 @@ In order to be able to increase your level of responsibility, we need to have th
 
 </td></tr>
 
+<!--
+### Branch Diagram
+
+To do this, we need to learn how to use branches
+
+Branches
+* Can be used by any GitHub user
+* You can have an unlimited number of branches
+
+Two different types
+* Feature branches (a.k.a. topic branches)
+* Pull requests branches
+
+When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
+
+You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
+
+You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
+
+Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
+
+They are a best practice. 
+-->
 
 <tr><td width="30%">
 
@@ -582,7 +620,11 @@ This is a copy of the DjangoCon US Website repo in my user account under my user
 
 ### About Forks
 
-You own all of the repos in your user account, including forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
+You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
+
+<!--
+Unless you make a pull request and it is accepted
+-->
 
 </td></tr>
 
@@ -635,8 +677,52 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 
 ### Local Development Environment
 
+The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
+
+ The two main differences are that if you are using the "Fork and Pull" Model:
+* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
+* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
+
 </td></tr>
 
+<!--
+### Local Branch Process
+
+Git Magic
+When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
+
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. 
+
+This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.  
+This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
+
+Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
+
+* I work in my home directory, which you can see from the command prompt. 
+* The GitHub repo has been cloned using its URL
+* There is now a folder on the computer in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo and a .git folder
+* I now have a copy of the codebase on my computer and a copy online in a GitHub repo
+* When I stage any changes I make, Git will record the changes to the files
+* I can push and pull changes between the local development environment and the GitHub repo
+* Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
+* Our changes are all merged into the GitHub repo we are working on
+* Git will tell us if there is a conflict.
+
+You can see the corresponding folders and files
+The format may be a bit different because on your local computer, you are going to be working on raw files
+
+### Remotes
+
+When you clone a repo to your local development environment, Git will know where you cloned your code from and will name this remote repo "origin". When you make a change to a GitHub repo, or in your local clone, the code elsewhere does not automatically update with the change. You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
+
+You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
+
+clone: local copy of a repo
+push: transfer changes from local clone to online repo
+pull: transfer changes from online repo to local clone
+
+When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. 
+-->
 
 <tr><td width="30%">
 
@@ -1323,6 +1409,21 @@ A mission critical project with a high volume of users is likely to use a develo
 
 </td></tr>
 
+<!--
+### Workflow Decisions
+
+Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is production ready. 
+
+If you choose to use a develop branch:
+* In addition to the master branch, create the develop branch
+* Choose a default branch (the default branch will be the first branch you see when you look at a repo, it will be the branch you are checked into when you cd into a folder after cloning, and it will be the default base for a pull request)
+* Default branch is usually master branch
+
+For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
+
+Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
+-->
+
 
 
 <tr><td width="30%">
@@ -1525,6 +1626,10 @@ https://git.io/v7LGr
 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
+
+<!--
+Talk slides and other resources online
+-->
 
 </td></tr>
 
