@@ -260,6 +260,7 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 <!--
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 * <variable> is a placeholder for the real thing
+By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
 -->
 
 </td></tr>
@@ -296,6 +297,10 @@ GitHub is a social network. You can:
 * Follow people
 * Follow their activity in your newsfeed
 * Find interesting projects
+
+<!--
+You have a profile where you store your code in repos
+-->
 
 </td></tr>
 
@@ -468,6 +473,10 @@ The two Collaborative Development Models
 
 The two different collaborative development models typically correspond to the two different account types
 
+<!--
+A Collaborative Development Model is a fancy term for the process users go through to contribute to a repo.
+-->
+
 </td></tr>
 
 
@@ -623,6 +632,8 @@ This is a copy of the DjangoCon US Website repo in my user account under my user
 You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
 
 <!--
+When you create a user account, you own all of your repos and have write permission to all of them.  
+
 Unless you make a pull request and it is accepted
 -->
 
@@ -1381,6 +1392,8 @@ If you forked the “Shared Repository”, you need to update the fork without d
 </td></tr>
 
 <!--
+* The process is based on GitHub Flow, which is a simple, agile process
+
 Which Workflow Should I Use?
 
 Use the workflow that is right for the projects
