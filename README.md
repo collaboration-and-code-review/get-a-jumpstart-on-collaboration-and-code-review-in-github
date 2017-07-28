@@ -1012,7 +1012,7 @@ When you a change is made to the DjangoCon US website repo, the fork does not au
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 55]()
 
 </td><td>
 
@@ -1023,7 +1023,7 @@ When you a change is made to the DjangoCon US website repo, the fork does not au
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 56]()
 
 </td><td>
 
@@ -1034,13 +1034,16 @@ When you a change is made to the DjangoCon US website repo, the fork does not au
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 57]()
 
 </td><td>
 
 ### Local Development Environment
 
 </td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -1113,7 +1116,7 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 58]()
 
 </td><td>
 
@@ -1124,7 +1127,20 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 59]()
+
+</td><td>
+
+### New Branch
+
+Animation 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 60]()
 
 </td><td>
 
@@ -1151,7 +1167,29 @@ If you are submitting the pull request a forked repo:
 
 <tr><td width="30%">
 
-![Slide 39]()
+![Slide 61]()
+
+</td><td>
+
+### Submit a Pull Request
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 62]()
+
+</td><td>
+
+### Submit a Pull Request
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 63]()
 
 </td><td>
 
@@ -1171,9 +1209,11 @@ Forked repos branches are remotes
 Pull requests are branches
 -->
 
+
+
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 64]()
 
 </td><td>
 
