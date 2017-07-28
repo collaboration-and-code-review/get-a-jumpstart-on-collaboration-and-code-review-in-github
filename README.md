@@ -511,9 +511,9 @@ They are a best practice.
 
 </td><td>
 
-Animation
-
 ### Branches
+
+Animation
 
 </td></tr>
 
