@@ -26,8 +26,8 @@ Thank you!
 - [Get a Jumpstart on Collaboration and Code Review in GitHub](#get-a-jumpstart-on-collaboration-and-code-review-in-github)
 - [Welcome](#welcome)
 - [About Me](#about-me)
-- [About You](#about-you)
-- [Announcing TacoFancy on Twitter](#tacofancy)
+- [Goal](#goal)
+- [Announcing TacoFancy](#announcing-tacofancy)
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
@@ -36,14 +36,12 @@ Thank you!
 - [GitHub: Social Network](#github-social-network)
 - [GitHub: Repositories](#github-repositories)
 - [Local Development Environment](#local-development-environment)
-- [What I Would Do Differently](#what-i-would-do-differently)
 - [Collaboration and Code Review Best Practice Workflow](#collaboration-and-code-review-best-practice-workflow)
 - [Working on a File in GitHub](#working-on-a-file-in-github)
 - [Branches](#branches)
 - [How to Create a Branch](#how-to-create-a-branch)
 - [Overview](#overview)
 - [Section 1](#section-1)
-- [The Two Types of Accounts](#the-two-types-of-accounts)
 - [The Two Collaborative Development Models](#the-two-collaborative-development-models)
 - [The Two Types of Accounts and Models](#the-two-types-of-accounts-and-models)
 - [Write Permission](#write-permission)
@@ -53,11 +51,20 @@ Thank you!
 - [Write Permission and Collaboration Examples](#write-permission-and-collaboration-examples)
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
-- [About Forks](#about-forks)
 - [Section 2](#section-2)
+- [Fork and Pull Model](#fork-and-pull-model)
+- [Shared Repository Model](#shared-repository-model)
 
-- [Fork and Pull Diagram](#fork-and-pull-diagram)
-- [Shared Repository Diagram](#shared-repository-diagram)
+<!--
+### Local Development Environment
+### GitHub Repo Versus Local Directory
+### Working on a File Locally
+### Local Development Environment
+### New Branch
+### Submit a Pull Request
+### Section 3
+### Pull Request Review Process
+
 
 - [Another Workflow](#another-workflow)
 - [Learn More About Workflow](#learn-more-about-workflow)
@@ -65,8 +72,10 @@ Thank you!
 - [Getting Help](#getting-help)
 - [Thank You](#thank-you)
 
-<!--
+
 - [Local Branch Process](#local-branch-process)
+- [What I Would Do Differently](#what-i-would-do-differently)
+- [About Forks](#about-forks)
 
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 ### Submit a Pull Request
@@ -175,7 +184,7 @@ At the end of my talk, there will be a slide with a link to Useful Resources whe
 
 </td><td>
 
-### Announcing TacoFancy on Twitter
+### Announcing TacoFancy
 
 I want to tell you how I got started witih open-source contribution, which is a bit unconventional and might show you that there are many ways to get involved. 
 
@@ -214,6 +223,7 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 Animation
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -272,6 +282,7 @@ By the way, some operating systems do not use dollar signs $ as command line pro
 -->
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -698,7 +709,6 @@ Going to need to go into the repo and make the proposed change. You can only do 
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 38]()
@@ -829,6 +839,7 @@ When you create a user account, you own all of your repos and have write permiss
 Unless you make a pull request and it is accepted
 -->
 
+
 <tr><td width="30%">
 
 ![Slide 46]()
@@ -932,8 +943,6 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 Animation
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -1189,7 +1198,6 @@ Organizational repo is your “origin”
 Forked repos branches are remotes
 Pull requests are branches
 -->
-
 
 
 <tr><td width="30%">
