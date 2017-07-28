@@ -234,7 +234,7 @@ Animation
 
 ### My First Pull Request
 
-I struggled through, but I was extremely motivated and submitted my first pull request. I had a huge adrenaline rush.
+I struggled through, but I was extremely motivated and submitted my first pull request.
 
 </td></tr>
 
@@ -424,11 +424,6 @@ In order to be able to increase your level of responsibility, we need to have th
 
 </td></tr>
 
-<!--
-### What I Would Do Differently
-
-There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
--->
 
 <tr><td width="30%">
 
@@ -438,8 +433,13 @@ There is a way of doing things that involves the best practices of collaboration
 
 ### Working on a File in GitHub
 
+If I were starting over, learning Git and GitHub again, I would do things differently. 
+
 </td></tr>
 
+<!--
+There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
+-->
 
 <tr><td width="30%">
 
@@ -478,11 +478,10 @@ Animation
 </td></tr>
 
 <!--
-### Branch Diagram
-
 To do this, we need to learn how to use branches
 
 Branches
+* They are a best practice
 * Can be used by any GitHub user
 * You can have an unlimited number of branches
 
@@ -494,11 +493,7 @@ When the repo is created, by default, there will be a branch named master that c
 
 You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
 
-You can toggle back and forth between the branches by clicking on the branches in the branches tab. You can also create and work on branches in your local development environment, which we will demonstrate later. 
-
 Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
-
-They are a best practice. 
 -->
 
 <tr><td width="30%">
@@ -560,6 +555,8 @@ Animation
 </td><td>
 
 ### How to Create a Branch
+
+You can also create and work on branches in your local development environment, which I will show you later. 
 
 </td></tr>
 
@@ -830,8 +827,6 @@ Animation
 </td></tr>
 
 <!--
-### About Forks
-
 You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
 
 When you create a user account, you own all of your repos and have write permission to all of them.  
@@ -1111,6 +1106,10 @@ Folder/files/text editor
 </td><td>
 
 ### New Branch
+
+<!--
+You can toggle back and forth between the branches by clicking on the branches in the branches tab. 
+-->
 
 </td></tr>
 
