@@ -160,13 +160,19 @@ A lot of what I'm going to talk to you about, I learned as the DjangoCon US Webs
 
 ### Goal
 
+I want to teach you a process that will get you up and running doing collaboration and code review as quickly as possible. 
+
+I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to now what the process looks like. I want you to understand what it should look like. 
+
+At the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today. You will also be able to look at my slides and the video of this online. 
+
+<!--
 I want to teach you the essential process and underlying logic so that you can get started collaborating and doing code review as quickly as possible. 
 
 When it comes to Git commands, there are variations of how you can do things. I'm not going to be going into detail about that. 
 
 At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
-
-Also, one of the difficulties of learning Git and GitHub, I think is that it can be difficult to know what the process is supposed to look like. So, I have a number of screenshots and diagrams to show what we are supposed to be doing. 
+-->
 
 </td></tr>
 
@@ -229,10 +235,10 @@ I struggled through, but I was extremely motivated and submitted my first pull r
 I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
 
 I am going to use DjangoCon US website as an example throughout this talk. 
-* I hope that providing concrete examples will reinforce your understanding
 
 <!--
 I asked to do code review for the DjangoCon US website and started doing it. 
+* I hope that providing concrete examples will reinforce your understanding
 
 DjangoCon US Website Homepage
 DjangoCon US Website Repo
