@@ -576,6 +576,8 @@ Animation
 
 ### How to Create a Branch
 
+Animation
+
 </td></tr>
 
 
@@ -836,32 +838,19 @@ Animation
 
 </td></tr>
 
-
-
-
-
-<tr><td width="30%">
-
-![Slide 29]()
-
-</td><td>
-
+<!--
 ### About Forks
 
 You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
 
-<!--
 When you create a user account, you own all of your repos and have write permission to all of them.  
 
 Unless you make a pull request and it is accepted
 -->
 
-</td></tr>
-
-
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 46]()
 
 </td><td>
 
@@ -875,7 +864,7 @@ Unless you make a pull request and it is accepted
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 47]()
 
 </td><td>
 
@@ -888,7 +877,59 @@ If you cloned from a fork, when you push to "origin", you will be pushing to the
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 48]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 49]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 50]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 51]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 52]()
 
 </td><td>
 
@@ -901,7 +942,22 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 53]()
+
+</td><td>
+
+### Shared Repository Model
+
+Animation
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 54]()
 
 </td><td>
 
