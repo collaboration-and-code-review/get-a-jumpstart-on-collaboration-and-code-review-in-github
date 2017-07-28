@@ -395,6 +395,8 @@ pushing and pulling
 
 ### Local Development Environment
 
+Animation
+
 </td></tr>
 
 
@@ -403,6 +405,8 @@ pushing and pulling
 ![Slide 18]()
 
 </td><td>
+
+Animation
 
 ### Local Development Environment
 
@@ -424,18 +428,15 @@ In order to be able to increase your level of responsibility, we need to have th
 
 </td></tr>
 
-
-
 <!--
 ### What I Would Do Differently
 
 There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
 -->
 
-
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 20]()
 
 </td><td>
 
@@ -446,7 +447,33 @@ There is a way of doing things that involves the best practices of collaboration
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 21]()
+
+</td><td>
+
+### Working on a File in GitHub
+
+Animation 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 22]()
+
+</td><td>
+
+### Working on a File in GitHub
+
+Animation 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 23]()
 
 </td><td>
 
@@ -480,13 +507,78 @@ They are a best practice.
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 24]()
+
+</td><td>
+
+Animation
+
+### Branches
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 25]()
+
+</td><td>
+
+### Branches
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 26]()
+
+</td><td>
+
+### Branches
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 27]()
+
+</td><td>
+
+### Branches
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 28]()
 
 </td><td>
 
 ### How to Create a Branch
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 29]()
+
+</td><td>
+
+### How to Create a Branch
+
+</td></tr>
+
+
 
 
 <tr><td width="30%">
