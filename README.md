@@ -169,7 +169,7 @@ A lot of what I'm going to talk to you about, I learned as the DjangoCon US Webs
 
 ### Goal
 
-I want to teach you a process that will get you up and running doing collaboration and code review as quickly as possible. 
+I want to teach you a process that will get you started collaborating and doing code review as quickly as possible. 
 
 I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to now what the process looks like. I want you to understand what it should look like. 
 
@@ -284,7 +284,6 @@ By the way, some operating systems do not use dollar signs $ as command line pro
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 11]()
@@ -330,6 +329,8 @@ GitHub is a social network. You can:
 
 GitHub users can store and work on code together in repositories
 
+For example, if you go to the DjangoCon US organization account you will see a list of repos and at the top is the DjangoCon US website repo. If you click on the hyperlink, it will open up the repo and you will see the folders and files filled with the website code and you can look through. 
+
 <!--
 DjangoCon US Organization Account List of Repositories
 DjangoCon US Website Repo
@@ -372,13 +373,19 @@ Animation
 
 ### Local Development Environment
 
-<!--
-You can't do everything in the browser
-Using url and git command git clone <url> to clone (make a copy of) the repo, which will then appear
-.git folder
-now a copy online and a copy in your local development environment
-pushing and pulling
--->
+When you are working on code, you can't do everything in the browser. Sometimes, you need to have a copy of the code in your local development environment so that you can work on it and test things. 
+
+Here is a screenshot of my local development environment. I want you to understand that ultimately, this is what we are trying to do. 
+
+* In the background I have GitHub open in the browser. 
+* In front of that, I have my local folder window and my terminal.
+* I am going to take the URL from the browser and use a command git clone <url>
+* The terminal will run and a folder will appear with the same name as the repo. The contents of the folder will be the contents of the repo. Making a copy of the repo like this is called cloning. 
+* I now have a copy of the code online and a copy in my local development environment
+* In the local folder will be a hidden folder named .git that contains the Git configurations. Git will know where your code came from. 
+* You can work on your code, and push and pull the changes between the GitHub repo and your local development environment
+* Meanwhile, other users will be working on the code on their own computers too
+* You will occassionally submit a request for your changes to be merged into the GitHub repos. Others will do the same. If you have made different changes to the same part of the code, Git will tell you there is a conflict. 
 
 </td></tr>
 
@@ -425,6 +432,8 @@ In order to be able to increase your level of responsibility, we need to have th
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 20]()
@@ -433,13 +442,16 @@ In order to be able to increase your level of responsibility, we need to have th
 
 ### Working on a File in GitHub
 
-If I were starting over, learning Git and GitHub again, I would do things differently. 
+If I were starting over, learning Git and GitHub again, I would do things differently. When I first started using GitHub, I might be working on a repo in my user account and I might go directly into a file, make a change and save it. But imagine if there were, say, 20 people all working on a repo and all of them were going into files and making changes and saving them. It wouldn't be very practical. How would you do quality assurance? How would team member give feedback? Perhaps code would be deployed live in real time. 
+
+There is a better way to do it.
+
+<!--
+Give process to edit file
+-->
 
 </td></tr>
 
-<!--
-There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
--->
 
 <tr><td width="30%">
 
@@ -475,15 +487,20 @@ Animation
 
 ### Branches
 
-</td></tr>
-
-<!--
-To do this, we need to learn how to use branches
-
 Branches
 * They are a best practice
 * Can be used by any GitHub user
 * You can have an unlimited number of branches
+
+</td></tr>
+
+
+
+
+<!--
+There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
+
+To do this, we need to learn how to use branches
 
 Two different types
 * Feature branches (a.k.a. topic branches)
@@ -555,6 +572,8 @@ Animation
 </td><td>
 
 ### How to Create a Branch
+
+Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. 
 
 You can also create and work on branches in your local development environment, which I will show you later. 
 
