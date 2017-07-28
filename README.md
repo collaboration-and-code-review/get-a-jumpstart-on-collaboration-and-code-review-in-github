@@ -158,9 +158,9 @@ A lot of what I'm going to talk to you about, I learned as the DjangoCon US Webs
 
 </td><td>
 
-### About You
+### Goal
 
-Goal: I want to teach you the essential process and underlying logic so that you can get started collaborating and doing code review as quickly as possible. 
+I want to teach you the essential process and underlying logic so that you can get started collaborating and doing code review as quickly as possible. 
 
 When it comes to Git commands, there are variations of how you can do things. I'm not going to be going into detail about that. 
 
@@ -342,24 +342,16 @@ pushing and pulling
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 14]()
-
-</td><td>
-
+<!--
 ### What I Would Do Differently
 
-<!--
 There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
 -->
 
-</td></tr>
-
 
 <tr><td width="30%">
 
-![Slide 15]()
+![Slide 14]()
 
 </td><td>
 
@@ -375,7 +367,7 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 16]()
+![Slide 15]()
 
 </td><td>
 
@@ -386,7 +378,7 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 17]()
+![Slide 16]()
 
 </td><td>
 
@@ -420,7 +412,7 @@ They are a best practice.
 
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 17]()
 
 </td><td>
 
@@ -431,7 +423,7 @@ They are a best practice.
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 18]()
 
 </td><td>
 
@@ -446,7 +438,7 @@ They are a best practice.
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 19]()
 
 </td><td>
 
@@ -459,7 +451,7 @@ They are a best practice.
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 20]()
 
 </td><td>
 
@@ -482,7 +474,7 @@ A Collaborative Development Model is a fancy term for the process users go throu
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 21]()
 
 </td><td>
 
@@ -499,7 +491,7 @@ Organization account (example: DjangoCon organization account), Fork and Pull Mo
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 22]()
 
 </td><td>
 
@@ -524,7 +516,7 @@ See write permissions chart for info
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 23]()
 
 </td><td>
 
@@ -537,7 +529,7 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 24]()
 
 </td><td>
 
@@ -550,7 +542,7 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 25]()
 
 </td><td>
 
@@ -567,7 +559,7 @@ Going to need to go into the repo and make the proposed change. You can only do 
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 26]()
 
 </td><td>
 
@@ -590,7 +582,7 @@ In addition to using a fork to propose a change to the original repo, you can al
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 27]()
 
 </td><td>
 
@@ -610,7 +602,7 @@ Forking graphic
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 28]()
 
 </td><td>
 
@@ -623,7 +615,7 @@ This is a copy of the DjangoCon US Website repo in my user account under my user
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 29]()
 
 </td><td>
 
@@ -642,7 +634,7 @@ Unless you make a pull request and it is accepted
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 30]()
 
 </td><td>
 
@@ -656,7 +648,7 @@ Unless you make a pull request and it is accepted
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 31]()
 
 </td><td>
 
@@ -669,7 +661,7 @@ If you cloned from a fork, when you push to "origin", you will be pushing to the
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 32]()
 
 </td><td>
 
@@ -682,7 +674,7 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 33]()
 
 </td><td>
 
@@ -737,7 +729,7 @@ When you a change is made to the DjangoCon US website repo, the fork does not au
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 34]()
 
 </td><td>
 
@@ -748,7 +740,7 @@ When you a change is made to the DjangoCon US website repo, the fork does not au
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 35]()
 
 </td><td>
 
@@ -759,7 +751,7 @@ When you a change is made to the DjangoCon US website repo, the fork does not au
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 36]()
 
 </td><td>
 
@@ -838,7 +830,7 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 37]()
 
 </td><td>
 
@@ -849,7 +841,7 @@ Folder/files/text editor
 
 <tr><td width="30%">
 
-![Slide 39]()
+![Slide 38]()
 
 </td><td>
 
@@ -876,7 +868,7 @@ If you are submitting the pull request a forked repo:
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 39]()
 
 </td><td>
 
@@ -898,7 +890,7 @@ Pull requests are branches
 
 <tr><td width="30%">
 
-![Slide 41]()
+![Slide 40]()
 
 </td><td>
 
