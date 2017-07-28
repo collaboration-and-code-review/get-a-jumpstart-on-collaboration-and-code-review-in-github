@@ -166,14 +166,6 @@ I'm going to be showing you a lot of screenshots and diagrams, because I think o
 
 At the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today. You will also be able to look at my slides and the video of this online. 
 
-<!--
-I want to teach you the essential process and underlying logic so that you can get started collaborating and doing code review as quickly as possible. 
-
-When it comes to Git commands, there are variations of how you can do things. I'm not going to be going into detail about that. 
-
-At the end of this talk, there will be a slide with a link to a list of resources which will include the official Git and GitHub documentation. You can learn about all of the variations there. 
--->
-
 </td></tr>
 
 
@@ -250,9 +242,6 @@ I kept using Git and GitHub and getting better at it. Eventually, I came across 
 I am going to use DjangoCon US website as an example throughout this talk. 
 
 <!--
-I asked to do code review for the DjangoCon US website and started doing it. 
-* I hope that providing concrete examples will reinforce your understanding
-
 DjangoCon US Website Homepage
 DjangoCon US Website Repo
 -->
@@ -316,10 +305,6 @@ GitHub is a social network. You can:
 * Follow people
 * Follow their activity in your newsfeed
 * Find interesting projects
-
-<!--
-You have a profile where you store your code in repos
--->
 
 </td></tr>
 
@@ -617,17 +602,13 @@ Animation
 
 ### The Two Collaborative Development Models
 
-There are two different ways to contribute and they have a fancy name. 
+A Collaborative Development Model is a fancy term for how users contribute to a repo. There are two different ways to contribute. 
 
 The two Collaborative Development Models
 * "Shared Repository" Model
 * "Fork and Pull" Model
 
 The two different collaborative development models typically correspond to the two different account types
-
-<!--
-A Collaborative Development Model is a fancy term for the process users go through to contribute to a repo.
--->
 
 </td></tr>
 
