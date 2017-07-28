@@ -741,7 +741,33 @@ In addition to using a fork to propose a change to the original repo, you can al
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 39]()
+
+</td><td>
+
+### Write Permission and Collaboration Examples
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 40]()
+
+</td><td>
+
+### Write Permission and Collaboration Examples
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 41]()
 
 </td><td>
 
@@ -761,7 +787,20 @@ Forking graphic
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 42]()
+
+</td><td>
+
+### How to Fork a Repo
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 43]()
 
 </td><td>
 
@@ -770,6 +809,35 @@ Forking graphic
 This is a copy of the DjangoCon US Website repo in my user account under my user account URL. 
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 44]()
+
+</td><td>
+
+### Forked Repo
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 45]()
+
+</td><td>
+
+### Forked Repo
+
+Animation 
+
+</td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -1792,6 +1860,7 @@ https://git.io/v7LGr
 * GitHub username: KatherineMichel
 
 <!--
+Feel free to ping me on Twitter or by email
 Talk slides and other resources online
 -->
 
