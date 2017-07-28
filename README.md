@@ -406,9 +406,9 @@ Animation
 
 </td><td>
 
-Animation
-
 ### Local Development Environment
+
+Animation
 
 </td></tr>
 
@@ -579,11 +579,9 @@ Animation
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
-![Slide 18]()
+![Slide 30]()
 
 </td><td>
 
@@ -598,7 +596,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 31]()
 
 </td><td>
 
@@ -611,7 +609,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 32]()
 
 </td><td>
 
@@ -634,7 +632,7 @@ A Collaborative Development Model is a fancy term for the process users go throu
 
 <tr><td width="30%">
 
-![Slide 21]()
+![Slide 33]()
 
 </td><td>
 
@@ -651,7 +649,7 @@ Organization account (example: DjangoCon organization account), Fork and Pull Mo
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 34]()
 
 </td><td>
 
@@ -676,7 +674,7 @@ See write permissions chart for info
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 35]()
 
 </td><td>
 
@@ -689,7 +687,7 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 
 <tr><td width="30%">
 
-![Slide 24]()
+![Slide 36]()
 
 </td><td>
 
@@ -702,7 +700,7 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 <tr><td width="30%">
 
-![Slide 25]()
+![Slide 37]()
 
 </td><td>
 
@@ -717,9 +715,10 @@ Going to need to go into the repo and make the proposed change. You can only do 
 </td></tr>
 
 
+
 <tr><td width="30%">
 
-![Slide 26]()
+![Slide 38]()
 
 </td><td>
 
