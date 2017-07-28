@@ -198,7 +198,7 @@ So I clicked on the link and went to the project to take a look.
 
 <tr><td width="30%">
 
-![Slide 6]()
+![Slides 6]()
 
 </td><td>
 
@@ -213,13 +213,13 @@ That was me. I had been wanting to contribute for months, but wasn't sure how, a
 
 <tr><td width="30%">
 
-![Slide 7]()
+![Slides 7]()
 
 </td><td>
 
-### My First Pull Request
+### The One Sentence that Motivated Me to Start Using GitHub
 
-I struggled through, but I was extremely motivated and submitted my first pull request. I had a huge adrenaline rush. 
+Animation
 
 </td></tr>
 
@@ -227,6 +227,19 @@ I struggled through, but I was extremely motivated and submitted my first pull r
 <tr><td width="30%">
 
 ![Slide 8]()
+
+</td><td>
+
+### My First Pull Request
+
+I struggled through, but I was extremely motivated and submitted my first pull request. I had a huge adrenaline rush.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 9]()
 
 </td><td>
 
@@ -249,7 +262,7 @@ DjangoCon US Website Repo
 
 <tr><td width="30%">
 
-![Slide 9]()
+![Slide 10]()
 
 </td><td>
 
@@ -274,7 +287,7 @@ By the way, some operating systems do not use dollar signs $ as command line pro
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 11]()
 
 </td><td>
 
@@ -292,7 +305,7 @@ Git command line- verifying Git is installed and the version
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 12]()
 
 </td><td>
 
@@ -313,7 +326,7 @@ You have a profile where you store your code in repos
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 13]()
 
 </td><td>
 
@@ -331,7 +344,33 @@ DjangoCon US Website Repo
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 14]()
+
+</td><td>
+
+### GitHub: Repositories
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 15]()
+
+</td><td>
+
+### GitHub: Repositories
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 16]()
 
 </td><td>
 
@@ -348,16 +387,31 @@ pushing and pulling
 </td></tr>
 
 
-<!--
-### What I Would Do Differently
+<tr><td width="30%">
 
-There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
--->
+![Slide 17]()
+
+</td><td>
+
+### Local Development Environment
+
+</td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 14]()
+![Slide 18]()
+
+</td><td>
+
+### Local Development Environment
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 19]()
 
 </td><td>
 
@@ -369,6 +423,14 @@ In order to be able to increase your level of responsibility, we need to have th
 * Do code review
 
 </td></tr>
+
+
+
+<!--
+### What I Would Do Differently
+
+There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
+-->
 
 
 <tr><td width="30%">
