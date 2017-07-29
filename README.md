@@ -296,7 +296,7 @@ By the way, some operating systems do not use dollar signs $ as command line pro
 
 ### What are Git and GitHub?
 
-GitHub is a website built on the version control software Git. Git can be installed used in the command line of your computer. 
+GitHub is a website built on the version control software Git. Git can be installed in our local development environment and used in the command line of your computer. 
 
 <!--
 GitHub Website Landing Page
@@ -396,20 +396,13 @@ Here is a screenshot of my local development environment. I want you to understa
 * When we make a change to the code in a GitHub repo, the code in the local clone does not automatically update with the change, and vice versa. 
 * We can push and pull the changes between the GitHub repo and our local development environment to keep them in sync, using the remote repo name "origin" in our command line
 * Meanwhile, other users can work on the code on their computer and push the changes back to GitHub 
-
-* Ocasionally one of you will submit a request for your changes to be merged into the GitHub repos. If two people have made different changes to the same part of the code, Git will tell you there is a conflict and one version of the change will need to be chosen
+* Ocasionally one of us will submit a request for ous changes to be merged into the GitHub repo we are working on. 
+* If two people have made different changes to the same part of the code, Git will tell us there is a conflict and one version of the change will need to be chosen
 
 </td></tr>
 
-
 <!--
-Git is installed in our local development environment and we use it by tying commands in the command line.  
-
-* I work in my home directory, which you can see from the command prompt. 
 * When I stage any changes I make, Git will record the changes to the files
-
-* Our changes are all merged into the GitHub repo we are working on
-* Git will tell us if there is a conflict.
 -->
 
 <tr><td width="30%">
@@ -864,7 +857,6 @@ You own all of the repos in your user account, including ones you have created a
 Unless you make a pull request and it is accepted
 -->
 
-
 <tr><td width="30%">
 
 ![Slide 46]()
@@ -1028,6 +1020,10 @@ The format may be a bit different because on your local computer, you are going 
 </td></tr>
 
 
+<!--
+* I work in my home directory, which you can see from the command prompt. 
+* When I stage any changes I make, Git will record the changes to the files
+-->
 
 
 
@@ -1172,6 +1168,8 @@ If you are submitting the pull request a forked repo:
 </td><td>
 
 ### Submit a Pull Request
+
+Animation
 
 </td></tr>
 
