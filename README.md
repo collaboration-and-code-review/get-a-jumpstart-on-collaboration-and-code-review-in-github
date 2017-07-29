@@ -148,29 +148,13 @@ Thank you for being here. I'm thrilled to have the opportunity to teach you what
 A lot of what I'm going to talk to you about, I learned as the DjangoCon US Website Chair
 
 * DjangoCon Website Chair
-* DjangoCon Europe Website Committee Member
 * DEFNA (Django Events Foundation North America) Board Member
+* DjangoCon Europe Website Committee Member
 * Project Manager
 * Web Designer and Developer
 
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 9]()
-
-</td><td>
-
-### DjangoCon US Website as Example Project
-
-I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
-
-I am going to use DjangoCon US website as an example throughout this talk. 
-
 <!--
-DjangoCon US Website Homepage
-DjangoCon US Website Repo
+Engineer
 -->
 
 </td></tr>
@@ -202,7 +186,7 @@ At the end of my talk, there will be a slide with a link to Useful Resources whe
 
 ### Announcing TacoFancy
 
-I want to tell you how I got started witih open-source contribution, which is a bit unconventional and might show you that there are many ways to get involved. 
+I want to tell you how I got started with open-source contribution, which is a bit unconventional and might show you that there are many ways to get involved. 
 
 I first signed up for GitHub on April 18, 2013. But my account sat unused for months. I didn't know how to get started.  
 
@@ -257,6 +241,26 @@ I struggled through, but I was extremely motivated and submitted my first pull r
 
 <tr><td width="30%">
 
+![Slide 9]()
+
+</td><td>
+
+### DjangoCon US Website as Example Project
+
+I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
+
+I am going to use DjangoCon US website as an example throughout this talk. 
+
+<!--
+DjangoCon US Website Homepage
+DjangoCon US Website Repo
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 10]()
 
 </td><td>
@@ -266,10 +270,10 @@ I struggled through, but I was extremely motivated and submitted my first pull r
 * Create a free [GitHub](https://github.com) account online
 * Install Git on your computer and set your email and username
 * Find and open your computer terminal (a.k.a. command line) on your computer
-* The ability to navigate via terminal would be helpful (example: know how to change directory, I will give a few helpful commands later and see bash commands resource in Useful Resources section)
+* The ability to navigate via terminal would be helpful (I will give a few helpful commands in the Useful Resources section)
 * You might also want to have a text editor of your choice installed, to use to edit files
 
-There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
+You will find documentation for all of these things in the Useful Resources section.
 
 <!--
 * By the way, some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
@@ -288,7 +292,7 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 
 ### What are Git and GitHub?
 
-GitHub is a website built on the version control software Git. Git can be installed in our local development environment and used in the command line of your computer. 
+GitHub is a website built on the version control software Git. Git is installed in our local development environment and used in the command line of your computer. 
 
 <!--
 GitHub Website Landing Page
@@ -443,11 +447,11 @@ In order to be able to increase your level of responsibility, we need to have th
 
 ### Working on a File in GitHub
 
-You can go into a GitHub repo, click on a file, click on the pencil icon to open the file, make a change, and save it. 
+When I first started using GitHub, I would go into my own GitHub repo, click on a file, click on the pencil icon to open the file, make a change, and save it. 
 
-But imagine if there were, say, 20 people all working on a repo and all of them were going into files and making changes and saving them simultaneously. It wouldn't be very practical. How would you do quality assurance? How would team member give feedback? Perhaps code would be deployed live in real time. 
+This is fine, but imagine if there were multiple people all working on a repo and all of them were going into files and making changes and saving them. It wouldn't be very practical. For instance, how would you give feedback? 
 
-There is a better way to do it.
+There is a better way to make changes.
 
 </td></tr>
 
@@ -1718,7 +1722,7 @@ Volunteer to help with website
 
 Feel free to contact me by email or on Twitter.
 
-Useful Links: 
+Useful Resources: 
 https://git.io/v7LGr
 
 * Twitter handle: @KatiMichel
