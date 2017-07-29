@@ -1816,6 +1816,7 @@ Hopefully, you will wnat to create an environment for your project that is welco
 </td></tr>
 
 
+<--
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1841,7 +1842,7 @@ $ man git-clone
 ```
 
 </td></tr>
-
+-->
 
 <tr><td width="30%">
 
