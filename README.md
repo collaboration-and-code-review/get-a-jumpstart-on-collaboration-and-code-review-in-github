@@ -26,11 +26,8 @@ Thank you!
 - [Get a Jumpstart on Collaboration and Code Review in GitHub](#get-a-jumpstart-on-collaboration-and-code-review-in-github)
 - [Welcome](#welcome)
 - [About Me](#about-me)
-- [Goal](#goal)
-- [Announcing TacoFancy](#announcing-tacofancy)
-- [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
-- [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
+- [Goal](#goal)
 - [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [What are Git and GitHub?](#what-are-git-and-github)
 - [GitHub: Social Network](#github-social-network)
@@ -46,8 +43,6 @@ Thank you!
 - [The Two Types of Accounts and Models](#the-two-types-of-accounts-and-models)
 - [Write Permission](#write-permission)
 - [Why We Need Write Permission](#why-we-need-write-permission)
-- ["Shared Repository"](#shared-repository)
-- ["Fork and Pull" Model](#fork-and-pull-model)
 - [Write Permission and Collaboration Examples](#write-permission-and-collaboration-examples)
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
@@ -79,10 +74,16 @@ Thank you!
 - [Safeguards Checklist](#safeguards-checklist)
 - [Getting Help](#getting-help)
 - [Tips for Getting Started](#tips-for-getting-started)
+- [Announcing TacoFancy](#announcing-tacofancy)
+- [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
+- [My First Pull Request](#my-first-pull-request)
 - [Thank You](#thank-you)
 
 <!--
 - [Local Branch Process](#local-branch-process)
+
+- ["Shared Repository"](#shared-repository)
+- ["Fork and Pull" Model](#fork-and-pull-model)
 
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 
@@ -157,6 +158,26 @@ A lot of what I'm going to talk to you about, I learned as the DjangoCon US Webs
 
 <tr><td width="30%">
 
+![Slide 9]()
+
+</td><td>
+
+### DjangoCon US Website as Example Project
+
+I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
+
+I am going to use DjangoCon US website as an example throughout this talk. 
+
+<!--
+DjangoCon US Website Homepage
+DjangoCon US Website Repo
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 4]()
 
 </td><td>
@@ -172,6 +193,7 @@ At the end of my talk, there will be a slide with a link to Useful Resources whe
 </td></tr>
 
 
+<!--
 <tr><td width="30%">
 
 ![Slide 5]()
@@ -230,26 +252,7 @@ Animation
 I struggled through, but I was extremely motivated and submitted my first pull request.
 
 </td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 9]()
-
-</td><td>
-
-### DjangoCon US Website as Example Project
-
-I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
-
-I am going to use DjangoCon US website as an example throughout this talk. 
-
-<!--
-DjangoCon US Website Homepage
-DjangoCon US Website Repo
 -->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -684,6 +687,7 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 </td></tr>
 
 
+<!--
 <tr><td width="30%">
 
 ![Slide 36]()
@@ -691,8 +695,6 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 </td><td>
 
 ### "Shared Repository"
-
-Think about the word "shared". A shared repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on them together. 
 
 </td></tr>
 
@@ -705,10 +707,8 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 ### "Fork and Pull" Model
 
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
-
 </td></tr>
-
+-->
 
 <tr><td width="30%">
 
@@ -718,9 +718,13 @@ The “Fork and Pull” Model is typically used in user account repos, because u
 
 ### Write Permission and Collaboration Examples
 
+Think about the word "shared". A shared repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on them together. 
+
 Example: DjangoCon US Website Repo as a "Shared Repository"
 
 This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo (usually using a feature branch). I no longer need a fork. This is called the "Shared Repository" Model. 
+
+The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
 
 Example: DjangoCon US Website Repo "Fork and Pull" Model
 
@@ -960,6 +964,7 @@ Animation
 </td></tr>
 
 
+<!--
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -975,7 +980,7 @@ The process will be almost the same regardless of whether we are working from a 
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
 
 </td></tr>
-
+-->
 
 <tr><td width="30%">
 
