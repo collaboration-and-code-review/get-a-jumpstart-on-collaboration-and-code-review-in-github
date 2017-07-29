@@ -687,29 +687,6 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 </td></tr>
 
 
-<!--
-<tr><td width="30%">
-
-![Slide 36]()
-
-</td><td>
-
-### "Shared Repository"
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 37]()
-
-</td><td>
-
-### "Fork and Pull" Model
-
-</td></tr>
--->
-
 <tr><td width="30%">
 
 ![Slide 38]()
@@ -1418,37 +1395,6 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Alternatively, Fetch Individual Pull Request
-
-This will only work for pull request branches, not feature branches. 
-
-Pull updates to the individual pull request into your local branch
-
-```bash
-$ git pull origin pull/<pull-request-number>/head:<branch-name>
-```
-
-Alternatively, fetch the individual pull request into your folder
-
-```bash
-$ git fetch origin pull/<pull-request-number>/head:<branch-name>
-```
-
-Example
-
-```bash
-$ git fetch origin pull/1/head:patch-1
-```
-
-</td></tr>
-
-
-<tr><td width="30%">
-
 ![Slide 39]()
 
 </td><td>
@@ -1677,29 +1623,6 @@ upstream  https://github.com/upstream-username/original-repository (push)
 </td></tr>
 
 
-<!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Another Workflow
-
-</td></tr>
--->
-
-<!--
-* The process is based on GitHub Flow, which is a simple, agile process
-
-Which Workflow Should I Use?
-
-Use the workflow that is right for the projects
-They all have pros and cons
-A mission critical project with a high volume of users is likely to use a develop branch and staging to gate-keep updates before going live
--->
-
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1714,28 +1637,7 @@ A mission critical project with a high volume of users is likely to use a develo
 * SemVer
 * See also: Atlassian and GitLab docs (you can also find insights in the docs of other software built on top of Git)
 
-<!--
-* Tags
-* Releases
--->
-
 </td></tr>
-
-<!--
-### Workflow Decisions
-
-Some project will have a master branch and a develop branch. The development branch will be done in the develop branch. The develop branch will be merged with the master branch when the work is production ready. 
-
-If you choose to use a develop branch:
-* In addition to the master branch, create the develop branch
-* Choose a default branch (the default branch will be the first branch you see when you look at a repo, it will be the branch you are checked into when you cd into a folder after cloning, and it will be the default base for a pull request)
-* Default branch is usually master branch
-
-For example, a mission critical project with a high volume of users is likely to use a develop branch and stage updates before going live. 
-
-Which workflow is "best"? Depends on what you are trying to accomplish. Use the workflow that is right for the projects. They all have pros and cons. Some developers have passionate views about this topic (see comment threads in some posts). 
--->
-
 
 
 <tr><td width="30%">
@@ -1815,34 +1717,6 @@ Hopefully, you will wnat to create an environment for your project that is welco
 
 </td></tr>
 
-
-<--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Getting Help
-
-* Help via Git, GitHub Help and Guides (links in Useful Resources Section)
-* Help via GitHub Keyboard Shortcuts (type "?")
-* Help via command line (exit by typing "q")
-
-```bash
-$ git help <verb>
-$ git <verb> --help
-$ man git-<verb>
-```
-
-```bash
-$ git help clone
-$ git clone --help
-$ man git-clone
-```
-
-</td></tr>
--->
 
 <tr><td width="30%">
 
