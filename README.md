@@ -950,21 +950,58 @@ Animation
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 54]()
 
 </td><td>
 
-### Local Development Environment
+### Minor Differences
 
 The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
 
  The two main differences are that if you are using the "Fork and Pull" Model:
 * If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
+
+</td></tr>
+
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Local Development Environment
+
+Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
+
+```bash
+$ git clone <repo-url>
+```
+
+Example: clone (or download) an organizational repo (organizational repo will be "origin")
+
+```bash
+$ git clone https://github.com/<organization-name>/<repo-name>
+```
+
+Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
+
+```bash
+$ git clone https://github.com/<user-name>/<repo-name>
+```
+
+Change directory into the folder of the repo you cloned. Folder name will be the repo name.
+
+```bash
+$ cd <repo-name>
+```
 
 </td></tr>
 
@@ -981,11 +1018,10 @@ The process will be almost the same regardless of whether we are working from a 
 
 
 <!--
-### Local Branch Process
-
 You can see the corresponding folders and files
 The format may be a bit different because on your local computer, you are going to be working on raw files
 -->
+
 
 
 <tr><td width="30%">
@@ -995,6 +1031,25 @@ The format may be a bit different because on your local computer, you are going 
 </td><td>
 
 ### Working on a File Locally
+
+Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
+
+```bash
+$ git branch
+```
+
+Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+
+```bash
+$ git checkout -b <branch-name>
+```
+
+Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
 
 </td></tr>
 
@@ -1021,58 +1076,10 @@ If you cloned from a fork, when you push to "origin", you will be pushing to the
 If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
 -->
 
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
+<!--
+### Local Branch Process
 
 ### Commands
-
-Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
-
-```bash
-$ git clone <repo-url>
-```
-
-Example: clone (or download) an organizational repo (organizational repo will be "origin")
-
-```bash
-$ git clone https://github.com/<organization-name>/<repo-name>
-```
-
-Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
-
-```bash
-$ git clone https://github.com/<user-name>/<repo-name>
-```
-
-Change directory into the folder of the repo you cloned. Folder name will be the repo name.
-
-```bash
-$ cd <repo-name>
-```
-
-Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
-
-```bash
-$ git branch
-```
-
-Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
-
-```bash
-$ git checkout -b <branch-name>
-```
-
-Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
-
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
 
 Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
 
@@ -1081,14 +1088,9 @@ $ git push origin <branch-name>
 ```
 
 There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
-
-<!--
-DjangoCon and fork as examples
-
-Folder/files/text editor
 -->
 
-</td></tr>
+
 
 
 <tr><td width="30%">
