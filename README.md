@@ -380,16 +380,10 @@ Here is a screenshot of my local development environment. I want you to understa
 * A folder will appear in my home directory by the same name as the GitHub repo and filled with the contents of the repo. Making a copy of a repo locally is called cloning.
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment
 * The local folder will also contain another hidden folder named .git that contains the Git configurations. Git will track some details about the project here. 
-
-<!--
-Git will track some details about the project, for instance, where the code was cloned from.It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin on the command line to refer to the repo. 
-* When we make a change to the code, we can commit the change and Git will record the change in the version control history
-* The code in the local clone does not automatically update with the change, and vice versa. 
-* We can push and pull the changes between the GitHub repo and our local development environment to keep them in sync, using the remote repo name "origin" in our command line
-* Meanwhile, other users can work on the code on their computer and push the changes back to GitHub 
+* We can make changes to the code, then commit the changes so that Git will record the changes in version control history
+* We can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
+* Meanwhile, other users can work on the code on their computer and pushir the changes back to GitHub 
 * Ocasionally one of us will submit a request for ous changes to be merged into the GitHub repo we are working on. 
-* If two people have made different changes to the same part of the code, Git will tell us there is a conflict and one version of the change will need to be chosen
--->
 
 </td></tr>
 
@@ -809,7 +803,11 @@ Animation
 * Click on the hyperlink and it will open the repo
 * The repo URL will have my user account name in it
 
-You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork. If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for
+You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork. 
+
+<!--
+If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for
+-->
 
 </td></tr>
 
@@ -869,6 +867,20 @@ Animation
 
 </td></tr>
 
+<!--
+Git will track some details about the project, for instance, where the code was cloned from.It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo. 
+* The code in the local clone does not automatically update with the change, and vice versa. 
+* using the remote repo name "origin" in our command line
+
+* I work in my home directory, which you can see from the command prompt. 
+* When I stage any changes I make, Git will record the changes to the files
+
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
+
+If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
+
+### Local Branch Process
+-->
 
 <tr><td width="30%">
 
@@ -1073,20 +1085,6 @@ $ git push origin <branch-name>
 There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
-
-
-<!--
-* I work in my home directory, which you can see from the command prompt. 
-* When I stage any changes I make, Git will record the changes to the files
--->
-
-<!--
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
-
-If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
-
-### Local Branch Process
--->
 
 
 
@@ -1463,6 +1461,8 @@ Two ways to resolve a merge conflict
 * In the local development environment by command line
 
 <!--
+* If two people have made different changes to the same part of the code, Git will tell us there is a conflict and one version of the change will need to be chosen
+
 Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
 About merge conflicts- Resolve conflicts buttons, can't push until resolved
 Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
@@ -1519,6 +1519,10 @@ $ git push <remote-name> :<branch-name>
 </td><td>
 
 ### Syncing Changes
+
+<!--
+* The code in the local clone does not automatically update with the change, and vice versa. 
+-->
 
 Keep master branch up-to-date
 
@@ -1628,7 +1632,6 @@ You can add other remote repos to your local clone and give them a name in order
 If you clone from the “Shared Repository”, you can just fetch changes directly to your local repo because there is no fork 
 If you forked the “Shared Repository" You do this by adding the “Shared Repository” as an upstream, fetching changes, and pushing them to your origin , which is the the fork
 -->
-
 
 <tr><td width="30%">
 
