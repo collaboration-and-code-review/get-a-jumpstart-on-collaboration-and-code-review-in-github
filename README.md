@@ -268,14 +268,11 @@ DjangoCon US Website Repo
 
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 
-</td></tr>
-
-
-<!--
-* Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+* By the way, some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
+* Not all operating systems use the dollar sign as a command line prompt. Just be aware of that
 * <variable> is a placeholder for the real thing
-By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
--->
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -486,26 +483,22 @@ Animation
 
 ### Branches
 
-You can use branches instead. 
+To be able to switch between multiple tasks, you need to use branches instead. 
 
 Branches
-* They are a best practice
+* They are a best practice that support collaboration and code review
 * Can be used by any GitHub user
 
 When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of it. Now there are two branches, in the same repo, the master branch and a feature branch. The copy is called a branch and you can give it a different name. Meanwhile, you keep the master branch and other branches up-to-date by merging in update. You can create an unlimited number of branches. 
 
-The feature branch will become a pull request branch when a pull request is submitted. But both feature branches (a.k.a. topic branches) and pull request branches are examples of remote branches. We can work on them in much the same way. 
+The feature branch will become a pull request branch when it's thought to be done and a pull request is submitted. But both feature branches (a.k.a. topic branches) and pull request branches are examples of remote branches. We can work on them in much the same way. 
 
 You can switch between the branches to work on them. 
 
 </td></tr>
 
 <!--
-There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
-
-To do this, we need to learn how to use branches
-
-After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch.  
+If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch.  
 -->
 
 <tr><td width="30%">
@@ -811,13 +804,10 @@ Animation
 * Click on the hyperlink and it will open the repo
 * The repo URL will have my user account name in it
 
+You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork. If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for
+
 </td></tr>
 
-<!--
-You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
-
-Unless you make a pull request and it is accepted
--->
 
 <tr><td width="30%">
 
