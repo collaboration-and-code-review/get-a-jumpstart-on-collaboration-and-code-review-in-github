@@ -849,8 +849,6 @@ Animation
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 47]()
@@ -859,7 +857,10 @@ Animation
 
 ### Fork and Pull Model
 
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
+* Fork the repo
+* Clone the fork, which will now be the remote "origin"
+* Make your changes, push the changes back to the fork
+* Submit the pull request
 
 </td></tr>
 
@@ -924,7 +925,14 @@ Animation
 
 ### Shared Repository Model
 
-If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
+* The fork is not needed
+* Clone the shared repository, which will now be the remote "origin"
+* Make your changes, push the changes back to the shared repository
+* Submit the pull request
+
+<!--
+We will talk later about fetching changes
+-->
 
 </td></tr>
 
@@ -940,6 +948,8 @@ If you cloned from a shared repo, when you push to "origin", you will be pushing
 Animation
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -1003,6 +1013,12 @@ The format may be a bit different because on your local computer, you are going 
 <!--
 * I work in my home directory, which you can see from the command prompt. 
 * When I stage any changes I make, Git will record the changes to the files
+-->
+
+<!--
+If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
+
+If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
 -->
 
 
