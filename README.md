@@ -1204,8 +1204,6 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 </td><td>
 
-
-
 ### Checking Out Remote Branches
 
 Even though the command line instructions are for reviewing pull requests locally, they are really for remote branches in general. 
@@ -1225,43 +1223,19 @@ Any person with write permission to a remote branch can fetch it to their local 
 
 ### Remote Tracking Branches
 
-</td></tr>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
 Why are the Instructions Different?
 
-When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains all of the Git configuration information. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
 There are three types of branches:
 * remote branch (in a remote repo)
 * remote-tracking branch (inside of the hidden .git folder, which stores info)
 * local branch
 
-```bash
-$ git fetch --prune
-$ git branch -a
-$ git branch -r
-```
-
-<!--
-Fetching from Origin Versus Pulling from a Fork
-These instructions work for any remote branch. 
-etch or pull a remote branch (feature branch or pull request branch) into your local folder and work on it 
-We've already talked about the concept of remotes when we talked about origin. 
--->
-
 </td></tr>
+
+
+
 
 
 
@@ -1584,7 +1558,8 @@ If you forked the “Shared Repository" You do this by adding the “Shared Repo
 
 </td><td>
 
-### Adding an Upstream Remote and Syncing a Fork
+### Adding an Upstream Remote
+### Syncing a Fork
 
 The git remote add command takes two arguments:
 * A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
