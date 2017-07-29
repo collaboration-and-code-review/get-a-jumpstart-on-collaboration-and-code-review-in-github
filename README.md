@@ -275,6 +275,17 @@ DjangoCon US Website Repo
 
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### 
+
 <!--
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 * <variable> is a placeholder for the real thing
@@ -377,15 +388,15 @@ When you are working on code, you can't do everything in the browser. Sometimes,
 
 Here is a screenshot of my local development environment. I want you to understand that ultimately, this is what we are trying to do. 
 
-* In the background I have GitHub open in the browser. 
-* In front of that, I have my local folder window and my terminal.
+* In the background I have GitHub open in the browser
+* In front of that, I have my local folder window and my terminal
 * I am going to take the URL from the browser and use a command git clone <url>
-* The terminal will run and a folder will appear with the same name as the repo. The contents of the folder will be the contents of the repo. Making a copy of the repo like this is called cloning. 
+* The terminal will run and a folder will appear with the same name as the repo. The contents of the folder will be the contents of the repo. Making a copy of the repo like this is called cloning
 * I now have a copy of the code online and a copy in my local development environment
-* In the local folder will be a hidden folder named .git that contains the Git configurations. Git will know where your code came from. 
-* You can work on your code, and push and pull the changes between the GitHub repo and your local development environment
+* In the local folder will be a hidden folder named .git that contains the Git configurations. Git will know some things about the project, for isntance, where the code came from. It will consider the repo the code came from to be a remote repo and will call it "origin"
+* You can work on your code, and push and pull the changes between the GitHub repo and your local development environment (using the remote repo name "origin"). 
 * Meanwhile, other users will be working on the code on their own computers too
-* You will occassionally submit a request for your changes to be merged into the GitHub repos. Others will do the same. If you have made different changes to the same part of the code, Git will tell you there is a conflict. 
+* Ocasionally one of you will submit a request for your changes to be merged into the GitHub repos. If two people have made different changes to the same part of the code, Git will tell you there is a conflict and one version of the change will need to be chosen
 
 </td></tr>
 
@@ -432,8 +443,6 @@ In order to be able to increase your level of responsibility, we need to have th
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 20]()
@@ -442,13 +451,11 @@ In order to be able to increase your level of responsibility, we need to have th
 
 ### Working on a File in GitHub
 
-If I were starting over, learning Git and GitHub again, I would do things differently. When I first started using GitHub, I might be working on a repo in my user account and I might go directly into a file, make a change and save it. But imagine if there were, say, 20 people all working on a repo and all of them were going into files and making changes and saving them. It wouldn't be very practical. How would you do quality assurance? How would team member give feedback? Perhaps code would be deployed live in real time. 
+You can go into a GitHub repo, click on a file, click on the pencil icon to open the file, make a change, and save it. 
+
+But imagine if there were, say, 20 people all working on a repo and all of them were going into files and making changes and saving them simultaneously. It wouldn't be very practical. How would you do quality assurance? How would team member give feedback? Perhaps code would be deployed live in real time. 
 
 There is a better way to do it.
-
-<!--
-Give process to edit file
--->
 
 </td></tr>
 
@@ -487,6 +494,10 @@ Animation
 
 ### Branches
 
+You can use branches instead. 
+
+When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of it. The copy is called a branch and you can give it a different name. 
+
 Branches
 * They are a best practice
 * Can be used by any GitHub user
@@ -506,7 +517,7 @@ Two different types
 * Feature branches (a.k.a. topic branches)
 * Pull requests branches
 
-When the repo is created, by default, there will be a branch named master that contains the initial files. When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
+When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
 
 You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
 
@@ -648,11 +659,11 @@ The two different collaborative development models typically correspond to the t
 
 ### The Two Types of Accounts and Models
 
-User account (example: my user account), Shared Repository Model
-* A user account is a personal account that a user owns
-
-Organization account (example: DjangoCon organization account), Fork and Pull Model
+Organization account (example: DjangoCon organization account), Shared Repository Model
 * An account where teams of people are working together
+
+User account (example: my user account), Fork and Pull Model
+* A user account is a personal account that a user owns
 
 </td></tr>
 
