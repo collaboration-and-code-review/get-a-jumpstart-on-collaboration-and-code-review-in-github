@@ -371,22 +371,43 @@ Animation
 
 ### Local Development Environment
 
-When you are working on code, you can't do everything in the browser. Sometimes, you need to have a copy of the code in your local development environment so that you can work on it and test things. 
+When we are working on code, we can't do everything in the GitHub website. Sometimes, we need to have a copy of the code in our local development environment so that we can work on it and test things. There is where Git is very useful. 
 
 Here is a screenshot of my local development environment. I want you to understand that ultimately, this is what we are trying to do. 
 
 * In the background I have GitHub open in the browser
 * In front of that, I have my local folder window and my terminal
-* I am going to take the URL from the browser and use a command git clone <url>
-* The terminal will run and a folder will appear with the same name as the repo. The contents of the folder will be the contents of the repo. Making a copy of the repo like this is called cloning
-* I now have a copy of the code online and a copy in my local development environment
-* In the local folder will be a hidden folder named .git that contains the Git configurations. Git will know some things about the project, for isntance, where the code came from. It will consider the repo the code came from to be a remote repo and will call it "origin"
-* You can work on your code, and push and pull the changes between the GitHub repo and your local development environment (using the remote repo name "origin"). 
+* I am going to insert the URL (web address) from the browser into a command git clone <url> (copy and paste) and hit enter
+* A folder will appear in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo. (Making a copy of the repo like this is called cloning)
+* I now have a copy of the code online in the GitHub repo and a copy in my local development environment
+* The local folder will also contain another hidden folder named .git that contains the Git configurations. Git will know some things about the project, for instance, where the code came from. It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin on the command line to refer to the repo. 
+* When we make a change to the code in a GitHub repo, the code in the local clone does not automatically update with the change, and vice versa. 
+* We can push and pull the changes between the GitHub repo and our local development environment, using the remote repo name "origin" in our command line
+
 * Meanwhile, other users will be working on the code on their own computers too
 * Ocasionally one of you will submit a request for your changes to be merged into the GitHub repos. If two people have made different changes to the same part of the code, Git will tell you there is a conflict and one version of the change will need to be chosen
 
 </td></tr>
 
+
+<!--
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. 
+
+This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.  
+
+Or it could be because someone has proposed a change and we want to test change before accepting it.
+
+Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
+
+* I work in my home directory, which you can see from the command prompt. 
+* When I stage any changes I make, Git will record the changes to the files
+* I can push and pull changes between the local development environment and the GitHub repo
+* Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
+* Our changes are all merged into the GitHub repo we are working on
+* Git will tell us if there is a conflict.
+
+You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
+-->
 
 <tr><td width="30%">
 
@@ -717,10 +738,6 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
 
-<!--
-Going to need to go into the repo and make the proposed change. You can only do that if you have write permission to the repo
--->
-
 </td></tr>
 
 
@@ -847,8 +864,6 @@ Animation
 <!--
 You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
 
-When you create a user account, you own all of your repos and have write permission to all of them.  
-
 Unless you make a pull request and it is accepted
 -->
 
@@ -974,44 +989,14 @@ The process will be almost the same regardless of whether we are working from a 
 
 </td></tr>
 
+
 <!--
 ### Local Branch Process
 
-Git Magic
-When we are working on code, we can’t do everything in the GitHub website. We sometimes need to make a copy of our code in our local development environment. When we are working on code, we can't do everything in the GitHub website. There is where Git is very useful. 
-
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. 
-
-This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed.  
-This could be because we want to create a new feature. Or it could be because someone has proposed a change and we want to test change before accepting it.
-
-Git is installed in our local development environment and we use it by tying commands in the command line. When we have Git initialized in a project, there is a hidden folder named .git that contains the Git configuration information that helps Git track certain things, such as which repo the code was cloned from. 
-
-* I work in my home directory, which you can see from the command prompt. 
-* The GitHub repo has been cloned using its URL
-* There is now a folder on the computer in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo and a .git folder
-* I now have a copy of the codebase on my computer and a copy online in a GitHub repo
-* When I stage any changes I make, Git will record the changes to the files
-* I can push and pull changes between the local development environment and the GitHub repo
-* Meanwhile other users can work on the code on their computer and push the changes back to GitHub 
-* Our changes are all merged into the GitHub repo we are working on
-* Git will tell us if there is a conflict.
-
 You can see the corresponding folders and files
 The format may be a bit different because on your local computer, you are going to be working on raw files
-
-### Remotes
-
-When you clone a repo to your local development environment, Git will know where you cloned your code from and will name this remote repo "origin". When you make a change to a GitHub repo, or in your local clone, the code elsewhere does not automatically update with the change. You can refer to the origin on the command line to push and pull code back and forth between your local development environment and GitHub repo, to keep them in sync.
-
-You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
-
-clone: local copy of a repo
-push: transfer changes from local clone to online repo
-pull: transfer changes from online repo to local clone
-
-When you a change is made to the DjangoCon US website repo, the fork does not automatically update. When you make a change to an origin, your local code does not automatically update. When you make a change to your local code, your origin does not automatically update. 
 -->
+
 
 <tr><td width="30%">
 
@@ -1464,6 +1449,8 @@ $ git push origin master
 
 ### Alternatively, Fetch Individual Pull Request
 
+This will only work for pull request branches, not feature branches. 
+
 Pull updates to the individual pull request into your local branch
 
 ```bash
@@ -1481,10 +1468,6 @@ Example
 ```bash
 $ git fetch origin pull/1/head:patch-1
 ```
-
-<!--
-See also, pull request shortcuts
--->
 
 </td></tr>
 
@@ -1546,6 +1529,9 @@ $ git push <remote-name> :<branch-name>
 ```
 
 </td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -1650,6 +1636,22 @@ If you are pushing, you need to have write permission to the branch. The remote 
 </td></tr>
 
 
+
+
+<!--
+When you fork a repo, such as DjangoCon US website repo, when changes are made within that repo, your fork does not automatically update. You could delete your fork and refork it to have a current version, but if you have a pull request submitted, it's not a best practice to delete your fork, because the pull request becomes inactive and it's more difficult for the maintainer and you to work on. So, let's say you have the fork cloned to your local development environment. You cannot push to the DjangoCon US website repo, because you don't have write permission, but you can pull. 
+
+We've talked about how when you clone a repo, Git considers the repo you cloned from to be a remote repo and assigns the name "origin" to it. 
+-->
+
+<!--
+You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
+
+If you clone from the “Shared Repository”, you can just fetch changes directly to your local repo because there is no fork 
+If you forked the “Shared Repository" You do this by adding the “Shared Repository” as an upstream, fetching changes, and pushing them to your origin , which is the the fork
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1691,11 +1693,6 @@ origin  https://github.com/your-username/your-fork (push)
 upstream  https://github.com/upstream-username/original-repository (fetch)
 upstream  https://github.com/upstream-username/original-repository (push)
 ```
-
-<!--
-If you clone from the “Shared Repository”, you can just fetch changes directly to your local repo because there is no fork 
-If you forked the “Shared Repository”, you need to update the fork without deleting it. You do this by adding the “Shared Repository” as an upstream, fetching changes, and pushing them to your origin , which is the the fork
--->
 
 </td></tr>
 
@@ -1831,47 +1828,6 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 39]()
-
-</td><td>
-
-### Productivity Tips
-
-* Cache your password
-* Set up special configs (example: line endings)
-* Create saved replies
-* Link to specific line number on GitHub
-
-<!--
-* Request a review from a specific person
-* Close an issue via commit message by using keyword
-
-# Notifications
-
-- [ ] Find the Notifications Overview Page
-- [ ] Decide which notifications to receive, whether by browser or email, and which email to receive at
-
-# Conversations
-
-Where They Happen
-* Issues
-* Pull Requests
-
-Helpers
-* GitHub Flavored Markdown 
-* @mentions (of people and teams)
-* Issue and PR references
-* Emojis
-
-Writing and Formatting
-* Get to know GitHub Flavored Markdown
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
 ![Slide 00]()
 
 </td><td>
@@ -1911,6 +1867,21 @@ $ git help clone
 $ git clone --help
 $ man git-clone
 ```
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Go For It!
+
+<!--
+Volunteer to help with website
+-->
 
 </td></tr>
 
