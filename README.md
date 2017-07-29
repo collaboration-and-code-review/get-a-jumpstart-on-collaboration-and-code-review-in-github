@@ -1677,8 +1677,7 @@ upstream  https://github.com/upstream-username/original-repository (push)
 </td></tr>
 
 
-
-
+<!--
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1688,6 +1687,7 @@ upstream  https://github.com/upstream-username/original-repository (push)
 ### Another Workflow
 
 </td></tr>
+-->
 
 <!--
 * The process is based on GitHub Flow, which is a simple, agile process
