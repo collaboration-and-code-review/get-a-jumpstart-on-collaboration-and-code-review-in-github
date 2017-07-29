@@ -268,9 +268,11 @@ DjangoCon US Website Repo
 
 There are a ton of tutorials out there for getting started. I am going to be focused on workflow because there are fewer tutorials out there for what I am going to explain. 
 
+<!--
 * By the way, some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 * Not all operating systems use the dollar sign as a command line prompt. Just be aware of that
 * <variable> is a placeholder for the real thing
+-->
 
 </td></tr>
 
