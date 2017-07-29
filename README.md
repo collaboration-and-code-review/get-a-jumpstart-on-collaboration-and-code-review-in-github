@@ -318,7 +318,7 @@ GitHub is a social network. You can:
 
 ### GitHub: Repositories
 
-GitHub users can store and work on code together in repositories
+But the really important part of GitHub is that users can store and work on code together in repositories
 
 For example, if you go to the DjangoCon US organization account you will see a list of repos and at the top is the DjangoCon US website repo. If you click on the hyperlink, it will open up the repo and you will see the folders and files filled with the website code and you can look through. 
 
@@ -382,8 +382,8 @@ Here is a screenshot of my local development environment. I want you to understa
 * The local folder will also contain another hidden folder named .git that contains the Git configurations. Git will track some details about the project here. 
 * We can make changes to the code, then commit the changes so that Git will record the changes in version control history
 * We can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
-* Meanwhile, other users can work on the code on their computer and pushir the changes back to GitHub 
-* Ocasionally one of us will submit a request for ous changes to be merged into the GitHub repo we are working on. 
+* Meanwhile, other users can work on the code on their computer and push the changes back to GitHub 
+* Ocasionally one of us will submit a pull request for our changes to be merged into the GitHub repo we are working on. 
 
 </td></tr>
 
@@ -803,11 +803,9 @@ Animation
 * Click on the hyperlink and it will open the repo
 * The repo URL will have my user account name in it
 
-You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork. 
+You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original repo will not be affected, including deleting the fork. 
 
-<!--
-If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for
--->
+If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for.
 
 </td></tr>
 
@@ -865,22 +863,14 @@ Animation
 * Make your changes, push the changes back to the fork
 * Submit the pull request
 
-</td></tr>
+Something I want to point out: I mentioned at the beginning of the presentation that when you clone a repo, in the local folder there will be a hidden folder named .git that will contain Git configurations. Git will track some details about the project here, for instance, where the code was cloned from. It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo. 
 
 <!--
-Git will track some details about the project, for instance, where the code was cloned from.It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo. 
-* The code in the local clone does not automatically update with the change, and vice versa. 
-* using the remote repo name "origin" in our command line
-
-* I work in my home directory, which you can see from the command prompt. 
-* When I stage any changes I make, Git will record the changes to the files
-
-If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
-
-If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
-
-### Local Branch Process
+The code in the local clone does not automatically update with the change, and vice versa. 
 -->
+
+</td></tr>
+
 
 <tr><td width="30%">
 
@@ -948,6 +938,7 @@ Animation
 * Submit the pull request
 
 <!--
+In this situation, our origin is the shared repository
 We will talk later about fetching changes
 -->
 
@@ -991,6 +982,8 @@ The process will be almost the same regardless of whether we are working from a 
 </td><td>
 
 ### Local Development Environment
+
+I am working in my home directory, which you can see from the command prompt. 
 
 Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
 
@@ -1045,9 +1038,6 @@ $ git checkout -b <branch-name>
 </td></tr>
 
 
-
-
-
 <tr><td width="30%">
 
 ![Slide 56]()
@@ -1068,6 +1058,7 @@ $ git commit -m "Your note"
 
 
 
+
 <tr><td width="30%">
 
 ![Slide 57]()
@@ -1082,10 +1073,11 @@ Push the new branch to GitHub to your origin (by default, the origin is the repo
 $ git push origin <branch-name>
 ```
 
-There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
+There will now be a new branch in the repo that is your origin. If you cloned from the fork, the new branch will be in your fork, if you cloned from the shared repo, the new branch will in the shared repo. 
+
+The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
-
 
 
 
