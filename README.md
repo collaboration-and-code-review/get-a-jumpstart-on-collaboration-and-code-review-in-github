@@ -451,7 +451,7 @@ When I first started using GitHub, I would go into my own GitHub repo, click on 
 
 This is fine, but imagine if there were multiple people all working on a repo and all of them were going into files and making changes and saving them. It wouldn't be very practical. For instance, how would you give feedback? 
 
-There is a better way to make changes.
+There is a way to make changes that enables you to switch between multiple tasks the way that you need to to collaborate and do code review.
 
 </td></tr>
 
@@ -490,19 +490,18 @@ Animation
 
 ### Branches
 
-To be able to switch between multiple tasks, you need to use branches instead. 
+We need to use branches instead. 
 
 Branches
-* They are a best practice that support collaboration and code review
+* They are a best practice
 * Can be used by any GitHub user
+* You can create an unlimited number of branches.
 
-When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, instead of going directory into a file, you can make a copy of the entire master branch. Now there are two branches, in the same repo, the master branch and a feature branch. The copy is called a branch and you can give it a different name. Meanwhile, you keep the master branch and other branches up-to-date by merging in update. You can create an unlimited number of branches. 
+When you create a repo, by default you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of the entire master branch and give it a different name.Now there are two branches, in the same repo, the master branch and a feature branch. 
 
-The feature branch will become a pull request branch when it's thought to be done and a pull request is submitted. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the branch.  
+At some point, when the feature branch author thinks it's done, a pull request will be submitted and the feature branch will become a pull request branch. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the branch.  
 
 But both feature branches (a.k.a. topic branches) and pull request branches are examples of remote branches. We can work on them in much the same way. 
-
-You can switch between the branches to work on them. 
 
 </td></tr>
 
@@ -1445,6 +1444,8 @@ $ git push <remote-name> :<branch-name>
 
 <!--
 * The code in the local clone does not automatically update with the change, and vice versa. 
+
+Meanwhile, you keep the master branch and other branches up-to-date by merging in update.  
 -->
 
 Keep master branch up-to-date
@@ -1615,17 +1616,6 @@ upstream  https://github.com/upstream-username/original-repository (push)
 * A Successful Git Branching Model Considered Harmful (alternative view)
 * SemVer
 * See also: Atlassian and GitLab docs (you can also find insights in the docs of other software built on top of Git)
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Organization and Team Setup
 
 </td></tr>
 
