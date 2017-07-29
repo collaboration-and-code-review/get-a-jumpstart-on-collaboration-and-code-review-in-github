@@ -492,7 +492,7 @@ Branches
 * They are a best practice
 * Can be used by any GitHub user
 
-When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of it. The copy is called a branch and you can give it a different name. Meanwhile, you keep the main branch up-to-date. You can create an unlimited number of branches. 
+When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of it. Now there are two branches, in the same repo, the master branch and a feature branch. The copy is called a branch and you can give it a different name. Meanwhile, you keep the master branch and other branches up-to-date by merging in update. You can create an unlimited number of branches. 
 
 The feature branch will become a pull request branch when a pull request is submitted. But both feature branches (a.k.a. topic branches) and pull request branches are examples of remote branches. We can work on them in much the same way. 
 
@@ -500,15 +500,12 @@ You can switch between the branches to work on them.
 
 </td></tr>
 
-
 <!--
 There is a way of doing things that involves the best practices of collaboration and code review and there is a way of doing things that doesn't. In this talk, I will be teaching you the best practices. 
 
 To do this, we need to learn how to use branches
 
-When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
-
-You will want to keep the master and feature branches up-to-date by merging in updates.  
+After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch.  
 -->
 
 <tr><td width="30%">
