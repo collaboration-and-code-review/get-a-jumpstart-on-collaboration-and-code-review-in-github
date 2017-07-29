@@ -950,9 +950,10 @@ Animation
 </td></tr>
 
 
+
 <tr><td width="30%">
 
-![Slide 54]()
+![Slide 00]()
 
 </td><td>
 
@@ -965,10 +966,6 @@ The process will be almost the same regardless of whether we are working from a 
 * When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
 
 </td></tr>
-
-
-
-
 
 
 <tr><td width="30%">
@@ -1014,23 +1011,14 @@ $ cd <repo-name>
 
 ### GitHub Repo Versus Local Directory
 
+You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
+
+There are some files that you will only see online because they are not needed locally, and vice versa.
+
 </td></tr>
 
 
-<!--
-You can see the corresponding folders and files
-The format may be a bit different because on your local computer, you are going to be working on raw files
--->
 
-
-
-<tr><td width="30%">
-
-![Slide 56]()
-
-</td><td>
-
-### Working on a File Locally
 
 Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
 
@@ -1044,6 +1032,17 @@ Create and checkout (switch) to a feature branch, branching off of the branch yo
 $ git checkout -b <branch-name>
 ```
 
+
+
+
+<tr><td width="30%">
+
+![Slide 56]()
+
+</td><td>
+
+### Working on a File Locally
+
 Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
 ```bash
@@ -1052,6 +1051,8 @@ $ git commit -m "Your note"
 ```
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
