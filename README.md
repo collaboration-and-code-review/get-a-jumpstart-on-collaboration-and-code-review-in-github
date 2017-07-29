@@ -72,16 +72,11 @@ Thank you!
 - [Getting Help](#getting-help)
 - [Thank You](#thank-you)
 
-
 - [Local Branch Process](#local-branch-process)
-- [What I Would Do Differently](#what-i-would-do-differently)
-- [About Forks](#about-forks)
 
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
-### Submit a Pull Request
 
 ### Perspective: Checking Out Remote Branches
-### Pull Request Review Process
 
 ### The Difference Between a Feature Branch and a Pull Request Branch
 ### Fetching from Origin Versus Pulling from a Fork
@@ -496,12 +491,13 @@ Animation
 
 You can use branches instead. 
 
-When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of it. The copy is called a branch and you can give it a different name. 
-
 Branches
 * They are a best practice
 * Can be used by any GitHub user
-* You can have an unlimited number of branches
+
+When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of it. The copy is called a branch and you can give it a different name. Meanwhile, you keep the main branch up-to-date. You can create an unlimited number of branches. 
+
+You can switch between the branches to work on them. 
 
 </td></tr>
 
@@ -519,7 +515,7 @@ Two different types
 
 When you want to create a new feature, you can make a copy of the master branch and give the new branch a different name. Now there are two branches, in the same repo, the master branch and a feature branch. If there is more than one branch in the repo, you make a copy of the branch you intend your new feature to be merged into (in this case, the master branch). After you are done working on the feature branch, you submit a pull request for the changes to be merged. The feature branch is now a pull request branch. If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch. 
 
-You will want to keep the master and feature branches up-to-date by merging in updates. If you want to start working on another feature, you can make another new branch off of the branch it's intended to be merged into.  
+You will want to keep the master and feature branches up-to-date by merging in updates.  
 
 Both feature branches and pull request branches are examples of remote branches. We can work on them in much the same way. 
 -->
@@ -584,9 +580,9 @@ Animation
 
 ### How to Create a Branch
 
-Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. 
+Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. When you click to save the changes, they will not save in the current file. Instead, a new branch will be created. 
 
-You can also create and work on branches in your local development environment, which I will show you later. 
+You can also create and work on branches through the command line in your local development environment, which I will show you later. 
 
 </td></tr>
 
