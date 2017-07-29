@@ -364,7 +364,7 @@ Animation
 
 ### Local Development Environment
 
-When we are working on code, we can't do everything in the GitHub website. Sometimes, we need to have a copy of the code in our local development environment. 
+When we are working on code, we can't do everything in the GitHub website. 
 
 For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. 
 
@@ -377,15 +377,19 @@ Here is a screenshot of my local development environment. I want you to understa
 * In the background I have GitHub open in the browser
 * In front of that, I have my local folder window and my terminal
 * I am going to insert the URL (web address) from the browser into a command git clone <url> (copy and paste) and hit enter
-* A folder will appear in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo. (Making a copy of the repo like this is called cloning)
+* A folder will appear in my home directory by the same name as the GitHub repo and filled with the contents of the repo. Making a copy of a repo locally is called cloning.
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment
-* The local folder will also contain another hidden folder named .git that contains the Git configurations. Git will track some details about the project, for instance, where the code was cloned from. It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin on the command line to refer to the repo. 
-* When we make a change to the code in a GitHub repo, we can commit the change and Git will record the change in the versio control history
+* The local folder will also contain another hidden folder named .git that contains the Git configurations. Git will track some details about the project here. 
+
+<!--
+Git will track some details about the project, for instance, where the code was cloned from.It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin on the command line to refer to the repo. 
+* When we make a change to the code, we can commit the change and Git will record the change in the version control history
 * The code in the local clone does not automatically update with the change, and vice versa. 
 * We can push and pull the changes between the GitHub repo and our local development environment to keep them in sync, using the remote repo name "origin" in our command line
 * Meanwhile, other users can work on the code on their computer and push the changes back to GitHub 
 * Ocasionally one of us will submit a request for ous changes to be merged into the GitHub repo we are working on. 
 * If two people have made different changes to the same part of the code, Git will tell us there is a conflict and one version of the change will need to be chosen
+-->
 
 </td></tr>
 
@@ -489,17 +493,16 @@ Branches
 * They are a best practice that support collaboration and code review
 * Can be used by any GitHub user
 
-When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of it. Now there are two branches, in the same repo, the master branch and a feature branch. The copy is called a branch and you can give it a different name. Meanwhile, you keep the master branch and other branches up-to-date by merging in update. You can create an unlimited number of branches. 
+When you create a repo, you are working within a branch named master. Say for instance that you want to make a change in the branch, instead of going directory into a file, you can make a copy of the entire master branch. Now there are two branches, in the same repo, the master branch and a feature branch. The copy is called a branch and you can give it a different name. Meanwhile, you keep the master branch and other branches up-to-date by merging in update. You can create an unlimited number of branches. 
 
-The feature branch will become a pull request branch when it's thought to be done and a pull request is submitted. But both feature branches (a.k.a. topic branches) and pull request branches are examples of remote branches. We can work on them in much the same way. 
+The feature branch will become a pull request branch when it's thought to be done and a pull request is submitted. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the branch.  
+
+But both feature branches (a.k.a. topic branches) and pull request branches are examples of remote branches. We can work on them in much the same way. 
 
 You can switch between the branches to work on them. 
 
 </td></tr>
 
-<!--
-If the changes are accepted, they will be merged into the intended branch. The master branch will be like before, except with the changes from the branch.  
--->
 
 <tr><td width="30%">
 
@@ -636,11 +639,13 @@ The two different collaborative development models typically correspond to the t
 
 ### The Two Types of Accounts and Models
 
+<!--
 Organization account (example: DjangoCon organization account), Shared Repository Model
 * An account where teams of people are working together
 
 User account (example: my user account), Fork and Pull Model
 * A user account is a personal account that a user owns
+-->
 
 </td></tr>
 
@@ -950,7 +955,6 @@ Animation
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -982,18 +986,6 @@ Clone (or download) the repo you have write permission to using the repo URL (th
 $ git clone <repo-url>
 ```
 
-Example: clone (or download) an organizational repo (organizational repo will be "origin")
-
-```bash
-$ git clone https://github.com/<organization-name>/<repo-name>
-```
-
-Example: clone (or download) a user account repo (repo needs to have already been forked to user account, forked repo will be "origin")
-
-```bash
-$ git clone https://github.com/<user-name>/<repo-name>
-```
-
 Change directory into the folder of the repo you cloned. Folder name will be the repo name.
 
 ```bash
@@ -1018,7 +1010,13 @@ There are some files that you will only see online because they are not needed l
 </td></tr>
 
 
+<tr><td width="30%">
 
+![Slide 56]()
+
+</td><td>
+
+### Create a Branch
 
 Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
 
@@ -1031,6 +1029,9 @@ Create and checkout (switch) to a feature branch, branching off of the branch yo
 ```bash
 $ git checkout -b <branch-name>
 ```
+
+</td></tr>
+
 
 
 
@@ -1061,7 +1062,15 @@ $ git commit -m "Your note"
 
 </td><td>
 
-### Local Development Environment
+### Pushing a Branch
+
+Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
+
+```bash
+$ git push origin <branch-name>
+```
+
+There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
 
@@ -1075,20 +1084,8 @@ $ git commit -m "Your note"
 If you cloned from a fork, when you push to "origin", you will be pushing to the fork.
 
 If you cloned from a shared repo, when you push to "origin", you will be pushing to the shared repo. 
--->
 
-<!--
 ### Local Branch Process
-
-### Commands
-
-Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
-
-```bash
-$ git push origin <branch-name>
-```
-
-There will now be a new branch in the repo that is your origin. The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 -->
 
 
