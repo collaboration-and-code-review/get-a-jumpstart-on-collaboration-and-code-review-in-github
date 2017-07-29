@@ -271,21 +271,11 @@ There are a ton of tutorials out there for getting started. I am going to be foc
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### 
-
 <!--
 * Some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 * <variable> is a placeholder for the real thing
 By the way, some operating systems do not use dollar signs $ as command line prompts. Just be aware of that.
 -->
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -393,7 +383,8 @@ Here is a screenshot of my local development environment. I want you to understa
 * A folder will appear in my home directory by the same name as the GitHub repo I just cloned and filled with the contents of the repo. (Making a copy of the repo like this is called cloning)
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment
 * The local folder will also contain another hidden folder named .git that contains the Git configurations. Git will track some details about the project, for instance, where the code was cloned from. It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin on the command line to refer to the repo. 
-* When we make a change to the code in a GitHub repo, the code in the local clone does not automatically update with the change, and vice versa. 
+* When we make a change to the code in a GitHub repo, we can commit the change and Git will record the change in the versio control history
+* The code in the local clone does not automatically update with the change, and vice versa. 
 * We can push and pull the changes between the GitHub repo and our local development environment to keep them in sync, using the remote repo name "origin" in our command line
 * Meanwhile, other users can work on the code on their computer and push the changes back to GitHub 
 * Ocasionally one of us will submit a request for ous changes to be merged into the GitHub repo we are working on. 
@@ -401,9 +392,6 @@ Here is a screenshot of my local development environment. I want you to understa
 
 </td></tr>
 
-<!--
-* When I stage any changes I make, Git will record the changes to the files
--->
 
 <tr><td width="30%">
 
@@ -821,10 +809,18 @@ Animation
 
 ### Forked Repo
 
-This is a copy of the DjangoCon US Website repo in my user account under my user account URL. 
+* The forking message will lead you back to your user account. 
+* In the list of repos in your account, you will now see an entry for the fork, which will also tell where it was forked from
+* Click on the hyperlink and it will open the repo
+* The repo URL will have my user account name in it
 
 </td></tr>
 
+<!--
+You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
+
+Unless you make a pull request and it is accepted
+-->
 
 <tr><td width="30%">
 
@@ -851,11 +847,6 @@ Animation
 
 </td></tr>
 
-<!--
-You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original rep will not be affected, including deleting the fork.
-
-Unless you make a pull request and it is accepted
--->
 
 <tr><td width="30%">
 
@@ -869,6 +860,8 @@ Unless you make a pull request and it is accepted
 * Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
