@@ -55,6 +55,16 @@ Thank you!
 - [Fork and Pull Model](#fork-and-pull-model)
 - [Shared Repository Model](#shared-repository-model)
 
+- [Tidy Up](#tidy-up)
+- [Another Workflow](#another-workflow)
+- [Learn More About Workflow](#learn-more-about-workflow)
+- [Organization and Team Setup](#organization-and-team-setup)
+- [Documentation](#documentation)
+- [Safeguards Checklist](#safeguards-checklist)
+- [Getting Help](#getting-help)
+- [Tips for Getting Started](#tips-for-getting-started)
+- [Thank You](#thank-you)
+
 <!--
 ### Local Development Environment
 ### GitHub Repo Versus Local Directory
@@ -64,13 +74,6 @@ Thank you!
 ### Submit a Pull Request
 ### Section 3
 ### Pull Request Review Process
-
-
-- [Another Workflow](#another-workflow)
-- [Learn More About Workflow](#learn-more-about-workflow)
-
-- [Getting Help](#getting-help)
-- [Thank You](#thank-you)
 
 - [Local Branch Process](#local-branch-process)
 
@@ -87,19 +90,8 @@ Thank you!
 ### Merge Pull Request Locally and Push to Master Branch
 ### Alternatively, Fetch Individual Pull Request
 ### How to Deal With Merge Conflicts
-### Tidy Up
 ### Syncing Changes
 ### Adding an Upstream Remote and Syncing a Fork
-
-- [Organization and Team Setup](#organization-and-team-setup)
-- [Safeguards Checklist](#safeguards-checklist)
-- [Community and Communication Strategy](#community-and-communication-strategy)
-- [Documentation](#documentation)
-- [Issue Templates](#issue-templates)
-- [Pull Request Templates](#pull-request-templates)
-- [Forum](#forum)
-- [Productivity Tips](#productivity-tips)
-- [Tips for Getting Started](#tips-for-getting-started)
 
 ### Debunking Myths
 
@@ -1730,6 +1722,7 @@ They all have pros and cons
 A mission critical project with a high volume of users is likely to use a develop branch and staging to gate-keep updates before going live
 -->
 
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1804,63 +1797,34 @@ Setting Up Repo Fail Safes
 
 </td><td>
 
+### Documentation
+
+<!--
 ### Community and Communication Strategy
 
 * What impression you want to give people about your project? Hopefully welcoming, user-friendly. 
 * How can you make contributor experience easier/faster/enjoyable (for example, tell people how to contribute)
 * Draft community guidelines
 
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Documentation
-
-<!--
 * README.md
 * LICENSE (auto-generate, legality of contributions, attribution)
 * CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
 
 ### Issue and Pull Request Templates
 
 * ISSUE_TEMPLATE
 * PULL_REQUEST_TEMPLATE
 
-<!--
 * Issues Tab
 * Pull Requests Tab
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
 
 ### Forums
 
 * Wikis
 * GitHub Pages/Jekyll
 * Gists
+-->
 
 </td></tr>
 
@@ -1906,7 +1870,6 @@ Writing and Formatting
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1923,7 +1886,6 @@ Writing and Formatting
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 
 </td></tr>
-
 
 
 <tr><td width="30%">
