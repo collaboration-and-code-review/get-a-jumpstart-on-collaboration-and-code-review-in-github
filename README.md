@@ -935,12 +935,9 @@ Animation
 
 
 
-
-
-
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 52]()
 
 </td><td>
 
@@ -948,15 +945,20 @@ Animation
 
 What I'm going to show you now is a generic process. It is the same whether you are cloning from a shared repository or a fork. 
 
-I am working in my home directory, which you can see from the command prompt. 
+Let's go back to the screenshot of my local development environment. 
 
-Clone (or download) the repo you have write permission to using the repo URL (this repo will be your origin)
+* In the background I have GitHub open in the browser
+* In front of that, I have my local folder window and my terminal
+* You can see that I am working in my home directory. The name of home directory is at the top of the folder window, terminal, and in front of the command line prompt
+* I am going to use the URL from the repo I have write permission to to clone the repo into the local development environment. The command is:
 
 ```bash
 $ git clone <repo-url>
 ```
 
-Change directory into the folder of the repo you cloned. Folder name will be the repo name.
+* The folder in the home directory with the same name as the GitHub repo and filled with the contents of the repo
+* I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
+* I will now tell my operating system to change directory into the folder so that I can work there
 
 ```bash
 $ cd <repo-name>
@@ -967,7 +969,87 @@ $ cd <repo-name>
 
 <tr><td width="30%">
 
+![Slide 53]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 54]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 55]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 56]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 57]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 58]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+
+
+<tr><td width="30%">
+
+![Slide 59]()
 
 </td><td>
 
@@ -982,7 +1064,7 @@ There are some files that you will only see online because they are not needed l
 
 <tr><td width="30%">
 
-![Slide 56]()
+![Slide 60]()
 
 </td><td>
 
@@ -1005,7 +1087,40 @@ $ git checkout -b <branch-name>
 
 <tr><td width="30%">
 
-![Slide 56]()
+![Slide 61]()
+
+</td><td>
+
+### Create a Branch
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 62]()
+
+</td><td>
+
+### Create a Branch
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 63]()
+
+</td><td>
+
+### Create a Branch
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 64]()
 
 </td><td>
 
@@ -1020,14 +1135,28 @@ $ git commit -m "Your note"
 
 </td></tr>
 
+<!--
+* I can make changes to the code, then commit the changes so that Git will record the changes in version control history
+-->
 
 <tr><td width="30%">
 
-![Slide 57]()
+![Slide 65]()
 
 </td><td>
 
-### Pushing a Branch
+### Working on a File Locally
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 66]()
+
+</td><td>
+
+### Committing and Pushing
 
 Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
 
@@ -1042,7 +1171,28 @@ The branch will not be affecting anything else. If you never did anything else w
 </td></tr>
 
 
+<tr><td width="30%">
 
+![Slide 67]()
+
+</td><td>
+
+### Committing and Pushing
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 68]()
+
+</td><td>
+
+### Committing and Pushing
+
+</td></tr>
+
+<!--
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1052,13 +1202,12 @@ The branch will not be affecting anything else. If you never did anything else w
 ### Recap
 
 </td></tr>
-
-
+-->
 
 
 <tr><td width="30%">
 
-![Slide 58]()
+![Slide 69]()
 
 </td><td>
 
@@ -1073,7 +1222,7 @@ You can toggle back and forth between the branches by clicking on the branches i
 
 <tr><td width="30%">
 
-![Slide 59]()
+![Slide 70]()
 
 </td><td>
 
@@ -1086,7 +1235,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 60]()
+![Slide 71]()
 
 </td><td>
 
@@ -1113,7 +1262,7 @@ If you are submitting the pull request a forked repo:
 
 <tr><td width="30%">
 
-![Slide 61]()
+![Slide 72]()
 
 </td><td>
 
@@ -1124,7 +1273,7 @@ If you are submitting the pull request a forked repo:
 
 <tr><td width="30%">
 
-![Slide 62]()
+![Slide 73]()
 
 </td><td>
 
@@ -1137,7 +1286,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 63]()
+![Slide 74]()
 
 </td><td>
 
@@ -1156,6 +1305,9 @@ Organizational repo is your “origin”
 Forked repos branches are remotes
 Pull requests are branches
 -->
+
+
+
 
 <tr><td width="30%">
 
