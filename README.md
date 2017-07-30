@@ -1526,41 +1526,27 @@ $ git push <remote-name> :<branch-name>
 
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Syncing Changes
-
 <!--
-* The code in the local clone does not automatically update with the change, and vice versa. 
-
-Meanwhile, you keep the master branch and other branches up-to-date by merging in update.  
--->
+### Syncing Changes
+### Adding an Upstream Remote and Syncing a Fork
 
 Keep master branch up-to-date
 
 Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches.  
 
-```bash
-$ git fetch <remote-name>
-```
-
 Checkout the branch you will be merging updates into (presumably the branch already exists)
-
-```bash
-$ git checkout <branch-name>
-```
 
 Merge remote-tracking branch updates with branch you are currently checked out on
 
-```bash
-$ git merge <remote-name>/<branch-name>
-```
-
 The remote name is often origin or upstream.
+
+If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
+
+Add upstream remote repository that will be synced with the fork
+
+```bash
+$ git remote add upstream https://github.com/upstream-username/original-repository.git
+```
 
 Origin example
 
@@ -1591,27 +1577,13 @@ $ git checkout <feature-branch-name>
 $ git merge <branch-name>
 ```
 
-
-
 Do not pull remote tracking branch updates (defeats the purpose because you already did $ git fetch (updated remote tracking branch with remote changes), which is $ git fetch + $ git merge in one command)
 
 ```bash
 $ git pull <remote-name>/<branch-name>
 ```
 
-If pull remote tracking branch updates, and have a problem
-
-```bash
-$ git merge --abort
-```
-
-
-
 Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
-
-<!--
-Pushing and pulling via <remote-name>
--->
 
 ```bash
 $ git pull <remote-name> <branch-name>
@@ -1624,44 +1596,9 @@ Pushing and pulling via remote URL (will come in handy later when we are working
 git pull https://github.com/<user-name>/<repo-name> <branch-name>
 git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
-
-<!--
-Here are the generic commands you can use to push and pull
-
-If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
 -->
 
-</td></tr>
 
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Adding an Upstream Remote
-### Syncing a Fork
-
-Add upstream remote repository that will be synced with the fork
-
-```bash
-$ git remote add upstream https://github.com/upstream-username/original-repository.git
-```
-
-Verify new upstream remote (can only push to upstream if have write permission)
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-upstream  https://github.com/upstream-username/original-repository (fetch)
-upstream  https://github.com/upstream-username/original-repository (push)
-```
-
-</td></tr>
 
 
 
