@@ -236,7 +236,6 @@ Animation
 I struggled through, but I was extremely motivated and submitted my first pull request.
 
 </td></tr>
--->
 
 
 <tr><td width="30%">
@@ -649,7 +648,6 @@ We now know that there are two types of accounts
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 34]()
@@ -662,24 +660,6 @@ We are not talking about "write" permission in the context of English. When a us
 
 The way that you contribute to a repo depends on whether you have write permission to it. 
 
-<!--
-Some examples of what I can do within the repo now:
-* Push work (a branch) directly to the repo (instead of via fork)
-* Edit a file
-* Submit pull requests
-* Review pull requests
-
-See write permissions chart for info
--->
-
-<!--
-Shared Repository Model
-* An account where teams of people are working together
-
-User account (example: my user account), Fork and Pull Model
-* A user account is a personal account that a user owns
--->
-
 </td></tr>
 
 
@@ -691,9 +671,11 @@ User account (example: my user account), Fork and Pull Model
 
 ### Why We Need Write Permission
 
-Example: DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
+Example: DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. 
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -721,6 +703,17 @@ This is the "Fork and Pull" Model.
 In addition to using a fork to propose a change to the original repo, you can also use a fork for the starting point of a new idea of your own (depending on the license). 
 
 </td></tr>
+
+
+<!--
+Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
+
+Shared Repository Model
+* An account where teams of people are working together
+
+User account (example: my user account), Fork and Pull Model
+* A user account is a personal account that a user owns
+-->
 
 
 <tr><td width="30%">
