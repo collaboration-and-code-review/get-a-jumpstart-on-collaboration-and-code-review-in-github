@@ -85,9 +85,6 @@ Thank you!
 <!--
 - [Local Branch Process](#local-branch-process)
 
-- ["Shared Repository"](#shared-repository)
-- ["Fork and Pull" Model](#fork-and-pull-model)
-
 ### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
 
 ### Perspective: Checking Out Remote Branches
@@ -923,9 +920,6 @@ We will talk later about fetching changes
 </td></tr>
 
 
-
-
-
 <tr><td width="30%">
 
 ![Slide 51]()
@@ -939,23 +933,10 @@ Animation
 </td></tr>
 
 
-<!--
-<tr><td width="30%">
 
-![Slide 00]()
 
-</td><td>
 
-### Minor Differences
 
-The process will be almost the same regardless of whether we are working from a shared repository or fork and pull.
-
- The two main differences are that if you are using the "Fork and Pull" Model:
-* If you do not have write permission to the source repo, you need to fork the repo before you use the URL to clone it
-* When you submit the pull request, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request (like I said, maintainers do not automatically have write permission to a fork). 
-
-</td></tr>
--->
 
 <tr><td width="30%">
 
@@ -963,7 +944,9 @@ The process will be almost the same regardless of whether we are working from a 
 
 </td><td>
 
-### Local Development Environment
+### Cloning and Changing Directory
+
+What I'm going to show you now is a generic process. It is the same whether you are cloning from a shared repository or a fork. 
 
 I am working in my home directory, which you can see from the command prompt. 
 
@@ -1038,9 +1021,6 @@ $ git commit -m "Your note"
 </td></tr>
 
 
-
-
-
 <tr><td width="30%">
 
 ![Slide 57]()
@@ -1060,6 +1040,19 @@ There will now be a new branch in the repo that is your origin. If you cloned fr
 The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
 
 </td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Recap
+
+</td></tr>
+
 
 
 
