@@ -1636,19 +1636,6 @@ If you are pushing, you need to have write permission to the branch. The remote 
 
 
 
-<!--
-When you fork a repo, such as DjangoCon US website repo, when changes are made within that repo, your fork does not automatically update. You could delete your fork and refork it to have a current version, but if you have a pull request submitted, it's not a best practice to delete your fork, because the pull request becomes inactive and it's more difficult for the maintainer and you to work on. So, let's say you have the fork cloned to your local development environment. You cannot push to the DjangoCon US website repo, because you don't have write permission, but you can pull. 
-
-We've talked about how when you clone a repo, Git considers the repo you cloned from to be a remote repo and assigns the name "origin" to it. 
--->
-
-<!--
-You can add other remote repos to your local clone and give them a name in order to push and pull from them. We will see an example of this later when we are keeping a fork up-to-date. 
-
-If you clone from the “Shared Repository”, you can just fetch changes directly to your local repo because there is no fork 
-If you forked the “Shared Repository" You do this by adding the “Shared Repository” as an upstream, fetching changes, and pushing them to your origin , which is the the fork
--->
-
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1657,24 +1644,6 @@ If you forked the “Shared Repository" You do this by adding the “Shared Repo
 
 ### Adding an Upstream Remote
 ### Syncing a Fork
-
-The git remote add command takes two arguments:
-* A remote name, for example, upstream (you will be using this name in commands to refer to the remote)
-* A remote URL, for example, https://github.com/upstream-username/original-repository
-
-Add a remote
-
-```bash
-$ git remote add <remote-name> <remote-url>
-```
-
-Verify existing remote repository
-
-```bash
-$ git remote -v
-origin  https://github.com/your-username/your-fork (fetch)
-origin  https://github.com/your-username/your-fork (push)
-```
 
 Add upstream remote repository that will be synced with the fork
 
