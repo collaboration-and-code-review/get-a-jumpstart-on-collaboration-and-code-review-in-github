@@ -31,7 +31,6 @@ Thank you!
 - [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
 - [My First Pull Request](#my-first-pull-request)
 - [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
-- [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [What are Git and GitHub?](#what-are-git-and-github)
 - [GitHub: Social Network](#github-social-network)
 - [GitHub: Repositories](#github-repositories)
@@ -52,20 +51,17 @@ Thank you!
 - [Section 2](#section-2)
 - [Fork and Pull Model](#fork-and-pull-model)
 - [Shared Repository Model](#shared-repository-model)
-
-
-
-
-<!--
-### Local Development Environment
-### GitHub Repo Versus Local Directory
-### Working on a File Locally
-### Local Development Environment
--->
-
+- [Local Development Environment](#local-development-environment)
+- [Cloning and Changing Directory](#cloning-and-changing-directory)
+- [GitHub Repo Versus Local Directory](#github-repo-versus-local-directory)
+- [Creating a New Branch](#creating-a-new-branch)
+- [Working on a File Locally](#working-on-a-file-locally)
+- [Committing and Pushing](#commiting-and-pushing)
 - [New Branch](#new-branch)
 - [Submit a Pull Request](#submit-a-pull-request)
 - [Section 3](#section-3)
+
+
 
 ### Perspective: Maintainer
 
@@ -73,12 +69,8 @@ Thank you!
 - [Checking Out Remote Branches](#checking-out-remote-branches)
 
 - [Tidy Up](#tidy-up)
-- [Another Workflow](#another-workflow)
-- [Learn More About Workflow](#learn-more-about-workflow)
-- [Organization and Team Setup](#organization-and-team-setup)
 - [Documentation](#documentation)
 - [Safeguards Checklist](#safeguards-checklist)
-- [Getting Help](#getting-help)
 - [Tips for Getting Started](#tips-for-getting-started)
 - [Thank You](#thank-you)
 
@@ -96,13 +88,15 @@ Thank you!
 ### Forked Repo Model Feature Branch or Pull Request Branch
 
 ### Merge Pull Request Locally and Push to Master Branch
-### Alternatively, Fetch Individual Pull Request
-### How to Deal With Merge Conflicts
 ### Syncing Changes
 ### Adding an Upstream Remote and Syncing a Fork
 
-### Debunking Myths
-
+- [Prerequisites for Getting Started](#prerequisites-for-getting-started)
+- [Another Workflow](#another-workflow)
+- [Learn More About Workflow](#learn-more-about-workflow)
+- [Organization and Team Setup](#organization-and-team-setup)
+- [Getting Help](#getting-help)
+- [Debunking Myths](#debunking-myths)
 - [The Other Way Around](#the-other-way-around)
 -->
 
