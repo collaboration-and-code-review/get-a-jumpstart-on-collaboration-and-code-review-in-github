@@ -760,10 +760,9 @@ Animation
 </td></tr>
 
 
-
 <tr><td width="30%">
 
-![Slide 43]()
+![Slide 41]()
 
 </td><td>
 
@@ -783,7 +782,7 @@ If I submit a pull request and it is accepted, the changes will be pulled into t
 
 <tr><td width="30%">
 
-![Slide 44]()
+![Slide 42]()
 
 </td><td>
 
@@ -796,7 +795,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 45]()
+![Slide 43]()
 
 </td><td>
 
@@ -809,7 +808,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 46]()
+![Slide 44]()
 
 </td><td>
 
@@ -823,7 +822,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 47]()
+![Slide 45]()
 
 </td><td>
 
@@ -831,14 +830,42 @@ Animation
 
 * Fork the repo
 * Clone the fork, which will now be the remote "origin"
-* Make your changes, push the changes back to the fork
+* Make our changes, push the changes back to the fork
 * Submit the pull request
 
-Something I want to point out: I mentioned at the beginning of the presentation that when you clone a repo, in the local folder there will be a hidden folder named .git that will contain Git configurations. Git will track some details about the project here, for instance, where the code was cloned from. It will consider the repo the code came from to be a remote repo and will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo. 
+Something I want to point out: Git will track some details about the project here, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
+
+The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
 
 <!--
-The code in the local clone does not automatically update with the change, and vice versa. 
+Later we will talk about updating the fork
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 46]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 47]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
 
 </td></tr>
 
@@ -869,35 +896,10 @@ Animation
 </td></tr>
 
 
+
 <tr><td width="30%">
 
 ![Slide 50]()
-
-</td><td>
-
-### Fork and Pull Model
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 51]()
-
-</td><td>
-
-### Fork and Pull Model
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 52]()
 
 </td><td>
 
@@ -905,7 +907,7 @@ Animation
 
 * The fork is not needed
 * Clone the shared repository, which will now be the remote "origin"
-* Make your changes, push the changes back to the shared repository
+* Make our changes, push the changes back to the shared repository
 * Submit the pull request
 
 <!--
