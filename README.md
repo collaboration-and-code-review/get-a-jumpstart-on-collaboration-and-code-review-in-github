@@ -26,8 +26,11 @@ Thank you!
 - [Get a Jumpstart on Collaboration and Code Review in GitHub](#get-a-jumpstart-on-collaboration-and-code-review-in-github)
 - [Welcome](#welcome)
 - [About Me](#about-me)
-- [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
 - [Goal](#goal)
+- [Announcing TacoFancy](#announcing-tacofancy)
+- [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
+- [My First Pull Request](#my-first-pull-request)
+- [DjangoCon US Website as Example Project](#djangocon-us-website-as-example-project)
 - [Prerequisites for Getting Started](#prerequisites-for-getting-started)
 - [What are Git and GitHub?](#what-are-git-and-github)
 - [GitHub: Social Network](#github-social-network)
@@ -49,6 +52,9 @@ Thank you!
 - [Section 2](#section-2)
 - [Fork and Pull Model](#fork-and-pull-model)
 - [Shared Repository Model](#shared-repository-model)
+
+
+
 
 <!--
 ### Local Development Environment
@@ -74,9 +80,6 @@ Thank you!
 - [Safeguards Checklist](#safeguards-checklist)
 - [Getting Help](#getting-help)
 - [Tips for Getting Started](#tips-for-getting-started)
-- [Announcing TacoFancy](#announcing-tacofancy)
-- [The One Sentence that Motivated Me to Start Using GitHub](#the-one-sentence-that-motivated-me-to-start-using-github)
-- [My First Pull Request](#my-first-pull-request)
 - [Thank You](#thank-you)
 
 <!--
@@ -177,7 +180,6 @@ At the end of my talk, there will be a slide with a link to Useful Resources whe
 </td></tr>
 
 
-<!--
 <tr><td width="30%">
 
 ![Slide 5]()
