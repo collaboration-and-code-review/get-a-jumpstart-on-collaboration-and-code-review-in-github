@@ -132,7 +132,7 @@ By Katherine "Kati" Michel
 
 ### Welcome 
 
-Thank you for being here. I'm thrilled to have the opportunity to teach you what I've learned you about collaboration and code review in GitHub. 
+Thank you for being here. I'm thrilled to have the opportunity to teach you what I've learned you about collaboration and code review in GitHub as the DjangoCon US Website Chair.
 
 </td></tr>
 
@@ -144,8 +144,6 @@ Thank you for being here. I'm thrilled to have the opportunity to teach you what
 </td><td>
 
 ### About Me 
-
-A lot of what I'm going to talk to you about, I learned as the DjangoCon US Website Chair
 
 * DjangoCon Website Chair
 * DEFNA (Django Events Foundation North America) Board Member
@@ -170,7 +168,9 @@ Engineer
 
 I want to teach you a process that will get you started collaborating and doing code review as quickly as possible. 
 
-I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to now what the process looks like. I want you to understand what it should look like. 
+I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to know what the process looks like. 
+
+At the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today, as well as some other useful resources I couldn’t include because of time constraints. 
 
 At the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today. You will also be able to look at my slides and the video of this online. 
 
@@ -257,30 +257,11 @@ DjangoCon US Website Repo
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 10]()
-
-</td><td>
-
-### Prerequisites for Getting Started
-
-* Create a free [GitHub](https://github.com) account online
-* Install Git on your computer and set your email and username
-* Find and open your computer terminal (a.k.a. command line) on your computer
-* The ability to navigate via terminal would be helpful (I will give a few helpful commands in the Useful Resources section)
-* You might also want to have a text editor of your choice installed, to use to edit files
-
-You will find documentation for all of these things in the Useful Resources section.
-
 <!--
 * By the way, some tasks vary by operating system- check tabs at the top of GitHub Help pages for special OS instructions
 * Not all operating systems use the dollar sign as a command line prompt. Just be aware of that
 * <variable> is a placeholder for the real thing
 -->
-
-</td></tr>
-
 
 <tr><td width="30%">
 
@@ -1761,21 +1742,6 @@ upstream  https://github.com/upstream-username/original-repository (push)
 -->
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Learn More About Workflow
-
-* Git Flow (basically, the workflow we've been using)
-* A Successful Git Branching Model (more advanced)
-* A Successful Git Branching Model Considered Harmful (alternative view)
-* SemVer
-* See also: Atlassian and GitLab docs (you can also find insights in the docs of other software built on top of Git)
-
-</td></tr>
 
 
 <tr><td width="30%">
