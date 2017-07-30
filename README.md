@@ -1491,29 +1491,6 @@ $ git push origin master
 </td></tr>
 
 
-<tr><td width="30%">
-
-![Slide 39]()
-
-</td><td>
-
-### How to Deal With Merge Conflicts
-
-Two ways to resolve a merge conflict
-* In the browser
-* In the local development environment by command line
-
-<!--
-* If two people have made different changes to the same part of the code, Git will tell us there is a conflict and one version of the change will need to be chosen
-
-Addressing merge conflicts- "competing changes", resolving on GitHub/through command line/text editor
-About merge conflicts- Resolve conflicts buttons, can't push until resolved
-Resolving a merge conflict on GitHub- only "competing line changes", otherwise do locally
-"Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge."
-Resolving a merge conflict using the command line- varies by OS, revisit
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
