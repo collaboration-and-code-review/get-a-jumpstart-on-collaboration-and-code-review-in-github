@@ -828,12 +828,14 @@ Animation
 
 ### Fork and Pull Model
 
+I've made a couple of diagrams that I hope will give you an idea of what the process is for working locally for each collaborative development model. 
+
 * Fork the repo
-* Clone the fork, which will now be the remote "origin"
+* Clone the fork. The fork will now be a remote repo known as "origin".
 * Make our changes, push the changes back to the fork
 * Submit the pull request
 
-Something I want to point out: Git will track some details about the project here, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
+Something I want to point out: Git will track some details about the project, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
 
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
 
@@ -896,7 +898,6 @@ Animation
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 50]()
@@ -905,22 +906,27 @@ Animation
 
 ### Shared Repository Model
 
-* The fork is not needed
+Here's what it looks like when we use the "Shared Repository" Model
+
+* The fork is not needed, because we have write permission
 * Clone the shared repository, which will now be the remote "origin"
 * Make our changes, push the changes back to the shared repository
 * Submit the pull request
+* In this situation, the shared repository is our origin
 
 <!--
-In this situation, our origin is the shared repository
 We will talk later about fetching changes
 -->
 
 </td></tr>
 
 
+
+
+
 <tr><td width="30%">
 
-![Slide 53]()
+![Slide 51]()
 
 </td><td>
 
