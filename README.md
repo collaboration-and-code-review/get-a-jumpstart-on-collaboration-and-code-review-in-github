@@ -1695,7 +1695,8 @@ upstream  https://github.com/upstream-username/original-repository (push)
 </td></tr>
 
 
-<!--
+
+
 <tr><td width="30%">
 
 ![Slide 30]()
@@ -1710,9 +1711,6 @@ upstream  https://github.com/upstream-username/original-repository (push)
 * Odds and ends
 
 </td><td>
--->
-
-
 
 
 <tr><td width="30%">
@@ -1744,19 +1742,31 @@ Setting Up Repo Fail Safes
 
 Hopefully, you will wnat to create an environment for your project that is welcoming and make the process of contributing fast, easy, and enjoyable. 
 
-<!--
-* Draft community guidelines
-
 * README.md
+* LICENSE
+* CODE_OF_CONDUCT.md
+* CONTRIBUTING.md
+
+</td></tr>
+
+<!--
 * LICENSE (auto-generate, legality of contributions, attribution)
 * CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
+-->
 
-### Issue and Pull Request Templates
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Documentation
 
 * ISSUE_TEMPLATE
 * PULL_REQUEST_TEMPLATE
 
+<!--
 * Issues Tab
 * Pull Requests Tab
 -->
