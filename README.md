@@ -1425,11 +1425,13 @@ Push additional commits to organizational feature branch or pull request branch
 $ git push origin <branch-name> 
 ```
 
+<!--
 Push additional commits to organizational feature branch or pull request branch, if local branch name is different than pull request branch name
  
 ```bash
 $ git push origin <local-branch-name>:<remote-branch-name>
 ```
+-->
 
 </td></tr>
 
@@ -1527,8 +1529,7 @@ $ git push <remote-name> :<branch-name>
 
 
 <!--
-### Syncing Changes
-### Adding an Upstream Remote and Syncing a Fork
+### Syncing
 
 Keep master branch up-to-date
 
@@ -1538,14 +1539,22 @@ Checkout the branch you will be merging updates into (presumably the branch alre
 
 Merge remote-tracking branch updates with branch you are currently checked out on
 
-The remote name is often origin or upstream.
-
 If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
 
-Add upstream remote repository that will be synced with the fork
+
+
+Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
 
 ```bash
-$ git remote add upstream https://github.com/upstream-username/original-repository.git
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
 Origin example
@@ -1554,6 +1563,25 @@ Origin example
 $ git fetch origin
 $ git checkout master
 $ git merge origin/master
+```
+
+Keep feature branch up-to-date (often merging master into feature branch)
+
+```bash
+$ git checkout <feature-branch-name>
+$ git merge <branch-name>
+```
+
+Do not pull remote tracking branch updates (defeats the purpose because you already did $ git fetch (updated remote tracking branch with remote changes), which is $ git fetch + $ git merge in one command)
+
+### Adding an Upstream Remote and Syncing a Fork
+
+You can name the additional remote something else, but upstream is the common convention.
+
+Add upstream remote repository that will be synced with the fork
+
+```bash
+$ git remote add upstream https://github.com/upstream-username/original-repository.git
 ```
 
 Upstream example (syncing a fork)
@@ -1568,33 +1596,6 @@ Push the changes to your corresponding branch in the forked repository in GitHub
 
 ```bash
 $ git push origin master
-```
-
-Keep feature branch up-to-date (often merging master into feature branch)
-
-```bash
-$ git checkout <feature-branch-name>
-$ git merge <branch-name>
-```
-
-Do not pull remote tracking branch updates (defeats the purpose because you already did $ git fetch (updated remote tracking branch with remote changes), which is $ git fetch + $ git merge in one command)
-
-```bash
-$ git pull <remote-name>/<branch-name>
-```
-
-Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 -->
 
