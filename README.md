@@ -1333,6 +1333,40 @@ Any person with write permission to a remote branch can fetch it to their local 
 </td></tr>
 
 
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Pulling Versus Fetching and Merging
+
+* When you pull, you are fetching and merging in one command
+* When you fetch and merge, you are executing each command separately
+
+<!--
+Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
+
+```bash
+$ git pull <remote-name> <branch-name>
+$ git push <remote-name> <branch-name>
+```
+
+Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
+
+```bash
+git pull https://github.com/<user-name>/<repo-name> <branch-name>
+git push https://github.com/<user-name>/<repo-name> <branch-name>
+```
+
+If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
+-->
+
+</td></tr>
+
+
+
 <tr><td width="30%">
 
 ![Slide 44]()
@@ -1349,6 +1383,10 @@ There are three types of branches:
 * remote branch (in a remote repo)
 * remote-tracking branch (inside of the hidden .git folder, which stores info)
 * local branch
+
+<!--
+Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
+-->
 
 </td></tr>
 
@@ -1533,29 +1571,8 @@ $ git push <remote-name> :<branch-name>
 
 Keep master branch up-to-date
 
-Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches.  
-
 Checkout the branch you will be merging updates into (presumably the branch already exists)
-
 Merge remote-tracking branch updates with branch you are currently checked out on
-
-If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
-
-
-
-Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
 
 Origin example
 
@@ -1571,8 +1588,6 @@ Keep feature branch up-to-date (often merging master into feature branch)
 $ git checkout <feature-branch-name>
 $ git merge <branch-name>
 ```
-
-Do not pull remote tracking branch updates (defeats the purpose because you already did $ git fetch (updated remote tracking branch with remote changes), which is $ git fetch + $ git merge in one command)
 
 ### Adding an Upstream Remote and Syncing a Fork
 
