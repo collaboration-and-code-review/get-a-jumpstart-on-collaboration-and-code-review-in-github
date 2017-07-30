@@ -676,6 +676,46 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 36]()
+
+</td><td>
+
+### Write Permission and Collaboration Examples
+
+Think about the word "shared". A shared repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on them together. 
+
+Example: DjangoCon US Website Repo as a "Shared Repository"
+
+This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork. This is called the "Shared Repository" Model. 
+
+The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
+
+Example: DjangoCon US Website Repo "Fork and Pull" Model
+
+When I first wanted to contribute to the DjangoCon US website, I was not a maintainer, so I did not have write permission to the repo. So I made a copy (or fork) of the DjangoCon US website repo in my user account, made a change, and submitted a pull request to the Django US website repo. When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo. 
+
+This is the "Fork and Pull" Model. 
+
+<!--
+In addition to using a fork to propose a change to the original repo, you can also use a fork for the starting point of a new idea of your own (depending on the license). 
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 37]()
+
+</td><td>
+
+### Write Permission and Collaboration Examples
+
+Animation
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -686,34 +726,9 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 
 ### Write Permission and Collaboration Examples
 
-Think about the word "shared". A shared repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on them together. 
-
-Example: DjangoCon US Website Repo as a "Shared Repository"
-
-This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo (usually using a feature branch). I no longer need a fork. This is called the "Shared Repository" Model. 
-
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
-
-Example: DjangoCon US Website Repo "Fork and Pull" Model
-
-Wen I first wanted to contribute to the DangoCon US website, I was not a maintainer, so I did not have write permission to the repo. So I made a copy (fork0 of the DjangoCon US website repo in my user account, created a feature branch, made a change, and submitted a pull request to the Django US website repo. When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo (that's why it's called a pull request. 
-
-This is the "Fork and Pull" Model. 
-
-In addition to using a fork to propose a change to the original repo, you can also use a fork for the starting point of a new idea of your own (depending on the license). 
+Animation
 
 </td></tr>
-
-
-<!--
-Occassionally, a DjangoCon organization account owner may give certain users write permission to be maintainers. There is often a level of trust involved in having write permission.
-
-Shared Repository Model
-* An account where teams of people are working together
-
-User account (example: my user account), Fork and Pull Model
-* A user account is a personal account that a user owns
--->
 
 
 <tr><td width="30%">
@@ -722,9 +737,12 @@ User account (example: my user account), Fork and Pull Model
 
 </td><td>
 
-### Write Permission and Collaboration Examples
+### How to Fork a Repo
 
-Animation
+We've gone to the DjangoCon US website repo. 
+
+* Click the "Fork" button
+* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account. There will be a message notifying you that it is being forked.. 
 
 </td></tr>
 
@@ -735,44 +753,12 @@ Animation
 
 </td><td>
 
-### Write Permission and Collaboration Examples
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 41]()
-
-</td><td>
-
-### How to Fork a Repo
-
-DjangoCon US website repo is a shared repo
-
-* Click the "Fork" button
-* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account, and notify you that it is forking it. 
-
-<!--
-Forking graphic
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 42]()
-
-</td><td>
-
 ### How to Fork a Repo
 
 Animation
 
 </td></tr>
+
 
 
 <tr><td width="30%">
