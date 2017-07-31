@@ -921,7 +921,7 @@ Let's go back to the screenshot of my local development environment.
 
 * In the background I have GitHub open in the browser
 * In front of that, I have my local folder window and my terminal
-* You can see that I am working in my home directory. The name of home directory is at the top of the folder window, terminal, and in front of the command line prompt
+* You can see that I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
 * I am going to use the URL from the repo I have write permission to to clone the repo into the local development environment. The command is:
 
 * The folder in the home directory with the same name as the GitHub repo and filled with the contents of the repo
@@ -938,13 +938,15 @@ Create and checkout (switch) to a feature branch, branching off of the branch yo
 
 Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
-Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
+Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to)
 
 There will now be a new branch in the repo that is your origin. If you cloned from the fork, the new branch will be in your fork, if you cloned from the shared repo, the new branch will in the shared repo. 
 
-The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
+The branch will not be affecting anything else. It's just there.
 
 <!--
+This can also be used to push additional commits
+
 * I can make changes to the code, then commit the changes so that Git will record the changes in version control history
 
 ```bash
@@ -974,6 +976,7 @@ $ git push origin <branch-name>
 -->
 
 </td></tr>
+
 
 
 
@@ -1183,6 +1186,7 @@ Animation
 Animation
 
 </td></tr>
+
 
 
 
