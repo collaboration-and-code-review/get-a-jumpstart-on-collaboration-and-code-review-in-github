@@ -1275,14 +1275,7 @@ Animation
 
 <!--
 Perspective: Reviewing Pull Requests
-Point of view: organizational maintainer
-Organizational repo is your “origin”
-Forked repos branches are remotes
-Pull requests are branches
 -->
-
-
-
 
 <tr><td width="30%">
 
@@ -1307,11 +1300,15 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 ### Pull Request Review Process
 
-* If you are a repo maintainer, you will receive a message (by browser or email, based on your notification preferences) to let you know there is a pull request
+* If you are a repo maintainer, you will receive a notification (by browser or email, based on your notification preferences) to let you know there is a pull request
 * Follow the link to the pull request in the repo pull request tab in the browser
 * Look over the information about the pull request provided by the contributor
 
 * There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
+<!--
+Click the link to reveal pull request instructions
+-->
 
 </td></tr>
 
@@ -1324,7 +1321,7 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 ### Checking Out Remote Branches
 
-Even though the command line instructions are for reviewing pull requests locally, they are really for remote branches in general. 
+Even though the command line instructions say they are for reviewing pull requests locally, they are really for remote branches in general. 
 
 Like we said earlier, anyone with write permission to a feature branch or pull request branch can work on them in much the same way. The main difference is that with a pull request branch, a maintainer will decide whether  to merge the branch into the branch it is intended to be merged with. 
 
@@ -1569,6 +1566,10 @@ $ git push <remote-name> :<branch-name>
 <!--
 ### Syncing
 
+Whichever collaborative development model you are using, you can fetch the updates from the shared repository and merge them into your local development environment. 
+
+If you are working from the "Shared Repository" Model, you are fetching from the origin. 
+
 Keep master branch up-to-date
 
 Checkout the branch you will be merging updates into (presumably the branch already exists)
@@ -1590,6 +1591,9 @@ $ git merge <branch-name>
 ```
 
 ### Adding an Upstream Remote and Syncing a Fork
+
+If you are working from the "Fork and Pull" Model, you are fetching from the upstream.
+
 
 You can name the additional remote something else, but upstream is the common convention.
 
