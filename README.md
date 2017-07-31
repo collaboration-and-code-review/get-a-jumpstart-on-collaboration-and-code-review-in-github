@@ -924,17 +924,9 @@ Let's go back to the screenshot of my local development environment.
 * You can see that I am working in my home directory. The name of home directory is at the top of the folder window, terminal, and in front of the command line prompt
 * I am going to use the URL from the repo I have write permission to to clone the repo into the local development environment. The command is:
 
-```bash
-$ git clone <repo-url>
-```
-
 * The folder in the home directory with the same name as the GitHub repo and filled with the contents of the repo
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
 * I will now tell my operating system to change directory into the folder so that I can work there
-
-```bash
-$ cd <repo-name>
-```
 
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
@@ -942,28 +934,11 @@ There are some files that you will only see online because they are not needed l
 
 Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
 
-```bash
-$ git branch
-```
-
 Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
-
-```bash
-$ git checkout -b <branch-name>
-```
 
 Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
-
 Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
-
-```bash
-$ git push origin <branch-name>
-```
 
 There will now be a new branch in the repo that is your origin. If you cloned from the fork, the new branch will be in your fork, if you cloned from the shared repo, the new branch will in the shared repo. 
 
@@ -971,6 +946,31 @@ The branch will not be affecting anything else. If you never did anything else w
 
 <!--
 * I can make changes to the code, then commit the changes so that Git will record the changes in version control history
+
+```bash
+$ git clone <repo-url>
+```
+
+```bash
+$ cd <repo-name>
+```
+
+```bash
+$ git branch
+```
+
+```bash
+$ git checkout -b <branch-name>
+```
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
+
+```bash
+$ git push origin <branch-name>
+```
 -->
 
 </td></tr>
@@ -1186,17 +1186,6 @@ Animation
 
 
 
-<!--
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Recap
-
-</td></tr>
--->
 
 
 <tr><td width="30%">
@@ -1277,6 +1266,17 @@ Animation
 
 </td></tr>
 
+<!--
+<tr><td width="30%">
+
+![Slide 73]()
+
+</td><td>
+
+### Command Recap
+
+</td></tr>
+-->
 
 <tr><td width="30%">
 
@@ -1496,6 +1496,7 @@ $ git push origin <local-branch-name>:<remote-branch-name>
 </td></tr>
 
 
+
 <tr><td width="30%">
 
 ![Slide 00]()
@@ -1654,7 +1655,7 @@ $ git push origin master
 
 </td><td>
 
-### Overview
+### Section 4
 
 * Determine which collaboration approach to use (there are two)
 * Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
@@ -1662,6 +1663,7 @@ $ git push origin master
 * Odds and ends
 
 </td><td>
+
 
 
 <tr><td width="30%">
