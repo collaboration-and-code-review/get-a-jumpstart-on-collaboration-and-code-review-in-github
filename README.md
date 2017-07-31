@@ -265,7 +265,7 @@ DjangoCon US Website Repo
 
 ### What are Git and GitHub?
 
-GitHub is a website built on the version control software Git. Git is installed in our local development environment and used in the command line of your computer. 
+GitHub is a website built on the version control software Git.  
 
 <!--
 GitHub Website Landing Page
@@ -350,7 +350,7 @@ When we are working on code, we can't do everything in the GitHub website.
 
 For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. 
 
-There is where Git is very useful. 
+There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. 
 
 Here is a screenshot of my local development environment. 
 
@@ -358,8 +358,7 @@ Here is a screenshot of my local development environment.
 * In front of that, I have my local folder window and my terminal
 * I am going to insert the URL (web address) from the browser into a command git clone <url> (copy and paste) and hit enter
 * A folder will appear in my home directory by the same name as the GitHub repo and filled with the contents of the repo. Making a copy of a repo locally is called cloning.
-* I now have a copy of the code online in the GitHub repo and a copy in my local development environment
-* The local folder will also contain another hidden folder named .git that contains the Git configurations.  
+* I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
 * I can make changes to the code, then commit the changes so that Git will record the changes in version control history
 * I can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
 * Meanwhile, other users can work on the code on their computer and push the changes back to GitHub 
@@ -475,9 +474,6 @@ But both feature branches (a.k.a. topic branches) and pull request branches are 
 
 </td></tr>
 
-<!--
-This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
--->
 
 <tr><td width="30%">
 
@@ -596,7 +592,7 @@ Animation
 
 ### The Two Collaborative Development Models
 
-A Collaborative Development Model is a fancy term for how users contribute to a repo. There are two different ways to contribute. 
+A Collaborative Development Model is a fancy term for how users contribute to a repo. There are two different collaboration approaches. 
 
 The two Collaborative Development Models
 * "Shared Repository" Model
@@ -1350,6 +1346,10 @@ Like we said earlier, anyone with write permission to a feature branch or pull r
 
 Any person with write permission to a remote branch can fetch it to their local development environment and add commits to it, even if a pull request has already been made. If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is merged. 
 
+<!--
+This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
+-->
+
 </td></tr>
 
 
@@ -1405,6 +1405,8 @@ There are three types of branches:
 * local branch
 
 <!--
+* The local folder will also contain another hidden folder named .git that contains the Git configurations. 
+
 Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
 -->
 
