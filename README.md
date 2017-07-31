@@ -259,7 +259,7 @@ DjangoCon US Website Repo
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 10]()
 
 </td><td>
 
@@ -277,7 +277,7 @@ Git command line- verifying Git is installed and the version
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 11]()
 
 </td><td>
 
@@ -294,7 +294,7 @@ GitHub is a social network. You can:
 
 <tr><td width="30%">
 
-![Slide 13]()
+![Slide 12]()
 
 </td><td>
 
@@ -308,6 +308,19 @@ For example, if you go to the DjangoCon US organization account you will see a l
 DjangoCon US Organization Account List of Repositories
 DjangoCon US Website Repo
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 13]()
+
+</td><td>
+
+### GitHub: Repositories
+
+Animation
 
 </td></tr>
 
@@ -328,19 +341,6 @@ Animation
 <tr><td width="30%">
 
 ![Slide 15]()
-
-</td><td>
-
-### GitHub: Repositories
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 16]()
 
 </td><td>
 
@@ -370,6 +370,19 @@ Here is a screenshot of my local development environment.
 
 <tr><td width="30%">
 
+![Slide 16]()
+
+</td><td>
+
+### Local Development Environment
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 17]()
 
 </td><td>
@@ -387,19 +400,6 @@ Animation
 
 </td><td>
 
-### Local Development Environment
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 19]()
-
-</td><td>
-
 ### Collaboration and Code Review Best Practice Workflow
 
 In order to be able to increase your level of responsibility, we need to have the freedom to switch between multiple tasks. 
@@ -412,7 +412,7 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 19]()
 
 </td><td>
 
@@ -423,6 +423,19 @@ When I first started using GitHub, I would go into my own GitHub repo, click on 
 This is fine, but imagine if there were multiple people all working on a repo and all of them were going into files and making changes and saving them. It wouldn't be very practical. For instance, how would you give feedback? 
 
 There is a way to make changes that enables you to switch between multiple tasks the way that you need to to collaborate and do code review.
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### Working on a File in GitHub
+
+Animation 
 
 </td></tr>
 
@@ -446,19 +459,6 @@ Animation
 
 </td><td>
 
-### Working on a File in GitHub
-
-Animation 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 23]()
-
-</td><td>
-
 ### Branches
 
 We need to use branches instead. 
@@ -478,6 +478,19 @@ But both feature branches (a.k.a. topic branches) and pull request branches are 
 <!--
 This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
 -->
+
+<tr><td width="30%">
+
+![Slide 23]()
+
+</td><td>
+
+### Branches
+
+Animation
+
+</td></tr>
+
 
 <tr><td width="30%">
 
@@ -524,9 +537,11 @@ Animation
 
 </td><td>
 
-### Branches
+### How to Create a Branch
 
-Animation
+Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. When you click to save the changes, they will not save in the current file. Instead, a new branch will be created. 
+
+You can also create and work on branches through the command line in your local development environment, which I will show you later. 
 
 </td></tr>
 
@@ -539,21 +554,6 @@ Animation
 
 ### How to Create a Branch
 
-Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. When you click to save the changes, they will not save in the current file. Instead, a new branch will be created. 
-
-You can also create and work on branches through the command line in your local development environment, which I will show you later. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 29]()
-
-</td><td>
-
-### How to Create a Branch
-
 Animation
 
 </td></tr>
@@ -561,7 +561,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 29]()
 
 </td><td>
 
@@ -577,7 +577,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 30]()
 
 </td><td>
 
@@ -590,7 +590,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 31]()
 
 </td><td>
 
@@ -609,7 +609,7 @@ The two different collaborative development models typically correspond to the t
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 32]()
 
 </td><td>
 
@@ -624,7 +624,7 @@ We now know that there are two types of accounts
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 33]()
 
 </td><td>
 
@@ -639,7 +639,7 @@ The way that you contribute to a repo depends on whether you have write permissi
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 34]()
 
 </td><td>
 
@@ -652,7 +652,7 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 35]()
 
 </td><td>
 
@@ -681,6 +681,19 @@ In addition to using a fork to propose a change to the original repo, you can al
 
 <tr><td width="30%">
 
+![Slide 36]()
+
+</td><td>
+
+### Write Permission and Collaboration Examples
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 37]()
 
 </td><td>
@@ -698,19 +711,6 @@ Animation
 
 </td><td>
 
-### Write Permission and Collaboration Examples
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 39]()
-
-</td><td>
-
 ### How to Fork a Repo
 
 We've gone to the DjangoCon US website repo. 
@@ -723,7 +723,7 @@ We've gone to the DjangoCon US website repo.
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 39]()
 
 </td><td>
 
@@ -736,7 +736,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 41]()
+![Slide 40]()
 
 </td><td>
 
@@ -756,7 +756,7 @@ If I submit a pull request and it is accepted, the changes will be pulled into t
 
 <tr><td width="30%">
 
-![Slide 42]()
+![Slide 41]()
 
 </td><td>
 
@@ -769,7 +769,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 43]()
+![Slide 42]()
 
 </td><td>
 
@@ -782,7 +782,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 44]()
+![Slide 43]()
 
 </td><td>
 
@@ -796,7 +796,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 45]()
+![Slide 44]()
 
 </td><td>
 
@@ -816,6 +816,19 @@ The GitHub repo does not automatically update when we make a change locally and 
 <!--
 Later we will talk about updating the fork
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 45]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
 
 </td></tr>
 
@@ -865,19 +878,6 @@ Animation
 
 </td><td>
 
-### Fork and Pull Model
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 50]()
-
-</td><td>
-
 ### Shared Repository Model
 
 Here's what it looks like when we use the "Shared Repository" Model
@@ -897,7 +897,7 @@ We will talk later about fetching changes
 
 <tr><td width="30%">
 
-![Slide 51]()
+![Slide 50]()
 
 </td><td>
 
@@ -910,9 +910,10 @@ Animation
 
 
 
+
 <tr><td width="30%">
 
-![Slide 52]()
+![Slide 51]()
 
 </td><td>
 
@@ -938,6 +939,57 @@ $ git clone <repo-url>
 ```bash
 $ cd <repo-name>
 ```
+
+You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
+
+There are some files that you will only see online because they are not needed locally, and vice versa.
+
+Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
+
+```bash
+$ git branch
+```
+
+Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+
+```bash
+$ git checkout -b <branch-name>
+```
+
+Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
+
+```bash
+$ git add .
+$ git commit -m "Your note"
+```
+
+Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
+
+```bash
+$ git push origin <branch-name>
+```
+
+There will now be a new branch in the repo that is your origin. If you cloned from the fork, the new branch will be in your fork, if you cloned from the shared repo, the new branch will in the shared repo. 
+
+The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
+
+<!--
+* I can make changes to the code, then commit the changes so that Git will record the changes in version control history
+-->
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 52]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
 
 </td></tr>
 
@@ -1013,13 +1065,11 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### GitHub Repo Versus Local Directory
 
 Animation
 
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -1028,11 +1078,9 @@ Animation
 
 </td><td>
 
-### GitHub Repo Versus Local Directory
+### Create a Branch
 
-You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
-
-There are some files that you will only see online because they are not needed locally, and vice versa.
+Animation
 
 </td></tr>
 
@@ -1045,17 +1093,7 @@ There are some files that you will only see online because they are not needed l
 
 ### Create a Branch
 
-Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
-
-```bash
-$ git branch
-```
-
-Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
-
-```bash
-$ git checkout -b <branch-name>
-```
+Animation
 
 </td></tr>
 
@@ -1068,6 +1106,8 @@ $ git checkout -b <branch-name>
 
 ### Create a Branch
 
+Animation
+
 </td></tr>
 
 
@@ -1079,6 +1119,8 @@ $ git checkout -b <branch-name>
 
 ### Create a Branch
 
+Animation
+
 </td></tr>
 
 
@@ -1088,7 +1130,9 @@ $ git checkout -b <branch-name>
 
 </td><td>
 
-### Create a Branch
+### Working on a File Locally
+
+Animation
 
 </td></tr>
 
@@ -1101,18 +1145,10 @@ $ git checkout -b <branch-name>
 
 ### Working on a File Locally
 
-Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
-
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
+Animation
 
 </td></tr>
 
-<!--
-* I can make changes to the code, then commit the changes so that Git will record the changes in version control history
--->
 
 <tr><td width="30%">
 
@@ -1120,7 +1156,9 @@ $ git commit -m "Your note"
 
 </td><td>
 
-### Working on a File Locally
+### Committing and Pushing
+
+Animation
 
 </td></tr>
 
@@ -1133,15 +1171,7 @@ $ git commit -m "Your note"
 
 ### Committing and Pushing
 
-Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to); This can also be used to push additional commits
-
-```bash
-$ git push origin <branch-name>
-```
-
-There will now be a new branch in the repo that is your origin. If you cloned from the fork, the new branch will be in your fork, if you cloned from the shared repo, the new branch will in the shared repo. 
-
-The branch will not be affecting anything else. If you never did anything else with it, it would just exist there.
+Animation
 
 </td></tr>
 
@@ -1154,18 +1184,11 @@ The branch will not be affecting anything else. If you never did anything else w
 
 ### Committing and Pushing
 
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 68]()
-
-</td><td>
-
-### Committing and Pushing
+Animation
 
 </td></tr>
+
+
 
 <!--
 <tr><td width="30%">
