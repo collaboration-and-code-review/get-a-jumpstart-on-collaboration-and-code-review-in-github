@@ -904,16 +904,29 @@ Animation
 </td></tr>
 
 
-
-
-
 <tr><td width="30%">
 
 ![Slide 51]()
 
 </td><td>
 
-### Cloning and Changing Directory
+### Shared Repository Model
+
+Animation
+
+</td></tr>
+
+
+
+
+
+<tr><td width="30%">
+
+![Slide 52]()
+
+</td><td>
+
+### Local Development Environment
 
 What I'm going to show you now is a generic process. It is the same whether you are cloning from a shared repository or a fork. 
 
@@ -932,7 +945,7 @@ You can pull up your GitHub repo and your local folder and compare the files. Yo
 
 There are some files that you will only see online because they are not needed locally, and vice versa.
 
-Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master, which is the norm)
+Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master)
 
 Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
 
@@ -940,9 +953,7 @@ Make your change, then add, commit, create a message (if you don't use -m, a Vim
 
 Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to)
 
-There will now be a new branch in the repo that is your origin. If you cloned from the fork, the new branch will be in your fork, if you cloned from the shared repo, the new branch will in the shared repo. 
-
-The branch will not be affecting anything else. It's just there.
+There will now be a new branch in the repo that is your origin. 
 
 <!--
 This can also be used to push additional commits
@@ -975,22 +986,11 @@ $ git push origin <branch-name>
 ```
 -->
 
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 52]()
-
-</td><td>
-
-### Cloning and Changing Directory
-
-Animation
 
 </td></tr>
+
+
+
 
 
 <tr><td width="30%">
@@ -1000,8 +1000,6 @@ Animation
 </td><td>
 
 ### Cloning and Changing Directory
-
-Animation
 
 </td></tr>
 
