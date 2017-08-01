@@ -226,7 +226,7 @@ Animation
 
 ### My First Pull Request
 
-I struggled through, but I was extremely motivated and submitted my first pull request.
+I struggled through (I didn't know what the process was supposed to look like), but I was extremely motivated and submitted my first pull request.
 
 </td></tr>
 
@@ -287,7 +287,7 @@ GitHub is a social network. You can:
 * Make a user account and profile
 * Follow people
 * Follow their activity in your newsfeed
-* Find interesting projects
+* Find interesting projects (news)
 
 </td></tr>
 
@@ -592,13 +592,13 @@ Animation
 
 ### The Two Collaborative Development Models
 
-A Collaborative Development Model is a fancy term for how users contribute to a repo. There are two different collaboration approaches. 
+A Collaborative Development Model is a fancy term for how users contribute to a repo. There are two different models. 
 
 The two Collaborative Development Models
 * "Shared Repository" Model
 * "Fork and Pull" Model
 
-The two different collaborative development models typically correspond to the two different account types
+The two different models typically correspond to the two different account types
 
 </td></tr>
 
@@ -882,7 +882,6 @@ Here's what it looks like when we use the "Shared Repository" Model
 * Clone the shared repository, which will now be the remote "origin"
 * Make our changes, push the changes back to the shared repository
 * Submit the pull request
-* In this situation, the shared repository is our origin
 
 <!--
 We will talk later about fetching changes
