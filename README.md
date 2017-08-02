@@ -1563,10 +1563,8 @@ Hopefully, you will wnat to create an environment for your project that is welco
 
 ### Go For It!
 
-By the way, 
-
 <!--
-Volunteer to help with website
+By the way, if you want to contribute to the DjangoCon US website next year, we welcome people of all skill levels and we have drastically increased diversity and number of contributions. If you are interested, let us know.
 -->
 
 </td></tr>
