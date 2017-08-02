@@ -926,8 +926,8 @@ Let's go back to the screenshot of my local development environment.
 
 * I am going to use the URL from the repo to clone it into the home directory. 
 
+
 * The folder in the home directory with the same name as the GitHub repo and filled with the contents of the repo
-* I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
 * I will now tell my operating system to change directory into the folder so that I can work there
 
 ### GitHub Repo Versus Local Directory
@@ -950,7 +950,7 @@ Add and commit our change to git version control, create a message
 
 Push the new branch to GitHub to your origin (the repo you cloned from that you have write permission to)
 
-There will now be a new branch in the repo that is your origin. 
+There will now be a new branch in that repo. 
 
 </td></tr>
 
