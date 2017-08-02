@@ -905,7 +905,6 @@ Animation
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 52]()
@@ -998,7 +997,7 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### GitHub Repo Versus Local Directory
 
 Animation
 
@@ -1011,7 +1010,7 @@ Animation
 
 </td><td>
 
-### GitHub Repo Versus Local Directory
+### Create a Branch
 
 Animation
 
@@ -1037,7 +1036,7 @@ Animation
 
 </td><td>
 
-### Create a Branch
+### Working on a File Locally
 
 Animation
 
@@ -1050,7 +1049,7 @@ Animation
 
 </td><td>
 
-### Create a Branch
+### Committing and Pushing
 
 Animation
 
@@ -1060,71 +1059,6 @@ Animation
 <tr><td width="30%">
 
 ![Slide 62]()
-
-</td><td>
-
-### Create a Branch
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 63]()
-
-</td><td>
-
-### Working on a File Locally
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 64]()
-
-</td><td>
-
-### Working on a File Locally
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 65]()
-
-</td><td>
-
-### Committing and Pushing
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 66]()
-
-</td><td>
-
-### Committing and Pushing
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 67]()
 
 </td><td>
 
@@ -1140,7 +1074,7 @@ Animation
 <!--
 <tr><td width="30%">
 
-![Slide 73]()
+![Slide 63]()
 
 </td><td>
 
