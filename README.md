@@ -963,6 +963,8 @@ This can also be used to push additional commits
 
 ### Cloning and Changing Directory
 
+Animation
+
 </td></tr>
 
 
@@ -1514,43 +1516,6 @@ $ git push origin master
 
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-
-### Tidy Up
-
-When the pull request is accepted, delete the branch. It's good practice to delete merged or stale branches.  
-
-* Close pull request
-* Revert pull request (hopefully not needed)
-* Delete local and remote (in browser) feature branch
-
-Delete a branch
-
-```bash
-$ git branch -d  <branch-name>
-```
-
-Force delete branch
-
-```bash
-$ git branch -D  <branch-name>
-```
-
-Delete remote branch
-
-```bash
-$ git push <remote-name> :<branch-name>
-```
-
-</td></tr>
-
-
-
 
 
 <!--
@@ -1717,6 +1682,8 @@ Hopefully, you will wnat to create an environment for your project that is welco
 
 ### Go For It!
 
+By the way, 
+
 <!--
 Volunteer to help with website
 -->
@@ -1739,10 +1706,6 @@ https://git.io/v7LGr
 
 * Twitter handle: @KatiMichel
 * GitHub username: KatherineMichel
-
-<!--
-Talk slides and other resources online
--->
 
 </td></tr>
 
