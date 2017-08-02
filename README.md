@@ -919,43 +919,25 @@ What I'm going to show you now is a generic process that you can use for a share
 Let's go back to the screenshot of my local development environment. 
 
 * I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
-
-### Cloning and Changing Directory
-
-
-
 * I am going to use the URL from the repo to clone it into the home directory. 
 
+* The folder will be in the home directory with the same name as the GitHub repo and filled with the contents of the repo
 
-* The folder in the home directory with the same name as the GitHub repo and filled with the contents of the repo
-* I will now tell my operating system to change directory into the folder so that I can work there
-
-### GitHub Repo Versus Local Directory
+* I will now change directory into the folder so that I can work there
 
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
-### Create a Branch
+Verify which branch you are checked out on (important if more than one branch); initially, you will be checkout out on the default branch (in this case master)
 
-Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master)
-
-Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
-
-### Working on a File Locally
+Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, because a copy, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
 
 Open a file in the text editor. Make your change and save it.
-
-### Committing and Pushing
 
 Add and commit our change to git version control, create a message
 
 Push the new branch to GitHub to your origin (the repo you cloned from that you have write permission to)
 
-There will now be a new branch in that repo. 
-
 </td></tr>
-
-
-
 
 
 <tr><td width="30%">
@@ -1155,7 +1137,17 @@ Animation
 
 
 
+<!--
+<tr><td width="30%">
 
+![Slide 73]()
+
+</td><td>
+
+### Command Recap
+
+</td></tr>
+-->
 
 <tr><td width="30%">
 
@@ -1164,6 +1156,8 @@ Animation
 </td><td>
 
 ### New Branch
+
+There will now be a new branch in that repo. 
 
 <!--
 You can toggle back and forth between the branches by clicking on the branches in the branches tab. 
@@ -1220,6 +1214,8 @@ If you are submitting the pull request a forked repo:
 
 ### Submit a Pull Request
 
+Animation
+
 </td></tr>
 
 
@@ -1235,17 +1231,6 @@ Animation
 
 </td></tr>
 
-<!--
-<tr><td width="30%">
-
-![Slide 73]()
-
-</td><td>
-
-### Command Recap
-
-</td></tr>
--->
 
 <tr><td width="30%">
 
@@ -1510,9 +1495,6 @@ $ git push origin master
 
 
 
-
-
-
 <!--
 ### Syncing
 
@@ -1540,9 +1522,6 @@ $ git checkout <feature-branch-name>
 $ git merge <branch-name>
 ```
 -->
-
-
-
 
 
 
