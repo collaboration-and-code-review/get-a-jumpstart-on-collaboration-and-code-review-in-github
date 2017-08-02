@@ -922,19 +922,30 @@ Let's go back to the screenshot of my local development environment.
 * In the background I have GitHub open in the browser
 * In front of that, I have my local folder window and my terminal
 * You can see that I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
+
+### Cloning and Changing Directory
+
 * I am going to use the URL from the repo I have write permission to to clone the repo into the local development environment. The command is:
 
 * The folder in the home directory with the same name as the GitHub repo and filled with the contents of the repo
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
 * I will now tell my operating system to change directory into the folder so that I can work there
 
+### GitHub Repo Versus Local Directory
+
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
 There are some files that you will only see online because they are not needed locally, and vice versa.
 
+### Create a Branch
+
 Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master)
 
 Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+
+### Working on a File Locally
+
+### Committing and Pushing
 
 Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
 
