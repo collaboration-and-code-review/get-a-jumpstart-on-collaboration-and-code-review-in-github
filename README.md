@@ -668,10 +668,6 @@ When I first wanted to contribute to the DjangoCon US website, I was not a maint
 
 This is the "Fork and Pull" Model. 
 
-<!--
-In addition to using a fork to propose a change to the original repo, you can also use a fork for the starting point of a new idea of your own (depending on the license). 
--->
-
 </td></tr>
 
 
@@ -809,10 +805,6 @@ Something I want to point out: Git will track some details about the project, fo
 
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
 
-<!--
-Later we will talk about updating the fork
--->
-
 </td></tr>
 
 
@@ -882,10 +874,6 @@ Here's what it looks like when we use the "Shared Repository" Model
 * Clone the shared repository, which will now be the remote "origin"
 * Make our changes, push the changes back to the shared repository
 * Submit the pull request
-
-<!--
-We will talk later about fetching changes
--->
 
 </td></tr>
 
@@ -958,31 +946,6 @@ There will now be a new branch in the repo that is your origin.
 This can also be used to push additional commits
 
 * I can make changes to the code, then commit the changes so that Git will record the changes in version control history
-
-```bash
-$ git clone <repo-url>
-```
-
-```bash
-$ cd <repo-name>
-```
-
-```bash
-$ git branch
-```
-
-```bash
-$ git checkout -b <branch-name>
-```
-
-```bash
-$ git add .
-$ git commit -m "Your note"
-```
-
-```bash
-$ git push origin <branch-name>
-```
 -->
 
 
