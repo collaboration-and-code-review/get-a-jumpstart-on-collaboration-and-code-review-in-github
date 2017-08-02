@@ -658,15 +658,13 @@ Think about the word "shared". A shared repository is typically found in an orga
 
 Example: DjangoCon US Website Repo as a "Shared Repository"
 
-This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork. This is called the "Shared Repository" Model. 
-
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
+This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork.
 
 Example: DjangoCon US Website Repo "Fork and Pull" Model
 
-When I first wanted to contribute to the DjangoCon US website, I was not a maintainer, so I did not have write permission to the repo. So I made a copy (or fork) of the DjangoCon US website repo in my user account, made a change, and submitted a pull request to the Django US website repo. When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo. 
+The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
 
-This is the "Fork and Pull" Model. 
+When I first wanted to contribute to the DjangoCon US website, I was not a maintainer, so I did not have write permission to the repo. So I made a copy (or fork) of the DjangoCon US website repo in my user account, made a change, and submitted a pull request to the Django US website repo. When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo. 
 
 </td></tr>
 
@@ -905,8 +903,6 @@ Animation
 
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 52]()
@@ -915,17 +911,17 @@ Animation
 
 ### Local Development Environment
 
-What I'm going to show you now is a generic process. It is the same whether you are cloning from a shared repository or a fork. 
+What I'm going to show you now is a generic process that you can use for a shared repository or a fork. You will clone the repo you have write permission to.
 
 Let's go back to the screenshot of my local development environment. 
 
-* In the background I have GitHub open in the browser
-* In front of that, I have my local folder window and my terminal
 * You can see that I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
+
+
 
 ### Cloning and Changing Directory
 
-* I am going to use the URL from the repo I have write permission to to clone the repo into the local development environment. The command is:
+* I am going to use the URL from the repo to clone it into the home directory. 
 
 * The folder in the home directory with the same name as the GitHub repo and filled with the contents of the repo
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
