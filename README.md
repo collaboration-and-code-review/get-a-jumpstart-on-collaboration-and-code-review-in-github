@@ -739,6 +739,7 @@ Animation
 
 You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original repo will not be affected, including deleting the fork. 
 
+
 If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for.
 
 </td></tr>
@@ -801,7 +802,9 @@ I've made a couple of diagrams that I hope will give you an idea of what the pro
 
 Something I want to point out: Git will track some details about the project, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
 
+<!--
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
+-->
 
 </td></tr>
 
@@ -915,11 +918,11 @@ What I'm going to show you now is a generic process that you can use for a share
 
 Let's go back to the screenshot of my local development environment. 
 
-* You can see that I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
-
-
+* I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
 
 ### Cloning and Changing Directory
+
+
 
 * I am going to use the URL from the repo to clone it into the home directory. 
 
@@ -931,8 +934,6 @@ Let's go back to the screenshot of my local development environment.
 
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
-There are some files that you will only see online because they are not needed locally, and vice versa.
-
 ### Create a Branch
 
 Verify which branch you are checked out on (important if more than one branch); you will be checkout out on the default branch initially (in this case master)
@@ -941,20 +942,15 @@ Create and checkout (switch) to a feature branch, branching off of the branch yo
 
 ### Working on a File Locally
 
+Open a file in the text editor. Make your change and save it.
+
 ### Committing and Pushing
 
-Make your change, then add, commit, create a message (if you don't use -m, a Vim editor will open and you will need to know how to exit)
+Add and commit our change to git version control, create a message
 
-Push the new branch to GitHub to your origin (by default, the origin is the repo you cloned from that you have write permission to)
+Push the new branch to GitHub to your origin (the repo you cloned from that you have write permission to)
 
 There will now be a new branch in the repo that is your origin. 
-
-<!--
-This can also be used to push additional commits
-
-* I can make changes to the code, then commit the changes so that Git will record the changes in version control history
--->
-
 
 </td></tr>
 
