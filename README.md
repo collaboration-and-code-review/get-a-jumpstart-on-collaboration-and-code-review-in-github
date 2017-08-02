@@ -1451,14 +1451,6 @@ Push additional commits to organizational feature branch or pull request branch
 $ git push origin <branch-name> 
 ```
 
-<!--
-Push additional commits to organizational feature branch or pull request branch, if local branch name is different than pull request branch name
- 
-```bash
-$ git push origin <local-branch-name>:<remote-branch-name>
-```
--->
-
 </td></tr>
 
 
@@ -1543,33 +1535,6 @@ Keep feature branch up-to-date (often merging master into feature branch)
 ```bash
 $ git checkout <feature-branch-name>
 $ git merge <branch-name>
-```
-
-### Adding an Upstream Remote and Syncing a Fork
-
-If you are working from the "Fork and Pull" Model, you are fetching from the upstream.
-
-
-You can name the additional remote something else, but upstream is the common convention.
-
-Add upstream remote repository that will be synced with the fork
-
-```bash
-$ git remote add upstream https://github.com/upstream-username/original-repository.git
-```
-
-Upstream example (syncing a fork)
-
-```bash
-$ git fetch upstream
-$ git checkout master
-$ git merge upstream/master
-```
-
-Push the changes to your corresponding branch in the forked repository in GitHub
-
-```bash
-$ git push origin master
 ```
 -->
 
