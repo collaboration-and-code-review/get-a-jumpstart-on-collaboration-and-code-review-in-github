@@ -1071,7 +1071,6 @@ Animation
 
 
 
-<!--
 <tr><td width="30%">
 
 ![Slide 63]()
@@ -1080,29 +1079,29 @@ Animation
 
 ### Command Recap
 
+At the top are generic commands with variables.
+
+At the bottom are the commands we actually used just now. 
+
 </td></tr>
--->
+
 
 <tr><td width="30%">
 
-![Slide 69]()
+![Slide 64]()
 
 </td><td>
 
 ### New Branch
 
-There will now be a new branch in that repo. 
-
-<!--
-You can toggle back and forth between the branches by clicking on the branches in the branches tab. 
--->
+There will now be a new branch in the repo that is your origin and a message telling you it's there. If you click on the branch tab you can choose the name of the branch to switch to the new branch. You can toggle back and forth between the branches by clicking on the branches in the branches tab. Also, at the bottom, I've highlighted where the commit message and time will show the change we made.
 
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 70]()
+![Slide 65]()
 
 </td><td>
 
@@ -1115,34 +1114,26 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 71]()
+![Slide 66]()
 
 </td><td>
 
 ### Submit a Pull Request
 
-In the browser, go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. 
+Go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. There will also be a message here telling you about the branch and suggesting that you submit a pull request because GitHub will detect the new branch in the fork. 
 
-There should be a message prompting you to submit a pull request because GitHub will detect your branch and suggest for you to submit a pull request, even if your branch is in a fork. Be forewarned, that if you forked the repo and you go to your fork instead, you can accidentally submit a pull request to yourself. 
-
-* Make sure base corresponds to the repo and branch you want to contribute to
+* Make sure that the base corresponds to the repo and branch you want your change to be merged into
 * Make sure compare corresponds to your branch
 * Create a pull request title and perhaps a description
 * If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
 * Click "Create pull request"
 
-If you are submitting the pull request from within the repo:
-* base: master compare:<branch-name>
-
-If you are submitting the pull request a forked repo:
-* base fork: django/2017.djangocon.us base: master head fork: katherinemichel/2017.djangocon.us base: <branch-name>
-
 </td></tr>
 
 
 <tr><td width="30%">
 
-![Slide 72]()
+![Slide 67]()
 
 </td><td>
 
@@ -1155,7 +1146,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 73]()
+![Slide 68]()
 
 </td><td>
 
@@ -1168,7 +1159,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 74]()
+![Slide 69]()
 
 </td><td>
 
@@ -1179,6 +1170,8 @@ Animation
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
 </td></tr>
+
+
 
 <!--
 Perspective: Reviewing Pull Requests
