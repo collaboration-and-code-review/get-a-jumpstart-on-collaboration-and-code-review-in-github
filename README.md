@@ -654,11 +654,11 @@ Example: DjangoCon US website is a deployed live and has a fairly high volume of
 
 ### Write Permission and Collaboration Examples
 
-Think about the word "shared". A shared repository is typically found in an organization account where there are teams of maintainers who have write permission to the repos working on them together. 
+DjangoCon US Website Repo is an example of a "Shared Repository" 
+A shared repository is typically found in an organization account. 
+* This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers I work with who have write permission, I can make changes directly within the DjangoCon US website repo.
 
-Example: DjangoCon US Website Repo as a "Shared Repository"
 
-This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers, I can make changes directly within the DjangoCon US website repo. I no longer need a fork.
 
 Example: DjangoCon US Website Repo "Fork and Pull" Model
 
@@ -1120,12 +1120,13 @@ Animation
 
 ### Submit a Pull Request
 
-Go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. There will also be a message here telling you about the branch and suggesting that you submit a pull request because GitHub will detect the new branch in the fork. 
+Go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. There will also be a message here telling you about the branch and suggesting that you submit a pull request, even if the branch is in a fork, because GitHub will detect it. Click on the "Compare & pull request" button. 
 
 * Make sure that the base corresponds to the repo and branch you want your change to be merged into
 * Make sure compare corresponds to your branch
 * Create a pull request title and perhaps a description
-* If the pull request is via a forked repo, a box will be checked by default giving (upstream) maintainers the ability to edit the pull request 
+* If the pull request is via a forked repo, a box will be checked by default giving maintainers the ability to edit the pull request 
+* Double check your changes
 * Click "Create pull request"
 
 </td></tr>
