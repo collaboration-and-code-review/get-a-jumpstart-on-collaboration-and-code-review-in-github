@@ -1052,8 +1052,6 @@ Animation
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 62]()
@@ -1065,6 +1063,35 @@ Animation
 At the top are generic commands with variables.
 
 At the bottom are the commands we actually used just now. 
+* We did git clone, then the URL to either the shared repo or fork
+* We changed directory into the folder by the repo name of 2017.djangocon.us
+* We did git branch to see which branch we were on, which was master
+* We created and checked-out to a branch by the name of example-branch
+* We made our changes
+* We added and committed our changes to git version control history and created a message "Creating branch and updating"
+* We pushed the branch named example-branch to our origin
+
+```bash
+$ git clone <repo-url>
+$ cd <repo-name>
+$ git branch
+$ git checkout -b <branch-name>
+$ git add .
+$ git commit -m "Your note"
+$ git push origin <branch-name>
+```
+
+```bash
+$ git clone https://github.com/djangocon/2017.djangocon.us
+or
+$ git clone https://github.com/KatherineMichel/2017.djangocon.us
+$ cd 2017.djangocon.us
+$ git branch
+$ git checkout -b example-branch
+$ git add .
+$ git commit -m "Creating branch and updating"
+$ git push origin example-branch
+```
 
 </td></tr>
 
@@ -1154,6 +1181,7 @@ Animation
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
 </td></tr>
+
 
 
 
