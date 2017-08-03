@@ -658,13 +658,7 @@ DjangoCon US Website Repo is an example of a "Shared Repository"
 A shared repository is typically found in an organization account. 
 * This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers I work with who have write permission, I can make changes directly within the DjangoCon US website repo.
 
-
-
-Example: DjangoCon US Website Repo "Fork and Pull" Model
-
-The “Fork and Pull” Model is typically used in user account repos, because users come across repos they want to contribute to but don’t have write permission to it and need to fork it to contribute 
-
-When I first wanted to contribute to the DjangoCon US website, I was not a maintainer, so I did not have write permission to the repo. So I made a copy (or fork) of the DjangoCon US website repo in my user account, made a change, and submitted a pull request to the Django US website repo. When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo. 
+The “Fork and Pull” Model is typically used in user account repos. For example, when I first came across the DjangoCon US website repo, I wanted to contribute, but I was not a maintainer, so I didn't have write permission. So I made a copy (a.k.a. fork) of the DjangoCon US website repo in my user account, made a change, and submitted a pull request to the Django US website repo. When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo. 
 
 </td></tr>
 
@@ -910,6 +904,8 @@ Let's go back to the screenshot of my local development environment.
 * The folder will be in the home directory with the same name as the GitHub repo and filled with the contents of the repo
 
 * I will now change directory into the folder so that I can work there
+
+
 
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
@@ -1160,10 +1156,6 @@ Animation
 </td></tr>
 
 
-
-<!--
-Perspective: Reviewing Pull Requests
--->
 
 <tr><td width="30%">
 
