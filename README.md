@@ -905,7 +905,7 @@ Let's go back to the screenshot of my local development environment.
 
 * I will now change directory into the folder so that I can work there
 
-
+I've clicked on the folder in the folder window so that I can see the contents visually. But I can also see I am working from within the folder in my terminal because the name of the folder is at the top of the terminal and in front of the command prompt. 
 
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
