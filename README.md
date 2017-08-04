@@ -1196,27 +1196,11 @@ Animation
 * Follow the link to the pull request in the repo pull request tab in the browser
 * Look over the information about the pull request provided by the contributor
 
-
-* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
-
-<!--
 There are two ways to merge a pull request
 * Via browser (click merge button- options are regular, squash, or rebase merge)
-* Via command line locally
+* Via command line in your local development environment
 
-Click the link to reveal pull request instructions
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 69]()
-
-</td><td>
-
-### Merging in Browser
+* If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 </td></tr>
 
@@ -1224,7 +1208,7 @@ Click the link to reveal pull request instructions
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 70]()
 
 </td><td>
 
@@ -1237,6 +1221,18 @@ Second simplest scenario
 * You look at the pull request in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
 
 </td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 71]()
+
+</td><td>
+
+### Merging in Browser
+
+</td></tr>
+
 
 
 <tr><td width="30%">
