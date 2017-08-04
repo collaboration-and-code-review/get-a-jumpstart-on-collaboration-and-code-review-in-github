@@ -1184,6 +1184,15 @@ Animation
 
 
 
+<!--
+### Perspective: Maintainer
+
+We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
+
+The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
+-->
+
+
 <tr><td width="30%">
 
 ![Slide 69]()
@@ -1197,10 +1206,10 @@ Animation
 * Look over the information about the pull request provided by the contributor
 
 There are two ways to merge a pull request
-* Via browser (click merge button- options are regular, squash, or rebase merge)
+* Via browser (click merge button)
 * Via command line in your local development environment
 
-* If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
 </td></tr>
 
@@ -1273,19 +1282,7 @@ Update the pull request yourself
 
 
 
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Perspective: Maintainer
-
-We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
-
-The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
-
-</td></tr>
 
 
 <tr><td width="30%">
