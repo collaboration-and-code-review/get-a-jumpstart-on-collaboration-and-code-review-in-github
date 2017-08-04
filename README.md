@@ -624,7 +624,7 @@ If I submit a pull request and it is accepted, the changes will be pulled into t
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 35]()
 
 </td><td>
 
@@ -637,7 +637,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 36]()
 
 </td><td>
 
@@ -653,7 +653,7 @@ We've gone to the DjangoCon US website repo.
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 37]()
 
 </td><td>
 
@@ -666,7 +666,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 39]()
+![Slide 38]()
 
 </td><td>
 
@@ -684,7 +684,7 @@ The fork is an exact copy of the original repo at the time it was forked. I coul
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 39]()
 
 </td><td>
 
@@ -697,7 +697,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 41]()
+![Slide 40]()
 
 </td><td>
 
@@ -710,7 +710,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 42]()
+![Slide 41]()
 
 </td><td>
 
@@ -724,7 +724,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 43]()
+![Slide 42]()
 
 </td><td>
 
@@ -743,6 +743,19 @@ Git will track some details about the project, for instance, where we cloned our
 <!--
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 43]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
 
 </td></tr>
 
@@ -792,9 +805,14 @@ Animation
 
 </td><td>
 
-### Fork and Pull Model
+### Shared Repository Model
 
-Animation
+Here's what it looks like when we use the "Shared Repository" Model
+
+* The fork is not needed, because we have write permission
+* Clone the shared repository, which will now be the remote "origin"
+* Make our changes, push the changes back to the shared repository
+* Submit the pull request
 
 </td></tr>
 
@@ -807,12 +825,7 @@ Animation
 
 ### Shared Repository Model
 
-Here's what it looks like when we use the "Shared Repository" Model
-
-* The fork is not needed, because we have write permission
-* Clone the shared repository, which will now be the remote "origin"
-* Make our changes, push the changes back to the shared repository
-* Submit the pull request
+Animation
 
 </td></tr>
 
@@ -830,24 +843,11 @@ Animation
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 50]()
-
-</td><td>
-
-### Shared Repository Model
-
-Animation
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 51]()
 
 </td><td>
 
@@ -931,6 +931,19 @@ $ git push origin example-branch
 
 <tr><td width="30%">
 
+![Slide 51]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 52]()
 
 </td><td>
@@ -974,7 +987,7 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### GitHub Repo Versus Local Directory
 
 Animation
 
@@ -987,7 +1000,7 @@ Animation
 
 </td><td>
 
-### GitHub Repo Versus Local Directory
+### Creating a New Branch
 
 Animation
 
@@ -1013,7 +1026,7 @@ Animation
 
 </td><td>
 
-### Creating a New Branch
+### Working on a File Locally
 
 Animation
 
@@ -1026,7 +1039,7 @@ Animation
 
 </td><td>
 
-### Working on a File Locally
+### Committing and Pushing
 
 Animation
 
@@ -1046,24 +1059,11 @@ Animation
 </td></tr>
 
 
+
+
 <tr><td width="30%">
 
 ![Slide 61]()
-
-</td><td>
-
-### Committing and Pushing
-
-Animation
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 63]()
 
 </td><td>
 
@@ -1076,7 +1076,7 @@ There will now be a new branch in the repo that is your origin and a message tel
 
 <tr><td width="30%">
 
-![Slide 64]()
+![Slide 62]()
 
 </td><td>
 
@@ -1089,7 +1089,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 65]()
+![Slide 63]()
 
 </td><td>
 
@@ -1109,33 +1109,33 @@ Go to the repo you want your pull request to be merged into, in this case, the D
 
 <tr><td width="30%">
 
+![Slide 64]()
+
+</td><td>
+
+### Submit a Pull Request
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 65]()
+
+</td><td>
+
+### Submit a Pull Request
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 66]()
-
-</td><td>
-
-### Submit a Pull Request
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 67]()
-
-</td><td>
-
-### Submit a Pull Request
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 68]()
 
 </td><td>
 
