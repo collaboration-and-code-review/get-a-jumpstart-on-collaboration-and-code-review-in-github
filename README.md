@@ -1184,6 +1184,98 @@ Animation
 
 
 
+<tr><td width="30%">
+
+![Slide 69]()
+
+</td><td>
+
+### Pull Request Review Process
+
+* If you are a repo maintainer, you will receive a notification (by browser or email, based on your notification preferences) to let you know there is a pull request
+* Follow the link to the pull request in the repo pull request tab in the browser
+* Look over the information about the pull request provided by the contributor
+
+
+* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
+<!--
+There are two ways to merge a pull request
+* Via browser (click merge button- options are regular, squash, or rebase merge)
+* Via command line locally
+
+Click the link to reveal pull request instructions
+-->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 69]()
+
+</td><td>
+
+### Merging in Browser
+
+</td></tr>
+
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Pull Request Review Options
+
+Simplest scenario
+* When you look at the pull request in the browser, you can tell it can be accepted and click merge (for example, if the pull request is fixing a typo) 
+
+Second simplest scenario
+* You look at the pull request in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 00]()
+
+</td><td>
+
+### Pull Request Review Options
+
+Less simple
+* You can't always accept the pull request based on just looking at the code in the browser
+* You sometimes need to run the code in the pull request locally to evalute it
+
+After you run the code locally, if you decide a change does need to be made
+* You can go back to the browser and click merge
+
+After you run the code locally, if you decide a change needs to be made, there are a few options
+* As the contributor to make a change to the pull request
+* Push additional commits yourself to the pull request branch
+* You can make the change locally, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
+
+
+<!--
+https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
+* push to origin (follow instructions, live branch/deployed?)
+An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer. 
+Checkout a pull request locally
+
+Merge pull request in browser
+Merge pull request locally and push to branch
+Ask pull request contributor to update pull request
+Update the pull request yourself
+-->
+
+</td></tr>
+
+
+
 
 <tr><td width="30%">
 
@@ -1202,40 +1294,20 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 <tr><td width="30%">
 
-![Slide 64]()
-
-</td><td>
-
-### Pull Request Review Process
-
-* If you are a repo maintainer, you will receive a notification (by browser or email, based on your notification preferences) to let you know there is a pull request
-* Follow the link to the pull request in the repo pull request tab in the browser
-* Look over the information about the pull request provided by the contributor
-
-* There will a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
-
-<!--
-Click the link to reveal pull request instructions
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
 ![Slide 43]()
 
 </td><td>
 
 ### Checking Out Remote Branches
 
-Even though the command line instructions say they are for reviewing pull requests locally, they are really for remote branches in general. 
+The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
 
-Like we said earlier, anyone with write permission to a feature branch or pull request branch can work on them in much the same way. The main difference is that with a pull request branch, a maintainer will decide whether  to merge the branch into the branch it is intended to be merged with. 
+If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
 
-Any person with write permission to a remote branch can fetch it to their local development environment and add commits to it, even if a pull request has already been made. If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is merged. 
 
 <!--
+Fetch it to their local development environment and add commits to it. 
+
 This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
 -->
 
@@ -1297,59 +1369,13 @@ There are three types of branches:
 * The local folder will also contain another hidden folder named .git that contains the Git configurations. 
 
 Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
+
+Remote origin or Remote upstream
 -->
 
 </td></tr>
 
 
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Pull Request Review Options
-
-There are two ways to merge a pull request
-* Via browser (click merge button- options are regular, squash, or rebase merge)
-* Via command line locally
-
-Simplest scenario
-* When you look at the pull request in the browser, you can tell it can be accepted and click merge (for example, if the pull request is fixing a typo) 
-
-Second simplest scenario
-* You look at the pull request in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
-
-Less simple
-* You can't always accept the pull request based on just looking at the code in the browser
-* You sometimes need to run the code in the pull request locally to evalute it
-
-After you run the code locally, if you decide a change does need to be made
-* You can go back to the browser and click merge
-
-After you run the code locally, if you decide a change needs to be made, there are a few options
-* As the contributor to make a change to the pull request
-* Push additional commits yourself to the pull request branch
-* You can make the change locally, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
-
-
-<!--
-https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
-* push to origin (follow instructions, live branch/deployed?)
-An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer. 
-Checkout a pull request locally
-
-Merge pull request in browser
-Merge pull request locally and push to branch
-Ask pull request contributor to update pull request
-Update the pull request yourself
--->
-
-</td></tr>
 
 
 <tr><td width="30%">
