@@ -866,28 +866,18 @@ Let's go back to the screenshot of my local development environment.
 * We did git clone, then the URL to either the shared repo or fork
 -->
 
-* The folder will be in the home directory with the same name as the GitHub repo and filled with the contents of the repo
-
-<!--
-* A folder will appear in my home directory by the same name. Making a copy of a repo locally is called cloning.
+* A folder will appear in my home directory by the same name as the GitHub repo (2017.djangocon.us) and filled with the contents of the repo. Making a copy of a repo locally is called cloning. 
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
--->
 
 * I will now change directory into the folder so that I can work there
 
-<!--
-* We changed directory into the folder by the repo name of 2017.djangocon.us
--->
-
-I've clicked on the folder in the folder window so that I can see the contents visually. But I can also see I am working from within the folder in my command line because the name of the folder is at the top of the comman dline and in front of the prompt. 
+I've clicked on the folder in the folder window so that I can see the contents visually. But I can also see I am working from within the folder in my command line because the name of the folder is at the top of the command line and in front of the prompt. 
 
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
-Verify which branch you are checked out on (important if more than one branch); initially, you will be checkout out on the default branch (in this case master)
+Use the command $ git branch to verify which branch you are checked out on; initially, you will be checkout out on the default branch (in this case master)
 
-<!--
-* We did git branch to see which branch we were on, which was master
--->
+
 
 Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, because a copy, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
 
@@ -900,7 +890,7 @@ Open a file in the text editor. Make your change and save it.
 Add and commit our change to git version control, create a message
 
 <!--
-* We added and committed our changes to git version control history and created a message "Creating branch and updating"
+created a message "Creating branch and updating"
 -->
 
 Push the new branch to GitHub to your origin (the repo you cloned from that you have write permission to)
@@ -908,6 +898,8 @@ Push the new branch to GitHub to your origin (the repo you cloned from that you 
 <!--
 * We pushed the branch named example-branch to our origin
 * I can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
+
+I, you, we
 -->
 
 ```bash
