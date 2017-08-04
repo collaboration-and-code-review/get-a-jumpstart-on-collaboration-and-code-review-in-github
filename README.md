@@ -44,7 +44,6 @@ Thank you!
 - [The Two Collaborative Development Models](#the-two-collaborative-development-models)
 - [The Two Types of Accounts](#the-two-types-of-accounts-and-models)
 - [Write Permission](#write-permission)
-- [Why We Need Write Permission](#why-we-need-write-permission)
 - [Write Permission and Collaboration Examples](#write-permission-and-collaboration-examples)
 - [How to Fork a Repo](#how-to-fork-a-repo)
 - [Forked Repo](#forked-repo)
@@ -54,7 +53,10 @@ Thank you!
 - [Local Development Environment](#local-development-environment)
 - [Cloning and Changing Directory](#cloning-and-changing-directory)
 - [GitHub Repo Versus Local Directory](#github-repo-versus-local-directory)
+
+
 - [Creating a New Branch](#creating-a-new-branch)
+
 - [Working on a File Locally](#working-on-a-file-locally)
 - [Committing and Pushing](#commiting-and-pushing)
 - [New Branch](#new-branch)
@@ -764,10 +766,11 @@ I've made a couple of diagrams that I hope will give you an idea of what the pro
 
 * Fork the repo
 * Clone the fork. The fork will now be a remote repo known as "origin".
-* Make our changes, push the changes back to the fork
-* Submit the pull request
 
 Git will track some details about the project, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
+
+* Make our changes, push the changes back to the fork
+* Submit the pull request
 
 <!--
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
@@ -870,6 +873,8 @@ Animation
 Animation
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -1089,6 +1094,7 @@ Animation
 Animation
 
 </td></tr>
+
 
 
 
