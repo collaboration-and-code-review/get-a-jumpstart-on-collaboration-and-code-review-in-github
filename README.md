@@ -611,7 +611,7 @@ The two different models typically correspond to the two different account types
 
 ### The Two Types of Accounts
 
-We now know that there are two types of accounts
+There are two types of accounts
 * Organization accounts such as the DjangoCon organization
 * User accounts, such as my own personal account
 
@@ -626,29 +626,18 @@ We now know that there are two types of accounts
 
 ### Write Permission
 
-We are not talking about "write" permission in the context of English. When a user has write permission to a repo, it means they can make changes directly inside of the repo, probably in a feature branch.
+When a user has write permission to a repo, it means they can make changes directly inside of the repo.
 
-The way that you contribute to a repo depends on whether you have write permission to it. 
+The Collaborative Development Model you use depends on whether you have write permission to the repo. 
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
 
 ![Slide 34]()
-
-</td><td>
-
-### Why We Need Write Permission
-
-Example: DjangoCon US website is a deployed live and has a fairly high volume of traffic. We wouldn't want just anyone to be able to go into the DjangoCon repo and directly make changes. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 35]()
 
 </td><td>
 
@@ -1180,10 +1169,6 @@ Animation
 * Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
-</td></tr>
-
-
-
 <!--
 ### Perspective: Maintainer
 
@@ -1191,6 +1176,9 @@ We are DjangoCon US website maintainer with write permission to the DjangoCon re
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 -->
+
+</td></tr>
+
 
 
 <tr><td width="30%">
