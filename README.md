@@ -327,7 +327,7 @@ Here is a screenshot of my local development environment.
 * In the background I have GitHub open in the browser
 * In front of that, I have my local folder window and my terminal
 
-* I can use the URL (web address) from the browser in the command line to create a copy of the repo in my local development environment. This is called cloning. 
+* I can use the URL (web address) from the browser in the terminal to create a copy of the repo in my local development environment. This is called cloning. 
 * I can make changes and push the changes back to GitHub. 
 * Meanwhile, other users can work on the code on their computer and push the changes back to GitHub too 
 
@@ -857,7 +857,7 @@ What I'm going to show you now is a generic process that you can use for a share
 
 Let's go back to the screenshot of my local development environment. 
 
-* I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
+* I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the prompt
 
 * I am going to use the URL from the repo to clone it into the home directory. 
 
@@ -879,7 +879,7 @@ Let's go back to the screenshot of my local development environment.
 * We changed directory into the folder by the repo name of 2017.djangocon.us
 -->
 
-I've clicked on the folder in the folder window so that I can see the contents visually. But I can also see I am working from within the folder in my terminal because the name of the folder is at the top of the terminal and in front of the command prompt. 
+I've clicked on the folder in the folder window so that I can see the contents visually. But I can also see I am working from within the folder in my terminal because the name of the folder is at the top of the terminal and in front of the prompt. 
 
 You can pull up your GitHub repo and your local folder and compare the files. You can see the corresponding files. The format will be slightly different between one set is being rendered in the browser, and another set are raw files. 
 
