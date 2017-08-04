@@ -767,7 +767,7 @@ I've made a couple of diagrams that I hope will give you an idea of what the pro
 * Make our changes, push the changes back to the fork
 * Submit the pull request
 
-Something I want to point out: Git will track some details about the project, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
+Git will track some details about the project, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
 
 <!--
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
@@ -915,6 +915,49 @@ Push the new branch to GitHub to your origin (the repo you cloned from that you 
 * I can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
 
 * Occassionally one of us will submit a pull request for our changes to be pulled into the GitHub repo we are working on. 
+
+<tr><td width="30%">
+
+![Slide 62]()
+
+</td><td>
+
+### Command Recap
+
+At the top are generic commands with variables.
+
+At the bottom are the commands we actually used just now. 
+* We did git clone, then the URL to either the shared repo or fork
+* We changed directory into the folder by the repo name of 2017.djangocon.us
+* We did git branch to see which branch we were on, which was master
+* We created and checked-out to a branch by the name of example-branch
+* We made our changes
+* We added and committed our changes to git version control history and created a message "Creating branch and updating"
+* We pushed the branch named example-branch to our origin
+
+```bash
+$ git clone <repo-url>
+$ cd <repo-name>
+$ git branch
+$ git checkout -b <branch-name>
+$ git add .
+$ git commit -m "Your note"
+$ git push origin <branch-name>
+```
+
+```bash
+$ git clone https://github.com/djangocon/2017.djangocon.us
+or
+$ git clone https://github.com/KatherineMichel/2017.djangocon.us
+$ cd 2017.djangocon.us
+$ git branch
+$ git checkout -b example-branch
+$ git add .
+$ git commit -m "Creating branch and updating"
+$ git push origin example-branch
+```
+
+</td></tr>
 -->
 
 
@@ -1047,49 +1090,6 @@ Animation
 
 </td></tr>
 
-
-<tr><td width="30%">
-
-![Slide 62]()
-
-</td><td>
-
-### Command Recap
-
-At the top are generic commands with variables.
-
-At the bottom are the commands we actually used just now. 
-* We did git clone, then the URL to either the shared repo or fork
-* We changed directory into the folder by the repo name of 2017.djangocon.us
-* We did git branch to see which branch we were on, which was master
-* We created and checked-out to a branch by the name of example-branch
-* We made our changes
-* We added and committed our changes to git version control history and created a message "Creating branch and updating"
-* We pushed the branch named example-branch to our origin
-
-```bash
-$ git clone <repo-url>
-$ cd <repo-name>
-$ git branch
-$ git checkout -b <branch-name>
-$ git add .
-$ git commit -m "Your note"
-$ git push origin <branch-name>
-```
-
-```bash
-$ git clone https://github.com/djangocon/2017.djangocon.us
-or
-$ git clone https://github.com/KatherineMichel/2017.djangocon.us
-$ cd 2017.djangocon.us
-$ git branch
-$ git checkout -b example-branch
-$ git add .
-$ git commit -m "Creating branch and updating"
-$ git push origin example-branch
-```
-
-</td></tr>
 
 
 <tr><td width="30%">
