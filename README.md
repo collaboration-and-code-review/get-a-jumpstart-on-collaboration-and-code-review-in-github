@@ -352,17 +352,16 @@ For example, the code in the DjangoCon US website repo is for a website. We cann
 
 There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. 
 
-Here is a screenshot of my local development environment. 
+Here is a screenshot of my local development environment.
 
 * In the background I have GitHub open in the browser
 * In front of that, I have my local folder window and my terminal
-* I am going to insert the URL (web address) from the browser into a command git clone <url> (copy and paste) and hit enter
-* A folder will appear in my home directory by the same name as the GitHub repo and filled with the contents of the repo. Making a copy of a repo locally is called cloning.
-* I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
-* I can make changes to the code, then commit the changes so that Git will record the changes in version control history
-* I can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
-* Meanwhile, other users can work on the code on their computer and push the changes back to GitHub 
-* Occassionally one of us will submit a pull request for our changes to be pulled into the GitHub repo we are working on. 
+
+* I can use the URL (web address) from the browser in the command line to create a copy of the repo in my local development environment. This is called cloning. 
+* I can make changes and push the changes back to GitHub. 
+* Meanwhile, other users can work on the code on their computer and push the changes back to GitHub too 
+
+I will elaborate on this process later.
 
 </td></tr>
 
@@ -598,7 +597,7 @@ The two Collaborative Development Models
 * "Shared Repository" Model
 * "Fork and Pull" Model
 
-The two different models typically correspond to the two different account types
+The two different models typically correspond to the two different account types and which model you uses depends on whether you have write permission to the repo. 
 
 </td></tr>
 
@@ -628,11 +627,7 @@ There are two types of accounts
 
 When a user has write permission to a repo, it means they can make changes directly inside of the repo.
 
-The Collaborative Development Model you use depends on whether you have write permission to the repo. 
-
 </td></tr>
-
-
 
 
 <tr><td width="30%">
@@ -643,11 +638,16 @@ The Collaborative Development Model you use depends on whether you have write pe
 
 ### Write Permission and Collaboration Examples
 
-DjangoCon US Website Repo is an example of a "Shared Repository" 
-A shared repository is typically found in an organization account. 
-* This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo. Along with the other maintainers I work with who have write permission, I can make changes directly within the DjangoCon US website repo.
+A shared repository is typically found in an organization account.
+* This year I became a maintainer of the DjangoCon US website, so I was given write permission to the DjangoCon US website repo, which is a “Shared Repository”. Along with the other maintainers I work with who have write permission, I can make changes directly within the DjangoCon US website repo.
 
-The “Fork and Pull” Model is typically used in user account repos. For example, when I first came across the DjangoCon US website repo, I wanted to contribute, but I was not a maintainer, so I didn't have write permission. So I made a copy (a.k.a. fork) of the DjangoCon US website repo in my user account, made a change, and submitted a pull request to the Django US website repo. When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo. 
+The “Fork and Pull” Model is typically used in user account repos. For example, when I first came across the DjangoCon US website repo, I wanted to contribute, but I was not a maintainer, so I didn't have write permission. So I made a copy (a.k.a. fork) of the DjangoCon US website repo in my user account, which I have write permission to, made a change, and submitted a pull request to the Django US website repo. 
+
+<!--
+When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo.
+
+If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for.
+-->
 
 </td></tr>
 
@@ -707,10 +707,7 @@ Animation
 * Click on the hyperlink and it will open the repo
 * The repo URL will have my user account name in it
 
-You own all of the repos in your user account, including ones you have created and forks. I am the only user with write permission to it unless I give permission to someone else, such as a maintainer, when I am submitting a pull request. The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original repo will not be affected, including deleting the fork. 
-
-
-If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for.
+The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original repo will not be affected, including deleting the fork. 
 
 </td></tr>
 
@@ -909,6 +906,16 @@ Add and commit our change to git version control, create a message
 Push the new branch to GitHub to your origin (the repo you cloned from that you have write permission to)
 
 </td></tr>
+
+<!--
+* I am going to insert the URL (web address) from the browser into a command git clone <url> (copy and paste) and hit enter
+* A folder will appear in my home directory by the same name as the GitHub repo and filled with the contents of the repo. Making a copy of a repo locally is called cloning.
+* I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
+* I can make changes to the code, then commit the changes so that Git will record the changes in version control history
+* I can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
+
+* Occassionally one of us will submit a pull request for our changes to be pulled into the GitHub repo we are working on. 
+-->
 
 
 <tr><td width="30%">
