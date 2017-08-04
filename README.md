@@ -53,54 +53,22 @@ Thank you!
 - [Local Development Environment](#local-development-environment)
 - [Cloning and Changing Directory](#cloning-and-changing-directory)
 - [GitHub Repo Versus Local Directory](#github-repo-versus-local-directory)
-
-
 - [Creating a New Branch](#creating-a-new-branch)
-
 - [Working on a File Locally](#working-on-a-file-locally)
-- [Committing and Pushing](#commiting-and-pushing)
+- [Committing and Pushing](#committing-and-pushing)
 - [New Branch](#new-branch)
 - [Submit a Pull Request](#submit-a-pull-request)
 - [Section 3](#section-3)
-
-
-
-### Perspective: Maintainer
-
 - [Pull Request Review Process](#pull-request-review-process)
-- [Checking Out Remote Branches](#checking-out-remote-branches)
+- [Pull Request Review Options](#pull-request-review-options)
 
-- [Tidy Up](#tidy-up)
+- [Fetching Versus Pulling](#fetching-versus-pulling)
+
 - [Documentation](#documentation)
 - [Safeguards Checklist](#safeguards-checklist)
 - [Tips for Getting Started](#tips-for-getting-started)
 - [Thank You](#thank-you)
 
-<!--
-- [Local Branch Process](#local-branch-process)
-
-### Pushing and Pulling to Keeping Your Local Clone and GitHub Repo in Sync
-
-### Perspective: Checking Out Remote Branches
-
-### The Difference Between a Feature Branch and a Pull Request Branch
-### Fetching from Origin Versus Pulling from a Fork
-### Remote, Remote Branch, Remote Tracking Branch, and Local Branches
-### Shared Repo Model Feature Branch or Pull Request Branch
-### Forked Repo Model Feature Branch or Pull Request Branch
-
-### Merge Pull Request Locally and Push to Master Branch
-### Syncing Changes
-### Adding an Upstream Remote and Syncing a Fork
-
-- [Prerequisites for Getting Started](#prerequisites-for-getting-started)
-- [Another Workflow](#another-workflow)
-- [Learn More About Workflow](#learn-more-about-workflow)
-- [Organization and Team Setup](#organization-and-team-setup)
-- [Getting Help](#getting-help)
-- [Debunking Myths](#debunking-myths)
-- [The Other Way Around](#the-other-way-around)
--->
 
 ## Script
 
@@ -1037,7 +1005,7 @@ Animation
 
 </td><td>
 
-### Create a Branch
+### Creating a New Branch
 
 Animation
 
@@ -1050,7 +1018,7 @@ Animation
 
 </td><td>
 
-### Create a Branch
+### Creating a New Branch
 
 Animation
 
