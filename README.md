@@ -134,9 +134,9 @@ I want to teach you a process that will get you started collaborating and doing 
 
 I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to know what the process looks like. 
 
-At the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today, as well as some other useful resources I couldn’t include because of time constraints. 
+But don’t worry if you miss anything, because at the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today, as well as some other useful resources I couldn’t include because of time constraints. 
 
-At the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today. You will also be able to look at my slides and the video of this online. 
+My slides and a video of my talk will also be online later.
 
 </td></tr>
 
@@ -615,8 +615,8 @@ The “Fork and Pull” Model is typically used in user account repos. For examp
 
 <!--
 When a maintainer approved the pull request, the changes were pulled from the fork into the DjangoCon US website repo.
-
 If I submit a pull request and it is accepted, the changes will be pulled into the repo they are intended for.
+* Occassionally one of us will submit a pull request for our changes to be pulled into the GitHub repo we are working on. 
 -->
 
 </td></tr>
@@ -858,11 +858,26 @@ What I'm going to show you now is a generic process that you can use for a share
 Let's go back to the screenshot of my local development environment. 
 
 * I am working in my home directory. The name of home directory is at the top of the terminal, and in front of the command line prompt
+
 * I am going to use the URL from the repo to clone it into the home directory. 
+
+<!--
+* I am going to insert the URL (web address) from the browser into a command git clone <url> (copy and paste) and hit enter
+* We did git clone, then the URL to either the shared repo or fork
+-->
 
 * The folder will be in the home directory with the same name as the GitHub repo and filled with the contents of the repo
 
+<!--
+* A folder will appear in my home directory by the same name. Making a copy of a repo locally is called cloning.
+* I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
+-->
+
 * I will now change directory into the folder so that I can work there
+
+<!--
+* We changed directory into the folder by the repo name of 2017.djangocon.us
+-->
 
 I've clicked on the folder in the folder window so that I can see the contents visually. But I can also see I am working from within the folder in my terminal because the name of the folder is at the top of the terminal and in front of the command prompt. 
 
@@ -870,43 +885,30 @@ You can pull up your GitHub repo and your local folder and compare the files. Yo
 
 Verify which branch you are checked out on (important if more than one branch); initially, you will be checkout out on the default branch (in this case master)
 
+<!--
+* We did git branch to see which branch we were on, which was master
+-->
+
 Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, because a copy, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+
+<!--
+* We created and checked-out to a branch by the name of example-branch
+-->
 
 Open a file in the text editor. Make your change and save it.
 
 Add and commit our change to git version control, create a message
 
+<!--
+* We added and committed our changes to git version control history and created a message "Creating branch and updating"
+-->
+
 Push the new branch to GitHub to your origin (the repo you cloned from that you have write permission to)
 
-</td></tr>
-
 <!--
-* I am going to insert the URL (web address) from the browser into a command git clone <url> (copy and paste) and hit enter
-* A folder will appear in my home directory by the same name as the GitHub repo and filled with the contents of the repo. Making a copy of a repo locally is called cloning.
-* I now have a copy of the code online in the GitHub repo and a copy in my local development environment 
-* I can make changes to the code, then commit the changes so that Git will record the changes in version control history
-* I can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
-
-* Occassionally one of us will submit a pull request for our changes to be pulled into the GitHub repo we are working on. 
-
-<tr><td width="30%">
-
-![Slide 62]()
-
-</td><td>
-
-### Command Recap
-
-At the top are generic commands with variables.
-
-At the bottom are the commands we actually used just now. 
-* We did git clone, then the URL to either the shared repo or fork
-* We changed directory into the folder by the repo name of 2017.djangocon.us
-* We did git branch to see which branch we were on, which was master
-* We created and checked-out to a branch by the name of example-branch
-* We made our changes
-* We added and committed our changes to git version control history and created a message "Creating branch and updating"
 * We pushed the branch named example-branch to our origin
+* I can push and pull the changes between the GitHub repo and our local development environment to keep them in sync
+-->
 
 ```bash
 $ git clone <repo-url>
@@ -931,7 +933,8 @@ $ git push origin example-branch
 ```
 
 </td></tr>
--->
+
+
 
 
 <tr><td width="30%">
