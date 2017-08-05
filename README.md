@@ -1464,9 +1464,7 @@ Setting Up Repo Fail Safes
 * Back up the repo (third-party software)
 * Protect main branch(es) 
 * Enable required reviews of pull requests
-* Decide whether to use status checks (external)
 * Worst case scenario: How to recover deleted branch
-* Sensitive data warning (if made public, consider compromised, immediately remove and change)
 
 </td></tr>
 
@@ -1479,7 +1477,7 @@ Setting Up Repo Fail Safes
 
 ### Documentation
 
-Hopefully, you will wnat to create an environment for your project that is welcoming and make the process of contributing fast, easy, and enjoyable. 
+Hopefully, you will want to create a welcoming environment for your project. 
 
 * README.md
 * LICENSE
