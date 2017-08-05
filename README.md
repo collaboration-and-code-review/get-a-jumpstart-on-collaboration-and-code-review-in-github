@@ -1179,11 +1179,9 @@ If you click on the link, there will be a set of command line instructions for r
 
 ### Pull Request Review Options
 
-Simplest scenario
-* When you look at the pull request in the browser, you can tell it can be accepted and click merge (for example, if the pull request is fixing a typo) 
-
-Second simplest scenario
-* You look at the pull request in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
+The first two options involve clicking merge in the browser without running the code locally
+* You look at the pull request changes in the browser, you can tell they can be accepted and click merge (for example, if the pull request is fixing a typo) 
+* You look at the pull request changes in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
 
 </td></tr>
 
@@ -1194,23 +1192,10 @@ Second simplest scenario
 
 </td><td>
 
-### Merging in Browser
-
-</td></tr>
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
 ### Pull Request Review Options
 
-Less simple
-* You can't always accept the pull request based on just looking at the code in the browser
-* You sometimes need to run the code in the pull request locally to evalute it
+The other options involve running the code locally
+
 
 After you run the code locally, if you decide a change does need to be made
 * You can go back to the browser and click merge
