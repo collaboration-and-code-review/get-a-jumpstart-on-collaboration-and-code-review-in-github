@@ -1137,6 +1137,9 @@ Animation
 * Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
+</td></tr>
+
+
 <!--
 ### Perspective: Maintainer
 
@@ -1144,9 +1147,6 @@ We are DjangoCon US website maintainer with write permission to the DjangoCon re
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 -->
-
-</td></tr>
-
 
 
 <tr><td width="30%">
@@ -1205,6 +1205,12 @@ After you run the code locally, if you decide a change needs to be made, there a
 * Push additional commits yourself to the pull request branch
 * You can make the change locally, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
 
+</td></tr>
+
+
+
+
+
 
 <!--
 https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
@@ -1218,19 +1224,6 @@ Ask pull request contributor to update pull request
 Update the pull request yourself
 -->
 
-</td></tr>
-
-
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
 
 ### Checking Out Remote Branches
 
@@ -1245,7 +1238,7 @@ Fetch it to their local development environment and add commits to it.
 This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
 -->
 
-</td></tr>
+
 
 
 
