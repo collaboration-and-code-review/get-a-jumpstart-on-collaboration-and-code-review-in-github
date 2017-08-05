@@ -1405,35 +1405,6 @@ $ git push origin master
 
 
 
-<!--
-### Syncing
-
-Whichever collaborative development model you are using, you can fetch the updates from the shared repository and merge them into your local development environment. 
-
-If you are working from the "Shared Repository" Model, you are fetching from the origin. 
-
-Keep master branch up-to-date
-
-Checkout the branch you will be merging updates into (presumably the branch already exists)
-Merge remote-tracking branch updates with branch you are currently checked out on
-
-Origin example
-
-```bash
-$ git fetch origin
-$ git checkout master
-$ git merge origin/master
-```
-
-Keep feature branch up-to-date (often merging master into feature branch)
-
-```bash
-$ git checkout <feature-branch-name>
-$ git merge <branch-name>
-```
--->
-
-
 
 <tr><td width="30%">
 
@@ -1522,7 +1493,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects and other welcoming projects
 * Cherry pick problems or issues that fit your skill level
-* Look for triaging (example: node.js website issues)
+* Look for triaging
 * Practice your skills and workflow (don't be afraid to delete/start over)
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 
@@ -1537,9 +1508,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 ### Go For It!
 
-<!--
-By the way, if you want to contribute to the DjangoCon US website next year, we welcome people of all skill levels and we have drastically increased diversity and number of contributions. If you are interested, let us know.
--->
+By the way, if you want to contribute to the DjangoCon US website next year, we welcome people of all skill levels. We have drastically increased diversity and the number of contributions. If you are interested, let us know.
 
 </td></tr>
 
