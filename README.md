@@ -1508,7 +1508,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 ### Go For It!
 
-By the way, if you want to contribute to the DjangoCon US website next year, we welcome people of all skill levels. We have drastically increased diversity and the number of contributions. If you are interested, let us know.
+By the way, if you are interested in contributing to the DjangoCon US website next year, let us know. We have a diverse group of contributors of all skill levels and have drastically increased the number of contributions. 
 
 </td></tr>
 
