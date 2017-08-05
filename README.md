@@ -1151,7 +1151,7 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 <tr><td width="30%">
 
-![Slide 69]()
+![Slide 67]()
 
 </td><td>
 
@@ -1173,7 +1173,7 @@ If you click on the link, there will be a set of command line instructions for r
 
 <tr><td width="30%">
 
-![Slide 70]()
+![Slide 68]()
 
 </td><td>
 
@@ -1188,7 +1188,7 @@ The first two options involve clicking merge in the browser without running the 
 
 <tr><td width="30%">
 
-![Slide 71]()
+![Slide 69]()
 
 </td><td>
 
@@ -1228,7 +1228,7 @@ Update the pull request yourself
 
 <tr><td width="30%">
 
-![Slide 43]()
+![Slide 00]()
 
 </td><td>
 
@@ -1284,7 +1284,7 @@ If you are pushing, you need to have write permission to the branch. The remote 
 
 <tr><td width="30%">
 
-![Slide 44]()
+![Slide 00]()
 
 </td><td>
 
