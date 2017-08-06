@@ -101,7 +101,7 @@ By Katherine "Kati" Michel
 
 ### Welcome 
 
-Thank you for being here. I'm thrilled to have the opportunity to teach you what I've learned you about collaboration and code review in GitHub as the DjangoCon US Website Chair.
+Thank you for being here. I'm Kati Michel. I'm thrilled to have the opportunity to teach you what I've learned as the DjangoCon US Website Chair.
 
 </td></tr>
 
@@ -175,7 +175,7 @@ So I clicked on the link and went to the project to take a look.
 
 One sentence in the project information that had a huge impact on me: "Are You New to Github But Want to Contribute?" 
 
-That was me. I had been wanting to contribute for months, but wasn't sure how, and now was my chance. I felt it was my destiny to contribute now. 
+That was me. I became very determined to contribute to this project. 
 
 </td></tr>
 
@@ -201,7 +201,7 @@ Animation
 
 ### My First Pull Request
 
-I struggled through (I didn't know what the process was supposed to look like), but I was extremely motivated and submitted my first pull request.
+I struggled through, but I was extremely motivated and submitted my first pull request.
 
 </td></tr>
 
@@ -262,7 +262,7 @@ GitHub is a social network. You can:
 * Make a user account and profile
 * Follow people
 * Follow their activity in your newsfeed
-* Find interesting projects (news)
+* Find interesting projects
 
 </td></tr>
 
@@ -323,7 +323,7 @@ Animation
 
 When we are working on code, we can't do everything in the GitHub website. 
 
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser on a local server. 
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser. 
 
 There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. 
 
@@ -334,7 +334,7 @@ Here is a screenshot of my local development environment.
 
 * I can use the URL (web address) from the browser in the command line to create a copy of the repo in my local development environment. This is called cloning. 
 * I can make changes and push the changes back to GitHub. 
-* Meanwhile, other users can work on the code on their computer and push the changes back to GitHub too 
+* Meanwhile, other users can do the same thing on their computers.
 
 I will elaborate on this process later.
 
@@ -417,17 +417,7 @@ Animation
 </td></tr>
 
 
-<tr><td width="30%">
 
-![Slide 21]()
-
-</td><td>
-
-### Working on a File in GitHub
-
-Animation 
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -448,7 +438,7 @@ When you create a repo, by default you are working within a branch named master.
 
 At some point, when the feature branch author thinks it's done, a pull request will be submitted and the feature branch will become a pull request branch. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the branch.  
 
-But both feature branches (a.k.a. topic branches) and pull request branches are examples of remote branches. We can work on them in much the same way. 
+But both feature branches (a.k.a. topic branches) and pull request branches are examples of branches. We can work on them in much the same way. 
 
 </td></tr>
 
@@ -542,7 +532,7 @@ Animation
 ### Overview
 
 * Determine which collaboration approach to use (there are two)
-* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 * Odds and ends
 
@@ -655,7 +645,7 @@ Animation
 We've gone to the DjangoCon US website repo. 
 
 * Click the "Fork" button
-* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user (or organizational) account. There will be a message notifying you that it is being forked.. 
+* Try to edit a file in a repository that you do not have write permission to. GitHub will automatically fork the repo to your user account. There will be a message notifying you that it is being forked.
 
 </td></tr>
 
@@ -726,7 +716,7 @@ Animation
 ### Section 2
 
 * Determine which collaboration approach to use (there are two)
-* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 
 </td></tr>
 
@@ -1139,7 +1129,7 @@ Animation
 ### Section 3
 
 * Determine which collaboration approach to use (there are two)
-* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 
 </td></tr>
@@ -1308,7 +1298,7 @@ $ git push origin master
 ### Section 4
 
 * Determine which collaboration approach to use (there are two)
-* Clone the repo that we have write permission to into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
+* Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
 * Odds and ends
 
