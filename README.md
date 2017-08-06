@@ -1204,19 +1204,11 @@ After you run the code locally, if you decide a change does need to be made
 * You can go back to the browser and click merge
 
 After you run the code locally, if you decide a change needs to be made, there are a few options
-* As the pull request author to make a change to the pull request
+* Ask the pull request author to make a change to the pull request
 * Push additional commits yourself to the pull request branch
-* You can make the change locally, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
+* You can make the change locally yourself, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
 
 </td></tr>
-
-<!--
-Update the pull request yourself
--->
-
-
-
-
 
 
 
@@ -1231,14 +1223,14 @@ Update the pull request yourself
 
 ### Pulling Versus Fetching and Merging
 
+This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
+
 * When you pull, you are fetching and merging in one command
 * When you fetch and merge, you are executing each command separately
 
 
 
 <!--
-Why are the Instructions Different?
-
 The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
 
 If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
