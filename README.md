@@ -1255,32 +1255,20 @@ If a pull request has already been made, the additional commits will be automati
 The part that is different is the merging part. 
 -->
 
-Fetch updates from the shared repoitory to your local .git folder. Create a local branch and insert the contents of a remote-tracking branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
-
 ```bash
 $ git fetch origin
 $ git checkout -b <local-branch-name> origin/<branch-name>
 $ git merge master
 ```
 
-Push additional commits to organizational feature branch or pull request branch
-
 ```bash
 $ git push origin <branch-name> 
 ```
-
-
-
-Because it is outside of the origin, it is not fetched in updates. We need to fetch it by its URL. 
-
-Create and checkout a new branch (in this case off of the master branch, but could be another). Pull the contents of the remote forked repo branch into it (could be as a feature branch or a pull request branch).
 
 ```bash
 $ git checkout -b <local-branch-name> master
 $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 ```
-
-Push additional commits to forked repo feature branch or pull request branch (contributor needs to have given permission, and local branch name and remote branch name need to match)
 
 ```bash
 $ git push https://github.com/<user-name>/<repo-name> <branch-name>
@@ -1288,15 +1276,10 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 </td></tr>
 
+
 <!--
 Shared Repo Model Feature Branch or Pull Request Branch
 Forked Repo Model Feature Branch or Pull Request Branch
-
-Push additional commits to forked repo feature branch or pull request branch, if local branch name is different than pull request branch name
-
-```bash
-$ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remote-branch-name>
-```
 -->
 
 
