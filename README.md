@@ -1211,6 +1211,31 @@ After you run the code locally, if you decide a change needs to be made, there a
 </td></tr>
 
 
+<tr><td width="30%">
+
+![Slide 70]()
+
+</td><td>
+
+### Pull Request Branches
+
+This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
+
+When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains Git configurations. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+
+
+<!--
+There are three types of branches:
+* remote branch (in a remote repo)
+* remote-tracking branch (inside of the hidden .git folder, which stores info)
+* local branch
+
+Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
+-->
+
+</td></tr>
+
+
 
 
 
@@ -1223,26 +1248,13 @@ After you run the code locally, if you decide a change needs to be made, there a
 
 ### Pulling Versus Fetching and Merging
 
-This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
+There are two ways to fetch a pull request branch to your local development environment to run.  
 
-* When you pull, you are fetching and merging in one command
-* When you fetch and merge, you are executing each command separately
-
-
-
-<!--
-When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
-
-There are three types of branches:
-* remote branch (in a remote repo)
-* remote-tracking branch (inside of the hidden .git folder, which stores info)
-* local branch
+* You can fetch and merge as two separate commands
+* Or you can pull, which combines fetching and merging into one command
 
 
-* The local folder will also contain another hidden folder named .git that contains the Git configurations. 
 
-Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
--->
 
 </td></tr>
 
