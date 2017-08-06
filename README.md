@@ -337,6 +337,10 @@ Here is a screenshot of my local development environment.
 
 I will elaborate on this process later.
 
+<!--
+This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
+-->
+
 </td></tr>
 
 
@@ -1207,22 +1211,15 @@ After you run the code locally, if you decide a change needs to be made, there a
 
 </td></tr>
 
-
-
-
-
-
 <!--
-https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork
-* push to origin (follow instructions, live branch/deployed?)
-An example would be if the code for a website has been updated and submitted as a pull request. You can fetch the pull request branch to your computer. 
-Checkout a pull request locally
-
 Merge pull request in browser
 Merge pull request locally and push to branch
 Ask pull request contributor to update pull request
 Update the pull request yourself
 -->
+
+
+
 
 
 ### Checking Out Remote Branches
@@ -1234,8 +1231,6 @@ If a pull request has already been made, the additional commits will be automati
 
 <!--
 Fetch it to their local development environment and add commits to it. 
-
-This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
 -->
 
 
@@ -1386,7 +1381,7 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 00]()
 
 </td><td>
 
@@ -1403,7 +1398,7 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 39]()
+![Slide 00]()
 
 </td><td>
 
