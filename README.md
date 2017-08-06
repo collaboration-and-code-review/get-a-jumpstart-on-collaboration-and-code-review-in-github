@@ -61,11 +61,12 @@ Thank you!
 - [Section 3](#section-3)
 - [Pull Request Review Process](#pull-request-review-process)
 - [Pull Request Review Options](#pull-request-review-options)
-
-- [Fetching Versus Pulling](#fetching-versus-pulling)
-
-- [Documentation](#documentation)
-- [Safeguards Checklist](#safeguards-checklist)
+- [Pull Request Branches](#pull-request-branches)
+- [Pull Request Review](#pull-request-review)
+- [Merging](#merging)
+- [Odds and Ends](#odds-and-ends)
+- [GitHub: Documentation](#documentation)
+- [Safety Checklist](#safety-checklist)
 - [Tips for Getting Started](#tips-for-getting-started)
 - [Thank You](#thank-you)
 
