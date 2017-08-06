@@ -1299,6 +1299,7 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 ```
 -->
 
+
 <tr><td width="30%">
 
 ![Slide 73]()
@@ -1307,7 +1308,7 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 
 ### Merge Pull Request Locally and Push to Master Branch
 
-This piece of code can be used for either type of pull request. You would use this piece of code if you have updated the pull request in your local development environment and simply want to push the changes live. You are checking out to the master branch, merging the feature branch into the master branch, then pushing the changes to the live master branch on GitHub. 
+This piece of code can be used for either type of pull request. You would use this piece of code if you have updated the pull request in your local development environment and simply want to push the changes live. You are checking out to the master branch, merging the feature branch into the master branch, then pushing the changes to the master branch on GitHub. 
 
 ```bash
 $ git checkout master
@@ -1420,7 +1421,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 ### Go For It!
 
-By the way, if you are interested in contributing to the DjangoCon US website next year, let us know. We have a diverse group of contributors of all skill levels and have drastically increased the number of contributions. 
+* By the way, if you are interested in contributing to the DjangoCon US website next year, let us know. We have a diverse group of contributors of all skill levels and we are always looking for more contributors. 
 
 </td></tr>
 
