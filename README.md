@@ -1167,6 +1167,9 @@ I will go over that in a minute.
 
 </td></tr>
 
+<!--
+Click “Merge pull request” and “Confirm merge”
+-->
 
 <tr><td width="30%">
 
