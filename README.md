@@ -1232,6 +1232,10 @@ without merging them locally. The branches stored here are called remote-trackin
 
 
 <!--
+The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
+
+If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
+
 ### Perspective: Maintainer
 
 We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
@@ -1243,47 +1247,6 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
-### Pulling Versus Fetching and Merging
-
-There are two ways to fetch a pull request branch to your local development environment to run.  
-
-* You can fetch and merge as two separate commands
-* Or you can pull, which combines fetching and merging into one command
-
-</td></tr>
-
-
-<!--
-Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
-
-```bash
-$ git pull <remote-name> <branch-name>
-$ git push <remote-name> <branch-name>
-```
-
-Pushing and pulling via remote URL (will come in handy later when we are working with pull request from a fork)
-
-```bash
-git pull https://github.com/<user-name>/<repo-name> <branch-name>
-git push https://github.com/<user-name>/<repo-name> <branch-name>
-```
-
-If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
--->
-
-
-
-<!--
-The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
-
-If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
--->
 
 <tr><td width="30%">
 
