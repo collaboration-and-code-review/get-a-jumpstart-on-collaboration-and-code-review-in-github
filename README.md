@@ -1163,6 +1163,8 @@ There are two ways to merge a pull request
 
 If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
 
+I will go over that in a minute. 
+
 </td></tr>
 
 
@@ -1173,6 +1175,8 @@ If you click on the link, there will be a set of command line instructions for r
 </td><td>
 
 ### Pull Request Review Options
+
+But first, let's go over the options for what you can do when you review a pull request.
 
 The first two options involve clicking merge in the browser without running the code locally
 * You look at the pull request changes in the browser, you can tell they can be accepted and click merge (for example, if the pull request is fixing a typo) 
@@ -1189,7 +1193,7 @@ The first two options involve clicking merge in the browser without running the 
 
 ### Pull Request Review Options
 
-The other options involve running the code locally .After you run the code locally, there are a few different options. 
+The other options involve fetching the pull request into your locally development environment and running the code there. After you run the code locally, there are a few different options. 
 
 If a change does not need to be made, you can
 * Go back to the browser and click merge
