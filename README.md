@@ -1251,6 +1251,10 @@ Even though these command line instructions say they are for reviewing pull requ
 
 If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
 
+For a pull request submitted through the shared repository, we fetch origin to fetch the updates. We create a new branch, preferably of the same name as the branch online, and insert the contents of the remote-tracking branch. We can merge master to make sure the branch is up-to-date and can push additional commits to the branch. 
+
+For a pull request submitted through a fork, we create a new branch off master and pull in the contents of the pull request from the fork. We can also push additional commits if we have been given permission to edit the pull request. 
+
 ```bash
 $ git fetch origin
 $ git checkout -b <local-branch-name> origin/<branch-name>
@@ -1313,11 +1317,9 @@ $ git push origin master
 
 
 
-
-
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 74]()
 
 </td><td>
 
@@ -1340,7 +1342,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 75]()
 
 </td><td>
 
