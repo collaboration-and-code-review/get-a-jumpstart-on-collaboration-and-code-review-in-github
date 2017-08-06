@@ -1239,19 +1239,21 @@ When we are working from a shared repository, we can temporarily fetch all of th
 
 
 
-<!--
-The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
-
-If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
--->
-
 <tr><td width="30%">
 
 ![Slide 71]()
 
 </td><td>
 
-### Shared Repo Model Feature Branch or Pull Request Branch
+### 
+
+<!--
+The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
+
+If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
+
+The part that is different is the merging part. 
+-->
 
 Fetch updates from the shared repoitory to your local .git folder. Create a local branch and insert the contents of a remote-tracking branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
 
@@ -1267,7 +1269,7 @@ Push additional commits to organizational feature branch or pull request branch
 $ git push origin <branch-name> 
 ```
 
-### Forked Repo Model Feature Branch or Pull Request Branch
+
 
 Because it is outside of the origin, it is not fetched in updates. We need to fetch it by its URL. 
 
@@ -1286,8 +1288,10 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 </td></tr>
 
-
 <!--
+Shared Repo Model Feature Branch or Pull Request Branch
+Forked Repo Model Feature Branch or Pull Request Branch
+
 Push additional commits to forked repo feature branch or pull request branch, if local branch name is different than pull request branch name
 
 ```bash
