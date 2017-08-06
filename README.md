@@ -1231,10 +1231,6 @@ This is why the pull request instructions are different depend on whether the pu
 
 
 <!--
-The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
-
-If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
-
 When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
 There are three types of branches:
@@ -1271,7 +1267,11 @@ If you are pushing, you need to have write permission to the branch. The remote 
 
 
 
+<!--
+The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
 
+If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
+-->
 
 <tr><td width="30%">
 
@@ -1281,7 +1281,7 @@ If you are pushing, you need to have write permission to the branch. The remote 
 
 ### Shared Repo Model Feature Branch or Pull Request Branch
 
-Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
+Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote-tracking branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
 
 ```bash
 $ git fetch origin
