@@ -1247,13 +1247,9 @@ When we are working from a shared repository, we can temporarily fetch all of th
 
 ### 
 
-<!--
-The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
+Even though these command line instructions say they are for reviewing pull requests, they can actually be used by a maintainer to work on and push additional commits to any branch, regardless of whether it's a feature branch or pull request branch. 
 
 If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
-
-The part that is different is the merging part. 
--->
 
 ```bash
 $ git fetch origin
@@ -1277,15 +1273,12 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 </td></tr>
 
 
-<!--
-Shared Repo Model Feature Branch or Pull Request Branch
-Forked Repo Model Feature Branch or Pull Request Branch
--->
+
 
 
 <tr><td width="30%">
 
-![Slide 73]()
+![Slide 72]()
 
 </td><td>
 
@@ -1304,7 +1297,7 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 74]()
+![Slide 73]()
 
 </td><td>
 
@@ -1319,21 +1312,7 @@ $ git push origin master
 
 
 
-<tr><td width="30%">
 
-![Slide 00]()
-
-</td><td>
-
-### Safeguards Checklist
-
-Setting Up Repo Fail Safes
-* Back up the repo (third-party software)
-* Protect main branch(es) 
-* Enable required reviews of pull requests
-* Worst case scenario: How to recover deleted branch
-
-</td></tr>
 
 
 <tr><td width="30%">
@@ -1380,7 +1359,24 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 76]()
+
+</td><td>
+
+### Safeguards Checklist
+
+Setting Up Repo Fail Safes
+* Back up the repo (third-party software)
+* Protect main branch(es) 
+* Enable required reviews of pull requests
+* Worst case scenario: How to recover deleted branch
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 77]()
 
 </td><td>
 
@@ -1398,7 +1394,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 78]()
 
 </td><td>
 
@@ -1411,7 +1407,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 <tr><td width="30%">
 
-![Slide 00]()
+![Slide 79]()
 
 </td><td>
 
