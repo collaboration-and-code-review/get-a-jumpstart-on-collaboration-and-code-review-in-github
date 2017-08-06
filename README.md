@@ -1174,7 +1174,6 @@ If you click on the link, there will be a set of command line instructions for r
 </td></tr>
 
 
-
 <tr><td width="30%">
 
 ![Slide 68]()
@@ -1205,16 +1204,13 @@ After you run the code locally, if you decide a change does need to be made
 * You can go back to the browser and click merge
 
 After you run the code locally, if you decide a change needs to be made, there are a few options
-* As the contributor to make a change to the pull request
+* As the pull request author to make a change to the pull request
 * Push additional commits yourself to the pull request branch
 * You can make the change locally, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
 
 </td></tr>
 
 <!--
-Merge pull request in browser
-Merge pull request locally and push to branch
-Ask pull request contributor to update pull request
 Update the pull request yourself
 -->
 
@@ -1222,16 +1218,6 @@ Update the pull request yourself
 
 
 
-### Checking Out Remote Branches
-
-The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
-
-If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
-
-
-<!--
-Fetch it to their local development environment and add commits to it. 
--->
 
 
 
@@ -1247,6 +1233,31 @@ Fetch it to their local development environment and add commits to it.
 
 * When you pull, you are fetching and merging in one command
 * When you fetch and merge, you are executing each command separately
+
+
+
+<!--
+Why are the Instructions Different?
+
+The command line instructions say they are for reviewing pull requests locally, but these instructions can be used by anyone with write permission to a branch who wants to work on it, whether it is a feature branch or pull request branch. 
+
+If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
+
+When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+
+There are three types of branches:
+* remote branch (in a remote repo)
+* remote-tracking branch (inside of the hidden .git folder, which stores info)
+* local branch
+
+
+* The local folder will also contain another hidden folder named .git that contains the Git configurations. 
+
+Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
+-->
+
+</td></tr>
+
 
 <!--
 Instead, pull directly from the remote repository branch ($ git fetch + $ git merge in one command)
@@ -1264,29 +1275,6 @@ git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
 If you are pushing, you need to have write permission to the branch. The remote can be represented by a <remote-name> or a remote URL
--->
-
-</td></tr>
-
-
-
-### Remote Tracking Branches
-
-Why are the Instructions Different?
-
-When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
-
-There are three types of branches:
-* remote branch (in a remote repo)
-* remote-tracking branch (inside of the hidden .git folder, which stores info)
-* local branch
-
-<!--
-* The local folder will also contain another hidden folder named .git that contains the Git configurations. 
-
-Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
-
-Remote origin or Remote upstream
 -->
 
 
@@ -1359,9 +1347,7 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 
 ### Merge Pull Request Locally and Push to Master Branch
 
-This piece of code can be used for either type of pull request. 
-
-
+This piece of code can be used for either type of pull request. You would use this piece of code if you have updated the pull request in your local development environment and simply want to push the changes live. You are checking out to the master branch, merging the feature branch into the master branch, then pushing the changes to the live master branch on GitHub. 
 
 ```bash
 $ git checkout master
