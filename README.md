@@ -1270,12 +1270,6 @@ If you are pushing, you need to have write permission to the branch. The remote 
 
 
 
-<tr><td width="30%">
-
-![Slide 00]()
-
-</td><td>
-
 ### Remote Tracking Branches
 
 Why are the Instructions Different?
@@ -1295,7 +1289,6 @@ Fetch new branches and commits from the remote repository to local .git folder (
 Remote origin or Remote upstream
 -->
 
-</td></tr>
 
 
 
@@ -1366,7 +1359,9 @@ $ git push https://github.com/<user-name>/<repo-name> <local-branch-name>:<remot
 
 ### Merge Pull Request Locally and Push to Master Branch
 
-Step 2: Merge the changes and update on GitHub. (Same process no matter where the pull request originated), (merge into the appropriate branch)
+This piece of code can be used for either type of pull request. 
+
+
 
 ```bash
 $ git checkout master
