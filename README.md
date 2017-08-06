@@ -1144,14 +1144,6 @@ Animation
 </td></tr>
 
 
-<!--
-### Perspective: Maintainer
-
-We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
-
-The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
--->
-
 
 <tr><td width="30%">
 
@@ -1197,18 +1189,19 @@ The first two options involve clicking merge in the browser without running the 
 
 ### Pull Request Review Options
 
-The other options involve running the code locally
+The other options involve running the code locally .After you run the code locally, there are a few different options. 
 
+If a change does not need to be made, you can
+* Go back to the browser and click merge
 
-After you run the code locally, if you decide a change does need to be made
-* You can go back to the browser and click merge
-
-After you run the code locally, if you decide a change needs to be made, there are a few options
+If a change needs to be made, you can
 * Ask the pull request author to make a change to the pull request
 * Push additional commits yourself to the pull request branch
-* You can make the change locally yourself, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
+* Make the change locally yourself, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
@@ -1221,20 +1214,30 @@ After you run the code locally, if you decide a change needs to be made, there a
 
 This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
 
-When we are working from within the origin, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains Git configurations. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+When we are working from a shared repository, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains Git configurations. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
 
 <!--
+When you are working from within a shared repository, you can fetch all of the updates that have been made from within the shared repository. So, for example, remote branches will be temporarily tracked as remote-tracking branches locally and you can make the remote tracking branches into local branches if you want to test them. 
+
 There are three types of branches:
 * remote branch (in a remote repo)
 * remote-tracking branch (inside of the hidden .git folder, which stores info)
 * local branch
 
-Fetch new branches and commits from the remote repository to local .git folder (add a remote first, if needed), without merging them locally. The branches stored here are called remote-tracking branches. 
+without merging them locally. The branches stored here are called remote-tracking branches. 
 -->
 
 </td></tr>
 
+
+<!--
+### Perspective: Maintainer
+
+We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
+
+The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
+-->
 
 
 
@@ -1252,9 +1255,6 @@ There are two ways to fetch a pull request branch to your local development envi
 
 * You can fetch and merge as two separate commands
 * Or you can pull, which combines fetching and merging into one command
-
-
-
 
 </td></tr>
 
