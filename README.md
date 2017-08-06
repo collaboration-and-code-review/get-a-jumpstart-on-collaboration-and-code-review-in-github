@@ -1214,19 +1214,11 @@ If a change needs to be made, you can
 
 This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
 
-When we are working from a shared repository, we can temporarily fetch all of the updates from the origin into the hidden .git folder that contains Git configurations. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+When we are working from a shared repository, we can temporarily fetch all of the recent changes from the shared repository into a hidden .git folder in the local development environment. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
-
-<!--
-When you are working from within a shared repository, you can fetch all of the updates that have been made from within the shared repository. So, for example, remote branches will be temporarily tracked as remote-tracking branches locally and you can make the remote tracking branches into local branches if you want to test them. 
-
-There are three types of branches:
-* remote branch (in a remote repo)
-* remote-tracking branch (inside of the hidden .git folder, which stores info)
-* local branch
-
-without merging them locally. The branches stored here are called remote-tracking branches. 
--->
+* The branch in GitHub is known as a remote branch
+* The branch in the .git folder is known as a remote-tracking branch and is referred to as <remote-name>/<branch-name>
+* You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it
 
 </td></tr>
 
@@ -1256,7 +1248,7 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 ### Shared Repo Model Feature Branch or Pull Request Branch
 
-Fetch updates to your local .git folder. Create a local branch and insert the contents of the remote-tracking branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
+Fetch updates from the shared repoitory to your local .git folder. Create a local branch and insert the contents of a remote-tracking branch into it. Merge the master branch into it to keep it up to date. (If the repo was cloned before the pull request)
 
 ```bash
 $ git fetch origin
