@@ -1100,19 +1100,6 @@ Animation
 
 </td><td>
 
-### Submit a Pull Request
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 64]()
-
-</td><td>
-
 ### Section 3
 
 * Determine which collaboration approach to use (there are two)
@@ -1124,7 +1111,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 65]()
+![Slide 64]()
 
 </td><td>
 
