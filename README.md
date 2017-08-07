@@ -414,22 +414,6 @@ There is a way to make changes that enables you to switch between multiple tasks
 
 </td><td>
 
-### Working on a File in GitHub
-
-Animation 
-
-</td></tr>
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 22]()
-
-</td><td>
-
 ### Branches
 
 We need to use branches instead. 
@@ -449,7 +433,33 @@ But both feature branches (a.k.a. topic branches) and pull request branches are 
 
 <tr><td width="30%">
 
-![Slide 23]()
+![Slide 21]()
+
+</td><td>
+
+### Branches
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 22]()
+
+</td><td>
+
+### Branches
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 22]()
 
 </td><td>
 
@@ -479,32 +489,6 @@ Animation
 
 </td><td>
 
-### Branches
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 26]()
-
-</td><td>
-
-### Branches
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 27]()
-
-</td><td>
-
 ### How to Create a Branch
 
 Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. When you click to save the changes, they will not save in the current file. Instead, a new branch will be created. 
@@ -516,7 +500,7 @@ You can also create and work on branches through the command line in your local 
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 26]()
 
 </td><td>
 
@@ -529,7 +513,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 27]()
 
 </td><td>
 
@@ -545,7 +529,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 28]()
 
 </td><td>
 
@@ -558,7 +542,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 29]()
 
 </td><td>
 
@@ -577,7 +561,7 @@ The two different models typically correspond to the two different account types
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 30]()
 
 </td><td>
 
@@ -592,7 +576,7 @@ There are two types of accounts
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 31]()
 
 </td><td>
 
@@ -605,7 +589,7 @@ When a user has write permission to a repo, it means they can make changes direc
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 32]()
 
 </td><td>
 
@@ -627,7 +611,7 @@ If I submit a pull request and it is accepted, the changes will be pulled into t
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 33]()
 
 </td><td>
 
@@ -640,7 +624,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 34]()
 
 </td><td>
 
@@ -656,7 +640,7 @@ We've gone to the DjangoCon US website repo.
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 35]()
 
 </td><td>
 
@@ -669,7 +653,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 36]()
 
 </td><td>
 
@@ -687,7 +671,7 @@ The fork is an exact copy of the original repo at the time it was forked. I coul
 
 <tr><td width="30%">
 
-![Slide 39]()
+![Slide 37]()
 
 </td><td>
 
@@ -700,7 +684,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 38]()
 
 </td><td>
 
@@ -713,7 +697,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 41]()
+![Slide 39]()
 
 </td><td>
 
@@ -727,7 +711,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 42]()
+![Slide 40]()
 
 </td><td>
 
@@ -746,6 +730,32 @@ Git will track some details about the project, for instance, where we cloned our
 <!--
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 41]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 42]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
 
 </td></tr>
 
@@ -782,32 +792,6 @@ Animation
 
 </td><td>
 
-### Fork and Pull Model
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 46]()
-
-</td><td>
-
-### Fork and Pull Model
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 47]()
-
-</td><td>
-
 ### Shared Repository Model
 
 Here's what it looks like when we use the "Shared Repository" Model
@@ -822,7 +806,7 @@ Here's what it looks like when we use the "Shared Repository" Model
 
 <tr><td width="30%">
 
-![Slide 48]()
+![Slide 46]()
 
 </td><td>
 
@@ -835,7 +819,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 49]()
+![Slide 47]()
 
 </td><td>
 
