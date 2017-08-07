@@ -68,7 +68,8 @@ Thank you!
 - [Pull Request Review](#pull-request-review)
 - [Merging](#merging)
 - [Odds and Ends](#odds-and-ends)
-- [GitHub: Documentation](#documentation)
+
+- [GitHub: Documentation](#github-documentation)
 - [Safety Checklist](#safety-checklist)
 - [Tips for Getting Started](#tips-for-getting-started)
 - [Go for It](#go-for-it)
@@ -1317,7 +1318,7 @@ $ git push origin master
 
 </td><td>
 
-### Documentation
+### GitHub: Documentation
 
 Hopefully, you will want to create a welcoming environment for your project. 
 
@@ -1340,7 +1341,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 </td><td>
 
-### Documentation
+### GitHub: Documentation
 
 * ISSUE_TEMPLATE
 * PULL_REQUEST_TEMPLATE
