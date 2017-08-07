@@ -58,6 +58,8 @@ Thank you!
 - [Committing and Pushing](#committing-and-pushing)
 - [New Branch](#new-branch)
 - [Submit a Pull Request](#submit-a-pull-request)
+
+
 - [Section 3](#section-3)
 - [Pull Request Review Process](#pull-request-review-process)
 - [Pull Request Review Options](#pull-request-review-options)
@@ -1357,7 +1359,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 </td><td>
 
-### Safeguards Checklist
+### Safety Checklist
 
 Setting Up Repo Fail Safes
 * Back up the repo (third-party software)
@@ -1374,7 +1376,7 @@ Setting Up Repo Fail Safes
 
 </td><td>
 
-### Tips for getting started
+### Tips for Getting Started
 
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects and other welcoming projects
