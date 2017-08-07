@@ -42,7 +42,7 @@ Thank you!
 - [Overview](#overview)
 - [Section 1](#section-1)
 - [The Two Collaborative Development Models](#the-two-collaborative-development-models)
-- [The Two Types of Accounts](#the-two-types-of-accounts-and-models)
+- [The Two Types of Accounts](#the-two-types-of-accounts)
 - [Write Permission](#write-permission)
 - [Write Permission and Collaboration Examples](#write-permission-and-collaboration-examples)
 - [How to Fork a Repo](#how-to-fork-a-repo)
