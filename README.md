@@ -59,7 +59,6 @@ Thank you!
 - [New Branch](#new-branch)
 - [Submit a Pull Request](#submit-a-pull-request)
 
-
 - [Section 3](#section-3)
 - [Pull Request Review Process](#pull-request-review-process)
 - [Pull Request Review Options](#pull-request-review-options)
@@ -67,8 +66,8 @@ Thank you!
 - [Pull Request Branches](#pull-request-branches)
 - [Pull Request Review](#pull-request-review)
 - [Merging](#merging)
-- [Odds and Ends](#odds-and-ends)
 
+- [Section 4](#section-4)
 - [GitHub: Documentation](#github-documentation)
 - [Safety Checklist](#safety-checklist)
 - [Tips for Getting Started](#tips-for-getting-started)
