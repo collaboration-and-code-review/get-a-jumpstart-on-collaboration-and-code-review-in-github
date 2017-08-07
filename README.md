@@ -50,7 +50,7 @@ Thank you!
 - [Section 2](#section-2)
 - [Fork and Pull Model](#fork-and-pull-model)
 - [Shared Repository Model](#shared-repository-model)
-- [Local Development Environment](#local-development-environment)
+- [Local Dev Environment](#local-dev-environment)
 - [Cloning and Changing Directory](#cloning-and-changing-directory)
 - [GitHub Repo Versus Local Directory](#github-repo-versus-local-directory)
 - [Creating a New Branch](#creating-a-new-branch)
@@ -323,7 +323,7 @@ Animation
 
 </td><td>
 
-### Local Development Environment
+### Local Dev Environment
 
 When we are working on code, we can't do everything in the GitHub website. 
 
@@ -355,7 +355,7 @@ This could be so that we can add a feature to it, or it could be so that we can 
 
 </td><td>
 
-### Local Development Environment
+### Local Dev Environment
 
 Animation
 
@@ -368,7 +368,7 @@ Animation
 
 </td><td>
 
-### Local Development Environment
+### Local Dev Environment
 
 Animation
 
