@@ -61,6 +61,7 @@ Thank you!
 - [Section 3](#section-3)
 - [Pull Request Review Process](#pull-request-review-process)
 - [Pull Request Review Options](#pull-request-review-options)
+- [Pull Request Command Line](#pull-request-command-line)
 - [Pull Request Branches](#pull-request-branches)
 - [Pull Request Review](#pull-request-review)
 - [Merging](#merging)
@@ -68,6 +69,7 @@ Thank you!
 - [GitHub: Documentation](#documentation)
 - [Safety Checklist](#safety-checklist)
 - [Tips for Getting Started](#tips-for-getting-started)
+- [Go for It](#go-for-it)
 - [Thank You](#thank-you)
 
 
