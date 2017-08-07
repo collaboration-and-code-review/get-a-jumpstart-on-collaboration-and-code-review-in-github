@@ -58,8 +58,8 @@ Thank you!
 - [Committing and Pushing](#committing-and-pushing)
 - [New Branch](#new-branch)
 - [Submit a Pull Request](#submit-a-pull-request)
-
 - [Section 3](#section-3)
+
 - [Pull Request Review Process](#pull-request-review-process)
 - [Pull Request Review Options](#pull-request-review-options)
 - [Pull Request Command Line](#pull-request-command-line)
