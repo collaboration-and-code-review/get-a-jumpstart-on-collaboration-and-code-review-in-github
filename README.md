@@ -835,7 +835,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 50]()
+![Slide 48]()
 
 </td><td>
 
@@ -906,6 +906,32 @@ $ git push origin example-branch
 
 <tr><td width="30%">
 
+![Slide 49]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 50]()
+
+</td><td>
+
+### Cloning and Changing Directory
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 51]()
 
 </td><td>
@@ -936,7 +962,7 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### GitHub Repo Versus Local Directory
 
 Animation
 
@@ -949,7 +975,7 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### Creating a New Branch
 
 Animation
 
@@ -962,7 +988,7 @@ Animation
 
 </td><td>
 
-### GitHub Repo Versus Local Directory
+### Creating a New Branch
 
 Animation
 
@@ -975,7 +1001,7 @@ Animation
 
 </td><td>
 
-### Creating a New Branch
+### Working on a File Locally
 
 Animation
 
@@ -988,7 +1014,7 @@ Animation
 
 </td><td>
 
-### Creating a New Branch
+### Committing and Pushing
 
 Animation
 
@@ -1001,44 +1027,17 @@ Animation
 
 </td><td>
 
-### Working on a File Locally
+### Committing and Pushing
 
 Animation
 
 </td></tr>
+
 
 
 <tr><td width="30%">
 
 ![Slide 59]()
-
-</td><td>
-
-### Committing and Pushing
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 60]()
-
-</td><td>
-
-### Committing and Pushing
-
-Animation
-
-</td></tr>
-
-
-
-
-<tr><td width="30%">
-
-![Slide 61]()
 
 </td><td>
 
@@ -1051,7 +1050,7 @@ There will now be a new branch in the repo that is your origin and a message tel
 
 <tr><td width="30%">
 
-![Slide 62]()
+![Slide 60]()
 
 </td><td>
 
@@ -1064,7 +1063,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 63]()
+![Slide 61]()
 
 </td><td>
 
@@ -1084,33 +1083,33 @@ Go to the repo you want your pull request to be merged into, in this case, the D
 
 <tr><td width="30%">
 
+![Slide 62]()
+
+</td><td>
+
+### Submit a Pull Request
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 63]()
+
+</td><td>
+
+### Submit a Pull Request
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 64]()
-
-</td><td>
-
-### Submit a Pull Request
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 65]()
-
-</td><td>
-
-### Submit a Pull Request
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 66]()
 
 </td><td>
 
@@ -1125,7 +1124,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 67]()
+![Slide 65]()
 
 </td><td>
 
@@ -1151,7 +1150,7 @@ Click “Merge pull request” and “Confirm merge”
 
 <tr><td width="30%">
 
-![Slide 68]()
+![Slide 66]()
 
 </td><td>
 
@@ -1168,7 +1167,7 @@ The first two options involve clicking merge in the browser without running the 
 
 <tr><td width="30%">
 
-![Slide 69]()
+![Slide 67]()
 
 </td><td>
 
@@ -1191,7 +1190,7 @@ If a change needs to be made, you can
 
 <tr><td width="30%">
 
-![Slide 70]()
+![Slide 68]()
 
 </td><td>
 
