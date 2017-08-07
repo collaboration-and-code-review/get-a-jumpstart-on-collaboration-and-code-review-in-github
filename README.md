@@ -914,7 +914,7 @@ $ git push origin example-branch
 
 </td><td>
 
-### Cloning and Changing Directory
+### Cloning
 
 Animation
 
@@ -927,7 +927,7 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### Cloning
 
 Animation
 
@@ -940,7 +940,7 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### Changing Directory
 
 Animation
 
@@ -953,7 +953,7 @@ Animation
 
 </td><td>
 
-### Cloning and Changing Directory
+### Changing Directory
 
 Animation
 
@@ -979,7 +979,7 @@ Animation
 
 </td><td>
 
-### Creating a New Branch
+### Verifying Branch
 
 Animation
 
@@ -1018,7 +1018,7 @@ Animation
 
 </td><td>
 
-### Committing and Pushing
+### Adding and Committing
 
 Animation
 
@@ -1031,7 +1031,7 @@ Animation
 
 </td><td>
 
-### Committing and Pushing
+### Pushing
 
 Animation
 
@@ -1141,6 +1141,17 @@ Click “Merge pull request” and “Confirm merge”
 
 <tr><td width="30%">
 
+![Slide 65]()
+
+</td><td>
+
+### Pull Request Review Process
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 66]()
 
 </td><td>
@@ -1185,7 +1196,7 @@ If a change needs to be made, you can
 
 </td><td>
 
-### Pull Request Branches
+### Pull Request Command Line
 
 This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
 
@@ -1250,7 +1261,7 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 <tr><td width="30%">
 
-![Slide 72]()
+![Slide 71]()
 
 </td><td>
 
@@ -1269,7 +1280,7 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 73]()
+![Slide 72]()
 
 </td><td>
 
@@ -1287,7 +1298,7 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 74]()
+![Slide 73]()
 
 </td><td>
 
@@ -1310,7 +1321,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 <tr><td width="30%">
 
-![Slide 75]()
+![Slide 74]()
 
 </td><td>
 
@@ -1329,7 +1340,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 <tr><td width="30%">
 
-![Slide 76]()
+![Slide 75]()
 
 </td><td>
 
@@ -1346,7 +1357,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 77]()
+![Slide 76]()
 
 </td><td>
 
@@ -1364,7 +1375,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 78]()
+![Slide 77]()
 
 </td><td>
 
@@ -1377,7 +1388,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 79]()
+![Slide 78]()
 
 </td><td>
 
