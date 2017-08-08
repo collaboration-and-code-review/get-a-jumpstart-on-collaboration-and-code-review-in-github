@@ -724,7 +724,7 @@ I've made a couple of diagrams that I hope will give you an idea of what the pro
 * Fork the repo
 * Clone the fork. 
 
-Git will track some details about the project, for instance, where we cloned our code from. In relation to the repo on GitHub, the GitHub repo we cloned from is now a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
+Git will track some details about the project, for instance, where we cloned our code from. In relation to the clone, the GitHub repo we cloned from is now a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
 
 * Make our changes, push the changes back to the fork
 * Submit the pull request
@@ -847,14 +847,14 @@ What I'm going to show you now is a generic process that you can use for a share
 
 Let's go back to the screenshot of my local development environment. 
 
-* I am working in my home directory. The name of home directory is at the top of the command line, and in front of the prompt
+* I am working in my home directory. The name of home directory is at the top of the command line, and in front of the prompt. The reason why this matters is because the repo will be cloned into the directory we are working in.
 
 * I am going to type the command $ git clone into the command line and copy and paste the URL from the browser of either the shared repo or fork, then hit enter. 
 
 * A folder will appear in my home directory by the same name as the GitHub repo (2017.djangocon.us) and filled with the contents of the repo.  
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment. 
 
-* I will now change directory into the folder so that I can work there
+* I will now change directory into the folder so that I can work there by typing cd 2017.djangocon.us, which is the folder name.
 
 * I've clicked on the folder in the folder window so that I can see the contents visually. But I can also see I am working from within the folder in my command line because the name of the folder is at the top of the command line and in front of the prompt. 
 
@@ -862,7 +862,7 @@ Let's go back to the screenshot of my local development environment.
 
 * Use the command $ git branch to verify which branch you are checked out on; initially, you will be checkout out on the default branch (in this case master)
 
-* Create and checkout (switch) to a feature branch, branching off of the branch you intend your changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, because a copy, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
+* Create and checkout (switch) to a feature branch. We are calling this feature branch example-branch. We want to branch off of the branch we intend our changes to be merged into (note how the local files switch to the files of the branch you are checked out on, exactly the same at first, because a copy, but if you make a change in a branch and then switch back and forth between branches, you can see the difference)
 
 <!--
 * We created and checked-out to a branch by the name of example-branch
@@ -1045,7 +1045,7 @@ Animation
 
 ### New Branch
 
-There will now be a new branch in the repo that is your origin and a message telling you it's there. If you click on the branch tab you can choose the name of the branch to switch to the new branch. You can toggle back and forth between the branches by clicking on the branches in the branches tab. Also, at the bottom, I've highlighted where the commit message and time will show the change we made.
+There will now be a new branch in the repo that is your origin and a message telling you it's there. If you click on the branch tab you can choose the name of the branch to switch to the new branch. You can toggle back and forth between the branches by clicking on the branches in the branches tab. 
 
 </td></tr>
 
