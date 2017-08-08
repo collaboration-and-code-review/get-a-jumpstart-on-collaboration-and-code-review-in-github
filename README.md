@@ -252,7 +252,7 @@ Git command line- verifying Git is installed and the version
 ### GitHub: Social Network
 
 GitHub is a social network. You can:
-* Make a user account and profile
+* Make a user profile
 * Follow people
 * Follow their activity in your newsfeed
 * Find interesting projects
