@@ -1129,10 +1129,6 @@ There are two ways to merge a pull request
 * Via browser (click merge button)
 * Via command line in your local development environment
 
-If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
-
-I will go over that in a minute. 
-
 </td></tr>
 
 <!--
@@ -1156,6 +1152,21 @@ Click “Merge pull request” and “Confirm merge”
 
 </td><td>
 
+### Pull Request Command Line
+
+If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+
+I will go over that in a minute. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 67]()
+
+</td><td>
+
 ### Pull Request Review Options
 
 But first, let's go over the options for what you can do when you review a pull request.
@@ -1169,7 +1180,7 @@ The first two options involve clicking merge in the browser without running the 
 
 <tr><td width="30%">
 
-![Slide 67]()
+![Slide 68]()
 
 </td><td>
 
@@ -1188,23 +1199,21 @@ If a change needs to be made, you can
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
-![Slide 68]()
+![Slide 69]()
 
 </td><td>
 
-### Pull Request Command Line
-
-This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
+### Pull Request Branches
 
 <!--
 We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 -->
+
+This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
 
 When we are working from a shared repository, we can temporarily fetch all of the recent changes from the shared repository into a hidden .git folder in the local development environment. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
@@ -1213,6 +1222,8 @@ When we are working from a shared repository, we can temporarily fetch all of th
 * You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it
 
 </td></tr>
+
+
 
 
 
@@ -1276,6 +1287,7 @@ $ git push origin master
 ```
 
 </td></tr>
+
 
 
 <tr><td width="30%">
