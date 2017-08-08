@@ -1214,8 +1214,6 @@ This is why the pull request instructions are differenting depend on whether the
 
 We are able to fetch updates made to the DjangoCon US website repo to our local development environment by using the command $ git fetch origin. The updates will be stored in a hidden .git folder. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include feature branches or pull request branches created through a fork, because they come from outside of the origin. 
 
-Branches from the remote repo will be stored in the .git folder as remote-tracking branches and will be referred to as <remote-name>/<branch-name>. You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it.
-
 Branches created through a fork need to be pulled individually into our local development environment.
 
 </td></tr>
@@ -1236,9 +1234,13 @@ Branches created through a fork need to be pulled individually into our local de
 
 Even though these command line instructions say they are for reviewing pull requests, these instructions can actually be used by any maintainer to work on and push additional commits to any branch, regardless of whether it's a feature branch or pull request branch. 
 
-If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
+If a pull request has already been made, the additional commits will be automatically added to the pull request branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
 
-For a pull request submitted through the shared repository, we fetch origin to fetch the updates. We create a new branch, preferably of the same name as the branch online, and insert the contents of the remote-tracking branch. We can merge master to make sure the branch is up-to-date and can push additional commits to the branch. 
+<!--
+Branches from the remote repo will be stored in the .git folder as remote-tracking branches and will be referred to as <remote-name>/<branch-name>. You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it.
+-->
+
+For a pull request submitted through the shared repository, we fetch origin to fetch the updates. We create a new branch and insert the contents of the remote-tracking branch. We can merge master to make sure the branch is up-to-date and can push additional commits to the branch. 
 
 For a pull request submitted through a fork, we create a new branch off master and pull in the contents of the pull request from the fork. We can also push additional commits if we have been given permission to edit the pull request. 
 
