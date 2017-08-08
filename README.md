@@ -1126,9 +1126,6 @@ Animation
 Underneath that will be info about how to merge the pull request. 
 There are two ways to merge
 * Via browser (click the buttons that say “Merge pull request” and “Confirm merge”)
-
-
-
 * Via command line in your local development environment
 
 </td></tr>
@@ -1141,6 +1138,8 @@ There are two ways to merge
 
 ### Pull Request Review Process
 
+Animation
+
 </td></tr>
 
 
@@ -1152,7 +1151,7 @@ There are two ways to merge
 
 ### Pull Request Command Line
 
-If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the organization as "Shared Repository" Model or from the forked repo (remote branch) as "Fork and Pull" Model.  
+If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the shared repository or from a forked repo.  
 
 I will go over that in a minute. 
 
@@ -1171,7 +1170,7 @@ But first, let's go over the options for what you can do when you review a pull 
 
 The first two options involve clicking merge in the browser without running the code locally
 * You look at the pull request changes in the browser, you can tell they can be accepted and click merge (for example, if the pull request is fixing a typo) 
-* You look at the pull request changes in the browser. You need to change something, but you can change it in the browser. You edit the file in the browser and click merge (for example, if you fix a typo in the pull request) 
+* You look at the pull request changes in the browser. You need to change something, but you can change it in the browser. You edit the pull request file in the browser and click merge
 
 </td></tr>
 
@@ -1191,10 +1190,12 @@ If a change does not need to be made, you can
 
 If a change needs to be made, you can
 * Ask the pull request author to make a change to the pull request
-* Push additional commits yourself to the pull request branch
+* Push additional commits yourself to the pull request branch on GitHub
 * Make the change locally yourself, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
 
 </td></tr>
+
+
 
 
 <tr><td width="30%">
