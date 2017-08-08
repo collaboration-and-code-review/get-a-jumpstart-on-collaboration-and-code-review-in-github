@@ -424,7 +424,7 @@ Branches
 * They are a best practice
 * Can be used by any GitHub user
 
-When you create a repo, by default you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of the entire master branch and give it a different name. Now there are two branches, in the same repo, the master branch and a feature branch. You can create an unlimited number of branches.
+When you create a repo, by default you are working within a branch named master. Say for instance that you want to make a change in the branch, you can make a copy of the entire master branch and give it a different name. Now there are two branches, in the same repo, the master branch and a feature branch. You can create an unlimited number of branches and you can switch in between them to work on them.
 
 At some point, when the feature branch author thinks it's done, a pull request will be submitted and the feature branch will become a pull request branch. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the branch.  
 
@@ -524,7 +524,7 @@ Animation
 * Determine which collaboration approach to use (there are two)
 * Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
-* Odds and ends
+* Additional info
 
 </td><td>
 
@@ -1295,7 +1295,7 @@ $ git push origin master
 * Determine which collaboration approach to use (there are two)
 * Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
-* Odds and ends
+* Additional info
 
 </td><td>
 
