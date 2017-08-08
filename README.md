@@ -109,7 +109,7 @@ By Katherine "Kati" Michel
 
 ### Welcome 
 
-Hello everyone. Welcome. I'm Kati Michel. I'm thrilled to have the opportunity to teach you what I've learned as the DjangoCon US Website Chair.
+Welcome, everyone. I'm Kati Michel. I'm thrilled to have the opportunity to teach you what I've learned as the DjangoCon US Website Chair.
 
 </td></tr>
 
