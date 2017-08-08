@@ -147,7 +147,7 @@ I want to teach you a process that will get you started collaborating and doing 
 
 I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to know what the process looks like. 
 
-But don’t worry if you miss anything, because at the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation, setup information, and all of the commands I will be showing you today, as well as some other useful resources I couldn’t include because of time constraints. 
+But don’t worry if you miss anything, because at the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation, setup information, and all of the commands I will be showing you today. 
 
 My slides and a video of my talk will also be online later.
 
@@ -162,9 +162,9 @@ My slides and a video of my talk will also be online later.
 
 ### Announcing TacoFancy
 
-I want to tell you how I got started with open-source contribution, which is a bit unconventional and might show you that there are many ways to get involved. 
+I want to tell you how I got started with open-source contribution, which I think will show you there are many ways to get involved. 
 
-I first signed up for GitHub on April 18, 2013. But my account sat unused for months. I didn't know how to get started.  
+I first signed up for GitHub in April 2013. But my account sat unused for months. I didn't know how to get started.  
 
 7 months later, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
 
@@ -183,20 +183,23 @@ So I clicked on the link and went to the project to take a look.
 
 One sentence in the project information that had a huge impact on me: "Are You New to Github But Want to Contribute?" 
 
-That was me. I became very determined to contribute to this project. 
 
 </td></tr>
 
 
+
+
+
+
 <tr><td width="30%">
 
-![Slides 7]()
+![Slide 7]()
 
 </td><td>
 
-### The One Sentence that Motivated Me to Start Using GitHub
+### My First Pull Request
 
-Animation
+That was me. I became very determined to contribute to this project and submitted my first pull request there.
 
 </td></tr>
 
@@ -204,19 +207,6 @@ Animation
 <tr><td width="30%">
 
 ![Slide 8]()
-
-</td><td>
-
-### My First Pull Request
-
-I struggled through, but I was extremely motivated and submitted my first pull request.
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 9]()
 
 </td><td>
 
@@ -242,7 +232,7 @@ DjangoCon US Website Repo
 
 <tr><td width="30%">
 
-![Slide 10]()
+![Slide 9]()
 
 </td><td>
 
@@ -260,7 +250,7 @@ Git command line- verifying Git is installed and the version
 
 <tr><td width="30%">
 
-![Slide 11]()
+![Slide 10]()
 
 </td><td>
 
@@ -277,7 +267,7 @@ GitHub is a social network. You can:
 
 <tr><td width="30%">
 
-![Slide 12]()
+![Slide 11]()
 
 </td><td>
 
@@ -291,6 +281,19 @@ For example, if you go to the DjangoCon US organization account you will see a l
 DjangoCon US Organization Account List of Repositories
 DjangoCon US Website Repo
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 12]()
+
+</td><td>
+
+### GitHub: Repositories
+
+Animation
 
 </td></tr>
 
@@ -311,19 +314,6 @@ Animation
 <tr><td width="30%">
 
 ![Slide 14]()
-
-</td><td>
-
-### GitHub: Repositories
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 15]()
 
 </td><td>
 
@@ -351,6 +341,19 @@ I will elaborate on this process later.
 
 <tr><td width="30%">
 
+![Slide 15]()
+
+</td><td>
+
+### Local Dev Environment
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 16]()
 
 </td><td>
@@ -368,19 +371,6 @@ Animation
 
 </td><td>
 
-### Local Dev Environment
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 18]()
-
-</td><td>
-
 ### Collaboration and Code Review Best Practice Workflow
 
 There is a concept that I think is very important.
@@ -395,7 +385,7 @@ In order to be able to increase your level of responsibility, we need to have th
 
 <tr><td width="30%">
 
-![Slide 19]()
+![Slide 18]()
 
 </td><td>
 
@@ -412,7 +402,7 @@ There is a way to make changes that enables you to switch between multiple tasks
 
 <tr><td width="30%">
 
-![Slide 20]()
+![Slide 19]()
 
 </td><td>
 
@@ -429,6 +419,19 @@ When you create a repo, by default you are working within a branch named master.
 At some point, when the feature branch author thinks it's done, a pull request will be submitted and the feature branch will become a pull request branch. If the changes are accepted, they will be merged into the master branch. The master branch will be like before, except with the changes from the branch.  
 
 But both feature branches (a.k.a. topic branches) and pull request branches are examples of branches. We can work on them in much the same way. 
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 20]()
+
+</td><td>
+
+### Branches
+
+Animation
 
 </td></tr>
 
@@ -461,7 +464,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 22]()
+![Slide 23]()
 
 </td><td>
 
@@ -478,9 +481,11 @@ Animation
 
 </td><td>
 
-### Branches
+### How to Create a Branch
 
-Animation
+Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. When you click to save the changes, they will not save in the current file. Instead, a new branch will be created. 
+
+You can also create and work on branches through the command line in your local development environment, which I will show you later. 
 
 </td></tr>
 
@@ -493,21 +498,6 @@ Animation
 
 ### How to Create a Branch
 
-Let's go back to the screenshot of editing a file in GitHub. There is a radial button you can choose to indicate you want to create a new branch. There is also a place to give the branch a new name. When you click to save the changes, they will not save in the current file. Instead, a new branch will be created. 
-
-You can also create and work on branches through the command line in your local development environment, which I will show you later. 
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 26]()
-
-</td><td>
-
-### How to Create a Branch
-
 Animation
 
 </td></tr>
@@ -515,7 +505,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 27]()
+![Slide 26]()
 
 </td><td>
 
@@ -531,7 +521,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 28]()
+![Slide 27]()
 
 </td><td>
 
@@ -544,7 +534,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 29]()
+![Slide 28]()
 
 </td><td>
 
@@ -563,7 +553,7 @@ The two different models typically correspond to the two different account types
 
 <tr><td width="30%">
 
-![Slide 30]()
+![Slide 29]()
 
 </td><td>
 
@@ -578,7 +568,7 @@ There are two types of accounts
 
 <tr><td width="30%">
 
-![Slide 31]()
+![Slide 30]()
 
 </td><td>
 
@@ -591,7 +581,7 @@ When a user has write permission to a repo, it means they can make changes direc
 
 <tr><td width="30%">
 
-![Slide 32]()
+![Slide 31]()
 
 </td><td>
 
@@ -613,7 +603,7 @@ If I submit a pull request and it is accepted, the changes will be pulled into t
 
 <tr><td width="30%">
 
-![Slide 33]()
+![Slide 32]()
 
 </td><td>
 
@@ -626,7 +616,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 34]()
+![Slide 33]()
 
 </td><td>
 
@@ -642,7 +632,7 @@ We've gone to the DjangoCon US website repo.
 
 <tr><td width="30%">
 
-![Slide 35]()
+![Slide 34]()
 
 </td><td>
 
@@ -655,7 +645,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 36]()
+![Slide 35]()
 
 </td><td>
 
@@ -673,7 +663,7 @@ The fork is an exact copy of the original repo at the time it was forked. I coul
 
 <tr><td width="30%">
 
-![Slide 37]()
+![Slide 36]()
 
 </td><td>
 
@@ -686,7 +676,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 38]()
+![Slide 37]()
 
 </td><td>
 
@@ -699,7 +689,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 39]()
+![Slide 38]()
 
 </td><td>
 
@@ -713,7 +703,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 40]()
+![Slide 39]()
 
 </td><td>
 
@@ -732,6 +722,19 @@ Git will track some details about the project, for instance, where we cloned our
 <!--
 The GitHub repo does not automatically update when we make a change locally and vice versa. We have to update it.
 -->
+
+</td></tr>
+
+
+<tr><td width="30%">
+
+![Slide 40]()
+
+</td><td>
+
+### Fork and Pull Model
+
+Animation
 
 </td></tr>
 
@@ -781,9 +784,14 @@ Animation
 
 </td><td>
 
-### Fork and Pull Model
+### Shared Repository Model
 
-Animation
+Here's what it looks like when we use the "Shared Repository" Model
+
+* The fork is not needed, because we have write permission
+* Clone the shared repository. The shared repository will now be the remote "origin"
+* Make our changes, push the changes back to the shared repository
+* Submit the pull request
 
 </td></tr>
 
@@ -796,12 +804,7 @@ Animation
 
 ### Shared Repository Model
 
-Here's what it looks like when we use the "Shared Repository" Model
-
-* The fork is not needed, because we have write permission
-* Clone the shared repository. The shared repository will now be the remote "origin"
-* Make our changes, push the changes back to the shared repository
-* Submit the pull request
+Animation
 
 </td></tr>
 
@@ -819,25 +822,12 @@ Animation
 </td></tr>
 
 
+
+
+
 <tr><td width="30%">
 
 ![Slide 47]()
-
-</td><td>
-
-### Shared Repository Model
-
-Animation
-
-</td></tr>
-
-
-
-
-
-<tr><td width="30%">
-
-![Slide 48]()
 
 </td><td>
 
@@ -908,6 +898,19 @@ $ git push origin example-branch
 
 <tr><td width="30%">
 
+![Slide 48]()
+
+</td><td>
+
+### Cloning
+
+Animation
+
+</td></tr>
+
+
+<tr><td width="30%">
+
 ![Slide 49]()
 
 </td><td>
@@ -925,7 +928,7 @@ Animation
 
 </td><td>
 
-### Cloning
+### Changing Directory
 
 Animation
 
@@ -951,7 +954,7 @@ Animation
 
 </td><td>
 
-### Changing Directory
+### GitHub Repo Versus Local Directory
 
 Animation
 
@@ -964,7 +967,7 @@ Animation
 
 </td><td>
 
-### GitHub Repo Versus Local Directory
+### Verifying Branch
 
 Animation
 
@@ -977,7 +980,7 @@ Animation
 
 </td><td>
 
-### Verifying Branch
+### Creating a New Branch
 
 Animation
 
@@ -990,7 +993,7 @@ Animation
 
 </td><td>
 
-### Creating a New Branch
+### Working on a File Locally
 
 Animation
 
@@ -1003,19 +1006,6 @@ Animation
 
 </td><td>
 
-### Working on a File Locally
-
-Animation
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 57]()
-
-</td><td>
-
 ### Adding and Committing
 
 Animation
@@ -1025,7 +1015,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 58]()
+![Slide 57]()
 
 </td><td>
 
@@ -1039,7 +1029,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 59]()
+![Slide 58]()
 
 </td><td>
 
@@ -1052,7 +1042,7 @@ There will now be a new branch in the repo that is your origin and a message tel
 
 <tr><td width="30%">
 
-![Slide 60]()
+![Slide 59]()
 
 </td><td>
 
@@ -1065,7 +1055,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 61]()
+![Slide 60]()
 
 </td><td>
 
@@ -1085,7 +1075,7 @@ Go to the repo you want your pull request to be merged into, in this case, the D
 
 <tr><td width="30%">
 
-![Slide 62]()
+![Slide 61]()
 
 </td><td>
 
@@ -1098,7 +1088,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 63]()
+![Slide 62]()
 
 </td><td>
 
@@ -1113,7 +1103,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 64]()
+![Slide 63]()
 
 </td><td>
 
@@ -1133,7 +1123,7 @@ There are two ways to merge
 
 <tr><td width="30%">
 
-![Slide 65]()
+![Slide 64]()
 
 </td><td>
 
@@ -1146,7 +1136,7 @@ Animation
 
 <tr><td width="30%">
 
-![Slide 66]()
+![Slide 65]()
 
 </td><td>
 
@@ -1161,7 +1151,7 @@ I will go over that in a minute.
 
 <tr><td width="30%">
 
-![Slide 67]()
+![Slide 66]()
 
 </td><td>
 
@@ -1178,7 +1168,7 @@ The first two options involve clicking merge in GitHub without running the code 
 
 <tr><td width="30%">
 
-![Slide 68]()
+![Slide 67]()
 
 </td><td>
 
@@ -1199,7 +1189,7 @@ If a change needs to be made, you can
 
 <tr><td width="30%">
 
-![Slide 69]()
+![Slide 68]()
 
 </td><td>
 
@@ -1220,7 +1210,7 @@ Branches created through a fork need to be pulled individually into our local de
 
 <tr><td width="30%">
 
-![Slide 70]()
+![Slide 69]()
 
 </td><td>
 
@@ -1258,7 +1248,7 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 <tr><td width="30%">
 
-![Slide 71]()
+![Slide 70]()
 
 </td><td>
 
@@ -1277,7 +1267,7 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 72]()
+![Slide 71]()
 
 </td><td>
 
@@ -1296,7 +1286,7 @@ $ git push origin master
 
 <tr><td width="30%">
 
-![Slide 73]()
+![Slide 72]()
 
 </td><td>
 
@@ -1321,7 +1311,7 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 <tr><td width="30%">
 
-![Slide 74]()
+![Slide 73]()
 
 </td><td>
 
@@ -1339,7 +1329,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 75]()
+![Slide 74]()
 
 </td><td>
 
@@ -1357,7 +1347,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 76]()
+![Slide 75]()
 
 </td><td>
 
@@ -1370,7 +1360,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 77]()
+![Slide 76]()
 
 </td><td>
 
