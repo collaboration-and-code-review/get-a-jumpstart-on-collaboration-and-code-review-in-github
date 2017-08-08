@@ -1345,11 +1345,12 @@ Hopefully, you will want to create a welcoming environment for your project.
 
 Setting Up Repo Fail Safes
 * Back up the repo (third-party software)
-* Protect main branch(es) 
-* Enable required reviews of pull requests
-* Worst case scenario: How to recover deleted branch
+* Enable required reviews of pull requests, for example, a review has to be done before a pull request can be merged
+* Protect main branch(es) so they can’t be deleted
+* Just in case: How to recover deleted branch link in Useful Resources section
 
 </td></tr>
+
 
 
 <tr><td width="30%">
@@ -1362,12 +1363,12 @@ Setting Up Repo Fail Safes
 
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects and other welcoming projects
-* Cherry pick problems or issues that fit your skill level
-* Look for triaging
+* Look for triaging and cherry pick issues that fit your skill level
 * Practice your skills and workflow (don't be afraid to delete/start over)
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 
 </td></tr>
+
 
 
 <tr><td width="30%">
