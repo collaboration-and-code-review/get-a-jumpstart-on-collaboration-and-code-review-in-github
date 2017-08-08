@@ -1196,8 +1196,6 @@ If a change needs to be made, you can
 </td></tr>
 
 
-
-
 <tr><td width="30%">
 
 ![Slide 69]()
@@ -1212,21 +1210,16 @@ The forked repo is not an origin for us and we do not have write permission to i
 
 This is why the pull request instructions are differenting depend on whether the pull request was submitted through the shared repository or fork. 
 
-We are able to fetch updates made to the DjangoCon US website repo to our local development environment by using the command $ git fetch origin. The updates will be stored in a hidden .git folder. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include feature branches or pull request branches created through a fork, because they come from outside of the origin. 
+We are able to fetch updates made to the DjangoCon US website repo to our local development environment. The updates will be stored in a hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include feature branches or pull request branches created through a fork, because they come from outside of the origin. 
 
 Branches created through a fork need to be pulled individually into our local development environment.
 
 </td></tr>
 
 
-
-
-
-
-
 <tr><td width="30%">
 
-![Slide 71]()
+![Slide 70]()
 
 </td><td>
 
@@ -1236,13 +1229,9 @@ Even though these command line instructions say they are for reviewing pull requ
 
 If a pull request has already been made, the additional commits will be automatically added to the pull request branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
 
-<!--
-Branches from the remote repo will be stored in the .git folder as remote-tracking branches and will be referred to as <remote-name>/<branch-name>. You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it.
--->
+For a pull request submitted through the shared repository, we use the command $ git fetch origin to fetch the new pull request branch into the .git folder, where it will be a remote-tracking branch referred to by <remote-name>/<branch-name>. We create a new branch and insert the contents of the remote-tracking branch into it. We can merge master to make sure the branch is up-to-date and can push additional commits to the branch. 
 
-For a pull request submitted through the shared repository, we fetch origin to fetch the updates. We create a new branch and insert the contents of the remote-tracking branch. We can merge master to make sure the branch is up-to-date and can push additional commits to the branch. 
-
-For a pull request submitted through a fork, we create a new branch off master and pull in the contents of the pull request from the fork. We can also push additional commits if we have been given permission to edit the pull request. 
+For a pull request submitted through a fork, we create a new branch off master and pull in the contents of the pull request branch from the fork. We can also push additional commits if we have been given permission to edit the pull request. 
 
 ```bash
 $ git fetch origin
@@ -1266,9 +1255,6 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 </td></tr>
 
 
-
-
-
 <tr><td width="30%">
 
 ![Slide 71]()
@@ -1277,7 +1263,7 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 ### Merge Pull Request Locally and Push to Master Branch
 
-This piece of code can be used for either type of pull request. You would use this piece of code if you have updated the pull request in your local development environment and simply want to push the changes live. You are checking out to the master branch, merging the feature branch into the master branch, then pushing the changes to the master branch on GitHub. 
+This piece of code can be used for either type of pull request. You would use this piece of code if you have updated the pull request in your local development environment and simply want to push the change live. You are checking out to the master branch, merging the feature branch into the master branch, then pushing the changes to the master branch on GitHub. 
 
 ```bash
 $ git checkout master
@@ -1286,7 +1272,6 @@ $ git push origin master
 ```
 
 </td></tr>
-
 
 
 <tr><td width="30%">
@@ -1303,6 +1288,7 @@ $ git push origin master
 * Additional info
 
 </td><td>
+
 
 
 
