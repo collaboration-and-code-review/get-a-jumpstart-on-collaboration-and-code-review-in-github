@@ -1210,11 +1210,13 @@ We are DjangoCon website maintainers and the DjangoCon US website repo is our or
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 
-This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
+This is why the pull request instructions are differenting depend on whether the pull request was submitted through the shared repository or fork. 
 
-We are able to fetch updates made to the DjangoCon US website repo to our local development environment. The updates will be stored in a hidden .git folder. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+We are able to fetch updates made to the DjangoCon US website repo to our local development environment by using the command $ git fetch origin. The updates will be stored in a hidden .git folder. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include feature branches or pull request branches created through a fork, because they come from outside of the origin. 
 
-Branches in the remotoe repo are remote branches. They will be stores in the .git folder as rmote-tracking branches and will be referred to as <remote-name>/<branch-name>. You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it
+Branches from the remote repo will be stored in the .git folder as remote-tracking branches and will be referred to as <remote-name>/<branch-name>. You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it.
+
+Branches created through a fork need to be pulled individually into our local development environment.
 
 </td></tr>
 
