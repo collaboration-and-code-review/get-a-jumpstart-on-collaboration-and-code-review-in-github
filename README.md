@@ -1130,6 +1130,7 @@ There are two ways to merge
 
 </td></tr>
 
+
 <tr><td width="30%">
 
 ![Slide 65]()
@@ -1316,28 +1317,11 @@ Hopefully, you will want to create a welcoming environment for your project.
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
 -->
 
+
+
 <tr><td width="30%">
 
 ![Slide 74]()
-
-</td><td>
-
-### GitHub: Documentation
-
-* ISSUE_TEMPLATE
-* PULL_REQUEST_TEMPLATE
-
-<!--
-* Issues Tab
-* Pull Requests Tab
--->
-
-</td></tr>
-
-
-<tr><td width="30%">
-
-![Slide 75]()
 
 </td><td>
 
@@ -1355,7 +1339,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 76]()
+![Slide 75]()
 
 </td><td>
 
@@ -1373,7 +1357,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 77]()
+![Slide 76]()
 
 </td><td>
 
@@ -1386,7 +1370,7 @@ Setting Up Repo Fail Safes
 
 <tr><td width="30%">
 
-![Slide 78]()
+![Slide 77]()
 
 </td><td>
 
