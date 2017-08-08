@@ -109,7 +109,7 @@ By Katherine "Kati" Michel
 
 ### Welcome 
 
-Thank you for being here. I'm Kati Michel. I'm thrilled to have the opportunity to teach you what I've learned as the DjangoCon US Website Chair.
+Hello everyone. Welcome. I'm Kati Michel. I'm thrilled to have the opportunity to teach you what I've learned as the DjangoCon US Website Chair.
 
 </td></tr>
 
@@ -331,7 +331,7 @@ Animation
 
 When we are working on code, we can't do everything in the GitHub website. 
 
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, and run the code in a local browser so that you can add a feature to it, or test a pull request branch. 
+We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, and run the code in a local browser so that you can add a feature to it, or test a pull request branch. 
 
 There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. 
 
