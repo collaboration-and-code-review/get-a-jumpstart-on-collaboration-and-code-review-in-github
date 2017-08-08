@@ -1191,8 +1191,6 @@ If a change needs to be made, you can
 
 We are DjangoCon website maintainers and the DjangoCon US website repo is our origin. 
 
-The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
-
 This is why the pull request instructions are different. 
 
 We are able to fetch updates made to the DjangoCon US website repo to our local development environment. The updates will be stored in a hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include feature branches or pull request branches created through a fork, because they come from outside of the origin. 
@@ -1210,11 +1208,10 @@ Branches created through a fork need to be pulled individually into our local de
 
 ### Pull Request Review
 
-Even though these command line instructions say they are for reviewing pull requests, these instructions can actually be used by any maintainer to work on and push additional commits to any branch, regardless of whether it's a feature branch or pull request branch. 
+The instructions on this slide can actually be used by any maintainer to work on any branch they have write permission to.  
+If a pull request has already been made, the additional commits will be automatically added to the pull request, up to the point that the pull request is merged.
 
-If a pull request has already been made, the additional commits will be automatically added to the pull request branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
-
-For a pull request submitted through the shared repository, we use the command $ git fetch origin to fetch the new pull request branch into the .git folder, where it will be a remote-tracking branch referred to by <remote-name>/<branch-name>. We create a new branch and insert the contents of the remote-tracking branch into it. We can merge master to make sure the branch is up-to-date and can push additional commits to the branch. 
+For a shared repository pull request, we use the command $ git fetch origin to fetch the updates into the .git folder. The pull request branch will now be a remote-tracking branch referred to as <remote-name>/<branch-name>. We create and checkout to a new local branch and insert the contents of the remote-tracking branch into it. We can merge master to make sure the branch is up-to-date and we can push additional commits to the branch. 
 
 For a pull request submitted through a fork, we create a new branch off master and pull in the contents of the pull request branch from the fork. We can also push additional commits if we have been given permission to edit the pull request. 
 
@@ -1248,7 +1245,9 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 ### Merge Pull Request Locally and Push to Master Branch
 
-This piece of code can be used for either type of pull request. You would use this piece of code if you have updated the pull request in your local development environment and simply want to push the change live. You are checking out to the master branch, merging the feature branch into the master branch, then pushing the changes to the master branch on GitHub. 
+This piece of code is for merging a pull request locally and pushing to the master branch.  
+
+You are checking out to the master branch, merging the feature branch into the master branch, then pushing the change to the live master branch on GitHub. 
 
 ```bash
 $ git checkout master
