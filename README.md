@@ -722,9 +722,9 @@ Animation
 I've made a couple of diagrams that I hope will give you an idea of what the process is for working locally for each collaborative development model. 
 
 * Fork the repo
-* Clone the fork. The fork will now be a remote repo known as "origin".
+* Clone the fork. 
 
-Git will track some details about the project, for instance, where we cloned our code from. The repo we cloned from is a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
+Git will track some details about the project, for instance, where we cloned our code from. In relation to the repo on GitHub, the GitHub repo we cloned from is now a remote repo and Git will assign the name "origin" to it. We can use the name origin in the command line to refer to the repo so we can push and pull changes back and forth between the local development environment and the GitHub repo.
 
 * Make our changes, push the changes back to the fork
 * Submit the pull request
@@ -799,7 +799,7 @@ Animation
 Here's what it looks like when we use the "Shared Repository" Model
 
 * The fork is not needed, because we have write permission
-* Clone the shared repository, which will now be the remote "origin"
+* Clone the shared repository. The shared repository will now be the remote "origin"
 * Make our changes, push the changes back to the shared repository
 * Submit the pull request
 
