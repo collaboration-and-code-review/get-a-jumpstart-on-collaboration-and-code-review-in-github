@@ -1151,7 +1151,7 @@ Animation
 
 ### Pull Request Command Line
 
-If you click on the link, there will be a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the shared repository or from a forked repo.  
+There will be a link to a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the shared repository or from a forked repo.  
 
 I will go over that in a minute. 
 
@@ -1168,9 +1168,9 @@ I will go over that in a minute.
 
 But first, let's go over the options for what you can do when you review a pull request.
 
-The first two options involve clicking merge in the browser without running the code locally
-* You look at the pull request changes in the browser, you can tell they can be accepted and click merge (for example, if the pull request is fixing a typo) 
-* You look at the pull request changes in the browser. You need to change something, but you can change it in the browser. You edit the pull request file in the browser and click merge
+The first two options involve clicking merge in GitHub without running the code locally
+* You look at the pull request changes, you can tell they can be accepted and click merge  
+* You look at the pull request changes. You need to change something, but you can change it in GitHub. You edit the pull request file in the browser and click merge.
 
 </td></tr>
 
@@ -1183,14 +1183,14 @@ The first two options involve clicking merge in the browser without running the 
 
 ### Pull Request Review Options
 
-The other options involve fetching the pull request into your locally development environment and running the code there. After you run the code locally, there are a few different options. 
+The other options involve fetching the pull request into your locally development environment and running the code there. 
 
 If a change does not need to be made, you can
 * Go back to the browser and click merge
 
 If a change needs to be made, you can
 * Ask the pull request author to make a change to the pull request
-* Push additional commits yourself to the pull request branch on GitHub
+* Make the change locally yourself and push additional commits to the pull request branch on GitHub
 * Make the change locally yourself, merge the branch with the branch it is intended to be merged with locally, and push to the branch on GitHub
 
 </td></tr>
@@ -1208,7 +1208,7 @@ We are DjangoCon website maintainers and the DjangoCon US website repo is our or
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
 
-This is why the pull request instructions are differenting depend on whether the pull request was submitted through the shared repository or fork. 
+This is why the pull request instructions are different. 
 
 We are able to fetch updates made to the DjangoCon US website repo to our local development environment. The updates will be stored in a hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include feature branches or pull request branches created through a fork, because they come from outside of the origin. 
 
