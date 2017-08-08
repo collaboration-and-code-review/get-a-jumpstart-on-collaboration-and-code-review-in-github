@@ -183,12 +183,7 @@ So I clicked on the link and went to the project to take a look.
 
 One sentence in the project information that had a huge impact on me: "Are You New to Github But Want to Contribute?" 
 
-
 </td></tr>
-
-
-
-
 
 
 <tr><td width="30%">
@@ -199,7 +194,7 @@ One sentence in the project information that had a huge impact on me: "Are You N
 
 ### My First Pull Request
 
-That was me. I became very determined to contribute to this project and submitted my first pull request there.
+That was me. I became very determined to contribute and submitted my first pull request there.
 
 </td></tr>
 
@@ -212,7 +207,7 @@ That was me. I became very determined to contribute to this project and submitte
 
 ### DjangoCon US Website as Example Project
 
-I kept using Git and GitHub and getting better at it. Eventually, I came across the DjangoCon US Website Repo and became a contributor in 2016, then became the Website Chair and maintainer for 2017. 
+I kept using Git and GitHub and getting better at it. I eventually became a DjangoCon US websitie contributor in 2016, then became the Website Chair and maintainer in 2017. 
 
 I am going to use DjangoCon US website as an example throughout this talk. 
 
@@ -321,7 +316,7 @@ Animation
 
 When we are working on code, we can't do everything in the GitHub website. 
 
-We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, and run the code in a local browser so that you can add a feature to it, or test a pull request branch. 
+For example, we might want to make a copy of the DjangoCon US website code in the local development environment of our computer, install the necessary software, and run the code in a local browser so that you can add a feature to it, or test a pull request branch.
 
 There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. 
 
@@ -1024,7 +1019,6 @@ Animation
 Animation
 
 </td></tr>
-
 
 
 <tr><td width="30%">
