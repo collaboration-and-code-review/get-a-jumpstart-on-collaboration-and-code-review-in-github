@@ -147,7 +147,7 @@ I want to teach you a process that will get you started collaborating and doing 
 
 I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to know what the process looks like. 
 
-But don’t worry if you miss anything, because at the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today, as well as some other useful resources I couldn’t include because of time constraints. 
+But don’t worry if you miss anything, because at the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation, setup information, and all of the commands I will be showing you today, as well as some other useful resources I couldn’t include because of time constraints. 
 
 My slides and a video of my talk will also be online later.
 
@@ -331,7 +331,7 @@ Animation
 
 When we are working on code, we can't do everything in the GitHub website. 
 
-For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, run the code in a local browser. 
+For example, the code in the DjangoCon US website repo is for a website. We cannot run it on GitHub. We sometimes need to make a copy of the code in the local development environment of our computer, install any necessary software, and run the code in a local browser so that you can add a feature to it, or test a pull request branch. 
 
 There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. 
 
@@ -340,15 +340,11 @@ Here is a screenshot of my local development environment.
 * In the background I have GitHub open in the browser
 * In front of that, I have my local folder window and my command line
 
-* I can use the URL (web address) from the browser in the command line to create a copy of the repo in my local development environment. This is called cloning. 
+* I can use the web address (URL) from the GitHub repo in the command line to create a copy of the repo in my local development environment. Making a copy of a repo locally is called cloning.
 * I can make changes and push the changes back to GitHub. 
 * Meanwhile, other users can do the same thing on their computers.
 
 I will elaborate on this process later.
-
-<!--
-This could be so that we can add a feature to it, or it could be so that we can look at a change proposed by a pull request and decide how to proceed. 
--->
 
 </td></tr>
 
@@ -386,6 +382,8 @@ Animation
 </td><td>
 
 ### Collaboration and Code Review Best Practice Workflow
+
+There is a concept that I think is very important.
 
 In order to be able to increase your level of responsibility, we need to have the freedom to switch between multiple tasks. 
 * You keep your main code branch (master) up-to-date
@@ -853,7 +851,7 @@ Let's go back to the screenshot of my local development environment.
 
 * I am going to type the command $ git clone into the command line and copy and paste the URL from the browser of either the shared repo or fork, then hit enter. 
 
-* A folder will appear in my home directory by the same name as the GitHub repo (2017.djangocon.us) and filled with the contents of the repo. Making a copy of a repo locally is called cloning. 
+* A folder will appear in my home directory by the same name as the GitHub repo (2017.djangocon.us) and filled with the contents of the repo.  
 * I now have a copy of the code online in the GitHub repo and a copy in my local development environment. 
 
 * I will now change directory into the folder so that I can work there
