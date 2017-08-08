@@ -1121,19 +1121,17 @@ Animation
 
 * If you are a repo maintainer, you will receive a notification by browser or email to let you know there is a pull request
 * Follow the link to the pull request in the repo pull request tab in the browser
-* Look over the information about the pull request
+* Look over the information about the pull request. You can see the title and description and look at a file that will show all of the changes made. 
+
+Underneath that will be info about how to merge the pull request. 
+There are two ways to merge
+* Via browser (click the buttons that say “Merge pull request” and “Confirm merge”)
 
 
 
-There are two ways to merge a pull request
-* Via browser (click merge button)
 * Via command line in your local development environment
 
 </td></tr>
-
-<!--
-Click “Merge pull request” and “Confirm merge”
--->
 
 <tr><td width="30%">
 
