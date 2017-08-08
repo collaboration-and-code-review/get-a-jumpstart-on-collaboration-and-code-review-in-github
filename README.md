@@ -1207,19 +1207,15 @@ If a change needs to be made, you can
 
 ### Pull Request Branches
 
-<!--
-We are DjangoCon US website maintainer with write permission to the DjangoCon repo. The DjangoCon US website repo is our origin. 
+We are DjangoCon website maintainers and the DjangoCon US website repo is our origin. 
 
 The forked repo is not an origin for us and we do not have write permission to it, unless we given permission, for example to edit the pull request as a DjangoCon US website maintainer. 
--->
 
 This is why the pull request instructions are different depend on whether the pull request was submitted through the shared repository or fork. 
 
-When we are working from a shared repository, we can temporarily fetch all of the recent changes from the shared repository into a hidden .git folder in the local development environment. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
+We are able to fetch updates made to the DjangoCon US website repo to our local development environment. The updates will be stored in a hidden .git folder. When we fetch these changes, they will include branches and commits made directly to the DjangoCon US website, but they will not include branches created through a fork or a pull request branch from a fork, because they come from outside of the origin. 
 
-* The branch in GitHub is known as a remote branch
-* The branch in the .git folder is known as a remote-tracking branch and is referred to as <remote-name>/<branch-name>
-* You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it
+Branches in the remotoe repo are remote branches. They will be stores in the .git folder as rmote-tracking branches and will be referred to as <remote-name>/<branch-name>. You can create a local branch and insert the contents of a remote-tracking branch if you want to work on it
 
 </td></tr>
 
@@ -1235,9 +1231,9 @@ When we are working from a shared repository, we can temporarily fetch all of th
 
 </td><td>
 
-### 
+### Pull Request Review
 
-Even though these command line instructions say they are for reviewing pull requests, they can actually be used by a maintainer to work on and push additional commits to any branch, regardless of whether it's a feature branch or pull request branch. 
+Even though these command line instructions say they are for reviewing pull requests, these instructions can actually be used by any maintainer to work on and push additional commits to any branch, regardless of whether it's a feature branch or pull request branch. 
 
 If a pull request has already been made, the additional commits will be automatically added to the pull request when you push the additional commits to the branch, up to the point that the pull request is believed to be finished and a maintainer merges it.
 
