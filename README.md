@@ -1119,9 +1119,11 @@ Animation
 
 ### Pull Request Review Process
 
-* If you are a repo maintainer, you will receive a notification (by browser or email, based on your notification preferences) to let you know there is a pull request
+* If you are a repo maintainer, you will receive a notification by browser or email to let you know there is a pull request
 * Follow the link to the pull request in the repo pull request tab in the browser
-* Look over the information about the pull request provided by the contributor
+* Look over the information about the pull request
+
+
 
 There are two ways to merge a pull request
 * Via browser (click merge button)
