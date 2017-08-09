@@ -1239,6 +1239,10 @@ $ git pull https://github.com/<user-name>/<repo-name> <branch-name>
 $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 ```
 
+<!--
+Push after changes are made and committed
+-->
+
 </td></tr>
 
 
@@ -1296,7 +1300,7 @@ GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on common
 * LICENSE- tells you the terms under which you can contribute and use the code, based on the law
 * CODE_OF_CONDUCT.md
 
-* README.md-
+* README.md
 * CONTRIBUTING.md
 
 </td></tr>
