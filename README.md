@@ -1193,9 +1193,9 @@ We are DjangoCon website maintainers and the DjangoCon US website repo is our or
 
 This is why the pull request instructions are different. 
 
-We are able to fetch updates made to the DjangoCon US website repo to our local development environment. The updates will be stored in a hidden .git folder. When we fetch these updates, they will include branches and commits made directly to the DjangoCon US website, but they will not include feature branches or pull request branches created through a fork, because they come from outside of the origin. 
+As a DjangoCon US website maintainer, we are able to fetch updates made to the DjangoCon US website repo into a hidden folder named .git in our local development environment. These updates will include branches made directly to the DjangoCon US website, but they will not include branches made through a fork, because they come from outside of the origin. 
 
-Branches created through a fork need to be pulled individually into our local development environment.
+Branches made through a fork need to be pulled individually into our local development environment.
 
 </td></tr>
 
@@ -1211,7 +1211,7 @@ Branches created through a fork need to be pulled individually into our local de
 The instructions on this slide can actually be used by any maintainer to work on any branch they have write permission to.  
 If a pull request has already been made, the additional commits will be automatically added to the pull request, up to the point that the pull request is merged.
 
-For a shared repository pull request, we use the command $ git fetch origin to fetch the updates into the .git folder. The pull request branch will now be a remote-tracking branch referred to as <remote-name>/<branch-name>. We create and checkout to a new local branch and insert the contents of the remote-tracking branch into it. We can merge master to make sure the branch is up-to-date and we can push additional commits to the branch. 
+For a shared repository pull request, we use the command $ git fetch origin to fetch the updates into the .git folder. We create and checkout to a new local branch, which we give a name to, and we insert the pull request branch contents from the .git folder into the new local branch by referring to the branch as origin/<branch-name>. We can merge master to make sure the branch is up-to-date and we can push additional commits to the branch on GitHub. 
 
 For a pull request submitted through a fork, we create a new branch off master and pull in the contents of the pull request branch from the fork. We can also push additional commits if we have been given permission to edit the pull request. 
 
