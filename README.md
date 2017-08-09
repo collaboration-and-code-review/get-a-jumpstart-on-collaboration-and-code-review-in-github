@@ -1299,16 +1299,10 @@ Hopefully, you will want to create a welcoming environment for your project. You
 GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on commonly used licenses and codes
 * LICENSE- tells you the legal terms under which you can contribute and use the code
 * CODE_OF_CONDUCT.md- a set of rules outlining the expectations and responsibilities of contributors 
-
 * README.md- gives general project information
-* CONTRIBUTING.md
+* CONTRIBUTING.md- gives info about contributing. When a contributing document is present, when someone creates an issue, they will see a message prompting them to read the contributing document.
 
 </td></tr>
-
-<!--
-* CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
--->
-
 
 
 <tr><td width="30%">
