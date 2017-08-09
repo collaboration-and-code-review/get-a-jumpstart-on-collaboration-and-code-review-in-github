@@ -331,6 +331,10 @@ Here is a screenshot of my local development environment.
 
 I will elaborate on this process later.
 
+<!--
+You can use Git to save your files at different points in time and revert back if you need to.
+-->
+
 </td></tr>
 
 
@@ -886,6 +890,11 @@ $ git commit -m "Creating branch and updating"
 $ git push origin example-branch
 ```
 
+<!--
+Take the time to make sure your changes work
+Leave a clear commit message
+-->
+
 </td></tr>
 
 
@@ -1285,18 +1294,18 @@ $ git push origin master
 
 ### GitHub: Documentation
 
-Hopefully, you will want to create a welcoming environment for your project. 
+Hopefully, you will want to create a welcoming environment for your project. Your documentation might inspire someone else to contribute to a project the way that I was inspired to contribute to TacoFancy. 
 
-* README.md
-* LICENSE
+GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on commonly used licenses and codes
+* LICENSE- tells you the terms under which you can contribute and use the code, based on the law
 * CODE_OF_CONDUCT.md
+
+* README.md-
 * CONTRIBUTING.md
 
 </td></tr>
 
 <!--
-* LICENSE (auto-generate, legality of contributions, attribution)
-* CODE_OF_CONDUCT.md (auto-generate, choosing from two different Codes of Conduct)
 * CONTRIBUTING.md (look at examples for ideas, will generate a message "Please review the guidelines for...")
 -->
 
