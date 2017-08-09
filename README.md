@@ -1294,13 +1294,13 @@ $ git push origin master
 
 ### GitHub: Documentation
 
-Hopefully, you will want to create a welcoming environment for your project. Your documentation might inspire someone else to contribute to a project the way that I was inspired to contribute to TacoFancy.
+Hopefully, you will want to create a welcoming environment for your project. Your documentation might inspire someone else to contribute to a project the way that I was inspired to contribute to TacoFancy. You can do this by creating several different pieces of documentation.
 
 GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on commonly used licenses and codes
-* LICENSE- tells you the terms under which you can contribute and use the code, based on the law
-* CODE_OF_CONDUCT.md
+* LICENSE- tells you the legal terms under which you can contribute and use the code
+* CODE_OF_CONDUCT.md- a set of rules outlining the expectations and responsibilities of contributors 
 
-* README.md
+* README.md- gives general project information
 * CONTRIBUTING.md
 
 </td></tr>
@@ -1337,9 +1337,13 @@ Here are a few things you might want to do to keep your code safe
 
 ### Tips for Getting Started
 
+In the Useful Resources Section there is an excellent checklist for evaluating a project and I recommend that you take a look because it's very comprehensive.
+
+
+
 * “Help Wanted” tags, topics/First-timers initiatives
 * Look for community-oriented projects and other welcoming projects
-* Look for triaging and cherry pick issues that fit your skill level
+* Look for projects where triaging happens and pick issues or pull requests that fit your skill level
 * Practice your skills and workflow (don't be afraid to delete/start over)
 * You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
 
