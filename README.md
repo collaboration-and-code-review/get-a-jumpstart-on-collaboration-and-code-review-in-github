@@ -1248,7 +1248,7 @@ $ git push https://github.com/<user-name>/<repo-name> <branch-name>
 
 </td><td>
 
-### Merge Pull Request Locally and Push to Master Branch
+### Merging
 
 This piece of code is for merging a pull request locally and pushing to the master branch.  
 
