@@ -1294,7 +1294,7 @@ $ git push origin master
 
 ### GitHub: Documentation
 
-Hopefully, you will want to create a welcoming environment for your project. Your documentation might inspire someone else to contribute to a project the way that I was inspired to contribute to TacoFancy. 
+Hopefully, you will want to create a welcoming environment for your project. 
 
 GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on commonly used licenses and codes
 * LICENSE- tells you the terms under which you can contribute and use the code, based on the law
