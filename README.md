@@ -145,9 +145,9 @@ Engineer
 
 I want to teach you a process that will get you started collaborating and doing code review as quickly as possible. 
 
-I'm going to be showing you a lot of screenshots and diagrams, because I think one of the difficulties of learning Git and GitHub is that it can be difficult to know what the process looks like. 
+I'm going to be showing you a lot of screenshots and diagrams, because I want you to understand what the process looks like. 
 
-But don’t worry if you miss anything, because at the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation, setup information, and all of the commands I will be showing you today. 
+But don’t worry if you miss anything, because at the end of my talk, there will be a slide with a link to Useful Resources where you will find documentation and all of the commands I will be showing you today. 
 
 My slides and a video of my talk will also be online later.
 
