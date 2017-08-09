@@ -1062,8 +1062,8 @@ Animation
 
 Go to the repo you want your pull request to be merged into, in this case, the DjangoCon US website repo. There will also be a message here telling you about the branch and suggesting that you submit a pull request, even if the branch is in a fork, because GitHub will detect it. Click on the "Compare & pull request" button. 
 
-* Make sure that the base corresponds to the repo and branch you want your change to be merged into
-* Make sure compare corresponds to your branch
+* Make sure that the base branch is the branch you want your change to be merged into
+* Make sure compare branch is your branch
 * Create a pull request title and perhaps a description
 * If the pull request is via a forked repo, a box will be checked by default giving maintainers the ability to edit the pull request 
 * Double check your changes
@@ -1108,14 +1108,13 @@ Animation
 
 ### Pull Request Review Process
 
-* If you are a repo maintainer, you will receive a notification by browser or email to let you know there is a pull request
-* Follow the link to the pull request in the repo pull request tab in the browser
-* Look over the information about the pull request. You can see the title and description and look at a file that will show all of the changes made. 
+* When a pull request is submitted repo maintainers will receive a notification by browser or email to let them know there is a pull request
+* Follow the link to the pull request tab in the browser
+* Look over the information about the pull request. You can see the title and description and click on the “Files changed” link to see all of the changes that were made. 
 
 Underneath that will be info about how to merge the pull request. 
-There are two ways to merge
-* Via browser (click the buttons that say “Merge pull request” and “Confirm merge”)
-* Via command line in your local development environment
+* There will be a merge button that you can click to merge in the browser
+* Or there will be a link that says “command line instructions” 
 
 </td></tr>
 
@@ -1141,7 +1140,8 @@ Animation
 
 ### Pull Request Command Line
 
-There will be a link to a set of command line instructions for reviewing the pull request locally. The set of instructions will be slightly different depending on whether the pull request was submitted from within the shared repository or from a forked repo.  
+When you click on that link, it will open up a set of instructions for how to review and merge the pull request in your local development environment. The instructions will be different depending on whether the pull request was submitted from within the shared repository or from a forked repo.  
+I will go over that in a minute. 
 
 I will go over that in a minute. 
 
@@ -1158,9 +1158,9 @@ I will go over that in a minute.
 
 But first, let's go over the options for what you can do when you review a pull request.
 
-The first two options involve clicking merge in GitHub without running the code locally
+The first two options involve clicking the merge button in GitHub without running the code locally
 * You look at the pull request changes, you can tell they can be accepted and click merge  
-* You look at the pull request changes. You need to change something, but you can change it in GitHub. You edit the pull request file in the browser and click merge.
+* You look at the pull request changes. Something needs to be changed, but you can change it in GitHub. So you edit the pull request file in the browser, similarly to how we edited a file earlier, and click merge.
 
 </td></tr>
 
