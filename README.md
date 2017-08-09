@@ -225,6 +225,7 @@ DjangoCon US Website Repo
 * <variable> is a placeholder for the real thing
 -->
 
+
 <tr><td width="30%">
 
 ![Slide 9]()
@@ -236,6 +237,8 @@ DjangoCon US Website Repo
 GitHub is a website built on the version control software Git.  
 
 <!--
+You can use Git to make a snapshot of your folder at any point in time and revert back if needed.
+
 GitHub Website Landing Page
 Git command line- verifying Git is installed and the version
 -->
@@ -330,10 +333,6 @@ Here is a screenshot of my local development environment.
 * Meanwhile, other users can do the same thing on their computers.
 
 I will elaborate on this process later.
-
-<!--
-You can use Git to save your files at different points in time and revert back if you need to.
--->
 
 </td></tr>
 
@@ -655,7 +654,7 @@ Animation
 * Click on the hyperlink and it will open the repo
 * The repo URL will have my user account name in it
 
-The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, and the original repo will not be affected, including deleting the fork. 
+The fork is an exact copy of the original repo at the time it was forked. I could make any changes I wanted to the fork, including deleting it, and the original repo will not be affected. 
 
 </td></tr>
 
@@ -1202,7 +1201,7 @@ We are DjangoCon website maintainers and the DjangoCon US website repo is our or
 
 This is why the pull request instructions are different. 
 
-As a DjangoCon US website maintainer, we are able to fetch updates made to the DjangoCon US website repo into a hidden folder named .git in our local development environment. These updates will include branches made directly to the DjangoCon US website, but they will not include branches made through a fork, because they come from outside of the origin. 
+As a DjangoCon US website maintainer, we are able to fetch updates made to the DjangoCon US website repo into a hidden folder named .git in our local development environment. These updates will include branches made directly to the DjangoCon US website repo, but they will not include branches made through a fork, because they come from outside of the origin. 
 
 Branches made through a fork need to be pulled individually into our local development environment.
 
