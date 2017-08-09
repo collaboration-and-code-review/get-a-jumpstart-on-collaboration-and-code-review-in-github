@@ -50,7 +50,6 @@ Thank you!
 - [Section 2](#section-2)
 - [Fork and Pull Model](#fork-and-pull-model)
 - [Shared Repository Model](#shared-repository-model)
-
 - [Local Dev Environment](#local-dev-environment)
 - [Cloning](#cloning)
 - [Changing Directory](#changing-directory)
@@ -63,14 +62,12 @@ Thank you!
 - [New Branch](#new-branch)
 - [Submit a Pull Request](#submit-a-pull-request)
 - [Section 3](#section-3)
-
 - [Pull Request Review Process](#pull-request-review-process)
-- [Pull Request Review Options](#pull-request-review-options)
 - [Pull Request Command Line](#pull-request-command-line)
+- [Pull Request Review Options](#pull-request-review-options)
 - [Pull Request Branches](#pull-request-branches)
 - [Pull Request Review](#pull-request-review)
 - [Merging](#merging)
-
 - [Section 4](#section-4)
 - [GitHub: Documentation](#github-documentation)
 - [Safety Checklist](#safety-checklist)
