@@ -1308,11 +1308,9 @@ GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on common
 
 ### Safety Checklist
 
-Here are a few things you might want to do to keep your code safe
-* Back up the repo (third-party software)
+You might want to go to the Settings area of a repo and click the Branches tab
+* Protect branch the main branch so it can’t be deleted (for example, your master branch)
 * Enable required reviews of pull requests, for example, a review has to be done before a pull request can be merged
-* Protect branches so they can’t be deleted (for example, your master branch)
-* Just in case: How to recover deleted branch link in Useful Resources section
 
 </td></tr>
 
@@ -1361,7 +1359,7 @@ In the Useful Resources Section there is an excellent checklist for evaluating a
 
 ### Thank You
 
-Feel free to contact me by email or on Twitter.
+Feel free to contact me.
 
 Useful Resources: 
 https://git.io/v7LGr
