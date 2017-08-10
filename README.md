@@ -1324,15 +1324,11 @@ You might want to go to the Settings area of a repo and click the Branches tab
 
 ### Tips for Getting Started
 
-In the Useful Resources Section there is an excellent checklist for evaluating a project and I recommend that you take a look because it's very comprehensive.
-
-
-
-* “Help Wanted” tags, topics/First-timers initiatives
-* Look for community-oriented projects and other welcoming projects
-* Look for projects where triaging happens and pick issues or pull requests that fit your skill level
-* Practice your skills and workflow (don't be afraid to delete/start over)
-* You can create your own sandbox by making pull requests on your own account or setting up an organization to learn more about options for maintainers
+In the Useful Resources Section there is an excellent checklist for evaluating a project and I recommend that you take a look at it. In general, I suggest to look for projects that 
+* Use triage. Triaging is where project sort issues by difficulty level. 
+* You can search for these tags in GitHub: help wanted, first timers, 
+* If you become a maintainer, you can also cherry-pick pull requests that fit your skill level.
+* I also suggest to practice your skills and workflow. Don't be afraid to delete and start over. And you might consider creating a repo in your own account, making pull requests and reviewing them yourself. 
 
 </td></tr>
 
