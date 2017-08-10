@@ -121,9 +121,8 @@ Welcome, everyone. I'm Kati Michel. I'm thrilled to have the opportunity to teac
 
 * DjangoCon Website Chair
 * DEFNA (Django Events Foundation North America) Board Member
-* DjangoCon Europe Website Committee Member
 * Project Manager
-* Web Designer and Developer
+* Designer and Developer
 
 <!--
 Engineer
@@ -161,9 +160,9 @@ My slides and a video of my talk will also be online later.
 
 I want to tell you how I got started with open-source contribution, which I think will show you there are many ways to get involved. 
 
-I first signed up for GitHub in April 2013. But my account sat unused for months. I didn't know how to get started.  
+I first signed up for GitHub in April 2013. But my account sat unused for 7 months. I didn't know how to get started.  
 
-7 months later, I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker who works in journalism and web development. He had made a really delicious Mexican meal and he and a few other people had decided to start a project on GitHub to share Mexican recipes. 
+I happened to be looking at Twitter. I saw a tweet from a man named Dan Sinker. He had made a really delicious taco meal and decided to start a project on GitHub to share taco recipes. 
 
 So I clicked on the link and went to the project to take a look. 
 
@@ -234,8 +233,6 @@ DjangoCon US Website Repo
 GitHub is a website built on the version control software Git.  
 
 <!--
-You can use Git to make a snapshot of your folder at any point in time and revert back if needed.
-
 GitHub Website Landing Page
 Git command line- verifying Git is installed and the version
 -->
@@ -318,7 +315,7 @@ When we are working on code, we can't do everything in the GitHub website.
 
 For example, we might want to make a copy of the DjangoCon US website code in the local development environment of our computer, install the necessary software, and run the code in a local browser so that you can add a feature to it, or test a pull request branch.
 
-There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. 
+There is where Git is very useful. Git is installed in our local development environment and used in the command line of your computer. You can use Git to make a snapshot of your project at any point in time and revert back if needed.
 
 Here is a screenshot of my local development environment.
 
@@ -328,8 +325,6 @@ Here is a screenshot of my local development environment.
 * I can use the web address (URL) from the GitHub repo in the command line to create a copy of the repo in my local development environment. Making a copy of a repo locally is called cloning.
 * I can make changes and push the changes back to GitHub. 
 * Meanwhile, other users can do the same thing on their computers.
-
-I will elaborate on this process later.
 
 </td></tr>
 
