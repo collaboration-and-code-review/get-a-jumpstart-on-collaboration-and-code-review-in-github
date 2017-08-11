@@ -1278,9 +1278,6 @@ $ git push origin master
 </td><td>
 
 
-
-
-
 <tr><td width="30%">
 
 ![Slide 72]()
@@ -1318,7 +1315,7 @@ My second recommendation is that if you have the authority, go into a repo’s S
 
 My third recommendation is that when you are looking for a project to contribute to
 * Search by tag to find projects that use triaging. Triaging is where issues are sorted by difficulty level
-* As a collaborator or code reviewer, you can cherry-pick issues that fit your skill level
+* As a collaborator or code reviewer, you can cherry-pick issues and pull requests that fit your skill level
 
 </td></tr>
 
