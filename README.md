@@ -69,10 +69,10 @@ Thank you!
 - [Pull Request Review](#pull-request-review)
 - [Merging](#merging)
 - [Section 4](#section-4)
-- [GitHub: Documentation](#github-documentation)
-- [Safety Checklist](#safety-checklist)
-- [Tips for Getting Started](#tips-for-getting-started)
-- [Go for It](#go-for-it)
+- [Documentation](#documentation)
+- [Safety](#safety)
+- [Triaging](#triaging)
+- [Sandboxing](#sandboxing)
 - [Thank You](#thank-you)
 
 
@@ -1287,15 +1287,9 @@ $ git push origin master
 
 </td><td>
 
-### GitHub: Documentation
+### Documentation
 
-Hopefully, you will want to create a welcoming environment for your project. Your documentation might inspire someone else to contribute to a project the way that I was inspired to contribute to TacoFancy. You can do this by creating several different pieces of documentation.
-
-GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on commonly used licenses and codes
-* LICENSE- tells you the legal terms under which you can contribute and use the code
-* CODE_OF_CONDUCT.md- a set of rules outlining the expectations and responsibilities of contributors 
-* README.md- gives general project information
-* CONTRIBUTING.md- gives info about contributing. When a contributing document is present, when someone creates an issue, they will see a message prompting them to read the contributing document.
+My first recommendation is that you go to the Useful Resources Section, follow the links to the DjangoCon US website repo documentation, read it, and make the documentations in your own projects equally welcoming and positive. 
 
 </td></tr>
 
@@ -1306,14 +1300,12 @@ GitHub can help you to generate a LICENSE and CODE_OF_CONDUCT.md based on common
 
 </td><td>
 
-### Safety Checklist
+### Safety
 
-You might want to go to the Settings area of a repo and click the Branches tab
-* Protect branch the main branch so it can’t be deleted (for example, your master branch)
-* Enable required reviews of pull requests, for example, a review has to be done before a pull request can be merged
+My second recommendation is that if you have the authority, go into a repo’s Settings, click the Branches tab
+* Protect the main branch so it can’t be deleted (for example, your master branch)
 
 </td></tr>
-
 
 
 <tr><td width="30%">
@@ -1322,16 +1314,28 @@ You might want to go to the Settings area of a repo and click the Branches tab
 
 </td><td>
 
-### Tips for Getting Started
+### Triaging
 
-In the Useful Resources Section there is an excellent checklist for evaluating a project and I recommend that you take a look at it. In general, I suggest to look for projects that 
-* Use triage. Triaging is where project sort issues by difficulty level. 
-* You can search for these tags in GitHub: help wanted, first timers, 
-* If you become a maintainer, you can also cherry-pick pull requests that fit your skill level.
-* I also suggest to practice your skills and workflow. Don't be afraid to delete and start over. And you might consider creating a repo in your own account, making pull requests and reviewing them yourself. 
+My third recommendation is that when you are looking for a project to contribute to
+* Search by tag to find projects that use triaging. Triaging is where issues are sorted by difficulty level
+* As a collaborator or code reviewer, you can cherry-pick issues that fit your skill level
 
 </td></tr>
 
+
+<tr><td width="30%">
+
+![Slide 74]()
+
+</td><td>
+
+### Sandboxing
+
+My fourth recommendation is that you 
+* Practice your skills and workflow. Don't be afraid to delete and start over
+* You can use your own user account as a sandbox. You can submit pull requests to yourself to practice.
+
+</td></tr>
 
 
 <tr><td width="30%">
@@ -1342,7 +1346,8 @@ In the Useful Resources Section there is an excellent checklist for evaluating a
 
 ### Go For It!
 
-* By the way, if you are interested in contributing to the DjangoCon US website next year, let us know. We have a diverse group of contributors of all skill levels and we are always looking for more contributors. 
+My last but not least recommendation is that you become a contributor to the DjangoCon US website next year 
+* We have a diverse group of contributors of all skill levels and we are always looking for more contributors. Let us know if you are interested.  
 
 </td></tr>
 
