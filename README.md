@@ -504,7 +504,7 @@ Animation
 * Determine which collaboration approach to use (there are two)
 * Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
-* Additional info
+* Recommendations
 
 </td><td>
 
@@ -1273,7 +1273,7 @@ $ git push origin master
 * Determine which collaboration approach to use (there are two)
 * Clone a repo into our local development environment, create a feature branch, make a change, push the branch to the GitHub repo we cloned from, and submit a pull request to DjangoCon US Website repo
 * Review the two different types of pull requests as a DjangoCon US website repo maintainer
-* Additional info
+* Recommendations
 
 </td><td>
 
@@ -1325,7 +1325,7 @@ My third recommendation is that when you are looking for a project to contribute
 
 <tr><td width="30%">
 
-![Slide 74]()
+![Slide 75]()
 
 </td><td>
 
@@ -1340,7 +1340,7 @@ My fourth recommendation is that you
 
 <tr><td width="30%">
 
-![Slide 75]()
+![Slide 76]()
 
 </td><td>
 
@@ -1354,7 +1354,7 @@ My last but not least recommendation is that you become a contributor to the Dja
 
 <tr><td width="30%">
 
-![Slide 76]()
+![Slide 77]()
 
 </td><td>
 
